@@ -11,9 +11,9 @@ const PageContainer: React.FunctionComponent<IPageContainerProps> = ({
 
     return (
         <div className="mt-4">
-            {body.map((blok, index) => (
+            {body.map((blok) => (
                 <StoryblokComponent
-                    blok={{ ...blok, sectionPosition: index + 1 }}
+                    blok={{ ...blok }}
                     key={blok._uid}
                 />
             ))}
