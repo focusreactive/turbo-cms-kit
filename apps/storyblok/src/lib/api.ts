@@ -1,6 +1,4 @@
-import { SB_CACHE_VERSION } from "@/constants/cacheTags";
 import {
-  getStoryblokApi,
   type ISbStoriesParams,
   type ISbStoryData,
 } from "@storyblok/react/rsc";
@@ -8,11 +6,10 @@ import {
 const API_GATE = process.env.NEXT_PUBLIC_API_GATE;
 
 // Get the actual SB cache version
-const getSbCacheCvParameter = async (isDraftMode: boolean) => {
+export const getSBcacheCVparameter = async (isDraftMode: boolean) => {
   const searchParamsData: ISbStoriesParams = {
     token: process.env.SB_PREVIEW_TOKEN,
     version: isDraftMode ? "draft" : "published",
-    per_page: 1,
   };
 
   const searchParams = new URLSearchParams(
@@ -23,8 +20,12 @@ const getSbCacheCvParameter = async (isDraftMode: boolean) => {
     `${API_GATE}/stories?${searchParams.toString()}`,
     {
       next: {
-        tags: [SB_CACHE_VERSION],
-        revalidate: isDraftMode ? 0 : false,
+        tags: ["sb-cache-version"],
+        ...(isDraftMode
+          ? {
+            revalidate: 0,
+          }
+          : {}),
       },
     },
   ).then((res) => res.json());
@@ -37,34 +38,27 @@ const getSbCacheCvParameter = async (isDraftMode: boolean) => {
 export async function fetchStoryBySlug(
   isDraftMode: boolean,
   slug: string[] = ["home"],
+  params?: { cv?: number; resolve_relations?: string },
 ): Promise<{ story: ISbStoryData }> {
 
+  const cv = await getSBcacheCVparameter(isDraftMode);
 
-  const cv = await getSbCacheCvParameter(isDraftMode);
   const contentVersion = isDraftMode ? "draft" : "published";
 
   const searchParamsData: ISbStoriesParams = {
     token: process.env.SB_PREVIEW_TOKEN,
     cv,
     version: contentVersion,
+    ...params,
   };
 
   const searchParams = new URLSearchParams(
     searchParamsData as Record<string, string>,
   );
 
-  console.log(
-    "request",
-    `${API_GATE}/stories/${slug?.join("/") || ""}?${searchParams.toString()}`,
-  );
-
   const { story } = await fetch(
-    `${API_GATE}/stories/${slug?.join("/") || ""}?${searchParams.toString()}`,
-    {
-      next: {
-        revalidate: isDraftMode ? 0 : false,
-      },
-    },
+    `${API_GATE}/stories/${slug?.join("/") || ""
+    }?${searchParams.toString()}`,
   ).then((res) => res.json());
 
   return {
@@ -74,18 +68,42 @@ export async function fetchStoryBySlug(
 
 // This function uses only on a build lvl to generate a sitemap
 export async function fetchAllPages() {
-  const cv = await getSbCacheCvParameter(false);
-  const storyblokApi = getStoryblokApi();
+  const cv = await getSBcacheCVparameter(false);
 
-  const pagesData = await storyblokApi.get("cdn/links", {
+  const commonFetchParams: ISbStoriesParams = {
     version: "published",
+    token: process.env.SB_PREVIEW_TOKEN,
+    starts_with: process.env.NEXT_PUBLIC_DATA_ROOT,
     cv,
     per_page: 1000,
-  });
+    // @ts-ignore
+    include_dates: "1",
+  };
 
-  const pages: { slug: string; is_folder: boolean }[] = Object.values(
-    pagesData.data.links,
+  const searchParams = new URLSearchParams(
+    commonFetchParams as Record<string, string>,
   );
+
+  const linksResponse = await fetch(
+    `${API_GATE}/links?${searchParams.toString()}`,
+  );
+
+  const pagesData = await linksResponse.json();
+  const total = Number(linksResponse.headers.get("Total"));
+  const lastPageNumber = Math.ceil(total / 1000);
+
+  let pages: { slug: string; is_folder: boolean; published_at: string }[] =
+    Object.values(pagesData.links);
+
+  for (let i = 2; i <= lastPageNumber; i++) {
+    const paginatedLinksResponse = await fetch(
+      `${API_GATE}/links?${searchParams.toString()}&page=${i}`,
+    );
+
+    const paginatedLinksData = await paginatedLinksResponse.json();
+
+    pages = pages.concat(Object.values(paginatedLinksData.links));
+  }
 
   return pages;
 }
@@ -97,7 +115,7 @@ export async function fetchStoriesByParams(
   params?: ISbStoriesParams,
 ): Promise<{ data: ISbStoryData[]; headers: Headers }> {
   const contentVersion = isDraftModeEnabled ? "draft" : "published";
-  const cv = await getSbCacheCvParameter(isDraftModeEnabled);
+  const cv = await getSBcacheCVparameter(isDraftModeEnabled);
 
   const searchParamsData: ISbStoriesParams = {
     token: process.env.SB_PREVIEW_TOKEN,

@@ -9,6 +9,10 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
+    "dev:sb": "turbo run dev --filter=storyblok",
+    "build:sb": "turbo run build --filter=storyblok",
+    "start:sb": "turbo run start --filter=storyblok",
+    "proxy:sb": "turbo run proxy --filter=storyblok",
     "dev:turbo": "turbo run dev:turbo --parallel",
     "lint": "turbo run lint",
     "lint:fix": "turbo lint -- --fix && manypkg fix",

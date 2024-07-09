@@ -3,7 +3,6 @@ import { StoryblokStory } from "@storyblok/react/rsc";
 import StoryblokProvider from "@/components/StoryblokProvider";
 import { notFound } from "next/navigation";
 import { fetchStoryBySlug, fetchAllPages, checkDraftModeToken } from "@/lib/api";
-import FrInfo from "@/components/FrInfo";
 
 const isDraftModeEnv = process.env.NEXT_PUBLIC_IS_PREVIEW === "true";
 export const dynamic = isDraftModeEnv ? "force-dynamic" : "force-static";
@@ -50,13 +49,9 @@ const Home = async ({ params, searchParams }: Props) => {
   }
 
   return (
-    <div>
-      <FrInfo />
-
-      <StoryblokProvider>
-        <StoryblokStory story={story} />
-      </StoryblokProvider>
-    </div>
+    <StoryblokProvider>
+      <StoryblokStory story={story} />
+    </StoryblokProvider>
   );
 };
 

@@ -37,6 +37,10 @@
     "dev:turbo": {
       "cache": false,
       "persistent": true
+    },
+    "proxy": {
+      "cache": false,
+      "persistent": true
     }
   }
 }
