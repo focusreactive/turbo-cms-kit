@@ -3,7 +3,7 @@ module.exports = {
   extends: ["@shared/eslint-config"],
   settings: {
     next: {
-      rootDir: ["apps/sanity"],
+      rootDir: ["apps/sanity", "apps/storyblok"],
     },
   },
 }

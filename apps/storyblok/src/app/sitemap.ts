@@ -1,4 +1,4 @@
-import { MetadataRoute } from "next";
+import { type MetadataRoute } from "next";
 import { fetchStoriesByParams } from "@/lib/api";
 import type { ISbStoriesParams } from "@storyblok/react/rsc";
 
@@ -43,7 +43,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   });
 
   const sitemap = filteredStories.map((page) => {
-    const [_, ...coorectPath] = page.full_slug.split("/").filter(Boolean);
+    const [, ...coorectPath] = page.full_slug.split("/").filter(Boolean);
 
     return {
       url: `${process.env.NEXT_PUBLIC_DOMAIN}/${coorectPath.join("/")}`,

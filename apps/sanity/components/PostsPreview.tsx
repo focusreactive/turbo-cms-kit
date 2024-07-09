@@ -3,8 +3,8 @@
 "use client";
 
 import { POSTS_QUERY } from "@/sanity/lib/queries";
-import { QueryResponseInitial, useQuery } from "@sanity/react-loader";
-import { SanityDocument } from "next-sanity";
+import { type QueryResponseInitial, useQuery } from "@sanity/react-loader";
+import { type SanityDocument } from "next-sanity";
 
 import Posts from "@/components/Posts";
 

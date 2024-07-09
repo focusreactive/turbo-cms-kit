@@ -4,10 +4,15 @@
     "**/.env.*local"
   ],
   "globalEnv": [
+    "NEXT_PUBLIC_*",
+    "SB_*",
+    "NEXT_PREVIEW_TOKEN",
+    "storyblokApiToken",
     "NODE_ENV"
   ],
   "tasks": {
     "build": {
+      "cache": false,
       "dependsOn": [
         "^build"
       ],
@@ -16,6 +21,11 @@
         "!.next/cache/**",
         "dist/**",
         "storybook-static/**"
+      ]
+    },
+    "start": {
+      "dependsOn": [
+        "^build"
       ]
     },
     "lint": {},

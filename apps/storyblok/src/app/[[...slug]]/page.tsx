@@ -1,8 +1,8 @@
-import { Metadata } from "next";
+import { type Metadata } from "next";
 import { StoryblokStory } from "@storyblok/react/rsc";
 import StoryblokProvider from "@/components/StoryblokProvider";
 import { notFound } from "next/navigation";
-import { fetchStoryBySlug, fetchAllPages } from "@/lib/api";
+import { fetchStoryBySlug, fetchAllPages, checkDraftModeToken } from "@/lib/api";
 import FrInfo from "@/components/FrInfo";
 
 const isDraftModeEnv = process.env.NEXT_PUBLIC_IS_PREVIEW === "true";
@@ -38,21 +38,10 @@ export async function generateStaticParams() {
 }
 
 const Home = async ({ params, searchParams }: Props) => {
-  let isDraftModeEnabled = isDraftModeEnv;
-
-  // sb preview token check
-  if (isDraftModeEnabled && process.env.NODE_ENV !== "development") {
-    isDraftModeEnabled = await fetch(
-      `${process.env.NEXT_PUBLIC_DOMAIN}/api/checkToken?space_id=${searchParams?.["_storyblok_tk[space_id]"]}&timestamp=${searchParams?.["_storyblok_tk[timestamp]"]}&token=${searchParams?.["_storyblok_tk[token]"]}`,
-    )
-      .then((res) => res.json())
-      .then((res) => res.result);
-  }
-
-  let correctPath = params.slug || ["home"];
+  const isDraftModeEnabled = await checkDraftModeToken(searchParams);
 
   const [{ story }] = await Promise.all([
-    fetchStoryBySlug(isDraftModeEnabled, correctPath),
+    fetchStoryBySlug(isDraftModeEnabled, params.slug),
   ]);
 
   if (!story) {
