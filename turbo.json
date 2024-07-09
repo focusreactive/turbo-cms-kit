@@ -1,14 +1,31 @@
 {
   "$schema": "https://turborepo.org/schema.json",
-  "globalDependencies": ["**/.env.*local"],
-  "pipeline": {
+  "globalDependencies": [
+    "**/.env.*local"
+  ],
+  "globalEnv": [
+    "NEXT_PUBLIC_*",
+    "SB_*",
+    "NEXT_PREVIEW_TOKEN",
+    "storyblokApiToken",
+    "NODE_ENV"
+  ],
+  "tasks": {
     "build": {
-      "dependsOn": ["^build"],
+      "cache": false,
+      "dependsOn": [
+        "^build"
+      ],
       "outputs": [
         ".next/**",
         "!.next/cache/**",
         "dist/**",
         "storybook-static/**"
+      ]
+    },
+    "start": {
+      "dependsOn": [
+        "^build"
       ]
     },
     "lint": {},
@@ -21,6 +38,5 @@
       "cache": false,
       "persistent": true
     }
-  },
-  "globalEnv": ["NODE_ENV"]
+  }
 }

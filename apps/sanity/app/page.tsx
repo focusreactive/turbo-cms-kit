@@ -1,6 +1,6 @@
 // ./app/page.tsx
 
-import { SanityDocument } from "next-sanity";
+import { type SanityDocument } from "next-sanity";
 import { draftMode } from "next/headers";
 
 import Posts from "@/components/Posts";

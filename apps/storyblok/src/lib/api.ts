@@ -36,8 +36,10 @@ const getSbCacheCvParameter = async (isDraftMode: boolean) => {
 // Next.js data cache enabled
 export async function fetchStoryBySlug(
   isDraftMode: boolean,
-  slug?: string[],
+  slug: string[] = ["home"],
 ): Promise<{ story: ISbStoryData }> {
+
+
   const cv = await getSbCacheCvParameter(isDraftMode);
   const contentVersion = isDraftMode ? "draft" : "published";
 
@@ -119,4 +121,20 @@ export async function fetchStoriesByParams(
   } catch (error) {
     throw error;
   }
+}
+
+export async function checkDraftModeToken(searchParams: {
+  [key: string]: string | string[] | undefined;
+}) {
+  let isDraftModeEnabled = process.env.NEXT_PUBLIC_IS_PREVIEW === "true";
+
+  if (isDraftModeEnabled && process.env.NODE_ENV !== "development") {
+    isDraftModeEnabled = await fetch(
+      `${process.env.NEXT_PUBLIC_DOMAIN}/api/checkToken?space_id=${searchParams?.["_storyblok_tk[space_id]"]}&timestamp=${searchParams?.["_storyblok_tk[timestamp]"]}&token=${searchParams?.["_storyblok_tk[token]"]}`,
+    )
+      .then((res) => res.json())
+      .then((res) => res.result);
+  }
+
+  return isDraftModeEnabled;
 }

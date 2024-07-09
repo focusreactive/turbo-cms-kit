@@ -7,10 +7,10 @@ export async function GET(request: Request) {
   const timestamp = searchParams.get("timestamp");
   const token = searchParams.get("token");
 
-  let validationString =
+  const validationString =
     space_id + ":" + process.env.SB_PREVIEW_TOKEN + ":" + timestamp;
 
-  let validationToken = crypto
+  const validationToken = crypto
     .createHash("sha1")
     .update(validationString)
     .digest("hex");
