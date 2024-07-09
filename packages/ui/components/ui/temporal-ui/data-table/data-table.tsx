@@ -11,7 +11,7 @@ import {
   type ColumnFiltersState,
 } from "@tanstack/react-table"
 
-import { Button } from "../button"
+import { Button } from "../../button"
 import { Input } from "../input"
 import {
   Table,
