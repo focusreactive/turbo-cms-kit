@@ -1,0 +1,128 @@
+name: Roll out new cms kit sanity
+
+on:
+  workflow_dispatch:
+    inputs:
+      sanity-project-id:
+        required: true
+        type: string
+      sanity-dataset-name:
+        required: true
+        type: string
+      vercel-project-name:
+        required: true
+        type: string
+      vercel-project-id:
+        required: true
+        type: string
+      vercel-deployment-url:
+        required: true
+        type: string
+      email:
+        required: true
+        type: string
+
+jobs:
+  upload-data:
+    runs-on: ubuntu-latest
+    env:
+      NEXT_PUBLIC_SANITY_PROJECT_ID: ${{ inputs.sanity-project-id }}
+      NEXT_PUBLIC_SANITY_DATASET: ${{ inputs.sanity-dataset-name }}
+    name: Steps to deploy new project
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Add VERCEL_PROJECT_ID env to vercel project
+        run: |
+          curl -X POST "https://api.vercel.com/v10/projects/${{ inputs.vercel-project-id }}/env?teamId=${{ secrets.VERCEL_FR_TEAM_ID }}" \
+          -H "Authorization: Bearer ${{ secrets.VERCEL_PERSONAL_AUTH_TOKEN }}" \
+          -H "Content-Type: application/json" \
+          -d '{
+            "key":"VERCEL_PROJECT_ID",
+            "value":"${{ inputs.vercel-project-id }}",
+            "type":"encrypted",
+            "target": ["production", "preview", "development"]
+          }'
+
+      - name: Add VERCEL_PROJECT_NAME env to vercel project
+        run: |
+          curl -X POST "https://api.vercel.com/v10/projects/${{ inputs.vercel-project-id }}/env?teamId=${{ secrets.VERCEL_FR_TEAM_ID }}" \
+          -H "Authorization: Bearer ${{ secrets.VERCEL_PERSONAL_AUTH_TOKEN }}" \
+          -H "Content-Type: application/json" \
+          -d '{
+            "key":"VERCEL_PROJECT_NAME",
+            "value":"${{ inputs.vercel-project-name }}",
+            "type":"encrypted",
+            "target": ["production", "preview", "development"]
+          }'
+
+      - name: Add vercel deployment CORS entry to sanity
+        run: |
+          curl -X POST "https://api.sanity.io/v2021-06-07/projects/${{ inputs.sanity-project-id }}/cors" \
+          -H "Authorization: Bearer ${{ secrets.SANITY_AUTH_TOKEN }}" \
+          -H "Content-Type: application/json" \
+          -d '{
+            "origin":"${{ inputs.vercel-deployment-url }}",
+            "allowCredentials":true
+          }'
+
+      - name: Invite user email to sanity project
+        run: |
+          curl -X POST "https://api.sanity.io/v2021-06-07/invitations/project//${{ inputs.sanity-project-id }}" \
+          -H "Authorization: Bearer ${{ secrets.SANITY_AUTH_TOKEN }}" \
+          -H "Content-Type: application/json" \
+          -d '{
+            "email":"${{ inputs.email }}",
+            "role":"editor"
+          }'
+
+      - name: Create new dataset
+        run: |
+          curl -X PUT "https://api.sanity.io/v2021-06-07/projects/${{ inputs.sanity-project-id }}/datasets/${{ inputs.sanity-dataset-name }}" \
+          -H "Authorization: Bearer ${{ secrets.SANITY_AUTH_TOKEN }}"
+
+      - name: Install dependencies
+        run: npm i --legacy-peer-deps
+      - name: Export dataset
+        run: |
+          SANITY_AUTH_TOKEN="${{ secrets.SANITY_AUTH_TOKEN }}" \
+          npx sanity dataset import \
+          initial-data.tar.gz production
+      # curls commands should be run after dataset is uploaded
+      # to make sure initial production deployment has correct data
+      - name: Curl command to add vercel deploy hook to sanity
+        run: |
+          curl -X POST "https://api.sanity.io/v2021-10-04/hooks/projects/${{ inputs.sanity-project-id }}" \
+          -H "Authorization: Bearer ${{ secrets.SANITY_AUTH_TOKEN }}" \
+          -H "Content-Type: application/json" \
+          -d '{
+            "type":"document",
+            "name":"Sanity Studio",
+            "url": "https://${{ inputs.vercel-project-name }}.vercel.app/api/roll-out/deploy",
+            "httpMethod":"POST",
+            "apiVersion":"v2021-03-25",
+            "includeDrafts":false,
+            "dataset":"*",
+            "rule": {
+              "on": ["create", "update", "delete"]
+            },
+            "headers": {
+              "Authorization": "Bearer ${{ secrets.ROLL_OUT_API_TOKEN }}"
+            }
+          }'
+      - name: Curl command to triger vercel initial deployment
+        run: |
+          curl -X POST "https://api.vercel.com/v13/deployments?teamId=${{ secrets.VERCEL_FR_TEAM_ID }}" \
+            -H "Authorization: Bearer ${{ secrets.VERCEL_PERSONAL_AUTH_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "name": "${{ inputs.vercel-project-name }}",
+              "project": "${{ inputs.vercel-project-id }}",
+              "target": "production",
+              "gitSource": {
+                "repoId": "${{ secrets.REPO_ID }}",
+                "ref": "${{ secrets.REPO_PROD_BRANCH }}",
+                "type": "${{ secrets.REPO_TYPE }}"
+              }
+            }'
