@@ -1,15 +1,15 @@
 import Link from "next/link";
+import { type IImageProps } from "../ui/image";
 
 interface IBasicConfiguration {
     richTextFormatterFunction: (richText: any) => any;
-    imageUrlFormatterFunction: (url: string) => string;
+    prepareImageProps: (data: any) => IImageProps;
     linkComponent: typeof Link;
-
 }
 
 interface IInitializationBasicConfiguration {
     richTextFormatterFunction?: (richText: any) => any;
-    imageUrlFormatterFunction?: (url: string) => string;
+    prepareImageProps: (data: any) => IImageProps;
     linkComponent?: typeof Link;
 }
 
@@ -20,8 +20,8 @@ export const configurateUi = (config: IInitializationBasicConfiguration) => {
 
 let basicUiConfig: IBasicConfiguration = {
     richTextFormatterFunction: (richText) => richText as React.ReactNode,
-    imageUrlFormatterFunction: (imageUrl) => imageUrl,
-    linkComponent: Link
+    linkComponent: Link,
+    prepareImageProps: (data) => data as IImageProps
 }
 
 export const getUiConfig = () => {

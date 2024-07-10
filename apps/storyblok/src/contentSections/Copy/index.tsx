@@ -4,7 +4,7 @@ import type React from "react";
 import { type ICopyProps } from "./types";
 
 const CopySection: React.FunctionComponent<ICopyProps> = ({ blok }) => {
-    return <SectionContainer blok={blok}><Copy richText={blok.richText} /></SectionContainer>;
+    return <SectionContainer blok={blok}><Copy richText={blok.text[0]} /></SectionContainer>;
 };
 
 export default CopySection;

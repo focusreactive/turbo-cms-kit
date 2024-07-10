@@ -1,7 +1,8 @@
-import type { ISbRichtext, SbBlokData } from "@storyblok/react/rsc";
+import type { IRichText } from "@/lib/renderRichText";
+import type { SbBlokData } from "@storyblok/react/rsc";
 
 interface ICopy extends SbBlokData {
-    richText: ISbRichtext;
+    text: IRichText[]
 }
 
 export interface ICopyProps {
