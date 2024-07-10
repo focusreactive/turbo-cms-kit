@@ -1,4 +1,4 @@
-import type { IImageProps } from "@shared/ui/components/ui/image";
+import type { IImageProps } from "@shared/ui/components/ui/image/types";
 import type { SbBlokData } from "@storyblok/react/rsc";
 
 export enum ImageAspectRatio {

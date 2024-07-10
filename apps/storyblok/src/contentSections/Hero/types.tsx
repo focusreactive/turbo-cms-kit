@@ -1,9 +1,9 @@
 import type { IImage } from "@/lib/prepareImageProps";
-import type { IRichText } from "@/lib/renderRichText";
+import type { IRichTextBlok } from "@/lib/prepareRichTextProps";
 import type { SbBlokData } from "@storyblok/react/rsc";
 
 interface IHero extends SbBlokData {
-    text: IRichText[]
+    text: IRichTextBlok[]
     image: IImage[]
 }
 
