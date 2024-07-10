@@ -2,8 +2,12 @@ import {
   type ISbStoriesParams,
   type ISbStoryData,
 } from "@storyblok/react/rsc";
+import type { Metadata } from "next";
+import type { OpenGraph } from "next/dist/lib/metadata/types/opengraph-types";
 
 const API_GATE = process.env.NEXT_PUBLIC_API_GATE;
+const isDraftModeEnv = process.env.NEXT_PUBLIC_IS_PREVIEW === "true";
+
 
 // Get the actual SB cache version
 export const getSBcacheCVparameter = async (isDraftMode: boolean) => {
@@ -141,6 +145,7 @@ export async function fetchStoriesByParams(
   }
 }
 
+// Check if the draft mode token is valid
 export async function checkDraftModeToken(searchParams: {
   [key: string]: string | string[] | undefined;
 }) {
@@ -155,4 +160,45 @@ export async function checkDraftModeToken(searchParams: {
   }
 
   return isDraftModeEnabled;
+}
+
+export async function getMetaData(slug?: string[]): Promise<Metadata> {
+  const isDraftModeEnabled = isDraftModeEnv;
+
+  const { story } = await fetchStoryBySlug(isDraftModeEnabled, slug);
+
+  if (!story) {
+    console.log(`missing metadata for story: ${slug?.join("/")}`);
+    return {};
+  }
+
+  const openGraph: OpenGraph = {
+    title: story.content.seoTitle || story.name || "",
+    description: story.content.seoDescription || "",
+  };
+
+  openGraph.images = {
+    url: story.content?.ogImage?.filename
+      ? `${story.content?.ogImage?.filename}/m/filters:quality(75)`
+      : "",
+  };
+
+  const storyFullSlug = story.full_slug === 'home' ? '' : story.full_slug;
+
+  const canonical = new URL(
+    `${process.env.NEXT_PUBLIC_DOMAIN as string}/${storyFullSlug}`,
+  ).toString();
+
+  return {
+    alternates: {
+      canonical,
+    },
+    metadataBase: new URL(process.env.NEXT_PUBLIC_DOMAIN as string),
+    title: story.content.seoTitle || story.name || "",
+    description: story.content.seoDescription || "",
+    openGraph,
+    keywords: story.content?.seoKeywords || "",
+    robots:
+      story?.content?.robots === "index" ? { index: true } : { index: false },
+  };
 }
