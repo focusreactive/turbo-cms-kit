@@ -1,4 +1,6 @@
+import type { ReactNode } from "react";
+
 export interface IRichTextProps {
     className?: string;
-    richText: unknown;
+    richText: ReactNode | ReactNode[];
 }

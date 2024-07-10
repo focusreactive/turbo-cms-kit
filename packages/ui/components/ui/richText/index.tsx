@@ -1,9 +1,7 @@
 import type { IRichTextProps } from './types';
 import { cn } from "../../../utils";
-import { getUiConfig } from '../../config';
 
 export default function RichText({ className, richText }: IRichTextProps) {
-    const richTextData = getUiConfig().richTextFormatterFunction(richText)
 
     return (
         <div
@@ -12,7 +10,7 @@ export default function RichText({ className, richText }: IRichTextProps) {
                 className,
             )}
         >
-            {richTextData}
+            {richText}
         </div>
     );
 }

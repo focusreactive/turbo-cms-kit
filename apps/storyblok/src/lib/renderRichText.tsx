@@ -5,7 +5,7 @@ export interface IRichText extends SbBlokData {
   content: ISbRichtext;
 }
 
-export default function renderRichText(data: ISbRichtext) {
+export default function renderRichText(data: IRichText) {
   return render(data.content, {
     markResolvers: {},
     nodeResolvers: {},

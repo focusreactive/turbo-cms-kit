@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "../../ui/image";
-import { Link, LinkVariant } from "../../ui/link";
+import { Link } from "../../ui/link";
 import RichText from "../../ui/richText";
+import { LinkVariant } from "../../ui/link/types";
 
 interface IHeroSectionProps {
   richText: any;
