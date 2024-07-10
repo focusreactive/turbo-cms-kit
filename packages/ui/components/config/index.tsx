@@ -1,24 +1,18 @@
-import React, { type AnchorHTMLAttributes } from "react"
+import Link from "next/link";
 
 interface IBasicConfiguration {
     richTextFormatterFunction: (richText: any) => any;
     imageUrlFormatterFunction: (url: string) => string;
-    linkComponent: React.ComponentType<ILinkComponentProps>;
+    linkComponent: typeof Link;
+
 }
 
 interface IInitializationBasicConfiguration {
     richTextFormatterFunction?: (richText: any) => any;
     imageUrlFormatterFunction?: (url: string) => string;
-    linkComponent?: React.ComponentType<ILinkComponentProps>;
+    linkComponent?: typeof Link;
 }
 
-interface ILinkComponentProps extends React.PropsWithChildren {
-    linkProps: AnchorHTMLAttributes<HTMLAnchorElement>
-}
-
-const BasicLinkComponent: React.FC<ILinkComponentProps> = ({ children, linkProps }) => {
-    return <a {...linkProps}>{children}</a>
-}
 
 export const configurateUi = (config: IInitializationBasicConfiguration) => {
     basicUiConfig = { ...basicUiConfig, ...config }
@@ -27,7 +21,7 @@ export const configurateUi = (config: IInitializationBasicConfiguration) => {
 let basicUiConfig: IBasicConfiguration = {
     richTextFormatterFunction: (richText) => richText as React.ReactNode,
     imageUrlFormatterFunction: (imageUrl) => imageUrl,
-    linkComponent: BasicLinkComponent
+    linkComponent: Link
 }
 
 export const getUiConfig = () => {

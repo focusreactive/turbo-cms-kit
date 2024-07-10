@@ -3,6 +3,8 @@ import { cn } from "../../../utils";
 import { getUiConfig } from '../../config';
 
 export default function RichText({ className, richText }: IRichTextProps) {
+    const richTextData = getUiConfig().richTextFormatterFunction(richText)
+
     return (
         <div
             className={cn(
@@ -10,7 +12,7 @@ export default function RichText({ className, richText }: IRichTextProps) {
                 className,
             )}
         >
-            {getUiConfig().richTextFormatterFunction(richText)}
+            {richTextData}
         </div>
     );
 }

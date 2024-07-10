@@ -1,12 +1,12 @@
 import type { Config } from "tailwindcss"
 
 import sharedConfig from "../tailwind-config"
-import { shadcnPreset } from "../tailwind-config/lib/shadcn-preset"
+import { preset } from "../tailwind-config/lib/preset"
 
 const config = {
   ...sharedConfig,
   content: ["./*.{ts,tsx}"],
-  presets: [shadcnPreset],
+  presets: [preset],
 } satisfies Config
 
 export default config

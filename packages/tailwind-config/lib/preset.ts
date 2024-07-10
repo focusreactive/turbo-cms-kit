@@ -3,10 +3,10 @@ import type { Config } from "tailwindcss"
 // @ts-ignore
 import animatePlugin from "tailwindcss-animate"
 
-import { shadcnPlugin } from "./shadcn-plugin"
+import { customPlugin } from "./plugin"
 
-export const shadcnPreset = {
+export const preset = {
   content: [],
   darkMode: ["class"],
-  plugins: [animatePlugin, typographyPlugin, shadcnPlugin],
+  plugins: [animatePlugin, typographyPlugin, customPlugin],
 } satisfies Config
