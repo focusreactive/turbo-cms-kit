@@ -44,7 +44,6 @@ const Home = async ({ params, searchParams }: Props) => {
   ]);
 
   if (!story) {
-    console.log("redirect, story is missing [[...slug]]/page.tsx");
     notFound();
   }
 

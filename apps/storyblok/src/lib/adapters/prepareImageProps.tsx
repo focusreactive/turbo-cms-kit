@@ -23,11 +23,11 @@ export interface IImage extends SbBlokData {
     aspectRatio: ImageAspectRatio;
 }
 
-export const prepareImageProps = (props: IImage) => {
+export const prepareImageProps = (props: IImage): IImageProps => {
     return {
         src: props.asset.filename,
         alt: props.asset.alt,
         aspectRatio: props.aspectRatio,
         fill: true,
-    } as IImageProps;
+    };
 }

@@ -11,8 +11,6 @@ import { HeroSection } from "@shared/ui"
 const builder = imageUrlBuilder({ projectId, dataset })
 
 export default function Post({ post }: { post: SanityDocument }) {
-  console.log("post2222")
-  console.log(post)
   const { title, mainImage, body } = post
 
   return (
