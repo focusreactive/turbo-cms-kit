@@ -12,4 +12,5 @@ export interface LinkProps {
     text: string
     href: string
     variant?: LinkVariant
+    className?: string
 }

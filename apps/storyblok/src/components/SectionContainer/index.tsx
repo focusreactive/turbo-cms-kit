@@ -13,15 +13,19 @@ const SectionContainer: React.FunctionComponent<ISectionContainerProps> = (
 
     if (isDraftMode) {
         return (
-            <section className="px-2" {...storyblokEditable(blok)} id={id}>
-                {children}
+            <section className="" {...storyblokEditable(blok)} id={id}>
+                <div className="max-w-screen-xl px-4 py-8 mx-auto">
+                    {children}
+                </div>
             </section>
         );
     }
 
     return (
-        <section className="px-2" id={id}>
-            {children}
+        <section className="" id={id}>
+            <div className="max-w-screen-xl px-4 py-8 mx-auto">
+                {children}
+            </div>
         </section>
     );
 };

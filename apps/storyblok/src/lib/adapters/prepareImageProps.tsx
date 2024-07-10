@@ -29,5 +29,6 @@ export const prepareImageProps = (props: IImage): IImageProps => {
         alt: props.asset.alt,
         aspectRatio: props.aspectRatio,
         fill: true,
+        fit: 'cover'
     };
 }
