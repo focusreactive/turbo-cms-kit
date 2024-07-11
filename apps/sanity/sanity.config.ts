@@ -4,7 +4,7 @@ import { defineConfig } from 'sanity'
 import { structureTool } from 'sanity/structure'
 import schemas from "./src/lib/schemas"
 import StudioLogo from './src/components/StudioLogo'
-import config from './config'
+import config from 'config'
 
 export default defineConfig({
   basePath: config.sanity.studioUrl,

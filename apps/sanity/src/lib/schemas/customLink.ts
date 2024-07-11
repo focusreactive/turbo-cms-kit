@@ -37,7 +37,6 @@ export default defineType({
     defineField({
       name: 'target',
       type: 'string',
-      hidden: ({ parent }) => !parent.type ||parent?.type === 'internal',
       initialValue: '_self',
       options: {
         list: [

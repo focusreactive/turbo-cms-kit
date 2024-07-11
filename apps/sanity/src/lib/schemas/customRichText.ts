@@ -1,4 +1,5 @@
 import { defineField, defineType } from 'sanity'
+import customImage from './customImage'
 
 export default defineType({
   name: 'customRichText',
@@ -12,7 +13,11 @@ export default defineType({
     defineField({
         name: 'text',
         type: 'array',
-        of: [{ type: 'block' }],
+        of: [{ type: 'block' }, {
+          
+            type: customImage.name
+          
+        }],
       }),
     defineField({
         name: "removeInnerMargins",

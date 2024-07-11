@@ -1,42 +1,21 @@
-// import {HeroSection} from '@shared/ui'
-import {PortableText} from '@portabletext/react'
+import { HeroSection } from '@shared/ui'
+import { prepareImageProps } from "@/lib/adapters/prepareImageProps";
+import { prepareRichTextProps } from "@/lib/adapters/prepareRichTextProps";
+import { prepareLinkProps } from "@/lib/adapters/prepareLinkProps";
+import SectionContainer from '@/components/SectionContainer';
+import type { IHeroProps } from './types';
 
-const myPortableTextComponents = {
-  types: {
-    image: ({value}: any) => <img src={value.imageUrl} />,
-    callToAction: ({value, isInline}: any) =>
-      isInline ? (
-        <a href={value.url}>{value.text}</a>
-      ) : (
-        <div className="callToAction">{value.text}</div>
-      ),
-  },
 
-  marks: {
-    link: ({children, value}: any) => {
-      const rel = !value.href.startsWith('/') ? 'noreferrer noopener' : undefined
-      return (
-        <a href={value.href} rel={rel}>
-          {children}
-        </a>
-      )
-    },
-  },
-}
-
-export default function Hero(props: any) {
-  console.log('props111');
-  console.log(props.text.text);
+export default function Hero({ data }: IHeroProps) {
+  const { text, image, links, _key } = data;
 
   return (
-    <div className="bg-yellow-500">
-        wdwdwdwdwdwdw
-
-        <PortableText value={props.text.text} components={myPortableTextComponents} />
-      {/* <HeroSection links={[]} richText={{
-        richText: 'wdwd'
-      }} image={{}} /> */}
-      
-    </div>
+    <SectionContainer id={_key}>
+        <HeroSection
+        richText={prepareRichTextProps(text)}
+        image={prepareImageProps(image)}
+        links={links.map(prepareLinkProps)}
+      />
+    </SectionContainer>
   )
 }

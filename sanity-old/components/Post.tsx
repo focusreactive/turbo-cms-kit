@@ -4,6 +4,8 @@ import Image from "next/image"
 import { dataset, projectId } from "@/sanity/env"
 import { PortableText } from "@portabletext/react"
 import imageUrlBuilder from "@sanity/image-url"
+const builder = imageUrlBuilder({ projectId, dataset })
+
 import type { SanityDocument } from "next-sanity"
 
 // import { HeroSection } from "@shared/ui"

@@ -17,5 +17,5 @@ export function SectionRenderer(props: { section: any }) {
     return null
   }
 
-  return <Section {...props.section} />
+  return <Section data={props.section} />
 }
