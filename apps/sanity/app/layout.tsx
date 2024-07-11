@@ -1,20 +1,20 @@
-// ./app/layout.tsx
+import 'tailwindcss/tailwind.css'
 
-import { draftMode } from "next/headers";
-import "./globals.css";
-import LiveVisualEditing from "@/components/LiveVisualEditing";
+import { Inter } from 'next/font/google'
 
-export default function RootLayout({
+const sans = Inter({
+  variable: '--font-sans',
+  subsets: ['latin'],
+})
+
+export default async function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className="bg-white">
-        {children}
-        {draftMode().isEnabled && <LiveVisualEditing />}
-      </body>
+    <html lang="en" className={sans.variable}>
+      <body>{children}</body>
     </html>
-  );
+  )
 }
