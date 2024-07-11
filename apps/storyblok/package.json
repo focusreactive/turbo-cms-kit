@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@shared/ui": "workspace:*",
-    "@storyblok/react": "^3.0.8",
+    "@storyblok/react": "^3.0.10",
     "next": "^14.1.0",
     "react": "^18",
     "react-dom": "^18",
