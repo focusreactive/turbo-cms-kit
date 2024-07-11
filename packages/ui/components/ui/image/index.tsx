@@ -2,8 +2,6 @@ import BasicNextImage from "next/image";
 import React from "react";
 import type { IImageProps } from "./types";
 
-
-
 const BasicImage: React.FC<IImageProps> = ({ aspectRatio, fit, ...props }) => {
     if (aspectRatio) {
         return (

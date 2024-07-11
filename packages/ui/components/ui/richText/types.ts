@@ -2,6 +2,6 @@ import type { ReactNode } from "react";
 
 export interface IRichTextProps {
     richText: ReactNode | ReactNode[];
-    disableInnerMargins?: boolean;
+    removeInnerMargins?: boolean;
     className?: string;
 }

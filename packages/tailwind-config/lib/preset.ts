@@ -1,6 +1,5 @@
 import typographyPlugin from "@tailwindcss/typography"
 import type { Config } from "tailwindcss"
-// @ts-ignore
 import animatePlugin from "tailwindcss-animate"
 
 import { customPlugin } from "./plugin"

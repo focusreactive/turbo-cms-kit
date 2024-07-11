@@ -1,38 +1,39 @@
 {
-  "name": "sanity",
+  "name": "sanity-old",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --port=3000",
+    "dev": "next dev --port=3333",
     "build": "next build",
-    "lint": "next lint",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@portabletext/react": "^3.1.0",
     "@sanity/client": "^6.20.1",
-    "@sanity/preview-url-secret": "^1.6.17",
+    "@sanity/image-url": "^1.0.2",
+    "@sanity/overlays": "^2.3.15",
+    "@sanity/react-loader": "^1.8.3",
     "@sanity/vision": "^3.48.1",
     "@shared/ui": "workspace:*",
-    "@tailwindcss/typography": "^0.5.10",
-    "@tinloof/sanity-studio": "^1.3.2",
     "next": "^14.1.0",
     "next-sanity": "^9.4.2",
     "react": "^18",
     "react-dom": "^18",
-    "sanity": "^3.48.1",
-    "server-only": "0.0.1"
+    "sanity": "^3.28.0",
+    "styled-components": "^6.1.8"
   },
   "devDependencies": {
     "@shared/eslint-config": "workspace:*",
     "@shared/tailwind-config": "workspace:*",
     "@shared/ts-config": "workspace:*",
+    "@tailwindcss/typography": "^0.5.10",
+    "@types/node": "^20",
     "@types/react": "^18",
+    "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
     "postcss": "^8",
-    "prettier": "^3.2.5",
     "tailwindcss": "^3.4.3",
     "typescript": "5.4.5"
   }
