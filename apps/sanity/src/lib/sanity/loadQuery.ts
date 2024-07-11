@@ -31,7 +31,7 @@ export async function loadQuery<QueryResponse>({
     filterResponse: false,
     useCdn: false,
     resultSourceMap: isDraftMode ? 'withKeyArraySelector' : false,
-    token: isDraftMode ? token : undefined,
+    token,
     perspective,
     next: {
       tags: ['sanity'],
