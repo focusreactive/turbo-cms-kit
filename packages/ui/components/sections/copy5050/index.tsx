@@ -1,25 +1,26 @@
-import type { ICopy5050Props } from "./types";
-import RichText from "../../ui/richText";
 import React from "react";
+
 import { cn } from "../../../utils";
+import RichText from "../../ui/richText";
+import type { ICopy5050Props } from "./types";
 
 export const Copy5050: React.FC<ICopy5050Props> = (props) => {
-    const { columns, isReversedOnMobile } = props;
+  const { columns, isReversedOnMobile } = props;
 
-    return (
+  return (
+    <div
+      className={cn("flex flex-col items-center gap-6 lg:flex-row", {
+        "flex-col-reverse": isReversedOnMobile,
+      })}
+    >
+      {columns.map((text, index) => (
         <div
-            className={cn("flex flex-col items-center gap-6 lg:flex-row", {
-                "flex-col-reverse": isReversedOnMobile,
-            })}
+          key={index}
+          className="w-full overflow-hidden rounded-lg lg:basis-1/2"
         >
-            {columns.map((text, index) => (
-                <div
-                    key={index}
-                    className="w-full overflow-hidden rounded-lg lg:basis-1/2"
-                >
-                    <RichText {...text} />
-                </div>
-            ))}
+          <RichText {...text} />
         </div>
-    );
-}
+      ))}
+    </div>
+  );
+};

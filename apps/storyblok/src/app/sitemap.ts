@@ -1,6 +1,7 @@
 import { type MetadataRoute } from "next";
-import { fetchStoriesByParams } from "@/lib/api";
 import type { ISbStoriesParams } from "@storyblok/react/rsc";
+
+import { fetchStoriesByParams } from "@/lib/api";
 
 const isDraftModeEnv = process.env.NEXT_PUBLIC_IS_PREVIEW === "true";
 const storiesPerPageSize = 100;

@@ -1,11 +1,10 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
 const config = {
   content: [
-    "./app/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
     "../../packages/ui/components/**/*.{ts,tsx}",
   ],
-} satisfies Config
+} satisfies Config;
 
-export default config
+export default config;

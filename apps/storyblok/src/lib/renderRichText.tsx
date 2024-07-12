@@ -1,7 +1,8 @@
-import { render } from "storyblok-rich-text-react-renderer";
-import type { ISbRichtext } from "@storyblok/react/rsc";
 import BasicImage from "@shared/ui/components/ui/image";
-import { type IImage, prepareImageProps } from "./adapters/prepareImageProps";
+import type { ISbRichtext } from "@storyblok/react/rsc";
+import { render } from "storyblok-rich-text-react-renderer";
+
+import { prepareImageProps, type IImage } from "./adapters/prepareImageProps";
 
 export default function renderRichText(data: ISbRichtext) {
   return render(data, {
@@ -18,7 +19,7 @@ export default function renderRichText(data: ISbRichtext) {
           >
             <BasicImage
               {...prepareImageProps({
-                ...props as IImage
+                ...(props as IImage),
               })}
             />
           </div>

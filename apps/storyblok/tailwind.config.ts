@@ -1,14 +1,10 @@
-import { preset } from "@shared/tailwind-config/lib/preset"
-import type { Config } from "tailwindcss"
+import sharedConfig from "@shared/tailwind-config";
+import { preset } from "@shared/tailwind-config/lib/preset";
+import type { Config } from "tailwindcss";
 
 const config = {
-  content: [
-    "./src/**/*.{ts,tsx}",
-    "../../packages/ui/**/*.{ts,tsx}",
-    "../../packages/ui/components/**/*.{ts,tsx}",
-  ],
+  ...sharedConfig,
   presets: [preset],
-  plugins: [require("@tailwindcss/typography")], // should be in ui package
-} satisfies Config
+} satisfies Config;
 
-export default config
+export default config;
