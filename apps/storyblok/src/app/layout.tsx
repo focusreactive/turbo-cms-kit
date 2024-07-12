@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { storyblokInit, apiPlugin } from "@storyblok/react/rsc";
+import { apiPlugin, storyblokInit } from "@storyblok/react/rsc";
 
 import "./globals.css";
 

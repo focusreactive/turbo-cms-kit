@@ -1,4 +1,5 @@
 import type { IRichTextProps } from "@shared/ui/components/ui/richText/types";
+
 import renderRichText from "../renderRichText";
 
 export interface IRichText {

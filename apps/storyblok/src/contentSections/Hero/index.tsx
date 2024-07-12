@@ -1,10 +1,13 @@
-import { HeroSection } from "@shared/ui";
 import type React from "react";
-import { type IHeroProps } from "./types";
-import SectionContainer from "@/components/SectionContainer";
+
+import { HeroSection } from "@shared/ui";
+
 import { prepareImageProps } from "@/lib/adapters/prepareImageProps";
-import { prepareRichTextProps } from "@/lib/adapters/prepareRichTextProps";
 import { prepareLinkProps } from "@/lib/adapters/prepareLinkProps";
+import { prepareRichTextProps } from "@/lib/adapters/prepareRichTextProps";
+import SectionContainer from "@/components/SectionContainer";
+
+import { type IHeroProps } from "./types";
 
 const Hero: React.FunctionComponent<IHeroProps> = ({ blok }) => {
   return (

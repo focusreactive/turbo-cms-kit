@@ -1,8 +1,9 @@
-import imageUrlBuilder from "@sanity/image-url"
+import imageUrlBuilder from "@sanity/image-url";
 import type {
   IImageProps,
   ImageAspectRatio,
 } from "@shared/ui/components/ui/image/types";
+
 import { client } from "@/lib/sanity/client";
 
 interface ISanityImage {
@@ -20,18 +21,19 @@ export interface IImage {
   height: number;
 }
 
-const builder = imageUrlBuilder(client)
+const builder = imageUrlBuilder(client);
 
 export const urlForImage = (source: ISanityImage | undefined) => {
   if (!source?.asset?._ref) {
-    return undefined
+    return undefined;
   }
 
-  return builder.image(source).auto('format').fit('max')
-}
+  return builder.image(source).auto("format").fit("max");
+};
 
 export const prepareImageProps = (props: IImage): IImageProps => {
-  const url = urlForImage(props.image)?.height(props.height).fit('crop').url() || ''
+  const url =
+    urlForImage(props.image)?.height(props.height).fit("crop").url() || "";
 
   return {
     src: url,

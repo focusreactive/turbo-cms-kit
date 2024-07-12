@@ -1,8 +1,8 @@
 export interface ICopyProps {
-    data: ICopy;
+  data: ICopy;
 }
 
 export interface ICopy {
-    _key: string;
-    text: any
+  _key: string;
+  text: any;
 }

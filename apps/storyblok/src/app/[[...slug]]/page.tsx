@@ -1,8 +1,14 @@
 import { type Metadata } from "next";
-import { StoryblokStory } from "@storyblok/react/rsc";
-import StoryblokProvider from "@/components/StoryblokProvider";
 import { notFound } from "next/navigation";
-import { fetchStoryBySlug, fetchAllPages, checkDraftModeToken, getMetaData } from "@/lib/api";
+import { StoryblokStory } from "@storyblok/react/rsc";
+
+import {
+  checkDraftModeToken,
+  fetchAllPages,
+  fetchStoryBySlug,
+  getMetaData,
+} from "@/lib/api";
+import StoryblokProvider from "@/components/StoryblokProvider";
 
 const isDraftModeEnv = process.env.NEXT_PUBLIC_IS_PREVIEW === "true";
 export const dynamic = isDraftModeEnv ? "force-dynamic" : "force-static";
@@ -15,7 +21,6 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return await getMetaData(params.slug);
 }
-
 
 export async function generateStaticParams() {
   if (isDraftModeEnv) return [];

@@ -1,15 +1,15 @@
 export interface PageProps {
-  data: IPageContainerProps | null
+  data: IPageContainerProps | null;
 }
 
 export interface IPageContainer {
-  _id: string
-  _type: string
-  pathname: string
-  title?: string
-  sectionsBody?: any[]
+  _id: string;
+  _type: string;
+  pathname: string;
+  title?: string;
+  sectionsBody?: any[];
 }
 
 export interface IPageContainerProps {
-  data: IPageContainer  | null;
+  data: IPageContainer | null;
 }

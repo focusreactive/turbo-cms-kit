@@ -1,17 +1,21 @@
 // ./app/page.tsx
 
-import { type SanityDocument } from "next-sanity";
-import { draftMode } from "next/headers";
+import { draftMode } from "next/headers"
+import { POSTS_QUERY } from "@/sanity/lib/queries"
+import { loadQuery } from "@/sanity/lib/store"
+import { type SanityDocument } from "next-sanity"
 
-import Posts from "@/components/Posts";
-import PostsPreview from "@/components/PostsPreview";
-import { loadQuery } from "@/sanity/lib/store";
-import { POSTS_QUERY } from "@/sanity/lib/queries";
+import Posts from "@/components/Posts"
+import PostsPreview from "@/components/PostsPreview"
 
 export default async function Page() {
-  const initial = await loadQuery<SanityDocument[]>(POSTS_QUERY, {}, {
-    perspective: draftMode().isEnabled ? "previewDrafts" : "published",
-  });
+  const initial = await loadQuery<SanityDocument[]>(
+    POSTS_QUERY,
+    {},
+    {
+      perspective: draftMode().isEnabled ? "previewDrafts" : "published",
+    },
+  )
 
   return draftMode().isEnabled ? (
     <PostsPreview initial={initial} />

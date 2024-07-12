@@ -1,13 +1,13 @@
-import config from 'config'
-import { type ClientPerspective, createClient } from '@sanity/client'
+import { createClient, type ClientPerspective } from "@sanity/client";
+import config from "config";
 
 const clientConfig = {
   projectId: config.sanity.projectId,
   dataset: config.sanity.dataset,
   apiVersion: config.sanity.apiVersion,
-  useCdn: process.env.NODE_ENV === 'production',
-  perspective: 'published' as ClientPerspective,
-}
+  useCdn: process.env.NODE_ENV === "production",
+  perspective: "published" as ClientPerspective,
+};
 
 export const client = createClient({
   ...clientConfig,
@@ -15,4 +15,4 @@ export const client = createClient({
     studioUrl: config.sanity.studioUrl,
     // logger: console,
   },
-})
+});

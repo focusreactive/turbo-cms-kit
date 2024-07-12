@@ -4,10 +4,10 @@ export default function StudioLogo() {
       src="/logo.jpg"
       alt="FocusReactive Logo"
       style={{
-        width: '100%',
-        height: '100%',
-        objectFit: 'contain',
+        width: "100%",
+        height: "100%",
+        objectFit: "contain",
       }}
     />
-  )
+  );
 }

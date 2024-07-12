@@ -1,13 +1,15 @@
 // ./app/layout.tsx
 
-import { draftMode } from "next/headers";
-import "./globals.css";
-import LiveVisualEditing from "@/components/LiveVisualEditing";
+import { draftMode } from "next/headers"
+
+import "./globals.css"
+
+import LiveVisualEditing from "@/components/LiveVisualEditing"
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <html lang="en">
@@ -16,5 +18,5 @@ export default function RootLayout({
         {draftMode().isEnabled && <LiveVisualEditing />}
       </body>
     </html>
-  );
+  )
 }

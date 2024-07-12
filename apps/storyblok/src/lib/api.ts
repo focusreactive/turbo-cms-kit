@@ -1,13 +1,9 @@
-import {
-  type ISbStoriesParams,
-  type ISbStoryData,
-} from "@storyblok/react/rsc";
 import type { Metadata } from "next";
 import type { OpenGraph } from "next/dist/lib/metadata/types/opengraph-types";
+import { type ISbStoriesParams, type ISbStoryData } from "@storyblok/react/rsc";
 
 const API_GATE = process.env.NEXT_PUBLIC_API_GATE;
 const isDraftModeEnv = process.env.NEXT_PUBLIC_IS_PREVIEW === "true";
-
 
 // Get the actual SB cache version
 export const getSBcacheCVparameter = async (isDraftMode: boolean) => {
@@ -27,8 +23,8 @@ export const getSBcacheCVparameter = async (isDraftMode: boolean) => {
         tags: ["sb-cache-version"],
         ...(isDraftMode
           ? {
-            revalidate: 0,
-          }
+              revalidate: 0,
+            }
           : {}),
       },
     },
@@ -44,7 +40,6 @@ export async function fetchStoryBySlug(
   slug: string[] = ["home"],
   params?: { cv?: number; resolve_relations?: string },
 ): Promise<{ story: ISbStoryData }> {
-
   const cv = await getSBcacheCVparameter(isDraftMode);
 
   const contentVersion = isDraftMode ? "draft" : "published";
@@ -61,8 +56,7 @@ export async function fetchStoryBySlug(
   );
 
   const { story } = await fetch(
-    `${API_GATE}/stories/${slug?.join("/") || ""
-    }?${searchParams.toString()}`,
+    `${API_GATE}/stories/${slug?.join("/") || ""}?${searchParams.toString()}`,
   ).then((res) => res.json());
 
   return {
@@ -183,7 +177,7 @@ export async function getMetaData(slug?: string[]): Promise<Metadata> {
       : "",
   };
 
-  const storyFullSlug = story.full_slug === 'home' ? '' : story.full_slug;
+  const storyFullSlug = story.full_slug === "home" ? "" : story.full_slug;
 
   const canonical = new URL(
     `${process.env.NEXT_PUBLIC_DOMAIN as string}/${storyFullSlug}`,

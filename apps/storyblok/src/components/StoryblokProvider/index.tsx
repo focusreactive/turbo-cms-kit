@@ -1,8 +1,11 @@
 "use client";
-import { storyblokInit, apiPlugin } from "@storyblok/react/rsc";
+
 import type React from "react";
-import { type IStoryblokProviderProps } from "./types";
+import { apiPlugin, storyblokInit } from "@storyblok/react/rsc";
+
 import { COMPONENTS } from "@/constants/sbComponents";
+
+import { type IStoryblokProviderProps } from "./types";
 
 storyblokInit({
   accessToken: process.env.storyblokApiToken,

@@ -1,33 +1,36 @@
-import type { LinkProps, LinkVariant } from "@shared/ui/components/ui/link/types"
+import type {
+  LinkProps,
+  LinkVariant,
+} from "@shared/ui/components/ui/link/types";
 
 interface ISanityReference {
-    _ref: string;
-    _type: string;
+  _ref: string;
+  _type: string;
 }
 
 export interface ILink {
-    text: string;
-    type: 'url' | 'internal'
-    _key: string;
-    variant?: LinkVariant;
-    url?: ISanityReference;
-    href?: string;
-    target?: string;
+  text: string;
+  type: "url" | "internal";
+  _key: string;
+  variant?: LinkVariant;
+  url?: ISanityReference;
+  href?: string;
+  target?: string;
 }
 
 export const prepareLinkProps = (props: ILink): LinkProps => {
-    let href = '';
-    if(props.type === 'url') {
-        href = props.href as string
-    }
+  let href = "";
+  if (props.type === "url") {
+    href = props.href as string;
+  }
 
-    if(props.type === 'internal') {
-        href = '' // todo: get slug by reference
-    }
+  if (props.type === "internal") {
+    href = ""; // todo: get slug by reference
+  }
 
-    return {
-        text: props.text,
-        href: href,
-        variant: props.variant,
-    };
-}
+  return {
+    text: props.text,
+    href: href,
+    variant: props.variant,
+  };
+};

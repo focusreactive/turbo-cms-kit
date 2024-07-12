@@ -1,9 +1,8 @@
 import { type SbBlokData } from "@storyblok/react/rsc";
 
-interface ISectionContainer extends SbBlokData {
-}
+interface ISectionContainer extends SbBlokData {}
 
 export interface ISectionContainerProps {
-    children: React.ReactNode[] | React.ReactNode;
-    blok: ISectionContainer;
+  children: React.ReactNode[] | React.ReactNode;
+  blok: ISectionContainer;
 }

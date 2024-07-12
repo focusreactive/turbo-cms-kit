@@ -1,13 +1,13 @@
 // ./app/[slug]/page.tsx
 
-import { type QueryParams, type SanityDocument } from "next-sanity";
-import { draftMode } from "next/headers";
+import { draftMode } from "next/headers"
+import { client } from "@/sanity/lib/client"
+import { POST_QUERY, POSTS_QUERY } from "@/sanity/lib/queries"
+import { loadQuery } from "@/sanity/lib/store"
+import { type QueryParams, type SanityDocument } from "next-sanity"
 
-import { loadQuery } from "@/sanity/lib/store";
-import { POSTS_QUERY, POST_QUERY } from "@/sanity/lib/queries";
-import Post from "@/components/Post";
-import PostPreview from "@/components/PostPreview";
-import { client } from "@/sanity/lib/client";
+import Post from "@/components/Post"
+import PostPreview from "@/components/PostPreview"
 
 export async function generateStaticParams() {
   const posts = await client.fetch<SanityDocument[]>(POSTS_QUERY)
@@ -22,11 +22,11 @@ export default async function Page({ params }: { params: QueryParams }) {
     // Because of Next.js, RSC and Dynamic Routes this currently
     // cannot be set on the loadQuery function at the "top level"
     perspective: draftMode().isEnabled ? "previewDrafts" : "published",
-  });
+  })
 
   return draftMode().isEnabled ? (
     <PostPreview initial={initial} params={params} />
   ) : (
     <Post post={initial.data} />
-  );
+  )
 }

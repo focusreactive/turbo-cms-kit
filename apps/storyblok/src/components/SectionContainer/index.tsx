@@ -1,6 +1,7 @@
 "use client";
 
 import { storyblokEditable } from "@storyblok/react/rsc";
+
 import { type ISectionContainerProps } from "./types";
 
 const isDraftMode = process.env.NEXT_PUBLIC_IS_PREVIEW === "true";

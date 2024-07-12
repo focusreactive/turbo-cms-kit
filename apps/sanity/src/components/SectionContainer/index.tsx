@@ -1,8 +1,6 @@
 import type { ISectionContainerProps } from "./types";
 
-export default function SectionContainer(
-  props: ISectionContainerProps
-) {
+export default function SectionContainer(props: ISectionContainerProps) {
   const { children, id } = props;
 
   return (
@@ -10,4 +8,4 @@ export default function SectionContainer(
       <div className="mx-auto max-w-screen-xl px-4 py-8">{children}</div>
     </section>
   );
-};
+}

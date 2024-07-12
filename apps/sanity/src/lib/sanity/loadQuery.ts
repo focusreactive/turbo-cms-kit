@@ -1,46 +1,46 @@
-import 'server-only'
-import type { QueryParams } from 'next-sanity'
-import type { UnfilteredResponseQueryOptions } from '@sanity/client'
+import "server-only";
 
-import { draftMode } from 'next/headers'
+import { draftMode } from "next/headers";
+import type { UnfilteredResponseQueryOptions } from "@sanity/client";
+import config from "config";
+import type { QueryParams } from "next-sanity";
 
-import { client } from '@/lib/sanity/client'
-import config from 'config'
+import { client } from "@/lib/sanity/client";
 
-const DEFAULT_PARAMS = {} as QueryParams
+const DEFAULT_PARAMS = {} as QueryParams;
 
 export async function loadQuery<QueryResponse>({
   query,
   params = DEFAULT_PARAMS,
 }: {
-  query: string
-  params?: QueryParams
+  query: string;
+  params?: QueryParams;
 }): Promise<QueryResponse> {
-  const isDraftMode = draftMode().isEnabled
-  const token = config.sanity.token
+  const isDraftMode = draftMode().isEnabled;
+  const token = config.sanity.token;
 
   if (isDraftMode && !token) {
     throw new Error(
-      'The `SANITY_API_READ_TOKEN` environment variable is required in Draft Mode.',
-    )
+      "The `SANITY_API_READ_TOKEN` environment variable is required in Draft Mode.",
+    );
   }
 
-  const perspective = isDraftMode ? 'previewDrafts' : 'published'
+  const perspective = isDraftMode ? "previewDrafts" : "published";
 
   const options = {
     filterResponse: false,
     useCdn: false,
-    resultSourceMap: isDraftMode ? 'withKeyArraySelector' : false,
+    resultSourceMap: isDraftMode ? "withKeyArraySelector" : false,
     token,
     perspective,
     next: {
-      tags: ['sanity'],
+      tags: ["sanity"],
       revalidate: isDraftMode ? 0 : undefined,
     },
-  } satisfies UnfilteredResponseQueryOptions
+  } satisfies UnfilteredResponseQueryOptions;
   const result = await client.fetch<QueryResponse>(query, params, {
     ...options,
     stega: isDraftMode,
-  } as UnfilteredResponseQueryOptions)
-  return result.result
+  } as UnfilteredResponseQueryOptions);
+  return result.result;
 }

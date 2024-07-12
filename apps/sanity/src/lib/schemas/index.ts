@@ -1,9 +1,12 @@
-import page from './page'
-import { sections } from './contentSections'
-import customImage from './customImage'
-import customLink from './customLink'
-import customRichText from './customRichText'
+// prettier-ignore
+import page from './page';
+// prettier-ignore
+import { sections } from './contentSections';
 
-const schemas = [page, customImage, customLink, customRichText,  ...sections]
+import customImage from "./customImage";
+import customLink from "./customLink";
+import customRichText from "./customRichText";
 
-export default schemas
+const schemas = [page, customImage, customLink, customRichText, ...sections];
+
+export default schemas;

@@ -1,10 +1,11 @@
-import { visionTool } from '@sanity/vision'
-import { pages } from '@tinloof/sanity-studio'
-import { defineConfig } from 'sanity'
-import { structureTool } from 'sanity/structure'
-import schemas from "./src/lib/schemas"
-import StudioLogo from './src/components/StudioLogo'
-import config from 'config'
+import { visionTool } from "@sanity/vision";
+import { pages } from "@tinloof/sanity-studio";
+import config from "config";
+import { defineConfig } from "sanity";
+import { structureTool } from "sanity/structure";
+
+import StudioLogo from "./src/components/StudioLogo";
+import schemas from "./src/lib/schemas";
 
 export default defineConfig({
   basePath: config.sanity.studioUrl,
@@ -19,12 +20,12 @@ export default defineConfig({
     pages({
       previewUrl: {
         previewMode: {
-          enable: '/api/draft',
+          enable: "/api/draft",
         },
       },
-      creatablePages: ['page'],
+      creatablePages: ["page"],
     }),
     structureTool(),
     visionTool({ defaultApiVersion: config.sanity.apiVersion }),
   ],
-})
+});
