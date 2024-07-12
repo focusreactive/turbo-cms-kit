@@ -5,7 +5,11 @@ export interface PageProps {
 export interface IPageContainer {
   _id: string;
   _type: string;
-  pathname: string;
+  _createdAt: string;
+  pathname: {
+    current: string;
+    _type: string;
+  };
   title?: string;
   sectionsBody?: any[];
 }
