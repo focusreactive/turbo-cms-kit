@@ -1,11 +1,6 @@
 import { LinkVariant } from "@shared/ui/components/ui/link/types";
 import { defineField, defineType } from "sanity";
 
-import page from "./page";
-
-console.log("page222");
-console.log(page);
-
 export default defineType({
   name: "customLink",
   title: "Link",
