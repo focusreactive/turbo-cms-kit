@@ -7,7 +7,14 @@ export default defineSection({
   name: "section.copy5050",
   title: "Copy 50/50",
   type: "object",
-  groups: [{ name: "style", title: "Style" }],
+  groups: [
+    {
+      name: "content",
+      title: "Content",
+      default: true,
+    },
+    { name: "style", title: "Style" },
+  ],
   options: {
     variants: [
       {
@@ -19,6 +26,7 @@ export default defineSection({
     defineField({
       name: "columns",
       type: "array",
+      group: "content",
       of: [{ type: customRichText.name }],
       validation: (Rule) => Rule.required().min(1).max(2),
     }),

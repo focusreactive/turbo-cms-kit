@@ -7,11 +7,19 @@ export default defineType({
   title: "RichText",
   type: "object",
 
-  groups: [{ name: "style", title: "Style" }],
+  groups: [
+    {
+      name: "content",
+      title: "Content",
+      default: true,
+    },
+    { name: "style", title: "Style" },
+  ],
   fields: [
     defineField({
       name: "text",
       type: "array",
+      group: "content",
       of: [
         { type: "block" },
         {

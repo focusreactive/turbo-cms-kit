@@ -5,6 +5,10 @@ export default defineType({
   name: "customLink",
   title: "Link",
   type: "object",
+  groups: [
+    { name: "style", title: "Style", default: true },
+    { name: "content", title: "Content" },
+  ],
   fields: [
     defineField({
       name: "text",
@@ -12,6 +16,7 @@ export default defineType({
     }),
 
     defineField({
+      group: "content",
       name: "type",
       type: "string",
       title: "Link Type",
@@ -24,11 +29,13 @@ export default defineType({
       },
     }),
     defineField({
+      group: "content",
       name: "href",
       type: "string",
       hidden: ({ parent }) => !parent.type || parent?.type === "internal",
     }),
     defineField({
+      group: "content",
       name: "target",
       type: "string",
       initialValue: "_self",
@@ -43,6 +50,7 @@ export default defineType({
     }),
 
     defineField({
+      group: "content",
       name: "url",
       type: "reference",
       to: [{ type: "page" }], // todo: change to page.name
@@ -50,8 +58,10 @@ export default defineType({
     }),
 
     defineField({
+      group: "style",
       name: "variant",
       type: "string",
+
       initialValue: LinkVariant.Primary,
       options: {
         list: Object.values(LinkVariant).map((variant) => ({

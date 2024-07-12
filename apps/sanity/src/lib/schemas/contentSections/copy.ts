@@ -7,6 +7,13 @@ export default defineSection({
   name: "section.copy",
   title: "Copy",
   type: "object",
+  groups: [
+    {
+      name: "content",
+      title: "Content",
+      default: true,
+    },
+  ],
   options: {
     variants: [
       {
@@ -18,6 +25,7 @@ export default defineSection({
     defineField({
       name: "text",
       type: customRichText.name,
+      group: "content",
     }),
   ],
   preview: {

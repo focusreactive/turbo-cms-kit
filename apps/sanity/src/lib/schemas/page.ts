@@ -6,11 +6,19 @@ import { sections } from "./contentSections";
 export default defineType({
   type: "document",
   name: "page",
-  groups: [{ name: "seo", title: "SEO" }],
+  groups: [
+    {
+      name: "content",
+      title: "Content",
+      default: true,
+    },
+    { name: "seo", title: "SEO" },
+  ],
   fields: [
     defineField({
       type: "string",
       name: "title",
+      group: "content",
     }),
 
     definePathname({ name: "pathname" }),
@@ -18,6 +26,8 @@ export default defineType({
       name: "sectionsBody",
       title: "Sections",
       type: "array",
+      group: "content",
+
       of: sections.map((section) => ({
         type: section.name,
       })),

@@ -9,7 +9,10 @@ export default defineSection({
   name: "section.cta",
   title: "CTA",
   type: "object",
-  groups: [{ name: "style", title: "Style" }],
+  groups: [
+    { name: "content", title: "Content", default: true },
+    { name: "style", title: "Style" },
+  ],
   options: {
     variants: [
       {
@@ -21,18 +24,20 @@ export default defineSection({
     defineField({
       name: "text",
       type: customRichText.name,
+      group: "content",
     }),
 
     defineField({
       name: "links",
+      group: "content",
       type: "array",
       of: [{ type: customLink.name }],
     }),
 
     defineField({
+      group: "style",
       name: "variant",
       type: "string",
-      group: "style",
       initialValue: CtaVariant.Default,
       options: {
         // todo: should this field be part of the section or rich text implementation?
