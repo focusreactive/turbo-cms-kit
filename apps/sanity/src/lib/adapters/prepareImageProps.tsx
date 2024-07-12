@@ -17,6 +17,7 @@ interface ISanityImage {
 export interface IImage {
   image: ISanityImage;
   aspectRatio: ImageAspectRatio;
+  height: number;
 }
 
 const builder = imageUrlBuilder(client)
@@ -30,12 +31,8 @@ export const urlForImage = (source: ISanityImage | undefined) => {
 }
 
 export const prepareImageProps = (props: IImage): IImageProps => {
-  const url = urlForImage(props.image)?.height(600).fit('crop').url() || ''
+  const url = urlForImage(props.image)?.height(props.height).fit('crop').url() || ''
 
-
-  console.log('props.aspectRatio');
-  console.log(props.aspectRatio);
-  
   return {
     src: url,
     alt: props.image.alt,

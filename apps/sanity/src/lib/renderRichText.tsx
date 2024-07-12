@@ -18,6 +18,7 @@ const COMPONENTS = {
     className="relative mx-auto"
     style={{
       aspectRatio: ImageAspectRatio[value.aspectRatio],
+      height: value.height
     }}
   >
     <BasicImage

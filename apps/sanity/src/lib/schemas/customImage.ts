@@ -19,6 +19,10 @@ export default defineType({
         ],
       }),
     defineField({
+        name: "height",
+        type: 'number',
+      }),
+    defineField({
         name: "aspectRatio",
         type: "string",
         options: {

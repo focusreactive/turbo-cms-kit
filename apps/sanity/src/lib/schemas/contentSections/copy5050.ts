@@ -32,7 +32,7 @@ export default defineSection({
   ],
   preview: {
     select: {
-      text: 'columns[0]?.text'
+      text: 'columns.0.text'
     },
     prepare(value) {
       const block = (value.text || []).find((block: { _type: string }) => block._type === 'block')

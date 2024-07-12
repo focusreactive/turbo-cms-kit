@@ -25,4 +25,29 @@ export default defineType({
         group: "style",
       }),
   ],
+  preview: {
+    select: {
+      text: 'customRichText.text'
+    },
+    prepare(value) {
+      const block = (value.text || []).find((block: { _type: string }) => block._type === 'block')
+      const image = (value.text || []).find((block: { _type: string }) => block._type === 'customImage')
+
+      if (image) {
+        return {
+          title: image.alt,
+          media: image?.image
+        }
+      }
+
+      return {
+        title: block
+          ? block.children
+            .filter((child: { _type: string }) => child._type === 'span')
+            .map((span: { text: any }) => span.text)
+            .join('')
+          : 'No text'
+      }
+    }
+  },
 })
