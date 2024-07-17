@@ -10,10 +10,12 @@ export default function Cta({ data }: ICopy5050Props) {
 
   return (
     <SectionContainer id={_key}>
-      <Copy5050
-        columns={columns.map(prepareRichTextProps)}
-        isReversedOnMobile={isReversedOnMobile}
-      />
+      {columns && (
+        <Copy5050
+          columns={columns.map(prepareRichTextProps)}
+          isReversedOnMobile={isReversedOnMobile}
+        />
+      )}
     </SectionContainer>
   );
 }

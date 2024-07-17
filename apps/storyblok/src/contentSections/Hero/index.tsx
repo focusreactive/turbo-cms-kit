@@ -9,16 +9,16 @@ import SectionContainer from "@/components/SectionContainer";
 
 import { type IHeroProps } from "./types";
 
-const Hero: React.FunctionComponent<IHeroProps> = ({ blok }) => {
+export default function Hero({ blok }: IHeroProps) {
+  const { text, image, links } = blok;
+
   return (
     <SectionContainer blok={blok}>
       <HeroSection
-        richText={prepareRichTextProps(blok.text[0])}
-        image={prepareImageProps(blok.image[0])}
-        links={blok.links.map((link) => prepareLinkProps(link))}
+        richText={prepareRichTextProps(text[0])}
+        image={prepareImageProps(image[0])}
+        links={links.map(prepareLinkProps)}
       />
     </SectionContainer>
   );
-};
-
-export default Hero;
+}

@@ -27,7 +27,6 @@ export default defineType({
       title: "Sections",
       type: "array",
       group: "content",
-
       of: sections.map((section) => ({
         type: section.name,
       })),

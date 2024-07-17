@@ -11,6 +11,8 @@ export default function renderRichText(data: any[]) {
 const COMPONENTS = {
   types: {
     customImage: ({ value }: { value: IImage }) => {
+      console.log("value");
+      console.log(value);
       return (
         <div
           className="relative mx-auto"
@@ -19,7 +21,7 @@ const COMPONENTS = {
             height: value.height,
           }}
         >
-          <BasicImage {...prepareImageProps(value)} />
+          {value.image && <BasicImage {...prepareImageProps(value)} />}
         </div>
       );
     },

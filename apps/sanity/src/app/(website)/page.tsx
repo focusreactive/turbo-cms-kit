@@ -1,4 +1,4 @@
-import { loadPage } from "@/lib/sanity";
+import { loadPage } from "@/lib/api";
 import Page from "@/components/Page";
 
 export default async function IndexRoute() {

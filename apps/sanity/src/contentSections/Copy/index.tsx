@@ -10,7 +10,7 @@ export default function Copy({ data }: ICopyProps) {
 
   return (
     <SectionContainer id={_key}>
-      <CopyUI richText={prepareRichTextProps(text as any)} />
+      {text && <CopyUI richText={prepareRichTextProps(text as any)} />}
     </SectionContainer>
   );
 }

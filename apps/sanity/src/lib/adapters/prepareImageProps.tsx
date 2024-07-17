@@ -4,7 +4,7 @@ import type {
   ImageAspectRatio,
 } from "@shared/ui/components/ui/image/types";
 
-import { client } from "@/lib/sanity/client";
+import { client } from "@/lib/api/client";
 
 interface ISanityImage {
   type: string;

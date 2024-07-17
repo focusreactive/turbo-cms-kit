@@ -6,8 +6,8 @@ export default defineType({
   title: "Link",
   type: "object",
   groups: [
-    { name: "style", title: "Style", default: true },
-    { name: "content", title: "Content" },
+    { name: "content", title: "Content", default: true },
+    { name: "style", title: "Style" },
   ],
   fields: [
     defineField({
