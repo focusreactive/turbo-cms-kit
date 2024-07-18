@@ -3,7 +3,7 @@ import { redirect } from "next/navigation";
 import { validatePreviewUrl } from "@sanity/preview-url-secret";
 import config from "config";
 
-import { client } from "@/lib/sanity/client";
+import { client } from "@/lib/api/client";
 
 const clientWithToken = client.withConfig({ token: config.sanity.token });
 

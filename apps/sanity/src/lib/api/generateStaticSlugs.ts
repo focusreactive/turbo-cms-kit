@@ -3,7 +3,7 @@ import "server-only";
 import config from "config";
 import { groq } from "next-sanity";
 
-import { client } from "@/lib/sanity/client";
+import { client } from "@/lib/api/client";
 
 // Used in `generateStaticParams`
 export function generateStaticPaths(types: string[]) {

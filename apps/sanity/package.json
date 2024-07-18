@@ -6,7 +6,8 @@
     "dev": "next dev --port=3000",
     "build": "next build",
     "lint": "next lint",
-    "start": "next start"
+    "start": "next start",
+    "rollout": "./src/lib/rollout-tools/local/cli.mjs"
   },
   "dependencies": {
     "@portabletext/react": "^3.1.0",
@@ -31,6 +32,8 @@
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
+    "inquirer": "^10.0.3",
+    "ora": "^8.0.1",
     "postcss": "^8",
     "prettier": "^3.2.5",
     "tailwindcss": "^3.4.3",

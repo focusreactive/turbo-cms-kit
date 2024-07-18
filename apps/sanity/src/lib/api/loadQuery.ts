@@ -5,7 +5,7 @@ import type { UnfilteredResponseQueryOptions } from "@sanity/client";
 import config from "config";
 import type { QueryParams } from "next-sanity";
 
-import { client } from "@/lib/sanity/client";
+import { client } from "@/lib/api/client";
 
 const DEFAULT_PARAMS = {} as QueryParams;
 
