@@ -2,12 +2,13 @@ import BasicNextImage from "next/image";
 
 import { cn } from "../../../utils";
 import type { IImageProps } from "./types";
+import React from "react";
 
-export default function BasicImage({
+export const BasicImage: React.FC<IImageProps> = ({
   aspectRatio,
   fit,
   ...props
-}: IImageProps) {
+}) => {
   return (
     <div
       className={cn("relative h-full", {

@@ -1,11 +1,12 @@
+import React from "react";
 import { cn } from "../../../utils";
 import type { IRichTextProps } from "./types";
 
-export default function RichText({
+export const RichText: React.FC<IRichTextProps> = ({
   className,
   richText,
   removeInnerMargins,
-}: IRichTextProps) {
+}) => {
   return (
     <div
       className={cn(

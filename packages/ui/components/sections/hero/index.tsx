@@ -1,9 +1,9 @@
 import React from "react";
 
-import Image from "../../ui/image";
 import { Link } from "../../ui/link";
-import RichText from "../../ui/richText";
 import type { IHeroSectionProps } from "./types";
+import { RichText } from "../../ui/richText";
+import { BasicImage } from "../../ui/image";
 
 export const HeroSection: React.FC<IHeroSectionProps> = ({
   image,
@@ -24,7 +24,7 @@ export const HeroSection: React.FC<IHeroSectionProps> = ({
           )}
         </div>
         <div className="hidden overflow-hidden lg:col-span-5 lg:mt-0 lg:block">
-          <Image {...image} />
+          <BasicImage {...image} />
         </div>
       </div>
     </div>

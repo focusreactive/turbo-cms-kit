@@ -1,8 +1,8 @@
 import React from "react";
 
 import { cn } from "../../../utils";
-import RichText from "../../ui/richText";
 import type { ICopy5050Props } from "./types";
+import { RichText } from "../../ui/richText";
 
 export const Copy5050: React.FC<ICopy5050Props> = (props) => {
   const { columns, isReversedOnMobile } = props;

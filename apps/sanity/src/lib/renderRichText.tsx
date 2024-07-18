@@ -1,8 +1,8 @@
 import { PortableText } from "@portabletext/react";
-import BasicImage from "@shared/ui/components/ui/image";
 import { ImageAspectRatio } from "@shared/ui/components/ui/image/types";
 
 import { prepareImageProps, type IImage } from "./adapters/prepareImageProps";
+import { BasicImage } from "@shared/ui";
 
 export default function renderRichText(data: any[]) {
   return <PortableText value={data} components={COMPONENTS} />;

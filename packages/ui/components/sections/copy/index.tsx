@@ -1,7 +1,7 @@
 import React from "react";
 
-import RichText from "../../ui/richText";
 import type { ICopyProps } from "./types";
+import { RichText } from "../../ui/richText";
 
 export const Copy: React.FC<ICopyProps> = ({ richText }) => {
   return (
