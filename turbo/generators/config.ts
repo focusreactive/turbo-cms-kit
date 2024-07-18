@@ -35,7 +35,13 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
         type: "add",
         path: "{{ turbo.paths.root }}/packages/ui/components/ui/{{ componentName }}/types.ts",
         templateFile: "templates/uiComponentTypes.hbs",
-      }
+      },
+      {
+        type: 'modify',
+        path: '{{ turbo.paths.root }}/packages/ui/index.tsx',
+        pattern: /(\/\/ end component exports)/g,
+        template: `export * from "./components/ui/{{ componentName }}"\n$1`
+      },
     ],
   })
 
@@ -107,7 +113,7 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
         type: 'modify',
         path: '{{ turbo.paths.root }}/apps/sanity/src/lib/schemas/contentSections/index.ts',
         pattern: /(\/\/ end of section array)/g,
-        template: `{{ sectionName }},"\n$1`
+        template: `{{ sectionName }},\n$1`
       },
       {
         type: 'modify',
