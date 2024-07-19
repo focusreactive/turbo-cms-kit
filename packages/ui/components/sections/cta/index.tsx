@@ -1,8 +1,8 @@
 import React from "react";
 
 import { Link } from "../../ui/link";
-import { CtaVariant, type ICtaSectionProps } from "./types";
 import { RichText } from "../../ui/richText";
+import { CtaVariant, type ICtaSectionProps } from "./types";
 
 const CtaVariants = {
   [CtaVariant.Default]: "max-w-screen-md",

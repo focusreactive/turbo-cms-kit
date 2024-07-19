@@ -14,7 +14,6 @@ export default defineType({
       name: "text",
       type: "string",
     }),
-
     defineField({
       group: "content",
       name: "type",

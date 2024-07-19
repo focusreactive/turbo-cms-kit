@@ -1,3 +1,4 @@
+import { stegaClean } from "@sanity/client/stega";
 import imageUrlBuilder from "@sanity/image-url";
 import type {
   IImageProps,
@@ -38,7 +39,7 @@ export const prepareImageProps = (props: IImage): IImageProps => {
   return {
     src: url,
     alt: props.image.alt,
-    aspectRatio: props.aspectRatio,
+    aspectRatio: stegaClean(props.aspectRatio),
     fill: true,
     fit: "cover",
   };

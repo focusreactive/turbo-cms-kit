@@ -8,7 +8,9 @@ import {
   type LinkProps,
 } from "./types";
 
+// todo: rework to be button instead of link (and use asLink/Slot pattern)
 export const LinkVariantsClassNames: ILinkVariantsClassNames = {
+  [LinkVariant.Default]: "",
   [LinkVariant.Primary]:
     "inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900",
   [LinkVariant.Secondary]:
@@ -16,17 +18,20 @@ export const LinkVariantsClassNames: ILinkVariantsClassNames = {
 };
 
 export const Link: React.FC<LinkProps> = ({
+  children,
   text,
   href,
   className,
   variant = LinkVariant.Primary,
+  style,
 }) => {
   return (
     <NextLink
       href={href}
       className={cn(LinkVariantsClassNames[variant], className)}
+      style={style}
     >
-      {text}
+      {children || text}
     </NextLink>
   );
 };

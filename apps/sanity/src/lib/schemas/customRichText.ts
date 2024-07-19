@@ -1,5 +1,7 @@
+import { AlignVariant } from "@shared/ui/components/ui/richText/types";
 import { defineField, defineType } from "sanity";
 
+import logos from "./contentSections/logos";
 import customImage from "./customImage";
 
 export default defineType({
@@ -27,7 +29,24 @@ export default defineType({
         {
           type: customImage.name,
         },
+        {
+          type: logos.name,
+        },
       ],
+    }),
+
+    defineField({
+      name: "alignVariant",
+      type: "string",
+      group: "style",
+      options: {
+        list: Object.values(AlignVariant).map((v) => ({
+          title: v,
+          value: v,
+        })),
+        layout: "radio",
+        direction: "horizontal",
+      },
     }),
     defineField({
       name: "removeInnerMargins",

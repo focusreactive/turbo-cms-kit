@@ -1,9 +1,11 @@
 import { PortableText } from "@portabletext/react";
+import { LogosVariant } from "@shared/ui/components/sections/logos/types";
 import { ImageAspectRatio } from "@shared/ui/components/ui/image/types";
 
-import { BasicImage } from "@shared/ui";
+import { BasicImage, Logos } from "@shared/ui";
 
 import { prepareImageProps, type IImage } from "./adapters/prepareImageProps";
+import customImage from "./schemas/customImage";
 
 export default function renderRichText(data: any[]) {
   return <PortableText value={data} components={COMPONENTS} />;
@@ -11,9 +13,7 @@ export default function renderRichText(data: any[]) {
 
 const COMPONENTS = {
   types: {
-    customImage: ({ value }: { value: IImage }) => {
-      console.log("value");
-      console.log(value);
+    [customImage.name]: ({ value }: { value: IImage }) => {
       return (
         <div
           className="relative mx-auto"
@@ -25,6 +25,24 @@ const COMPONENTS = {
           {value.image && <BasicImage {...prepareImageProps(value)} />}
         </div>
       );
+    },
+
+    // todo: infer from schema
+    "section.logos": ({
+      value,
+    }: {
+      value: { items: any[]; variant?: LogosVariant };
+    }) => {
+      const formattedItems = value?.items?.map((item) => ({
+        ...item,
+        image: prepareImageProps(item.image),
+        link:
+          item.type === "logoLink" && item.link
+            ? prepareImageProps(item.link)
+            : undefined,
+      }));
+
+      return <Logos items={formattedItems} variant={value?.variant} />;
     },
   },
 

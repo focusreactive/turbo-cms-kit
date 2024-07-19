@@ -1,21 +1,32 @@
 import BasicNextImage from "next/image";
 
 import { cn } from "../../../utils";
-import type { IImageProps } from "./types";
-import React from "react";
+import type { IImageProps, ImageAspectRatio } from "./types";
 
-export const BasicImage: React.FC<IImageProps> = ({
+export function ImageContainer({
+  children,
   aspectRatio,
-  fit,
-  ...props
-}) => {
+}: {
+  children: React.ReactNode;
+  aspectRatio?: ImageAspectRatio;
+}) {
   return (
     <div
       className={cn("relative h-full", {
         "size-full": !aspectRatio,
       })}
-      style={{ aspectRatio }}
+      style={{
+        aspectRatio,
+      }}
     >
+      {children}
+    </div>
+  );
+}
+
+export function BasicImage({ aspectRatio, fit, ...props }: IImageProps) {
+  return (
+    <ImageContainer aspectRatio={aspectRatio}>
       <BasicNextImage
         style={{
           marginTop: 0,
@@ -24,6 +35,6 @@ export const BasicImage: React.FC<IImageProps> = ({
         }}
         {...props}
       />
-    </div>
+    </ImageContainer>
   );
 }
