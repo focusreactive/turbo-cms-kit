@@ -21,7 +21,9 @@ export default defineType({
       type: "array",
       group: "content",
       of: [
-        { type: "block" },
+        {
+          type: "block",
+        },
         {
           type: customImage.name,
         },

@@ -3,7 +3,7 @@ import { defineField } from 'sanity'
 
 export default defineSection({
   options: {},
-  name: 'section.{{ sectionName }}',
+  name: 'section.{{ sectionName.toLowerCase() }}',
   title: '{{ capitialize sectionName }}',
   type: 'object',
   fields: [

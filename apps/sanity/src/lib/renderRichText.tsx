@@ -1,8 +1,9 @@
 import { PortableText } from "@portabletext/react";
 import { ImageAspectRatio } from "@shared/ui/components/ui/image/types";
 
-import { prepareImageProps, type IImage } from "./adapters/prepareImageProps";
 import { BasicImage } from "@shared/ui";
+
+import { prepareImageProps, type IImage } from "./adapters/prepareImageProps";
 
 export default function renderRichText(data: any[]) {
   return <PortableText value={data} components={COMPONENTS} />;
@@ -38,6 +39,11 @@ const COMPONENTS = {
           {children}
         </a>
       );
+    },
+    annotations: ({ children, value, ...a }: any) => {
+      console.log("value, a");
+      console.log(value, a);
+      return <span style={{ color: value.color }}>{children}</span>;
     },
   },
 };
