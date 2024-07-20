@@ -3,6 +3,7 @@ import page from './page';
 // prettier-ignore
 import { sections } from './contentSections';
 
+import { defaultCard } from "./contentSections/cardsGrid";
 import { logoItem } from "./contentSections/logos";
 import customImage from "./customImage";
 import customLink from "./customLink";
@@ -14,6 +15,7 @@ const schemas = [
   customLink,
   customRichText,
   logoItem,
+  defaultCard,
   ...sections,
 ];
 

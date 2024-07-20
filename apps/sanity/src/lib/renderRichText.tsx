@@ -1,11 +1,11 @@
 import { PortableText } from "@portabletext/react";
-import { LogosVariant } from "@shared/ui/components/sections/logos/types";
+import type { LogosVariant } from "@shared/ui/components/sections/logos/types";
 import { ImageAspectRatio } from "@shared/ui/components/ui/image/types";
 
-import { BasicImage, Logos } from "@shared/ui";
+import { BasicImage, CardsGrid, Logos } from "@shared/ui";
 
 import { prepareImageProps, type IImage } from "./adapters/prepareImageProps";
-import customImage from "./schemas/customImage";
+import { prepareLinkProps } from "./adapters/prepareLinkProps";
 
 export default function renderRichText(data: any[]) {
   return <PortableText value={data} components={COMPONENTS} />;
@@ -13,7 +13,7 @@ export default function renderRichText(data: any[]) {
 
 const COMPONENTS = {
   types: {
-    [customImage.name]: ({ value }: { value: IImage }) => {
+    customImage: ({ value }: { value: IImage }) => {
       return (
         <div
           className="relative mx-auto"
@@ -33,16 +33,32 @@ const COMPONENTS = {
     }: {
       value: { items: any[]; variant?: LogosVariant };
     }) => {
-      const formattedItems = value?.items?.map((item) => ({
+      const formattedItems = value.items?.map((item) => ({
         ...item,
         image: prepareImageProps(item.image),
         link:
           item.type === "logoLink" && item.link
-            ? prepareImageProps(item.link)
+            ? prepareLinkProps(item.link)
             : undefined,
       }));
 
       return <Logos items={formattedItems} variant={value?.variant} />;
+    },
+    // todo: infer from schema
+    "section.cardsGrid": ({
+      value,
+    }: {
+      value: { items: any[]; columns?: number };
+    }) => {
+      const formattedItems = value?.items?.map((item) => ({
+        ...item,
+        icon: item.icon ? prepareImageProps(item.icon) : undefined,
+        link: item?.links?.[0]?.type
+          ? prepareLinkProps(item.links[0])
+          : undefined,
+      }));
+
+      return <CardsGrid items={formattedItems} columns={value?.columns || 2} />;
     },
   },
 
@@ -58,9 +74,7 @@ const COMPONENTS = {
         </a>
       );
     },
-    annotations: ({ children, value, ...a }: any) => {
-      console.log("value, a");
-      console.log(value, a);
+    annotations: ({ children, value }: any) => {
       return <span style={{ color: value.color }}>{children}</span>;
     },
   },

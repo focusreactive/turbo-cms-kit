@@ -1,4 +1,5 @@
 // start of section imports
+import CardsGrid from "./CardsGrid";
 import Copy from "./Copy";
 import Copy5050 from "./Copy5050";
 import Cta from "./Cta";
@@ -14,6 +15,7 @@ export const sections: Record<string, any> = {
   "section.copy": Copy,
   "section.copy5050": Copy5050,
   "section.logos": Logos,
+  "section.cardsGrid": CardsGrid,
   // end of section object
 };
 

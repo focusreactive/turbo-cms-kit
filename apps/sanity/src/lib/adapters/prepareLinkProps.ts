@@ -1,6 +1,6 @@
-import type {
-  LinkProps,
+import {
   LinkVariant,
+  type LinkProps,
 } from "@shared/ui/components/ui/link/types";
 
 interface ISanityReference {
@@ -18,7 +18,9 @@ export interface ILink {
   target?: string;
 }
 
-export const prepareLinkProps = (props: ILink): LinkProps => {
+export const prepareLinkProps = (props?: ILink): LinkProps => {
+  if (!props) return { text: "", href: "", variant: LinkVariant.Default };
+
   let href = "";
   if (props.type === "url") {
     href = props.href as string;

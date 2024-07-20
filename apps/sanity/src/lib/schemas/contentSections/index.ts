@@ -1,4 +1,5 @@
 // start of section imports
+import cardsGrid from "./cardsGrid";
 import copy from "./copy";
 import copy5050 from "./copy5050";
 import cta from "./cta";
@@ -14,5 +15,6 @@ export const sections = [
   copy5050,
   copy,
   logos,
+  cardsGrid,
   // end of section array
 ];

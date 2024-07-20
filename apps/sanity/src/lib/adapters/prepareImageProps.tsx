@@ -1,8 +1,8 @@
 import { stegaClean } from "@sanity/client/stega";
 import imageUrlBuilder from "@sanity/image-url";
-import type {
-  IImageProps,
+import {
   ImageAspectRatio,
+  type IImageProps,
 } from "@shared/ui/components/ui/image/types";
 
 import { client } from "@/lib/api/client";
@@ -33,6 +33,15 @@ export const urlForImage = (source: ISanityImage | undefined) => {
 };
 
 export const prepareImageProps = (props: IImage): IImageProps => {
+  if (!props?.image)
+    return {
+      src: "",
+      alt: "",
+      aspectRatio: ImageAspectRatio["1/1"],
+      fill: true,
+      fit: "cover",
+    };
+
   const url =
     urlForImage(props.image)?.height(props.height).fit("crop").url() || "";
 

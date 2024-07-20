@@ -7,6 +7,7 @@ export * from "./components/sections/copy5050";
 export * from "./components/ui/image";
 export * from "./components/ui/richText";
 export * from "./components/sections/logos";
+export * from "./components/sections/cardsGrid";
 // end component exports
 
 export { cn } from "./utils";

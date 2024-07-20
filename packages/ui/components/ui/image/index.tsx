@@ -12,7 +12,7 @@ export function ImageContainer({
 }) {
   return (
     <div
-      className={cn("relative h-full", {
+      className={cn("relative mx-auto h-full", {
         "size-full": !aspectRatio,
       })}
       style={{
