@@ -13,6 +13,12 @@ export interface IRichText {
 }
 
 export const prepareRichTextProps = (props: IRichText): IRichTextProps => {
+  if (!props)
+    return {
+      richText: null,
+      removeInnerMargins: false,
+    };
+
   return {
     richText: renderRichText(props.text),
     removeInnerMargins: props.removeInnerMargins,

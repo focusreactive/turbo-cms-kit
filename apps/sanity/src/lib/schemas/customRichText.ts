@@ -1,7 +1,7 @@
 import { AlignVariant } from "@shared/ui/components/ui/richText/types";
 import { defineField, defineType } from "sanity";
 
-import cardsGrid, { defaultCard } from "./contentSections/cardsGrid";
+import cardsGrid from "./contentSections/cardsGrid";
 import logos from "./contentSections/logos";
 import customImage from "./customImage";
 
@@ -35,9 +35,6 @@ export default defineType({
         },
         {
           type: cardsGrid.name,
-        },
-        {
-          type: defaultCard.name,
         },
       ],
     }),

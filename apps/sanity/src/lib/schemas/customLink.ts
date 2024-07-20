@@ -13,6 +13,7 @@ export default defineType({
     defineField({
       name: "text",
       type: "string",
+      group: "content",
     }),
     defineField({
       group: "content",

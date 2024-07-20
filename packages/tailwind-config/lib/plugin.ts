@@ -1,5 +1,6 @@
 import plugin from "tailwindcss/plugin";
 
+// todo: consider implementing themes feature using CSS variables
 export const customPlugin = plugin(
   // 1. Add CSS variable definitions to the base layer
   function () {},

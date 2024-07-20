@@ -7,7 +7,9 @@ import SectionContainer from "@/components/SectionContainer";
 import type { ILogosSectionProps } from "./types";
 
 export default function LogosSection({ data }: ILogosSectionProps) {
-  const { items, variant, _key } = data;
+  if (!data) return null;
+
+  const { items, variant, _key, theme = "light" } = data;
 
   const formattedItems = items?.map((item) => ({
     ...item,
@@ -19,7 +21,7 @@ export default function LogosSection({ data }: ILogosSectionProps) {
   }));
 
   return (
-    <SectionContainer id={_key}>
+    <SectionContainer id={_key} theme={theme}>
       <Logos items={formattedItems} variant={variant} />
     </SectionContainer>
   );

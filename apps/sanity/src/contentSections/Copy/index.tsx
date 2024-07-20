@@ -6,10 +6,12 @@ import SectionContainer from "@/components/SectionContainer";
 import type { ICopyProps } from "./types";
 
 export default function Copy({ data }: ICopyProps) {
-  const { text, _key } = data;
+  if (!data) return null;
+
+  const { text, _key, theme = "light" } = data;
 
   return (
-    <SectionContainer id={_key}>
+    <SectionContainer id={_key} theme={theme}>
       {text && <CopyUI richText={prepareRichTextProps(text as any)} />}
     </SectionContainer>
   );

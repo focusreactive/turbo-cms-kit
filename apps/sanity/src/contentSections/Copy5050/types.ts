@@ -6,4 +6,5 @@ export interface ICopy5050 {
   _key: string;
   columns: any[];
   isReversedOnMobile?: boolean;
+  theme?: "light" | "dark";
 }

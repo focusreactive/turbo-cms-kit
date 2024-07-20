@@ -3,6 +3,8 @@ import CardsGrid from "./CardsGrid";
 import Copy from "./Copy";
 import Copy5050 from "./Copy5050";
 import Cta from "./Cta";
+import Footer from "./Footer";
+import Header from "./Header";
 import Hero from "./Hero";
 import Logos from "./Logos";
 
@@ -16,6 +18,8 @@ export const sections: Record<string, any> = {
   "section.copy5050": Copy5050,
   "section.logos": Logos,
   "section.cardsGrid": CardsGrid,
+  "section.header": Header,
+  "section.footer": Footer,
   // end of section object
 };
 

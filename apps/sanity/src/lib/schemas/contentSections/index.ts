@@ -3,6 +3,8 @@ import cardsGrid from "./cardsGrid";
 import copy from "./copy";
 import copy5050 from "./copy5050";
 import cta from "./cta";
+import footer from "./footer";
+import header from "./header";
 import hero from "./hero";
 import logos from "./logos";
 
@@ -16,5 +18,7 @@ export const sections = [
   copy,
   logos,
   cardsGrid,
+  header,
+  footer,
   // end of section array
 ];

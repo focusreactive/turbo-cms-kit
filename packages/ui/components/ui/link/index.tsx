@@ -12,9 +12,11 @@ import {
 export const LinkVariantsClassNames: ILinkVariantsClassNames = {
   [LinkVariant.Default]: "",
   [LinkVariant.Primary]:
-    "inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900",
+    "inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-textColor rounded-lg bg-primaryColor hover:bg-textSecondaryText",
   [LinkVariant.Secondary]:
-    "inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800",
+    "inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-textColor border border-textSecondaryText rounded-lg hover:bg-textSecondaryText focus:ring-4 focus:ring-textSecondaryText",
+  [LinkVariant.HeaderNav]: "text-textColor text-sm font-semibold leading-6",
+  [LinkVariant.FooterNav]: "text-textColor  mr-4 hover:underline md:mr-6",
 };
 
 export const Link: React.FC<LinkProps> = ({

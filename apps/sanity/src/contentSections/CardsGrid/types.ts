@@ -11,6 +11,7 @@ export interface ICardsGrid {
     links: ILink[];
     icon: IImage;
   }[];
+  theme?: "light" | "dark";
 }
 
 export interface ICardsGridSectionProps {

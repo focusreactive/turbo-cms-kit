@@ -79,6 +79,19 @@ export default defineSection({
         direction: "horizontal",
       },
     }),
+    defineField({
+      name: "theme",
+      type: "string",
+      group: "style",
+      options: {
+        list: [
+          { title: "Light", value: "light" },
+          { title: "Dark", value: "dark" },
+        ],
+        layout: "radio",
+        direction: "horizontal",
+      },
+    }),
   ],
   preview: {
     prepare: () => ({

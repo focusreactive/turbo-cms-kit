@@ -1,22 +1,24 @@
-import { CTA } from "@shared/ui";
+"use client";
+
+import { Footer as FooterUI } from "@shared/ui";
 
 import { prepareLinkProps } from "@/lib/adapters/prepareLinkProps";
 import { prepareRichTextProps } from "@/lib/adapters/prepareRichTextProps";
 import SectionContainer from "@/components/SectionContainer";
 
-import type { ICtaProps } from "./types";
+import type { IFooterProps } from "./types";
 
-export default function Cta({ data }: ICtaProps) {
+export default function Footer({ data }: IFooterProps) {
   if (!data) return null;
 
-  const { text, links, _key, variant, theme = "light" } = data;
+  const { links, text, copywriteText, _key, theme = "light" } = data;
 
   return (
     <SectionContainer id={_key} theme={theme}>
-      <CTA
-        variant={variant}
-        richText={prepareRichTextProps(text as any)}
+      <FooterUI
+        copywriteText={copywriteText}
         links={links.map(prepareLinkProps)}
+        text={prepareRichTextProps(text)}
       />
     </SectionContainer>
   );

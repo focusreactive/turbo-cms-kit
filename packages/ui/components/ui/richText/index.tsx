@@ -12,7 +12,7 @@ export const RichText: React.FC<IRichTextProps> = ({
   return (
     <div
       className={cn(
-        "prose max-w-full dark:prose-invert lg:prose-xl",
+        "text-textColor prose max-w-full dark:prose-invert lg:prose-xl",
         {
           "no-children-margins": removeInnerMargins,
           "text-center": alignVariant === AlignVariant.Center,

@@ -9,4 +9,5 @@ export interface ICta {
   text: any;
   links: any[];
   variant: CtaVariant;
+  theme?: "light" | "dark";
 }

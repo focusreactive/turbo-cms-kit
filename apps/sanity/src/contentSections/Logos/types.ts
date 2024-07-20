@@ -14,6 +14,7 @@ export interface ILogos {
   _key: string;
   items: ILogoItem[];
   variant?: LogosVariant;
+  theme?: "light" | "dark";
 }
 
 export interface ILogosSectionProps {

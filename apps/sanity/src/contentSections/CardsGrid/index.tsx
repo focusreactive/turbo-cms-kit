@@ -9,7 +9,9 @@ import SectionContainer from "@/components/SectionContainer";
 import type { ICardsGridSectionProps } from "./types";
 
 export default function CardsGrid({ data }: ICardsGridSectionProps) {
-  const { items, columns, _key } = data;
+  if (!data) return null;
+
+  const { items, columns, _key, theme = "light" } = data;
 
   const formattedItems = items
     ?.map((item) => ({
@@ -20,7 +22,7 @@ export default function CardsGrid({ data }: ICardsGridSectionProps) {
     .filter((v) => v.icon);
 
   return (
-    <SectionContainer id={_key}>
+    <SectionContainer id={_key} theme={theme}>
       <SharedCardsGrid items={formattedItems} columns={columns} />
     </SectionContainer>
   );
