@@ -12,7 +12,7 @@ export interface IRichText {
   removeInnerMargins?: boolean;
 }
 
-export const prepareRichTextProps = (props: IRichText): IRichTextProps => {
+export const prepareRichTextProps = (props?: IRichText): IRichTextProps => {
   if (!props)
     return {
       richText: null,

@@ -5,13 +5,13 @@ import type { LinkProps } from "../../ui/link/types";
 
 export default function DefaultCard({
   style,
-  icon,
+  image,
   link,
   title,
   description,
 }: {
   style?: string;
-  icon?: IImageProps;
+  image?: IImageProps;
   link?: LinkProps;
   title: string;
   description: string;
@@ -21,13 +21,13 @@ export default function DefaultCard({
       return (
         <div className="relative flex flex-col text-left">
           <dt className="text-textColor text-base font-semibold leading-7">
-            {icon && (
+            {image && (
               <div className="bg-primaryColor mb-6 flex size-10 h-10 items-center justify-center rounded-lg">
                 <div className="size-5">
                   <BasicImage
                     className="text-primaryColor invert"
                     aria-hidden="true"
-                    {...icon}
+                    {...image}
                   />
                 </div>
               </div>
@@ -54,12 +54,12 @@ export default function DefaultCard({
       return (
         <div className="relative flex flex-col text-left">
           <dt className="text-textColor flex items-center gap-x-3 text-base font-semibold leading-7">
-            {icon && (
+            {image && (
               <div className="size-5">
                 <BasicImage
                   className="dark:invert"
                   aria-hidden="true"
-                  {...icon}
+                  {...image}
                 />
               </div>
             )}
@@ -87,13 +87,13 @@ export default function DefaultCard({
       return (
         <div className="relative pl-16 text-left">
           <dt className="text-textColor text-base font-semibold leading-7">
-            {icon && (
+            {image && (
               <div className="bg-primaryColor absolute left-0 top-0 flex size-10 items-center justify-center rounded-lg">
                 <div className="size-5">
                   <BasicImage
                     className="text-primaryColor dark:invert"
                     aria-hidden="true"
-                    {...icon}
+                    {...image}
                   />
                 </div>
               </div>
@@ -120,13 +120,13 @@ export default function DefaultCard({
       return (
         <div className="relative pl-9 text-left">
           <dt className="text-textColor text-base font-semibold leading-7">
-            {icon && (
+            {image && (
               <div className="absolute left-0 top-1 flex items-center justify-center dark:invert">
                 <div className="size-5">
                   <BasicImage
                     className="text-primaryColor"
                     aria-hidden="true"
-                    {...icon}
+                    {...image}
                   />
                 </div>
               </div>
@@ -143,12 +143,12 @@ export default function DefaultCard({
       return (
         <div className="relative pl-9 text-left">
           <dt className={cn("text-textColor inline font-semibold")}>
-            {icon && (
+            {image && (
               <div className="size-5 dark:invert">
                 <BasicImage
                   className={cn("text-primaryColor absolute left-1 top-1")}
                   aria-hidden="true"
-                  {...icon}
+                  {...image}
                 />
               </div>
             )}

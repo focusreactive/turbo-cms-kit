@@ -18,10 +18,9 @@ export default function CardsGrid({ data }: ICardsGridSectionProps) {
     return {
       ...item,
       type: item._type,
-      text: item.text ? prepareRichTextProps(item.text) : undefined,
-      image: item.image ? prepareImageProps(item.image) : undefined,
-      icon: item.icon ? prepareImageProps(item.icon) : undefined,
-      link: prepareLinkProps(item.link || item.links?.[0]),
+      text: prepareRichTextProps(item.text),
+      image: prepareImageProps(item.image),
+      link: prepareLinkProps(item.link),
     };
   });
 

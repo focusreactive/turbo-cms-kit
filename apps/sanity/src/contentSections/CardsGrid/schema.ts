@@ -39,7 +39,7 @@ export const defaultCard = defineType({
       type: "string",
       group: "content",
     }),
-    defineField({ name: "description", type: "string" }),
+    defineField({ name: "description", type: "string", group: "content" }),
     defineField({
       name: "style",
       type: "string",
@@ -51,12 +51,11 @@ export const defaultCard = defineType({
     }),
     defineField({
       name: "link",
-      type: "array",
-      of: [{ type: "customLink" }],
+      type: "customLink",
       group: "content",
     }),
     defineField({
-      name: "icon",
+      name: "image",
       type: customImage.name,
       group: "content",
     }),

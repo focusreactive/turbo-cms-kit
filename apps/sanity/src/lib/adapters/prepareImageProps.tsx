@@ -32,7 +32,7 @@ export const urlForImage = (source: ISanityImage | undefined) => {
   return builder.image(source).auto("format").fit("max");
 };
 
-export const prepareImageProps = (props: IImage): IImageProps => {
+export const prepareImageProps = (props?: IImage): IImageProps => {
   if (!props?.image)
     return {
       src: "",
