@@ -32,7 +32,7 @@ export default defineType({
       group: "content",
       name: "href",
       type: "string",
-      hidden: ({ parent }) => !parent.type || parent?.type === "internal",
+      hidden: ({ parent }) => !parent?.type || parent?.type === "internal",
     }),
     defineField({
       group: "content",
@@ -54,7 +54,7 @@ export default defineType({
       name: "url",
       type: "reference",
       to: [{ type: "page" }], // todo: change to page.name
-      hidden: ({ parent }) => !parent.type || parent?.type === "url",
+      hidden: ({ parent }) => !parent?.type || parent?.type === "url",
     }),
 
     defineField({

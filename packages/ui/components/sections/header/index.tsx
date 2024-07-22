@@ -1,11 +1,11 @@
 import { Link } from "../../ui/link";
 import type { IHeaderProps } from "./types";
 
-export function Header({ links }: IHeaderProps) {
+export function Header({ links, className }: IHeaderProps) {
   return (
-    <header className="absolute inset-x-0 top-0 z-50">
+    <header className={className}>
       <nav
-        className="flex flex-wrap items-center justify-center gap-12 p-3"
+        className="bg-bgColor flex flex-wrap items-center justify-center gap-x-12 gap-y-3 p-6"
         aria-label="main mavigation"
       >
         {links.map((link) => (

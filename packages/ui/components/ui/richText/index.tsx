@@ -15,6 +15,7 @@ export const RichText: React.FC<IRichTextProps> = ({
         "text-textColor prose max-w-full dark:prose-invert lg:prose-xl",
         {
           "no-children-margins": removeInnerMargins,
+          "text-left": alignVariant === AlignVariant.Left,
           "text-center": alignVariant === AlignVariant.Center,
           "text-right": alignVariant === AlignVariant.Right,
         },

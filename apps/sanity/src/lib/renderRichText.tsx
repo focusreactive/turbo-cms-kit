@@ -1,11 +1,13 @@
+import CardsGrid from "@/contentSections/CardsGrid";
+import LinksList from "@/contentSections/LinksList";
+import Logos from "@/contentSections/Logos";
 import { PortableText } from "@portabletext/react";
-import type { LogosVariant } from "@shared/ui/components/sections/logos/types";
+import { stegaClean } from "@sanity/client/stega";
 import { ImageAspectRatio } from "@shared/ui/components/ui/image/types";
 
-import { BasicImage, CardsGrid, Logos } from "@shared/ui";
+import { BasicImage } from "@shared/ui";
 
 import { prepareImageProps, type IImage } from "./adapters/prepareImageProps";
-import { prepareLinkProps } from "./adapters/prepareLinkProps";
 
 export default function renderRichText(data: any[]) {
   return <PortableText value={data} components={COMPONENTS} />;
@@ -13,6 +15,11 @@ export default function renderRichText(data: any[]) {
 
 const COMPONENTS = {
   types: {
+    // todo: infer from schema
+    break: () => {
+      return <hr className="lineBreak" />;
+    },
+
     customImage: ({ value }: { value: IImage }) => {
       return (
         <div
@@ -28,54 +35,26 @@ const COMPONENTS = {
     },
 
     // todo: infer from schema
-    "section.logos": ({
-      value,
-    }: {
-      value: { items: any[]; variant?: LogosVariant };
-    }) => {
-      const formattedItems = value.items?.map((item) => ({
-        ...item,
-        image: prepareImageProps(item.image),
-        link:
-          item.type === "logoLink" && item.link
-            ? prepareLinkProps(item.link)
-            : undefined,
-      }));
-
-      return <Logos items={formattedItems} variant={value?.variant} />;
+    "section.logos": ({ value }: { value: any }) => {
+      return <Logos data={value} />;
     },
     // todo: infer from schema
-    "section.cardsGrid": ({
-      value,
-    }: {
-      value: { items: any[]; columns?: number };
-    }) => {
-      const formattedItems = value?.items?.map((item) => ({
-        ...item,
-        icon: item.icon ? prepareImageProps(item.icon) : undefined,
-        link: item?.links?.[0]?.type
-          ? prepareLinkProps(item.links[0])
-          : undefined,
-      }));
+    "section.cardsGrid": ({ value }: { value: any }) => {
+      return <CardsGrid data={value} />;
+    },
 
-      return <CardsGrid items={formattedItems} columns={value?.columns || 2} />;
+    // todo: infer from schema
+    "section.linksList": ({ value }: { value: any }) => {
+      return <LinksList data={value} />;
     },
   },
 
   marks: {
-    link: ({ children, value }: any) => {
-      const rel = !value.href.startsWith("/")
-        ? "noreferrer noopener"
-        : undefined;
-
-      return (
-        <a href={value.href} rel={rel}>
-          {children}
-        </a>
-      );
-    },
-    annotations: ({ children, value }: any) => {
-      return <span style={{ color: value.color }}>{children}</span>;
-    },
+    textColor: ({ children, value }: any) => (
+      <span style={{ color: stegaClean(value.value) }}>{children}</span>
+    ),
+    highlightColor: ({ children, value }: any) => (
+      <span style={{ background: stegaClean(value.value) }}>{children}</span>
+    ),
   },
 };

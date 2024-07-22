@@ -1,6 +1,6 @@
 import type { LinkProps } from "../../ui/link/types";
 
-export interface IHeaderProps {
+export interface ILinksListProps {
   links: LinkProps[];
-  className?: string;
+  alignVariant?: string;
 }

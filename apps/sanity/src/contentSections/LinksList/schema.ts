@@ -1,12 +1,12 @@
 import { defineSection } from "@tinloof/sanity-studio";
 import { defineField } from "sanity";
 
-import customLink from "../customLink";
-import customRichText from "../customRichText";
+import customLink from "@/lib/schemas/customLink";
 
 export default defineSection({
-  name: "section.footer",
-  title: "Footer",
+  options: {},
+  name: "section.linksList",
+  title: "Links list",
   type: "object",
   groups: [
     {
@@ -19,24 +19,26 @@ export default defineSection({
       title: "Style",
     },
   ],
-  options: {},
   fields: [
-    defineField({
-      name: "text",
-      type: customRichText.name,
-      group: "content",
-    }),
     defineField({
       name: "links",
       type: "array",
+      group: "content",
       of: [{ type: customLink.name }],
-      group: "content",
     }),
-
     defineField({
-      name: "copywriteText",
+      name: "alignVariant",
       type: "string",
-      group: "content",
+      group: "style",
+      options: {
+        list: [
+          { title: "Left", value: "left" },
+          { title: "Center", value: "center" },
+          { title: "Right", value: "right" },
+        ],
+        layout: "radio",
+        direction: "horizontal",
+      },
     }),
     defineField({
       name: "theme",
@@ -52,5 +54,17 @@ export default defineSection({
       },
     }),
   ],
-  preview: {},
+  preview: {
+    select: {
+      links: "links",
+      alignVariant: "alignVariant",
+    },
+    prepare(value) {
+      const linkText = value.links[0].text;
+
+      return {
+        title: linkText || "No text",
+      };
+    },
+  },
 });

@@ -1,7 +1,7 @@
 import { defineSection } from "@tinloof/sanity-studio";
 import { defineField } from "sanity";
 
-import customRichText from "../customRichText";
+import customRichText from "@/lib/schemas/customRichText";
 
 export default defineSection({
   name: "section.copy5050",

@@ -7,7 +7,7 @@ interface ILogoItem {
   _key: string;
   image: IImage;
   link?: ILink;
-  type?: "logo" | "logoLink";
+  type?: "logo" | "clickableLogo";
 }
 
 export interface ILogos {

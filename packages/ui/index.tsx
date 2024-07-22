@@ -10,6 +10,8 @@ export * from "./components/sections/logos";
 export * from "./components/sections/cardsGrid";
 export * from "./components/sections/header";
 export * from "./components/sections/footer";
+export * from "./components/sections/linksList";
+export * from "./components/sections/blog";
 // end component exports
 
 export { cn } from "./utils";

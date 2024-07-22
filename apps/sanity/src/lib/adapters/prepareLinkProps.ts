@@ -19,7 +19,8 @@ export interface ILink {
 }
 
 export const prepareLinkProps = (props?: ILink): LinkProps => {
-  if (!props) return { text: "", href: "", variant: LinkVariant.Default };
+  if (!props || typeof props !== "object")
+    return { text: "", href: "", variant: LinkVariant.Default };
 
   let href = "";
   if (props.type === "url") {

@@ -4,6 +4,7 @@ export enum LinkVariant {
   Secondary = "secondary",
   HeaderNav = "headerNav",
   FooterNav = "footerNav",
+  Badge = "badge",
 }
 
 export interface ILinkVariantsClassNames {
@@ -12,6 +13,7 @@ export interface ILinkVariantsClassNames {
   [LinkVariant.Default]: string;
   [LinkVariant.HeaderNav]: string;
   [LinkVariant.FooterNav]: string;
+  [LinkVariant.Badge]: string;
 }
 
 export interface LinkProps {

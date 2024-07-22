@@ -1,4 +1,5 @@
 // start of section imports
+import Blog from "./Blog";
 import CardsGrid from "./CardsGrid";
 import Copy from "./Copy";
 import Copy5050 from "./Copy5050";
@@ -6,6 +7,7 @@ import Cta from "./Cta";
 import Footer from "./Footer";
 import Header from "./Header";
 import Hero from "./Hero";
+import LinksList from "./LinksList";
 import Logos from "./Logos";
 
 // end of section imports
@@ -20,6 +22,8 @@ export const sections: Record<string, any> = {
   "section.cardsGrid": CardsGrid,
   "section.header": Header,
   "section.footer": Footer,
+  "section.linksList": LinksList,
+  "section.blog": Blog,
   // end of section object
 };
 

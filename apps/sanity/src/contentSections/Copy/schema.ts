@@ -1,7 +1,7 @@
 import { defineSection } from "@tinloof/sanity-studio";
 import { defineField } from "sanity";
 
-import customRichText from "../customRichText";
+import customRichText from "@/lib/schemas/customRichText";
 
 export default defineSection({
   name: "section.copy",
@@ -51,8 +51,10 @@ export default defineSection({
     },
     prepare(value) {
       const block = (value.text || []).find(
-        (block: { _type: string }) => block._type === "block",
+        (block: { _type: string; children: any }) =>
+          block._type === "block" && block.children?.[0].text,
       );
+
       return {
         title: block
           ? block.children

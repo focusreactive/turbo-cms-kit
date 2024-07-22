@@ -1,7 +1,7 @@
 import { definePathname, SectionsArrayInput } from "@tinloof/sanity-studio";
 import { defineField, defineType } from "sanity";
 
-import { sections } from "./contentSections";
+import sections from "@/lib/schemas/sections";
 
 export default defineType({
   type: "document",

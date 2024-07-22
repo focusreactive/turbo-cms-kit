@@ -1,15 +1,20 @@
 import type { IImage } from "@/lib/adapters/prepareImageProps";
 import type { ILink } from "@/lib/adapters/prepareLinkProps";
+import type { IRichText } from "@/lib/adapters/prepareRichTextProps";
 
 export interface ICardsGrid {
   _key: string;
   columns: number;
   items: {
+    _type: "cardsGrid";
     style?: string;
     title: string;
     description: string;
-    links: ILink[];
-    icon: IImage;
+    image?: IImage;
+    link?: ILink;
+    links?: ILink[];
+    icon?: IImage;
+    text?: IRichText;
   }[];
   theme?: "light" | "dark";
 }

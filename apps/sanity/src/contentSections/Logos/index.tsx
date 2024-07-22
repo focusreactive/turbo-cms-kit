@@ -15,7 +15,7 @@ export default function LogosSection({ data }: ILogosSectionProps) {
     ...item,
     image: prepareImageProps(item.image),
     link:
-      item.type === "logoLink" && item.link
+      item.type === "clickableLogo" && item.link
         ? prepareLinkProps(item.link)
         : undefined,
   }));

@@ -1,11 +1,11 @@
 import { LogosVariant } from "@shared/ui/components/sections/logos/types";
 import { defineSection } from "@tinloof/sanity-studio";
-import { defineField } from "sanity";
+import { defineField, defineType } from "sanity";
 
-import customImage from "../customImage";
-import customLink from "../customLink";
+import customImage from "@/lib/schemas/customImage";
+import customLink from "@/lib/schemas/customLink";
 
-export const logoItem = defineField({
+export const logoItem = defineType({
   name: "logoItem",
   type: "object",
   title: "Logo Item",
@@ -17,7 +17,7 @@ export const logoItem = defineField({
       options: {
         list: [
           { title: "Logo", value: "logo" },
-          { title: "Logo with link", value: "logoLink" },
+          { title: "Clickable logo", value: "clickableLogo" },
         ],
       },
     }),
@@ -28,7 +28,7 @@ export const logoItem = defineField({
     defineField({
       name: "link",
       type: customLink.name,
-      hidden: ({ parent }) => !parent.type || parent?.type === "logo",
+      hidden: ({ parent }) => !parent?.type || parent?.type === "logo",
     }),
   ],
   preview: {
