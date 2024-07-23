@@ -1,12 +1,30 @@
-// prettier-ignore
-import page from './page';
-// prettier-ignore
-import { sections } from './contentSections';
+import { blogPost } from "@/contentSections/Blog/schema";
+import {
+  clickableImageCard,
+  defaultCard,
+} from "@/contentSections/CardsGrid/schema";
+import { logoItem } from "@/contentSections/Logos/schema";
 
 import customImage from "./customImage";
 import customLink from "./customLink";
-import customRichText from "./customRichText";
+import customRichText, { basicRichText, richTextBreak } from "./customRichText";
+// prettier-ignore
+import page from "../../components/Page/schema";
 
-const schemas = [page, customImage, customLink, customRichText, ...sections];
+import sections from "./sections";
+
+const schemas = [
+  page,
+  customImage,
+  customLink,
+  customRichText,
+  logoItem,
+  defaultCard,
+  richTextBreak,
+  basicRichText,
+  clickableImageCard,
+  blogPost,
+  ...sections,
+];
 
 export default schemas;

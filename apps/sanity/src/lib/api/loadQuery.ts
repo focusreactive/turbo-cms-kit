@@ -37,6 +37,7 @@ export async function loadQuery<QueryResponse>({
       tags: ["sanity"],
       revalidate: isDraftMode ? 0 : undefined,
     },
+    cache: "no-store",
   } satisfies UnfilteredResponseQueryOptions;
   const result = await client.fetch<QueryResponse>(query, params, {
     ...options,

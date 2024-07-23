@@ -2,6 +2,7 @@ import { visionTool } from "@sanity/vision";
 import { pages } from "@tinloof/sanity-studio";
 import config from "config";
 import { defineConfig } from "sanity";
+import { simplerColorInput } from "sanity-plugin-simpler-color-input";
 import { structureTool } from "sanity/structure";
 
 import StudioLogo from "./src/components/StudioLogo";
@@ -27,5 +28,6 @@ export default defineConfig({
     }),
     structureTool(),
     visionTool({ defaultApiVersion: config.sanity.apiVersion }),
+    simplerColorInput(),
   ],
 });

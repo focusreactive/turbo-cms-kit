@@ -5,4 +5,5 @@ export interface ICopyProps {
 export interface ICopy {
   _key: string;
   text: any;
+  theme?: "light" | "dark";
 }

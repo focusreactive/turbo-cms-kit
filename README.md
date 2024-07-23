@@ -6,7 +6,7 @@ An open source application built using the new router, server components and eve
 
 > **Warning**
 > This app is a work in progress.
-> https://turborepo-nextjs.vercel.app/
+> https://maksimhodasevich-turbo-cms-kit.vercel.app/
 
 ## Features 🌟
 

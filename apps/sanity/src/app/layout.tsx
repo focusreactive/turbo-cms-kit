@@ -7,7 +7,7 @@ export default async function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-white">{children}</body>
+      <body>{children}</body>
     </html>
   );
 }

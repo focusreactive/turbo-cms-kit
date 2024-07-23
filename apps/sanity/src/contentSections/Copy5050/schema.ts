@@ -1,56 +1,58 @@
-import { CtaVariant } from "@shared/ui/components/sections/cta/types";
 import { defineSection } from "@tinloof/sanity-studio";
 import { defineField } from "sanity";
 
-import customLink from "../customLink";
-import customRichText from "../customRichText";
+import customRichText from "@/lib/schemas/customRichText";
 
 export default defineSection({
-  name: "section.cta",
-  title: "CTA",
+  name: "section.copy5050",
+  title: "Copy 50/50",
   type: "object",
   groups: [
-    { name: "content", title: "Content", default: true },
+    {
+      name: "content",
+      title: "Content",
+      default: true,
+    },
     { name: "style", title: "Style" },
   ],
   options: {
     variants: [
       {
-        assetUrl: "/images/cta.png",
+        assetUrl: "/images/copy5050.png",
       },
     ],
   },
   fields: [
     defineField({
-      name: "text",
-      type: customRichText.name,
-      group: "content",
-    }),
-
-    defineField({
-      name: "links",
-      group: "content",
+      name: "columns",
       type: "array",
-      of: [{ type: customLink.name }],
+      group: "content",
+      of: [{ type: customRichText.name }],
+      validation: (Rule) => Rule.required().min(1).max(2),
     }),
 
     defineField({
+      name: "isReversedOnMobile",
+      type: "boolean",
       group: "style",
-      name: "variant",
+    }),
+    defineField({
+      name: "theme",
       type: "string",
-      initialValue: CtaVariant.Default,
+      group: "style",
       options: {
-        // todo: should this field be part of the section or rich text implementation?
-        list: Object.values(CtaVariant).map((variant) => ({
-          title: variant,
-          value: variant,
-        })),
+        list: [
+          { title: "Light", value: "light" },
+          { title: "Dark", value: "dark" },
+        ],
+        layout: "radio",
+        direction: "horizontal",
       },
     }),
   ],
   preview: {
     select: {
-      text: "text.text",
+      text: "columns.0.text",
     },
     prepare(value) {
       const block = (value.text || []).find(

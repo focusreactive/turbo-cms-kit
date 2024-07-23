@@ -1,18 +1,23 @@
 import React from "react";
+
 import { cn } from "../../../utils";
-import type { IRichTextProps } from "./types";
+import { AlignVariant, type IRichTextProps } from "./types";
 
 export const RichText: React.FC<IRichTextProps> = ({
   className,
   richText,
   removeInnerMargins,
+  alignVariant,
 }) => {
   return (
     <div
       className={cn(
-        "prose max-w-full dark:prose-invert lg:prose-xl",
+        "text-textColor prose max-w-full dark:prose-invert lg:prose-xl",
         {
           "no-children-margins": removeInnerMargins,
+          "text-left": alignVariant === AlignVariant.Left,
+          "text-center": alignVariant === AlignVariant.Center,
+          "text-right": alignVariant === AlignVariant.Right,
         },
         className,
       )}
@@ -20,4 +25,4 @@ export const RichText: React.FC<IRichTextProps> = ({
       {richText}
     </div>
   );
-}
+};

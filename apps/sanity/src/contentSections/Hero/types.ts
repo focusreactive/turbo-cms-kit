@@ -3,6 +3,7 @@ export interface IHero {
   text: any;
   links: any[];
   image: any;
+  theme: "light" | "dark";
 }
 
 export interface IHeroProps {

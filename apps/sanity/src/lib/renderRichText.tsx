@@ -1,8 +1,13 @@
+import CardsGrid from "@/contentSections/CardsGrid";
+import LinksList from "@/contentSections/LinksList";
+import Logos from "@/contentSections/Logos";
 import { PortableText } from "@portabletext/react";
+import { stegaClean } from "@sanity/client/stega";
 import { ImageAspectRatio } from "@shared/ui/components/ui/image/types";
 
-import { prepareImageProps, type IImage } from "./adapters/prepareImageProps";
 import { BasicImage } from "@shared/ui";
+
+import { prepareImageProps, type IImage } from "./adapters/prepareImageProps";
 
 export default function renderRichText(data: any[]) {
   return <PortableText value={data} components={COMPONENTS} />;
@@ -10,9 +15,12 @@ export default function renderRichText(data: any[]) {
 
 const COMPONENTS = {
   types: {
+    // todo: infer from schema
+    break: () => {
+      return <hr className="lineBreak" />;
+    },
+
     customImage: ({ value }: { value: IImage }) => {
-      console.log("value");
-      console.log(value);
       return (
         <div
           className="relative mx-auto"
@@ -25,19 +33,28 @@ const COMPONENTS = {
         </div>
       );
     },
+
+    // todo: infer from schema
+    "section.logos": ({ value }: { value: any }) => {
+      return <Logos data={value} />;
+    },
+    // todo: infer from schema
+    "section.cardsGrid": ({ value }: { value: any }) => {
+      return <CardsGrid data={value} />;
+    },
+
+    // todo: infer from schema
+    "section.linksList": ({ value }: { value: any }) => {
+      return <LinksList data={value} />;
+    },
   },
 
   marks: {
-    link: ({ children, value }: any) => {
-      const rel = !value.href.startsWith("/")
-        ? "noreferrer noopener"
-        : undefined;
-
-      return (
-        <a href={value.href} rel={rel}>
-          {children}
-        </a>
-      );
-    },
+    textColor: ({ children, value }: any) => (
+      <span style={{ color: stegaClean(value.value) }}>{children}</span>
+    ),
+    highlightColor: ({ children, value }: any) => (
+      <span style={{ background: stegaClean(value.value) }}>{children}</span>
+    ),
   },
 };
