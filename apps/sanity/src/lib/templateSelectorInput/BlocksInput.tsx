@@ -69,6 +69,9 @@ const ArrayFunctions = ({
 export const BlocksInput: ComponentType<any> = (
   props: ArrayFieldProps & BlocksInputCustomProps,
 ) => {
+  // @ts-ignore
+  const isRichText = props.isRichText;
+
   const inputProps: ArrayFieldProps["inputProps"] = {
     ...props.inputProps,
     arrayFunctions: () => (
@@ -96,7 +99,26 @@ export const BlocksInput: ComponentType<any> = (
         <Text>{props.name}</Text>
         <Text>{props.description}</Text>
       </Card>
-      {props.inputProps.renderInput(inputProps)}
+
+      {isRichText ? (
+        <div>
+          {props.renderDefault(props)}
+          <br />
+          <br />
+          <br />
+          <h1 style={{ fontSize: 24 }}>Preset selector</h1>
+          <BlocksBrowser
+            onClose={() => ({})}
+            onItemAppend={props.inputProps.onItemAppend}
+            presets={props.presets}
+            renderItemView={props.renderItemView}
+            renderItem={props.renderItem}
+            renderView={props.renderView}
+          />
+        </div>
+      ) : (
+        props.inputProps.renderInput(inputProps)
+      )}
     </Stack>
   );
 };

@@ -1,3 +1,4 @@
+import { sectionsPresets } from "@/contentSections/presets";
 import { AlignVariant } from "@shared/ui/components/ui/richText/types";
 import { defineField, defineType } from "sanity";
 
@@ -74,7 +75,18 @@ const customRichText = defineType({
           type: "section.linksList",
         },
       ],
-      // components: componentsWithBlocksInput({ presets: preparedTemplates }),
+      components: componentsWithBlocksInput({
+        presets: Object.values(sectionsPresets)
+          .flat()
+          .filter((v) =>
+            [
+              "section.logos",
+              "section.cardsGrid",
+              "section.linksList",
+            ].includes(v.value._type),
+          ),
+        isRichText: true,
+      }),
     }),
 
     defineField({

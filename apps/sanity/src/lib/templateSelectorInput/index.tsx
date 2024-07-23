@@ -4,6 +4,9 @@ import { BlocksInput } from "./BlocksInput";
 
 export const componentsWithBlocksInput = (params: object) => {
   return {
-    field: (props) => <BlocksInput {...props} {...params} />,
+    field: (props: any) => <BlocksInput {...props} {...params} />,
+    // input: (props) => (
+    // <span style={{ backgroundColor: "red" }}>wefwefwefwefwfwf</span>
+    // ),
   };
 };
