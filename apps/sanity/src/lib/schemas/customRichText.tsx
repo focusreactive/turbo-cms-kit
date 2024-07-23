@@ -1,5 +1,8 @@
+import { sectionsPresets } from "@/contentSections/presets";
 import { AlignVariant } from "@shared/ui/components/ui/richText/types";
 import { defineField, defineType } from "sanity";
+
+import { componentsWithBlocksInput } from "@/lib/templateSelectorInput";
 
 export const richTextBreak = defineType({
   name: "break",
@@ -72,6 +75,18 @@ const customRichText = defineType({
           type: "section.linksList",
         },
       ],
+      components: componentsWithBlocksInput({
+        presets: Object.values(sectionsPresets)
+          .flat()
+          .filter((v) =>
+            [
+              "section.logos",
+              "section.cardsGrid",
+              "section.linksList",
+            ].includes(v.value._type),
+          ),
+        isRichText: true,
+      }),
     }),
 
     defineField({
