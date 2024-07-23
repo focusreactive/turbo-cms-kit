@@ -1,0 +1,117 @@
+{
+  "_type": "section.copy",
+  "text": {
+    "_type": "customRichText",
+    "alignVariant": "center",
+    "text": [
+      {
+        "_type": "section.linksList",
+        "alignVariant": "center",
+        "links": [
+          {
+            "_type": "customLink",
+            "target": "_self",
+            "text": "Demo & Initial Project Read More →​​​​‌",
+            "type": "internal",
+            "url": {
+              "_ref": "0a28744d-602b-49a3-b91a-17a56e3c7832",
+              "_type": "reference"
+            },
+            "variant": "badge"
+          }
+        ],
+        "theme": "dark"
+      },
+      {
+        "_type": "block",
+        "children": [
+          {
+            "_type": "span",
+            "marks": [],
+            "text": ""
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_type": "block",
+        "children": [
+          {
+            "_type": "span",
+            "marks": [],
+            "text": "Demo Page"
+          }
+        ],
+        "markDefs": [],
+        "style": "h1"
+      },
+      {
+        "_type": "block",
+        "children": [
+          {
+            "_type": "span",
+            "marks": [],
+            "text": "try to modify and create new blocks"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_type": "block",
+        "children": [
+          {
+            "_type": "span",
+            "marks": [],
+            "text": ""
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_type": "section.linksList",
+        "alignVariant": "center",
+        "links": [
+          {
+            "_type": "customLink",
+            "target": "_self",
+            "text": "Get Started",
+            "type": "internal",
+            "url": {
+              "_ref": "0a28744d-602b-49a3-b91a-17a56e3c7832",
+              "_type": "reference"
+            },
+            "variant": "primary"
+          },
+          {
+            "_type": "customLink",
+            "target": "_self",
+            "text": "Try Now",
+            "type": "internal",
+            "url": {
+              "_ref": "0a28744d-602b-49a3-b91a-17a56e3c7832",
+              "_type": "reference"
+            },
+            "variant": "secondary"
+          }
+        ],
+        "theme": "dark"
+      },
+      {
+        "_type": "block",
+        "children": [
+          {
+            "_type": "span",
+            "marks": [],
+            "text": ""
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ]
+  },
+  "theme": "dark"
+}

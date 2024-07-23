@@ -3,7 +3,7 @@ import type { PlopTypes } from "@turbo/gen";
 export default function generator(plop: PlopTypes.NodePlopAPI): void {
   plop.setHelper("capitialize", (str: string) => {
     return str.charAt(0).toUpperCase() + str.slice(1);
-  })
+  });
 
   plop.setGenerator("UI", {
     description: "Create a new UI component",
@@ -17,7 +17,7 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
             return "component name is required";
           }
 
-          if (input.split(' ').length > 1) {
+          if (input.split(" ").length > 1) {
             return "component name should be a single word";
           }
 
@@ -37,33 +37,33 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
         templateFile: "templates/uiComponentTypes.hbs",
       },
       {
-        type: 'modify',
-        path: '{{ turbo.paths.root }}/packages/ui/index.tsx',
+        type: "modify",
+        path: "{{ turbo.paths.root }}/packages/ui/index.tsx",
         pattern: /(\/\/ end component exports)/g,
-        template: `export * from "./components/ui/{{ componentName }}"\n$1`
+        template: `export * from "./components/ui/{{ componentName }}"\n$1`,
       },
     ],
-  })
+  });
 
-  plop.setGenerator('Sanity', {
-    description: 'Create a new content section',
+  plop.setGenerator("Sanity", {
+    description: "Create a new content section",
     prompts: [
       {
-        type: 'input',
-        name: 'sectionName',
-        message: 'What is the name of the new section?',
+        type: "input",
+        name: "sectionName",
+        message: "What is the name of the new section?",
         validate: (input: string) => {
           if (!input) {
-            return 'section name is required'
+            return "section name is required";
           }
 
-          if (input.split(' ').length > 1) {
-            return 'section name should be a single word'
+          if (input.split(" ").length > 1) {
+            return "section name should be a single word";
           }
 
-          return true
-        }
-      }
+          return true;
+        },
+      },
     ],
     actions: [
       {
@@ -92,35 +92,37 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
         templateFile: "templates/sanitySectionSchema.hbs",
       },
       {
-        type: 'modify',
-        path: '{{ turbo.paths.root }}/apps/sanity/src/contentSections/index.tsx',
+        type: "modify",
+        path: "{{ turbo.paths.root }}/apps/sanity/src/contentSections/index.tsx",
         pattern: /(\/\/ end of section imports)/g,
-        template: "import {{ capitialize sectionName }} from './{{ capitialize sectionName }}'\n$1"
+        template:
+          "import {{ capitialize sectionName }} from './{{ capitialize sectionName }}'\n$1",
       },
       {
-        type: 'modify',
-        path: '{{ turbo.paths.root }}/apps/sanity/src/contentSections/index.tsx',
+        type: "modify",
+        path: "{{ turbo.paths.root }}/apps/sanity/src/contentSections/index.tsx",
         pattern: /(\/\/ end of section object)/g,
-        template: "'section.{{ sectionName }}': {{ capitialize sectionName }},\n$1"
+        template:
+          "'section.{{ sectionName }}': {{ capitialize sectionName }},\n$1",
       },
       {
-        type: 'modify',
-        path: '{{ turbo.paths.root }}/packages/ui/index.tsx',
+        type: "modify",
+        path: "{{ turbo.paths.root }}/packages/ui/index.tsx",
         pattern: /(\/\/ end component exports)/g,
-        template: `export * from "./components/sections/{{ sectionName }}"\n$1`
+        template: `export * from "./components/sections/{{ sectionName }}"\n$1`,
       },
       {
-        type: 'modify',
-        path: '{{ turbo.paths.root }}/apps/sanity/src/lib/schemas/contentSections/index.ts',
+        type: "modify",
+        path: "{{ turbo.paths.root }}/apps/sanity/src/lib/schemas/contentSections/index.ts",
         pattern: /(\/\/ end of section array)/g,
-        template: `{{ sectionName }},\n$1`
+        template: `{{ sectionName }},\n$1`,
       },
       {
-        type: 'modify',
-        path: '{{ turbo.paths.root }}/apps/sanity/src/lib/schemas/contentSections/index.ts',
+        type: "modify",
+        path: "{{ turbo.paths.root }}/apps/sanity/src/lib/schemas/contentSections/index.ts",
         pattern: /(\/\/ end of section imports)/g,
-        template: `import {{ sectionName }} from './{{ sectionName }}'\n$1`
+        template: `import {{ sectionName }} from './{{ sectionName }}'\n$1`,
       },
-    ]
-  })
+    ],
+  });
 }
