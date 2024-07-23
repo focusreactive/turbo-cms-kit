@@ -234,11 +234,11 @@ const BlocksBrowser = ({
   const typesOptionsSet = new Set(presets.map((p) => p.value._type));
   const nameOptionsSet = new Set(presets.map((p) => p.name));
 
-  const handleSearchByName = (value) => {
+  const handleSearchByName = (value: any) => {
     setFilterTitle(value || "");
   };
 
-  const handleSelect = (setFn) => (e) => {
+  const handleSelect = (setFn: any) => (e: any) => {
     const value = e.target.value;
     console.log("🚀 ~ handleSelect ~ value:", value);
     setFn(value);
