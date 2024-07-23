@@ -347,6 +347,7 @@ const BlocksBrowser = ({
               onItemAppend,
               preset: preset!,
               selectSinglePreset: resetSinglePreset,
+              // @ts-ignore
               renderItemView,
             })}
           </Box>
@@ -356,6 +357,7 @@ const BlocksBrowser = ({
               presets: filteredPresets,
               onItemAppend,
               renderItem,
+              // @ts-ignore
               renderItemView,
               selectSinglePreset,
             })}

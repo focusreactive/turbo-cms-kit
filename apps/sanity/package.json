@@ -23,7 +23,8 @@
     "react-dom": "^18",
     "sanity": "^3.52.0",
     "sanity-plugin-simpler-color-input": "^2.2.2",
-    "server-only": "0.0.1"
+    "server-only": "0.0.1",
+    "uuid": "^10.0.0"
   },
   "devDependencies": {
     "@shared/eslint-config": "workspace:*",

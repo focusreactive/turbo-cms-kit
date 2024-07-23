@@ -3,6 +3,7 @@ import { AddIcon } from "@sanity/icons";
 import { Button, Card, Grid, Popover, Stack, Text } from "@sanity/ui";
 import type { ArrayFieldProps } from "sanity";
 import styled from "styled-components";
+import { v4 as uuid } from "uuid";
 
 import BlocksBrowser from "./BlocksBrowser";
 import type { BlocksInputCustomProps } from "./types";
@@ -80,7 +81,9 @@ export const BlocksInput: ComponentType<any> = (
           return (
             <BlocksBrowser
               onClose={onClose}
-              onItemAppend={props.inputProps.onItemAppend}
+              onItemAppend={(v) =>
+                props.inputProps.onItemAppend({ ...v, _key: uuid() })
+              }
               presets={props.presets}
               renderItemView={props.renderItemView}
               renderItem={props.renderItem}
@@ -109,7 +112,9 @@ export const BlocksInput: ComponentType<any> = (
           <h1 style={{ fontSize: 24 }}>Preset selector</h1>
           <BlocksBrowser
             onClose={() => ({})}
-            onItemAppend={props.inputProps.onItemAppend}
+            onItemAppend={(v) =>
+              props.inputProps.onItemAppend({ ...v, _key: uuid() })
+            }
             presets={props.presets}
             renderItemView={props.renderItemView}
             renderItem={props.renderItem}
