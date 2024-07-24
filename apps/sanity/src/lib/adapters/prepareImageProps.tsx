@@ -51,5 +51,6 @@ export const prepareImageProps = (props?: IImage): IImageProps => {
     aspectRatio: stegaClean(props.aspectRatio),
     fill: true,
     fit: "cover",
+    sizes: "(max-width: 1280px) 100vw, 1280px",
   };
 };

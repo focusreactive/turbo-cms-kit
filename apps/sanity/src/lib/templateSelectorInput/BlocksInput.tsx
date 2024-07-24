@@ -28,10 +28,11 @@ type ArrayFunctionsProps = {
 };
 
 const ArrayFunctions = ({
+  setIsAddOpen,
+  isAddOpen,
   renderBlocksSelector,
   // onPaste,
-}: ArrayFunctionsProps) => {
-  const [isAddOpen, setIsAddOpen] = React.useState(false);
+}: ArrayFunctionsProps & any) => {
   const handleClose = () => {
     setIsAddOpen(!isAddOpen);
   };
@@ -70,6 +71,8 @@ const ArrayFunctions = ({
 export const BlocksInput: ComponentType<any> = (
   props: ArrayFieldProps & BlocksInputCustomProps,
 ) => {
+  const [isAddOpen, setIsAddOpen] = React.useState(false);
+
   // @ts-ignore
   const isRichText = props.isRichText;
 
@@ -77,7 +80,9 @@ export const BlocksInput: ComponentType<any> = (
     ...props.inputProps,
     arrayFunctions: () => (
       <ArrayFunctions
-        renderBlocksSelector={({ onClose }) => {
+        isAddOpen={isAddOpen}
+        setIsAddOpen={setIsAddOpen}
+        renderBlocksSelector={({ onClose }: any) => {
           return (
             <BlocksBrowser
               onClose={onClose}
@@ -106,20 +111,25 @@ export const BlocksInput: ComponentType<any> = (
       {isRichText ? (
         <div>
           {props.renderDefault(props)}
-          <br />
-          <br />
-          <br />
-          <h1 style={{ fontSize: 24 }}>Preset selector</h1>
-          <BlocksBrowser
-            onClose={() => ({})}
-            onItemAppend={(v) =>
-              props.inputProps.onItemAppend({ ...v, _key: uuid() })
-            }
-            presets={props.presets}
-            renderItemView={props.renderItemView}
-            renderItem={props.renderItem}
-            renderView={props.renderView}
-          />
+
+          <Button
+            style={{ margin: "20px 0" }}
+            onClick={() => setIsAddOpen((v) => !v)}
+          >
+            {(isAddOpen ? "close" : "open") + " presets"}
+          </Button>
+          {isAddOpen && (
+            <BlocksBrowser
+              onClose={() => ({})}
+              onItemAppend={(v) =>
+                props.inputProps.onItemAppend({ ...v, _key: uuid() })
+              }
+              presets={props.presets}
+              renderItemView={props.renderItemView}
+              renderItem={props.renderItem}
+              renderView={props.renderView}
+            />
+          )}
         </div>
       ) : (
         props.inputProps.renderInput(inputProps)
