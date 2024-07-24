@@ -30,14 +30,13 @@ export async function loadQuery<QueryResponse>({
   const options = {
     filterResponse: false,
     useCdn: false,
-    resultSourceMap: isDraftMode ? "withKeyArraySelector" : false,
+    // resultSourceMap: isDraftMode ? "withKeyArraySelector" : false,
     token,
     perspective,
     next: {
       tags: ["sanity"],
       revalidate: isDraftMode ? 0 : undefined,
     },
-    cache: "no-store",
   } satisfies UnfilteredResponseQueryOptions;
   const result = await client.fetch<QueryResponse>(query, params, {
     ...options,
