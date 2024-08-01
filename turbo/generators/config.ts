@@ -88,7 +88,7 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
       },
       {
         type: "add",
-        path: "{{ turbo.paths.root }}/apps/sanity/src/lib/schemas/contentSections/{{ sectionName }}.ts",
+        path: "{{ turbo.paths.root }}/apps/sanity/src/contentSections/{{ capitialize sectionName }}/schema.ts",
         templateFile: "templates/sanitySectionSchema.hbs",
       },
       {
@@ -113,15 +113,15 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
       },
       {
         type: "modify",
-        path: "{{ turbo.paths.root }}/apps/sanity/src/lib/schemas/contentSections/index.ts",
+        path: "{{ turbo.paths.root }}/apps/sanity/src/lib/schemas/sections.ts",
         pattern: /(\/\/ end of section array)/g,
         template: `{{ sectionName }},\n$1`,
       },
       {
         type: "modify",
-        path: "{{ turbo.paths.root }}/apps/sanity/src/lib/schemas/contentSections/index.ts",
+        path: "{{ turbo.paths.root }}/apps/sanity/src/lib/schemas/sections.ts",
         pattern: /(\/\/ end of section imports)/g,
-        template: `import {{ sectionName }} from './{{ sectionName }}'\n$1`,
+        template: `import {{ sectionName }} from '@/contentSections/{{ capitialize sectionName }}/schema'\n$1`,
       },
     ],
   });

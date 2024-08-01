@@ -1,7 +1,6 @@
-import { defineSection } from '@tinloof/sanity-studio'
 import { defineField } from 'sanity'
 
-export default defineSection({
+export default {
   options: {},
   name: 'section.{{ sectionName }}',
   title: '{{ capitialize sectionName }}',
@@ -12,4 +11,4 @@ export default defineSection({
         type: 'string',
       }),
   ],
-})
+}
