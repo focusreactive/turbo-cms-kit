@@ -1,10 +1,9 @@
-import { defineSection } from "@tinloof/sanity-studio";
 import { defineField } from "sanity";
 
 import customLink from "@/lib/schemas/customLink";
 import customRichText from "@/lib/schemas/customRichText";
 
-export default defineSection({
+export default {
   name: "section.footer",
   title: "Footer",
   type: "object",
@@ -57,4 +56,4 @@ export default defineSection({
       title: "Footer",
     }),
   },
-});
+};

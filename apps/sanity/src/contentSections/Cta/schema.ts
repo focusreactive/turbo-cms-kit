@@ -1,11 +1,10 @@
 import { CtaVariant } from "@shared/ui/components/sections/cta/types";
-import { defineSection } from "@tinloof/sanity-studio";
 import { defineField } from "sanity";
 
 import customLink from "@/lib/schemas/customLink";
 import customRichText from "@/lib/schemas/customRichText";
 
-export default defineSection({
+export default {
   name: "section.cta",
   title: "CTA",
   type: "object",
@@ -65,18 +64,18 @@ export default defineSection({
     select: {
       text: "text.text",
     },
-    prepare(value) {
+    prepare(value: any) {
       const block = (value.text || []).find(
         (block: { _type: string }) => block._type === "block",
       );
       return {
         title: block
           ? block.children
-              .filter((child: { _type: string }) => child._type === "span")
-              .map((span: { text: any }) => span.text)
-              .join("")
+            .filter((child: { _type: string }) => child._type === "span")
+            .map((span: { text: any }) => span.text)
+            .join("")
           : "No text",
       };
     },
   },
-});
+};

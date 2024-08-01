@@ -1,5 +1,4 @@
 import { LogosVariant } from "@shared/ui/components/sections/logos/types";
-import { defineSection } from "@tinloof/sanity-studio";
 import { defineField, defineType } from "sanity";
 
 import customImage from "@/lib/schemas/customImage";
@@ -44,7 +43,7 @@ export const logoItem = defineType({
   },
 });
 
-export default defineSection({
+export default {
   options: {},
   name: "section.logos",
   title: "Logos",
@@ -98,4 +97,4 @@ export default defineSection({
       title: "Logos",
     }),
   },
-});
+};

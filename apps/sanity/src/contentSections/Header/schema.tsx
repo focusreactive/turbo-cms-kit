@@ -1,9 +1,8 @@
-import { defineSection } from "@tinloof/sanity-studio";
 import { defineField } from "sanity";
 
 import customLink from "@/lib/schemas/customLink";
 
-export default defineSection({
+export default {
   name: "section.header",
   title: "Header",
   type: "object",
@@ -45,4 +44,4 @@ export default defineSection({
       title: "Header",
     }),
   },
-});
+};

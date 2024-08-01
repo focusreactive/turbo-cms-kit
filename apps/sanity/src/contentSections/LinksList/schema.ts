@@ -1,9 +1,8 @@
-import { defineSection } from "@tinloof/sanity-studio";
 import { defineField } from "sanity";
 
 import customLink from "@/lib/schemas/customLink";
 
-export default defineSection({
+export default {
   options: {},
   name: "section.linksList",
   title: "Links list",
@@ -59,7 +58,7 @@ export default defineSection({
       links: "links",
       alignVariant: "alignVariant",
     },
-    prepare(value) {
+    prepare(value: any) {
       const linkText = value.links[0].text;
 
       return {
@@ -67,4 +66,4 @@ export default defineSection({
       };
     },
   },
-});
+};

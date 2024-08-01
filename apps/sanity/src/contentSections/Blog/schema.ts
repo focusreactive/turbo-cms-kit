@@ -1,4 +1,3 @@
-import { defineSection } from "@tinloof/sanity-studio";
 import { defineField, defineType } from "sanity";
 
 import customRichText from "@/lib/schemas/customRichText";
@@ -44,7 +43,7 @@ export const blogPost = defineType({
   },
 });
 
-export default defineSection({
+export default {
   name: "section.blog",
   title: "Blog section",
   type: "object",
@@ -110,7 +109,7 @@ export default defineSection({
       text: "text.text",
       style: "style",
     },
-    prepare(value) {
+    prepare(value: any) {
       const block = (value.text || []).find(
         (block: { _type: string; children: any }) =>
           block._type === "block" && block.children?.[0].text,
@@ -119,12 +118,12 @@ export default defineSection({
       return {
         title: block
           ? block.children
-              .filter((child: { _type: string }) => child._type === "span")
-              .map((span: { text: any }) => span.text)
-              .join("")
+            .filter((child: { _type: string }) => child._type === "span")
+            .map((span: { text: any }) => span.text)
+            .join("")
           : "No text",
         description: value.style,
       };
     },
   },
-});
+};
