@@ -14,16 +14,9 @@ An open source application built using the new router, server components and eve
 - 📁 New `/app` dir,
 - 🗂️ Routing, Layouts, Nested Layouts and Layout Groups
 - 🌎 Data Fetching, Caching and Mutation
-- ⏱️ Loading UI
 - 🛠️ Server and Client Components
-- 🚦 API Routes and Middlewares
-- 👮‍♂️ Authentication using **Clerk**
-- 🌱 Database using **MongoDB**
 - 🧩 UI Components built using **Radix UI**
 - 🎨 Styled using **Tailwind CSS**
-- 👨‍🎨 Styleguide using **Storybook**
-- ⚡️ Validations using **Zod**
-- 🛟 Validation for type-safe environment variables using **T3 Env**
 - 👷🏼‍♂️ Written in **TypeScript**
 
 ## What's inside?
@@ -32,8 +25,8 @@ This turborepo uses [pnpm](https://pnpm.io) as a package manager. It includes th
 
 ### Apps and Packages
 
-- `web`: another [Next.js 14](https://nextjs.org) app
-- `storybook`: a [Storybook](https://storybook.js.org/blog/in-app-tour-for-new-users/) app
+- `storyblok`: CMS app
+- `sanity`: CMS app
 - `ui`: a stub React component library shared by both `web` and `docs` applications
 - `eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `ts-config`: `tsconfig.json`s used throughout the monorepo
