@@ -4,14 +4,23 @@ An open source application built using the new router, server components and eve
 
 ## Demo 👀
 
-> **Warning**
-> This app is a work in progress.
-> https://maksimhodasevich-turbo-cms-kit.vercel.app/
+> **Warning**\
+> This lib is a work in progress
+
+- [GitHub](https://github.com/focusreactive/turbo-cms-kit)
+
+### Sanity
+- [Demo Landing](https://turbo-cms-kit-sanity.vercel.app/)
+- [CMS](https://turbo-cms-kit-sanity.vercel.app/studio)
+
+### Storyblok
+- [Demo Landing](https://turbo-cms-kit-storyblok.vercel.app/)
+- [CMS](https://app.storyblok.com/#/me/spaces/293915/)
 
 ## Features 🌟
 
 - 🚀 Monorepo using **Turborepo**
-- 📁 New `/app` dir,
+- 📁 New `/app` dir
 - 🗂️ Routing, Layouts, Nested Layouts and Layout Groups
 - 🌎 Data Fetching, Caching and Mutation
 - 🛠️ Server and Client Components
@@ -47,7 +56,6 @@ This turborepo has some additional tools already setup:
 To build all apps and packages, run the following command:
 
 ```
-cd my-turborepo
 pnpm run build
 ```
 
@@ -56,7 +64,6 @@ pnpm run build
 To develop all apps and packages, run the following command:
 
 ```
-cd my-turborepo
 pnpm run dev
 ```
 
@@ -67,7 +74,6 @@ Turborepo can use a technique known as [Remote Caching](https://turborepo.org/do
 By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
 
 ```
-cd my-turborepo
 pnpm dlx turbo login
 ```
 
