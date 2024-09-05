@@ -1,14 +1,9 @@
-# Next.js 14 with Turborepo
+# CMS-Kit
 
-An open source application built using the new router, server components and everything new in Next.js 14.
+An endeavor accumulating the experience and best practices collected at [Focus Reactive](https://focusreactive.com/).
+The project serves the idea of making Headless CMS-based development accessible, comfortable, and fast.
 
 ## Demo 👀
-
-> **Warning**\
-> This lib is a work in progress
-
-- [GitHub](https://github.com/focusreactive/turbo-cms-kit)
-
 ### Sanity
 - [Demo Landing](https://turbo-cms-kit-sanity.vercel.app/)
 - [CMS](https://turbo-cms-kit-sanity.vercel.app/studio)
@@ -61,6 +56,19 @@ pnpm run build
 
 ### Develop
 
+Setup environment variables:
+Link Vercel projects:
+```
+vercel login
+vercel link --repo
+```
+
+Pull environment variables from Vercel:
+```
+vercel env --cwd apps/sanity --environment development pull
+vercel env --cwd apps/storyblok --environment development pull
+```
+
 To develop all apps and packages, run the following command:
 
 ```
@@ -95,5 +103,3 @@ Learn more about the power of Turborepo:
 - [Scoped Tasks](https://turborepo.org/docs/core-concepts/scopes)
 - [Configuration Options](https://turborepo.org/docs/reference/configuration)
 - [CLI Usage](https://turborepo.org/docs/reference/command-line-reference)
-
-# turbo-cms-kit
