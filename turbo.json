@@ -8,7 +8,7 @@
     "NEXT_PREVIEW_TOKEN",
     "storyblokApiToken",
     "NODE_ENV",
-    "VERCEL_ENV",
+    "VERCEL_ENV"
   ],
   "tasks": {
     "build": {
