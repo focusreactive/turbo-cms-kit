@@ -1,7 +1,7 @@
 import createImageUrlBuilder from "@sanity/image-url";
 import type { Image } from "sanity";
 
-import config from "../../config";
+import config from "../config";
 
 const imageBuilder = createImageUrlBuilder({
   projectId: config.sanity.projectId || "",

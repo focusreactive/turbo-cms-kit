@@ -1,8 +1,8 @@
 import "server-only";
 
-import config from "config";
 import { groq } from "next-sanity";
 
+import config from "@/config";
 import { client } from "@/lib/api/client";
 
 // Used in `generateStaticParams`

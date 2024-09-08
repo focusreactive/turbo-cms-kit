@@ -1,12 +1,12 @@
 export async function fetchVercelTeams(token) {
-  const url = 'https://api.vercel.com/v2/teams';
+  const url = "https://api.vercel.com/v2/teams";
 
   try {
     const response = await fetch(url, {
-      method: 'GET',
+      method: "GET",
       headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${token}`,
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
       },
     });
 
@@ -17,10 +17,10 @@ export async function fetchVercelTeams(token) {
     const data = await response.json();
 
     if (!Array.isArray(data.teams) || data.teams.length === 0) {
-      throw new Error('No teams found.');
+      throw new Error("No teams found.");
     }
 
-    const teams = data.teams.map(team => ({
+    const teams = data.teams.map((team) => ({
       name: team.name,
       slug: team.slug,
       id: team.id,
@@ -28,20 +28,20 @@ export async function fetchVercelTeams(token) {
 
     return teams;
   } catch (error) {
-    console.error('Error fetching teams:', error.message);
+    console.error("Error fetching teams:", error.message);
     return [];
   }
 }
 
 export async function fetchVercelUserInfo(token) {
-  const url = 'https://api.vercel.com/v2/user';
+  const url = "https://api.vercel.com/v2/user";
 
   try {
     const response = await fetch(url, {
-      method: 'GET',
+      method: "GET",
       headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${token}`,
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
       },
     });
 
@@ -59,7 +59,7 @@ export async function fetchVercelUserInfo(token) {
 
     return userInfo;
   } catch (error) {
-    console.error('Error fetching user info:', error.message);
+    console.error("Error fetching user info:", error.message);
     return {};
   }
 }

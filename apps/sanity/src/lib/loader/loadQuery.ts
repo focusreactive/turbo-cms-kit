@@ -3,13 +3,13 @@ import "server-only";
 import { draftMode } from "next/headers";
 import * as queryStore from "@sanity/react-loader";
 
+import config from "@/config";
 import { client } from "@/lib/api/client";
 import { PAGE_BY_SLUG_QUERY } from "@/lib/api/queries";
-import { token } from "@/lib/api/token";
 import { type PagePayload } from "@/lib/types";
 
 const serverClient = client.withConfig({
-  token,
+  token: config.sanity.token,
   // Enable stega if it's a Vercel preview deployment, as the Vercel Toolbar has controls that shows overlays
   stega: process.env.VERCEL_ENV === "preview",
 });

@@ -1,12 +1,12 @@
 export async function fetchSanityOrganizations(token) {
-  const url = 'https://api.sanity.io/v2021-06-07/organizations';
+  const url = "https://api.sanity.io/v2021-06-07/organizations";
 
   try {
     const response = await fetch(url, {
-      method: 'GET',
+      method: "GET",
       headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${token}`,
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
       },
     });
 
@@ -17,10 +17,10 @@ export async function fetchSanityOrganizations(token) {
     const data = await response.json();
 
     if (!Array.isArray(data) || data.length === 0) {
-      throw new Error('No organizations found.');
+      throw new Error("No organizations found.");
     }
 
-    const organizations = data.map(org => ({
+    const organizations = data.map((org) => ({
       name: org.name,
       slug: org.slug,
       id: org.id,
@@ -28,20 +28,20 @@ export async function fetchSanityOrganizations(token) {
 
     return organizations;
   } catch (error) {
-    console.error('Error fetching organizations:', error.message);
+    console.error("Error fetching organizations:", error.message);
     return [];
   }
 }
 
 export async function fetchSanityUserInfo(token) {
-  const url = 'https://api.sanity.io/v2021-06-07/users/me';
+  const url = "https://api.sanity.io/v2021-06-07/users/me";
 
   try {
     const response = await fetch(url, {
-      method: 'GET',
+      method: "GET",
       headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${token}`,
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
       },
     });
 
@@ -59,7 +59,7 @@ export async function fetchSanityUserInfo(token) {
 
     return userInfo;
   } catch (error) {
-    console.error('Error fetching user info:', error.message);
+    console.error("Error fetching user info:", error.message);
     return {};
   }
 }
