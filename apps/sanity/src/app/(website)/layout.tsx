@@ -34,11 +34,7 @@ export const viewport: Viewport = {
   themeColor: "#000",
 };
 
-export default async function IndexRoute({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default async function IndexRoute({ children }: PropsWithChildren) {
   return (
     <>
       {/*<Suspense>*/}
