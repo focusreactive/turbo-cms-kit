@@ -21,8 +21,11 @@ export default defineType({
       type: "string",
       name: "title",
       group: "content",
+      description: "For preview use only",
     }),
 
+    // TODO: remove one of these fields after decided on tinloof usage
+    definePathname({ name: "pathname" }),
     definePathname({ name: "slug" }),
 
     defineField({
@@ -37,18 +40,21 @@ export default defineType({
         presets: Object.values(sectionsPresets).flat(),
       }),
     }),
+
     defineField({
       type: "string",
       name: "seoTitle",
       title: "SEO Title",
       group: "seo",
     }),
+
     defineField({
       type: "string",
       name: "seoDescription",
       title: "SEO Description",
       group: "seo",
     }),
+
     defineField({
       name: "robots",
       type: "string",
@@ -60,6 +66,7 @@ export default defineType({
       },
       group: "seo",
     }),
+
     defineField({
       name: "ogImage",
       type: "image",
