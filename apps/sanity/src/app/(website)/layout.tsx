@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { Suspense, type PropsWithChildren } from "react";
 import type { Viewport } from "next";
 import dynamic from "next/dynamic";
 import { draftMode } from "next/headers";
