@@ -119,9 +119,9 @@ export const clickableImageCard = defineType({
       return {
         title: block
           ? block.children
-            .filter((child: { _type: string }) => child._type === "span")
-            .map((span: { text: any }) => span.text)
-            .join("")
+              .filter((child: { _type: string }) => child._type === "span")
+              .map((span: { text: any }) => span.text)
+              .join("")
           : "No text",
         media: value.image,
       };

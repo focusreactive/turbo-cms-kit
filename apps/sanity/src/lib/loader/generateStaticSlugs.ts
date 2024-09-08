@@ -6,7 +6,8 @@ import config from "@/config";
 import { client } from "@/lib/api/client";
 
 // Used in `generateStaticParams`
-export function generateStaticPaths(types: string[]) {
+export function generateStaticSlugs(type: string) {
+  // Not using loadQuery as it's optimized for fetching in the RSC lifecycle
   return client
     .withConfig({
       token: config.sanity.token,
@@ -14,12 +15,12 @@ export function generateStaticPaths(types: string[]) {
       useCdn: false,
       stega: false,
     })
-    .fetch<string[]>(
-      groq`*[_type in $types && defined(pathname.current)][].pathname.current`,
-      { types },
+    .fetch<{ slug: string }[]>(
+      groq`*[_type == $type && defined(slug.current)]{"slug": slug.current}`,
+      { type },
       {
         next: {
-          tags: types,
+          tags: [type],
         },
       },
     );

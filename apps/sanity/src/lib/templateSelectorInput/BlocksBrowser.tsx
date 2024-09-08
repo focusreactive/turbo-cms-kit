@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import { CloseCircleIcon, SearchIcon } from "@sanity/icons";
 import { Autocomplete, Box, Select, Stack } from "@sanity/ui";
 import styled from "styled-components";
@@ -207,7 +207,7 @@ type Props = {
   presets: Preset[];
   renderView?: (props: RenderViewProps) => React.ReactNode;
   renderItem?: (props: RenderItemProps) => React.ReactNode;
-  renderItemView?: (props: RenderItemProps) => React.ReactNode;
+  renderItemView?: (props: RenderItemViewProps) => React.ReactNode;
 };
 
 const BlocksBrowser = ({
@@ -218,12 +218,12 @@ const BlocksBrowser = ({
   renderItem = (props) => <DefaultRenderItem {...props} />,
   renderItemView = (props) => <DefaultRenderItemView {...props} />,
 }: Props) => {
-  const [singleViewName, setSingleViewName] = React.useState<string>("");
-  const [filterTitle, setFilterTitle] = React.useState<string>("");
-  const [areaFilter, setAreaFilter] = React.useState<string>("all");
-  const [categoryFilter, setCategoryFilter] = React.useState<string>("all");
-  const [typesFilter, setTypesFilter] = React.useState<string>("all");
-  const [nameFilter, setNameFilter] = React.useState<string>("all");
+  const [singleViewName, setSingleViewName] = useState<string>("");
+  const [filterTitle, setFilterTitle] = useState<string>("");
+  const [areaFilter, setAreaFilter] = useState<string>("all");
+  const [categoryFilter, setCategoryFilter] = useState<string>("all");
+  const [typesFilter, setTypesFilter] = useState<string>("all");
+  const [nameFilter, setNameFilter] = useState<string>("all");
 
   console.log("presets2");
   console.log(presets);

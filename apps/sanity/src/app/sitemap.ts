@@ -1,13 +1,13 @@
 import { type MetadataRoute } from "next";
 
-import { loadPages } from "@/lib/api";
+import { generateSitemap } from "@/lib/loader/generateSitemap";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const pages = await loadPages();
+  const slugs = await generateSitemap("page");
 
-  const sitemap = pages.map((page) => ({
-    url: `${process.env.NEXT_PUBLIC_DOMAIN}${page.pathname?.current}`,
-    lastModified: new Date(page._createdAt),
+  const sitemap = slugs.map(({ slug, _createdAt }) => ({
+    url: `${process.env.NEXT_PUBLIC_DOMAIN}${slug}`,
+    lastModified: new Date(_createdAt),
   }));
 
   return sitemap;

@@ -1,12 +1,14 @@
 import { visionTool } from "@sanity/vision";
 import { pages } from "@tinloof/sanity-studio";
-import config from "config";
 import { defineConfig } from "sanity";
 import { simplerColorInput } from "sanity-plugin-simpler-color-input";
+// import { presentationTool } from "sanity/presentation";
 import { structureTool } from "sanity/structure";
 
-import StudioLogo from "./src/components/StudioLogo";
-import schemas from "./src/lib/schemas";
+import config from "@/config";
+// import * as resolve from "@/lib/presentation/resolve";
+import schemas from "@/lib/schemas";
+import StudioLogo from "@/components/StudioLogo";
 
 export default defineConfig({
   basePath: config.sanity.studioUrl,
@@ -26,6 +28,14 @@ export default defineConfig({
       },
       creatablePages: ["page"],
     }),
+    // presentationTool({
+    //   resolve,
+    //   previewUrl: {
+    //     previewMode: {
+    //       enable: "/api/draft",
+    //     },
+    //   },
+    // }),
     structureTool(),
     visionTool({ defaultApiVersion: config.sanity.apiVersion }),
     simplerColorInput(),

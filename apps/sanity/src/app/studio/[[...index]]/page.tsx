@@ -1,5 +1,6 @@
 import { type Metadata } from "next";
-import config from "config";
+
+import config from "@/config";
 
 import Studio from "./Studio";
 
