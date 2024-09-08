@@ -2,7 +2,7 @@ import { Suspense, type PropsWithChildren } from "react";
 import type { Viewport } from "next";
 import dynamic from "next/dynamic";
 import { draftMode } from "next/headers";
-import { NextSteps } from "@shared/ui/components/sections/next-steps";
+// import { NextSteps } from "@shared/ui/components/sections/next-steps";
 
 const LiveVisualEditing = dynamic(
   () => import("@/lib/loader/LiveVisualEditing"),
@@ -44,9 +44,9 @@ export default async function IndexRoute({ children }: PropsWithChildren) {
 
       <Suspense>{children}</Suspense>
 
-      <Suspense>
-        <NextSteps studioUrl="/studio" />
-      </Suspense>
+      {/*<Suspense>*/}
+      {/*  <NextSteps studioUrl="/studio" />*/}
+      {/*</Suspense>*/}
 
       {/*<Suspense>*/}
       {/*  <Footer />*/}
