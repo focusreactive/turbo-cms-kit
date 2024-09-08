@@ -1,40 +1,57 @@
-import { type Metadata } from "next";
-import { revalidatePath, revalidateTag } from "next/cache";
+import { Suspense } from "react";
+import type { Viewport } from "next";
+import dynamic from "next/dynamic";
 import { draftMode } from "next/headers";
-import config from "config";
-import { VisualEditing } from "next-sanity";
 
-export const metadata: Metadata = {
-  title: `${config.siteName} - Website`,
+const LiveVisualEditing = dynamic(
+  () => import("@/lib/loader/LiveVisualEditing"),
+);
+
+// export async function generateMetadata(): Promise<Metadata> {
+//   const [{ data: settings }, { data: homePage }] = await Promise.all([
+//     loadSettings(),
+//     loadHomePage(),
+//   ])
+//
+//   const ogImage = urlForOpenGraphImage(settings?.ogImage)
+//   return {
+//     title: homePage?.title
+//       ? {
+//         template: `%s | ${homePage.title}`,
+//         default: homePage.title || 'Personal website',
+//       }
+//       : undefined,
+//     description: homePage?.overview
+//       ? toPlainText(homePage.overview)
+//       : undefined,
+//     openGraph: {
+//       images: ogImage ? [ogImage] : [],
+//     },
+//   }
+// }
+
+export const viewport: Viewport = {
+  themeColor: "#000",
 };
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+export default async function IndexRoute({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <>
-      {children}
-      {draftMode().isEnabled && (
-        <VisualEditing
-          refresh={async (payload) => {
-            "use server";
-            if (!draftMode().isEnabled) {
-              console.debug(
-                "Skipped manual refresh because draft mode is not enabled",
-              );
-              return;
-            }
-            if (payload.source === "mutation") {
-              if (payload.document.slug?.current) {
-                const tag = `${payload.document._type}:${payload.document.slug.current}`;
-                console.log("Revalidate slug", tag);
-                await revalidateTag(tag);
-              }
-              console.log("Revalidate tag", payload.document._type);
-              return revalidateTag(payload.document._type);
-            }
-            await revalidatePath("/", "layout");
-          }}
-        />
-      )}
+      {/*<Suspense>*/}
+      {/*  <Navbar />*/}
+      {/*</Suspense>*/}
+
+      <Suspense>{children}</Suspense>
+
+      {/*<Suspense>*/}
+      {/*  <Footer />*/}
+      {/*</Suspense>*/}
+
+      {draftMode().isEnabled && <LiveVisualEditing />}
     </>
   );
 }

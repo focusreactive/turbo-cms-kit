@@ -11,8 +11,8 @@ export function Logos({ items, variant = LogosVariant.Centered }: ILogosProps) {
         "justify-end": variant === LogosVariant.Right,
       })}
     >
-      {items?.map((item) => (
-        <div className="h-20" key={item._key}>
+      {items?.map((item, i) => (
+        <div className="h-20" key={i}>
           <LogoItem {...item} />
         </div>
       ))}

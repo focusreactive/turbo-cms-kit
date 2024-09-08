@@ -9,7 +9,7 @@ import customImage from "./customImage";
 import customLink from "./customLink";
 import customRichText, { basicRichText, richTextBreak } from "./customRichText";
 // prettier-ignore
-import page from "../../components/Page/schema";
+import page from "@/components/page/schema";
 
 import sections from "./sections";
 

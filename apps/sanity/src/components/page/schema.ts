@@ -23,7 +23,8 @@ export default defineType({
       group: "content",
     }),
 
-    definePathname({ name: "pathname" }),
+    definePathname({ name: "slug" }),
+
     defineField({
       name: "sectionsBody",
       title: "Sections",
@@ -74,4 +75,11 @@ export default defineType({
       group: "seo",
     }),
   ],
+
+  preview: {
+    select: {
+      title: "title",
+      subtitle: "slug.current",
+    },
+  },
 });

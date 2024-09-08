@@ -22,9 +22,12 @@ export function BlogSection({ text, style, posts }: IBlogSectionProps) {
         </div>
 
         <div className="border-textSecondaryColor mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-          {posts.map((post) => {
+          {posts.map((post, i) => {
             return (
-              <article className="flex max-w-xl flex-col items-start justify-between">
+              <article
+                key={i}
+                className="flex max-w-xl flex-col items-start justify-between"
+              >
                 {style === Style.threeColumnWithImages ? (
                   <div
                     className={"h-48 w-full rounded-md bg-cover bg-center pb-5"}
