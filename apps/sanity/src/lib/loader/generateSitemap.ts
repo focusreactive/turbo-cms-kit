@@ -5,8 +5,7 @@ import { groq } from "next-sanity";
 import { client } from "@/lib/api/client";
 import { token } from "@/lib/api/token";
 
-// Used in `generateStaticParams`
-export function generateStaticSlugs(type: string) {
+export function generateSitemap(type: string) {
   // Not using loadQuery as it's optimized for fetching in the RSC lifecycle
   return client
     .withConfig({
@@ -15,8 +14,8 @@ export function generateStaticSlugs(type: string) {
       useCdn: false,
       stega: false,
     })
-    .fetch<{ slug: string }[]>(
-      groq`*[_type == $type && defined(slug.current)]{"slug": slug.current}`,
+    .fetch<{ slug: string; _createdAt: string }[]>(
+      groq`*[_type == $type && defined(slug.current)]{"slug": slug.current, _createdAt}`,
       { type },
       {
         next: {
