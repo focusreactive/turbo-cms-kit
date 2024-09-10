@@ -4,7 +4,6 @@ import cardsGrid from "@/contentSections/CardsGrid/schema";
 import copy from "@/contentSections/Copy/schema";
 import footer from "@/contentSections/Footer/schema";
 import header from "@/contentSections/Header/schema";
-import hero from "@/contentSections/Hero/schema";
 import linksList from "@/contentSections/LinksList/schema";
 import logos from "@/contentSections/Logos/schema";
 
@@ -12,13 +11,12 @@ import logos from "@/contentSections/Logos/schema";
 
 const sections = [
   // start of section array
-  hero,
-  copy,
-  logos,
-  cardsGrid,
   header,
   footer,
+  copy,
+  logos,
   linksList,
+  cardsGrid,
   blog,
   // end of section array
 ];
