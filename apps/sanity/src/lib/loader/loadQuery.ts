@@ -39,7 +39,6 @@ export const loadQuery = ((query, params = {}, options = {}) => {
   } else if (usingCdn) {
     revalidate = 60;
   }
-  console.log(query, params, revalidate, perspective);
   return queryStore.loadQuery(query, params, {
     ...options,
     next: {
