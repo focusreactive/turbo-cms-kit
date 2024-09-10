@@ -1,8 +1,5 @@
 import { blogPost } from "@/contentSections/Blog/schema";
-import {
-  clickableImageCard,
-  defaultCard,
-} from "@/contentSections/CardsGrid/schema";
+import { defaultCard } from "@/contentSections/CardsGrid/schema";
 import { logoItem } from "@/contentSections/Logos/schema";
 
 import customImage from "./customImage";
@@ -22,7 +19,6 @@ const schemas = [
   defaultCard,
   richTextBreak,
   basicRichText,
-  clickableImageCard,
   blogPost,
   ...sections,
 ];
