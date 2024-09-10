@@ -1,12 +1,26 @@
-import React from "react";
-
+import { cn } from "../../../utils";
 import { RichText } from "../../ui/richText";
 import type { ICopyProps } from "./types";
 
-export const Copy: React.FC<ICopyProps> = ({ richText }) => {
+export function Copy(props: ICopyProps) {
+  const { columns, isReversedOnMobile } = props;
+
   return (
-    <div className="sm:text-lg">
-      <RichText {...richText} />
+    <div
+      className={cn("flex flex-col items-center gap-6 lg:flex-row", {
+        "flex-col-reverse": isReversedOnMobile,
+      })}
+    >
+      {columns.map((text, index) => (
+        <div
+          key={index}
+          className={cn("w-full overflow-hidden rounded-lg", {
+            "lg:basis-1/2": columns.length === 2,
+          })}
+        >
+          <RichText {...text} />
+        </div>
+      ))}
     </div>
   );
-};
+}

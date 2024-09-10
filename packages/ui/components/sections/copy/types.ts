@@ -1,5 +1,6 @@
 import type { IRichTextProps } from "../../ui/richText/types";
 
 export interface ICopyProps {
-  richText: IRichTextProps;
+  columns: IRichTextProps[];
+  isReversedOnMobile?: boolean;
 }
