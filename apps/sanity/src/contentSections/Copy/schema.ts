@@ -14,13 +14,7 @@ export default {
     },
     { name: "style", title: "Style" },
   ],
-  options: {
-    variants: [
-      {
-        assetUrl: "/images/copy.png",
-      },
-    ],
-  },
+  options: {},
   fields: [
     defineField({
       name: "columns",
