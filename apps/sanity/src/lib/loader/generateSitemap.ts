@@ -16,7 +16,7 @@ export function generateSitemap(type: string) {
       stega: false,
     })
     .fetch<{ slug: string; _createdAt: string }[]>(
-      groq`*[_type == $type && defined(slug.current)]{"slug": slug.current, _createdAt}`,
+      groq`*[_type == $type && defined(pathname.current)]{"slug": pathname.current, _createdAt}`,
       { type },
       {
         next: {
