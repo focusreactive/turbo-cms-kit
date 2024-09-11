@@ -1,6 +1,6 @@
-import type {
-  LinkProps,
+import {
   LinkVariant,
+  type LinkProps,
 } from "@shared/ui/components/ui/link/types";
 import type { SbBlokData } from "@storyblok/react/rsc";
 
@@ -26,11 +26,19 @@ export interface IStoryLink {
 export interface ILinkBlok extends SbBlokData {
   text: string;
   link: IStoryLink;
-  variant?: LinkVariant;
+  variant: LinkVariant;
   newTab?: boolean;
 }
 
-export const prepareLinkProps = (props: ILinkBlok): LinkProps => {
+export const prepareLinkProps = (props?: ILinkBlok): LinkProps => {
+  if (!props) {
+    return {
+      text: "",
+      href: "",
+      variant: LinkVariant.Default,
+    };
+  }
+
   return {
     text: props.text,
     href: props.link.url,

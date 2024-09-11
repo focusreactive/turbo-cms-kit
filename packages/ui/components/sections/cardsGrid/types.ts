@@ -1,24 +1,24 @@
 import type { IImageProps } from "../../ui/image/types";
 import type { LinkProps } from "../../ui/link/types";
-import type { IRichTextProps } from "../../ui/richText/types";
 
-export interface IClickableImageCard {
-  type: "clickableImageCard";
-  image: IImageProps;
-  link?: LinkProps;
-  text: IRichTextProps;
+export enum DefaultCardStyle {
+  IconTop = "icon-top",
+  IconTitleInline = "icon-title-inline",
+  IconLeftWithBackground = "icon-left-with-background",
+  NoIcon = "no-icon",
+  IconLeftSeparateTitle = "icon-left-separate-title",
+  IconLeft = "icon-left",
 }
 
-export interface IDefaultCard {
-  type: "defaultCard";
+export interface IDefaultCardProps {
   title: string;
   description: string;
-  style?: string;
+  style: DefaultCardStyle;
   image?: IImageProps;
   link?: LinkProps;
 }
 
 export interface ICardsGridProps {
-  items: (IDefaultCard | IClickableImageCard)[];
+  items: IDefaultCardProps[];
   columns: number;
 }

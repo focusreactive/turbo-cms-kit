@@ -1,22 +1,15 @@
-"use client";
-
-import React from "react";
 import { StoryblokComponent } from "@storyblok/react/rsc";
 
-import { type IPageContainerProps } from "./types";
+import type { IPageContainerProps } from "./types";
 
-const PageContainer: React.FunctionComponent<IPageContainerProps> = ({
-  blok,
-}) => {
-  const { body } = blok;
+export default function PageContainer({ blok }: IPageContainerProps) {
+  const { sections } = blok;
 
   return (
     <div className="mt-4">
-      {body.map((blok) => (
-        <StoryblokComponent blok={{ ...blok }} key={blok._uid} />
+      {sections.map((section) => (
+        <StoryblokComponent blok={{ ...section }} key={section._uid} />
       ))}
     </div>
   );
-};
-
-export default PageContainer;
+}

@@ -18,9 +18,9 @@ export interface ILinkVariantsClassNames {
 
 export interface LinkProps {
   children?: React.ReactNode;
-  text?: string;
+  text: string;
   href: string;
-  variant?: LinkVariant;
+  variant: LinkVariant;
   className?: string;
   style?: React.CSSProperties;
 }

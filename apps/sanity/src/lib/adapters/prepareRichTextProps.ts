@@ -1,7 +1,7 @@
 import { stegaClean } from "@sanity/client/stega";
-import type {
+import {
   AlignVariant,
-  IRichTextProps,
+  type IRichTextProps,
 } from "@shared/ui/components/ui/richText/types";
 
 import renderRichText from "../renderRichText";
@@ -17,11 +17,12 @@ export const prepareRichTextProps = (props?: IRichText): IRichTextProps => {
     return {
       richText: null,
       removeInnerMargins: false,
+      alignVariant: AlignVariant.Left,
     };
 
   return {
     richText: renderRichText(props.text),
     removeInnerMargins: props.removeInnerMargins,
-    alignVariant: stegaClean(props.alignVariant),
+    alignVariant: stegaClean(props.alignVariant) || AlignVariant.Left,
   };
 };

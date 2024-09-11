@@ -1,19 +1,18 @@
 import type { IImageProps } from "../../ui/image/types";
 import type { LinkProps } from "../../ui/link/types";
 
-export enum LogosVariant {
+export enum AlignVariant {
   Left = "left",
-  Centered = "centered",
+  Center = "center",
   Right = "right",
 }
 
 export interface ILogoItem {
   link?: LinkProps;
   image: IImageProps;
-  _key: string;
 }
 
 export interface ILogosProps {
   items: ILogoItem[];
-  variant?: LogosVariant;
+  alignVariant: AlignVariant;
 }

@@ -1,17 +1,17 @@
 import { cn } from "../../../utils";
 import LogoItem from "./LogoItem";
-import { LogosVariant, type ILogosProps } from "./types";
+import { AlignVariant, type ILogosProps } from "./types";
 
-export function Logos({ items, variant = LogosVariant.Centered }: ILogosProps) {
+export function Logos({ items, alignVariant }: ILogosProps) {
   return (
     <div
       className={cn("flex flex-wrap items-center justify-center gap-6", {
-        "justify-center": variant === LogosVariant.Centered,
-        "justify-start": variant === LogosVariant.Left,
-        "justify-end": variant === LogosVariant.Right,
+        "justify-center": alignVariant === AlignVariant.Center,
+        "justify-start": alignVariant === AlignVariant.Left,
+        "justify-end": alignVariant === AlignVariant.Right,
       })}
     >
-      {items?.map((item, i) => (
+      {items.map((item, i) => (
         <div className="h-20" key={i}>
           <LogoItem {...item} />
         </div>

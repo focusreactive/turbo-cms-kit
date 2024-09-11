@@ -1,4 +1,4 @@
-import { LogosVariant } from "@shared/ui/components/sections/logos/types";
+import { AlignVariant } from "@shared/ui/components/sections/logos/types";
 import { defineField, defineType } from "sanity";
 
 import customImage from "@/lib/schemas/customImage";
@@ -66,11 +66,11 @@ export default {
     }),
 
     defineField({
-      name: "variant",
+      name: "alignVariant",
       type: "string",
       group: "style",
       options: {
-        list: Object.values(LogosVariant).map((v) => ({
+        list: Object.values(AlignVariant).map((v) => ({
           title: v,
           value: v,
         })),

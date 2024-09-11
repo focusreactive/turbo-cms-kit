@@ -1,4 +1,3 @@
-import inquirer from "inquirer";
 import ora from "ora";
 
 export async function createSanityProject(projectName) {

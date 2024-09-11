@@ -1,4 +1,3 @@
-import React from "react";
 import NextLink from "next/link";
 
 import { cn } from "../../../utils";
@@ -21,14 +20,14 @@ export const LinkVariantsClassNames: ILinkVariantsClassNames = {
     "relative rounded-full font-base px-3 py-1 text-textSecondaryColor ring-1 ring-textSecondaryColor hover:ring-primaryColor",
 };
 
-export const Link: React.FC<LinkProps> = ({
+export function Link({
   children,
   text,
   href,
   className,
-  variant = LinkVariant.Primary,
+  variant,
   style,
-}) => {
+}: LinkProps) {
   return (
     <NextLink
       href={href}
@@ -38,4 +37,4 @@ export const Link: React.FC<LinkProps> = ({
       {children || text}
     </NextLink>
   );
-};
+}

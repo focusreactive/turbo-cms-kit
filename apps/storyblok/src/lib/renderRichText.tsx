@@ -1,7 +1,7 @@
-import type { ISbRichtext } from "@storyblok/react/rsc";
+import { StoryblokComponent, type ISbRichtext } from "@storyblok/react/rsc";
 import { render } from "storyblok-rich-text-react-renderer";
 
-import { BasicImage } from "@shared/ui";
+import { Image } from "@shared/ui";
 
 import { prepareImageProps, type IImage } from "./adapters/prepareImageProps";
 
@@ -18,12 +18,45 @@ export default function renderRichText(data: ISbRichtext) {
               aspectRatio: props.aspectRatio as string,
             }}
           >
-            <BasicImage
+            <Image
               {...prepareImageProps({
                 ...(props as IImage),
               })}
             />
           </div>
+        );
+      },
+
+      cardsGrid: (props) => {
+        return (
+          <StoryblokComponent
+            blok={{
+              ...props,
+              component: "cardsGrid",
+            }}
+          />
+        );
+      },
+
+      linksList: (props) => {
+        return (
+          <StoryblokComponent
+            blok={{
+              ...props,
+              component: "linksList",
+            }}
+          />
+        );
+      },
+
+      logos: (props) => {
+        return (
+          <StoryblokComponent
+            blok={{
+              ...props,
+              component: "logos",
+            }}
+          />
         );
       },
     },

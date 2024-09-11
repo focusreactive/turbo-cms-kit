@@ -1,3 +1,5 @@
+import { AlignVariant } from "@shared/ui/components/sections/logos/types";
+
 import { Logos } from "@shared/ui";
 
 import { prepareImageProps } from "@/lib/adapters/prepareImageProps";
@@ -9,7 +11,12 @@ import type { ILogosSectionProps } from "./types";
 export default function LogosSection({ data }: ILogosSectionProps) {
   if (!data) return null;
 
-  const { items, variant, _key, theme = "light" } = data;
+  const {
+    items,
+    alignVariant = AlignVariant.Left,
+    _key,
+    theme = "light",
+  } = data;
 
   const formattedItems = items?.map((item) => ({
     ...item,
@@ -22,7 +29,7 @@ export default function LogosSection({ data }: ILogosSectionProps) {
 
   return (
     <SectionContainer id={_key} theme={theme}>
-      <Logos items={formattedItems} variant={variant} />
+      <Logos items={formattedItems} alignVariant={alignVariant} />
     </SectionContainer>
   );
 }

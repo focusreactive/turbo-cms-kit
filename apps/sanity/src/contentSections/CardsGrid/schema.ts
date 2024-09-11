@@ -1,8 +1,6 @@
 import { defineField, defineType } from "sanity";
 
 import customImage from "@/lib/schemas/customImage";
-import customLink from "@/lib/schemas/customLink";
-import { basicRichText } from "@/lib/schemas/customRichText";
 
 const featurePointStyles = [
   { title: "Icon on the left", value: "icon-left" },
@@ -75,60 +73,6 @@ export const defaultCard = defineType({
   },
 });
 
-export const clickableImageCard = defineType({
-  options: {},
-  name: "clickableImageCard",
-  type: "object",
-  title: "Clickable image card",
-  groups: [
-    {
-      name: "content",
-      title: "Content",
-      default: true,
-    },
-    { name: "style", title: "Style" },
-  ],
-  fields: [
-    defineField({
-      name: "image",
-      type: customImage.name,
-      group: "content",
-    }),
-    defineField({
-      name: "text",
-      type: basicRichText.name,
-      group: "content",
-    }),
-    defineField({
-      name: "link",
-      type: customLink.name,
-      group: "content",
-    }),
-  ],
-  preview: {
-    select: {
-      text: "text.text",
-      image: "image.image",
-    },
-    prepare(value) {
-      const block = (value.text || []).find(
-        (block: { _type: string; children: any }) =>
-          block._type === "block" && block.children?.[0].text,
-      );
-
-      return {
-        title: block
-          ? block.children
-              .filter((child: { _type: string }) => child._type === "span")
-              .map((span: { text: any }) => span.text)
-              .join("")
-          : "No text",
-        media: value.image,
-      };
-    },
-  },
-});
-
 export default {
   options: {},
   name: "section.cardsGrid",
@@ -170,7 +114,7 @@ export default {
       name: "items",
       type: "array",
       group: "content",
-      of: [{ type: "defaultCard" }, { type: "clickableImageCard" }],
+      of: [{ type: "defaultCard" }],
     }),
   ],
   preview: {

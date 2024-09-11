@@ -1,9 +1,9 @@
-import type { SbBlokData } from "@storyblok/react/rsc";
+import type { IRichText } from "@/lib/adapters/prepareRichTextProps";
+import type { ISectionContainer } from "@/components/SectionContainer/types";
 
-import type { IRichTextBlok } from "@/lib/adapters/prepareRichTextProps";
-
-interface ICopy extends SbBlokData {
-  text: IRichTextBlok[];
+interface ICopy extends ISectionContainer {
+  columns: IRichText[];
+  isReversedOnMobile: boolean;
 }
 
 export interface ICopyProps {

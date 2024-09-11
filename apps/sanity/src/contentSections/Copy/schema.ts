@@ -12,23 +12,22 @@ export default {
       title: "Content",
       default: true,
     },
-    {
-      name: "style",
-      title: "Style",
-    },
+    { name: "style", title: "Style" },
   ],
-  options: {
-    variants: [
-      {
-        assetUrl: "/images/copy.png",
-      },
-    ],
-  },
+  options: {},
   fields: [
     defineField({
-      name: "text",
-      type: customRichText.name,
+      name: "columns",
+      type: "array",
       group: "content",
+      of: [{ type: customRichText.name }],
+      validation: (Rule) => Rule.required().min(1).max(2),
+    }),
+
+    defineField({
+      name: "isReversedOnMobile",
+      type: "boolean",
+      group: "style",
     }),
     defineField({
       name: "theme",
@@ -46,14 +45,12 @@ export default {
   ],
   preview: {
     select: {
-      text: "text.text",
+      text: "columns.0.text",
     },
     prepare(value: any) {
       const block = (value.text || []).find(
-        (block: { _type: string; children: any }) =>
-          block._type === "block" && block.children?.[0].text,
+        (block: { _type: string }) => block._type === "block",
       );
-
       return {
         title: block
           ? block.children

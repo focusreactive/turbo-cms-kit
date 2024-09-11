@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 @layer utilities {
-    .no-children-margins {
-        &>* {
-            @apply !my-0;
-        }
+  .no-children-margins {
+    & > * {
+      @apply !my-0;
     }
+  }
 }

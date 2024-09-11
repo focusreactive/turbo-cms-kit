@@ -2,10 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-    .no-children-margins {
-        &>* {
-            @apply !my-0;
-        }
-    }
+.light {
+  --bg: #f6f6f6;
+  --text: #222222;
+  --text-secondary: #666666;
+  --primary: #4f46e5;
+}
+
+.dark {
+  --bg: #222222;
+  --text: #f6f6f6;
+  --text-secondary: #999999;
+  --primary: #4f46e5;
 }

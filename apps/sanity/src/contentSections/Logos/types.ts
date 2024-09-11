@@ -1,4 +1,4 @@
-import type { LogosVariant } from "@shared/ui/components/sections/logos/types";
+import type { AlignVariant } from "@shared/ui/components/sections/logos/types";
 
 import type { IImage } from "@/lib/adapters/prepareImageProps";
 import type { ILink } from "@/lib/adapters/prepareLinkProps";
@@ -13,7 +13,7 @@ interface ILogoItem {
 export interface ILogos {
   _key: string;
   items: ILogoItem[];
-  variant?: LogosVariant;
+  alignVariant?: AlignVariant;
   theme?: "light" | "dark";
 }
 

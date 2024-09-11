@@ -1,5 +1,3 @@
-"use client";
-
 import { Header as HeaderUI } from "@shared/ui";
 
 import { prepareLinkProps } from "@/lib/adapters/prepareLinkProps";

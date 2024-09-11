@@ -1,30 +1,30 @@
-"use client";
-
 import { storyblokEditable } from "@storyblok/react/rsc";
 
-import { type ISectionContainerProps } from "./types";
+import { cn } from "@shared/ui";
+
+import type { ISectionContainerProps } from "./types";
 
 const isDraftMode = process.env.NEXT_PUBLIC_IS_PREVIEW === "true";
 
-const SectionContainer: React.FunctionComponent<ISectionContainerProps> = (
-  props,
-) => {
+export default function SectionContainer(props: ISectionContainerProps) {
   const { children, blok } = props;
-  const id = blok._uid;
+  const { theme, _uid } = blok;
 
   if (isDraftMode) {
     return (
-      <section className="" {...storyblokEditable(blok)} id={id}>
+      <section
+        {...storyblokEditable(blok)}
+        className={cn("bg-bgColor", theme)}
+        id={_uid}
+      >
         <div className="mx-auto max-w-screen-xl px-4 py-8">{children}</div>
       </section>
     );
   }
 
   return (
-    <section className="" id={id}>
+    <section className={cn("bg-bgColor", theme)} id={_uid}>
       <div className="mx-auto max-w-screen-xl px-4 py-8">{children}</div>
     </section>
   );
-};
-
-export default SectionContainer;
+}

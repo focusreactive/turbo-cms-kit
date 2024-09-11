@@ -1,4 +1,4 @@
-import { BasicImage } from "../../ui/image";
+import { Image } from "../../ui/image";
 import { ImageAspectRatio } from "../../ui/image/types";
 import { Link } from "../../ui/link";
 import { LinkVariant } from "../../ui/link/types";
@@ -15,14 +15,14 @@ export default function LogoItem({ image, link }: ILogoItem) {
   if (link) {
     return (
       <Link {...link} {...imageWrapperProps} variant={LinkVariant.Default}>
-        {image && <BasicImage {...image} fit="contain" />}
+        {image && <Image {...image} fit="contain" />}
       </Link>
     );
   }
 
   return (
     <div {...imageWrapperProps}>
-      <BasicImage {...image} fit="contain" />
+      <Image {...image} fit="contain" />
     </div>
   );
 }

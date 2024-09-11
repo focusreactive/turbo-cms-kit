@@ -1,11 +1,10 @@
 "use client";
 
-import type React from "react";
 import { apiPlugin, storyblokInit } from "@storyblok/react/rsc";
 
 import { COMPONENTS } from "@/constants/sbComponents";
 
-import { type IStoryblokProviderProps } from "./types";
+import type { IStoryblokProviderProps } from "./types";
 
 storyblokInit({
   accessToken: process.env.storyblokApiToken,
@@ -16,10 +15,8 @@ storyblokInit({
   },
 });
 
-const StoryblokProvider: React.FunctionComponent<IStoryblokProviderProps> = ({
+export default function StoryblokProvider({
   children,
-}) => {
+}: IStoryblokProviderProps) {
   return children;
-};
-
-export default StoryblokProvider;
+}

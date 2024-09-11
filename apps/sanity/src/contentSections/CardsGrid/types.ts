@@ -1,3 +1,5 @@
+import type { DefaultCardStyle } from "@shared/ui/components/sections/cardsGrid/types";
+
 import type { IImage } from "@/lib/adapters/prepareImageProps";
 import type { ILink } from "@/lib/adapters/prepareLinkProps";
 import type { IRichText } from "@/lib/adapters/prepareRichTextProps";
@@ -7,7 +9,7 @@ export interface ICardsGrid {
   columns: number;
   items: {
     _type: "cardsGrid";
-    style?: string;
+    style?: DefaultCardStyle;
     title: string;
     description: string;
     image?: IImage;
