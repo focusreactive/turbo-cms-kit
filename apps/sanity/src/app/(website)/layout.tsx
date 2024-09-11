@@ -7,6 +7,7 @@ const LiveVisualEditing = dynamic(
   () => import("@/lib/loader/LiveVisualEditing"),
 );
 
+// TODO: add global metadata
 // export async function generateMetadata(): Promise<Metadata> {
 //   const [{ data: settings }, { data: homePage }] = await Promise.all([
 //     loadSettings(),

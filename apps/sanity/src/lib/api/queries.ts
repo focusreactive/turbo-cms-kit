@@ -6,5 +6,10 @@ export const PAGE_BY_SLUG_QUERY = groq`
     sectionsBody,
     title,
     "slug": pathname.current,
+
+    seoTitle,
+    seoDescription,
+    ogImage,
+    robots,
   }
 `;

@@ -176,7 +176,7 @@ export async function getMetaData(slug?: string[]): Promise<Metadata> {
 
   openGraph.images = {
     url: story.content?.ogImage?.filename
-      ? `${story.content?.ogImage?.filename}/m/filters:quality(75)`
+      ? `${story.content?.ogImage?.filename}/m/1200x630/filters:quality(75)`
       : "",
   };
 

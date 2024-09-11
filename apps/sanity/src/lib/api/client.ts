@@ -15,8 +15,10 @@ export const client = createClient({
     studioUrl: config.sanity.studioUrl,
     // logger: console,
     filter: (props) => {
-      if (props.sourcePath.at(-1) === "title") {
-        return true;
+      const excluded = ["seoTitle", "seoDescription", "robots"];
+      const fieldName = props.sourcePath.at(-1);
+      if (typeof fieldName === "string" && excluded.includes(fieldName)) {
+        return false;
       }
 
       return props.filterDefault(props);
