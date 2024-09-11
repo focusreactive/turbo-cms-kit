@@ -71,7 +71,6 @@ export async function fetchAllPages() {
   const commonFetchParams: ISbStoriesParams = {
     version: "published",
     token: process.env.SB_PREVIEW_TOKEN,
-    starts_with: process.env.NEXT_PUBLIC_DATA_ROOT,
     cv,
     per_page: 1000,
     // @ts-ignore
