@@ -10,6 +10,8 @@ export default function Page({ data }: PageProps) {
   // Default to an empty object to allow previews on non-existent documents
   const { sectionsBody } = data ?? {};
 
+  console.log(sectionsBody);
+
   return (
     <div>
       {sectionsBody?.map((section) => (
