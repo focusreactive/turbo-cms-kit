@@ -25,8 +25,11 @@ queryStore.setServerClient(serverClient);
 const usingCdn = serverClient.config().useCdn;
 // Automatically handle draft mode
 export const loadQuery = ((query, params = {}, options = {}) => {
+  const isDev = process.env.NODE_ENV === "development";
   const {
-    perspective = draftMode().isEnabled ? "previewDrafts" : "published",
+    perspective = draftMode().isEnabled || isDev
+      ? "previewDrafts"
+      : "published",
   } = options;
   // Don't cache by default
   let revalidate: NextFetchRequestConfig["revalidate"] = 0;

@@ -24,9 +24,8 @@ export default defineType({
       description: "For preview use only",
     }),
 
-    // TODO: remove one of these fields after decided on tinloof usage
+    // TODO: rename to `slug`
     definePathname({ name: "pathname" }),
-    definePathname({ name: "slug" }),
 
     defineField({
       name: "sectionsBody",
@@ -86,7 +85,7 @@ export default defineType({
   preview: {
     select: {
       title: "title",
-      subtitle: "slug.current",
+      subtitle: "pathname.current",
     },
   },
 });

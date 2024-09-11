@@ -6,22 +6,24 @@ import config from "@/config";
 import { client } from "@/lib/api/client";
 
 // Used in `generateStaticParams`
-export function generateStaticSlugs(type: string) {
+export async function generateStaticSlugs(type: string) {
   // Not using loadQuery as it's optimized for fetching in the RSC lifecycle
-  return client
+  const slugs = await client
     .withConfig({
       token: config.sanity.token,
       perspective: "published",
       useCdn: false,
       stega: false,
     })
-    .fetch<{ slug: string }[]>(
-      groq`*[_type == $type && defined(slug.current)]{"slug": slug.current}`,
+    .fetch<string[]>(
+      groq`*[_type == $type && defined(pathname.current)]{"slug": pathname.current}.slug`,
       { type },
       {
         next: {
-          tags: [type],
+          tags: [type], // TODO: should it be the same as in loadPage?
         },
       },
     );
+
+  return slugs.map((slug) => ({ slug: slug.split("/").filter(Boolean) }));
 }

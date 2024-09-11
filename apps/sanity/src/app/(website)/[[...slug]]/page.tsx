@@ -27,7 +27,7 @@ type Props = {
 //   }
 // }
 
-export function generateStaticParams() {
+export async function generateStaticParams() {
   return generateStaticSlugs("page");
 }
 
@@ -35,7 +35,7 @@ export default async function PageSlugRoute({ params }: Props) {
   // TODO: research why this happens
   if (params.slug?.[0] === "_next") return null;
 
-  const slug = params.slug?.join("/") ?? "/";
+  const slug = params.slug ? `/${params.slug.join("/")}` : "/";
   const initial = await loadPage(slug);
 
   if (draftMode().isEnabled) {
