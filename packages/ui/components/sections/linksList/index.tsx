@@ -12,7 +12,7 @@ export function LinksList({ links, alignVariant }: ILinksListProps) {
           "justify-end": alignVariant === "right",
         })}
       >
-        {links.map((link) => (
+        {links?.map((link) => (
           <Link key={link.text} {...link} />
         ))}
       </div>

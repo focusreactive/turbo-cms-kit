@@ -11,7 +11,7 @@ export default function Header({ data }: IHeaderProps) {
   const { links, _key, theme = "light" } = data;
 
   return (
-    <SectionContainer id={_key} theme={theme} className="px-0">
+    <SectionContainer id={_key} theme={theme}>
       <HeaderUI
         links={links.map(prepareLinkProps)}
         className="fixed left-0 top-0 z-50 w-full"

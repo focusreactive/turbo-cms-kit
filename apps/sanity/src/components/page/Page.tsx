@@ -10,12 +10,10 @@ export default function Page({ data }: PageProps) {
   // Default to an empty object to allow previews on non-existent documents
   const { sectionsBody } = data ?? {};
 
-  console.log(sectionsBody);
-
   return (
-    <div>
+    <div className="mt-4">
       {sectionsBody?.map((section) => (
-        <SectionRenderer key={section._key} section={section} />
+        <SectionRenderer key={section._key} section={section}/>
       ))}
     </div>
   );

@@ -13,7 +13,7 @@ export default function CardsGrid({ data }: ICardsGridSectionProps) {
 
   const { items, columns, _key, theme = "light" } = data;
 
-  const formattedItems = items.map((item) => ({
+  const formattedItems = items?.map((item) => ({
     ...item,
     style: item.style || DefaultCardStyle.IconLeft,
     type: item._type,

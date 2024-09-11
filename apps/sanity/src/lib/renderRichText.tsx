@@ -50,6 +50,7 @@ const COMPONENTS = {
   },
 
   marks: {
+    strong: ({ children }: any) => <b>{children}</b>,
     textColor: ({ children, value }: any) => (
       <span style={{ color: stegaClean(value.value) }}>{children}</span>
     ),

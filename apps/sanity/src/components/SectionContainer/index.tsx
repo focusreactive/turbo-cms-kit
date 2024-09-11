@@ -8,7 +8,7 @@ export default function SectionContainer(props: ISectionContainerProps) {
   return (
     <section className={cn("bg-bgColor", theme)} id={id}>
       <div
-        className={cn("relative mx-auto max-w-screen-xl px-4 py-14", className)}
+        className={cn("mx-auto max-w-screen-xl px-4 py-8", className)}
       >
         {children}
       </div>
