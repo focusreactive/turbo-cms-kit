@@ -3,7 +3,9 @@ import type { OpenGraph } from "next/dist/lib/metadata/types/opengraph-types";
 import { type ISbStoriesParams, type ISbStoryData } from "@storyblok/react/rsc";
 
 const API_GATE = process.env.NEXT_PUBLIC_API_GATE;
-const isDraftModeEnv = process.env.NEXT_PUBLIC_IS_PREVIEW === "true";
+const isDevMode = process.env.NODE_ENV === "development";
+const isDraftModeEnv =
+  process.env.NEXT_PUBLIC_IS_PREVIEW === "true" || isDevMode;
 
 // Get the actual SB cache version
 export const getSBcacheCVparameter = async (isDraftMode: boolean) => {
@@ -142,6 +144,8 @@ export async function fetchStoriesByParams(
 export async function checkDraftModeToken(searchParams: {
   [key: string]: string | string[] | undefined;
 }) {
+  if (isDevMode) return true;
+
   let isDraftModeEnabled = process.env.NEXT_PUBLIC_IS_PREVIEW === "true";
 
   if (isDraftModeEnabled && process.env.NODE_ENV !== "development") {
