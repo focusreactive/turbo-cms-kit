@@ -82,7 +82,7 @@
           }
         ],
         "theme": "dark",
-        "variant": "centered"
+        "variant": "center"
       },
       {
         "children": [

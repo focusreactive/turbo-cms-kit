@@ -1,3 +1,5 @@
+import type { BlogStyle } from "@shared/ui/components/sections/blog/types";
+
 import type { IImage } from "@/lib/adapters/prepareImageProps";
 import type { ILink } from "@/lib/adapters/prepareLinkProps";
 import type { IRichText } from "@/lib/adapters/prepareRichTextProps";
@@ -11,7 +13,7 @@ interface IBlogPostCardProps {
 interface IBlogSection {
   text: IRichText;
   posts: IBlogPostCardProps[];
-  style: string;
+  style: BlogStyle;
   theme?: "light" | "dark";
   _key: string;
 }

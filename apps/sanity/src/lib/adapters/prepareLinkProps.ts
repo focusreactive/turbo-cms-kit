@@ -19,8 +19,7 @@ export interface ILink {
 }
 
 export const prepareLinkProps = (props?: ILink): LinkProps => {
-  if (!props || typeof props !== "object")
-    return { text: "", href: "", variant: LinkVariant.Default };
+  if (!props) return { text: "", href: "", variant: LinkVariant.Default };
 
   let href = "";
   if (props.type === "url") {
@@ -34,6 +33,6 @@ export const prepareLinkProps = (props?: ILink): LinkProps => {
   return {
     text: props.text,
     href: href,
-    variant: props.variant,
+    variant: props.variant || LinkVariant.Default,
   };
 };

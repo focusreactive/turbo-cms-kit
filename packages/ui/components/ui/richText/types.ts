@@ -1,5 +1,3 @@
-import type { ReactNode } from "react";
-
 export enum AlignVariant {
   Left = "left",
   Center = "center",
@@ -7,8 +5,8 @@ export enum AlignVariant {
 }
 
 export interface IRichTextProps {
-  richText: ReactNode | ReactNode[];
+  richText: React.ReactNode;
   removeInnerMargins?: boolean;
-  alignVariant?: AlignVariant;
+  alignVariant: AlignVariant;
   className?: string;
 }

@@ -1,14 +1,20 @@
-import CopySection from "@/contentSections/Copy";
-import Copy5050Section from "@/contentSections/Copy5050";
-import Cta from "@/contentSections/Cta";
-import Hero from "@/contentSections/Hero";
+import Blog from "@/contentSections/Blog";
+import CardsGrid from "@/contentSections/CardsGrid";
+import Copy from "@/contentSections/Copy";
+import Footer from "@/contentSections/Footer";
+import Header from "@/contentSections/Header";
+import LinksList from "@/contentSections/LinksList";
+import Logos from "@/contentSections/Logos";
 
 import PageContainer from "@/components/Page";
 
 export const COMPONENTS = {
   page: PageContainer,
-  hero: Hero,
-  cta: Cta,
-  copy: CopySection,
-  copy5050: Copy5050Section,
+  copy: Copy,
+  header: Header,
+  footer: Footer,
+  logos: Logos,
+  linksList: LinksList,
+  cardsGrid: CardsGrid,
+  blog: Blog,
 };

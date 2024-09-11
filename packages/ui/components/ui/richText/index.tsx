@@ -1,14 +1,12 @@
-import React from "react";
-
 import { cn } from "../../../utils";
 import { AlignVariant, type IRichTextProps } from "./types";
 
-export const RichText: React.FC<IRichTextProps> = ({
+export function RichText({
   className,
   richText,
   removeInnerMargins,
   alignVariant,
-}) => {
+}: IRichTextProps) {
   return (
     <div
       className={cn(
@@ -25,4 +23,4 @@ export const RichText: React.FC<IRichTextProps> = ({
       {richText}
     </div>
   );
-};
+}

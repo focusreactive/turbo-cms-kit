@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 
 import { generateStaticSlugs } from "@/lib/loader/generateStaticSlugs";
 import { loadPage } from "@/lib/loader/loadQuery";
-import { Page } from "@/components/page/Page";
+import Page from "@/components/page/Page";
 
 const PagePreview = dynamic(() => import("@/components/page/PagePreview"));
 

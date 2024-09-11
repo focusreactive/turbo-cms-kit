@@ -1,5 +1,3 @@
-"use client";
-
 import { Footer as FooterUI } from "@shared/ui";
 
 import { prepareLinkProps } from "@/lib/adapters/prepareLinkProps";

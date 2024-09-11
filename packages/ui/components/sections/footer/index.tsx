@@ -10,8 +10,8 @@ export function Footer({ links, text, copywriteText }: IFooterProps) {
         className="flex flex-wrap items-center justify-center gap-3 p-3"
         aria-label="footer mavigation"
       >
-        {links.map((link) => (
-          <Link key={link.text} {...link} />
+        {links.map((link, i) => (
+          <Link key={link.text + i} {...link} />
         ))}
       </nav>
       <p className="text-textColor text-center">

@@ -5,7 +5,7 @@ import { PortableText } from "@portabletext/react";
 import { stegaClean } from "@sanity/client/stega";
 import { ImageAspectRatio } from "@shared/ui/components/ui/image/types";
 
-import { BasicImage } from "@shared/ui";
+import { Image } from "@shared/ui";
 
 import { prepareImageProps, type IImage } from "./adapters/prepareImageProps";
 
@@ -29,7 +29,7 @@ const COMPONENTS = {
             height: value.height,
           }}
         >
-          {value.image && <BasicImage {...prepareImageProps(value)} />}
+          {value.image && <Image {...prepareImageProps(value)} />}
         </div>
       );
     },

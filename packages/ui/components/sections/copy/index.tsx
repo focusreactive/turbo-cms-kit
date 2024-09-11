@@ -2,9 +2,7 @@ import { cn } from "../../../utils";
 import { RichText } from "../../ui/richText";
 import type { ICopyProps } from "./types";
 
-export function Copy(props: ICopyProps) {
-  const { columns, isReversedOnMobile } = props;
-
+export function Copy({ columns, isReversedOnMobile }: ICopyProps) {
   return (
     <div
       className={cn("flex flex-col items-center gap-6 lg:flex-row", {

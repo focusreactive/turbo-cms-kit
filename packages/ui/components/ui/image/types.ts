@@ -11,7 +11,12 @@ export enum ImageAspectRatio {
   "3/1" = "3/1",
 }
 
+export interface IImageContainerProps {
+  aspectRatio: ImageAspectRatio;
+  children: React.ReactNode;
+}
+
 export interface IImageProps extends ImageProps {
-  aspectRatio?: ImageAspectRatio;
+  aspectRatio: ImageAspectRatio;
   fit?: "cover" | "contain";
 }

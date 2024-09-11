@@ -2,7 +2,7 @@ import { cn } from "../../../utils";
 import { Link } from "../../ui/link";
 import type { ILinksListProps } from "./types";
 
-export const LinksList = ({ links, alignVariant }: ILinksListProps) => {
+export function LinksList({ links, alignVariant }: ILinksListProps) {
   return (
     <div className="bg-bgColor">
       <div
@@ -18,4 +18,4 @@ export const LinksList = ({ links, alignVariant }: ILinksListProps) => {
       </div>
     </div>
   );
-};
+}

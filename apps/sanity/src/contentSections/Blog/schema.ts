@@ -45,7 +45,7 @@ export const blogPost = defineType({
 
 export default {
   name: "section.blog",
-  title: "Blog section",
+  title: "Blog",
   type: "object",
   groups: [
     {

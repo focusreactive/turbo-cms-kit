@@ -1,6 +1,6 @@
-import type {
-  IImageProps,
+import {
   ImageAspectRatio,
+  type IImageProps,
 } from "@shared/ui/components/ui/image/types";
 import type { SbBlokData } from "@storyblok/react/rsc";
 
@@ -14,7 +14,17 @@ export interface IImage extends SbBlokData {
   aspectRatio: ImageAspectRatio;
 }
 
-export const prepareImageProps = (props: IImage): IImageProps => {
+export const prepareImageProps = (props?: IImage): IImageProps => {
+  if (!props) {
+    return {
+      src: "",
+      alt: "",
+      aspectRatio: ImageAspectRatio["16/9"],
+      fill: true,
+      fit: "cover",
+    };
+  }
+
   return {
     src: props.asset.filename,
     alt: props.asset.alt,

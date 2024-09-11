@@ -6,7 +6,7 @@ export interface PageProps {
   data: PagePayload | null;
 }
 
-export function Page({ data }: PageProps) {
+export default function Page({ data }: PageProps) {
   // Default to an empty object to allow previews on non-existent documents
   const { sectionsBody } = data ?? {};
 
@@ -18,5 +18,3 @@ export function Page({ data }: PageProps) {
     </div>
   );
 }
-
-export default Page;
