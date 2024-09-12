@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import type { OpenGraph } from "next/dist/lib/metadata/types/opengraph-types";
 import { type ISbStoriesParams, type ISbStoryData } from "@storyblok/react/rsc";
 
+import { SB_CACHE_VERSION } from "@/constants/cacheTags";
+
 const API_GATE = process.env.NEXT_PUBLIC_API_GATE;
 const isDevMode = process.env.NODE_ENV === "development";
 const isDraftModeEnv =
@@ -22,7 +24,7 @@ export const getSBcacheCVparameter = async (isDraftMode: boolean) => {
     `${API_GATE}/stories?${searchParams.toString()}`,
     {
       next: {
-        tags: ["sb-cache-version"],
+        tags: [SB_CACHE_VERSION],
         ...(isDraftMode
           ? {
               revalidate: 0,
@@ -61,7 +63,10 @@ export async function fetchStoryBySlug(
     `${API_GATE}/stories/${slug?.join("/") || ""}?${searchParams.toString()}`,
   ).then((res) => res.json());
 
-  console.log("story url", `${API_GATE}/stories/${slug?.join("/") || ""}?${searchParams.toString()}`);
+  console.log(
+    "story url",
+    `${API_GATE}/stories/${slug?.join("/") || ""}?${searchParams.toString()}`,
+  );
 
   return {
     story,
