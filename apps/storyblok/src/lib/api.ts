@@ -4,8 +4,10 @@ import { type ISbStoriesParams, type ISbStoryData } from "@storyblok/react/rsc";
 
 const API_GATE = process.env.NEXT_PUBLIC_API_GATE;
 const isDevMode = process.env.NODE_ENV === "development";
+console.log("isDevMode", isDevMode);
 const isDraftModeEnv =
   process.env.NEXT_PUBLIC_IS_PREVIEW === "true" || isDevMode;
+console.log(isDraftModeEnv)
 
 // Get the actual SB cache version
 export const getSBcacheCVparameter = async (isDraftMode: boolean) => {
@@ -60,6 +62,8 @@ export async function fetchStoryBySlug(
   const { story } = await fetch(
     `${API_GATE}/stories/${slug?.join("/") || ""}?${searchParams.toString()}`,
   ).then((res) => res.json());
+
+  console.log("story", story);
 
   return {
     story,
