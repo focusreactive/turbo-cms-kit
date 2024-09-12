@@ -1,0 +1,9 @@
+{
+  "builds": [
+    {
+      "src": "**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "ignoreCommand": "git diff HEAD^ HEAD --quiet ./apps/sanity/ ./packages/"
+}
