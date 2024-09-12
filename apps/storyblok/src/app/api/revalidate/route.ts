@@ -26,8 +26,6 @@ export async function POST(request: Request) {
     pagePath = result?.replace("(", "")?.replace(")", "");
   }
 
-  console.log("secret", secret);
-  console.log("NEXT_PREVIEW_TOKEN", process.env.NEXT_PREVIEW_TOKEN);
   if (secret !== process.env.NEXT_PREVIEW_TOKEN) {
     return Response.json({ error: "No secret provided" }, { status: 400 });
   }
