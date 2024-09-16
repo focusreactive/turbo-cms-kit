@@ -38,7 +38,7 @@ export async function generateStaticParams() {
   return paths;
 }
 
-const Home = async ({ params, searchParams }: Props) => {
+export default async function Home({ params, searchParams }: Props) {
   const isDraftModeEnabled = await checkDraftModeToken(searchParams);
 
   const [{ story }] = await Promise.all([
@@ -54,6 +54,4 @@ const Home = async ({ params, searchParams }: Props) => {
       <StoryblokStory story={story} />
     </StoryblokProvider>
   );
-};
-
-export default Home;
+}
