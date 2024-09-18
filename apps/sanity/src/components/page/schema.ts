@@ -24,8 +24,7 @@ export default defineType({
       description: "For preview use only",
     }),
 
-    // TODO: rename to `slug`
-    definePathname({ name: "pathname" }),
+    definePathname({ name: "pathname", group: "content" }),
 
     defineField({
       name: "sectionsBody",
