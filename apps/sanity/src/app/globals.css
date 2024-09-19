@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --section-margin-base: 16px;
+  --section-margin-lg: 24px;
+  --section-margin-xl: 32px;
+}
+
 .light {
   --bg: #f6f6f6;
   --text: #222222;
