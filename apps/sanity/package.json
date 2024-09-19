@@ -7,7 +7,9 @@
     "build": "next build",
     "lint": "next lint",
     "start": "next start",
-    "rollout": "./src/lib/rollout-tools/local/cli.mjs"
+    "rollout": "./src/lib/rollout-tools/local/cli.mjs",
+    "extract-schema": "pnpm sanity schema extract --path src/generated/extracted-schema.json",
+    "generate-types": "pnpm extract-schema && pnpm sanity typegen generate"
   },
   "dependencies": {
     "@portabletext/react": "^3.1.0",
