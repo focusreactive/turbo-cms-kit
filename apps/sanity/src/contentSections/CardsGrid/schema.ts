@@ -2,6 +2,8 @@ import { defineField, defineType } from "sanity";
 
 import customImage from "@/lib/schemas/customImage";
 
+import { sectionMarginFields, themeField } from "../commonFields";
+
 const featurePointStyles = [
   { title: "Icon on the left", value: "icon-left" },
   {
@@ -98,24 +100,13 @@ export default {
       },
     }),
     defineField({
-      name: "theme",
-      type: "string",
-      group: "style",
-      options: {
-        list: [
-          { title: "Light", value: "light" },
-          { title: "Dark", value: "dark" },
-        ],
-        layout: "radio",
-        direction: "horizontal",
-      },
-    }),
-    defineField({
       name: "items",
       type: "array",
       group: "content",
       of: [{ type: "defaultCard" }],
     }),
+    themeField,
+    ...sectionMarginFields,
   ],
   preview: {
     select: {

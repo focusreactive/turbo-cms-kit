@@ -17,7 +17,7 @@ const COMPONENTS = {
   types: {
     // todo: infer from schema
     break: () => {
-      return <hr className="lineBreak" />;
+      return <hr className="border-textColor" />;
     },
 
     customImage: ({ value }: { value: IImage }) => {

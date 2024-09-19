@@ -13,7 +13,6 @@ const config = {
         primaryColor: "var(--primary)",
       },
       margin: {
-        sectionBase: "var(--section-margin-base)",
         sectionLg: "var(--section-margin-lg)",
         sectionXl: "var(--section-margin-xl)",
       },

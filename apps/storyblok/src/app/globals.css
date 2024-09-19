@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 :root {
-  --section-margin-base: 16px;
   --section-margin-lg: 24px;
   --section-margin-xl: 32px;
 }

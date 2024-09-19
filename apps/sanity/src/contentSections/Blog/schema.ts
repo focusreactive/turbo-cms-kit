@@ -2,6 +2,8 @@ import { defineField, defineType } from "sanity";
 
 import customRichText from "@/lib/schemas/customRichText";
 
+import { sectionMarginFields, themeField } from "../commonFields";
+
 export const blogPost = defineType({
   name: "blogSection.post",
   type: "object",
@@ -85,24 +87,13 @@ export default {
       },
     }),
     defineField({
-      name: "theme",
-      type: "string",
-      group: "style",
-      options: {
-        list: [
-          { title: "Light", value: "light" },
-          { title: "Dark", value: "dark" },
-        ],
-        layout: "radio",
-        direction: "horizontal",
-      },
-    }),
-    defineField({
       name: "posts",
       type: "array",
       group: "content",
       of: [{ type: blogPost.name }],
     }),
+    themeField,
+    ...sectionMarginFields,
   ],
   preview: {
     select: {

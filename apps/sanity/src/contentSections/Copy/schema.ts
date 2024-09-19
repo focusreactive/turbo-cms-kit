@@ -2,6 +2,8 @@ import { defineField } from "sanity";
 
 import customRichText from "@/lib/schemas/customRichText";
 
+import { sectionMarginFields, themeField } from "../commonFields";
+
 export default {
   name: "section.copy",
   title: "Copy",
@@ -29,19 +31,8 @@ export default {
       type: "boolean",
       group: "style",
     }),
-    defineField({
-      name: "theme",
-      type: "string",
-      group: "style",
-      options: {
-        list: [
-          { title: "Light", value: "light" },
-          { title: "Dark", value: "dark" },
-        ],
-        layout: "radio",
-        direction: "horizontal",
-      },
-    }),
+    themeField,
+    ...sectionMarginFields,
   ],
   preview: {
     select: {
