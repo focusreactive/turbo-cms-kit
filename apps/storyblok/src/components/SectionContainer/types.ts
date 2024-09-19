@@ -7,4 +7,5 @@ export interface ISectionContainer extends SbBlokData {
 export interface ISectionContainerProps {
   children: React.ReactNode;
   blok: ISectionContainer;
+  className?: string;
 }

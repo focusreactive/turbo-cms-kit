@@ -6,25 +6,28 @@ import type { ISectionContainerProps } from "./types";
 
 const isDraftMode = process.env.NEXT_PUBLIC_IS_PREVIEW === "true";
 
-export default function SectionContainer(props: ISectionContainerProps) {
-  const { children, blok } = props;
+export default function SectionContainer({
+  children,
+  blok,
+  className,
+}: ISectionContainerProps) {
   const { theme, _uid } = blok;
 
   if (isDraftMode) {
     return (
       <section
         {...storyblokEditable(blok)}
-        className={cn("bg-bgColor", theme)}
+        className={cn("bg-bgColor", theme, className)}
         id={_uid}
       >
-        <div className="mx-auto max-w-screen-xl px-4 py-8">{children}</div>
+        <div className="mx-auto max-w-screen-xl px-4">{children}</div>
       </section>
     );
   }
 
   return (
-    <section className={cn("bg-bgColor", theme)} id={_uid}>
-      <div className="mx-auto max-w-screen-xl px-4 py-8">{children}</div>
+    <section className={cn("bg-bgColor", theme, className)} id={_uid}>
+      <div className="mx-auto max-w-screen-xl px-4">{children}</div>
     </section>
   );
 }

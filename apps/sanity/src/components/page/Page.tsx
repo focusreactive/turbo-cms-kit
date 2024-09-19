@@ -11,7 +11,7 @@ export default function Page({ data }: PageProps) {
   const { sectionsBody } = data ?? {};
 
   return (
-    <div className="mt-4">
+    <div>
       {sectionsBody?.map((section) => (
         <SectionRenderer key={section._key} section={section}/>
       ))}

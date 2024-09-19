@@ -9,11 +9,8 @@ export default function Header({ blok }: IHeaderProps) {
   const { links } = blok;
 
   return (
-    <SectionContainer blok={blok}>
-      <HeaderUI
-        links={links.map(prepareLinkProps)}
-        className="fixed left-0 top-0 z-50 w-full"
-      />
+    <SectionContainer blok={blok} className="sticky left-0 top-0 z-50">
+      <HeaderUI links={links.map(prepareLinkProps)} />
     </SectionContainer>
   );
 }
