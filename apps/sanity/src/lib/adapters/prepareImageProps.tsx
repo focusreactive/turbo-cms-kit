@@ -19,7 +19,7 @@ export const urlForImage = (source: CustomImage["image"]) => {
 };
 
 export const prepareImageProps = (props?: CustomImage): IImageProps => {
-  if (!props?.image || !props.height)
+  if (!props?.image)
     return {
       src: "",
       alt: "",
@@ -29,7 +29,10 @@ export const prepareImageProps = (props?: CustomImage): IImageProps => {
     };
 
   const url =
-    urlForImage(props.image)?.height(props.height).fit("crop").url() || "";
+    urlForImage(props.image)
+      ?.height(props.height as any) // should make height required?
+      .fit("crop")
+      .url() || "";
 
   return {
     src: url,
