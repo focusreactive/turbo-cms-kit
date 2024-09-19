@@ -1,3 +1,4 @@
+import type { CustomImage } from "@/generated/extracted-schema-types";
 import { stegaClean } from "@sanity/client/stega";
 import imageUrlBuilder from "@sanity/image-url";
 import {
@@ -7,24 +8,9 @@ import {
 
 import { client } from "@/lib/api/client";
 
-interface ISanityImage {
-  type: string;
-  alt: string;
-  asset: {
-    _ref: string;
-    _type: string;
-  };
-}
-
-export interface IImage {
-  image: ISanityImage;
-  aspectRatio: ImageAspectRatio;
-  height: number;
-}
-
 const builder = imageUrlBuilder(client);
 
-export const urlForImage = (source: ISanityImage | undefined) => {
+export const urlForImage = (source: CustomImage["image"]) => {
   if (!source?.asset?._ref) {
     return undefined;
   }
@@ -32,8 +18,8 @@ export const urlForImage = (source: ISanityImage | undefined) => {
   return builder.image(source).auto("format").fit("max");
 };
 
-export const prepareImageProps = (props?: IImage): IImageProps => {
-  if (!props?.image)
+export const prepareImageProps = (props?: CustomImage): IImageProps => {
+  if (!props?.image || !props.height)
     return {
       src: "",
       alt: "",
@@ -47,8 +33,8 @@ export const prepareImageProps = (props?: IImage): IImageProps => {
 
   return {
     src: url,
-    alt: props.image.alt,
-    aspectRatio: stegaClean(props.aspectRatio),
+    alt: props.image.alt || "",
+    aspectRatio: stegaClean(props.aspectRatio) as ImageAspectRatio,
     fill: true,
     fit: "cover",
     sizes: "(max-width: 1280px) 100vw, 1280px",

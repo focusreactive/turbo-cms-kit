@@ -13,8 +13,8 @@ export default defineType({
         {
           name: "alt",
           type: "string",
-          // todo: make required
           title: "Alternative text",
+          validation: (Rule) => Rule.required(),
         },
       ],
     }),
@@ -31,6 +31,7 @@ export default defineType({
           value: aspectRatio,
         })),
       },
+      validation: (Rule) => Rule.required(),
     }),
   ],
 });

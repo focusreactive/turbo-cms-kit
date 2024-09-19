@@ -14,8 +14,9 @@ export default function CardsGrid({ data }: ICardsGridSectionProps) {
   const { items, columns, _key, theme = "light" } = data;
 
   const formattedItems = items?.map((item) => ({
-    ...item,
-    style: item.style || DefaultCardStyle.IconLeft,
+    description: item.description || "",
+    title: item.title || "",
+    style: (item.style as DefaultCardStyle) || DefaultCardStyle.IconLeft,
     type: item._type,
     image: prepareImageProps(item.image),
     link: prepareLinkProps(item.link),
@@ -23,7 +24,7 @@ export default function CardsGrid({ data }: ICardsGridSectionProps) {
 
   return (
     <SectionContainer id={_key} theme={theme}>
-      <SharedCardsGrid items={formattedItems} columns={columns} />
+      <SharedCardsGrid items={formattedItems || []} columns={columns || 2} />
     </SectionContainer>
   );
 }

@@ -16,7 +16,7 @@ export default function Header({ data }: IHeaderProps) {
       theme={theme}
       className="sticky left-0 top-0 z-50"
     >
-      <HeaderUI links={links.map(prepareLinkProps)} />
+      <HeaderUI links={links?.map(prepareLinkProps) || []} />
     </SectionContainer>
   );
 }

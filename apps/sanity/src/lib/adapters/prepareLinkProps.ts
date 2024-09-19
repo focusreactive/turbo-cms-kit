@@ -1,25 +1,12 @@
+import type { CustomLink } from "@/generated/extracted-schema-types";
 import {
   LinkVariant,
   type LinkProps,
 } from "@shared/ui/components/ui/link/types";
 
-interface ISanityReference {
-  _ref: string;
-  _type: string;
-}
-
-export interface ILink {
-  text: string;
-  type: "url" | "internal";
-  _key: string;
-  variant?: LinkVariant;
-  url?: ISanityReference;
-  href?: string;
-  target?: string;
-}
-
-export const prepareLinkProps = (props?: ILink): LinkProps => {
-  if (!props) return { text: "", href: "", variant: LinkVariant.Default };
+export const prepareLinkProps = (props?: CustomLink): LinkProps => {
+  if (!props || !props.text)
+    return { text: "", href: "", variant: LinkVariant.Default };
 
   let href = "";
   if (props.type === "url") {
@@ -33,6 +20,6 @@ export const prepareLinkProps = (props?: ILink): LinkProps => {
   return {
     text: props.text,
     href: href,
-    variant: props.variant || LinkVariant.Default,
+    variant: (props.variant as LinkVariant) || LinkVariant.Default,
   };
 };

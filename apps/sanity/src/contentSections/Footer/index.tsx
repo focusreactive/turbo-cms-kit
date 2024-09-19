@@ -15,7 +15,7 @@ export default function Footer({ data }: IFooterProps) {
     <SectionContainer id={_key} theme={theme}>
       <FooterUI
         copywriteText={copywriteText}
-        links={links?.map(prepareLinkProps)}
+        links={links?.map(prepareLinkProps) || []}
         text={prepareRichTextProps(text)}
       />
     </SectionContainer>

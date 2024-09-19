@@ -1,3 +1,4 @@
+import { stegaClean } from "@sanity/client/stega";
 import { AlignVariant } from "@shared/ui/components/sections/logos/types";
 
 import { Logos } from "@shared/ui";
@@ -29,7 +30,10 @@ export default function LogosSection({ data }: ILogosSectionProps) {
 
   return (
     <SectionContainer id={_key} theme={theme}>
-      <Logos items={formattedItems} alignVariant={alignVariant} />
+      <Logos
+        items={formattedItems || []}
+        alignVariant={stegaClean(alignVariant) as AlignVariant}
+      />
     </SectionContainer>
   );
 }

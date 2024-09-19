@@ -1,13 +1,14 @@
 import CardsGrid from "@/contentSections/CardsGrid";
 import LinksList from "@/contentSections/LinksList";
 import Logos from "@/contentSections/Logos";
+import type { CustomImage } from "@/generated/extracted-schema-types";
 import { PortableText } from "@portabletext/react";
 import { stegaClean } from "@sanity/client/stega";
 import { ImageAspectRatio } from "@shared/ui/components/ui/image/types";
 
 import { Image } from "@shared/ui";
 
-import { prepareImageProps, type IImage } from "./adapters/prepareImageProps";
+import { prepareImageProps } from "./adapters/prepareImageProps";
 
 export default function renderRichText(data: any[]) {
   return <PortableText value={data} components={COMPONENTS} />;
@@ -20,12 +21,13 @@ const COMPONENTS = {
       return <hr className="border-textColor" />;
     },
 
-    customImage: ({ value }: { value: IImage }) => {
+    customImage: ({ value }: { value: CustomImage }) => {
       return (
         <div
           className="relative mx-auto"
           style={{
-            aspectRatio: ImageAspectRatio[value.aspectRatio],
+            aspectRatio:
+              ImageAspectRatio[value.aspectRatio || ImageAspectRatio["1/1"]],
             height: value.height,
           }}
         >

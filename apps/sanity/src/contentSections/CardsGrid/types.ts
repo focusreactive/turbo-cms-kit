@@ -1,26 +1,7 @@
-import type { DefaultCardStyle } from "@shared/ui/components/sections/cardsGrid/types";
-
-import type { IImage } from "@/lib/adapters/prepareImageProps";
-import type { ILink } from "@/lib/adapters/prepareLinkProps";
-import type { IRichText } from "@/lib/adapters/prepareRichTextProps";
-
-export interface ICardsGrid {
-  _key: string;
-  columns: number;
-  items: {
-    _type: "cardsGrid";
-    style?: DefaultCardStyle;
-    title: string;
-    description: string;
-    image?: IImage;
-    link?: ILink;
-    links?: ILink[];
-    icon?: IImage;
-    text?: IRichText;
-  }[];
-  theme?: "light" | "dark";
-}
+import type { SectionCardsGrid } from "@/generated/extracted-schema-types";
 
 export interface ICardsGridSectionProps {
-  data: ICardsGrid;
+  data: SectionCardsGrid & {
+    _key: string;
+  };
 }

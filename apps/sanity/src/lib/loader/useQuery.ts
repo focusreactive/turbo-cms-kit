@@ -1,12 +1,12 @@
+import type { Page } from "@/generated/extracted-schema-types";
 import * as queryStore from "@sanity/react-loader";
 import {
   type QueryParams,
-  type QueryResponseInitial,
   type UseQueryOptionsDefinedInitial,
 } from "@sanity/react-loader";
 
 import { PAGE_BY_SLUG_QUERY } from "@/lib/api/queries";
-import { type PagePayload } from "@/lib/types";
+import type { IPagePreviewProps } from "@/components/Page/types";
 
 /**
  * Exports to be used in client-only or components that render both server and client
@@ -36,12 +36,6 @@ export const useQuery = <
 /**
  * Loaders that are used in more than one place are declared here, otherwise they're colocated with the component
  */
-export function usePage({
-  params,
-  initial,
-}: {
-  initial: QueryResponseInitial<PagePayload | null>;
-  params?: QueryParams;
-}) {
-  return useQuery<PagePayload | null>(PAGE_BY_SLUG_QUERY, params, { initial });
+export function usePage({ params, initial }: IPagePreviewProps) {
+  return useQuery<Page | null>(PAGE_BY_SLUG_QUERY, params, { initial });
 }

@@ -1,21 +1,13 @@
 "use client";
 
-import { type QueryResponseInitial } from "@sanity/react-loader";
-
 import { usePage } from "@/lib/loader/useQuery";
-import { type PagePayload } from "@/lib/types";
 
-import Page from "./Page";
+import Page from ".";
+import type { IPagePreviewProps } from "./types";
 
-type Props = {
-  slug: string | undefined;
-  initial: QueryResponseInitial<PagePayload | null>;
-};
-
-export default function PagePreview(props: Props) {
-  const { slug, initial } = props;
+export default function PagePreview({ params, initial }: IPagePreviewProps) {
   const { data } = usePage({
-    params: { slug },
+    params,
     initial,
   });
 

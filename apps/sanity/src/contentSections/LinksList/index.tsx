@@ -16,8 +16,8 @@ export default function LinksListSection({ data }: ILinksListSectionProps) {
   return (
     <SectionContainer id={_key} theme={theme}>
       <LinksList
-        alignVariant={stegaClean(alignVariant)}
-        links={links?.map(prepareLinkProps)}
+        alignVariant={stegaClean(alignVariant) as AlignVariant}
+        links={links?.map(prepareLinkProps) || []}
       />
     </SectionContainer>
   );
