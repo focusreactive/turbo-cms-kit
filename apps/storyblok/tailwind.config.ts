@@ -12,6 +12,10 @@ const config = {
         textSecondaryColor: "var(--text-secondary)",
         primaryColor: "var(--primary)",
       },
+      margin: {
+        sectionBase: "var(--section-margin-base)",
+        sectionLg: "var(--section-margin-lg)",
+      },
     },
   },
   presets: [preset],

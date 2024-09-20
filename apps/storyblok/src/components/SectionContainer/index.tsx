@@ -11,23 +11,54 @@ export default function SectionContainer({
   blok,
   className,
 }: ISectionContainerProps) {
-  const { theme, _uid } = blok;
+  const { theme, _uid, paddingX, paddingY, marginTop, marginBottom } = blok;
 
   if (isDraftMode) {
     return (
       <section
         {...storyblokEditable(blok)}
-        className={cn("bg-bgColor", theme, className)}
+        className={cn("bg-bgColor", theme, className, {
+          "mt-0": marginTop === "none",
+          "mb-0": marginBottom === "none",
+          "mt-sectionBase": marginTop === "base",
+          "mb-sectionBase": marginBottom === "base",
+          "mt-sectionLg": marginTop === "lg",
+          "mb-sectionLg": marginBottom === "lg",
+        })}
         id={_uid}
       >
-        <div className="mx-auto max-w-screen-xl px-4">{children}</div>
+        <div
+          className={cn("mx-auto max-w-screen-xl px-4 py-8", {
+            "px-0": paddingX === "none",
+            "py-0": paddingY === "none",
+          })}
+        >
+          {children}
+        </div>
       </section>
     );
   }
 
   return (
-    <section className={cn("bg-bgColor", theme, className)} id={_uid}>
-      <div className="mx-auto max-w-screen-xl px-4">{children}</div>
+    <section
+      className={cn("bg-bgColor", theme, className, {
+        "mt-0": marginTop === "none",
+        "mb-0": marginBottom === "none",
+        "mt-sectionBase": marginTop === "base",
+        "mb-sectionBase": marginBottom === "base",
+        "mt-sectionLg": marginTop === "lg",
+        "mb-sectionLg": marginBottom === "lg",
+      })}
+      id={_uid}
+    >
+      <div
+        className={cn("mx-auto max-w-screen-xl px-4 py-8", {
+          "px-0": paddingX === "none",
+          "py-0": paddingY === "none",
+        })}
+      >
+        {children}
+      </div>
     </section>
   );
 }
