@@ -17,8 +17,8 @@ export const logoItem = defineType({
       title: "Logo type",
       options: {
         list: [
-          { title: "Logo", value: "logo" },
-          { title: "Clickable logo", value: "clickableLogo" },
+          { title: "logo", value: "logo" },
+          { title: "clickable logo", value: "clickableLogo" },
         ],
       },
     }),

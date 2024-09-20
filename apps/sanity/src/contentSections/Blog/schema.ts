@@ -64,13 +64,13 @@ export default {
       group: "style",
       options: {
         list: [
-          { title: "Three column", value: "three-column" },
+          { title: "three column", value: "three-column" },
           {
-            title: "Three column with images",
+            title: "three column with images",
             value: "three-column-with-images",
           },
           {
-            title: "Three column with background images",
+            title: "three column with background images",
             value: "three-column-with-background-images",
           },
         ],

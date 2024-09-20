@@ -18,8 +18,8 @@ export const themeField = defineField({
   group: "style",
   options: {
     list: [
-      { title: "Light", value: "light" },
-      { title: "Dark", value: "dark" },
+      { title: "light", value: "light" },
+      { title: "dark", value: "dark" },
     ],
     layout: "radio",
     direction: "horizontal",
@@ -35,9 +35,9 @@ export const sectionMarginFields = [
     group: "style",
     options: {
       list: [
-        { title: "None", value: "none" },
-        { title: "Base", value: "base" },
-        { title: "Large", value: "lg" },
+        { title: "none", value: "none" },
+        { title: "base", value: "base" },
+        { title: "large", value: "lg" },
       ],
       layout: "dropdown",
     },
@@ -50,9 +50,9 @@ export const sectionMarginFields = [
     group: "style",
     options: {
       list: [
-        { title: "None", value: "none" },
-        { title: "Base", value: "base" },
-        { title: "Large", value: "lg" },
+        { title: "none", value: "none" },
+        { title: "base", value: "base" },
+        { title: "large", value: "lg" },
       ],
       layout: "dropdown",
     },

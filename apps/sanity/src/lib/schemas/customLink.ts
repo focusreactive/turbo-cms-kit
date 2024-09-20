@@ -23,7 +23,7 @@ export default defineType({
       options: {
         list: [
           { title: "URL", value: "url" },
-          { title: "Internal", value: "internal" },
+          { title: "internal", value: "internal" },
         ],
       },
       validation: (Rule) => Rule.required(),
@@ -41,10 +41,10 @@ export default defineType({
       type: "string",
       options: {
         list: [
-          { title: "Self", value: "_self" },
-          { title: "Blank", value: "_blank" },
-          { title: "Parent", value: "_parent" },
-          { title: "Top", value: "_top" },
+          { title: "self", value: "_self" },
+          { title: "blank", value: "_blank" },
+          { title: "parent", value: "_parent" },
+          { title: "top", value: "_top" },
         ],
       },
       validation: (Rule) => Rule.required(),

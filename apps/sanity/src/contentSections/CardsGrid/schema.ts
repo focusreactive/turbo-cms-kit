@@ -5,16 +5,16 @@ import customImage from "@/lib/schemas/customImage";
 import { commonGroups, sectionMarginFields, themeField } from "../commonFields";
 
 const featurePointStyles = [
-  { title: "Icon on the left", value: "icon-left" },
+  { title: "icon on the left", value: "icon-left" },
   {
-    title: "Icon with background on the left",
+    title: "icon with background on the left",
     value: "icon-left-with-background",
   },
-  { title: "Icon and title on the same line", value: "icon-title-inline" },
-  { title: "Icon on the top", value: "icon-top" },
-  { title: "No icon", value: "no-icon" },
+  { title: "icon and title on the same line", value: "icon-title-inline" },
+  { title: "icon on the top", value: "icon-top" },
+  { title: "no icon", value: "no-icon" },
   {
-    title: "Icon on the left, separate title",
+    title: "icon on the left, separate title",
     value: "icon-left-separate-title",
   },
 ];

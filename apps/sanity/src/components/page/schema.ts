@@ -53,8 +53,8 @@ export default defineType({
       type: "string",
       options: {
         list: [
-          { title: "Index", value: "index" },
-          { title: "No Index", value: "noindex" },
+          { title: "index", value: "index" },
+          { title: "no index", value: "noindex" },
         ],
       },
       group: "seo",
