@@ -1,3 +1,4 @@
+import { commonGroups } from "@/contentSections/commonFields";
 import { sectionsPresets } from "@/contentSections/presets";
 import { AlignVariant } from "@shared/ui/components/ui/richText/types";
 import { defineField, defineType } from "sanity";
@@ -32,14 +33,7 @@ const customRichText = defineType({
   name: "customRichText",
   title: "Rich text",
   type: "object",
-  groups: [
-    {
-      name: "content",
-      title: "Content",
-      default: true,
-    },
-    { name: "style", title: "Style" },
-  ],
+  groups: commonGroups,
   fields: [
     defineField({
       name: "text",
@@ -101,11 +95,15 @@ const customRichText = defineType({
         layout: "radio",
         direction: "horizontal",
       },
+      validation: (Rule) => Rule.required(),
+      initialValue: AlignVariant.Left,
     }),
     defineField({
       name: "removeInnerMargins",
       type: "boolean",
       group: "style",
+      validation: (Rule) => Rule.required(),
+      initialValue: false,
     }),
   ],
   preview: {
@@ -143,14 +141,7 @@ export const basicRichText = defineType({
   name: "basicRichText",
   title: "Basic rich text",
   type: "object",
-  groups: [
-    {
-      name: "content",
-      title: "Content",
-      default: true,
-    },
-    { name: "style", title: "Style" },
-  ],
+  groups: commonGroups,
   fields: [
     defineField({
       name: "text",
@@ -188,11 +179,15 @@ export const basicRichText = defineType({
         layout: "radio",
         direction: "horizontal",
       },
+      validation: (Rule) => Rule.required(),
+      initialValue: AlignVariant.Left,
     }),
     defineField({
       name: "removeInnerMargins",
       type: "boolean",
       group: "style",
+      validation: (Rule) => Rule.required(),
+      initialValue: false,
     }),
   ],
   preview: {

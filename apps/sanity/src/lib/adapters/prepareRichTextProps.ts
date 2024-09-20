@@ -20,7 +20,6 @@ export const prepareRichTextProps = (
   return {
     richText: renderRichText(props.text),
     removeInnerMargins: props.removeInnerMargins,
-    alignVariant: (stegaClean(props.alignVariant) ||
-      AlignVariant.Left) as AlignVariant,
+    alignVariant: stegaClean(props.alignVariant) as AlignVariant,
   };
 };

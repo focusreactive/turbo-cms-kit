@@ -1,4 +1,4 @@
-import { DefaultCardStyle } from "@shared/ui/components/sections/cardsGrid/types";
+import type { DefaultCardStyle } from "@shared/ui/components/sections/cardsGrid/types";
 
 import { CardsGrid as SharedCardsGrid } from "@shared/ui";
 
@@ -11,20 +11,20 @@ import type { ICardsGridSectionProps } from "./types";
 export default function CardsGrid({ data }: ICardsGridSectionProps) {
   if (!data) return null;
 
-  const { items, columns, _key, theme = "light" } = data;
+  const { items, columns } = data;
 
   const formattedItems = items?.map((item) => ({
-    description: item.description || "",
-    title: item.title || "",
-    style: (item.style as DefaultCardStyle) || DefaultCardStyle.IconLeft,
+    description: item.description,
+    title: item.title,
+    style: item.style as DefaultCardStyle,
     type: item._type,
     image: prepareImageProps(item.image),
     link: prepareLinkProps(item.link),
   }));
 
   return (
-    <SectionContainer id={_key} theme={theme}>
-      <SharedCardsGrid items={formattedItems || []} columns={columns || 2} />
+    <SectionContainer sectionData={data}>
+      <SharedCardsGrid items={formattedItems || []} columns={columns} />
     </SectionContainer>
   );
 }

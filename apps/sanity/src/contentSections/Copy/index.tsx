@@ -8,14 +8,14 @@ import type { ICopyProps } from "./types";
 export default function Copy({ data }: ICopyProps) {
   if (!data) return null;
 
-  const { columns, isReversedOnMobile, _key, theme = "light" } = data;
+  const { columns, isReversedOnMobile } = data;
 
   return (
-    <SectionContainer id={_key} theme={theme}>
+    <SectionContainer sectionData={data}>
       {columns && (
         <CopyUI
-          columns={columns.map(prepareRichTextProps)}
-          isReversedOnMobile={!!isReversedOnMobile}
+          columns={columns?.map(prepareRichTextProps) || []}
+          isReversedOnMobile={isReversedOnMobile}
         />
       )}
     </SectionContainer>

@@ -17,10 +17,12 @@ export default defineType({
           validation: (Rule) => Rule.required(),
         },
       ],
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: "height",
       type: "number",
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: "aspectRatio",
@@ -32,6 +34,7 @@ export default defineType({
         })),
       },
       validation: (Rule) => Rule.required(),
+      initialValue: ImageAspectRatio["1/1"],
     }),
   ],
 });

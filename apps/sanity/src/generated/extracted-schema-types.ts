@@ -70,71 +70,71 @@ export type Geopoint = {
 
 export type SectionBlog = {
   _type: "section.blog";
-  text?: CustomRichText;
-  style?:
+  text: CustomRichText;
+  style:
     | "three-column"
     | "three-column-with-images"
     | "three-column-with-background-images";
-  posts?: Array<
+  posts: Array<
     {
       _key: string;
     } & BlogSectionPost
   >;
-  theme?: "light" | "dark";
-  marginTop?: "none" | "base" | "lg";
-  marginBottom?: "none" | "base" | "lg";
+  theme: "light" | "dark";
+  marginTop: "none" | "base" | "lg";
+  marginBottom: "none" | "base" | "lg";
 };
 
 export type SectionCardsGrid = {
   _type: "section.cardsGrid";
-  columns?: 1 | 2 | 3;
-  items?: Array<
+  columns: 1 | 2 | 3;
+  items: Array<
     {
       _key: string;
     } & DefaultCard
   >;
-  theme?: "light" | "dark";
-  marginTop?: "none" | "base" | "lg";
-  marginBottom?: "none" | "base" | "lg";
+  theme: "light" | "dark";
+  marginTop: "none" | "base" | "lg";
+  marginBottom: "none" | "base" | "lg";
 };
 
 export type SectionLinksList = {
   _type: "section.linksList";
-  links?: Array<
+  links: Array<
     {
       _key: string;
     } & CustomLink
   >;
-  alignVariant?: "left" | "center" | "right";
-  theme?: "light" | "dark";
-  marginTop?: "none" | "base" | "lg";
-  marginBottom?: "none" | "base" | "lg";
+  alignVariant: "left" | "center" | "right";
+  theme: "light" | "dark";
+  marginTop: "none" | "base" | "lg";
+  marginBottom: "none" | "base" | "lg";
 };
 
 export type SectionLogos = {
   _type: "section.logos";
-  items?: Array<
+  items: Array<
     {
       _key: string;
     } & LogoItem
   >;
-  alignVariant?: "left" | "center" | "right";
-  theme?: "light" | "dark";
-  marginTop?: "none" | "base" | "lg";
-  marginBottom?: "none" | "base" | "lg";
+  alignVariant: "left" | "center" | "right";
+  theme: "light" | "dark";
+  marginTop: "none" | "base" | "lg";
+  marginBottom: "none" | "base" | "lg";
 };
 
 export type SectionCopy = {
   _type: "section.copy";
-  columns?: Array<
+  columns: Array<
     {
       _key: string;
     } & CustomRichText
   >;
-  isReversedOnMobile?: boolean;
-  theme?: "light" | "dark";
-  marginTop?: "none" | "base" | "lg";
-  marginBottom?: "none" | "base" | "lg";
+  isReversedOnMobile: boolean;
+  theme: "light" | "dark";
+  marginTop: "none" | "base" | "lg";
+  marginBottom: "none" | "base" | "lg";
 };
 
 export type SectionFooter = {
@@ -146,17 +146,17 @@ export type SectionFooter = {
     } & CustomLink
   >;
   copywriteText?: string;
-  theme?: "light" | "dark";
+  theme: "light" | "dark";
 };
 
 export type SectionHeader = {
   _type: "section.header";
-  links?: Array<
+  links: Array<
     {
       _key: string;
     } & CustomLink
   >;
-  theme?: "light" | "dark";
+  theme: "light" | "dark";
 };
 
 export type BlogSectionPost = {
@@ -203,8 +203,8 @@ export type BasicRichText = {
         _key: string;
       } & Break)
   >;
-  alignVariant?: "left" | "center" | "right";
-  removeInnerMargins?: boolean;
+  alignVariant: "left" | "center" | "right";
+  removeInnerMargins: boolean;
 };
 
 export type Break = {
@@ -214,9 +214,9 @@ export type Break = {
 
 export type DefaultCard = {
   _type: "defaultCard";
-  title?: string;
-  description?: string;
-  style?:
+  title: string;
+  description: string;
+  style:
     | "icon-left"
     | "icon-left-with-background"
     | "icon-title-inline"
@@ -282,23 +282,23 @@ export type CustomRichText = {
         _key: string;
       } & SectionLinksList)
   >;
-  alignVariant?: "left" | "center" | "right";
-  removeInnerMargins?: boolean;
+  alignVariant: "left" | "center" | "right";
+  removeInnerMargins: boolean;
 };
 
 export type CustomLink = {
   _type: "customLink";
-  text?: string;
-  type?: "url" | "internal";
+  text: string;
+  type: "url" | "internal";
   href?: string;
-  target?: "_self" | "_blank" | "_parent" | "_top";
+  target: "_self" | "_blank" | "_parent" | "_top";
   url?: {
     _ref: string;
     _type: "reference";
     _weak?: boolean;
     [internalGroqTypeReferenceTo]?: "page";
   };
-  variant?:
+  variant:
     | "default"
     | "primary"
     | "secondary"
@@ -309,7 +309,7 @@ export type CustomLink = {
 
 export type CustomImage = {
   _type: "customImage";
-  image?: {
+  image: {
     asset?: {
       _ref: string;
       _type: "reference";
@@ -318,11 +318,11 @@ export type CustomImage = {
     };
     hotspot?: SanityImageHotspot;
     crop?: SanityImageCrop;
-    alt?: string;
+    alt: string;
     _type: "image";
   };
-  height?: number;
-  aspectRatio?: "16/9" | "3/2" | "4/3" | "1/1" | "9/16" | "1/2" | "4/1" | "3/1";
+  height: number;
+  aspectRatio: "16/9" | "3/2" | "4/3" | "1/1" | "9/16" | "1/2" | "4/1" | "3/1";
 };
 
 export type Page = {
@@ -432,7 +432,7 @@ export type SanityImageMetadata = {
 
 export type Slug = {
   _type: "slug";
-  current?: string;
+  current: string;
   source?: string;
 };
 

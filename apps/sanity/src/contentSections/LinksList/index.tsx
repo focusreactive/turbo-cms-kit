@@ -1,5 +1,5 @@
 import { stegaClean } from "@sanity/client/stega";
-import { AlignVariant } from "@shared/ui/components/sections/linksList/types";
+import type { AlignVariant } from "@shared/ui/components/sections/linksList/types";
 
 import { LinksList } from "@shared/ui";
 
@@ -11,10 +11,10 @@ import type { ILinksListSectionProps } from "./types";
 export default function LinksListSection({ data }: ILinksListSectionProps) {
   if (!data) return null;
 
-  const { _key, links, theme, alignVariant = AlignVariant.Left } = data;
+  const { links, alignVariant } = data;
 
   return (
-    <SectionContainer id={_key} theme={theme}>
+    <SectionContainer sectionData={data}>
       <LinksList
         alignVariant={stegaClean(alignVariant) as AlignVariant}
         links={links?.map(prepareLinkProps) || []}

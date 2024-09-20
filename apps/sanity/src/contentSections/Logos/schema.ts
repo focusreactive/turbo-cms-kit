@@ -4,7 +4,7 @@ import { defineField, defineType } from "sanity";
 import customImage from "@/lib/schemas/customImage";
 import customLink from "@/lib/schemas/customLink";
 
-import { sectionMarginFields, themeField } from "../commonFields";
+import { commonGroups, sectionMarginFields, themeField } from "../commonFields";
 
 export const logoItem = defineType({
   name: "logoItem",
@@ -50,14 +50,7 @@ export default {
   name: "section.logos",
   title: "Logos",
   type: "object",
-  groups: [
-    {
-      name: "content",
-      title: "Content",
-      default: true,
-    },
-    { name: "style", title: "Style" },
-  ],
+  groups: commonGroups,
   fields: [
     defineField({
       name: "items",
@@ -66,7 +59,6 @@ export default {
       of: [{ type: logoItem.name }],
       validation: (Rule) => Rule.required().min(1),
     }),
-
     defineField({
       name: "alignVariant",
       type: "string",
@@ -79,6 +71,8 @@ export default {
         layout: "radio",
         direction: "horizontal",
       },
+      validation: (Rule) => Rule.required(),
+      initialValue: AlignVariant.Left,
     }),
     themeField,
     ...sectionMarginFields,

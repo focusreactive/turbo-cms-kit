@@ -1,5 +1,17 @@
 import { defineField } from "sanity";
 
+export const commonGroups = [
+  {
+    name: "content",
+    title: "Content",
+    default: true,
+  },
+  {
+    name: "style",
+    title: "Style",
+  },
+];
+
 export const themeField = defineField({
   name: "theme",
   type: "string",
@@ -12,6 +24,8 @@ export const themeField = defineField({
     layout: "radio",
     direction: "horizontal",
   },
+  initialValue: "light",
+  validation: (Rule) => Rule.required(),
 });
 
 export const sectionMarginFields = [
@@ -27,6 +41,8 @@ export const sectionMarginFields = [
       ],
       layout: "dropdown",
     },
+    initialValue: "base",
+    validation: (Rule) => Rule.required(),
   }),
   defineField({
     name: "marginBottom",
@@ -40,5 +56,7 @@ export const sectionMarginFields = [
       ],
       layout: "dropdown",
     },
+    initialValue: "base",
+    validation: (Rule) => Rule.required(),
   }),
 ];

@@ -2,7 +2,7 @@ import { defineField, defineType } from "sanity";
 
 import customImage from "@/lib/schemas/customImage";
 
-import { sectionMarginFields, themeField } from "../commonFields";
+import { commonGroups, sectionMarginFields, themeField } from "../commonFields";
 
 const featurePointStyles = [
   { title: "Icon on the left", value: "icon-left" },
@@ -24,21 +24,22 @@ export const defaultCard = defineType({
   type: "object",
   title: "Default card",
   options: {},
-  groups: [
-    {
-      name: "content",
-      title: "Content",
-      default: true,
-    },
-    { name: "style", title: "Style" },
-  ],
+  groups: commonGroups,
   fields: [
     defineField({
       name: "title",
       type: "string",
       group: "content",
+      validation: (Rule) => Rule.required(),
+      initialValue: "initial title",
     }),
-    defineField({ name: "description", type: "string", group: "content" }),
+    defineField({
+      name: "description",
+      type: "string",
+      group: "content",
+      validation: (Rule) => Rule.required(),
+      initialValue: "initial description",
+    }),
     defineField({
       name: "style",
       type: "string",
@@ -47,6 +48,8 @@ export const defaultCard = defineType({
         layout: "dropdown",
       },
       group: "style",
+      validation: (Rule) => Rule.required(),
+      initialValue: "icon-left",
     }),
     defineField({
       name: "link",
@@ -80,14 +83,7 @@ export default {
   name: "section.cardsGrid",
   title: "Cards Grid",
   type: "object",
-  groups: [
-    {
-      name: "content",
-      title: "Content",
-      default: true,
-    },
-    { name: "style", title: "Style" },
-  ],
+  groups: commonGroups,
   fields: [
     defineField({
       group: "style",
@@ -98,12 +94,15 @@ export default {
         layout: "radio",
         direction: "horizontal",
       },
+      initialValue: 3,
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: "items",
       type: "array",
       group: "content",
       of: [{ type: "defaultCard" }],
+      validation: (Rule) => Rule.required().min(1),
     }),
     themeField,
     ...sectionMarginFields,

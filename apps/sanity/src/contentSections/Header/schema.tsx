@@ -2,21 +2,13 @@ import { defineField } from "sanity";
 
 import customLink from "@/lib/schemas/customLink";
 
+import { commonGroups, themeField } from "../commonFields";
+
 export default {
   name: "section.header",
   title: "Header",
   type: "object",
-  groups: [
-    {
-      name: "content",
-      title: "Content",
-      default: true,
-    },
-    {
-      name: "style",
-      title: "Style",
-    },
-  ],
+  groups: commonGroups,
   options: {},
   fields: [
     defineField({
@@ -24,20 +16,9 @@ export default {
       type: "array",
       of: [{ type: customLink.name }],
       group: "content",
+      validation: (Rule) => Rule.required().min(1),
     }),
-    defineField({
-      name: "theme",
-      type: "string",
-      group: "style",
-      options: {
-        list: [
-          { title: "Light", value: "light" },
-          { title: "Dark", value: "dark" },
-        ],
-        layout: "radio",
-        direction: "horizontal",
-      },
-    }),
+    themeField,
   ],
   preview: {
     prepare: () => ({

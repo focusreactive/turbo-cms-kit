@@ -38,16 +38,16 @@ const COMPONENTS = {
 
     // todo: infer from schema
     "section.logos": ({ value }: { value: any }) => {
-      return <Logos data={value} />;
+      return <Logos data={{ ...value, paddingX: "none" }} />;
     },
     // todo: infer from schema
     "section.cardsGrid": ({ value }: { value: any }) => {
-      return <CardsGrid data={value} />;
+      return <CardsGrid data={{ ...value, paddingX: "none" }} />;
     },
 
     // todo: infer from schema
     "section.linksList": ({ value }: { value: any }) => {
-      return <LinksList data={value} />;
+      return <LinksList data={{ ...value, paddingX: "none" }} />;
     },
   },
 

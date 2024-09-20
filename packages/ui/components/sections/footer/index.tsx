@@ -14,9 +14,9 @@ export function Footer({ links, text, copywriteText }: IFooterProps) {
           <Link key={link.text + i} {...link} />
         ))}
       </nav>
-      <p className="text-textColor text-center">
-        @ {new Date().getFullYear()} {copywriteText}
-      </p>
+      {copywriteText && (
+        <p className="text-textColor text-center">{copywriteText}</p>
+      )}
     </footer>
   );
 }

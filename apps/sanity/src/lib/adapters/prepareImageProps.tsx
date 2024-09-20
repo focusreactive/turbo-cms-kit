@@ -19,7 +19,7 @@ export const urlForImage = (source: CustomImage["image"]) => {
 };
 
 export const prepareImageProps = (props?: CustomImage): IImageProps => {
-  if (!props?.image)
+  if (!props || !props.image)
     return {
       src: "",
       alt: "",
@@ -29,14 +29,11 @@ export const prepareImageProps = (props?: CustomImage): IImageProps => {
     };
 
   const url =
-    urlForImage(props.image)
-      ?.height(props.height as any) // should make height required?
-      .fit("crop")
-      .url() || "";
+    urlForImage(props.image)?.height(props.height).fit("crop").url() || "";
 
   return {
     src: url,
-    alt: props.image.alt || "",
+    alt: props.image.alt,
     aspectRatio: stegaClean(props.aspectRatio) as ImageAspectRatio,
     fill: true,
     fit: "cover",

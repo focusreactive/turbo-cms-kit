@@ -344,7 +344,7 @@
             "type": "inline",
             "name": "customRichText"
           },
-          "optional": true
+          "optional": false
         },
         "style": {
           "type": "objectAttribute",
@@ -365,7 +365,7 @@
               }
             ]
           },
-          "optional": true
+          "optional": false
         },
         "posts": {
           "type": "objectAttribute",
@@ -387,7 +387,7 @@
               }
             }
           },
-          "optional": true
+          "optional": false
         },
         "theme": {
           "type": "objectAttribute",
@@ -404,7 +404,7 @@
               }
             ]
           },
-          "optional": true
+          "optional": false
         },
         "marginTop": {
           "type": "objectAttribute",
@@ -425,7 +425,7 @@
               }
             ]
           },
-          "optional": true
+          "optional": false
         },
         "marginBottom": {
           "type": "objectAttribute",
@@ -446,7 +446,7 @@
               }
             ]
           },
-          "optional": true
+          "optional": false
         }
       }
     }
@@ -483,7 +483,7 @@
               }
             ]
           },
-          "optional": true
+          "optional": false
         },
         "items": {
           "type": "objectAttribute",
@@ -505,7 +505,7 @@
               }
             }
           },
-          "optional": true
+          "optional": false
         },
         "theme": {
           "type": "objectAttribute",
@@ -522,7 +522,7 @@
               }
             ]
           },
-          "optional": true
+          "optional": false
         },
         "marginTop": {
           "type": "objectAttribute",
@@ -543,7 +543,7 @@
               }
             ]
           },
-          "optional": true
+          "optional": false
         },
         "marginBottom": {
           "type": "objectAttribute",
@@ -564,7 +564,7 @@
               }
             ]
           },
-          "optional": true
+          "optional": false
         }
       }
     }
@@ -602,7 +602,7 @@
               }
             }
           },
-          "optional": true
+          "optional": false
         },
         "alignVariant": {
           "type": "objectAttribute",
@@ -623,7 +623,7 @@
               }
             ]
           },
-          "optional": true
+          "optional": false
         },
         "theme": {
           "type": "objectAttribute",
@@ -640,7 +640,7 @@
               }
             ]
           },
-          "optional": true
+          "optional": false
         },
         "marginTop": {
           "type": "objectAttribute",
@@ -661,7 +661,7 @@
               }
             ]
           },
-          "optional": true
+          "optional": false
         },
         "marginBottom": {
           "type": "objectAttribute",
@@ -682,7 +682,7 @@
               }
             ]
           },
-          "optional": true
+          "optional": false
         }
       }
     }
@@ -720,7 +720,7 @@
               }
             }
           },
-          "optional": true
+          "optional": false
         },
         "alignVariant": {
           "type": "objectAttribute",
@@ -741,7 +741,7 @@
               }
             ]
           },
-          "optional": true
+          "optional": false
         },
         "theme": {
           "type": "objectAttribute",
@@ -758,7 +758,7 @@
               }
             ]
           },
-          "optional": true
+          "optional": false
         },
         "marginTop": {
           "type": "objectAttribute",
@@ -779,7 +779,7 @@
               }
             ]
           },
-          "optional": true
+          "optional": false
         },
         "marginBottom": {
           "type": "objectAttribute",
@@ -800,7 +800,7 @@
               }
             ]
           },
-          "optional": true
+          "optional": false
         }
       }
     }
@@ -838,14 +838,14 @@
               }
             }
           },
-          "optional": true
+          "optional": false
         },
         "isReversedOnMobile": {
           "type": "objectAttribute",
           "value": {
             "type": "boolean"
           },
-          "optional": true
+          "optional": false
         },
         "theme": {
           "type": "objectAttribute",
@@ -862,7 +862,7 @@
               }
             ]
           },
-          "optional": true
+          "optional": false
         },
         "marginTop": {
           "type": "objectAttribute",
@@ -883,7 +883,7 @@
               }
             ]
           },
-          "optional": true
+          "optional": false
         },
         "marginBottom": {
           "type": "objectAttribute",
@@ -904,7 +904,7 @@
               }
             ]
           },
-          "optional": true
+          "optional": false
         }
       }
     }
@@ -974,7 +974,7 @@
               }
             ]
           },
-          "optional": true
+          "optional": false
         }
       }
     }
@@ -1012,7 +1012,7 @@
               }
             }
           },
-          "optional": true
+          "optional": false
         },
         "theme": {
           "type": "objectAttribute",
@@ -1029,7 +1029,7 @@
               }
             ]
           },
-          "optional": true
+          "optional": false
         }
       }
     }
@@ -1317,14 +1317,14 @@
               }
             ]
           },
-          "optional": true
+          "optional": false
         },
         "removeInnerMargins": {
           "type": "objectAttribute",
           "value": {
             "type": "boolean"
           },
-          "optional": true
+          "optional": false
         }
       }
     }
@@ -1376,14 +1376,14 @@
           "value": {
             "type": "string"
           },
-          "optional": true
+          "optional": false
         },
         "description": {
           "type": "objectAttribute",
           "value": {
             "type": "string"
           },
-          "optional": true
+          "optional": false
         },
         "style": {
           "type": "objectAttribute",
@@ -1416,7 +1416,7 @@
               }
             ]
           },
-          "optional": true
+          "optional": false
         },
         "link": {
           "type": "objectAttribute",
@@ -1782,14 +1782,14 @@
               }
             ]
           },
-          "optional": true
+          "optional": false
         },
         "removeInnerMargins": {
           "type": "objectAttribute",
           "value": {
             "type": "boolean"
           },
-          "optional": true
+          "optional": false
         }
       }
     }
@@ -1812,7 +1812,7 @@
           "value": {
             "type": "string"
           },
-          "optional": true
+          "optional": false
         },
         "type": {
           "type": "objectAttribute",
@@ -1829,7 +1829,7 @@
               }
             ]
           },
-          "optional": true
+          "optional": false
         },
         "href": {
           "type": "objectAttribute",
@@ -1861,7 +1861,7 @@
               }
             ]
           },
-          "optional": true
+          "optional": false
         },
         "url": {
           "type": "objectAttribute",
@@ -1924,7 +1924,7 @@
               }
             ]
           },
-          "optional": true
+          "optional": false
         }
       }
     }
@@ -1998,7 +1998,7 @@
                 "value": {
                   "type": "string"
                 },
-                "optional": true
+                "optional": false
               },
               "_type": {
                 "type": "objectAttribute",
@@ -2009,14 +2009,14 @@
               }
             }
           },
-          "optional": true
+          "optional": false
         },
         "height": {
           "type": "objectAttribute",
           "value": {
             "type": "number"
           },
-          "optional": true
+          "optional": false
         },
         "aspectRatio": {
           "type": "objectAttribute",
@@ -2057,7 +2057,7 @@
               }
             ]
           },
-          "optional": true
+          "optional": false
         }
       }
     }
@@ -2686,7 +2686,7 @@
           "value": {
             "type": "string"
           },
-          "optional": true
+          "optional": false
         },
         "source": {
           "type": "objectAttribute",

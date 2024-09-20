@@ -12,7 +12,7 @@ import type { IBlogSectionProps } from "./types";
 export default function BlogSection({ data }: IBlogSectionProps) {
   if (!data) return null;
 
-  const { text, posts, style, _key, theme = "light" } = data;
+  const { text, posts, style } = data;
 
   const formattedPosts = posts?.map((post) => ({
     style: style as BlogStyle,
@@ -22,7 +22,7 @@ export default function BlogSection({ data }: IBlogSectionProps) {
   }));
 
   return (
-    <SectionContainer id={_key} theme={theme}>
+    <SectionContainer sectionData={data}>
       <BlogSectionUI
         text={prepareRichTextProps(text)}
         posts={formattedPosts || []}

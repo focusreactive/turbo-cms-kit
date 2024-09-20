@@ -1,45 +1,38 @@
+import { AlignVariant } from "@shared/ui/components/sections/linksList/types";
 import { defineField } from "sanity";
 
 import customLink from "@/lib/schemas/customLink";
 
-import { sectionMarginFields, themeField } from "../commonFields";
+import { commonGroups, sectionMarginFields, themeField } from "../commonFields";
 
 export default {
   options: {},
   name: "section.linksList",
   title: "Links list",
   type: "object",
-  groups: [
-    {
-      name: "content",
-      title: "Content",
-      default: true,
-    },
-    {
-      name: "style",
-      title: "Style",
-    },
-  ],
+  groups: commonGroups,
   fields: [
     defineField({
       name: "links",
       type: "array",
       group: "content",
       of: [{ type: customLink.name }],
+      validation: (Rule) => Rule.required().min(1),
     }),
     defineField({
       name: "alignVariant",
       type: "string",
       group: "style",
       options: {
-        list: [
-          { title: "Left", value: "left" },
-          { title: "Center", value: "center" },
-          { title: "Right", value: "right" },
-        ],
+        list: Object.values(AlignVariant).map((v) => ({
+          title: v,
+          value: v,
+        })),
         layout: "radio",
         direction: "horizontal",
       },
+      validation: (Rule) => Rule.required(),
+      initialValue: AlignVariant.Left,
     }),
     themeField,
     ...sectionMarginFields,

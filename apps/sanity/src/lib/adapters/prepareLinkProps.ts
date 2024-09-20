@@ -20,6 +20,6 @@ export const prepareLinkProps = (props?: CustomLink): LinkProps => {
   return {
     text: props.text,
     href: href,
-    variant: (props.variant as LinkVariant) || LinkVariant.Default,
+    variant: props.variant as LinkVariant,
   };
 };
