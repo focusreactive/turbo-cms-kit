@@ -39,9 +39,12 @@ export const prepareLinkProps = (props?: ILinkBlok): LinkProps => {
     };
   }
 
+  const linkType = props.link.linktype;
+  const href = linkType === "story" ? `/${props.link.cached_url}` : props.link.url;
+
   return {
     text: props.text,
-    href: props.link.url,
+    href,
     variant: props.variant,
   };
 };
