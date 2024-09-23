@@ -43,9 +43,5 @@
     "ignoredRules": [
       "INTERNAL_MISMATCH"
     ]
-  },
-  "volta": {
-    "node": "20.17.0",
-    "pnpm": "9.11.0"
   }
 }
