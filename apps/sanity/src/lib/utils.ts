@@ -20,20 +20,3 @@ export const urlForImage = (source: Page["ogImage"]) => {
 export function urlForOpenGraphImage(image: Page["ogImage"]) {
   return urlForImage(image)?.width(1200).height(627).fit("crop").url();
 }
-
-export function resolveHref(
-  documentType?: string,
-  slug?: string,
-): string | undefined {
-  switch (documentType) {
-    case "page": {
-      if (!slug) return undefined;
-      if (slug === "/") return "/";
-      return slug ? `/${slug}` : undefined;
-    }
-
-    default:
-      console.warn("Invalid document type:", documentType);
-      return undefined;
-  }
-}
