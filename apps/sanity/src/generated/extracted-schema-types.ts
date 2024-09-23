@@ -368,7 +368,7 @@ export type Page = {
     };
     hotspot?: SanityImageHotspot;
     crop?: SanityImageCrop;
-    alt?: string;
+    alt: string;
     _type: "image";
   };
 };
@@ -486,49 +486,3 @@ export type AllSanitySchemaTypes =
   | TextColor
   | SimplerColor;
 export declare const internalGroqTypeReferenceTo: unique symbol;
-// Source: ./src/lib/api/queries.ts
-// Variable: PAGE_BY_SLUG_QUERY
-// Query:   *[_type == "page" && pathname.current == $slug][0] {    _id,    sectionsBody,    title,    "slug": pathname.current,    seoTitle,    seoDescription,    ogImage,    robots,  }
-export type PAGE_BY_SLUG_QUERYResult = {
-  _id: string;
-  sectionsBody: Array<
-    | ({
-        _key: string;
-      } & SectionBlog)
-    | ({
-        _key: string;
-      } & SectionCardsGrid)
-    | ({
-        _key: string;
-      } & SectionCopy)
-    | ({
-        _key: string;
-      } & SectionFooter)
-    | ({
-        _key: string;
-      } & SectionHeader)
-    | ({
-        _key: string;
-      } & SectionLinksList)
-    | ({
-        _key: string;
-      } & SectionLogos)
-  > | null;
-  title: string | null;
-  slug: string | null;
-  seoTitle: string | null;
-  seoDescription: string | null;
-  ogImage: {
-    asset?: {
-      _ref: string;
-      _type: "reference";
-      _weak?: boolean;
-      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
-    };
-    hotspot?: SanityImageHotspot;
-    crop?: SanityImageCrop;
-    alt?: string;
-    _type: "image";
-  } | null;
-  robots: "index" | "noindex" | null;
-} | null;

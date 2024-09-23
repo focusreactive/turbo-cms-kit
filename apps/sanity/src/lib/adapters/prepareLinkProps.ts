@@ -14,7 +14,9 @@ export const prepareLinkProps = (props?: CustomLink): LinkProps => {
   }
 
   if (props.type === "internal") {
-    href = ""; // todo: get slug by reference
+    // todo: remove @ts-ignore when sanity typegen will be working with MemberExpression
+    // @ts-ignore
+    href = props?.url?.slug ? props.url.slug?.join("/") : "";
   }
 
   return {

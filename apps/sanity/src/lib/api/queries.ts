@@ -1,9 +1,22 @@
+import { HEADER_FRAGMENT } from "@/contentSections/Header/query";
 import { groq } from "next-sanity";
+
+const fragmentsBySectionType = {
+  "section.header": HEADER_FRAGMENT,
+};
+const allSectionFragments = Object.entries(fragmentsBySectionType)
+  .map(
+    ([sectionType, fragment]) => `_type == "${sectionType}" => { ${fragment} }`,
+  )
+  .join("\n");
 
 export const PAGE_BY_SLUG_QUERY = groq`
   *[_type == "page" && pathname.current == $slug][0] {
     _id,
-    sectionsBody,
+    sectionsBody[] {
+      ...,
+      ${allSectionFragments}
+    },
     title,
     "slug": pathname.current,
 
