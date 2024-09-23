@@ -1,4 +1,4 @@
-import type { SectionCardsGrid } from "@/generated/extracted-schema-types";
+import type { SectionCardsGrid } from "@/generated/extracted-types";
 
 export interface ICardsGridSectionProps {
   data: SectionCardsGrid & {

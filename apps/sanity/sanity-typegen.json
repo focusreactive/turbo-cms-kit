@@ -1,4 +1,4 @@
 {
   "schema": "src/generated/extracted-schema.json",
-  "generates": "src/generated/extracted-schema-types.ts"
+  "generates": "src/generated/extracted-types.ts"
 }

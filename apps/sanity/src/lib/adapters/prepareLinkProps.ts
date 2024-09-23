@@ -1,4 +1,4 @@
-import type { CustomLink } from "@/generated/extracted-schema-types";
+import type { CustomLink } from "@/generated/extracted-types";
 import {
   LinkVariant,
   type LinkProps,

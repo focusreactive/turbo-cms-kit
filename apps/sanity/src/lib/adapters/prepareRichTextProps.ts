@@ -1,4 +1,4 @@
-import type { CustomRichText } from "@/generated/extracted-schema-types";
+import type { CustomRichText } from "@/generated/extracted-types";
 import { stegaClean } from "@sanity/client/stega";
 import {
   AlignVariant,

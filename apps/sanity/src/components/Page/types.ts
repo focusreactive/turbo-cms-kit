@@ -1,4 +1,4 @@
-import type { Page } from "@/generated/extracted-schema-types";
+import type { Page } from "@/generated/extracted-types";
 import type { QueryResponseInitial } from "@sanity/react-loader";
 
 export interface IPageProps {

@@ -1,4 +1,4 @@
-import type { Page } from "@/generated/extracted-schema-types";
+import type { Page } from "@/generated/extracted-types";
 import * as queryStore from "@sanity/react-loader";
 import {
   type QueryParams,
