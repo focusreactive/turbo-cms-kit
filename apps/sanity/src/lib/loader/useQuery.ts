@@ -6,7 +6,7 @@ import {
 } from "@sanity/react-loader";
 
 import { PAGE_BY_SLUG_QUERY } from "@/lib/api/queries";
-import type { IPagePreviewProps } from "@/components/Page/types";
+import type { IPagePreviewProps } from "@/components/Page1/types";
 
 /**
  * Exports to be used in client-only or components that render both server and client

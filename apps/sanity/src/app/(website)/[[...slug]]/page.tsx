@@ -7,9 +7,9 @@ import { notFound } from "next/navigation";
 import { generateStaticSlugs } from "@/lib/loader/generateStaticSlugs";
 import { loadPage } from "@/lib/loader/loadQuery";
 import { urlForOpenGraphImage } from "@/lib/utils";
-import Page from "@/components/Page";
+import Page from "@/components/Page1";
 
-const PagePreview = dynamic(() => import("@/components/Page/PagePreview"));
+const PagePreview = dynamic(() => import("@/components/Page1/PagePreview"));
 
 type Props = {
   params: { slug: string[] | undefined };
