@@ -51,6 +51,7 @@ export default defineType({
 
     defineField({
       group: "content",
+      // TODO: rename to `reference`
       name: "url",
       type: "reference",
       to: [{ type: "page" }], // todo: change to page.name

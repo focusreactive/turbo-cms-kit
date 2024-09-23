@@ -3,9 +3,8 @@ import {
   type LinkProps,
 } from "@shared/ui/components/ui/link/types";
 
-interface ISanityReference {
-  _ref: string;
-  _type: string;
+interface ISanityResolvedReference {
+  slug: string[];
 }
 
 export interface ILink {
@@ -13,7 +12,7 @@ export interface ILink {
   type: "url" | "internal";
   _key: string;
   variant?: LinkVariant;
-  url?: ISanityReference;
+  url?: ISanityResolvedReference;
   href?: string;
   target?: string;
 }
@@ -27,7 +26,7 @@ export const prepareLinkProps = (props?: ILink): LinkProps => {
   }
 
   if (props.type === "internal") {
-    href = ""; // todo: get slug by reference
+    href = props?.url?.slug ? props.url.slug.join("/") : "";
   }
 
   return {
