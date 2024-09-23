@@ -1,4 +1,4 @@
-import { type Metadata } from "next";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { StoryblokStory } from "@storyblok/react/rsc";
 
@@ -8,7 +8,7 @@ import {
   fetchStoryBySlug,
   getMetaData,
 } from "@/lib/api";
-import StoryblokProvider from "@/components/StoryblokProvider";
+import CoreLayout from "@/components/CoreLayout";
 
 const isDraftModeEnv = process.env.NEXT_PUBLIC_IS_PREVIEW === "true";
 export const dynamic = isDraftModeEnv ? "force-dynamic" : "force-static";
@@ -41,17 +41,18 @@ export async function generateStaticParams() {
 export default async function Home({ params, searchParams }: Props) {
   const isDraftModeEnabled = await checkDraftModeToken(searchParams);
 
-  const [{ story }] = await Promise.all([
-    fetchStoryBySlug(isDraftModeEnabled, params.slug),
-  ]);
+  const { story, links } = await fetchStoryBySlug(
+    isDraftModeEnabled,
+    params.slug,
+  );
 
   if (!story) {
     notFound();
   }
 
   return (
-    <StoryblokProvider>
+    <CoreLayout allResolvedLinks={links}>
       <StoryblokStory story={story} />
-    </StoryblokProvider>
+    </CoreLayout>
   );
 }

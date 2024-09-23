@@ -37,13 +37,22 @@ export const getSBcacheCVparameter = async (isDraftMode: boolean) => {
   return cacheVersion;
 };
 
+export interface IResolvedLink {
+  name: string;
+  id: number;
+  uuid: string;
+  slug: string;
+  url: string;
+  full_slug: string;
+}
+
 // The main function to fetch a story by slug
 // Next.js data cache enabled
 export async function fetchStoryBySlug(
   isDraftMode: boolean,
   slug: string[] = ["home"],
   params?: { cv?: number; resolve_relations?: string },
-): Promise<{ story: ISbStoryData }> {
+): Promise<{ story: ISbStoryData; links: IResolvedLink[] }> {
   const cv = await getSBcacheCVparameter(isDraftMode);
 
   const contentVersion = isDraftMode ? "draft" : "published";
@@ -53,18 +62,20 @@ export async function fetchStoryBySlug(
     cv,
     version: contentVersion,
     ...params,
+    resolve_links: "url",
   };
 
   const searchParams = new URLSearchParams(
     searchParamsData as Record<string, string>,
   );
 
-  const { story } = await fetch(
+  const { story, links } = await fetch(
     `${API_GATE}/stories/${slug?.join("/") || ""}?${searchParams.toString()}`,
   ).then((res) => res.json());
 
   return {
     story,
+    links,
   };
 }
 
