@@ -6,7 +6,7 @@ import { simplerColorInput } from "sanity-plugin-simpler-color-input";
 import { structureTool } from "sanity/structure";
 
 import config from "@/config";
-// import * as resolve from "@/lib/presentation/resolve";
+import * as resolve from "@/lib/presentation/resolve";
 import schemas from "@/lib/schemas";
 import StudioLogo from "@/components/StudioLogo";
 
@@ -27,6 +27,7 @@ export default defineConfig({
         },
       },
       creatablePages: ["page"],
+      resolve,
     }),
     // presentationTool({
     //   resolve,
