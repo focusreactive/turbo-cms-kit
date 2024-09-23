@@ -7,9 +7,9 @@ import { notFound } from "next/navigation";
 import { generateStaticSlugs } from "@/lib/loader/generateStaticSlugs";
 import { loadPage } from "@/lib/loader/loadQuery";
 import { urlForOpenGraphImage } from "@/lib/utils";
-import Page from "@/components/page/Page";
+import Page from "@/components/Page";
 
-const PagePreview = dynamic(() => import("@/components/page/PagePreview"));
+const PagePreview = dynamic(() => import("@/components/Page/PagePreview"));
 
 type Props = {
   params: { slug: string[] | undefined };
@@ -69,7 +69,7 @@ export default async function PageSlugRoute({ params }: Props) {
   const initial = await loadPage(slug);
 
   if (draftMode().isEnabled) {
-    return <PagePreview slug={slug} initial={initial} />;
+    return <PagePreview params={{ slug }} initial={initial} />;
   }
 
   if (!initial.data) {

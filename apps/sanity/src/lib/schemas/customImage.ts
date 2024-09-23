@@ -13,14 +13,16 @@ export default defineType({
         {
           name: "alt",
           type: "string",
-          // todo: make required
           title: "Alternative text",
+          validation: (Rule) => Rule.required(),
         },
       ],
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: "height",
       type: "number",
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: "aspectRatio",
@@ -31,6 +33,8 @@ export default defineType({
           value: aspectRatio,
         })),
       },
+      validation: (Rule) => Rule.required(),
+      initialValue: ImageAspectRatio["1/1"],
     }),
   ],
 });

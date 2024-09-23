@@ -33,6 +33,7 @@ export default function renderRichText(data: ISbRichtext) {
             blok={{
               ...props,
               component: "cardsGrid",
+              paddingX: "none",
             }}
           />
         );
@@ -44,6 +45,7 @@ export default function renderRichText(data: ISbRichtext) {
             blok={{
               ...props,
               component: "linksList",
+              paddingX: "none",
             }}
           />
         );
@@ -55,6 +57,7 @@ export default function renderRichText(data: ISbRichtext) {
             blok={{
               ...props,
               component: "logos",
+              paddingX: "none",
             }}
           />
         );

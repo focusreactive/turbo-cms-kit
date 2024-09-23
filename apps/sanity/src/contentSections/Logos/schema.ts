@@ -4,6 +4,8 @@ import { defineField, defineType } from "sanity";
 import customImage from "@/lib/schemas/customImage";
 import customLink from "@/lib/schemas/customLink";
 
+import { commonGroups, sectionMarginFields, themeField } from "../commonFields";
+
 export const logoItem = defineType({
   name: "logoItem",
   type: "object",
@@ -15,8 +17,8 @@ export const logoItem = defineType({
       title: "Logo type",
       options: {
         list: [
-          { title: "Logo", value: "logo" },
-          { title: "Clickable logo", value: "clickableLogo" },
+          { title: "logo", value: "logo" },
+          { title: "clickable logo", value: "clickableLogo" },
         ],
       },
     }),
@@ -48,14 +50,7 @@ export default {
   name: "section.logos",
   title: "Logos",
   type: "object",
-  groups: [
-    {
-      name: "content",
-      title: "Content",
-      default: true,
-    },
-    { name: "style", title: "Style" },
-  ],
+  groups: commonGroups,
   fields: [
     defineField({
       name: "items",
@@ -64,7 +59,6 @@ export default {
       of: [{ type: logoItem.name }],
       validation: (Rule) => Rule.required().min(1),
     }),
-
     defineField({
       name: "alignVariant",
       type: "string",
@@ -77,20 +71,11 @@ export default {
         layout: "radio",
         direction: "horizontal",
       },
+      validation: (Rule) => Rule.required(),
+      initialValue: AlignVariant.Left,
     }),
-    defineField({
-      name: "theme",
-      type: "string",
-      group: "style",
-      options: {
-        list: [
-          { title: "Light", value: "light" },
-          { title: "Dark", value: "dark" },
-        ],
-        layout: "radio",
-        direction: "horizontal",
-      },
-    }),
+    themeField,
+    ...sectionMarginFields,
   ],
   preview: {
     prepare: () => ({

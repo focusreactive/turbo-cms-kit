@@ -8,7 +8,7 @@ export default function PageContainer({ blok }: IPageContainerProps) {
   if (!sections) return null;
 
   return (
-    <div className="mt-4">
+    <div>
       {sections.map((section) => (
         <StoryblokComponent blok={{ ...section }} key={section._uid} />
       ))}

@@ -2,17 +2,19 @@ import { defineField, defineType } from "sanity";
 
 import customImage from "@/lib/schemas/customImage";
 
+import { commonGroups, sectionMarginFields, themeField } from "../commonFields";
+
 const featurePointStyles = [
-  { title: "Icon on the left", value: "icon-left" },
+  { title: "icon on the left", value: "icon-left" },
   {
-    title: "Icon with background on the left",
+    title: "icon with background on the left",
     value: "icon-left-with-background",
   },
-  { title: "Icon and title on the same line", value: "icon-title-inline" },
-  { title: "Icon on the top", value: "icon-top" },
-  { title: "No icon", value: "no-icon" },
+  { title: "icon and title on the same line", value: "icon-title-inline" },
+  { title: "icon on the top", value: "icon-top" },
+  { title: "no icon", value: "no-icon" },
   {
-    title: "Icon on the left, separate title",
+    title: "icon on the left, separate title",
     value: "icon-left-separate-title",
   },
 ];
@@ -22,21 +24,22 @@ export const defaultCard = defineType({
   type: "object",
   title: "Default card",
   options: {},
-  groups: [
-    {
-      name: "content",
-      title: "Content",
-      default: true,
-    },
-    { name: "style", title: "Style" },
-  ],
+  groups: commonGroups,
   fields: [
     defineField({
       name: "title",
       type: "string",
       group: "content",
+      validation: (Rule) => Rule.required(),
+      initialValue: "initial title",
     }),
-    defineField({ name: "description", type: "string", group: "content" }),
+    defineField({
+      name: "description",
+      type: "string",
+      group: "content",
+      validation: (Rule) => Rule.required(),
+      initialValue: "initial description",
+    }),
     defineField({
       name: "style",
       type: "string",
@@ -45,6 +48,8 @@ export const defaultCard = defineType({
         layout: "dropdown",
       },
       group: "style",
+      validation: (Rule) => Rule.required(),
+      initialValue: "icon-left",
     }),
     defineField({
       name: "link",
@@ -78,14 +83,7 @@ export default {
   name: "section.cardsGrid",
   title: "Cards Grid",
   type: "object",
-  groups: [
-    {
-      name: "content",
-      title: "Content",
-      default: true,
-    },
-    { name: "style", title: "Style" },
-  ],
+  groups: commonGroups,
   fields: [
     defineField({
       group: "style",
@@ -96,26 +94,18 @@ export default {
         layout: "radio",
         direction: "horizontal",
       },
-    }),
-    defineField({
-      name: "theme",
-      type: "string",
-      group: "style",
-      options: {
-        list: [
-          { title: "Light", value: "light" },
-          { title: "Dark", value: "dark" },
-        ],
-        layout: "radio",
-        direction: "horizontal",
-      },
+      initialValue: 3,
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: "items",
       type: "array",
       group: "content",
       of: [{ type: "defaultCard" }],
+      validation: (Rule) => Rule.required().min(1),
     }),
+    themeField,
+    ...sectionMarginFields,
   ],
   preview: {
     select: {

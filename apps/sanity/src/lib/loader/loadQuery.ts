@@ -1,12 +1,12 @@
 import "server-only";
 
 import { draftMode } from "next/headers";
+import type { Page } from "@/generated/extracted-schema-types";
 import * as queryStore from "@sanity/react-loader";
 
 import config from "@/config";
 import { client } from "@/lib/api/client";
 import { PAGE_BY_SLUG_QUERY } from "@/lib/api/queries";
-import { type PagePayload } from "@/lib/types";
 
 const serverClient = client.withConfig({
   token: config.sanity.token,
@@ -56,7 +56,7 @@ export const loadQuery = ((query, params = {}, options = {}) => {
  */
 
 export function loadPage(slug: string) {
-  return loadQuery<PagePayload | null>(
+  return loadQuery<Page | null>(
     PAGE_BY_SLUG_QUERY,
     { slug },
     { next: { tags: [`page:${slug}`] } },

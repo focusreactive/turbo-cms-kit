@@ -1,3 +1,4 @@
+import type { CustomRichText } from "@/generated/extracted-schema-types";
 import { stegaClean } from "@sanity/client/stega";
 import {
   AlignVariant,
@@ -6,14 +7,10 @@ import {
 
 import renderRichText from "../renderRichText";
 
-export interface IRichText {
-  alignVariant?: AlignVariant;
-  text: any[];
-  removeInnerMargins?: boolean;
-}
-
-export const prepareRichTextProps = (props?: IRichText): IRichTextProps => {
-  if (!props)
+export const prepareRichTextProps = (
+  props?: CustomRichText,
+): IRichTextProps => {
+  if (!props || !props.text)
     return {
       richText: null,
       removeInnerMargins: false,
@@ -23,6 +20,6 @@ export const prepareRichTextProps = (props?: IRichText): IRichTextProps => {
   return {
     richText: renderRichText(props.text),
     removeInnerMargins: props.removeInnerMargins,
-    alignVariant: stegaClean(props.alignVariant) || AlignVariant.Left,
+    alignVariant: stegaClean(props.alignVariant) as AlignVariant,
   };
 };

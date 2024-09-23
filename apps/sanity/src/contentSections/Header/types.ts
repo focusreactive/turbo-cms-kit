@@ -1,11 +1,7 @@
-import type { ILink } from "@/lib/adapters/prepareLinkProps";
-
-interface IHeader {
-  _key: string;
-  links: ILink[];
-  theme?: "light" | "dark";
-}
+import type { SectionHeader } from "@/generated/extracted-schema-types";
 
 export interface IHeaderProps {
-  data: IHeader;
+  data: SectionHeader & {
+    _key: string;
+  };
 }

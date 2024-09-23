@@ -2,18 +2,13 @@ import { defineField } from "sanity";
 
 import customRichText from "@/lib/schemas/customRichText";
 
+import { commonGroups, sectionMarginFields, themeField } from "../commonFields";
+
 export default {
   name: "section.copy",
   title: "Copy",
   type: "object",
-  groups: [
-    {
-      name: "content",
-      title: "Content",
-      default: true,
-    },
-    { name: "style", title: "Style" },
-  ],
+  groups: commonGroups,
   options: {},
   fields: [
     defineField({
@@ -28,20 +23,11 @@ export default {
       name: "isReversedOnMobile",
       type: "boolean",
       group: "style",
+      initialValue: false,
+      validation: (Rule) => Rule.required(),
     }),
-    defineField({
-      name: "theme",
-      type: "string",
-      group: "style",
-      options: {
-        list: [
-          { title: "Light", value: "light" },
-          { title: "Dark", value: "dark" },
-        ],
-        layout: "radio",
-        direction: "horizontal",
-      },
-    }),
+    themeField,
+    ...sectionMarginFields,
   ],
   preview: {
     select: {

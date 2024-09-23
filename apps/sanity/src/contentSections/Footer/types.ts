@@ -1,14 +1,7 @@
-import type { ILink } from "@/lib/adapters/prepareLinkProps";
-import type { IRichText } from "@/lib/adapters/prepareRichTextProps";
-
-interface IFooter {
-  _key: string;
-  links: ILink[];
-  text: IRichText;
-  copywriteText?: string;
-  theme?: "light" | "dark";
-}
+import type { SectionFooter } from "@/generated/extracted-schema-types";
 
 export interface IFooterProps {
-  data: IFooter;
+  data: SectionFooter & {
+    _key: string;
+  };
 }

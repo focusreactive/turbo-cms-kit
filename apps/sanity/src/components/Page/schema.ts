@@ -23,9 +23,7 @@ export default defineType({
       group: "content",
       description: "For preview use only",
     }),
-
     definePathname({ name: "pathname", group: "content" }),
-
     defineField({
       name: "sectionsBody",
       title: "Sections",
@@ -38,33 +36,29 @@ export default defineType({
         presets: Object.values(sectionsPresets).flat(),
       }),
     }),
-
     defineField({
       type: "string",
       name: "seoTitle",
       title: "SEO Title",
       group: "seo",
     }),
-
     defineField({
       type: "string",
       name: "seoDescription",
       title: "SEO Description",
       group: "seo",
     }),
-
     defineField({
       name: "robots",
       type: "string",
       options: {
         list: [
-          { title: "Index", value: "index" },
-          { title: "No Index", value: "noindex" },
+          { title: "index", value: "index" },
+          { title: "no index", value: "noindex" },
         ],
       },
       group: "seo",
     }),
-
     defineField({
       name: "ogImage",
       type: "image",
@@ -73,8 +67,8 @@ export default defineType({
         {
           name: "alt",
           type: "string",
-          // todo: make required
           title: "Alternative text",
+          validation: (Rule) => Rule.required(),
         },
       ],
       group: "seo",

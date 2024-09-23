@@ -1,12 +1,7 @@
-import type { IRichText } from "@/lib/adapters/prepareRichTextProps";
+import type { SectionCopy } from "@/generated/extracted-schema-types";
 
 export interface ICopyProps {
-  data: ICopy;
-}
-
-export interface ICopy {
-  _key: string;
-  columns: IRichText[];
-  isReversedOnMobile?: boolean;
-  theme?: "light" | "dark";
+  data: SectionCopy & {
+    _key: string;
+  };
 }

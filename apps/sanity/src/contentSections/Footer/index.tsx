@@ -9,13 +9,13 @@ import type { IFooterProps } from "./types";
 export default function Footer({ data }: IFooterProps) {
   if (!data) return null;
 
-  const { links, text, copywriteText, _key, theme = "light" } = data;
+  const { links, text, copywriteText } = data;
 
   return (
-    <SectionContainer id={_key} theme={theme}>
+    <SectionContainer sectionData={data}>
       <FooterUI
         copywriteText={copywriteText}
-        links={links?.map(prepareLinkProps)}
+        links={links?.map(prepareLinkProps) || []}
         text={prepareRichTextProps(text)}
       />
     </SectionContainer>

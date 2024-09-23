@@ -1,3 +1,5 @@
+import type { BlogStyle } from "@shared/ui/components/sections/blog/types";
+
 import { BlogSection as BlogSectionUI } from "@shared/ui";
 
 import { prepareImageProps } from "@/lib/adapters/prepareImageProps";
@@ -10,21 +12,21 @@ import type { IBlogSectionProps } from "./types";
 export default function BlogSection({ data }: IBlogSectionProps) {
   if (!data) return null;
 
-  const { text, posts, style, _key, theme = "light" } = data;
+  const { text, posts, style } = data;
 
   const formattedPosts = posts?.map((post) => ({
-    style,
+    style: style as BlogStyle,
     text: prepareRichTextProps(post.text),
     image: prepareImageProps(post.image),
     link: prepareLinkProps(post.link),
   }));
 
   return (
-    <SectionContainer id={_key} theme={theme}>
+    <SectionContainer sectionData={data}>
       <BlogSectionUI
         text={prepareRichTextProps(text)}
-        posts={formattedPosts}
-        style={style}
+        posts={formattedPosts || []}
+        style={style as BlogStyle}
       />
     </SectionContainer>
   );

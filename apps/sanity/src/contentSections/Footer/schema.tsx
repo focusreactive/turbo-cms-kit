@@ -3,21 +3,13 @@ import { defineField } from "sanity";
 import customLink from "@/lib/schemas/customLink";
 import customRichText from "@/lib/schemas/customRichText";
 
+import { commonGroups, themeField } from "../commonFields";
+
 export default {
   name: "section.footer",
   title: "Footer",
   type: "object",
-  groups: [
-    {
-      name: "content",
-      title: "Content",
-      default: true,
-    },
-    {
-      name: "style",
-      title: "Style",
-    },
-  ],
+  groups: commonGroups,
   options: {},
   fields: [
     defineField({
@@ -37,19 +29,7 @@ export default {
       type: "string",
       group: "content",
     }),
-    defineField({
-      name: "theme",
-      type: "string",
-      group: "style",
-      options: {
-        list: [
-          { title: "Light", value: "light" },
-          { title: "Dark", value: "dark" },
-        ],
-        layout: "radio",
-        direction: "horizontal",
-      },
-    }),
+    themeField,
   ],
   preview: {
     prepare: () => ({

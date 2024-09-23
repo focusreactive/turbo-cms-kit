@@ -1,4 +1,5 @@
-import { AlignVariant } from "@shared/ui/components/sections/logos/types";
+import { stegaClean } from "@sanity/client/stega";
+import type { AlignVariant } from "@shared/ui/components/sections/logos/types";
 
 import { Logos } from "@shared/ui";
 
@@ -11,12 +12,7 @@ import type { ILogosSectionProps } from "./types";
 export default function LogosSection({ data }: ILogosSectionProps) {
   if (!data) return null;
 
-  const {
-    items,
-    alignVariant = AlignVariant.Left,
-    _key,
-    theme = "light",
-  } = data;
+  const { items, alignVariant } = data;
 
   const formattedItems = items?.map((item) => ({
     ...item,
@@ -28,8 +24,11 @@ export default function LogosSection({ data }: ILogosSectionProps) {
   }));
 
   return (
-    <SectionContainer id={_key} theme={theme}>
-      <Logos items={formattedItems} alignVariant={alignVariant} />
+    <SectionContainer sectionData={data}>
+      <Logos
+        items={formattedItems || []}
+        alignVariant={stegaClean(alignVariant) as AlignVariant}
+      />
     </SectionContainer>
   );
 }
