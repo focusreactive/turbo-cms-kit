@@ -1,4 +1,4 @@
-import type { CustomImage } from "@/generated/extracted-schema-types";
+import type { CustomImage } from "@/generated/extracted-types";
 import { stegaClean } from "@sanity/client/stega";
 import imageUrlBuilder from "@sanity/image-url";
 import {

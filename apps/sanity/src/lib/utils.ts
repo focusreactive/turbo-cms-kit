@@ -1,4 +1,4 @@
-import type { Page } from "@/generated/extracted-schema-types";
+import type { Page } from "@/generated/extracted-types";
 import createImageUrlBuilder from "@sanity/image-url";
 
 import config from "../config";

@@ -1,7 +1,7 @@
 import CardsGrid from "@/contentSections/CardsGrid";
 import LinksList from "@/contentSections/LinksList";
 import Logos from "@/contentSections/Logos";
-import type { CustomImage } from "@/generated/extracted-schema-types";
+import type { CustomImage } from "@/generated/extracted-types";
 import { PortableText } from "@portabletext/react";
 import { stegaClean } from "@sanity/client/stega";
 import { ImageAspectRatio } from "@shared/ui/components/ui/image/types";

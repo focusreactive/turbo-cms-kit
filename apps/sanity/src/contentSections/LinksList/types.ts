@@ -1,4 +1,4 @@
-import type { SectionLinksList } from "@/generated/extracted-schema-types";
+import type { SectionLinksList } from "@/generated/extracted-types";
 
 export interface ILinksListSectionProps {
   data: SectionLinksList & {

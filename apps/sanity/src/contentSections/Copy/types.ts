@@ -1,4 +1,4 @@
-import type { SectionCopy } from "@/generated/extracted-schema-types";
+import type { SectionCopy } from "@/generated/extracted-types";
 
 export interface ICopyProps {
   data: SectionCopy & {

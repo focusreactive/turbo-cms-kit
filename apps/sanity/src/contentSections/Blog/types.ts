@@ -1,4 +1,4 @@
-import type { SectionBlog } from "@/generated/extracted-schema-types";
+import type { SectionBlog } from "@/generated/extracted-types";
 
 export interface IBlogSectionProps {
   data: SectionBlog & {
