@@ -1,6 +1,6 @@
 import NextLink from "next/link";
 
-import { cn } from "../../../utils";
+import { cn, getLinkClickParams } from "../../../utils";
 import {
   LinkVariant,
   type ILinkVariantsClassNames,
@@ -27,12 +27,17 @@ export function Link({
   className,
   variant,
   style,
+  clickDisabled,
 }: LinkProps) {
+  const { className: clickClassName, ...clickParams } =
+    getLinkClickParams(clickDisabled);
+
   return (
     <NextLink
       href={href}
-      className={cn(LinkVariantsClassNames[variant], className)}
       style={style}
+      className={cn(LinkVariantsClassNames[variant], className, clickClassName)}
+      {...clickParams}
     >
       {children || text}
     </NextLink>
