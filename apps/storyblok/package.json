@@ -11,7 +11,8 @@
     "sb:login": "pnpm storyblok login",
     "pull-schemas": "pnpm storyblok pull-components --space 293915 --file-name production --path src/generated/",
     "push-schemas": "pnpm storyblok push-components --space ###### src/generated/components.production.json --presets-source src/generated/presets.production.json",
-    "generate-types": "pnpm pull-schemas && storyblok generate-typescript-typedefs --sourceFilePaths ./src/generated/components.production.json --destinationFilePath src/generated/extracted-types.ts"
+    "generate-types": "pnpm pull-schemas && storyblok generate-typescript-typedefs --sourceFilePaths ./src/generated/components.production.json --destinationFilePath src/generated/extracted-types.ts",
+    "generate-ssl": "openssl req -x509 -newkey rsa:2048 -nodes -keyout localhost-key.pem -out localhost.pem -sha256 -days 365 -subj /CN=localhost"
   },
   "dependencies": {
     "@shared/ui": "workspace:*",
