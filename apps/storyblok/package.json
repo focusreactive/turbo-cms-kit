@@ -8,8 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "proxy": "local-ssl-proxy --source 4050 --target 4040 --cert localhost.pem --key localhost-key.pem",
-    "pull-schemas": "storyblok pull-components --space 293915 --file-name production --path src/generated/",
-    "push-schemas": "storyblok push-components --space ###### src/generated/components.production.json --presets-source src/generated/presets.production.json",
+    "sb:login": "pnpm storyblok login",
+    "pull-schemas": "pnpm storyblok pull-components --space 293915 --file-name production --path src/generated/",
+    "push-schemas": "pnpm storyblok push-components --space ###### src/generated/components.production.json --presets-source src/generated/presets.production.json",
     "generate-types": "pnpm pull-schemas && storyblok generate-typescript-typedefs --sourceFilePaths ./src/generated/components.production.json --destinationFilePath src/generated/extracted-types.ts"
   },
   "dependencies": {
@@ -35,6 +36,7 @@
     "postcss": "^8",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.14",
+    "storyblok": "^3.34.0",
     "tailwindcss": "^3.4.3",
     "typescript": "5.4.5"
   }

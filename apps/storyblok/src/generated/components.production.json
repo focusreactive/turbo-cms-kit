@@ -1584,5 +1584,28 @@
       "content_type_asset_preview": null,
       "component_group_name": "components"
     }
+  ],
+  "component_groups": [
+    {
+      "name": "components",
+      "id": 367905,
+      "uuid": "7a581c8c-f6b7-4926-b5b0-98b7a48916b3",
+      "parent_id": null,
+      "parent_uuid": null
+    },
+    {
+      "name": "pages",
+      "id": 368071,
+      "uuid": "d924a351-670d-4616-9aa6-cf5f96c4b48e",
+      "parent_id": null,
+      "parent_uuid": null
+    },
+    {
+      "name": "sections",
+      "id": 367585,
+      "uuid": "9a95e24a-4024-4145-992e-070fbb399f97",
+      "parent_id": null,
+      "parent_uuid": null
+    }
   ]
 }
