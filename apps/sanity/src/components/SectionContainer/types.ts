@@ -1,6 +1,6 @@
 interface ISectionData {
   _key: string;
-  theme: "light" | "dark";
+  theme?: "light" | "dark"; /// move to page
   paddingX?: "none";
   paddingY?: "none";
   marginTop?: "none" | "base" | "lg";

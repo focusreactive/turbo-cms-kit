@@ -68,6 +68,28 @@ export type Geopoint = {
   alt?: number;
 };
 
+export type SectionWideSimpleCarousel = {
+  _type: "section.wideSimpleCarousel";
+  slides: Array<
+    {
+      _key: string;
+    } & WideSimpleCarouselCard
+  >;
+  marginTop: "none" | "base" | "lg";
+  marginBottom: "none" | "base" | "lg";
+};
+
+export type SectionSimpleCarousel = {
+  _type: "section.simpleCarousel";
+  slides: Array<
+    {
+      _key: string;
+    } & SimpleCarouselCard
+  >;
+  marginTop: "none" | "base" | "lg";
+  marginBottom: "none" | "base" | "lg";
+};
+
 export type SectionBlog = {
   _type: "section.blog";
   text: CustomRichText;
@@ -159,6 +181,16 @@ export type SectionHeader = {
   >;
   alignVariant: "left" | "center" | "right";
   theme: "light" | "dark";
+};
+
+export type WideSimpleCarouselCard = {
+  _type: "wideSimpleCarouselCard";
+  image: CustomImage;
+};
+
+export type SimpleCarouselCard = {
+  _type: "simpleCarouselCard";
+  image: CustomImage;
 };
 
 export type BlogSectionPost = {
@@ -357,6 +389,12 @@ export type Page = {
     | ({
         _key: string;
       } & SectionBlog)
+    | ({
+        _key: string;
+      } & SectionSimpleCarousel)
+    | ({
+        _key: string;
+      } & SectionWideSimpleCarousel)
   >;
   seoTitle?: string;
   seoDescription?: string;
@@ -462,6 +500,8 @@ export type AllSanitySchemaTypes =
   | SanityImageDimensions
   | SanityFileAsset
   | Geopoint
+  | SectionWideSimpleCarousel
+  | SectionSimpleCarousel
   | SectionBlog
   | SectionCardsGrid
   | SectionLinksList
@@ -469,6 +509,8 @@ export type AllSanitySchemaTypes =
   | SectionCopy
   | SectionFooter
   | SectionHeader
+  | WideSimpleCarouselCard
+  | SimpleCarouselCard
   | BlogSectionPost
   | BasicRichText
   | Break
