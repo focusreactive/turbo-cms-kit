@@ -1,5 +1,3 @@
-# Pull Request
-
 ## Description
 
 Provide a brief description of the changes made in this pull request.
@@ -23,3 +21,5 @@ List any caveats or considerations for this pull request.
 - [ ] I have added necessary documentation
 - [ ] I have included tests for my changes
 - [ ] All tests pass locally
+
+# ⚠️⚠️⚠️Use "squash commits" when merging⚠️⚠️⚠️
