@@ -1,10 +1,11 @@
 import { CommonGroup } from "@/contentSections/commonFields";
-import { sectionsPresets } from "@/contentSections/presets";
+// import { sectionsPresets } from "@/contentSections/presets";
 import { definePathname } from "@tinloof/sanity-studio";
 import { defineField, defineType } from "sanity";
 
 import sections from "@/lib/schemas/sections";
-import { componentsWithBlocksInput } from "@/lib/templateSelectorInput";
+
+// import { componentsWithBlocksInput } from "@/lib/templateSelectorInput";
 
 export default defineType({
   type: "document",
@@ -33,9 +34,9 @@ export default defineType({
       of: sections.map((section) => ({
         type: section.name,
       })),
-      components: componentsWithBlocksInput({
-        presets: Object.values(sectionsPresets).flat(),
-      }),
+      // components: componentsWithBlocksInput({
+      //   presets: Object.values(sectionsPresets).flat(),
+      // }),
     }),
     defineField({
       type: "string",
@@ -48,6 +49,14 @@ export default defineType({
       name: "seoDescription",
       title: "SEO Description",
       group: "seo",
+    }),
+    defineField({
+      type: "boolean",
+      name: "showCookieBanner",
+      title: "Show Cookie Banner",
+      group: "seo",
+      validation: (Rule) => Rule.required(),
+      initialValue: true,
     }),
     defineField({
       name: "robots",

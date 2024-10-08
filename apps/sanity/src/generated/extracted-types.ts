@@ -415,6 +415,7 @@ export type Page = {
   >;
   seoTitle?: string;
   seoDescription?: string;
+  showCookieBanner: boolean;
   robots?: "index" | "noindex";
   ogImage?: {
     asset?: {

@@ -2628,6 +2628,13 @@
         },
         "optional": true
       },
+      "showCookieBanner": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "boolean"
+        },
+        "optional": false
+      },
       "robots": {
         "type": "objectAttribute",
         "value": {
