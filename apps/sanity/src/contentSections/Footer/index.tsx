@@ -1,3 +1,5 @@
+import EmptyBlock from "@shared/ui/components/EmptyBlock";
+
 import { Footer as FooterUI } from "@shared/ui";
 
 import { prepareLinkProps } from "@/lib/adapters/prepareLinkProps";
@@ -7,7 +9,7 @@ import SectionContainer from "@/components/SectionContainer";
 import type { IFooterProps } from "./types";
 
 export default function Footer({ data }: IFooterProps) {
-  if (!data) return null;
+  if (!data) return <EmptyBlock name="Footer Section" />;
 
   const { links, text, copywriteText } = data;
 

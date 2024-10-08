@@ -1,4 +1,5 @@
 import { stegaClean } from "@sanity/client/stega";
+import EmptyBlock from "@shared/ui/components/EmptyBlock";
 import type { AlignVariant } from "@shared/ui/components/sections/logos/types";
 
 import { Logos } from "@shared/ui";
@@ -10,7 +11,7 @@ import SectionContainer from "@/components/SectionContainer";
 import type { ILogosSectionProps } from "./types";
 
 export default function LogosSection({ data }: ILogosSectionProps) {
-  if (!data) return null;
+  if (!data) return <EmptyBlock name="Logos Section" />;
 
   const { items, alignVariant } = data;
 

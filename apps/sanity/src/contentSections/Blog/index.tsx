@@ -1,3 +1,4 @@
+import EmptyBlock from "@shared/ui/components/EmptyBlock";
 import type { BlogStyle } from "@shared/ui/components/sections/blog/types";
 
 import { BlogSection as BlogSectionUI } from "@shared/ui";
@@ -10,7 +11,7 @@ import SectionContainer from "@/components/SectionContainer";
 import type { IBlogSectionProps } from "./types";
 
 export default function BlogSection({ data }: IBlogSectionProps) {
-  if (!data) return null;
+  if (!data) return <EmptyBlock name="Blog Section" />;
 
   const { text, posts, style } = data;
 

@@ -1,3 +1,5 @@
+import EmptyBlock from "@shared/ui/components/EmptyBlock";
+
 import { Header as HeaderUI } from "@shared/ui";
 
 import { prepareLinkProps } from "@/lib/adapters/prepareLinkProps";
@@ -6,7 +8,7 @@ import SectionContainer from "@/components/SectionContainer";
 import type { IHeaderProps } from "./types";
 
 export default function Header({ data }: IHeaderProps) {
-  if (!data) return null;
+  if (!data) return <EmptyBlock name="Header Section" />;
 
   const { links } = data;
 
