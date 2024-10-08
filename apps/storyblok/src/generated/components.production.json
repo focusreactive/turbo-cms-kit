@@ -769,12 +769,35 @@
       "name": "header",
       "display_name": null,
       "created_at": "2024-09-10T10:29:47.997Z",
-      "updated_at": "2024-10-07T06:28:00.804Z",
+      "updated_at": "2024-10-08T11:37:31.538Z",
       "id": 6275697,
       "schema": {
+        "image": {
+          "type": "bloks",
+          "pos": 0,
+          "required": true,
+          "minimum": 1,
+          "maximum": 1,
+          "restrict_type": "",
+          "restrict_components": true,
+          "component_whitelist": [
+            "image"
+          ]
+        },
+        "links": {
+          "type": "bloks",
+          "pos": 1,
+          "required": true,
+          "minimum": 1,
+          "restrict_type": "",
+          "restrict_components": true,
+          "component_whitelist": [
+            "link"
+          ]
+        },
         "theme": {
           "type": "option",
-          "pos": 0,
+          "pos": 2,
           "use_uuid": true,
           "required": true,
           "exclude_empty_option": true,
@@ -792,27 +815,42 @@
           ],
           "default_value": "light"
         },
-        "links": {
-          "type": "bloks",
-          "pos": 1,
-          "required": true,
-          "minimum": 1,
-          "restrict_type": "",
-          "restrict_components": true,
-          "component_whitelist": [
-            "link"
-          ]
-        },
         "tab-4e23fbb8-cb6d-4681-a0dc-91db6c8ca637": {
           "display_name": "Style",
           "keys": [
-            "theme"
+            "theme",
+            "alignVariant"
           ],
-          "pos": 2,
+          "pos": 3,
           "type": "tab"
+        },
+        "alignVariant": {
+          "type": "option",
+          "pos": 4,
+          "use_uuid": true,
+          "required": true,
+          "exclude_empty_option": true,
+          "options": [
+            {
+              "_uid": "24f175ca-4021-46d3-a756-e4c815e61f15",
+              "name": "left",
+              "value": "left"
+            },
+            {
+              "_uid": "2479f5ba-d73c-4abb-a81c-1d9646dd6bdf",
+              "value": "center",
+              "name": "center"
+            },
+            {
+              "_uid": "7b5f9ea3-ea1d-47fa-bf80-af125655be56",
+              "value": "right",
+              "name": "right"
+            }
+          ],
+          "default_value": "right"
         }
       },
-      "image": "//a.storyblok.com/f/293915/x/18958f38ff/screenshot-2024-10-07-at-08-27-51.png",
+      "image": "//a.storyblok.com/f/293915/x/dc0a6ac916/screenshot-2024-10-08-at-13-37-02.png",
       "preview_field": null,
       "is_root": false,
       "preview_tmpl": null,
@@ -822,7 +860,7 @@
           "id": 2282764,
           "name": "Light",
           "component_id": 6275697,
-          "image": "//a.storyblok.com/f/293915/x/bd3686bbc2/screenshot-2024-09-10-at-16-43-12.png",
+          "image": "//a.storyblok.com/f/293915/x/c38bd1625a/screenshot-2024-10-08-at-13-37-02.png",
           "icon": "",
           "color": "",
           "description": ""
@@ -1576,6 +1614,188 @@
       "all_presets": [],
       "preset_id": null,
       "real_name": "richText",
+      "component_group_uuid": "7a581c8c-f6b7-4926-b5b0-98b7a48916b3",
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null,
+      "component_group_name": "components"
+    },
+    {
+      "name": "simpleCarousel",
+      "display_name": null,
+      "created_at": "2024-10-08T14:20:16.827Z",
+      "updated_at": "2024-10-08T14:31:53.278Z",
+      "id": 6391276,
+      "schema": {
+        "slides": {
+          "type": "bloks",
+          "pos": 0,
+          "minimum": 1,
+          "required": true,
+          "restrict_type": "",
+          "restrict_components": true,
+          "component_whitelist": [
+            "simpleCarouselSlide"
+          ]
+        }
+      },
+      "image": "//a.storyblok.com/f/293915/x/76de5f60c0/screenshot-2024-10-08-at-16-30-53.png",
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [
+        {
+          "id": 2311924,
+          "name": "Default",
+          "component_id": 6391276,
+          "image": "//a.storyblok.com/f/293915/x/bd83ad5125/screenshot-2024-10-08-at-16-30-53.png",
+          "icon": "",
+          "color": "",
+          "description": ""
+        }
+      ],
+      "preset_id": null,
+      "real_name": "simpleCarousel",
+      "component_group_uuid": "9a95e24a-4024-4145-992e-070fbb399f97",
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null,
+      "component_group_name": "sections"
+    },
+    {
+      "name": "simpleCarouselSlide",
+      "display_name": null,
+      "created_at": "2024-10-08T14:20:37.715Z",
+      "updated_at": "2024-10-08T14:20:50.877Z",
+      "id": 6391277,
+      "schema": {
+        "image": {
+          "type": "bloks",
+          "pos": 0,
+          "required": true,
+          "minimum": 1,
+          "maximum": 1,
+          "restrict_type": "",
+          "restrict_components": true,
+          "component_whitelist": [
+            "image"
+          ]
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [
+        {
+          "id": 2311925,
+          "name": "Default",
+          "component_id": 6391277,
+          "image": "//a.storyblok.com/f/293915/x/6750a101ef/screenshot-2024-10-08-at-16-31-02.png",
+          "icon": "",
+          "color": "",
+          "description": ""
+        }
+      ],
+      "preset_id": null,
+      "real_name": "simpleCarouselSlide",
+      "component_group_uuid": "7a581c8c-f6b7-4926-b5b0-98b7a48916b3",
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null,
+      "component_group_name": "components"
+    },
+    {
+      "name": "wideSimpleCarousel",
+      "display_name": null,
+      "created_at": "2024-10-08T14:21:25.377Z",
+      "updated_at": "2024-10-08T14:32:19.392Z",
+      "id": 6391278,
+      "schema": {
+        "slides": {
+          "type": "bloks",
+          "pos": 0,
+          "required": true,
+          "minimum": 1,
+          "restrict_type": "",
+          "restrict_components": true,
+          "component_whitelist": [
+            "wideSimpleCarouselSlide"
+          ]
+        }
+      },
+      "image": "//a.storyblok.com/f/293915/x/3d25defba3/screenshot-2024-10-08-at-16-30-56.png",
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [
+        {
+          "id": 2311926,
+          "name": "Default",
+          "component_id": 6391278,
+          "image": "//a.storyblok.com/f/293915/x/8326dcb7a4/screenshot-2024-10-08-at-16-30-56.png",
+          "icon": "",
+          "color": "",
+          "description": ""
+        }
+      ],
+      "preset_id": null,
+      "real_name": "wideSimpleCarousel",
+      "component_group_uuid": "9a95e24a-4024-4145-992e-070fbb399f97",
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null,
+      "component_group_name": "sections"
+    },
+    {
+      "name": "wideSimpleCarouselSlide",
+      "display_name": null,
+      "created_at": "2024-10-08T14:21:43.668Z",
+      "updated_at": "2024-10-08T14:21:56.078Z",
+      "id": 6391279,
+      "schema": {
+        "image": {
+          "type": "bloks",
+          "pos": 0,
+          "required": true,
+          "minimum": 1,
+          "maximum": 1,
+          "restrict_type": "",
+          "restrict_components": true,
+          "component_whitelist": [
+            "image"
+          ]
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [
+        {
+          "id": 2311927,
+          "name": "Default",
+          "component_id": 6391279,
+          "image": "//a.storyblok.com/f/293915/x/e32cf6ec6b/screenshot-2024-10-08-at-16-31-09.png",
+          "icon": "",
+          "color": "",
+          "description": ""
+        }
+      ],
+      "preset_id": null,
+      "real_name": "wideSimpleCarouselSlide",
       "component_group_uuid": "7a581c8c-f6b7-4926-b5b0-98b7a48916b3",
       "color": null,
       "icon": null,
