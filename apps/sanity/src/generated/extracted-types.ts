@@ -151,11 +151,13 @@ export type SectionFooter = {
 
 export type SectionHeader = {
   _type: "section.header";
+  image?: CustomImage;
   links: Array<
     {
       _key: string;
     } & CustomLink
   >;
+  alignVariant: "left" | "center" | "right";
   theme: "light" | "dark";
 };
 

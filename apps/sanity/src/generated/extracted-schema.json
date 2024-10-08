@@ -992,6 +992,14 @@
             "value": "section.header"
           }
         },
+        "image": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "inline",
+            "name": "customImage"
+          },
+          "optional": true
+        },
         "links": {
           "type": "objectAttribute",
           "value": {
@@ -1011,6 +1019,27 @@
                 "name": "customLink"
               }
             }
+          },
+          "optional": false
+        },
+        "alignVariant": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "union",
+            "of": [
+              {
+                "type": "string",
+                "value": "left"
+              },
+              {
+                "type": "string",
+                "value": "center"
+              },
+              {
+                "type": "string",
+                "value": "right"
+              }
+            ]
           },
           "optional": false
         },
