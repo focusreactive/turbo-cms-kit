@@ -1,3 +1,4 @@
+import { cn } from "../../../utils";
 import { Image } from "../../ui/image";
 import { ImageAspectRatio } from "../../ui/image/types";
 import { Link } from "../../ui/link";
@@ -6,7 +7,7 @@ import type { ILogoItem } from "./types";
 
 export default function LogoItem({ image, link }: ILogoItem) {
   const imageWrapperProps = {
-    className: "mx-auto [height:inherit]",
+    className: cn(link?.className, "mx-auto [height:inherit]"),
     style: {
       aspectRatio: ImageAspectRatio[image.aspectRatio as ImageAspectRatio],
     },

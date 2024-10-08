@@ -1,4 +1,5 @@
 import { stegaClean } from "@sanity/client/stega";
+import EmptyBlock from "@shared/ui/components/EmptyBlock";
 import type { AlignVariant } from "@shared/ui/components/sections/linksList/types";
 
 import { LinksList } from "@shared/ui";
@@ -12,6 +13,8 @@ export default function LinksListSection({ data }: ILinksListSectionProps) {
   if (!data) return null;
 
   const { links, alignVariant } = data;
+
+  if (!links || links.length === 0) return <EmptyBlock name="Links list" />;
 
   return (
     <SectionContainer sectionData={data}>

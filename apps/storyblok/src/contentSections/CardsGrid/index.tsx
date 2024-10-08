@@ -1,3 +1,5 @@
+import EmptyBlock from "@shared/ui/components/EmptyBlock";
+
 import { CardsGrid as CardsGridUI } from "@shared/ui";
 
 import { prepareImageProps } from "@/lib/adapters/prepareImageProps";
@@ -8,6 +10,8 @@ import type { ICardsGridProps } from "./types";
 
 export default function CardsGrid({ blok }: ICardsGridProps) {
   const { items, columns } = blok;
+
+  if (items.length === 0) return <EmptyBlock name={blok.component as string} />;
 
   const formattedItems = items.map((item) => ({
     ...item,

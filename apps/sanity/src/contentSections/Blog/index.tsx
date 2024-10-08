@@ -1,3 +1,4 @@
+import EmptyBlock from "@shared/ui/components/EmptyBlock";
 import type { BlogStyle } from "@shared/ui/components/sections/blog/types";
 
 import { BlogSection as BlogSectionUI } from "@shared/ui";
@@ -13,6 +14,9 @@ export default function BlogSection({ data }: IBlogSectionProps) {
   if (!data) return null;
 
   const { text, posts, style } = data;
+
+  if ((!posts || posts.length === 0) && !text)
+    return <EmptyBlock name="Blog" />;
 
   const formattedPosts = posts?.map((post) => ({
     style: style as BlogStyle,

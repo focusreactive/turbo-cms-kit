@@ -1,3 +1,4 @@
+import EmptyBlock from "@shared/ui/components/EmptyBlock";
 import type { DefaultCardStyle } from "@shared/ui/components/sections/cardsGrid/types";
 
 import { CardsGrid as SharedCardsGrid } from "@shared/ui";
@@ -12,6 +13,8 @@ export default function CardsGrid({ data }: ICardsGridSectionProps) {
   if (!data) return null;
 
   const { items, columns } = data;
+
+  if (!items || items.length === 0) return <EmptyBlock name="Cards Grid" />;
 
   const formattedItems = items?.map((item) => ({
     description: item.description,

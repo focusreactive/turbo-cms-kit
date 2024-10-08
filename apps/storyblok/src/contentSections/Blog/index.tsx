@@ -1,3 +1,5 @@
+import EmptyBlock from "@shared/ui/components/EmptyBlock";
+
 import { BlogSection as BlogSectionUI } from "@shared/ui";
 
 import { prepareImageProps } from "@/lib/adapters/prepareImageProps";
@@ -9,6 +11,9 @@ import type { IBlogProps } from "./types";
 
 export default function Blog({ blok }: IBlogProps) {
   const { text, posts, style } = blok;
+
+  if (posts.length === 0 && text.length === 0)
+    return <EmptyBlock name={blok.component as string} />;
 
   const formattedPosts = posts.map((post) => ({
     style,
