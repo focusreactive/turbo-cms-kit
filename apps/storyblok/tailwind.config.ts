@@ -2,7 +2,7 @@ import sharedConfig from "@shared/tailwind-config";
 import { preset } from "@shared/tailwind-config/lib/preset";
 import type { Config } from "tailwindcss";
 
-const config = {
+const config: Config = {
   ...sharedConfig,
   theme: {
     extend: {
@@ -19,6 +19,6 @@ const config = {
     },
   },
   presets: [preset],
-} satisfies Config;
+};
 
 export default config;

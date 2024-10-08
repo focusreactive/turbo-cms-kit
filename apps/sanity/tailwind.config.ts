@@ -19,6 +19,6 @@ const config: Config = {
     },
   },
   presets: [preset],
-} satisfies Config;
+};
 
 export default config;
