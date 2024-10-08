@@ -1,4 +1,5 @@
 // start component exports
+export * from "./components/EmptyBlock";
 export * from "./components/ui/link";
 export * from "./components/ui/image";
 export * from "./components/ui/richText";

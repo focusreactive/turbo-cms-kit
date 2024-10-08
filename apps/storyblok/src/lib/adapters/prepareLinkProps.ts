@@ -6,6 +6,8 @@ import type { SbBlokData } from "@storyblok/react/rsc";
 
 import { useDataContext } from "@/components/DataContext";
 
+import { isPreview } from "../utils";
+
 export enum LinkTypes {
   story = "story",
   url = "url",
@@ -40,6 +42,7 @@ export const prepareLinkProps = (props?: ILinkBlok): LinkProps => {
       text: "",
       href: "",
       variant: LinkVariant.Default,
+      clickDisabled: isPreview,
     };
   }
 
@@ -65,5 +68,6 @@ export const prepareLinkProps = (props?: ILinkBlok): LinkProps => {
     text: props.text,
     href: url,
     variant: props.variant,
+    clickDisabled: isPreview,
   };
 };

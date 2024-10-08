@@ -23,4 +23,5 @@ export interface LinkProps {
   variant: LinkVariant;
   className?: string;
   style?: React.CSSProperties;
+  clickDisabled?: boolean;
 }

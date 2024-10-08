@@ -1,3 +1,5 @@
+import EmptyBlock from "@shared/ui/components/EmptyBlock";
+
 import { Logos as LogosUI } from "@shared/ui";
 
 import { prepareImageProps } from "@/lib/adapters/prepareImageProps";
@@ -8,6 +10,8 @@ import type { ILogosProps } from "./types";
 
 export default function Logos({ blok }: ILogosProps) {
   const { items, alignVariant } = blok;
+
+  if (items.length === 0) return <EmptyBlock name={blok.component as string} />;
 
   const formattedItems = items.map((item) => ({
     ...item,
