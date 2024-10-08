@@ -11,7 +11,7 @@ import type { IHeaderProps } from "./types";
 export default function Header({ blok }: IHeaderProps) {
   const { links, image, alignVariant } = blok;
 
-  if (links.length === 0 && !image)
+  if (!image || links.length === 0)
     return <EmptyBlock name={blok.component as string} />;
 
   return (
