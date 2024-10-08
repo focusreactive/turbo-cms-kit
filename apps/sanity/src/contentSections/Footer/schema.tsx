@@ -3,7 +3,7 @@ import { defineField } from "sanity";
 import customLink from "@/lib/schemas/customLink";
 import customRichText from "@/lib/schemas/customRichText";
 
-import { commonGroups, themeField } from "../commonFields";
+import { CommonGroup, commonGroups, themeField } from "../commonFields";
 
 export default {
   name: "section.footer",
@@ -15,19 +15,19 @@ export default {
     defineField({
       name: "text",
       type: customRichText.name,
-      group: "content",
+      group: CommonGroup.Content,
     }),
     defineField({
       name: "links",
       type: "array",
       of: [{ type: customLink.name }],
-      group: "content",
+      group: CommonGroup.Content,
     }),
 
     defineField({
       name: "copywriteText",
       type: "string",
-      group: "content",
+      group: CommonGroup.Content,
     }),
     themeField,
   ],

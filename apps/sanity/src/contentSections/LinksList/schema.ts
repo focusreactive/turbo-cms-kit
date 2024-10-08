@@ -3,7 +3,12 @@ import { defineField } from "sanity";
 
 import customLink from "@/lib/schemas/customLink";
 
-import { commonGroups, sectionMarginFields, themeField } from "../commonFields";
+import {
+  CommonGroup,
+  commonGroups,
+  sectionMarginFields,
+  themeField,
+} from "../commonFields";
 
 export default {
   options: {},
@@ -15,14 +20,14 @@ export default {
     defineField({
       name: "links",
       type: "array",
-      group: "content",
+      group: CommonGroup.Content,
       of: [{ type: customLink.name }],
       validation: (Rule) => Rule.required().min(1),
     }),
     defineField({
       name: "alignVariant",
       type: "string",
-      group: "style",
+      group: CommonGroup.Style,
       options: {
         list: Object.values(AlignVariant).map((v) => ({
           title: v,

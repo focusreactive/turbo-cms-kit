@@ -4,7 +4,12 @@ import { defineField, defineType } from "sanity";
 import customImage from "@/lib/schemas/customImage";
 import customLink from "@/lib/schemas/customLink";
 
-import { commonGroups, sectionMarginFields, themeField } from "../commonFields";
+import {
+  CommonGroup,
+  commonGroups,
+  sectionMarginFields,
+  themeField,
+} from "../commonFields";
 
 export const logoItem = defineType({
   name: "logoItem",
@@ -55,14 +60,14 @@ export default {
     defineField({
       name: "items",
       type: "array",
-      group: "content",
+      group: CommonGroup.Content,
       of: [{ type: logoItem.name }],
       validation: (Rule) => Rule.required().min(1),
     }),
     defineField({
       name: "alignVariant",
       type: "string",
-      group: "style",
+      group: CommonGroup.Style,
       options: {
         list: Object.values(AlignVariant).map((v) => ({
           title: v,

@@ -4,7 +4,7 @@ import { defineField } from "sanity";
 import customImage from "@/lib/schemas/customImage";
 import customLink from "@/lib/schemas/customLink";
 
-import { commonGroups, themeField } from "../commonFields";
+import { CommonGroup, commonGroups, themeField } from "../commonFields";
 
 export default {
   name: "section.header",
@@ -16,18 +16,19 @@ export default {
     defineField({
       name: "image",
       type: customImage.name,
+      group: CommonGroup.Content,
     }),
     defineField({
       name: "links",
       type: "array",
       of: [{ type: customLink.name }],
-      group: "content",
+      group: CommonGroup.Content,
       validation: (Rule) => Rule.required().min(1),
     }),
     defineField({
       name: "alignVariant",
       type: "string",
-      group: "style",
+      group: CommonGroup.Style,
       options: {
         list: Object.values(AlignVariant).map((v) => ({
           title: v,

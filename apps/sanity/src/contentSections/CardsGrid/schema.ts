@@ -2,7 +2,12 @@ import { defineField, defineType } from "sanity";
 
 import customImage from "@/lib/schemas/customImage";
 
-import { commonGroups, sectionMarginFields, themeField } from "../commonFields";
+import {
+  CommonGroup,
+  commonGroups,
+  sectionMarginFields,
+  themeField,
+} from "../commonFields";
 
 const featurePointStyles = [
   { title: "icon on the left", value: "icon-left" },
@@ -29,14 +34,14 @@ export const defaultCard = defineType({
     defineField({
       name: "title",
       type: "string",
-      group: "content",
+      group: CommonGroup.Content,
       validation: (Rule) => Rule.required(),
       initialValue: "initial title",
     }),
     defineField({
       name: "description",
       type: "string",
-      group: "content",
+      group: CommonGroup.Content,
       validation: (Rule) => Rule.required(),
       initialValue: "initial description",
     }),
@@ -47,19 +52,19 @@ export const defaultCard = defineType({
         list: featurePointStyles,
         layout: "dropdown",
       },
-      group: "style",
+      group: CommonGroup.Style,
       validation: (Rule) => Rule.required(),
       initialValue: "icon-left",
     }),
     defineField({
       name: "link",
       type: "customLink",
-      group: "content",
+      group: CommonGroup.Content,
     }),
     defineField({
       name: "image",
       type: customImage.name,
-      group: "content",
+      group: CommonGroup.Content,
     }),
   ],
   preview: {
@@ -86,7 +91,7 @@ export default {
   groups: commonGroups,
   fields: [
     defineField({
-      group: "style",
+      group: CommonGroup.Style,
       name: "columns",
       type: "number",
       options: {
@@ -100,7 +105,7 @@ export default {
     defineField({
       name: "items",
       type: "array",
-      group: "content",
+      group: CommonGroup.Content,
       of: [{ type: "defaultCard" }],
       validation: (Rule) => Rule.required().min(1),
     }),
