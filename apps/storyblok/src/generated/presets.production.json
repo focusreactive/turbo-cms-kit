@@ -1057,13 +1057,13 @@
       "description": ""
     },
     {
-      "id": 2225127,
+      "id": 2311975,
       "name": "Default",
       "preset": {
-        "_uid": "8a993c13-4588-46b4-8285-d2f59d18b11f",
+        "_uid": "58f68ee7-d789-4201-8963-03c08c0edbe5",
         "text": [
           {
-            "_uid": "d8050fa9-6b9d-438f-99e3-d038c9250382",
+            "_uid": "cdc6dfbd-5208-40a4-af7e-0fdbcedafafb",
             "content": {
               "type": "doc",
               "content": [
@@ -1074,117 +1074,19 @@
                   },
                   "content": [
                     {
-                      "text": "Let's find more that brings us together.",
-                      "type": "text",
-                      "marks": [
-                        {
-                          "type": "bold"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "paragraph",
-                  "content": [
-                    {
-                      "text": "Flowbite helps you connect with friends, family and communities of people who share your interests. Connecting with your friends and family as well as discovering new ones is easy with features like Groups, Watch and Marketplace.",
+                      "text": "In Notion, work feels better.",
                       "type": "text"
                     }
                   ]
-                }
-              ]
-            },
-            "component": "richText",
-            "removeInnerMargins": false
-          }
-        ],
-        "links": [
-          {
-            "_uid": "bdb0b522-2f4c-4836-a8bc-d8526d5acb94",
-            "link": {
-              "id": "",
-              "url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768",
-              "linktype": "url",
-              "fieldtype": "multilink",
-              "cached_url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768"
-            },
-            "text": "Get Started",
-            "variant": "primary",
-            "component": "link"
-          },
-          {
-            "_uid": "d084111d-6fbd-4159-8210-81694be82221",
-            "link": {
-              "id": "",
-              "url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768",
-              "linktype": "url",
-              "fieldtype": "multilink",
-              "cached_url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768"
-            },
-            "text": "Learn More",
-            "variant": "secondary",
-            "component": "link"
-          },
-          {
-            "_uid": "4cf8608f-0859-4c87-a74d-2d2b2c5e24fe",
-            "link": {
-              "id": "",
-              "url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768",
-              "linktype": "url",
-              "fieldtype": "multilink",
-              "cached_url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768"
-            },
-            "text": "New Info",
-            "variant": "secondary",
-            "component": "link"
-          }
-        ],
-        "variant": "default",
-        "component": "cta"
-      },
-      "component_id": 6030875,
-      "space_id": 293915,
-      "created_at": "2024-07-12T15:24:16.323Z",
-      "updated_at": "2024-07-12T15:24:16.323Z",
-      "image": "//a.storyblok.com/f/293915/x/eb1b14e23e/cta.png",
-      "color": "",
-      "icon": "",
-      "description": ""
-    },
-    {
-      "id": 2225124,
-      "name": "Default",
-      "preset": {
-        "_uid": "f69d732d-2748-41a3-a242-44c14ce4d9bf",
-        "text": [
-          {
-            "_uid": "a750fdb5-4826-4829-b538-c947b2fcb704",
-            "content": {
-              "type": "doc",
-              "content": [
+                },
                 {
                   "type": "heading",
                   "attrs": {
-                    "level": 1
+                    "level": 2
                   },
                   "content": [
                     {
-                      "text": "Payments tool for software companies",
-                      "type": "text",
-                      "marks": [
-                        {
-                          "type": "bold"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "paragraph",
-                  "content": [
-                    {
-                      "text": "From checkout to global sales tax compliance, companies around the world use Flowbite to simplify their payment stack.",
+                      "text": "With a little help from AI.",
                       "type": "text"
                     }
                   ]
@@ -1192,96 +1094,109 @@
               ]
             },
             "component": "richText",
-            "removeInnerMargins": false
+            "alignVariant": "left",
+            "removeInnerMargins": true
           }
         ],
-        "Title": {
-          "type": "doc",
-          "content": [
-            {
-              "type": "heading",
-              "attrs": {
-                "level": 1
-              },
-              "content": [
-                {
-                  "text": "Payments tool for software companies",
-                  "type": "text",
-                  "marks": [
-                    {
-                      "type": "bold"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "content": [
-                {
-                  "text": "From checkout to global sales tax compliance, companies around the world use Flowbite to simplify their payment stack.",
-                  "type": "text"
-                }
-              ]
-            }
-          ]
-        },
         "image": [
           {
-            "_uid": "9b1e6ac1-5d3d-464a-9e0f-89e5e6012f49",
+            "_uid": "262bcb34-10e0-4400-aea5-2a7dc5f68598",
             "asset": {
-              "id": 16613655,
+              "id": 17600300,
               "alt": "",
               "name": "",
               "focus": "",
               "title": "",
               "source": "",
-              "filename": "https://a.storyblok.com/f/293915/943x706/c52a102a70/phone-mockup.webp",
+              "filename": "https://a.storyblok.com/f/293915/2474x1318/df22f90af3/screenshot-2024-10-08-at-16-53-38.png",
               "copyright": "",
               "fieldtype": "asset",
               "meta_data": {},
-              "is_private": false,
               "is_external_url": false
             },
             "component": "image",
-            "aspectRatio": "4/3"
+            "aspectRatio": "16/9"
           }
         ],
         "links": [
           {
-            "_uid": "153a06e8-2eac-47d9-9ac8-019faf1055e1",
+            "_uid": "38ffb55a-d12a-4e63-b2b0-5996c0d79177",
             "link": {
-              "id": "",
-              "url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768",
-              "linktype": "url",
+              "id": "5d416347-de08-4adb-b496-00b0a083de3a",
+              "url": "",
+              "linktype": "story",
               "fieldtype": "multilink",
-              "cached_url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768"
+              "cached_url": "blog"
             },
-            "text": "Get Started",
+            "text": "Get for free",
             "variant": "primary",
             "component": "link"
           },
           {
-            "_uid": "df78a958-f7a0-46f3-b540-173106e8a3fd",
+            "_uid": "cacf894d-a48f-4bdb-84d6-d9cf98ad9489",
             "link": {
-              "id": "",
-              "url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768",
-              "linktype": "url",
+              "id": "5d416347-de08-4adb-b496-00b0a083de3a",
+              "url": "",
+              "linktype": "story",
               "fieldtype": "multilink",
-              "cached_url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768"
+              "cached_url": "blog"
             },
-            "text": "Learn More",
+            "text": "Request a demo",
             "variant": "secondary",
             "component": "link"
           }
         ],
-        "component": "hero"
+        "title": "Write. Plan. Collaborate.",
+        "component": "hero",
+        "marginTop": "base",
+        "marginBottom": "base"
       },
-      "component_id": 6030807,
+      "component_id": 6391508,
       "space_id": 293915,
-      "created_at": "2024-07-12T15:21:23.929Z",
-      "updated_at": "2024-07-12T15:21:23.929Z",
-      "image": "//a.storyblok.com/f/293915/x/970561938d/hero.png",
+      "created_at": "2024-10-08T15:14:26.596Z",
+      "updated_at": "2024-10-08T15:14:26.596Z",
+      "image": "//a.storyblok.com/f/293915/x/9118f0bd1b/screenshot-2024-10-08-at-17-14-10.png",
+      "color": "",
+      "icon": "",
+      "description": ""
+    },
+    {
+      "id": 2311927,
+      "name": "Default",
+      "preset": {
+        "_uid": "78b9116c-66e1-47e6-a843-3420b3ccc362",
+        "image": [
+          {
+            "_uid": "28239737-5fc1-448d-a995-19b7fc5021a2",
+            "asset": {
+              "id": 17302361,
+              "alt": "",
+              "name": "",
+              "focus": "",
+              "title": "",
+              "source": "",
+              "filename": "https://a.storyblok.com/f/293915/1792x1024/3c65b2e66b/generated-social-logo.webp",
+              "copyright": "",
+              "fieldtype": "asset",
+              "meta_data": {
+                "alt": "",
+                "title": "",
+                "source": "",
+                "copyright": ""
+              },
+              "is_external_url": false
+            },
+            "component": "image",
+            "aspectRatio": "16/9"
+          }
+        ],
+        "component": "wideSimpleCarouselSlide"
+      },
+      "component_id": 6391279,
+      "space_id": 293915,
+      "created_at": "2024-10-08T14:32:40.489Z",
+      "updated_at": "2024-10-08T14:32:40.489Z",
+      "image": "//a.storyblok.com/f/293915/x/e32cf6ec6b/screenshot-2024-10-08-at-16-31-09.png",
       "color": "",
       "icon": "",
       "description": ""
@@ -1428,47 +1343,6 @@
       "description": ""
     },
     {
-      "id": 2311927,
-      "name": "Default",
-      "preset": {
-        "_uid": "78b9116c-66e1-47e6-a843-3420b3ccc362",
-        "image": [
-          {
-            "_uid": "28239737-5fc1-448d-a995-19b7fc5021a2",
-            "asset": {
-              "id": 17302361,
-              "alt": "",
-              "name": "",
-              "focus": "",
-              "title": "",
-              "source": "",
-              "filename": "https://a.storyblok.com/f/293915/1792x1024/3c65b2e66b/generated-social-logo.webp",
-              "copyright": "",
-              "fieldtype": "asset",
-              "meta_data": {
-                "alt": "",
-                "title": "",
-                "source": "",
-                "copyright": ""
-              },
-              "is_external_url": false
-            },
-            "component": "image",
-            "aspectRatio": "16/9"
-          }
-        ],
-        "component": "wideSimpleCarouselSlide"
-      },
-      "component_id": 6391279,
-      "space_id": 293915,
-      "created_at": "2024-10-08T14:32:40.489Z",
-      "updated_at": "2024-10-08T14:32:40.489Z",
-      "image": "//a.storyblok.com/f/293915/x/e32cf6ec6b/screenshot-2024-10-08-at-16-31-09.png",
-      "color": "",
-      "icon": "",
-      "description": ""
-    },
-    {
       "id": 2311924,
       "name": "Default",
       "preset": {
@@ -1602,6 +1476,236 @@
       "created_at": "2024-10-08T14:31:24.209Z",
       "updated_at": "2024-10-08T14:31:24.209Z",
       "image": "//a.storyblok.com/f/293915/x/bd83ad5125/screenshot-2024-10-08-at-16-30-53.png",
+      "color": "",
+      "icon": "",
+      "description": ""
+    },
+    {
+      "id": 2225124,
+      "name": "Default",
+      "preset": {
+        "_uid": "f69d732d-2748-41a3-a242-44c14ce4d9bf",
+        "text": [
+          {
+            "_uid": "a750fdb5-4826-4829-b538-c947b2fcb704",
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 1
+                  },
+                  "content": [
+                    {
+                      "text": "Payments tool for software companies",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "From checkout to global sales tax compliance, companies around the world use Flowbite to simplify their payment stack.",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            "component": "richText",
+            "removeInnerMargins": false
+          }
+        ],
+        "Title": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "heading",
+              "attrs": {
+                "level": 1
+              },
+              "content": [
+                {
+                  "text": "Payments tool for software companies",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "From checkout to global sales tax compliance, companies around the world use Flowbite to simplify their payment stack.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "image": [
+          {
+            "_uid": "9b1e6ac1-5d3d-464a-9e0f-89e5e6012f49",
+            "asset": {
+              "id": 16613655,
+              "alt": "",
+              "name": "",
+              "focus": "",
+              "title": "",
+              "source": "",
+              "filename": "https://a.storyblok.com/f/293915/943x706/c52a102a70/phone-mockup.webp",
+              "copyright": "",
+              "fieldtype": "asset",
+              "meta_data": {},
+              "is_private": false,
+              "is_external_url": false
+            },
+            "component": "image",
+            "aspectRatio": "4/3"
+          }
+        ],
+        "links": [
+          {
+            "_uid": "153a06e8-2eac-47d9-9ac8-019faf1055e1",
+            "link": {
+              "id": "",
+              "url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768",
+              "linktype": "url",
+              "fieldtype": "multilink",
+              "cached_url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768"
+            },
+            "text": "Get Started",
+            "variant": "primary",
+            "component": "link"
+          },
+          {
+            "_uid": "df78a958-f7a0-46f3-b540-173106e8a3fd",
+            "link": {
+              "id": "",
+              "url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768",
+              "linktype": "url",
+              "fieldtype": "multilink",
+              "cached_url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768"
+            },
+            "text": "Learn More",
+            "variant": "secondary",
+            "component": "link"
+          }
+        ],
+        "component": "hero"
+      },
+      "component_id": 6030807,
+      "space_id": 293915,
+      "created_at": "2024-07-12T15:21:23.929Z",
+      "updated_at": "2024-07-12T15:21:23.929Z",
+      "image": "//a.storyblok.com/f/293915/x/970561938d/hero.png",
+      "color": "",
+      "icon": "",
+      "description": ""
+    },
+    {
+      "id": 2225127,
+      "name": "Default",
+      "preset": {
+        "_uid": "8a993c13-4588-46b4-8285-d2f59d18b11f",
+        "text": [
+          {
+            "_uid": "d8050fa9-6b9d-438f-99e3-d038c9250382",
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "text": "Let's find more that brings us together.",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "Flowbite helps you connect with friends, family and communities of people who share your interests. Connecting with your friends and family as well as discovering new ones is easy with features like Groups, Watch and Marketplace.",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            "component": "richText",
+            "removeInnerMargins": false
+          }
+        ],
+        "links": [
+          {
+            "_uid": "bdb0b522-2f4c-4836-a8bc-d8526d5acb94",
+            "link": {
+              "id": "",
+              "url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768",
+              "linktype": "url",
+              "fieldtype": "multilink",
+              "cached_url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768"
+            },
+            "text": "Get Started",
+            "variant": "primary",
+            "component": "link"
+          },
+          {
+            "_uid": "d084111d-6fbd-4159-8210-81694be82221",
+            "link": {
+              "id": "",
+              "url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768",
+              "linktype": "url",
+              "fieldtype": "multilink",
+              "cached_url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768"
+            },
+            "text": "Learn More",
+            "variant": "secondary",
+            "component": "link"
+          },
+          {
+            "_uid": "4cf8608f-0859-4c87-a74d-2d2b2c5e24fe",
+            "link": {
+              "id": "",
+              "url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768",
+              "linktype": "url",
+              "fieldtype": "multilink",
+              "cached_url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768"
+            },
+            "text": "New Info",
+            "variant": "secondary",
+            "component": "link"
+          }
+        ],
+        "variant": "default",
+        "component": "cta"
+      },
+      "component_id": 6030875,
+      "space_id": 293915,
+      "created_at": "2024-07-12T15:24:16.323Z",
+      "updated_at": "2024-07-12T15:24:16.323Z",
+      "image": "//a.storyblok.com/f/293915/x/eb1b14e23e/cta.png",
       "color": "",
       "icon": "",
       "description": ""

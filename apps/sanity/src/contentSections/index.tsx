@@ -6,6 +6,7 @@ import WideSimpleCarousel from "./carousels/WideSimpleCarousel";
 import Copy from "./Copy";
 import Footer from "./Footer";
 import Header from "./Header";
+import Hero from "./Hero";
 import LinksList from "./LinksList";
 import Logos from "./Logos";
 
@@ -22,6 +23,7 @@ export const sections: Record<string, any> = {
   "section.blog": Blog,
   "section.simpleCarousel": SimpleCarousel,
   "section.wideSimpleCarousel": WideSimpleCarousel,
+  "section.hero": Hero,
   // end of section object
 };
 

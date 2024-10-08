@@ -6,6 +6,7 @@ import wideSimpleCarousel from "@/contentSections/carousels/WideSimpleCarousel/s
 import copy from "@/contentSections/Copy/schema";
 import footer from "@/contentSections/Footer/schema";
 import header from "@/contentSections/Header/schema";
+import hero from "@/contentSections/Hero/schema";
 import linksList from "@/contentSections/LinksList/schema";
 import logos from "@/contentSections/Logos/schema";
 
@@ -22,6 +23,7 @@ const sections = [
   blog,
   simpleCarousel,
   wideSimpleCarousel,
+  hero,
   // end of section array
 ];
 

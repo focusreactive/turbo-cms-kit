@@ -10,7 +10,7 @@ export * from "./components/sections/logos";
 export * from "./components/sections/linksList";
 export * from "./components/sections/cardsGrid";
 export * from "./components/sections/blog";
-export * from "./components/ui/Hero";
+export * from "./components/sections/hero";
 export * from "./components/ui/GenericCarousel";
 export * from "./components/sections/carousels";
 // end component exports

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { apiPlugin, storyblokInit } from "@storyblok/react/rsc";
 
 import "./globals.css";
+import "@shared/ui/styles/global.css";
 
 storyblokInit({
   accessToken: process.env.storyblokApiToken,

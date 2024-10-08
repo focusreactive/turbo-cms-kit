@@ -9,3 +9,12 @@
     }
   }
 }
+
+/* todo: add layer */
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+}

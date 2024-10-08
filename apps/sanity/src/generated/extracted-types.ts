@@ -68,6 +68,20 @@ export type Geopoint = {
   alt?: number;
 };
 
+export type SectionHero = {
+  _type: "section.hero";
+  title: string;
+  text?: CustomRichText;
+  image?: CustomImage;
+  links: Array<
+    {
+      _key: string;
+    } & CustomLink
+  >;
+  marginTop: "none" | "base" | "lg";
+  marginBottom: "none" | "base" | "lg";
+};
+
 export type SectionWideSimpleCarousel = {
   _type: "section.wideSimpleCarousel";
   slides: Array<
@@ -395,6 +409,9 @@ export type Page = {
     | ({
         _key: string;
       } & SectionWideSimpleCarousel)
+    | ({
+        _key: string;
+      } & SectionHero)
   >;
   seoTitle?: string;
   seoDescription?: string;
@@ -500,6 +517,7 @@ export type AllSanitySchemaTypes =
   | SanityImageDimensions
   | SanityFileAsset
   | Geopoint
+  | SectionHero
   | SectionWideSimpleCarousel
   | SectionSimpleCarousel
   | SectionBlog

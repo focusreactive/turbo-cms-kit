@@ -20,12 +20,3 @@
   --text-secondary: #999999;
   --primary: #4f46e5;
 }
-
-/* todo: move to UI package */
-.swiper-wrapper {
-  display: flex;
-}
-
-.swiper-slide {
-  flex-shrink: 0;
-}
