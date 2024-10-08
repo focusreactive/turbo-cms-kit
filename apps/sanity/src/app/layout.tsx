@@ -1,4 +1,5 @@
 import "./globals.css";
+import "@shared/ui/styles/global.css";
 
 // import { IBM_Plex_Mono, Inter, PT_Serif } from 'next/font/google'
 //

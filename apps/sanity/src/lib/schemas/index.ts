@@ -1,5 +1,7 @@
 import { blogPost } from "@/contentSections/Blog/schema";
 import { defaultCard } from "@/contentSections/CardsGrid/schema";
+import { simpleCarouselCard } from "@/contentSections/carousels/SimpleCarousel/schema";
+import { wideSimpleCarouselCard } from "@/contentSections/carousels/WideSimpleCarousel/schema";
 import { logoItem } from "@/contentSections/Logos/schema";
 
 import customImage from "./customImage";
@@ -20,6 +22,8 @@ const schemas = [
   richTextBreak,
   basicRichText,
   blogPost,
+  simpleCarouselCard,
+  wideSimpleCarouselCard,
   ...sections,
 ];
 

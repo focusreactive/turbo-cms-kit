@@ -1,3 +1,4 @@
+import { CommonGroup } from "@/contentSections/commonFields";
 import { sectionsPresets } from "@/contentSections/presets";
 import { definePathname } from "@tinloof/sanity-studio";
 import { defineField, defineType } from "sanity";
@@ -20,15 +21,15 @@ export default defineType({
     defineField({
       type: "string",
       name: "title",
-      group: "content",
+      group: CommonGroup.Content,
       description: "For preview use only",
     }),
-    definePathname({ name: "pathname", group: "content" }),
+    definePathname({ name: "pathname", group: CommonGroup.Content }),
     defineField({
       name: "sectionsBody",
       title: "Sections",
       type: "array",
-      group: "content",
+      group: CommonGroup.Content,
       of: sections.map((section) => ({
         type: section.name,
       })),

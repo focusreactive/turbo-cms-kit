@@ -1,4 +1,4 @@
-import { commonGroups } from "@/contentSections/commonFields";
+import { CommonGroup, commonGroups } from "@/contentSections/commonFields";
 import { sectionsPresets } from "@/contentSections/presets";
 import { AlignVariant } from "@shared/ui/components/ui/richText/types";
 import { defineField, defineType } from "sanity";
@@ -21,7 +21,7 @@ export const richTextBreak = defineType({
       name: "style",
       type: "string",
       title: "Break style",
-      group: "content",
+      group: CommonGroup.Content,
       options: {
         list: [{ title: "line", value: "line" }],
       },
@@ -38,7 +38,7 @@ const customRichText = defineType({
     defineField({
       name: "text",
       type: "array",
-      group: "content",
+      group: CommonGroup.Content,
       of: [
         {
           type: "block",
@@ -86,7 +86,7 @@ const customRichText = defineType({
     defineField({
       name: "alignVariant",
       type: "string",
-      group: "style",
+      group: CommonGroup.Style,
       options: {
         list: Object.values(AlignVariant).map((v) => ({
           title: v,
@@ -101,7 +101,7 @@ const customRichText = defineType({
     defineField({
       name: "removeInnerMargins",
       type: "boolean",
-      group: "style",
+      group: CommonGroup.Style,
       validation: (Rule) => Rule.required(),
       initialValue: false,
     }),
@@ -146,7 +146,7 @@ export const basicRichText = defineType({
     defineField({
       name: "text",
       type: "array",
-      group: "content",
+      group: CommonGroup.Content,
       of: [
         {
           type: "block",
@@ -170,7 +170,7 @@ export const basicRichText = defineType({
     defineField({
       name: "alignVariant",
       type: "string",
-      group: "style",
+      group: CommonGroup.Style,
       options: {
         list: Object.values(AlignVariant).map((v) => ({
           title: v,
@@ -185,7 +185,7 @@ export const basicRichText = defineType({
     defineField({
       name: "removeInnerMargins",
       type: "boolean",
-      group: "style",
+      group: CommonGroup.Style,
       validation: (Rule) => Rule.required(),
       initialValue: false,
     }),

@@ -1,4 +1,4 @@
-import { commonGroups } from "@/contentSections/commonFields";
+import { CommonGroup, commonGroups } from "@/contentSections/commonFields";
 import { LinkVariant } from "@shared/ui/components/ui/link/types";
 import { defineField, defineType } from "sanity";
 
@@ -11,12 +11,12 @@ export default defineType({
     defineField({
       name: "text",
       type: "string",
-      group: "content",
+      group: CommonGroup.Content,
       validation: (Rule) => Rule.required(),
       initialValue: "link text",
     }),
     defineField({
-      group: "content",
+      group: CommonGroup.Content,
       name: "type",
       type: "string",
       title: "Link Type",
@@ -30,13 +30,13 @@ export default defineType({
       initialValue: "internal",
     }),
     defineField({
-      group: "content",
+      group: CommonGroup.Content,
       name: "href",
       type: "string",
       hidden: ({ parent }) => !parent?.type || parent?.type === "internal",
     }),
     defineField({
-      group: "content",
+      group: CommonGroup.Content,
       name: "target",
       type: "string",
       options: {
@@ -52,7 +52,7 @@ export default defineType({
     }),
 
     defineField({
-      group: "content",
+      group: CommonGroup.Content,
       // TODO: rename to `reference`
       name: "url",
       type: "reference",
@@ -61,7 +61,7 @@ export default defineType({
     }),
 
     defineField({
-      group: "style",
+      group: CommonGroup.Style,
       name: "variant",
       type: "string",
       options: {

@@ -2,7 +2,12 @@ import { defineField, defineType } from "sanity";
 
 import customRichText from "@/lib/schemas/customRichText";
 
-import { commonGroups, sectionMarginFields, themeField } from "../commonFields";
+import {
+  CommonGroup,
+  commonGroups,
+  sectionMarginFields,
+  themeField,
+} from "../commonFields";
 
 export const blogPost = defineType({
   name: "blogSection.post",
@@ -55,13 +60,13 @@ export default {
     defineField({
       name: "text",
       type: customRichText.name,
-      group: "content",
+      group: CommonGroup.Content,
       validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: "style",
       type: "string",
-      group: "style",
+      group: CommonGroup.Style,
       options: {
         list: [
           { title: "three column", value: "three-column" },
@@ -82,7 +87,7 @@ export default {
     defineField({
       name: "posts",
       type: "array",
-      group: "content",
+      group: CommonGroup.Content,
       of: [{ type: blogPost.name }],
       validation: (Rule) => Rule.required(),
     }),

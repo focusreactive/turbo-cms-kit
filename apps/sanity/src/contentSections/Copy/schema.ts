@@ -2,7 +2,12 @@ import { defineField } from "sanity";
 
 import customRichText from "@/lib/schemas/customRichText";
 
-import { commonGroups, sectionMarginFields, themeField } from "../commonFields";
+import {
+  CommonGroup,
+  commonGroups,
+  sectionMarginFields,
+  themeField,
+} from "../commonFields";
 
 export default {
   name: "section.copy",
@@ -14,7 +19,7 @@ export default {
     defineField({
       name: "columns",
       type: "array",
-      group: "content",
+      group: CommonGroup.Content,
       of: [{ type: customRichText.name }],
       validation: (Rule) => Rule.required().min(1).max(2),
     }),
@@ -22,7 +27,7 @@ export default {
     defineField({
       name: "isReversedOnMobile",
       type: "boolean",
-      group: "style",
+      group: CommonGroup.Style, 
       initialValue: false,
       validation: (Rule) => Rule.required(),
     }),

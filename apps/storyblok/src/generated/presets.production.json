@@ -1057,6 +1057,434 @@
       "description": ""
     },
     {
+      "id": 2311975,
+      "name": "Default",
+      "preset": {
+        "_uid": "58f68ee7-d789-4201-8963-03c08c0edbe5",
+        "text": [
+          {
+            "_uid": "cdc6dfbd-5208-40a4-af7e-0fdbcedafafb",
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "text": "In Notion, work feels better.",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "text": "With a little help from AI.",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            "component": "richText",
+            "alignVariant": "left",
+            "removeInnerMargins": true
+          }
+        ],
+        "image": [
+          {
+            "_uid": "262bcb34-10e0-4400-aea5-2a7dc5f68598",
+            "asset": {
+              "id": 17600300,
+              "alt": "",
+              "name": "",
+              "focus": "",
+              "title": "",
+              "source": "",
+              "filename": "https://a.storyblok.com/f/293915/2474x1318/df22f90af3/screenshot-2024-10-08-at-16-53-38.png",
+              "copyright": "",
+              "fieldtype": "asset",
+              "meta_data": {},
+              "is_external_url": false
+            },
+            "component": "image",
+            "aspectRatio": "16/9"
+          }
+        ],
+        "links": [
+          {
+            "_uid": "38ffb55a-d12a-4e63-b2b0-5996c0d79177",
+            "link": {
+              "id": "5d416347-de08-4adb-b496-00b0a083de3a",
+              "url": "",
+              "linktype": "story",
+              "fieldtype": "multilink",
+              "cached_url": "blog"
+            },
+            "text": "Get for free",
+            "variant": "primary",
+            "component": "link"
+          },
+          {
+            "_uid": "cacf894d-a48f-4bdb-84d6-d9cf98ad9489",
+            "link": {
+              "id": "5d416347-de08-4adb-b496-00b0a083de3a",
+              "url": "",
+              "linktype": "story",
+              "fieldtype": "multilink",
+              "cached_url": "blog"
+            },
+            "text": "Request a demo",
+            "variant": "secondary",
+            "component": "link"
+          }
+        ],
+        "title": "Write. Plan. Collaborate.",
+        "component": "hero",
+        "marginTop": "base",
+        "marginBottom": "base"
+      },
+      "component_id": 6391508,
+      "space_id": 293915,
+      "created_at": "2024-10-08T15:14:26.596Z",
+      "updated_at": "2024-10-08T15:14:26.596Z",
+      "image": "//a.storyblok.com/f/293915/x/9118f0bd1b/screenshot-2024-10-08-at-17-14-10.png",
+      "color": "",
+      "icon": "",
+      "description": ""
+    },
+    {
+      "id": 2311927,
+      "name": "Default",
+      "preset": {
+        "_uid": "78b9116c-66e1-47e6-a843-3420b3ccc362",
+        "image": [
+          {
+            "_uid": "28239737-5fc1-448d-a995-19b7fc5021a2",
+            "asset": {
+              "id": 17302361,
+              "alt": "",
+              "name": "",
+              "focus": "",
+              "title": "",
+              "source": "",
+              "filename": "https://a.storyblok.com/f/293915/1792x1024/3c65b2e66b/generated-social-logo.webp",
+              "copyright": "",
+              "fieldtype": "asset",
+              "meta_data": {
+                "alt": "",
+                "title": "",
+                "source": "",
+                "copyright": ""
+              },
+              "is_external_url": false
+            },
+            "component": "image",
+            "aspectRatio": "16/9"
+          }
+        ],
+        "component": "wideSimpleCarouselSlide"
+      },
+      "component_id": 6391279,
+      "space_id": 293915,
+      "created_at": "2024-10-08T14:32:40.489Z",
+      "updated_at": "2024-10-08T14:32:40.489Z",
+      "image": "//a.storyblok.com/f/293915/x/e32cf6ec6b/screenshot-2024-10-08-at-16-31-09.png",
+      "color": "",
+      "icon": "",
+      "description": ""
+    },
+    {
+      "id": 2311926,
+      "name": "Default",
+      "preset": {
+        "_uid": "2963f7a9-478b-4e19-bf21-67d84194e837",
+        "slides": [
+          {
+            "_uid": "0ccdf046-e9db-4891-823d-11f51521e4c8",
+            "image": [
+              {
+                "_uid": "26281072-b130-4d56-baa7-16576c3ab2d2",
+                "asset": {
+                  "id": 17302361,
+                  "alt": "",
+                  "name": "",
+                  "focus": "",
+                  "title": "",
+                  "source": "",
+                  "filename": "https://a.storyblok.com/f/293915/1792x1024/3c65b2e66b/generated-social-logo.webp",
+                  "copyright": "",
+                  "fieldtype": "asset",
+                  "meta_data": {
+                    "alt": "",
+                    "title": "",
+                    "source": "",
+                    "copyright": ""
+                  },
+                  "is_external_url": false
+                },
+                "component": "image",
+                "aspectRatio": "16/9"
+              }
+            ],
+            "component": "wideSimpleCarouselSlide"
+          },
+          {
+            "_uid": "c4b36d3e-c74a-41f1-bb10-4416feb2a47a",
+            "image": [
+              {
+                "_uid": "ea72ad37-268f-497c-8b11-394e1f406d55",
+                "asset": {
+                  "id": 17302361,
+                  "alt": "",
+                  "name": "",
+                  "focus": "",
+                  "title": "",
+                  "source": "",
+                  "filename": "https://a.storyblok.com/f/293915/1792x1024/3c65b2e66b/generated-social-logo.webp",
+                  "copyright": "",
+                  "fieldtype": "asset",
+                  "meta_data": {
+                    "alt": "",
+                    "title": "",
+                    "source": "",
+                    "copyright": ""
+                  },
+                  "is_external_url": false
+                },
+                "component": "image",
+                "aspectRatio": "16/9"
+              }
+            ],
+            "component": "wideSimpleCarouselSlide"
+          },
+          {
+            "_uid": "03bfbc9f-63e7-4f3c-ac4a-ff2feeb80b5a",
+            "image": [
+              {
+                "_uid": "fc70e0b5-eec4-4716-8e6a-32f1d1fcd3af",
+                "asset": {
+                  "id": 17302361,
+                  "alt": "",
+                  "name": "",
+                  "focus": "",
+                  "title": "",
+                  "source": "",
+                  "filename": "https://a.storyblok.com/f/293915/1792x1024/3c65b2e66b/generated-social-logo.webp",
+                  "copyright": "",
+                  "fieldtype": "asset",
+                  "meta_data": {
+                    "alt": "",
+                    "title": "",
+                    "source": "",
+                    "copyright": ""
+                  },
+                  "is_external_url": false
+                },
+                "component": "image",
+                "aspectRatio": "16/9"
+              }
+            ],
+            "component": "wideSimpleCarouselSlide"
+          }
+        ],
+        "component": "wideSimpleCarousel",
+        "marginTop": "base",
+        "marginBottom": "base"
+      },
+      "component_id": 6391278,
+      "space_id": 293915,
+      "created_at": "2024-10-08T14:32:09.841Z",
+      "updated_at": "2024-10-08T15:43:04.740Z",
+      "image": "//a.storyblok.com/f/293915/x/8326dcb7a4/screenshot-2024-10-08-at-16-30-56.png",
+      "color": "",
+      "icon": "",
+      "description": ""
+    },
+    {
+      "id": 2311925,
+      "name": "Default",
+      "preset": {
+        "_uid": "6ba0bc81-e7fc-432b-87c4-5373260b484b",
+        "image": [
+          {
+            "_uid": "76b33db3-8365-49e3-86d8-0806dcae26b6",
+            "asset": {
+              "id": 17593700,
+              "alt": "",
+              "name": "",
+              "focus": "",
+              "title": "",
+              "source": "",
+              "filename": "https://a.storyblok.com/f/293915/3840x2160/2e8c505a38/nike-logo.png",
+              "copyright": "",
+              "fieldtype": "asset",
+              "meta_data": {},
+              "is_external_url": false
+            },
+            "component": "image",
+            "aspectRatio": "16/9"
+          }
+        ],
+        "component": "simpleCarouselSlide"
+      },
+      "component_id": 6391277,
+      "space_id": 293915,
+      "created_at": "2024-10-08T14:31:37.528Z",
+      "updated_at": "2024-10-08T14:31:37.528Z",
+      "image": "//a.storyblok.com/f/293915/x/6750a101ef/screenshot-2024-10-08-at-16-31-02.png",
+      "color": "",
+      "icon": "",
+      "description": ""
+    },
+    {
+      "id": 2311924,
+      "name": "Default",
+      "preset": {
+        "_uid": "1af10d2b-9756-473d-b00c-f6ec1cf95a86",
+        "slides": [
+          {
+            "_uid": "05887b7b-05c9-48d9-b108-bdf0aa2784e2",
+            "image": [
+              {
+                "_uid": "49701e3f-4a74-42c7-b0a2-3cf3ebd021c6",
+                "asset": {
+                  "id": 17593700,
+                  "alt": "",
+                  "name": "",
+                  "focus": "",
+                  "title": "",
+                  "source": "",
+                  "filename": "https://a.storyblok.com/f/293915/3840x2160/2e8c505a38/nike-logo.png",
+                  "copyright": "",
+                  "fieldtype": "asset",
+                  "meta_data": {},
+                  "is_external_url": false
+                },
+                "component": "image",
+                "aspectRatio": "16/9"
+              }
+            ],
+            "component": "simpleCarouselSlide"
+          },
+          {
+            "_uid": "417c36e6-a409-4a37-a836-820c3a67682d",
+            "image": [
+              {
+                "_uid": "9bf63bef-15e9-4a10-a051-c83fcf1e2f77",
+                "asset": {
+                  "id": 17593700,
+                  "alt": "",
+                  "name": "",
+                  "focus": "",
+                  "title": "",
+                  "source": "",
+                  "filename": "https://a.storyblok.com/f/293915/3840x2160/2e8c505a38/nike-logo.png",
+                  "copyright": "",
+                  "fieldtype": "asset",
+                  "meta_data": {},
+                  "is_external_url": false
+                },
+                "component": "image",
+                "aspectRatio": "16/9"
+              }
+            ],
+            "component": "simpleCarouselSlide"
+          },
+          {
+            "_uid": "888d00d4-ab5e-45c2-9c7a-844cad205c4b",
+            "image": [
+              {
+                "_uid": "2c717744-1757-4bbc-b01b-8cb35ab0100c",
+                "asset": {
+                  "id": 17593700,
+                  "alt": "",
+                  "name": "",
+                  "focus": "",
+                  "title": "",
+                  "source": "",
+                  "filename": "https://a.storyblok.com/f/293915/3840x2160/2e8c505a38/nike-logo.png",
+                  "copyright": "",
+                  "fieldtype": "asset",
+                  "meta_data": {},
+                  "is_external_url": false
+                },
+                "component": "image",
+                "aspectRatio": "16/9"
+              }
+            ],
+            "component": "simpleCarouselSlide"
+          },
+          {
+            "_uid": "f44ca52a-ce5f-4be4-a5fc-367424f0a917",
+            "image": [
+              {
+                "_uid": "2d31244a-823a-418d-b2be-bea0b266d932",
+                "asset": {
+                  "id": 17593700,
+                  "alt": "",
+                  "name": "",
+                  "focus": "",
+                  "title": "",
+                  "source": "",
+                  "filename": "https://a.storyblok.com/f/293915/3840x2160/2e8c505a38/nike-logo.png",
+                  "copyright": "",
+                  "fieldtype": "asset",
+                  "meta_data": {},
+                  "is_external_url": false
+                },
+                "component": "image",
+                "aspectRatio": "16/9"
+              }
+            ],
+            "component": "simpleCarouselSlide"
+          },
+          {
+            "_uid": "2d757401-fb99-4632-b7b3-eee67d7ceb0b",
+            "image": [
+              {
+                "_uid": "93bb87e9-c91d-432f-b789-60a446afe1c7",
+                "asset": {
+                  "id": 17593700,
+                  "alt": "",
+                  "name": "",
+                  "focus": "",
+                  "title": "",
+                  "source": "",
+                  "filename": "https://a.storyblok.com/f/293915/3840x2160/2e8c505a38/nike-logo.png",
+                  "copyright": "",
+                  "fieldtype": "asset",
+                  "meta_data": {},
+                  "is_external_url": false
+                },
+                "component": "image",
+                "aspectRatio": "16/9"
+              }
+            ],
+            "component": "simpleCarouselSlide"
+          }
+        ],
+        "component": "simpleCarousel",
+        "marginTop": "base",
+        "marginBottom": "base"
+      },
+      "component_id": 6391276,
+      "space_id": 293915,
+      "created_at": "2024-10-08T14:31:24.209Z",
+      "updated_at": "2024-10-08T15:43:18.631Z",
+      "image": "//a.storyblok.com/f/293915/x/bd83ad5125/screenshot-2024-10-08-at-16-30-53.png",
+      "color": "",
+      "icon": "",
+      "description": ""
+    },
+    {
       "id": 2225124,
       "name": "Default",
       "preset": {
@@ -2771,95 +3199,119 @@
       "id": 2282764,
       "name": "Light",
       "preset": {
-        "_uid": "0792805b-e4ed-4505-b2e0-7092855425bd",
+        "_uid": "c298fa8c-eb48-4657-b1f9-a8fd62e343c4",
+        "image": [
+          {
+            "_uid": "f0c8d535-d484-4ddb-8da9-f4effe37a8e0",
+            "asset": {
+              "id": 17593700,
+              "alt": "",
+              "name": "",
+              "focus": "",
+              "title": "",
+              "source": "",
+              "filename": "https://a.storyblok.com/f/293915/3840x2160/2e8c505a38/nike-logo.png",
+              "copyright": "",
+              "fieldtype": "asset",
+              "meta_data": {},
+              "is_external_url": false
+            },
+            "component": "image",
+            "aspectRatio": "16/9"
+          }
+        ],
         "links": [
           {
-            "_uid": "b88b53ca-39d8-434f-9701-d8cfd06a2ed6",
+            "_uid": "dd240d55-f01a-4e25-8a8f-0d8e8b20bba8",
             "link": {
-              "id": "5d416347-de08-4adb-b496-00b0a083de3a",
+              "id": "19601884-a1af-4b99-bd95-1a3ca01d5b7a",
               "url": "",
               "linktype": "story",
               "fieldtype": "multilink",
-              "cached_url": "demo"
+              "cached_url": "home"
             },
             "text": "Home",
-            "variant": "headerNav",
+            "variant": "default",
             "component": "link"
           },
           {
-            "_uid": "90dcb23d-4c62-43a2-94f4-eab1a4e57c8b",
+            "_uid": "4bbd38c5-5ea1-4ce5-ad84-46c31da1951a",
             "link": {
               "id": "5d416347-de08-4adb-b496-00b0a083de3a",
               "url": "",
               "linktype": "story",
               "fieldtype": "multilink",
-              "cached_url": "demo"
+              "cached_url": "blog"
             },
-            "text": "Demo",
-            "variant": "headerNav",
+            "text": "Blog",
+            "variant": "default",
             "component": "link"
           },
           {
-            "_uid": "75aac9e1-a187-4445-9337-ae03e31f533e",
+            "_uid": "49741fc6-81c9-430c-bea9-5c086d0c5950",
             "link": {
-              "id": "5d416347-de08-4adb-b496-00b0a083de3a",
-              "url": "",
-              "linktype": "story",
+              "id": "",
+              "url": "https://app.storyblok.com/#/me/spaces/293915",
+              "target": "_blank",
+              "linktype": "url",
               "fieldtype": "multilink",
-              "cached_url": "demo"
+              "cached_url": "https://app.storyblok.com/#/me/spaces/293915"
             },
-            "text": "Sanity Studio",
-            "variant": "headerNav",
+            "text": "Storyblok",
+            "variant": "default",
             "component": "link"
           },
           {
-            "_uid": "c32dd9ec-cea6-4ad5-8862-7f24a14dee28",
+            "_uid": "5f93d524-bb21-4efa-8f12-bccc672c45fe",
             "link": {
-              "id": "5d416347-de08-4adb-b496-00b0a083de3a",
-              "url": "",
-              "linktype": "story",
+              "id": "",
+              "url": "https://github.com/focusreactive/turbo-cms-kit",
+              "target": "_blank",
+              "linktype": "url",
               "fieldtype": "multilink",
-              "cached_url": "demo"
+              "cached_url": "https://github.com/focusreactive/turbo-cms-kit"
             },
-            "text": "Docs",
-            "variant": "headerNav",
+            "text": "GitHub",
+            "variant": "default",
             "component": "link"
           },
           {
-            "_uid": "d75c0a9a-49c0-4a3f-a06d-463c7e68f50c",
+            "_uid": "f28777c3-a837-4ad1-9a26-826eadb51710",
             "link": {
-              "id": "5d416347-de08-4adb-b496-00b0a083de3a",
-              "url": "",
-              "linktype": "story",
+              "id": "",
+              "url": "https://trello.com/b/2XLLkCma/cms-kit",
+              "target": "_blank",
+              "linktype": "url",
               "fieldtype": "multilink",
-              "cached_url": "demo"
+              "cached_url": "https://trello.com/b/2XLLkCma/cms-kit"
             },
-            "text": "Github",
-            "variant": "headerNav",
+            "text": "Trello",
+            "variant": "default",
             "component": "link"
           },
           {
-            "_uid": "a596d8a8-78cd-47c5-a2e4-a498b87332ec",
+            "_uid": "1e322a60-4272-45b0-b66b-fba186b5ab6a",
             "link": {
-              "id": "5d416347-de08-4adb-b496-00b0a083de3a",
-              "url": "",
-              "linktype": "story",
+              "id": "",
+              "url": "https://vercel.com/focusreactive/turbo-cms-kit-storyblok",
+              "linktype": "url",
               "fieldtype": "multilink",
-              "cached_url": "demo"
+              "cached_url": "https://vercel.com/focusreactive/turbo-cms-kit-storyblok"
             },
-            "text": "About",
-            "variant": "headerNav",
+            "text": "Vercel",
+            "variant": "default",
             "component": "link"
           }
         ],
         "theme": "light",
-        "component": "header"
+        "component": "header",
+        "alignVariant": "right"
       },
       "component_id": 6275697,
       "space_id": 293915,
       "created_at": "2024-09-10T14:43:40.339Z",
-      "updated_at": "2024-09-10T14:43:40.339Z",
-      "image": "//a.storyblok.com/f/293915/x/bd3686bbc2/screenshot-2024-09-10-at-16-43-12.png",
+      "updated_at": "2024-10-08T11:37:15.680Z",
+      "image": "//a.storyblok.com/f/293915/x/c38bd1625a/screenshot-2024-10-08-at-13-37-02.png",
       "color": "",
       "icon": "",
       "description": ""

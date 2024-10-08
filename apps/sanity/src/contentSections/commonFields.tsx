@@ -1,13 +1,18 @@
 import { defineField } from "sanity";
 
+export enum CommonGroup {
+  Content = "content",
+  Style = "style",
+}
+
 export const commonGroups = [
   {
-    name: "content",
+    name: CommonGroup.Content,
     title: "Content",
     default: true,
   },
   {
-    name: "style",
+    name: CommonGroup.Style,
     title: "Style",
   },
 ];
@@ -15,7 +20,7 @@ export const commonGroups = [
 export const themeField = defineField({
   name: "theme",
   type: "string",
-  group: "style",
+  group: CommonGroup.Style,
   options: {
     list: [
       { title: "light", value: "light" },
@@ -32,7 +37,7 @@ export const sectionMarginFields = [
   defineField({
     name: "marginTop",
     type: "string",
-    group: "style",
+    group: CommonGroup.Style,
     options: {
       list: [
         { title: "none", value: "none" },
@@ -47,7 +52,7 @@ export const sectionMarginFields = [
   defineField({
     name: "marginBottom",
     type: "string",
-    group: "style",
+    group: CommonGroup.Style,
     options: {
       list: [
         { title: "none", value: "none" },

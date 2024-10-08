@@ -68,6 +68,42 @@ export type Geopoint = {
   alt?: number;
 };
 
+export type SectionHero = {
+  _type: "section.hero";
+  title: string;
+  text?: CustomRichText;
+  image?: CustomImage;
+  links: Array<
+    {
+      _key: string;
+    } & CustomLink
+  >;
+  marginTop: "none" | "base" | "lg";
+  marginBottom: "none" | "base" | "lg";
+};
+
+export type SectionWideSimpleCarousel = {
+  _type: "section.wideSimpleCarousel";
+  slides: Array<
+    {
+      _key: string;
+    } & WideSimpleCarouselCard
+  >;
+  marginTop: "none" | "base" | "lg";
+  marginBottom: "none" | "base" | "lg";
+};
+
+export type SectionSimpleCarousel = {
+  _type: "section.simpleCarousel";
+  slides: Array<
+    {
+      _key: string;
+    } & SimpleCarouselCard
+  >;
+  marginTop: "none" | "base" | "lg";
+  marginBottom: "none" | "base" | "lg";
+};
+
 export type SectionBlog = {
   _type: "section.blog";
   text: CustomRichText;
@@ -151,12 +187,24 @@ export type SectionFooter = {
 
 export type SectionHeader = {
   _type: "section.header";
+  image?: CustomImage;
   links: Array<
     {
       _key: string;
     } & CustomLink
   >;
+  alignVariant: "left" | "center" | "right";
   theme: "light" | "dark";
+};
+
+export type WideSimpleCarouselCard = {
+  _type: "wideSimpleCarouselCard";
+  image: CustomImage;
+};
+
+export type SimpleCarouselCard = {
+  _type: "simpleCarouselCard";
+  image: CustomImage;
 };
 
 export type BlogSectionPost = {
@@ -355,6 +403,15 @@ export type Page = {
     | ({
         _key: string;
       } & SectionBlog)
+    | ({
+        _key: string;
+      } & SectionSimpleCarousel)
+    | ({
+        _key: string;
+      } & SectionWideSimpleCarousel)
+    | ({
+        _key: string;
+      } & SectionHero)
   >;
   seoTitle?: string;
   seoDescription?: string;
@@ -460,6 +517,9 @@ export type AllSanitySchemaTypes =
   | SanityImageDimensions
   | SanityFileAsset
   | Geopoint
+  | SectionHero
+  | SectionWideSimpleCarousel
+  | SectionSimpleCarousel
   | SectionBlog
   | SectionCardsGrid
   | SectionLinksList
@@ -467,6 +527,8 @@ export type AllSanitySchemaTypes =
   | SectionCopy
   | SectionFooter
   | SectionHeader
+  | WideSimpleCarouselCard
+  | SimpleCarouselCard
   | BlogSectionPost
   | BasicRichText
   | Break
