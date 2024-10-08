@@ -9,9 +9,11 @@ import SectionContainer from "@/components/SectionContainer";
 import type { IFooterProps } from "./types";
 
 export default function Footer({ data }: IFooterProps) {
-  if (!data) return <EmptyBlock name="Footer Section" />;
+  if (!data) return null;
 
   const { links, text, copywriteText } = data;
+
+  if (!links || links.length === 0) return <EmptyBlock name="Footer" />;
 
   return (
     <SectionContainer sectionData={data}>

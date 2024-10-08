@@ -11,9 +11,11 @@ import SectionContainer from "@/components/SectionContainer";
 import type { ILogosSectionProps } from "./types";
 
 export default function LogosSection({ data }: ILogosSectionProps) {
-  if (!data) return <EmptyBlock name="Logos Section" />;
+  if (!data) return null;
 
   const { items, alignVariant } = data;
+
+  if (!items || items.length === 0) return <EmptyBlock name="Logos Section" />;
 
   const formattedItems = items?.map((item) => ({
     ...item,

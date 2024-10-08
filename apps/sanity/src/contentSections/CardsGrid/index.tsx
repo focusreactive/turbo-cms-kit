@@ -10,9 +10,11 @@ import SectionContainer from "@/components/SectionContainer";
 import type { ICardsGridSectionProps } from "./types";
 
 export default function CardsGrid({ data }: ICardsGridSectionProps) {
-  if (!data) return <EmptyBlock name="Cards Grid Section" />;
+  if (!data) return null;
 
   const { items, columns } = data;
+
+  if (!items || items.length === 0) return <EmptyBlock name="Cards Grid" />;
 
   const formattedItems = items?.map((item) => ({
     description: item.description,

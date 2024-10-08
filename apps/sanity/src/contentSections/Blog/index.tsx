@@ -11,9 +11,12 @@ import SectionContainer from "@/components/SectionContainer";
 import type { IBlogSectionProps } from "./types";
 
 export default function BlogSection({ data }: IBlogSectionProps) {
-  if (!data) return <EmptyBlock name="Blog Section" />;
+  if (!data) return null;
 
   const { text, posts, style } = data;
+
+  if ((!posts || posts.length === 0) && !text)
+    return <EmptyBlock name="Blog" />;
 
   const formattedPosts = posts?.map((post) => ({
     style: style as BlogStyle,
