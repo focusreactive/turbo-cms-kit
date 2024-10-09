@@ -185,18 +185,6 @@ export type SectionFooter = {
   theme: "light" | "dark";
 };
 
-export type SectionHeader = {
-  _type: "section.header";
-  image?: CustomImage;
-  links: Array<
-    {
-      _key: string;
-    } & CustomLink
-  >;
-  alignVariant: "left" | "center" | "right";
-  theme: "light" | "dark";
-};
-
 export type WideSimpleCarouselCard = {
   _type: "wideSimpleCarouselCard";
   image: CustomImage;
@@ -355,24 +343,6 @@ export type CustomLink = {
     | "badge";
 };
 
-export type CustomImage = {
-  _type: "customImage";
-  image: {
-    asset?: {
-      _ref: string;
-      _type: "reference";
-      _weak?: boolean;
-      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
-    };
-    hotspot?: SanityImageHotspot;
-    crop?: SanityImageCrop;
-    alt: string;
-    _type: "image";
-  };
-  height: number;
-  aspectRatio: "16/9" | "3/2" | "4/3" | "1/1" | "9/16" | "1/2" | "4/1" | "3/1";
-};
-
 export type Page = {
   _id: string;
   _type: "page";
@@ -381,10 +351,13 @@ export type Page = {
   _rev: string;
   title?: string;
   pathname?: Slug;
+  header: {
+    _ref: string;
+    _type: "reference";
+    _weak?: boolean;
+    [internalGroqTypeReferenceTo]?: "header";
+  };
   sectionsBody?: Array<
-    | ({
-        _key: string;
-      } & SectionHeader)
     | ({
         _key: string;
       } & SectionFooter)
@@ -415,7 +388,7 @@ export type Page = {
   >;
   seoTitle?: string;
   seoDescription?: string;
-  showCookieBanner: boolean;
+  showCookieBanner?: boolean;
   robots?: "index" | "noindex";
   ogImage?: {
     asset?: {
@@ -429,6 +402,23 @@ export type Page = {
     alt: string;
     _type: "image";
   };
+};
+
+export type Header = {
+  _id: string;
+  _type: "header";
+  _createdAt: string;
+  _updatedAt: string;
+  _rev: string;
+  title?: string;
+  image?: CustomImage;
+  links: Array<
+    {
+      _key: string;
+    } & CustomLink
+  >;
+  alignVariant: "left" | "center" | "right";
+  theme: "light" | "dark";
 };
 
 export type SanityImageCrop = {
@@ -488,6 +478,24 @@ export type SanityImageMetadata = {
   isOpaque?: boolean;
 };
 
+export type CustomImage = {
+  _type: "customImage";
+  image: {
+    asset?: {
+      _ref: string;
+      _type: "reference";
+      _weak?: boolean;
+      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+    };
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    alt: string;
+    _type: "image";
+  };
+  height: number;
+  aspectRatio: "16/9" | "3/2" | "4/3" | "1/1" | "9/16" | "1/2" | "4/1" | "3/1";
+};
+
 export type Slug = {
   _type: "slug";
   current: string;
@@ -527,7 +535,6 @@ export type AllSanitySchemaTypes =
   | SectionLogos
   | SectionCopy
   | SectionFooter
-  | SectionHeader
   | WideSimpleCarouselCard
   | SimpleCarouselCard
   | BlogSectionPost
@@ -537,13 +544,14 @@ export type AllSanitySchemaTypes =
   | LogoItem
   | CustomRichText
   | CustomLink
-  | CustomImage
   | Page
+  | Header
   | SanityImageCrop
   | SanityImageHotspot
   | SanityImageAsset
   | SanityAssetSourceData
   | SanityImageMetadata
+  | CustomImage
   | Slug
   | HighlightColor
   | TextColor

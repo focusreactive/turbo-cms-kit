@@ -55,7 +55,6 @@ export default async function Home({ params, searchParams }: Props) {
 
   return (
     <CoreLayout allResolvedLinks={links}>
-      <StoryblokStory story={story.content.header} />
       <StoryblokStory story={story} />
     </CoreLayout>
   );
