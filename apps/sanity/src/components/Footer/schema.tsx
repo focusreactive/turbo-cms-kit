@@ -1,17 +1,32 @@
+import {
+  CommonGroup,
+  commonGroups,
+  themeField,
+} from "@/contentSections/commonFields";
 import { defineField } from "sanity";
 
+import customImage from "@/lib/schemas/customImage";
 import customLink from "@/lib/schemas/customLink";
 import customRichText from "@/lib/schemas/customRichText";
 
-import { CommonGroup, commonGroups, themeField } from "../commonFields";
-
 export default {
-  name: "section.footer",
+  name: "footer",
   title: "Footer",
-  type: "object",
+  type: "document",
   groups: commonGroups,
   options: {},
   fields: [
+    defineField({
+      type: "string",
+      name: "title",
+      group: CommonGroup.Content,
+      description: "For preview use only",
+    }),
+    defineField({
+      name: "image",
+      type: customImage.name,
+      group: CommonGroup.Content,
+    }),
     defineField({
       name: "text",
       type: customRichText.name,
@@ -32,8 +47,15 @@ export default {
     themeField,
   ],
   preview: {
-    prepare: () => ({
-      title: "Footer",
-    }),
+    select: {
+      title: "title",
+      image: "image.image",
+    },
+    prepare({ title, image }: any) {
+      return {
+        title,
+        media: image,
+      };
+    },
   },
 };

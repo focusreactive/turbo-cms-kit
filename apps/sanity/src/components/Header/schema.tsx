@@ -1,18 +1,27 @@
+import {
+  CommonGroup,
+  commonGroups,
+  themeField,
+} from "@/contentSections/commonFields";
 import { AlignVariant } from "@shared/ui/components/sections/header/types";
 import { defineField } from "sanity";
 
 import customImage from "@/lib/schemas/customImage";
 import customLink from "@/lib/schemas/customLink";
 
-import { CommonGroup, commonGroups, themeField } from "../commonFields";
-
 export default {
-  name: "section.header",
+  name: "header",
   title: "Header",
-  type: "object",
+  type: "document",
   groups: commonGroups,
   options: {},
   fields: [
+    defineField({
+      type: "string",
+      name: "title",
+      group: CommonGroup.Content,
+      description: "For preview use only",
+    }),
     defineField({
       name: "image",
       type: customImage.name,
@@ -43,8 +52,15 @@ export default {
     themeField,
   ],
   preview: {
-    prepare: () => ({
-      title: "Header",
-    }),
+    select: {
+      title: "title",
+      image: "image.image",
+    },
+    prepare({ title, image }: any) {
+      return {
+        title,
+        media: image,
+      };
+    },
   },
 };

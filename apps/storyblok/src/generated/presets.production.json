@@ -484,6 +484,238 @@
       "description": ""
     },
     {
+      "id": 2312483,
+      "name": "Custom",
+      "preset": {
+        "_uid": "4ad7fd52-a576-4601-9889-04b46142e382",
+        "image": [
+          {
+            "_uid": "106d9002-a1c3-4f45-a2aa-8ff515b167e5",
+            "asset": {
+              "id": 17605716,
+              "alt": "",
+              "name": "",
+              "focus": "",
+              "title": "",
+              "source": "",
+              "filename": "https://a.storyblok.com/f/293915/284x260/c2ace3521b/screenshot-2024-10-07-at-22-01-09.png",
+              "copyright": "",
+              "fieldtype": "asset",
+              "meta_data": {},
+              "is_external_url": false
+            },
+            "component": "image",
+            "aspectRatio": "16/9"
+          }
+        ],
+        "links": [
+          {
+            "_uid": "40490f01-340c-429a-8658-7cc2a7cb4ac3",
+            "link": {
+              "id": "",
+              "url": "https://vercel.com/focusreactive/turbo-cms-kit-storyblok",
+              "linktype": "url",
+              "fieldtype": "multilink",
+              "cached_url": "https://vercel.com/focusreactive/turbo-cms-kit-storyblok"
+            },
+            "text": "Vercel",
+            "variant": "default",
+            "component": "link"
+          },
+          {
+            "_uid": "eadbb7ad-f909-42d0-a16e-3279b3699734",
+            "link": {
+              "id": "",
+              "url": "https://vercel.com/focusreactive/turbo-cms-kit-storyblok",
+              "linktype": "url",
+              "fieldtype": "multilink",
+              "cached_url": "https://vercel.com/focusreactive/turbo-cms-kit-storyblok"
+            },
+            "text": "Vercel",
+            "variant": "default",
+            "component": "link"
+          },
+          {
+            "_uid": "f52b36a2-29d5-4b86-a79b-ddd7d135b274",
+            "link": {
+              "id": "",
+              "url": "https://vercel.com/focusreactive/turbo-cms-kit-storyblok",
+              "linktype": "url",
+              "fieldtype": "multilink",
+              "cached_url": "https://vercel.com/focusreactive/turbo-cms-kit-storyblok"
+            },
+            "text": "Vercel",
+            "variant": "default",
+            "component": "link"
+          }
+        ],
+        "component": "header",
+        "alignVariant": "right"
+      },
+      "component_id": 6394530,
+      "space_id": 293915,
+      "created_at": "2024-10-09T05:55:16.076Z",
+      "updated_at": "2024-10-09T05:55:16.076Z",
+      "image": "//a.storyblok.com/f/293915/x/a6940e5b40/screenshot-2024-10-09-at-07-55-06.png",
+      "color": "",
+      "icon": "",
+      "description": ""
+    },
+    {
+      "id": 2313387,
+      "name": "Custom",
+      "preset": {
+        "_uid": "3a99b80d-65d5-43f5-9a8b-fa8009f4e311",
+        "text": [
+          {
+            "_uid": "e1007084-eff5-470a-b2b0-892e882c28a6",
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 1
+                  },
+                  "content": [
+                    {
+                      "text": "Exploring the World of DIY Crafts",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": " Dive into the world of DIY crafts with easy and creative projects for all skill levels. From handmade gifts to home decor, unleash your creativity and add a personal touch to your surroundings. Let's get crafting!",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            "component": "richText",
+            "alignVariant": "center",
+            "removeInnerMargins": false
+          }
+        ],
+        "image": [
+          {
+            "_uid": "8e523525-e55e-4d84-8ef7-f4338ddbcede",
+            "asset": {
+              "id": 17605716,
+              "alt": "",
+              "name": "",
+              "focus": "",
+              "title": "",
+              "source": "",
+              "filename": "https://a.storyblok.com/f/293915/284x260/c2ace3521b/screenshot-2024-10-07-at-22-01-09.png",
+              "copyright": "",
+              "fieldtype": "asset",
+              "meta_data": {},
+              "is_external_url": false
+            },
+            "component": "image",
+            "aspectRatio": "1/1"
+          }
+        ],
+        "links": [
+          {
+            "_uid": "2c8c692f-6a31-4967-b160-6cb30374f4a5",
+            "link": {
+              "id": "19601884-a1af-4b99-bd95-1a3ca01d5b7a",
+              "url": "",
+              "linktype": "story",
+              "fieldtype": "multilink",
+              "cached_url": "home"
+            },
+            "text": "Home",
+            "variant": "footerNav",
+            "component": "link"
+          },
+          {
+            "_uid": "653dae7d-dc6e-4a04-b093-bfa3a7477a45",
+            "link": {
+              "id": "5d416347-de08-4adb-b496-00b0a083de3a",
+              "url": "",
+              "linktype": "story",
+              "fieldtype": "multilink",
+              "cached_url": "demo"
+            },
+            "text": "Blog",
+            "variant": "footerNav",
+            "component": "link"
+          },
+          {
+            "_uid": "11616387-b4e3-4759-ad61-d9726143b940",
+            "link": {
+              "id": "",
+              "url": "https://app.storyblok.com/#/me/spaces/293915",
+              "target": "_blank",
+              "linktype": "url",
+              "fieldtype": "multilink",
+              "cached_url": "https://app.storyblok.com/#/me/spaces/293915"
+            },
+            "text": "Storyblok",
+            "variant": "footerNav",
+            "component": "link"
+          },
+          {
+            "_uid": "3ec0f58f-5f27-4a56-b49a-55ac169282ff",
+            "link": {
+              "id": "",
+              "url": "https://github.com/focusreactive/turbo-cms-kit",
+              "target": "_blank",
+              "linktype": "url",
+              "fieldtype": "multilink",
+              "cached_url": "https://github.com/focusreactive/turbo-cms-kit"
+            },
+            "text": "GitHub",
+            "variant": "footerNav",
+            "component": "link"
+          },
+          {
+            "_uid": "b683a9f1-24b9-43be-94a7-2ebf9621dccc",
+            "link": {
+              "id": "",
+              "url": "https://trello.com/b/2XLLkCma/cms-kit",
+              "target": "_blank",
+              "linktype": "url",
+              "fieldtype": "multilink",
+              "cached_url": "https://trello.com/b/2XLLkCma/cms-kit"
+            },
+            "text": "Trello",
+            "variant": "footerNav",
+            "component": "link"
+          },
+          {
+            "_uid": "db9248fe-752e-4942-9ecf-035093916b60",
+            "link": {
+              "id": "",
+              "url": "https://vercel.com/focusreactive/turbo-cms-kit-storyblok",
+              "linktype": "url",
+              "fieldtype": "multilink",
+              "cached_url": "https://vercel.com/focusreactive/turbo-cms-kit-storyblok"
+            },
+            "text": "Vercel",
+            "variant": "footerNav",
+            "component": "link"
+          }
+        ],
+        "component": "footer",
+        "copywriteText": "2024  @ FocusReactive"
+      },
+      "component_id": 6398307,
+      "space_id": 293915,
+      "created_at": "2024-10-09T16:08:39.575Z",
+      "updated_at": "2024-10-09T16:08:39.575Z",
+      "image": "//a.storyblok.com/f/293915/x/ad6aa235b1/screenshot-2024-10-09-at-18-08-22.png",
+      "color": "",
+      "icon": "",
+      "description": ""
+    },
+    {
       "id": 2282729,
       "name": "Dark align center",
       "preset": {
@@ -1057,6 +1289,666 @@
       "description": ""
     },
     {
+      "id": 2311924,
+      "name": "Default",
+      "preset": {
+        "_uid": "1af10d2b-9756-473d-b00c-f6ec1cf95a86",
+        "slides": [
+          {
+            "_uid": "05887b7b-05c9-48d9-b108-bdf0aa2784e2",
+            "image": [
+              {
+                "_uid": "49701e3f-4a74-42c7-b0a2-3cf3ebd021c6",
+                "asset": {
+                  "id": 17593700,
+                  "alt": "",
+                  "name": "",
+                  "focus": "",
+                  "title": "",
+                  "source": "",
+                  "filename": "https://a.storyblok.com/f/293915/3840x2160/2e8c505a38/nike-logo.png",
+                  "copyright": "",
+                  "fieldtype": "asset",
+                  "meta_data": {},
+                  "is_external_url": false
+                },
+                "component": "image",
+                "aspectRatio": "16/9"
+              }
+            ],
+            "component": "simpleCarouselSlide"
+          },
+          {
+            "_uid": "417c36e6-a409-4a37-a836-820c3a67682d",
+            "image": [
+              {
+                "_uid": "9bf63bef-15e9-4a10-a051-c83fcf1e2f77",
+                "asset": {
+                  "id": 17593700,
+                  "alt": "",
+                  "name": "",
+                  "focus": "",
+                  "title": "",
+                  "source": "",
+                  "filename": "https://a.storyblok.com/f/293915/3840x2160/2e8c505a38/nike-logo.png",
+                  "copyright": "",
+                  "fieldtype": "asset",
+                  "meta_data": {},
+                  "is_external_url": false
+                },
+                "component": "image",
+                "aspectRatio": "16/9"
+              }
+            ],
+            "component": "simpleCarouselSlide"
+          },
+          {
+            "_uid": "888d00d4-ab5e-45c2-9c7a-844cad205c4b",
+            "image": [
+              {
+                "_uid": "2c717744-1757-4bbc-b01b-8cb35ab0100c",
+                "asset": {
+                  "id": 17593700,
+                  "alt": "",
+                  "name": "",
+                  "focus": "",
+                  "title": "",
+                  "source": "",
+                  "filename": "https://a.storyblok.com/f/293915/3840x2160/2e8c505a38/nike-logo.png",
+                  "copyright": "",
+                  "fieldtype": "asset",
+                  "meta_data": {},
+                  "is_external_url": false
+                },
+                "component": "image",
+                "aspectRatio": "16/9"
+              }
+            ],
+            "component": "simpleCarouselSlide"
+          },
+          {
+            "_uid": "f44ca52a-ce5f-4be4-a5fc-367424f0a917",
+            "image": [
+              {
+                "_uid": "2d31244a-823a-418d-b2be-bea0b266d932",
+                "asset": {
+                  "id": 17593700,
+                  "alt": "",
+                  "name": "",
+                  "focus": "",
+                  "title": "",
+                  "source": "",
+                  "filename": "https://a.storyblok.com/f/293915/3840x2160/2e8c505a38/nike-logo.png",
+                  "copyright": "",
+                  "fieldtype": "asset",
+                  "meta_data": {},
+                  "is_external_url": false
+                },
+                "component": "image",
+                "aspectRatio": "16/9"
+              }
+            ],
+            "component": "simpleCarouselSlide"
+          },
+          {
+            "_uid": "2d757401-fb99-4632-b7b3-eee67d7ceb0b",
+            "image": [
+              {
+                "_uid": "93bb87e9-c91d-432f-b789-60a446afe1c7",
+                "asset": {
+                  "id": 17593700,
+                  "alt": "",
+                  "name": "",
+                  "focus": "",
+                  "title": "",
+                  "source": "",
+                  "filename": "https://a.storyblok.com/f/293915/3840x2160/2e8c505a38/nike-logo.png",
+                  "copyright": "",
+                  "fieldtype": "asset",
+                  "meta_data": {},
+                  "is_external_url": false
+                },
+                "component": "image",
+                "aspectRatio": "16/9"
+              }
+            ],
+            "component": "simpleCarouselSlide"
+          }
+        ],
+        "component": "simpleCarousel",
+        "marginTop": "base",
+        "marginBottom": "base"
+      },
+      "component_id": 6391276,
+      "space_id": 293915,
+      "created_at": "2024-10-08T14:31:24.209Z",
+      "updated_at": "2024-10-08T15:43:18.631Z",
+      "image": "//a.storyblok.com/f/293915/x/bd83ad5125/screenshot-2024-10-08-at-16-30-53.png",
+      "color": "",
+      "icon": "",
+      "description": ""
+    },
+    {
+      "id": 2313388,
+      "name": "Default",
+      "preset": {
+        "_uid": "3a99b80d-65d5-43f5-9a8b-fa8009f4e311",
+        "text": [
+          {
+            "_uid": "3fa6eb70-0e7c-4286-a63e-1e7c5ed98e9b",
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "text": "Flowbite",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "Open-source library of over 400+ web components and interactive elements built for better web.",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            "component": "richText",
+            "alignVariant": "center",
+            "removeInnerMargins": false
+          },
+          {
+            "_uid": "a381bd2a-57ae-40bd-b136-74cce1ef3662",
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph"
+                },
+                {
+                  "type": "blok",
+                  "attrs": {
+                    "id": "8033a188-9f77-4d4d-9670-e45ef9ec159e",
+                    "body": [
+                      {
+                        "_uid": "i-0a68bab8-2252-4329-9218-096c3f41fbe2",
+                        "links": [
+                          {
+                            "_uid": "2b3acef4-9e76-4a4e-b906-4f699f1bc4f1",
+                            "link": {
+                              "id": "19601884-a1af-4b99-bd95-1a3ca01d5b7a",
+                              "url": "",
+                              "linktype": "story",
+                              "fieldtype": "multilink",
+                              "cached_url": "home"
+                            },
+                            "text": "Home",
+                            "variant": "footerNav",
+                            "component": "link"
+                          },
+                          {
+                            "_uid": "cbd95eb7-34bc-4998-9532-bd26c9c7b655",
+                            "link": {
+                              "id": "5d416347-de08-4adb-b496-00b0a083de3a",
+                              "url": "",
+                              "linktype": "story",
+                              "fieldtype": "multilink",
+                              "cached_url": "demo"
+                            },
+                            "text": "Blog",
+                            "variant": "footerNav",
+                            "component": "link"
+                          },
+                          {
+                            "_uid": "f85e677c-c635-42c0-bb49-8eec642347f5",
+                            "link": {
+                              "id": "",
+                              "url": "https://app.storyblok.com/#/me/spaces/293915",
+                              "target": "_blank",
+                              "linktype": "url",
+                              "fieldtype": "multilink",
+                              "cached_url": "https://app.storyblok.com/#/me/spaces/293915"
+                            },
+                            "text": "Storyblok",
+                            "variant": "footerNav",
+                            "component": "link"
+                          },
+                          {
+                            "_uid": "9865fbc2-82c3-47ac-98f2-50731c98cc6e",
+                            "link": {
+                              "id": "",
+                              "url": "https://github.com/focusreactive/turbo-cms-kit",
+                              "target": "_blank",
+                              "linktype": "url",
+                              "fieldtype": "multilink",
+                              "cached_url": "https://github.com/focusreactive/turbo-cms-kit"
+                            },
+                            "text": "GitHub",
+                            "variant": "footerNav",
+                            "component": "link"
+                          },
+                          {
+                            "_uid": "fc242a8f-846d-4057-bf04-fd590bf24450",
+                            "link": {
+                              "id": "",
+                              "url": "https://trello.com/b/2XLLkCma/cms-kit",
+                              "target": "_blank",
+                              "linktype": "url",
+                              "fieldtype": "multilink",
+                              "cached_url": "https://trello.com/b/2XLLkCma/cms-kit"
+                            },
+                            "text": "Trello",
+                            "variant": "footerNav",
+                            "component": "link"
+                          },
+                          {
+                            "_uid": "08ef19b8-2066-4dfb-ac32-1a038aa7c215",
+                            "link": {
+                              "id": "",
+                              "url": "https://vercel.com/focusreactive/turbo-cms-kit-storyblok",
+                              "linktype": "url",
+                              "fieldtype": "multilink",
+                              "cached_url": "https://vercel.com/focusreactive/turbo-cms-kit-storyblok"
+                            },
+                            "text": "Vercel",
+                            "variant": "footerNav",
+                            "component": "link"
+                          }
+                        ],
+                        "theme": "light",
+                        "component": "linksList",
+                        "marginTop": "none",
+                        "alignVariant": "left",
+                        "marginBottom": "none"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "component": "richText",
+            "alignVariant": "center",
+            "removeInnerMargins": false
+          }
+        ],
+        "image": [
+          {
+            "_uid": "f6c6d28e-e4cf-49d6-a2ae-2a5b404ccf3d",
+            "asset": {
+              "id": 17593700,
+              "alt": "",
+              "name": "",
+              "focus": "",
+              "title": "",
+              "source": "",
+              "filename": "https://a.storyblok.com/f/293915/3840x2160/2e8c505a38/nike-logo.png",
+              "copyright": "",
+              "fieldtype": "asset",
+              "meta_data": {},
+              "is_external_url": false
+            },
+            "component": "image",
+            "aspectRatio": "16/9"
+          }
+        ],
+        "links": [
+          {
+            "_uid": "49969ae3-9a59-4f02-91ce-143d983f6b43",
+            "link": {
+              "id": "5d416347-de08-4adb-b496-00b0a083de3a",
+              "url": "",
+              "linktype": "story",
+              "fieldtype": "multilink",
+              "cached_url": "blog"
+            },
+            "text": "link 1",
+            "variant": "default",
+            "component": "link"
+          },
+          {
+            "_uid": "8531a335-6ba7-41ab-9842-e4a518938f14",
+            "link": {
+              "id": "5d416347-de08-4adb-b496-00b0a083de3a",
+              "url": "",
+              "linktype": "story",
+              "fieldtype": "multilink",
+              "cached_url": "blog"
+            },
+            "text": "link 1",
+            "variant": "default",
+            "component": "link"
+          },
+          {
+            "_uid": "c1a83470-ac92-4d42-b6b7-2d77423a99a6",
+            "link": {
+              "id": "5d416347-de08-4adb-b496-00b0a083de3a",
+              "url": "",
+              "linktype": "story",
+              "fieldtype": "multilink",
+              "cached_url": "blog"
+            },
+            "text": "link 1",
+            "variant": "default",
+            "component": "link"
+          },
+          {
+            "_uid": "0194af4d-4f93-4b18-a721-87823c1a8ed2",
+            "link": {
+              "id": "5d416347-de08-4adb-b496-00b0a083de3a",
+              "url": "",
+              "linktype": "story",
+              "fieldtype": "multilink",
+              "cached_url": "blog"
+            },
+            "text": "link 1",
+            "variant": "default",
+            "component": "link"
+          },
+          {
+            "_uid": "b4053a05-4b4e-4114-9dd7-40cf048c0c56",
+            "link": {
+              "id": "5d416347-de08-4adb-b496-00b0a083de3a",
+              "url": "",
+              "linktype": "story",
+              "fieldtype": "multilink",
+              "cached_url": "blog"
+            },
+            "text": "link 1",
+            "variant": "default",
+            "component": "link"
+          },
+          {
+            "_uid": "6e0e149d-082a-4ab5-97f9-8c9b37f6c4de",
+            "link": {
+              "id": "5d416347-de08-4adb-b496-00b0a083de3a",
+              "url": "",
+              "linktype": "story",
+              "fieldtype": "multilink",
+              "cached_url": "blog"
+            },
+            "text": "link 1",
+            "variant": "default",
+            "component": "link"
+          },
+          {
+            "_uid": "db4e104f-9578-403f-8f44-c9a6b9faf401",
+            "link": {
+              "id": "5d416347-de08-4adb-b496-00b0a083de3a",
+              "url": "",
+              "linktype": "story",
+              "fieldtype": "multilink",
+              "cached_url": "blog"
+            },
+            "text": "link 1",
+            "variant": "default",
+            "component": "link"
+          },
+          {
+            "_uid": "845a36b4-a65c-409c-ac59-103ce79b7e52",
+            "link": {
+              "id": "5d416347-de08-4adb-b496-00b0a083de3a",
+              "url": "",
+              "linktype": "story",
+              "fieldtype": "multilink",
+              "cached_url": "blog"
+            },
+            "text": "link 1",
+            "variant": "default",
+            "component": "link"
+          }
+        ],
+        "component": "footer",
+        "copywriteText": "2024  @ FocusReactive"
+      },
+      "component_id": 6398307,
+      "space_id": 293915,
+      "created_at": "2024-10-09T16:11:27.599Z",
+      "updated_at": "2024-10-09T16:11:27.599Z",
+      "image": "//a.storyblok.com/f/293915/x/40181ec8c4/screenshot-2024-10-09-at-18-11-17.png",
+      "color": "",
+      "icon": "",
+      "description": ""
+    },
+    {
+      "id": 2225127,
+      "name": "Default",
+      "preset": {
+        "_uid": "8a993c13-4588-46b4-8285-d2f59d18b11f",
+        "text": [
+          {
+            "_uid": "d8050fa9-6b9d-438f-99e3-d038c9250382",
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "text": "Let's find more that brings us together.",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "Flowbite helps you connect with friends, family and communities of people who share your interests. Connecting with your friends and family as well as discovering new ones is easy with features like Groups, Watch and Marketplace.",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            "component": "richText",
+            "removeInnerMargins": false
+          }
+        ],
+        "links": [
+          {
+            "_uid": "bdb0b522-2f4c-4836-a8bc-d8526d5acb94",
+            "link": {
+              "id": "",
+              "url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768",
+              "linktype": "url",
+              "fieldtype": "multilink",
+              "cached_url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768"
+            },
+            "text": "Get Started",
+            "variant": "primary",
+            "component": "link"
+          },
+          {
+            "_uid": "d084111d-6fbd-4159-8210-81694be82221",
+            "link": {
+              "id": "",
+              "url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768",
+              "linktype": "url",
+              "fieldtype": "multilink",
+              "cached_url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768"
+            },
+            "text": "Learn More",
+            "variant": "secondary",
+            "component": "link"
+          },
+          {
+            "_uid": "4cf8608f-0859-4c87-a74d-2d2b2c5e24fe",
+            "link": {
+              "id": "",
+              "url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768",
+              "linktype": "url",
+              "fieldtype": "multilink",
+              "cached_url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768"
+            },
+            "text": "New Info",
+            "variant": "secondary",
+            "component": "link"
+          }
+        ],
+        "variant": "default",
+        "component": "cta"
+      },
+      "component_id": 6030875,
+      "space_id": 293915,
+      "created_at": "2024-07-12T15:24:16.323Z",
+      "updated_at": "2024-07-12T15:24:16.323Z",
+      "image": "//a.storyblok.com/f/293915/x/eb1b14e23e/cta.png",
+      "color": "",
+      "icon": "",
+      "description": ""
+    },
+    {
+      "id": 2225124,
+      "name": "Default",
+      "preset": {
+        "_uid": "f69d732d-2748-41a3-a242-44c14ce4d9bf",
+        "text": [
+          {
+            "_uid": "a750fdb5-4826-4829-b538-c947b2fcb704",
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 1
+                  },
+                  "content": [
+                    {
+                      "text": "Payments tool for software companies",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "From checkout to global sales tax compliance, companies around the world use Flowbite to simplify their payment stack.",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            "component": "richText",
+            "removeInnerMargins": false
+          }
+        ],
+        "Title": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "heading",
+              "attrs": {
+                "level": 1
+              },
+              "content": [
+                {
+                  "text": "Payments tool for software companies",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "From checkout to global sales tax compliance, companies around the world use Flowbite to simplify their payment stack.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "image": [
+          {
+            "_uid": "9b1e6ac1-5d3d-464a-9e0f-89e5e6012f49",
+            "asset": {
+              "id": 16613655,
+              "alt": "",
+              "name": "",
+              "focus": "",
+              "title": "",
+              "source": "",
+              "filename": "https://a.storyblok.com/f/293915/943x706/c52a102a70/phone-mockup.webp",
+              "copyright": "",
+              "fieldtype": "asset",
+              "meta_data": {},
+              "is_private": false,
+              "is_external_url": false
+            },
+            "component": "image",
+            "aspectRatio": "4/3"
+          }
+        ],
+        "links": [
+          {
+            "_uid": "153a06e8-2eac-47d9-9ac8-019faf1055e1",
+            "link": {
+              "id": "",
+              "url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768",
+              "linktype": "url",
+              "fieldtype": "multilink",
+              "cached_url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768"
+            },
+            "text": "Get Started",
+            "variant": "primary",
+            "component": "link"
+          },
+          {
+            "_uid": "df78a958-f7a0-46f3-b540-173106e8a3fd",
+            "link": {
+              "id": "",
+              "url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768",
+              "linktype": "url",
+              "fieldtype": "multilink",
+              "cached_url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768"
+            },
+            "text": "Learn More",
+            "variant": "secondary",
+            "component": "link"
+          }
+        ],
+        "component": "hero"
+      },
+      "component_id": 6030807,
+      "space_id": 293915,
+      "created_at": "2024-07-12T15:21:23.929Z",
+      "updated_at": "2024-07-12T15:21:23.929Z",
+      "image": "//a.storyblok.com/f/293915/x/970561938d/hero.png",
+      "color": "",
+      "icon": "",
+      "description": ""
+    },
+    {
       "id": 2311975,
       "name": "Default",
       "preset": {
@@ -1156,6 +2048,126 @@
       "created_at": "2024-10-08T15:14:26.596Z",
       "updated_at": "2024-10-08T15:14:26.596Z",
       "image": "//a.storyblok.com/f/293915/x/9118f0bd1b/screenshot-2024-10-08-at-17-14-10.png",
+      "color": "",
+      "icon": "",
+      "description": ""
+    },
+    {
+      "id": 2312484,
+      "name": "Default",
+      "preset": {
+        "_uid": "4ad7fd52-a576-4601-9889-04b46142e382",
+        "image": [
+          {
+            "_uid": "106d9002-a1c3-4f45-a2aa-8ff515b167e5",
+            "asset": {
+              "id": 17593700,
+              "alt": "",
+              "name": "",
+              "focus": "",
+              "title": "",
+              "source": "",
+              "filename": "https://a.storyblok.com/f/293915/3840x2160/2e8c505a38/nike-logo.png",
+              "copyright": "",
+              "fieldtype": "asset",
+              "meta_data": {},
+              "is_external_url": false
+            },
+            "component": "image",
+            "aspectRatio": "16/9"
+          }
+        ],
+        "links": [
+          {
+            "_uid": "892b4038-4a39-473f-b3b6-b9b0b2c853bd",
+            "link": {
+              "id": "19601884-a1af-4b99-bd95-1a3ca01d5b7a",
+              "url": "",
+              "linktype": "story",
+              "fieldtype": "multilink",
+              "cached_url": "home"
+            },
+            "text": "Home",
+            "variant": "default",
+            "component": "link"
+          },
+          {
+            "_uid": "42da28cf-0299-4a13-a006-a1813862fe91",
+            "link": {
+              "id": "5d416347-de08-4adb-b496-00b0a083de3a",
+              "url": "",
+              "linktype": "story",
+              "fieldtype": "multilink",
+              "cached_url": "blog"
+            },
+            "text": "Blog",
+            "variant": "default",
+            "component": "link"
+          },
+          {
+            "_uid": "e60a7e37-87dc-4ce8-b6a5-70c3c7d4cecc",
+            "link": {
+              "id": "",
+              "url": "https://app.storyblok.com/#/me/spaces/293915",
+              "target": "_blank",
+              "linktype": "url",
+              "fieldtype": "multilink",
+              "cached_url": "https://app.storyblok.com/#/me/spaces/293915"
+            },
+            "text": "Storyblok",
+            "variant": "default",
+            "component": "link"
+          },
+          {
+            "_uid": "3d6ad342-43b8-4b71-ad05-d9b581d76a0b",
+            "link": {
+              "id": "",
+              "url": "https://github.com/focusreactive/turbo-cms-kit",
+              "target": "_blank",
+              "linktype": "url",
+              "fieldtype": "multilink",
+              "cached_url": "https://github.com/focusreactive/turbo-cms-kit"
+            },
+            "text": "GitHub",
+            "variant": "default",
+            "component": "link"
+          },
+          {
+            "_uid": "da6abcc0-86a7-4891-9021-80f073e2fa3e",
+            "link": {
+              "id": "",
+              "url": "https://trello.com/b/2XLLkCma/cms-kit",
+              "target": "_blank",
+              "linktype": "url",
+              "fieldtype": "multilink",
+              "cached_url": "https://trello.com/b/2XLLkCma/cms-kit"
+            },
+            "text": "Trello",
+            "variant": "default",
+            "component": "link"
+          },
+          {
+            "_uid": "f52b36a2-29d5-4b86-a79b-ddd7d135b274",
+            "link": {
+              "id": "",
+              "url": "https://vercel.com/focusreactive/turbo-cms-kit-storyblok",
+              "linktype": "url",
+              "fieldtype": "multilink",
+              "cached_url": "https://vercel.com/focusreactive/turbo-cms-kit-storyblok"
+            },
+            "text": "Vercel",
+            "variant": "default",
+            "component": "link"
+          }
+        ],
+        "component": "header",
+        "alignVariant": "right"
+      },
+      "component_id": 6394530,
+      "space_id": 293915,
+      "created_at": "2024-10-09T05:55:35.787Z",
+      "updated_at": "2024-10-09T05:55:35.787Z",
+      "image": "//a.storyblok.com/f/293915/x/beab857f5f/screenshot-2024-10-08-at-13-37-02.png",
       "color": "",
       "icon": "",
       "description": ""
@@ -1340,376 +2352,6 @@
       "created_at": "2024-10-08T14:31:37.528Z",
       "updated_at": "2024-10-08T14:31:37.528Z",
       "image": "//a.storyblok.com/f/293915/x/6750a101ef/screenshot-2024-10-08-at-16-31-02.png",
-      "color": "",
-      "icon": "",
-      "description": ""
-    },
-    {
-      "id": 2311924,
-      "name": "Default",
-      "preset": {
-        "_uid": "1af10d2b-9756-473d-b00c-f6ec1cf95a86",
-        "slides": [
-          {
-            "_uid": "05887b7b-05c9-48d9-b108-bdf0aa2784e2",
-            "image": [
-              {
-                "_uid": "49701e3f-4a74-42c7-b0a2-3cf3ebd021c6",
-                "asset": {
-                  "id": 17593700,
-                  "alt": "",
-                  "name": "",
-                  "focus": "",
-                  "title": "",
-                  "source": "",
-                  "filename": "https://a.storyblok.com/f/293915/3840x2160/2e8c505a38/nike-logo.png",
-                  "copyright": "",
-                  "fieldtype": "asset",
-                  "meta_data": {},
-                  "is_external_url": false
-                },
-                "component": "image",
-                "aspectRatio": "16/9"
-              }
-            ],
-            "component": "simpleCarouselSlide"
-          },
-          {
-            "_uid": "417c36e6-a409-4a37-a836-820c3a67682d",
-            "image": [
-              {
-                "_uid": "9bf63bef-15e9-4a10-a051-c83fcf1e2f77",
-                "asset": {
-                  "id": 17593700,
-                  "alt": "",
-                  "name": "",
-                  "focus": "",
-                  "title": "",
-                  "source": "",
-                  "filename": "https://a.storyblok.com/f/293915/3840x2160/2e8c505a38/nike-logo.png",
-                  "copyright": "",
-                  "fieldtype": "asset",
-                  "meta_data": {},
-                  "is_external_url": false
-                },
-                "component": "image",
-                "aspectRatio": "16/9"
-              }
-            ],
-            "component": "simpleCarouselSlide"
-          },
-          {
-            "_uid": "888d00d4-ab5e-45c2-9c7a-844cad205c4b",
-            "image": [
-              {
-                "_uid": "2c717744-1757-4bbc-b01b-8cb35ab0100c",
-                "asset": {
-                  "id": 17593700,
-                  "alt": "",
-                  "name": "",
-                  "focus": "",
-                  "title": "",
-                  "source": "",
-                  "filename": "https://a.storyblok.com/f/293915/3840x2160/2e8c505a38/nike-logo.png",
-                  "copyright": "",
-                  "fieldtype": "asset",
-                  "meta_data": {},
-                  "is_external_url": false
-                },
-                "component": "image",
-                "aspectRatio": "16/9"
-              }
-            ],
-            "component": "simpleCarouselSlide"
-          },
-          {
-            "_uid": "f44ca52a-ce5f-4be4-a5fc-367424f0a917",
-            "image": [
-              {
-                "_uid": "2d31244a-823a-418d-b2be-bea0b266d932",
-                "asset": {
-                  "id": 17593700,
-                  "alt": "",
-                  "name": "",
-                  "focus": "",
-                  "title": "",
-                  "source": "",
-                  "filename": "https://a.storyblok.com/f/293915/3840x2160/2e8c505a38/nike-logo.png",
-                  "copyright": "",
-                  "fieldtype": "asset",
-                  "meta_data": {},
-                  "is_external_url": false
-                },
-                "component": "image",
-                "aspectRatio": "16/9"
-              }
-            ],
-            "component": "simpleCarouselSlide"
-          },
-          {
-            "_uid": "2d757401-fb99-4632-b7b3-eee67d7ceb0b",
-            "image": [
-              {
-                "_uid": "93bb87e9-c91d-432f-b789-60a446afe1c7",
-                "asset": {
-                  "id": 17593700,
-                  "alt": "",
-                  "name": "",
-                  "focus": "",
-                  "title": "",
-                  "source": "",
-                  "filename": "https://a.storyblok.com/f/293915/3840x2160/2e8c505a38/nike-logo.png",
-                  "copyright": "",
-                  "fieldtype": "asset",
-                  "meta_data": {},
-                  "is_external_url": false
-                },
-                "component": "image",
-                "aspectRatio": "16/9"
-              }
-            ],
-            "component": "simpleCarouselSlide"
-          }
-        ],
-        "component": "simpleCarousel",
-        "marginTop": "base",
-        "marginBottom": "base"
-      },
-      "component_id": 6391276,
-      "space_id": 293915,
-      "created_at": "2024-10-08T14:31:24.209Z",
-      "updated_at": "2024-10-08T15:43:18.631Z",
-      "image": "//a.storyblok.com/f/293915/x/bd83ad5125/screenshot-2024-10-08-at-16-30-53.png",
-      "color": "",
-      "icon": "",
-      "description": ""
-    },
-    {
-      "id": 2225124,
-      "name": "Default",
-      "preset": {
-        "_uid": "f69d732d-2748-41a3-a242-44c14ce4d9bf",
-        "text": [
-          {
-            "_uid": "a750fdb5-4826-4829-b538-c947b2fcb704",
-            "content": {
-              "type": "doc",
-              "content": [
-                {
-                  "type": "heading",
-                  "attrs": {
-                    "level": 1
-                  },
-                  "content": [
-                    {
-                      "text": "Payments tool for software companies",
-                      "type": "text",
-                      "marks": [
-                        {
-                          "type": "bold"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "paragraph",
-                  "content": [
-                    {
-                      "text": "From checkout to global sales tax compliance, companies around the world use Flowbite to simplify their payment stack.",
-                      "type": "text"
-                    }
-                  ]
-                }
-              ]
-            },
-            "component": "richText",
-            "removeInnerMargins": false
-          }
-        ],
-        "Title": {
-          "type": "doc",
-          "content": [
-            {
-              "type": "heading",
-              "attrs": {
-                "level": 1
-              },
-              "content": [
-                {
-                  "text": "Payments tool for software companies",
-                  "type": "text",
-                  "marks": [
-                    {
-                      "type": "bold"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "content": [
-                {
-                  "text": "From checkout to global sales tax compliance, companies around the world use Flowbite to simplify their payment stack.",
-                  "type": "text"
-                }
-              ]
-            }
-          ]
-        },
-        "image": [
-          {
-            "_uid": "9b1e6ac1-5d3d-464a-9e0f-89e5e6012f49",
-            "asset": {
-              "id": 16613655,
-              "alt": "",
-              "name": "",
-              "focus": "",
-              "title": "",
-              "source": "",
-              "filename": "https://a.storyblok.com/f/293915/943x706/c52a102a70/phone-mockup.webp",
-              "copyright": "",
-              "fieldtype": "asset",
-              "meta_data": {},
-              "is_private": false,
-              "is_external_url": false
-            },
-            "component": "image",
-            "aspectRatio": "4/3"
-          }
-        ],
-        "links": [
-          {
-            "_uid": "153a06e8-2eac-47d9-9ac8-019faf1055e1",
-            "link": {
-              "id": "",
-              "url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768",
-              "linktype": "url",
-              "fieldtype": "multilink",
-              "cached_url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768"
-            },
-            "text": "Get Started",
-            "variant": "primary",
-            "component": "link"
-          },
-          {
-            "_uid": "df78a958-f7a0-46f3-b540-173106e8a3fd",
-            "link": {
-              "id": "",
-              "url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768",
-              "linktype": "url",
-              "fieldtype": "multilink",
-              "cached_url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768"
-            },
-            "text": "Learn More",
-            "variant": "secondary",
-            "component": "link"
-          }
-        ],
-        "component": "hero"
-      },
-      "component_id": 6030807,
-      "space_id": 293915,
-      "created_at": "2024-07-12T15:21:23.929Z",
-      "updated_at": "2024-07-12T15:21:23.929Z",
-      "image": "//a.storyblok.com/f/293915/x/970561938d/hero.png",
-      "color": "",
-      "icon": "",
-      "description": ""
-    },
-    {
-      "id": 2225127,
-      "name": "Default",
-      "preset": {
-        "_uid": "8a993c13-4588-46b4-8285-d2f59d18b11f",
-        "text": [
-          {
-            "_uid": "d8050fa9-6b9d-438f-99e3-d038c9250382",
-            "content": {
-              "type": "doc",
-              "content": [
-                {
-                  "type": "heading",
-                  "attrs": {
-                    "level": 2
-                  },
-                  "content": [
-                    {
-                      "text": "Let's find more that brings us together.",
-                      "type": "text",
-                      "marks": [
-                        {
-                          "type": "bold"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "paragraph",
-                  "content": [
-                    {
-                      "text": "Flowbite helps you connect with friends, family and communities of people who share your interests. Connecting with your friends and family as well as discovering new ones is easy with features like Groups, Watch and Marketplace.",
-                      "type": "text"
-                    }
-                  ]
-                }
-              ]
-            },
-            "component": "richText",
-            "removeInnerMargins": false
-          }
-        ],
-        "links": [
-          {
-            "_uid": "bdb0b522-2f4c-4836-a8bc-d8526d5acb94",
-            "link": {
-              "id": "",
-              "url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768",
-              "linktype": "url",
-              "fieldtype": "multilink",
-              "cached_url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768"
-            },
-            "text": "Get Started",
-            "variant": "primary",
-            "component": "link"
-          },
-          {
-            "_uid": "d084111d-6fbd-4159-8210-81694be82221",
-            "link": {
-              "id": "",
-              "url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768",
-              "linktype": "url",
-              "fieldtype": "multilink",
-              "cached_url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768"
-            },
-            "text": "Learn More",
-            "variant": "secondary",
-            "component": "link"
-          },
-          {
-            "_uid": "4cf8608f-0859-4c87-a74d-2d2b2c5e24fe",
-            "link": {
-              "id": "",
-              "url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768",
-              "linktype": "url",
-              "fieldtype": "multilink",
-              "cached_url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768"
-            },
-            "text": "New Info",
-            "variant": "secondary",
-            "component": "link"
-          }
-        ],
-        "variant": "default",
-        "component": "cta"
-      },
-      "component_id": 6030875,
-      "space_id": 293915,
-      "created_at": "2024-07-12T15:24:16.323Z",
-      "updated_at": "2024-07-12T15:24:16.323Z",
-      "image": "//a.storyblok.com/f/293915/x/eb1b14e23e/cta.png",
       "color": "",
       "icon": "",
       "description": ""
@@ -1999,6 +2641,8 @@
       "name": "Home",
       "preset": {
         "_uid": "2b02874e-43a7-463b-a76f-cb457945ab65",
+        "footer": "9242f0ad-4f23-46b4-a369-227f91b0d3fd",
+        "header": "32a6be02-b148-40db-8f9b-bf4bd86572b1",
         "robots": "index",
         "ogImage": {
           "id": 17302361,
@@ -2020,99 +2664,103 @@
         },
         "sections": [
           {
-            "_uid": "c298fa8c-eb48-4657-b1f9-a8fd62e343c4",
+            "_uid": "b019ea6f-c0ec-4a1f-a5ca-56a27f17f858",
+            "text": [
+              {
+                "_uid": "040f5d67-bf94-4e8a-b621-37a4713aa02a",
+                "content": {
+                  "type": "doc",
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "text": "In Notion, work feels better.",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "text": "With a little help from AI.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "component": "richText",
+                "alignVariant": "left",
+                "removeInnerMargins": true
+              }
+            ],
+            "image": [
+              {
+                "_uid": "2072d1da-fdf8-49a2-bcc5-fd4c1d4d8f0b",
+                "asset": {
+                  "id": 17600300,
+                  "alt": "",
+                  "name": "",
+                  "focus": "",
+                  "title": "",
+                  "source": "",
+                  "filename": "https://a.storyblok.com/f/293915/2474x1318/df22f90af3/screenshot-2024-10-08-at-16-53-38.png",
+                  "copyright": "",
+                  "fieldtype": "asset",
+                  "meta_data": {},
+                  "is_external_url": false
+                },
+                "component": "image",
+                "aspectRatio": "16/9"
+              }
+            ],
             "links": [
               {
-                "_uid": "dd240d55-f01a-4e25-8a8f-0d8e8b20bba8",
-                "link": {
-                  "id": "19601884-a1af-4b99-bd95-1a3ca01d5b7a",
-                  "url": "",
-                  "linktype": "story",
-                  "fieldtype": "multilink",
-                  "cached_url": "home"
-                },
-                "text": "Home",
-                "variant": "default",
-                "component": "link"
-              },
-              {
-                "_uid": "4bbd38c5-5ea1-4ce5-ad84-46c31da1951a",
+                "_uid": "3786705a-e3a5-4aea-8f36-15b5ada939a3",
                 "link": {
                   "id": "5d416347-de08-4adb-b496-00b0a083de3a",
                   "url": "",
                   "linktype": "story",
                   "fieldtype": "multilink",
-                  "cached_url": "demo"
+                  "cached_url": "blog"
                 },
-                "text": "Blog",
-                "variant": "default",
+                "text": "Get for free",
+                "variant": "primary",
                 "component": "link"
               },
               {
-                "_uid": "49741fc6-81c9-430c-bea9-5c086d0c5950",
+                "_uid": "6b5c18f8-65cd-4881-b067-64548c131e87",
                 "link": {
-                  "id": "",
-                  "url": "https://app.storyblok.com/#/me/spaces/293915",
-                  "target": "_blank",
-                  "linktype": "url",
+                  "id": "5d416347-de08-4adb-b496-00b0a083de3a",
+                  "url": "",
+                  "linktype": "story",
                   "fieldtype": "multilink",
-                  "cached_url": "https://app.storyblok.com/#/me/spaces/293915"
+                  "cached_url": "blog"
                 },
-                "text": "Storyblok",
-                "variant": "default",
-                "component": "link"
-              },
-              {
-                "_uid": "5f93d524-bb21-4efa-8f12-bccc672c45fe",
-                "link": {
-                  "id": "",
-                  "url": "https://github.com/focusreactive/turbo-cms-kit",
-                  "target": "_blank",
-                  "linktype": "url",
-                  "fieldtype": "multilink",
-                  "cached_url": "https://github.com/focusreactive/turbo-cms-kit"
-                },
-                "text": "GitHub",
-                "variant": "default",
-                "component": "link"
-              },
-              {
-                "_uid": "f28777c3-a837-4ad1-9a26-826eadb51710",
-                "link": {
-                  "id": "",
-                  "url": "https://trello.com/b/2XLLkCma/cms-kit",
-                  "target": "_blank",
-                  "linktype": "url",
-                  "fieldtype": "multilink",
-                  "cached_url": "https://trello.com/b/2XLLkCma/cms-kit"
-                },
-                "text": "Trello",
-                "variant": "default",
-                "component": "link"
-              },
-              {
-                "_uid": "1e322a60-4272-45b0-b66b-fba186b5ab6a",
-                "link": {
-                  "id": "",
-                  "url": "https://vercel.com/focusreactive/turbo-cms-kit-storyblok",
-                  "linktype": "url",
-                  "fieldtype": "multilink",
-                  "cached_url": "https://vercel.com/focusreactive/turbo-cms-kit-storyblok"
-                },
-                "text": "Vercel",
-                "variant": "default",
+                "text": "Request a demo",
+                "variant": "secondary",
                 "component": "link"
               }
             ],
-            "theme": "light",
-            "component": "header"
+            "title": "Write. Plan. Collaborate.",
+            "component": "hero",
+            "marginTop": "lg",
+            "marginBottom": "lg"
           },
           {
-            "_uid": "04ce60ff-1e57-4f08-ad7d-3eea1e6dabb4",
+            "_uid": "9bd6ae54-2eb3-46fc-ab31-f93c0bc4f5fa",
             "theme": "dark",
             "columns": [
               {
-                "_uid": "7ad50287-5053-416f-9156-d429f561dd44",
+                "_uid": "c99242e1-258e-4b79-b662-b92bc9f82f90",
                 "content": {
                   "type": "doc",
                   "content": [
@@ -2122,16 +2770,16 @@
                         "id": "12460589-051a-4658-9a66-7b2c1971bf30",
                         "body": [
                           {
-                            "_uid": "3509b1ce-32c2-469a-9758-ba8446b5da77",
+                            "_uid": "i-084108e4-b8d0-44d2-a33b-555694c42948",
                             "links": [
                               {
-                                "_uid": "45de4640-d6a8-48b8-81b6-513500e8f2b2",
+                                "_uid": "a4e7ef91-da46-49bc-b28e-5a3fd2af36fb",
                                 "link": {
-                                  "id": "5d416347-de08-4adb-b496-00b0a083de3a",
+                                  "id": "19601884-a1af-4b99-bd95-1a3ca01d5b7a",
                                   "url": "",
                                   "linktype": "story",
                                   "fieldtype": "multilink",
-                                  "cached_url": "demo"
+                                  "cached_url": "home"
                                 },
                                 "text": "Demo & Initial Project Read More →​​​​﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍​‍﻿﻿‌﻿​﻿‌﻿‌​‌﻿‌‌‌‍‌​‌‍‍‌‌‍﻿﻿​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿​​‌‍​‌​﻿​‍​﻿‍​​﻿‌﻿​﻿‌​​﻿‌​‌‍‌​​‍﻿‌​﻿‌‍​﻿​​​﻿​‍‌‍​‍​‍﻿‌​﻿‌​​﻿‍‌‌‍​‌​﻿​﻿​‍﻿‌‌‍​‍​﻿‍‌​﻿​‌‌‍​‌​‍﻿‌​﻿​‌​﻿‌﻿‌‍​‌​﻿‌‌​﻿‌‍‌‍‌‌​﻿​﻿‌‍​﻿​﻿‌﻿​﻿‍​​﻿​﻿​﻿​‍​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌﻿​​‌‍​‌‌‍‌﻿‌‍‌‌​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿​﻿‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍‌﻿​﻿‌​​‍‌‍﻿﻿‌‍‌​‌﻿‍‌​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍‍‍‌﻿‍‍‌﻿‌​‌﻿​‍​﻿‍‌‌‍‌​‌‍‌‌‌‍﻿​‌‍​‌​﻿‍‌‌‍‌​​﻿​‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍﻿​‌‍‍‌‌‍﻿‍‌‍‍﻿‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍‌‍​﻿​​‌‍​‌​﻿‍‌​﻿‍​​﻿‌​​﻿​​​﻿‍‌​﻿​‍​﻿​​​﻿‍‌‌‍​﻿​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌​‍‌‌​﻿​‍‌​‌‍‌﻿​﻿‌﻿‌​‌﻿‌‌‌‍‌​‌‍‍‌‌‍﻿﻿​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿​​‌‍​‌​﻿​‍​﻿‍​​﻿‌﻿​﻿‌​​﻿‌​‌‍‌​​‍﻿‌​﻿‌‍​﻿​​​﻿​‍‌‍​‍​‍﻿‌​﻿‌​​﻿‍‌‌‍​‌​﻿​﻿​‍﻿‌‌‍​‍​﻿‍‌​﻿​‌‌‍​‌​‍﻿‌​﻿​‌​﻿‌﻿‌‍​‌​﻿‌‌​﻿‌‍‌‍‌‌​﻿​﻿‌‍​﻿​﻿‌﻿​﻿‍​​﻿​﻿​﻿​‍​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌﻿​​‌‍​‌‌‍‌﻿‌‍‌‌​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿​﻿‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍‌﻿​﻿‌​​‍‌‍﻿﻿‌‍‌​‌﻿‍‌​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍‍‍‌﻿‍‍‌﻿‌​‌﻿​‍​﻿‍‌‌‍‌​‌‍‌‌‌‍﻿​‌‍​‌​﻿‍‌‌‍‌​​﻿​‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍﻿​‌‍‍‌‌‍﻿‍‌‍‍﻿‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍‌‍​﻿​​‌‍​‌​﻿‍‌​﻿‍​​﻿‌​​﻿​​​﻿‍‌​﻿​‍​﻿​​​﻿‍‌‌‍​﻿​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‍‌‍‍‌‌﻿​﻿‌​‌​‌﻿​‍‌‍​‌‌‍‌‍‌﻿‌​​﻿﻿‌​‍​‍‌﻿﻿‌​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍​‍﻿﻿‌﻿​﻿‌﻿‌​‌﻿‌‌‌‍‌​‌‍‍‌‌‍﻿﻿​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿​​‌‍​‌​﻿​‍​﻿‍​​﻿‌﻿​﻿‌​​﻿‌​‌‍‌​​‍﻿‌​﻿‌‍​﻿​​​﻿​‍‌‍​‍​‍﻿‌​﻿‌​​﻿‍‌‌‍​‌​﻿​﻿​‍﻿‌‌‍​‍​﻿‍‌​﻿​‌‌‍​‌​‍﻿‌​﻿​‌​﻿‌﻿‌‍​‌​﻿‌‌​﻿‌‍‌‍‌‌​﻿​﻿‌‍​﻿​﻿‌﻿​﻿‍​​﻿​﻿​﻿​‍​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌﻿​​‌‍​‌‌‍‌﻿‌‍‌‌​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿​﻿‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍‌﻿​﻿‌​​‍‌‍﻿﻿‌‍‌​‌﻿‍‌​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​‍‌‍​‌​﻿​​​﻿‍​‌‍​‌​﻿​‍​﻿​﻿​﻿​‍​﻿‍‌​﻿‌‍‌‍‌‌​﻿‌﻿​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿​‌﻿‌‌‌‍﻿‌‌‍﻿‍‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍‌‍‌‍​‌​﻿‌‍‌‍‌‍‌‍​‌‌‍‌‍‌‍‌​​﻿​​​﻿‍‌​﻿‌‌​﻿‌﻿‌‍‌‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍​﻿​‍‌‍​‍‌‍​‍​﻿​‍‌‍​﻿​﻿​﻿​﻿​‌​﻿​‍​﻿​‌​﻿‌‌​﻿​‍‌‍​﻿​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍﻿​‌‍‍‌‌‍﻿‍‌‍‍﻿‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍​﻿‌​​﻿​‍‌‍‌‌​﻿‍​​﻿​﻿​﻿‍​​﻿‍​​﻿​​‌‍​‍​﻿‌﻿‌‍​‍​﻿​﻿​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌​‍‌‌​﻿​‍‌​‌‍‌﻿​﻿‌﻿‌​‌﻿‌‌‌‍‌​‌‍‍‌‌‍﻿﻿​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿​​‌‍​‌​﻿​‍​﻿‍​​﻿‌﻿​﻿‌​​﻿‌​‌‍‌​​‍﻿‌​﻿‌‍​﻿​​​﻿​‍‌‍​‍​‍﻿‌​﻿‌​​﻿‍‌‌‍​‌​﻿​﻿​‍﻿‌‌‍​‍​﻿‍‌​﻿​‌‌‍​‌​‍﻿‌​﻿​‌​﻿‌﻿‌‍​‌​﻿‌‌​﻿‌‍‌‍‌‌​﻿​﻿‌‍​﻿​﻿‌﻿​﻿‍​​﻿​﻿​﻿​‍​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌﻿​​‌‍​‌‌‍‌﻿‌‍‌‌​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿​﻿‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍‌﻿​﻿‌​​‍‌‍﻿﻿‌‍‌​‌﻿‍‌​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​‍‌‍​‌​﻿​​​﻿‍​‌‍​‌​﻿​‍​﻿​﻿​﻿​‍​﻿‍‌​﻿‌‍‌‍‌‌​﻿‌﻿​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿​‌﻿‌‌‌‍﻿‌‌‍﻿‍‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍‌‍‌‍​‌​﻿‌‍‌‍‌‍‌‍​‌‌‍‌‍‌‍‌​​﻿​​​﻿‍‌​﻿‌‌​﻿‌﻿‌‍‌‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍​﻿​‍‌‍​‍‌‍​‍​﻿​‍‌‍​﻿​﻿​﻿​﻿​‌​﻿​‍​﻿​‌​﻿‌‌​﻿​‍‌‍​﻿​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍﻿​‌‍‍‌‌‍﻿‍‌‍‍﻿‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍​﻿‌​​﻿​‍‌‍‌‌​﻿‍​​﻿​﻿​﻿‍​​﻿‍​​﻿​​‌‍​‍​﻿‌﻿‌‍​‍​﻿​﻿​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‍‌‍‍‌‌﻿​﻿‌​‌​‌﻿​‍‌‍​‌‌‍‌‍‌﻿‌​​﻿﻿‌​‍​‍‌﻿﻿‌",
                                 "variant": "badge",
@@ -2140,9 +2788,9 @@
                             ],
                             "theme": "dark",
                             "component": "linksList",
-                            "marginTop": "none",
+                            "marginTop": "lg",
                             "alignVariant": "center",
-                            "marginBottom": "none"
+                            "marginBottom": "lg"
                           }
                         ]
                       }
@@ -2154,7 +2802,7 @@
                       },
                       "content": [
                         {
-                          "text": "Demo Landing",
+                          "text": "CMS-Kit Storyblok",
                           "type": "text"
                         }
                       ]
@@ -2163,7 +2811,7 @@
                       "type": "paragraph",
                       "content": [
                         {
-                          "text": "try to modify and create new blocks",
+                          "text": "Our mission: Making Headless CMS Universally Accessible",
                           "type": "text"
                         }
                       ]
@@ -2174,40 +2822,40 @@
                         "id": "544d3c9e-9b75-49af-b5ba-d74e607d3d66",
                         "body": [
                           {
-                            "_uid": "eb0f9648-ad10-42a4-971e-55260f2dadb0",
+                            "_uid": "i-1cd27ee1-99c1-488a-b1ec-bafa57c40dbe",
                             "links": [
                               {
-                                "_uid": "52c6b76b-9b6d-471a-87a0-a735f2ca52ec",
+                                "_uid": "a6f23c56-87f0-4c18-9d7e-ea449e1c10a2",
                                 "link": {
-                                  "id": "5d416347-de08-4adb-b496-00b0a083de3a",
+                                  "id": "19601884-a1af-4b99-bd95-1a3ca01d5b7a",
                                   "url": "",
                                   "linktype": "story",
                                   "fieldtype": "multilink",
-                                  "cached_url": "demo"
+                                  "cached_url": "home"
                                 },
                                 "text": "Get Started​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍​‍﻿﻿‌﻿​﻿‌﻿‌​‌﻿‌‌‌‍‌​‌‍‍‌‌‍﻿﻿​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿​​‌‍​‌​﻿​‍​﻿‍​​﻿‌﻿​﻿‌​​﻿‌​‌‍‌​​‍﻿‌​﻿‌‍​﻿​​​﻿​‍‌‍​‍​‍﻿‌​﻿‌​​﻿‍‌‌‍​‌​﻿​﻿​‍﻿‌‌‍​‍​﻿‍‌​﻿​‌‌‍​‌​‍﻿‌​﻿​‌​﻿‌﻿‌‍​‌​﻿‌‌​﻿‌‍‌‍‌‌​﻿​﻿‌‍​﻿​﻿‌﻿​﻿‍​​﻿​﻿​﻿​‍​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌﻿​​‌‍​‌‌‍‌﻿‌‍‌‌​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿​﻿‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍‌﻿​﻿‌​​‍‌‍﻿﻿‌‍‌​‌﻿‍‌​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​‍‌‍​‌​﻿​​​﻿‍​‌‍​‌​﻿​‍​﻿​﻿​﻿​‍​﻿‍‌​﻿‌‍‌‍‌‌​﻿‌﻿​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿​‌﻿‌‌‌‍﻿‌‌‍﻿‍‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍‌‍‌‍​‌​﻿‌‍‌‍‌‍‌‍​‌‌‍‌‍‌‍‌​​﻿​​​﻿‍‌​﻿‌‌​﻿‌﻿‌‍‌‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍​﻿​‍‌‍​‌‌‍​﻿​﻿​﻿​﻿​﻿​﻿​​​﻿‍​​﻿‌​​﻿‍‌​﻿‌﻿‌‍​﻿​﻿‍‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍﻿​‌‍‍‌‌‍﻿‍‌‍‍﻿‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍‌​​﻿​‌‌‍‌​​﻿‌​​﻿​​‌‍​﻿‌‍‌‌​﻿‌​​﻿‌​‌‍‌​​﻿‍​‌‍‌‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌​‍‌‌​﻿​‍‌​‌‍‌﻿​﻿‌﻿‌​‌﻿‌‌‌‍‌​‌‍‍‌‌‍﻿﻿​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿​​‌‍​‌​﻿​‍​﻿‍​​﻿‌﻿​﻿‌​​﻿‌​‌‍‌​​‍﻿‌​﻿‌‍​﻿​​​﻿​‍‌‍​‍​‍﻿‌​﻿‌​​﻿‍‌‌‍​‌​﻿​﻿​‍﻿‌‌‍​‍​﻿‍‌​﻿​‌‌‍​‌​‍﻿‌​﻿​‌​﻿‌﻿‌‍​‌​﻿‌‌​﻿‌‍‌‍‌‌​﻿​﻿‌‍​﻿​﻿‌﻿​﻿‍​​﻿​﻿​﻿​‍​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌﻿​​‌‍​‌‌‍‌﻿‌‍‌‌​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿​﻿‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍‌﻿​﻿‌​​‍‌‍﻿﻿‌‍‌​‌﻿‍‌​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​‍‌‍​‌​﻿​​​﻿‍​‌‍​‌​﻿​‍​﻿​﻿​﻿​‍​﻿‍‌​﻿‌‍‌‍‌‌​﻿‌﻿​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿​‌﻿‌‌‌‍﻿‌‌‍﻿‍‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍‌‍‌‍​‌​﻿‌‍‌‍‌‍‌‍​‌‌‍‌‍‌‍‌​​﻿​​​﻿‍‌​﻿‌‌​﻿‌﻿‌‍‌‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍​﻿​‍‌‍​‌‌‍​﻿​﻿​﻿​﻿​﻿​﻿​​​﻿‍​​﻿‌​​﻿‍‌​﻿‌﻿‌‍​﻿​﻿‍‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍﻿​‌‍‍‌‌‍﻿‍‌‍‍﻿‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍‌​​﻿​‌‌‍‌​​﻿‌​​﻿​​‌‍​﻿‌‍‌‌​﻿‌​​﻿‌​‌‍‌​​﻿‍​‌‍‌‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‍‌‍‍‌‌﻿​﻿‌​‌​‌﻿​‍‌‍​‌‌‍‌‍‌﻿‌​​﻿﻿‌​‍​‍‌﻿﻿‌",
                                 "variant": "primary",
                                 "component": "link"
                               },
                               {
-                                "_uid": "b9cdfe0d-8e78-4af1-a661-7ab2122b59bb",
+                                "_uid": "a3a5947b-beda-4ec1-959b-78ec9a450f6d",
                                 "link": {
-                                  "id": "5d416347-de08-4adb-b496-00b0a083de3a",
+                                  "id": "19601884-a1af-4b99-bd95-1a3ca01d5b7a",
                                   "url": "",
                                   "linktype": "story",
                                   "fieldtype": "multilink",
-                                  "cached_url": "demo"
+                                  "cached_url": "home"
                                 },
-                                "text": "Try Now​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍​‍﻿﻿‌﻿​﻿‌﻿‌​‌﻿‌‌‌‍‌​‌‍‍‌‌‍﻿﻿​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿​​‌‍​‌​﻿​‍​﻿‍​​﻿‌﻿​﻿‌​​﻿‌​‌‍‌​​‍﻿‌​﻿‌‍​﻿​​​﻿​‍‌‍​‍​‍﻿‌​﻿‌​​﻿‍‌‌‍​‌​﻿​﻿​‍﻿‌‌‍​‍​﻿‍‌​﻿​‌‌‍​‌​‍﻿‌​﻿​‌​﻿‌﻿‌‍​‌​﻿‌‌​﻿‌‍‌‍‌‌​﻿​﻿‌‍​﻿​﻿‌﻿​﻿‍​​﻿​﻿​﻿​‍​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌﻿​​‌‍​‌‌‍‌﻿‌‍‌‌​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿​﻿‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍‌﻿​﻿‌​​‍‌‍﻿﻿‌‍‌​‌﻿‍‌​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​‍‌‍​‌​﻿​​​﻿‍​‌‍​‌​﻿​‍​﻿​﻿​﻿​‍​﻿‍‌​﻿‌‍‌‍‌‌​﻿‌﻿​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿​‌﻿‌‌‌‍﻿‌‌‍﻿‍‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍‌‍‌‍​‌​﻿‌‍‌‍‌‍‌‍​‌‌‍‌‍‌‍‌​​﻿​​​﻿‍‌​﻿‌‌​﻿‌﻿‌‍‌‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍​﻿​‍‌‍​‌‌‍​﻿​﻿​﻿​﻿​﻿​﻿​​​﻿‍​​﻿‌​​﻿‍‌​﻿‌﻿‌‍​﻿​﻿‍‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍﻿​‌‍‍‌‌‍﻿‍‌‍‍﻿‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍​﻿‍‌​﻿‍​​﻿​﻿​﻿‌‌​﻿‍​​﻿​​​﻿‌​‌‍‌‍‌‍​‌‌‍​‌‌‍‌​​﻿‍​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌​‍‌‌​﻿​‍‌​‌‍‌﻿​﻿‌﻿‌​‌﻿‌‌‌‍‌​‌‍‍‌‌‍﻿﻿​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿​​‌‍​‌​﻿​‍​﻿‍​​﻿‌﻿​﻿‌​​﻿‌​‌‍‌​​‍﻿‌​﻿‌‍​﻿​​​﻿​‍‌‍​‍​‍﻿‌​﻿‌​​﻿‍‌‌‍​‌​﻿​﻿​‍﻿‌‌‍​‍​﻿‍‌​﻿​‌‌‍​‌​‍﻿‌​﻿​‌​﻿‌﻿‌‍​‌​﻿‌‌​﻿‌‍‌‍‌‌​﻿​﻿‌‍​﻿​﻿‌﻿​﻿‍​​﻿​﻿​﻿​‍​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌﻿​​‌‍​‌‌‍‌﻿‌‍‌‌​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿​﻿‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍‌﻿​﻿‌​​‍‌‍﻿﻿‌‍‌​‌﻿‍‌​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​‍‌‍​‌​﻿​​​﻿‍​‌‍​‌​﻿​‍​﻿​﻿​﻿​‍​﻿‍‌​﻿‌‍‌‍‌‌​﻿‌﻿​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿​‌﻿‌‌‌‍﻿‌‌‍﻿‍‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍‌‍‌‍​‌​﻿‌‍‌‍‌‍‌‍​‌‌‍‌‍‌‍‌​​﻿​​​﻿‍‌​﻿‌‌​﻿‌﻿‌‍‌‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍​﻿​‍‌‍​‌‌‍​﻿​﻿​﻿​﻿​﻿​﻿​​​﻿‍​​﻿‌​​﻿‍‌​﻿‌﻿‌‍​﻿​﻿‍‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍﻿​‌‍‍‌‌‍﻿‍‌‍‍﻿‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍​﻿‍‌​﻿‍​​﻿​﻿​﻿‌‌​﻿‍​​﻿​​​﻿‌​‌‍‌‍‌‍​‌‌‍​‌‌‍‌​​﻿‍​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‍‌‍‍‌‌﻿​﻿‌​‌​‌﻿​‍‌‍​‌‌‍‌‍‌﻿‌​​﻿﻿‌​‍​‍‌﻿﻿‌",
-                                "variant": "secondary",
+                                "text": "Learn more →",
+                                "variant": "default",
                                 "component": "link"
                               }
                             ],
                             "theme": "dark",
                             "component": "linksList",
-                            "marginTop": "none",
+                            "marginTop": "base",
                             "alignVariant": "center",
-                            "marginBottom": "none"
+                            "marginBottom": "base"
                           }
                         ]
                       }
@@ -2225,11 +2873,139 @@
             "isReversedOnMobile": false
           },
           {
-            "_uid": "b391136a-749e-4cf7-83bc-21a254bbb126",
+            "_uid": "30ecfbb2-2449-4bd1-a711-39ccf618b8f7",
+            "slides": [
+              {
+                "_uid": "b8246101-37a0-401e-b807-02922965e7d4",
+                "image": [
+                  {
+                    "_uid": "c831a4b9-d580-45a6-9b7b-b497a53831d3",
+                    "asset": {
+                      "id": 17593700,
+                      "alt": "",
+                      "name": "",
+                      "focus": "",
+                      "title": "",
+                      "source": "",
+                      "filename": "https://a.storyblok.com/f/293915/3840x2160/2e8c505a38/nike-logo.png",
+                      "copyright": "",
+                      "fieldtype": "asset",
+                      "meta_data": {},
+                      "is_external_url": false
+                    },
+                    "component": "image",
+                    "aspectRatio": "16/9"
+                  }
+                ],
+                "component": "simpleCarouselSlide"
+              },
+              {
+                "_uid": "f70e22c4-8942-468e-92ed-089fc5ad0487",
+                "image": [
+                  {
+                    "_uid": "8b6038f9-dcf4-46b7-bafb-1d45646991c2",
+                    "asset": {
+                      "id": 17593700,
+                      "alt": "",
+                      "name": "",
+                      "focus": "",
+                      "title": "",
+                      "source": "",
+                      "filename": "https://a.storyblok.com/f/293915/3840x2160/2e8c505a38/nike-logo.png",
+                      "copyright": "",
+                      "fieldtype": "asset",
+                      "meta_data": {},
+                      "is_external_url": false
+                    },
+                    "component": "image",
+                    "aspectRatio": "16/9"
+                  }
+                ],
+                "component": "simpleCarouselSlide"
+              },
+              {
+                "_uid": "fcb7c84f-54f8-4f24-8887-c52880423f0c",
+                "image": [
+                  {
+                    "_uid": "29a9cb77-1e86-4676-b705-968fe99db008",
+                    "asset": {
+                      "id": 17593700,
+                      "alt": "",
+                      "name": "",
+                      "focus": "",
+                      "title": "",
+                      "source": "",
+                      "filename": "https://a.storyblok.com/f/293915/3840x2160/2e8c505a38/nike-logo.png",
+                      "copyright": "",
+                      "fieldtype": "asset",
+                      "meta_data": {},
+                      "is_external_url": false
+                    },
+                    "component": "image",
+                    "aspectRatio": "16/9"
+                  }
+                ],
+                "component": "simpleCarouselSlide"
+              },
+              {
+                "_uid": "a54280c8-c8b9-4f8f-a5cf-f1b0c79515fb",
+                "image": [
+                  {
+                    "_uid": "cb6eff80-0223-4828-a3cd-6cb08e501e15",
+                    "asset": {
+                      "id": 17593700,
+                      "alt": "",
+                      "name": "",
+                      "focus": "",
+                      "title": "",
+                      "source": "",
+                      "filename": "https://a.storyblok.com/f/293915/3840x2160/2e8c505a38/nike-logo.png",
+                      "copyright": "",
+                      "fieldtype": "asset",
+                      "meta_data": {},
+                      "is_external_url": false
+                    },
+                    "component": "image",
+                    "aspectRatio": "16/9"
+                  }
+                ],
+                "component": "simpleCarouselSlide"
+              },
+              {
+                "_uid": "5dbca93a-39e0-46f8-8c76-4a73ca7a1eaa",
+                "image": [
+                  {
+                    "_uid": "47246d2e-1769-4ef8-b9b5-e1cc67c2c91a",
+                    "asset": {
+                      "id": 17593700,
+                      "alt": "",
+                      "name": "",
+                      "focus": "",
+                      "title": "",
+                      "source": "",
+                      "filename": "https://a.storyblok.com/f/293915/3840x2160/2e8c505a38/nike-logo.png",
+                      "copyright": "",
+                      "fieldtype": "asset",
+                      "meta_data": {},
+                      "is_external_url": false
+                    },
+                    "component": "image",
+                    "aspectRatio": "16/9"
+                  }
+                ],
+                "component": "simpleCarouselSlide"
+              }
+            ],
+            "component": "simpleCarousel",
+            "marginTop": "base",
+            "marginBottom": "base"
+          },
+          {
+            "_uid": "69bddd0e-cb0e-436d-a959-707bc2f80c44",
             "theme": "light",
             "columns": [
               {
-                "_uid": "7cf8611d-323c-480a-a7c3-2ed9a19c5e6c",
+                "_uid": "df127d5f-bafe-4aa2-a786-bad0f33449b8",
                 "content": {
                   "type": "doc",
                   "content": [
@@ -2237,7 +3013,7 @@
                       "type": "paragraph",
                       "content": [
                         {
-                          "text": "Deploy faster",
+                          "text": "Experience CMS-Kit in Action",
                           "type": "text",
                           "marks": [
                             {
@@ -2254,7 +3030,7 @@
                       },
                       "content": [
                         {
-                          "text": "Everything you need to deploy your app",
+                          "text": "Start Editing Content Right Here",
                           "type": "text"
                         }
                       ]
@@ -2263,13 +3039,71 @@
                       "type": "paragraph",
                       "content": [
                         {
-                          "text": "Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.",
+                          "text": "Welcome! Dive in and make some changes. Any edits you make here are instantly reflected on the live page to the left. This is the magic of ",
+                          "type": "text"
+                        },
+                        {
+                          "text": "Storyblok Visual Editing",
+                          "type": "text",
+                          "marks": [
+                            {
+                              "type": "bold"
+                            }
+                          ]
+                        },
+                        {
+                          "text": ", offering seamless and intuitive content management.",
                           "type": "text"
                         }
                       ]
                     },
                     {
-                      "type": "paragraph"
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Right now, you're editing a ",
+                          "type": "text"
+                        },
+                        {
+                          "text": "Rich Text",
+                          "type": "text",
+                          "marks": [
+                            {
+                              "type": "italic"
+                            }
+                          ]
+                        },
+                        {
+                          "text": " field. You can write some text or add more advanced blocks like ",
+                          "type": "text"
+                        },
+                        {
+                          "text": "Image",
+                          "type": "text",
+                          "marks": [
+                            {
+                              "type": "italic"
+                            }
+                          ]
+                        },
+                        {
+                          "text": " or ",
+                          "type": "text"
+                        },
+                        {
+                          "text": "Cards Grid",
+                          "type": "text",
+                          "marks": [
+                            {
+                              "type": "italic"
+                            }
+                          ]
+                        },
+                        {
+                          "text": " down below.",
+                          "type": "text"
+                        }
+                      ]
                     },
                     {
                       "type": "blok",
@@ -2277,15 +3111,15 @@
                         "id": "4594bedd-8168-4d1d-be76-3fe3a2229a03",
                         "body": [
                           {
-                            "_uid": "15b31634-6be0-41f2-a669-6bf06c24f4e0",
+                            "_uid": "i-002cca81-7df1-4bbb-a1ab-c7f7114b7347",
                             "asset": {
-                              "id": 17287625,
+                              "id": 17302645,
                               "alt": "",
                               "name": "",
                               "focus": "",
                               "title": "",
                               "source": "",
-                              "filename": "https://a.storyblok.com/f/293915/640x360/9995eb1885/presentation-1792x1008.webp",
+                              "filename": "https://a.storyblok.com/f/293915/1792x1024/581fe2c102/another-one-generated.webp",
                               "copyright": "",
                               "fieldtype": "asset",
                               "meta_data": {},
@@ -2295,14 +3129,14 @@
                             "aspectRatio": "16/9"
                           },
                           {
-                            "_uid": "7989262c-862b-4c8f-bb5e-0ff2d244a5f6",
+                            "_uid": "i-443242aa-7342-4d9a-b32b-b6cf97fd7b42",
                             "items": [
                               {
-                                "_uid": "606d9680-5c5a-45d2-a4c6-926663dafb73",
+                                "_uid": "2cfdc724-d979-4214-8b5f-bd6cb9bbfb62",
                                 "link": [],
                                 "image": [
                                   {
-                                    "_uid": "b7029cea-bca0-492a-9d53-3fe684369e23",
+                                    "_uid": "46f68e61-7bfa-4afc-a876-09e791816832",
                                     "asset": {
                                       "id": 17287559,
                                       "alt": "",
@@ -2326,16 +3160,16 @@
                                   }
                                 ],
                                 "style": "icon-left",
-                                "title": "Push to deploy",
+                                "title": "Instant Accounts: ",
                                 "component": "defaultCard",
-                                "description": "Deploy faster​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍​‍﻿﻿‌‍​‌‌‍‌​‌‍﻿‌‌‍‍‌‌‍﻿‍​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿‍​‌‍‌‍‌‍‌​​﻿‍​​﻿​​​‍﻿‌‌‍​‍​﻿‍‌​﻿‍‌‌‍‌​​‍﻿‌​﻿‌​​﻿‌‍‌‍‌​​﻿‍‌​‍﻿‌​﻿‍​​﻿‍‌​﻿​﻿​﻿‌‌​‍﻿‌​﻿‌‍​﻿‍​​﻿‌‌‌‍‌‍‌‍​‌​﻿​﻿‌‍​‍​﻿‍​​﻿​‍​﻿​﻿​﻿‌‍​﻿‌‍​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍﻿​‌‍​‌‌‍﻿‍‌‍‌​‌‍‍‌‌‍﻿‍‌‍‌﻿​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍​﻿‌‍﻿﻿‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‍​‌‍﻿‍‌​‍﻿‌​‌​‌﻿​​‌‍​﻿‌​‌​‌‌​‍​‍﻿‌‌‌‍​‌​‌​‌‍‍​​﻿‌﻿‌‌‍‍‌‌​﻿​﻿‌‍‌​‍﻿​﻿​‌‌​﻿‍‌﻿‍​‌​‍​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​‌‍﻿﻿‌‍﻿‍‌‍‌‌‌‍﻿‍‌﻿‌​‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​​﻿​‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌﻿‌‌‌﻿​﻿‌﻿‌​‌‍﻿﻿‌‍﻿‌‌‌​‍‌‍‍‌‌‍​﻿‌‍‍​‌‌‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‌‌﻿‌‌‍‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍‍​‌‍‍‌‌‍﻿​‌‍‌​‌﻿​‍‌‍‌‌‌‍﻿‍​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍​‌‌‍​﻿​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌​‍‌‌​﻿​‍‌​‌‍‌‍​‌‌‍‌​‌‍﻿‌‌‍‍‌‌‍﻿‍​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿‍​‌‍‌‍‌‍‌​​﻿‍​​﻿​​​‍﻿‌‌‍​‍​﻿‍‌​﻿‍‌‌‍‌​​‍﻿‌​﻿‌​​﻿‌‍‌‍‌​​﻿‍‌​‍﻿‌​﻿‍​​﻿‍‌​﻿​﻿​﻿‌‌​‍﻿‌​﻿‌‍​﻿‍​​﻿‌‌‌‍‌‍‌‍​‌​﻿​﻿‌‍​‍​﻿‍​​﻿​‍​﻿​﻿​﻿‌‍​﻿‌‍​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍﻿​‌‍​‌‌‍﻿‍‌‍‌​‌‍‍‌‌‍﻿‍‌‍‌﻿​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍​﻿‌‍﻿﻿‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‍​‌‍﻿‍‌​‍﻿‌​‌​‌﻿​​‌‍​﻿‌​‌​‌‌​‍​‍﻿‌‌‌‍​‌​‌​‌‍‍​​﻿‌﻿‌‌‍‍‌‌​﻿​﻿‌‍‌​‍﻿​﻿​‌‌​﻿‍‌﻿‍​‌​‍​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​‌‍﻿﻿‌‍﻿‍‌‍‌‌‌‍﻿‍‌﻿‌​‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​​﻿​‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌﻿‌‌‌﻿​﻿‌﻿‌​‌‍﻿﻿‌‍﻿‌‌‌​‍‌‍‍‌‌‍​﻿‌‍‍​‌‌‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‌‌﻿‌‌‍‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍‍​‌‍‍‌‌‍﻿​‌‍‌​‌﻿​‍‌‍‌‌‌‍﻿‍​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍​‌‌‍​﻿​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‍‌‍‍‌‌﻿​﻿‌​‌​‌﻿​‍‌‍​‌‌‍‌‍‌﻿‌​​﻿﻿‌​‍​‍‌﻿﻿‌ Everything you need to deploy your app​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍​‍﻿﻿‌‍​‌‌‍‌​‌‍﻿‌‌‍‍‌‌‍﻿‍​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿‍​‌‍‌‍‌‍‌​​﻿‍​​﻿​​​‍﻿‌‌‍​‍​﻿‍‌​﻿‍‌‌‍‌​​‍﻿‌​﻿‌​​﻿‌‍‌‍‌​​﻿‍‌​‍﻿‌​﻿‍​​﻿‍‌​﻿​﻿​﻿‌‌​‍﻿‌​﻿‌‍​﻿‍​​﻿‌‌‌‍‌‍‌‍​‌​﻿​﻿‌‍​‍​﻿‍​​﻿​‍​﻿​﻿​﻿‌‍​﻿‌‍​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍﻿​‌‍​‌‌‍﻿‍‌‍‌​‌‍‍‌‌‍﻿‍‌‍‌﻿​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍​﻿‌‍﻿﻿‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‍​‌‍﻿‍‌​‍﻿‌​‌​‌﻿​​‌‍​﻿‌​‌​‌‌​‍​‍﻿‌‌‌‍​‌​‌​‌‍‍​​﻿‌﻿‌‌‍‍‌‌​﻿​﻿‌‍‌​‍﻿​﻿​‌‌​﻿‍‌﻿‍​‌​‍​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​‌‍﻿﻿‌‍﻿‍‌‍‌‌‌‍﻿‍‌﻿‌​‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​​﻿​‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌﻿‌‌‌﻿​﻿‌﻿‌​‌‍﻿﻿‌‍﻿‌‌‌​‍‌‍‍‌‌‍​﻿‌‍‍​‌‌‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍‌‌‌‍‌‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍‍​‌‍‍‌‌‍﻿​‌‍‌​‌﻿​‍‌‍‌‌‌‍﻿‍​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍‍‌‌‍‍‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌​‍‌‌​﻿​‍‌​‌‍‌‍​‌‌‍‌​‌‍﻿‌‌‍‍‌‌‍﻿‍​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿‍​‌‍‌‍‌‍‌​​﻿‍​​﻿​​​‍﻿‌‌‍​‍​﻿‍‌​﻿‍‌‌‍‌​​‍﻿‌​﻿‌​​﻿‌‍‌‍‌​​﻿‍‌​‍﻿‌​﻿‍​​﻿‍‌​﻿​﻿​﻿‌‌​‍﻿‌​﻿‌‍​﻿‍​​﻿‌‌‌‍‌‍‌‍​‌​﻿​﻿‌‍​‍​﻿‍​​﻿​‍​﻿​﻿​﻿‌‍​﻿‌‍​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍﻿​‌‍​‌‌‍﻿‍‌‍‌​‌‍‍‌‌‍﻿‍‌‍‌﻿​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍​﻿‌‍﻿﻿‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‍​‌‍﻿‍‌​‍﻿‌​‌​‌﻿​​‌‍​﻿‌​‌​‌‌​‍​‍﻿‌‌‌‍​‌​‌​‌‍‍​​﻿‌﻿‌‌‍‍‌‌​﻿​﻿‌‍‌​‍﻿​﻿​‌‌​﻿‍‌﻿‍​‌​‍​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​‌‍﻿﻿‌‍﻿‍‌‍‌‌‌‍﻿‍‌﻿‌​‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​​﻿​‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌﻿‌‌‌﻿​﻿‌﻿‌​‌‍﻿﻿‌‍﻿‌‌‌​‍‌‍‍‌‌‍​﻿‌‍‍​‌‌‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍‌‌‌‍‌‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍‍​‌‍‍‌‌‍﻿​‌‍‌​‌﻿​‍‌‍‌‌‌‍﻿‍​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍‍‌‌‍‍‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‍‌‍‍‌‌﻿​﻿‌​‌​‌﻿​‍‌‍​‌‌‍‌‍‌﻿‌​​﻿﻿‌​‍​‍‌﻿﻿‌ Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍​‍﻿﻿‌‍​‌‌‍‌​‌‍﻿‌‌‍‍‌‌‍﻿‍​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿‍​‌‍‌‍‌‍‌​​﻿‍​​﻿​​​‍﻿‌‌‍​‍​﻿‍‌​﻿‍‌‌‍‌​​‍﻿‌​﻿‌​​﻿‌‍‌‍‌​​﻿‍‌​‍﻿‌​﻿‍​​﻿‍‌​﻿​﻿​﻿‌‌​‍﻿‌​﻿‌‍​﻿‍​​﻿‌‌‌‍‌‍‌‍​‌​﻿​﻿‌‍​‍​﻿‍​​﻿​‍​﻿​﻿​﻿‌‍​﻿‌‍​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍﻿​‌‍​‌‌‍﻿‍‌‍‌​‌‍‍‌‌‍﻿‍‌‍‌﻿​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍​﻿‌‍﻿﻿‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‍​‌‍﻿‍‌​‍﻿‌​‌​‌﻿​​‌‍​﻿‌​‌​‌‌​‍​‍﻿‌‌‌‍​‌​‌​‌‍‍​​﻿‌﻿‌‌‍‍‌‌​﻿​﻿‌‍‌​‍﻿​﻿​‌‌​﻿‍‌﻿‍​‌​‍​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​‌‍﻿﻿‌‍﻿‍‌‍‌‌‌‍﻿‍‌﻿‌​‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​​﻿​‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌﻿‌‌‌﻿​﻿‌﻿‌​‌‍﻿﻿‌‍﻿‌‌‌​‍‌‍‍‌‌‍​﻿‌‍‍​‌‌‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍﻿‌‌‍﻿​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍‍​‌‍‍‌‌‍﻿​‌‍‌​‌﻿​‍‌‍‌‌‌‍﻿‍​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌﻿​‌‌‍﻿﻿​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌​‍‌‌​﻿​‍‌​‌‍‌‍​‌‌‍‌​‌‍﻿‌‌‍‍‌‌‍﻿‍​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿‍​‌‍‌‍‌‍‌​​﻿‍​​﻿​​​‍﻿‌‌‍​‍​﻿‍‌​﻿‍‌‌‍‌​​‍﻿‌​﻿‌​​﻿‌‍‌‍‌​​﻿‍‌​‍﻿‌​﻿‍​​﻿‍‌​﻿​﻿​﻿‌‌​‍﻿‌​﻿‌‍​﻿‍​​﻿‌‌‌‍‌‍‌‍​‌​﻿​﻿‌‍​‍​﻿‍​​﻿​‍​﻿​﻿​﻿‌‍​﻿‌‍​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍﻿​‌‍​‌‌‍﻿‍‌‍‌​‌‍‍‌‌‍﻿‍‌‍‌﻿​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍​﻿‌‍﻿﻿‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‍​‌‍﻿‍‌​‍﻿‌​‌​‌﻿​​‌‍​﻿‌​‌​‌‌​‍​‍﻿‌‌‌‍​‌​‌​‌‍‍​​﻿‌﻿‌‌‍‍‌‌​﻿​﻿‌‍‌​‍﻿​﻿​‌‌​﻿‍‌﻿‍​‌​‍​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​‌‍﻿﻿‌‍﻿‍‌‍‌‌‌‍﻿‍‌﻿‌​‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​​﻿​‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌﻿‌‌‌﻿​﻿‌﻿‌​‌‍﻿﻿‌‍﻿‌‌‌​‍‌‍‍‌‌‍​﻿‌‍‍​‌‌‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍﻿‌‌‍﻿​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍‍​‌‍‍‌‌‍﻿​‌‍‌​‌﻿​‍‌‍‌‌‌‍﻿‍​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌﻿​‌‌‍﻿﻿​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‍‌‍‍‌‌﻿​﻿‌​‌​‌﻿​‍‌‍​‌‌‍‌‍‌﻿‌​​﻿﻿‌​‍​‍‌﻿﻿‌ untitled​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍​‍﻿﻿‌﻿​﻿‌﻿‌​‌﻿‌‌‌‍‌​‌‍‍‌‌‍﻿﻿​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿​​‌‍​‌​﻿​‍​﻿‍​​﻿‌﻿​﻿‌​​﻿‌​‌‍‌​​‍﻿‌​﻿‌‍​﻿​​​﻿​‍‌‍​‍​‍﻿‌​﻿‌​​﻿‍‌‌‍​‌​﻿​﻿​‍﻿‌‌‍​‍​﻿‍‌​﻿​‌‌‍​‌​‍﻿‌​﻿​‌​﻿‌﻿‌‍​‌​﻿‌‌​﻿‌‍‌‍‌‌​﻿​﻿‌‍​﻿​﻿‌﻿​﻿‍​​﻿​﻿​﻿​‍​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌﻿​​‌‍​‌‌‍‌﻿‌‍‌‌​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿​﻿‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍‌﻿​﻿‌​​‍‌‍﻿﻿‌‍‌​‌﻿‍‌​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍​﻿​‍​﻿‍‌‌‍‌‍‌‍‌‌​﻿‌‍‌‍​‌​﻿‍​​﻿​‍‌‍‌‍​﻿‍​​﻿​‍​﻿‌‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿​‌﻿‌‌‌‍﻿‌‌‍﻿‍‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍‌‌​﻿‌‌​﻿‍​​﻿‌‌​﻿​‌‌‍​‍‌‍‌‌​﻿‌​​﻿​﻿​﻿​‌​﻿​‌​﻿​​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍‌‌‌‍​‌‌‍​‌‌‍‌‍‌‍‌‌‌‍​‌‌‍​‌‌‍​‌‌‍‌‌​﻿​​‌‍‌‍​﻿​‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍‍‌‌﻿‌​‌‍‌‌‌‍﻿‌‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍‌‌‌‍​‌‌‍​﻿​﻿‌﻿‌‍​‌​﻿‍​​﻿​​​﻿​​​﻿​﻿‌‍‌‌​﻿​‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍‌​‌‍‌‌‌﻿​﻿‌‍​﻿‌﻿​‍‌‍‍‌‌﻿​​‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌​‍‌‌​﻿​‍‌​‌‍‌﻿​﻿‌﻿‌​‌﻿‌‌‌‍‌​‌‍‍‌‌‍﻿﻿​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿​​‌‍​‌​﻿​‍​﻿‍​​﻿‌﻿​﻿‌​​﻿‌​‌‍‌​​‍﻿‌​﻿‌‍​﻿​​​﻿​‍‌‍​‍​‍﻿‌​﻿‌​​﻿‍‌‌‍​‌​﻿​﻿​‍﻿‌‌‍​‍​﻿‍‌​﻿​‌‌‍​‌​‍﻿‌​﻿​‌​﻿‌﻿‌‍​‌​﻿‌‌​﻿‌‍‌‍‌‌​﻿​﻿‌‍​﻿​﻿‌﻿​﻿‍​​﻿​﻿​﻿​‍​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌﻿​​‌‍​‌‌‍‌﻿‌‍‌‌​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿​﻿‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍‌﻿​﻿‌​​‍‌‍﻿﻿‌‍‌​‌﻿‍‌​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍​﻿​‍​﻿‍‌‌‍‌‍‌‍‌‌​﻿‌‍‌‍​‌​﻿‍​​﻿​‍‌‍‌‍​﻿‍​​﻿​‍​﻿‌‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿​‌﻿‌‌‌‍﻿‌‌‍﻿‍‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍‌‌​﻿‌‌​﻿‍​​﻿‌‌​﻿​‌‌‍​‍‌‍‌‌​﻿‌​​﻿​﻿​﻿​‌​﻿​‌​﻿​​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍‌‌‌‍​‌‌‍​‌‌‍‌‍‌‍‌‌‌‍​‌‌‍​‌‌‍​‌‌‍‌‌​﻿​​‌‍‌‍​﻿​‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍‍‌‌﻿‌​‌‍‌‌‌‍﻿‌‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍‌‌‌‍​‌‌‍​﻿​﻿‌﻿‌‍​‌​﻿‍​​﻿​​​﻿​​​﻿​﻿‌‍‌‌​﻿​‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍‌​‌‍‌‌‌﻿​﻿‌‍​﻿‌﻿​‍‌‍‍‌‌﻿​​‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​‍‌‍‌‍‍‌‌﻿​﻿‌​‌​‌﻿​‍‌‍​‌‌‍‌‍‌﻿‌​​﻿﻿‌​‍​‍‌﻿﻿‌"
+                                "description": "Create Vercel and Sanity accounts instantly. Get your project environment ready in minutes"
                               },
                               {
-                                "_uid": "8420f38b-342e-4a62-a697-056c05ea907c",
+                                "_uid": "0e21632e-9f2c-44e6-8688-594a23499d84",
                                 "link": [],
                                 "image": [
                                   {
-                                    "_uid": "04b5451b-5dd9-4568-ac75-3622b1990178",
+                                    "_uid": "cd52c7ee-f72d-4ebc-8b5b-febf0db5a5f5",
                                     "asset": {
                                       "id": 17287559,
                                       "alt": "",
@@ -2359,16 +3193,16 @@
                                   }
                                 ],
                                 "style": "icon-left",
-                                "title": "Push to deploy",
+                                "title": "GitHub Integration: ",
                                 "component": "defaultCard",
-                                "description": "Deploy faster​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍​‍﻿﻿‌‍​‌‌‍‌​‌‍﻿‌‌‍‍‌‌‍﻿‍​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿‍​‌‍‌‍‌‍‌​​﻿‍​​﻿​​​‍﻿‌‌‍​‍​﻿‍‌​﻿‍‌‌‍‌​​‍﻿‌​﻿‌​​﻿‌‍‌‍‌​​﻿‍‌​‍﻿‌​﻿‍​​﻿‍‌​﻿​﻿​﻿‌‌​‍﻿‌​﻿‌‍​﻿‍​​﻿‌‌‌‍‌‍‌‍​‌​﻿​﻿‌‍​‍​﻿‍​​﻿​‍​﻿​﻿​﻿‌‍​﻿‌‍​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍﻿​‌‍​‌‌‍﻿‍‌‍‌​‌‍‍‌‌‍﻿‍‌‍‌﻿​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍​﻿‌‍﻿﻿‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‍​‌‍﻿‍‌​‍﻿‌​‌​‌﻿​​‌‍​﻿‌​‌​‌‌​‍​‍﻿‌‌‌‍​‌​‌​‌‍‍​​﻿‌﻿‌‌‍‍‌‌​﻿​﻿‌‍‌​‍﻿​﻿​‌‌​﻿‍‌﻿‍​‌​‍​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​‌‍﻿﻿‌‍﻿‍‌‍‌‌‌‍﻿‍‌﻿‌​‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​​﻿​‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌﻿‌‌‌﻿​﻿‌﻿‌​‌‍﻿﻿‌‍﻿‌‌‌​‍‌‍‍‌‌‍​﻿‌‍‍​‌‌‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‌‌﻿‌‌‍‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍‍​‌‍‍‌‌‍﻿​‌‍‌​‌﻿​‍‌‍‌‌‌‍﻿‍​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍​‌‌‍​﻿​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌​‍‌‌​﻿​‍‌​‌‍‌‍​‌‌‍‌​‌‍﻿‌‌‍‍‌‌‍﻿‍​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿‍​‌‍‌‍‌‍‌​​﻿‍​​﻿​​​‍﻿‌‌‍​‍​﻿‍‌​﻿‍‌‌‍‌​​‍﻿‌​﻿‌​​﻿‌‍‌‍‌​​﻿‍‌​‍﻿‌​﻿‍​​﻿‍‌​﻿​﻿​﻿‌‌​‍﻿‌​﻿‌‍​﻿‍​​﻿‌‌‌‍‌‍‌‍​‌​﻿​﻿‌‍​‍​﻿‍​​﻿​‍​﻿​﻿​﻿‌‍​﻿‌‍​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍﻿​‌‍​‌‌‍﻿‍‌‍‌​‌‍‍‌‌‍﻿‍‌‍‌﻿​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍​﻿‌‍﻿﻿‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‍​‌‍﻿‍‌​‍﻿‌​‌​‌﻿​​‌‍​﻿‌​‌​‌‌​‍​‍﻿‌‌‌‍​‌​‌​‌‍‍​​﻿‌﻿‌‌‍‍‌‌​﻿​﻿‌‍‌​‍﻿​﻿​‌‌​﻿‍‌﻿‍​‌​‍​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​‌‍﻿﻿‌‍﻿‍‌‍‌‌‌‍﻿‍‌﻿‌​‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​​﻿​‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌﻿‌‌‌﻿​﻿‌﻿‌​‌‍﻿﻿‌‍﻿‌‌‌​‍‌‍‍‌‌‍​﻿‌‍‍​‌‌‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‌‌﻿‌‌‍‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍‍​‌‍‍‌‌‍﻿​‌‍‌​‌﻿​‍‌‍‌‌‌‍﻿‍​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍​‌‌‍​﻿​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‍‌‍‍‌‌﻿​﻿‌​‌​‌﻿​‍‌‍​‌‌‍‌‍‌﻿‌​​﻿﻿‌​‍​‍‌﻿﻿‌ Everything you need to deploy your app​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍​‍﻿﻿‌‍​‌‌‍‌​‌‍﻿‌‌‍‍‌‌‍﻿‍​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿‍​‌‍‌‍‌‍‌​​﻿‍​​﻿​​​‍﻿‌‌‍​‍​﻿‍‌​﻿‍‌‌‍‌​​‍﻿‌​﻿‌​​﻿‌‍‌‍‌​​﻿‍‌​‍﻿‌​﻿‍​​﻿‍‌​﻿​﻿​﻿‌‌​‍﻿‌​﻿‌‍​﻿‍​​﻿‌‌‌‍‌‍‌‍​‌​﻿​﻿‌‍​‍​﻿‍​​﻿​‍​﻿​﻿​﻿‌‍​﻿‌‍​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍﻿​‌‍​‌‌‍﻿‍‌‍‌​‌‍‍‌‌‍﻿‍‌‍‌﻿​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍​﻿‌‍﻿﻿‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‍​‌‍﻿‍‌​‍﻿‌​‌​‌﻿​​‌‍​﻿‌​‌​‌‌​‍​‍﻿‌‌‌‍​‌​‌​‌‍‍​​﻿‌﻿‌‌‍‍‌‌​﻿​﻿‌‍‌​‍﻿​﻿​‌‌​﻿‍‌﻿‍​‌​‍​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​‌‍﻿﻿‌‍﻿‍‌‍‌‌‌‍﻿‍‌﻿‌​‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​​﻿​‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌﻿‌‌‌﻿​﻿‌﻿‌​‌‍﻿﻿‌‍﻿‌‌‌​‍‌‍‍‌‌‍​﻿‌‍‍​‌‌‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍‌‌‌‍‌‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍‍​‌‍‍‌‌‍﻿​‌‍‌​‌﻿​‍‌‍‌‌‌‍﻿‍​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍‍‌‌‍‍‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌​‍‌‌​﻿​‍‌​‌‍‌‍​‌‌‍‌​‌‍﻿‌‌‍‍‌‌‍﻿‍​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿‍​‌‍‌‍‌‍‌​​﻿‍​​﻿​​​‍﻿‌‌‍​‍​﻿‍‌​﻿‍‌‌‍‌​​‍﻿‌​﻿‌​​﻿‌‍‌‍‌​​﻿‍‌​‍﻿‌​﻿‍​​﻿‍‌​﻿​﻿​﻿‌‌​‍﻿‌​﻿‌‍​﻿‍​​﻿‌‌‌‍‌‍‌‍​‌​﻿​﻿‌‍​‍​﻿‍​​﻿​‍​﻿​﻿​﻿‌‍​﻿‌‍​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍﻿​‌‍​‌‌‍﻿‍‌‍‌​‌‍‍‌‌‍﻿‍‌‍‌﻿​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍​﻿‌‍﻿﻿‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‍​‌‍﻿‍‌​‍﻿‌​‌​‌﻿​​‌‍​﻿‌​‌​‌‌​‍​‍﻿‌‌‌‍​‌​‌​‌‍‍​​﻿‌﻿‌‌‍‍‌‌​﻿​﻿‌‍‌​‍﻿​﻿​‌‌​﻿‍‌﻿‍​‌​‍​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​‌‍﻿﻿‌‍﻿‍‌‍‌‌‌‍﻿‍‌﻿‌​‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​​﻿​‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌﻿‌‌‌﻿​﻿‌﻿‌​‌‍﻿﻿‌‍﻿‌‌‌​‍‌‍‍‌‌‍​﻿‌‍‍​‌‌‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍‌‌‌‍‌‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍‍​‌‍‍‌‌‍﻿​‌‍‌​‌﻿​‍‌‍‌‌‌‍﻿‍​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍‍‌‌‍‍‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‍‌‍‍‌‌﻿​﻿‌​‌​‌﻿​‍‌‍​‌‌‍‌‍‌﻿‌​​﻿﻿‌​‍​‍‌﻿﻿‌ Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍​‍﻿﻿‌‍​‌‌‍‌​‌‍﻿‌‌‍‍‌‌‍﻿‍​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿‍​‌‍‌‍‌‍‌​​﻿‍​​﻿​​​‍﻿‌‌‍​‍​﻿‍‌​﻿‍‌‌‍‌​​‍﻿‌​﻿‌​​﻿‌‍‌‍‌​​﻿‍‌​‍﻿‌​﻿‍​​﻿‍‌​﻿​﻿​﻿‌‌​‍﻿‌​﻿‌‍​﻿‍​​﻿‌‌‌‍‌‍‌‍​‌​﻿​﻿‌‍​‍​﻿‍​​﻿​‍​﻿​﻿​﻿‌‍​﻿‌‍​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍﻿​‌‍​‌‌‍﻿‍‌‍‌​‌‍‍‌‌‍﻿‍‌‍‌﻿​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍​﻿‌‍﻿﻿‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‍​‌‍﻿‍‌​‍﻿‌​‌​‌﻿​​‌‍​﻿‌​‌​‌‌​‍​‍﻿‌‌‌‍​‌​‌​‌‍‍​​﻿‌﻿‌‌‍‍‌‌​﻿​﻿‌‍‌​‍﻿​﻿​‌‌​﻿‍‌﻿‍​‌​‍​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​‌‍﻿﻿‌‍﻿‍‌‍‌‌‌‍﻿‍‌﻿‌​‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​​﻿​‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌﻿‌‌‌﻿​﻿‌﻿‌​‌‍﻿﻿‌‍﻿‌‌‌​‍‌‍‍‌‌‍​﻿‌‍‍​‌‌‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍﻿‌‌‍﻿​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍‍​‌‍‍‌‌‍﻿​‌‍‌​‌﻿​‍‌‍‌‌‌‍﻿‍​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌﻿​‌‌‍﻿﻿​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌​‍‌‌​﻿​‍‌​‌‍‌‍​‌‌‍‌​‌‍﻿‌‌‍‍‌‌‍﻿‍​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿‍​‌‍‌‍‌‍‌​​﻿‍​​﻿​​​‍﻿‌‌‍​‍​﻿‍‌​﻿‍‌‌‍‌​​‍﻿‌​﻿‌​​﻿‌‍‌‍‌​​﻿‍‌​‍﻿‌​﻿‍​​﻿‍‌​﻿​﻿​﻿‌‌​‍﻿‌​﻿‌‍​﻿‍​​﻿‌‌‌‍‌‍‌‍​‌​﻿​﻿‌‍​‍​﻿‍​​﻿​‍​﻿​﻿​﻿‌‍​﻿‌‍​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍﻿​‌‍​‌‌‍﻿‍‌‍‌​‌‍‍‌‌‍﻿‍‌‍‌﻿​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍​﻿‌‍﻿﻿‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‍​‌‍﻿‍‌​‍﻿‌​‌​‌﻿​​‌‍​﻿‌​‌​‌‌​‍​‍﻿‌‌‌‍​‌​‌​‌‍‍​​﻿‌﻿‌‌‍‍‌‌​﻿​﻿‌‍‌​‍﻿​﻿​‌‌​﻿‍‌﻿‍​‌​‍​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​‌‍﻿﻿‌‍﻿‍‌‍‌‌‌‍﻿‍‌﻿‌​‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​​﻿​‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌﻿‌‌‌﻿​﻿‌﻿‌​‌‍﻿﻿‌‍﻿‌‌‌​‍‌‍‍‌‌‍​﻿‌‍‍​‌‌‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍﻿‌‌‍﻿​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍‍​‌‍‍‌‌‍﻿​‌‍‌​‌﻿​‍‌‍‌‌‌‍﻿‍​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌﻿​‌‌‍﻿﻿​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‍‌‍‍‌‌﻿​﻿‌​‌​‌﻿​‍‌‍​‌‌‍‌‍‌﻿‌​​﻿﻿‌​‍​‍‌﻿﻿‌ untitled​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍​‍﻿﻿‌﻿​﻿‌﻿‌​‌﻿‌‌‌‍‌​‌‍‍‌‌‍﻿﻿​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿​​‌‍​‌​﻿​‍​﻿‍​​﻿‌﻿​﻿‌​​﻿‌​‌‍‌​​‍﻿‌​﻿‌‍​﻿​​​﻿​‍‌‍​‍​‍﻿‌​﻿‌​​﻿‍‌‌‍​‌​﻿​﻿​‍﻿‌‌‍​‍​﻿‍‌​﻿​‌‌‍​‌​‍﻿‌​﻿​‌​﻿‌﻿‌‍​‌​﻿‌‌​﻿‌‍‌‍‌‌​﻿​﻿‌‍​﻿​﻿‌﻿​﻿‍​​﻿​﻿​﻿​‍​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌﻿​​‌‍​‌‌‍‌﻿‌‍‌‌​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿​﻿‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍‌﻿​﻿‌​​‍‌‍﻿﻿‌‍‌​‌﻿‍‌​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍​﻿​‍​﻿‍‌‌‍‌‍‌‍‌‌​﻿‌‍‌‍​‌​﻿‍​​﻿​‍‌‍‌‍​﻿‍​​﻿​‍​﻿‌‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿​‌﻿‌‌‌‍﻿‌‌‍﻿‍‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍‌‌​﻿‌‌​﻿‍​​﻿‌‌​﻿​‌‌‍​‍‌‍‌‌​﻿‌​​﻿​﻿​﻿​‌​﻿​‌​﻿​​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍‌‌‌‍​‌‌‍​‌‌‍‌‍‌‍‌‌‌‍​‌‌‍​‌‌‍​‌‌‍‌‌​﻿​​‌‍‌‍​﻿​‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍‍‌‌﻿‌​‌‍‌‌‌‍﻿‌‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍‌‌‌‍​‌‌‍​﻿​﻿‌﻿‌‍​‌​﻿‍​​﻿​​​﻿​​​﻿​﻿‌‍‌‌​﻿​‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍‌​‌‍‌‌‌﻿​﻿‌‍​﻿‌﻿​‍‌‍‍‌‌﻿​​‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌​‍‌‌​﻿​‍‌​‌‍‌﻿​﻿‌﻿‌​‌﻿‌‌‌‍‌​‌‍‍‌‌‍﻿﻿​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿​​‌‍​‌​﻿​‍​﻿‍​​﻿‌﻿​﻿‌​​﻿‌​‌‍‌​​‍﻿‌​﻿‌‍​﻿​​​﻿​‍‌‍​‍​‍﻿‌​﻿‌​​﻿‍‌‌‍​‌​﻿​﻿​‍﻿‌‌‍​‍​﻿‍‌​﻿​‌‌‍​‌​‍﻿‌​﻿​‌​﻿‌﻿‌‍​‌​﻿‌‌​﻿‌‍‌‍‌‌​﻿​﻿‌‍​﻿​﻿‌﻿​﻿‍​​﻿​﻿​﻿​‍​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌﻿​​‌‍​‌‌‍‌﻿‌‍‌‌​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿​﻿‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍‌﻿​﻿‌​​‍‌‍﻿﻿‌‍‌​‌﻿‍‌​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍​﻿​‍​﻿‍‌‌‍‌‍‌‍‌‌​﻿‌‍‌‍​‌​﻿‍​​﻿​‍‌‍‌‍​﻿‍​​﻿​‍​﻿‌‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿​‌﻿‌‌‌‍﻿‌‌‍﻿‍‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍‌‌​﻿‌‌​﻿‍​​﻿‌‌​﻿​‌‌‍​‍‌‍‌‌​﻿‌​​﻿​﻿​﻿​‌​﻿​‌​﻿​​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍‌‌‌‍​‌‌‍​‌‌‍‌‍‌‍‌‌‌‍​‌‌‍​‌‌‍​‌‌‍‌‌​﻿​​‌‍‌‍​﻿​‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍‍‌‌﻿‌​‌‍‌‌‌‍﻿‌‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍‌‌‌‍​‌‌‍​﻿​﻿‌﻿‌‍​‌​﻿‍​​﻿​​​﻿​​​﻿​﻿‌‍‌‌​﻿​‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍‌​‌‍‌‌‌﻿​﻿‌‍​﻿‌﻿​‍‌‍‍‌‌﻿​​‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​‍‌‍‌‍‍‌‌﻿​﻿‌​‌​‌﻿​‍‌‍​‌‌‍‌‍‌﻿‌​​﻿﻿‌​‍​‍‌﻿﻿‌"
+                                "description": "Connect to your GitHub repository effortlessly. Set up webhooks and streamline your development process"
                               },
                               {
-                                "_uid": "d3a67955-0cb1-48a0-97c8-d54ab5a820bb",
+                                "_uid": "f95bec4f-6b36-451d-8b96-76f64b2c7a50",
                                 "link": [],
                                 "image": [
                                   {
-                                    "_uid": "13ebabd2-b409-4ed4-b736-cdb9d898cafb",
+                                    "_uid": "736e6a4c-d3d0-47d9-8970-05446571aa12",
                                     "asset": {
                                       "id": 17287559,
                                       "alt": "",
@@ -2392,16 +3226,16 @@
                                   }
                                 ],
                                 "style": "icon-left",
-                                "title": "Push to deploy",
+                                "title": "Easy Deployment: ",
                                 "component": "defaultCard",
-                                "description": "Deploy faster​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍​‍﻿﻿‌‍​‌‌‍‌​‌‍﻿‌‌‍‍‌‌‍﻿‍​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿‍​‌‍‌‍‌‍‌​​﻿‍​​﻿​​​‍﻿‌‌‍​‍​﻿‍‌​﻿‍‌‌‍‌​​‍﻿‌​﻿‌​​﻿‌‍‌‍‌​​﻿‍‌​‍﻿‌​﻿‍​​﻿‍‌​﻿​﻿​﻿‌‌​‍﻿‌​﻿‌‍​﻿‍​​﻿‌‌‌‍‌‍‌‍​‌​﻿​﻿‌‍​‍​﻿‍​​﻿​‍​﻿​﻿​﻿‌‍​﻿‌‍​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍﻿​‌‍​‌‌‍﻿‍‌‍‌​‌‍‍‌‌‍﻿‍‌‍‌﻿​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍​﻿‌‍﻿﻿‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‍​‌‍﻿‍‌​‍﻿‌​‌​‌﻿​​‌‍​﻿‌​‌​‌‌​‍​‍﻿‌‌‌‍​‌​‌​‌‍‍​​﻿‌﻿‌‌‍‍‌‌​﻿​﻿‌‍‌​‍﻿​﻿​‌‌​﻿‍‌﻿‍​‌​‍​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​‌‍﻿﻿‌‍﻿‍‌‍‌‌‌‍﻿‍‌﻿‌​‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​​﻿​‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌﻿‌‌‌﻿​﻿‌﻿‌​‌‍﻿﻿‌‍﻿‌‌‌​‍‌‍‍‌‌‍​﻿‌‍‍​‌‌‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‌‌﻿‌‌‍‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍‍​‌‍‍‌‌‍﻿​‌‍‌​‌﻿​‍‌‍‌‌‌‍﻿‍​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍​‌‌‍​﻿​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌​‍‌‌​﻿​‍‌​‌‍‌‍​‌‌‍‌​‌‍﻿‌‌‍‍‌‌‍﻿‍​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿‍​‌‍‌‍‌‍‌​​﻿‍​​﻿​​​‍﻿‌‌‍​‍​﻿‍‌​﻿‍‌‌‍‌​​‍﻿‌​﻿‌​​﻿‌‍‌‍‌​​﻿‍‌​‍﻿‌​﻿‍​​﻿‍‌​﻿​﻿​﻿‌‌​‍﻿‌​﻿‌‍​﻿‍​​﻿‌‌‌‍‌‍‌‍​‌​﻿​﻿‌‍​‍​﻿‍​​﻿​‍​﻿​﻿​﻿‌‍​﻿‌‍​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍﻿​‌‍​‌‌‍﻿‍‌‍‌​‌‍‍‌‌‍﻿‍‌‍‌﻿​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍​﻿‌‍﻿﻿‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‍​‌‍﻿‍‌​‍﻿‌​‌​‌﻿​​‌‍​﻿‌​‌​‌‌​‍​‍﻿‌‌‌‍​‌​‌​‌‍‍​​﻿‌﻿‌‌‍‍‌‌​﻿​﻿‌‍‌​‍﻿​﻿​‌‌​﻿‍‌﻿‍​‌​‍​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​‌‍﻿﻿‌‍﻿‍‌‍‌‌‌‍﻿‍‌﻿‌​‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​​﻿​‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌﻿‌‌‌﻿​﻿‌﻿‌​‌‍﻿﻿‌‍﻿‌‌‌​‍‌‍‍‌‌‍​﻿‌‍‍​‌‌‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‌‌﻿‌‌‍‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍‍​‌‍‍‌‌‍﻿​‌‍‌​‌﻿​‍‌‍‌‌‌‍﻿‍​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍​‌‌‍​﻿​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‍‌‍‍‌‌﻿​﻿‌​‌​‌﻿​‍‌‍​‌‌‍‌‍‌﻿‌​​﻿﻿‌​‍​‍‌﻿﻿‌ Everything you need to deploy your app​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍​‍﻿﻿‌‍​‌‌‍‌​‌‍﻿‌‌‍‍‌‌‍﻿‍​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿‍​‌‍‌‍‌‍‌​​﻿‍​​﻿​​​‍﻿‌‌‍​‍​﻿‍‌​﻿‍‌‌‍‌​​‍﻿‌​﻿‌​​﻿‌‍‌‍‌​​﻿‍‌​‍﻿‌​﻿‍​​﻿‍‌​﻿​﻿​﻿‌‌​‍﻿‌​﻿‌‍​﻿‍​​﻿‌‌‌‍‌‍‌‍​‌​﻿​﻿‌‍​‍​﻿‍​​﻿​‍​﻿​﻿​﻿‌‍​﻿‌‍​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍﻿​‌‍​‌‌‍﻿‍‌‍‌​‌‍‍‌‌‍﻿‍‌‍‌﻿​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍​﻿‌‍﻿﻿‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‍​‌‍﻿‍‌​‍﻿‌​‌​‌﻿​​‌‍​﻿‌​‌​‌‌​‍​‍﻿‌‌‌‍​‌​‌​‌‍‍​​﻿‌﻿‌‌‍‍‌‌​﻿​﻿‌‍‌​‍﻿​﻿​‌‌​﻿‍‌﻿‍​‌​‍​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​‌‍﻿﻿‌‍﻿‍‌‍‌‌‌‍﻿‍‌﻿‌​‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​​﻿​‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌﻿‌‌‌﻿​﻿‌﻿‌​‌‍﻿﻿‌‍﻿‌‌‌​‍‌‍‍‌‌‍​﻿‌‍‍​‌‌‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍‌‌‌‍‌‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍‍​‌‍‍‌‌‍﻿​‌‍‌​‌﻿​‍‌‍‌‌‌‍﻿‍​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍‍‌‌‍‍‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌​‍‌‌​﻿​‍‌​‌‍‌‍​‌‌‍‌​‌‍﻿‌‌‍‍‌‌‍﻿‍​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿‍​‌‍‌‍‌‍‌​​﻿‍​​﻿​​​‍﻿‌‌‍​‍​﻿‍‌​﻿‍‌‌‍‌​​‍﻿‌​﻿‌​​﻿‌‍‌‍‌​​﻿‍‌​‍﻿‌​﻿‍​​﻿‍‌​﻿​﻿​﻿‌‌​‍﻿‌​﻿‌‍​﻿‍​​﻿‌‌‌‍‌‍‌‍​‌​﻿​﻿‌‍​‍​﻿‍​​﻿​‍​﻿​﻿​﻿‌‍​﻿‌‍​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍﻿​‌‍​‌‌‍﻿‍‌‍‌​‌‍‍‌‌‍﻿‍‌‍‌﻿​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍​﻿‌‍﻿﻿‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‍​‌‍﻿‍‌​‍﻿‌​‌​‌﻿​​‌‍​﻿‌​‌​‌‌​‍​‍﻿‌‌‌‍​‌​‌​‌‍‍​​﻿‌﻿‌‌‍‍‌‌​﻿​﻿‌‍‌​‍﻿​﻿​‌‌​﻿‍‌﻿‍​‌​‍​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​‌‍﻿﻿‌‍﻿‍‌‍‌‌‌‍﻿‍‌﻿‌​‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​​﻿​‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌﻿‌‌‌﻿​﻿‌﻿‌​‌‍﻿﻿‌‍﻿‌‌‌​‍‌‍‍‌‌‍​﻿‌‍‍​‌‌‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍‌‌‌‍‌‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍‍​‌‍‍‌‌‍﻿​‌‍‌​‌﻿​‍‌‍‌‌‌‍﻿‍​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍‍‌‌‍‍‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‍‌‍‍‌‌﻿​﻿‌​‌​‌﻿​‍‌‍​‌‌‍‌‍‌﻿‌​​﻿﻿‌​‍​‍‌﻿﻿‌ Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍​‍﻿﻿‌‍​‌‌‍‌​‌‍﻿‌‌‍‍‌‌‍﻿‍​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿‍​‌‍‌‍‌‍‌​​﻿‍​​﻿​​​‍﻿‌‌‍​‍​﻿‍‌​﻿‍‌‌‍‌​​‍﻿‌​﻿‌​​﻿‌‍‌‍‌​​﻿‍‌​‍﻿‌​﻿‍​​﻿‍‌​﻿​﻿​﻿‌‌​‍﻿‌​﻿‌‍​﻿‍​​﻿‌‌‌‍‌‍‌‍​‌​﻿​﻿‌‍​‍​﻿‍​​﻿​‍​﻿​﻿​﻿‌‍​﻿‌‍​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍﻿​‌‍​‌‌‍﻿‍‌‍‌​‌‍‍‌‌‍﻿‍‌‍‌﻿​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍​﻿‌‍﻿﻿‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‍​‌‍﻿‍‌​‍﻿‌​‌​‌﻿​​‌‍​﻿‌​‌​‌‌​‍​‍﻿‌‌‌‍​‌​‌​‌‍‍​​﻿‌﻿‌‌‍‍‌‌​﻿​﻿‌‍‌​‍﻿​﻿​‌‌​﻿‍‌﻿‍​‌​‍​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​‌‍﻿﻿‌‍﻿‍‌‍‌‌‌‍﻿‍‌﻿‌​‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​​﻿​‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌﻿‌‌‌﻿​﻿‌﻿‌​‌‍﻿﻿‌‍﻿‌‌‌​‍‌‍‍‌‌‍​﻿‌‍‍​‌‌‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍﻿‌‌‍﻿​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍‍​‌‍‍‌‌‍﻿​‌‍‌​‌﻿​‍‌‍‌‌‌‍﻿‍​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌﻿​‌‌‍﻿﻿​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌​‍‌‌​﻿​‍‌​‌‍‌‍​‌‌‍‌​‌‍﻿‌‌‍‍‌‌‍﻿‍​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿‍​‌‍‌‍‌‍‌​​﻿‍​​﻿​​​‍﻿‌‌‍​‍​﻿‍‌​﻿‍‌‌‍‌​​‍﻿‌​﻿‌​​﻿‌‍‌‍‌​​﻿‍‌​‍﻿‌​﻿‍​​﻿‍‌​﻿​﻿​﻿‌‌​‍﻿‌​﻿‌‍​﻿‍​​﻿‌‌‌‍‌‍‌‍​‌​﻿​﻿‌‍​‍​﻿‍​​﻿​‍​﻿​﻿​﻿‌‍​﻿‌‍​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍﻿​‌‍​‌‌‍﻿‍‌‍‌​‌‍‍‌‌‍﻿‍‌‍‌﻿​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍​﻿‌‍﻿﻿‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‍​‌‍﻿‍‌​‍﻿‌​‌​‌﻿​​‌‍​﻿‌​‌​‌‌​‍​‍﻿‌‌‌‍​‌​‌​‌‍‍​​﻿‌﻿‌‌‍‍‌‌​﻿​﻿‌‍‌​‍﻿​﻿​‌‌​﻿‍‌﻿‍​‌​‍​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​‌‍﻿﻿‌‍﻿‍‌‍‌‌‌‍﻿‍‌﻿‌​‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​​﻿​‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌﻿‌‌‌﻿​﻿‌﻿‌​‌‍﻿﻿‌‍﻿‌‌‌​‍‌‍‍‌‌‍​﻿‌‍‍​‌‌‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍﻿‌‌‍﻿​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍‍​‌‍‍‌‌‍﻿​‌‍‌​‌﻿​‍‌‍‌‌‌‍﻿‍​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌﻿​‌‌‍﻿﻿​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‍‌‍‍‌‌﻿​﻿‌​‌​‌﻿​‍‌‍​‌‌‍‌‍‌﻿‌​​﻿﻿‌​‍​‍‌﻿﻿‌ untitled​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍​‍﻿﻿‌﻿​﻿‌﻿‌​‌﻿‌‌‌‍‌​‌‍‍‌‌‍﻿﻿​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿​​‌‍​‌​﻿​‍​﻿‍​​﻿‌﻿​﻿‌​​﻿‌​‌‍‌​​‍﻿‌​﻿‌‍​﻿​​​﻿​‍‌‍​‍​‍﻿‌​﻿‌​​﻿‍‌‌‍​‌​﻿​﻿​‍﻿‌‌‍​‍​﻿‍‌​﻿​‌‌‍​‌​‍﻿‌​﻿​‌​﻿‌﻿‌‍​‌​﻿‌‌​﻿‌‍‌‍‌‌​﻿​﻿‌‍​﻿​﻿‌﻿​﻿‍​​﻿​﻿​﻿​‍​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌﻿​​‌‍​‌‌‍‌﻿‌‍‌‌​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿​﻿‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍‌﻿​﻿‌​​‍‌‍﻿﻿‌‍‌​‌﻿‍‌​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍​﻿​‍​﻿‍‌‌‍‌‍‌‍‌‌​﻿‌‍‌‍​‌​﻿‍​​﻿​‍‌‍‌‍​﻿‍​​﻿​‍​﻿‌‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿​‌﻿‌‌‌‍﻿‌‌‍﻿‍‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍‌‌​﻿‌‌​﻿‍​​﻿‌‌​﻿​‌‌‍​‍‌‍‌‌​﻿‌​​﻿​﻿​﻿​‌​﻿​‌​﻿​​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍‌‌‌‍​‌‌‍​‌‌‍‌‍‌‍‌‌‌‍​‌‌‍​‌‌‍​‌‌‍‌‌​﻿​​‌‍‌‍​﻿​‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍‍‌‌﻿‌​‌‍‌‌‌‍﻿‌‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍‌‌‌‍​‌‌‍​﻿​﻿‌﻿‌‍​‌​﻿‍​​﻿​​​﻿​​​﻿​﻿‌‍‌‌​﻿​‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍‌​‌‍‌‌‌﻿​﻿‌‍​﻿‌﻿​‍‌‍‍‌‌﻿​​‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌​‍‌‌​﻿​‍‌​‌‍‌﻿​﻿‌﻿‌​‌﻿‌‌‌‍‌​‌‍‍‌‌‍﻿﻿​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿​​‌‍​‌​﻿​‍​﻿‍​​﻿‌﻿​﻿‌​​﻿‌​‌‍‌​​‍﻿‌​﻿‌‍​﻿​​​﻿​‍‌‍​‍​‍﻿‌​﻿‌​​﻿‍‌‌‍​‌​﻿​﻿​‍﻿‌‌‍​‍​﻿‍‌​﻿​‌‌‍​‌​‍﻿‌​﻿​‌​﻿‌﻿‌‍​‌​﻿‌‌​﻿‌‍‌‍‌‌​﻿​﻿‌‍​﻿​﻿‌﻿​﻿‍​​﻿​﻿​﻿​‍​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌﻿​​‌‍​‌‌‍‌﻿‌‍‌‌​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿​﻿‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍‌﻿​﻿‌​​‍‌‍﻿﻿‌‍‌​‌﻿‍‌​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍​﻿​‍​﻿‍‌‌‍‌‍‌‍‌‌​﻿‌‍‌‍​‌​﻿‍​​﻿​‍‌‍‌‍​﻿‍​​﻿​‍​﻿‌‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿​‌﻿‌‌‌‍﻿‌‌‍﻿‍‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍‌‌​﻿‌‌​﻿‍​​﻿‌‌​﻿​‌‌‍​‍‌‍‌‌​﻿‌​​﻿​﻿​﻿​‌​﻿​‌​﻿​​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍‌‌‌‍​‌‌‍​‌‌‍‌‍‌‍‌‌‌‍​‌‌‍​‌‌‍​‌‌‍‌‌​﻿​​‌‍‌‍​﻿​‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍‍‌‌﻿‌​‌‍‌‌‌‍﻿‌‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍‌‌‌‍​‌‌‍​﻿​﻿‌﻿‌‍​‌​﻿‍​​﻿​​​﻿​​​﻿​﻿‌‍‌‌​﻿​‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍‌​‌‍‌‌‌﻿​﻿‌‍​﻿‌﻿​‍‌‍‍‌‌﻿​​‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​‍‌‍‌‍‍‌‌﻿​﻿‌​‌​‌﻿​‍‌‍​‌‌‍‌‍‌﻿‌​​﻿﻿‌​‍​‍‌﻿﻿‌"
+                                "description": "Deploy both your studio and frontend seamlessly. Enjoy a smooth transition from setup to live site"
                               },
                               {
-                                "_uid": "ac423182-87b1-4bc8-9493-899e97c70c56",
+                                "_uid": "df2d3416-0add-4679-91a2-e1fdfb8f1bce",
                                 "link": [],
                                 "image": [
                                   {
-                                    "_uid": "95787605-e452-426d-bece-638fa52eb164",
+                                    "_uid": "5773c62e-a194-43cd-8f78-1cbfaa5bac6d",
                                     "asset": {
                                       "id": 17287559,
                                       "alt": "",
@@ -2425,16 +3259,16 @@
                                   }
                                 ],
                                 "style": "icon-left",
-                                "title": "Push to deploy",
+                                "title": "Content and Components: ",
                                 "component": "defaultCard",
-                                "description": "Deploy faster​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍​‍﻿﻿‌‍​‌‌‍‌​‌‍﻿‌‌‍‍‌‌‍﻿‍​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿‍​‌‍‌‍‌‍‌​​﻿‍​​﻿​​​‍﻿‌‌‍​‍​﻿‍‌​﻿‍‌‌‍‌​​‍﻿‌​﻿‌​​﻿‌‍‌‍‌​​﻿‍‌​‍﻿‌​﻿‍​​﻿‍‌​﻿​﻿​﻿‌‌​‍﻿‌​﻿‌‍​﻿‍​​﻿‌‌‌‍‌‍‌‍​‌​﻿​﻿‌‍​‍​﻿‍​​﻿​‍​﻿​﻿​﻿‌‍​﻿‌‍​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍﻿​‌‍​‌‌‍﻿‍‌‍‌​‌‍‍‌‌‍﻿‍‌‍‌﻿​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍​﻿‌‍﻿﻿‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‍​‌‍﻿‍‌​‍﻿‌​‌​‌﻿​​‌‍​﻿‌​‌​‌‌​‍​‍﻿‌‌‌‍​‌​‌​‌‍‍​​﻿‌﻿‌‌‍‍‌‌​﻿​﻿‌‍‌​‍﻿​﻿​‌‌​﻿‍‌﻿‍​‌​‍​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​‌‍﻿﻿‌‍﻿‍‌‍‌‌‌‍﻿‍‌﻿‌​‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​​﻿​‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌﻿‌‌‌﻿​﻿‌﻿‌​‌‍﻿﻿‌‍﻿‌‌‌​‍‌‍‍‌‌‍​﻿‌‍‍​‌‌‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‌‌﻿‌‌‍‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍‍​‌‍‍‌‌‍﻿​‌‍‌​‌﻿​‍‌‍‌‌‌‍﻿‍​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍​‌‌‍​﻿​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌​‍‌‌​﻿​‍‌​‌‍‌‍​‌‌‍‌​‌‍﻿‌‌‍‍‌‌‍﻿‍​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿‍​‌‍‌‍‌‍‌​​﻿‍​​﻿​​​‍﻿‌‌‍​‍​﻿‍‌​﻿‍‌‌‍‌​​‍﻿‌​﻿‌​​﻿‌‍‌‍‌​​﻿‍‌​‍﻿‌​﻿‍​​﻿‍‌​﻿​﻿​﻿‌‌​‍﻿‌​﻿‌‍​﻿‍​​﻿‌‌‌‍‌‍‌‍​‌​﻿​﻿‌‍​‍​﻿‍​​﻿​‍​﻿​﻿​﻿‌‍​﻿‌‍​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍﻿​‌‍​‌‌‍﻿‍‌‍‌​‌‍‍‌‌‍﻿‍‌‍‌﻿​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍​﻿‌‍﻿﻿‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‍​‌‍﻿‍‌​‍﻿‌​‌​‌﻿​​‌‍​﻿‌​‌​‌‌​‍​‍﻿‌‌‌‍​‌​‌​‌‍‍​​﻿‌﻿‌‌‍‍‌‌​﻿​﻿‌‍‌​‍﻿​﻿​‌‌​﻿‍‌﻿‍​‌​‍​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​‌‍﻿﻿‌‍﻿‍‌‍‌‌‌‍﻿‍‌﻿‌​‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​​﻿​‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌﻿‌‌‌﻿​﻿‌﻿‌​‌‍﻿﻿‌‍﻿‌‌‌​‍‌‍‍‌‌‍​﻿‌‍‍​‌‌‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‌‌﻿‌‌‍‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍‍​‌‍‍‌‌‍﻿​‌‍‌​‌﻿​‍‌‍‌‌‌‍﻿‍​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍​‌‌‍​﻿​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‍‌‍‍‌‌﻿​﻿‌​‌​‌﻿​‍‌‍​‌‌‍‌‍‌﻿‌​​﻿﻿‌​‍​‍‌﻿﻿‌ Everything you need to deploy your app​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍​‍﻿﻿‌‍​‌‌‍‌​‌‍﻿‌‌‍‍‌‌‍﻿‍​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿‍​‌‍‌‍‌‍‌​​﻿‍​​﻿​​​‍﻿‌‌‍​‍​﻿‍‌​﻿‍‌‌‍‌​​‍﻿‌​﻿‌​​﻿‌‍‌‍‌​​﻿‍‌​‍﻿‌​﻿‍​​﻿‍‌​﻿​﻿​﻿‌‌​‍﻿‌​﻿‌‍​﻿‍​​﻿‌‌‌‍‌‍‌‍​‌​﻿​﻿‌‍​‍​﻿‍​​﻿​‍​﻿​﻿​﻿‌‍​﻿‌‍​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍﻿​‌‍​‌‌‍﻿‍‌‍‌​‌‍‍‌‌‍﻿‍‌‍‌﻿​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍​﻿‌‍﻿﻿‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‍​‌‍﻿‍‌​‍﻿‌​‌​‌﻿​​‌‍​﻿‌​‌​‌‌​‍​‍﻿‌‌‌‍​‌​‌​‌‍‍​​﻿‌﻿‌‌‍‍‌‌​﻿​﻿‌‍‌​‍﻿​﻿​‌‌​﻿‍‌﻿‍​‌​‍​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​‌‍﻿﻿‌‍﻿‍‌‍‌‌‌‍﻿‍‌﻿‌​‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​​﻿​‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌﻿‌‌‌﻿​﻿‌﻿‌​‌‍﻿﻿‌‍﻿‌‌‌​‍‌‍‍‌‌‍​﻿‌‍‍​‌‌‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍‌‌‌‍‌‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍‍​‌‍‍‌‌‍﻿​‌‍‌​‌﻿​‍‌‍‌‌‌‍﻿‍​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍‍‌‌‍‍‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌​‍‌‌​﻿​‍‌​‌‍‌‍​‌‌‍‌​‌‍﻿‌‌‍‍‌‌‍﻿‍​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿‍​‌‍‌‍‌‍‌​​﻿‍​​﻿​​​‍﻿‌‌‍​‍​﻿‍‌​﻿‍‌‌‍‌​​‍﻿‌​﻿‌​​﻿‌‍‌‍‌​​﻿‍‌​‍﻿‌​﻿‍​​﻿‍‌​﻿​﻿​﻿‌‌​‍﻿‌​﻿‌‍​﻿‍​​﻿‌‌‌‍‌‍‌‍​‌​﻿​﻿‌‍​‍​﻿‍​​﻿​‍​﻿​﻿​﻿‌‍​﻿‌‍​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍﻿​‌‍​‌‌‍﻿‍‌‍‌​‌‍‍‌‌‍﻿‍‌‍‌﻿​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍​﻿‌‍﻿﻿‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‍​‌‍﻿‍‌​‍﻿‌​‌​‌﻿​​‌‍​﻿‌​‌​‌‌​‍​‍﻿‌‌‌‍​‌​‌​‌‍‍​​﻿‌﻿‌‌‍‍‌‌​﻿​﻿‌‍‌​‍﻿​﻿​‌‌​﻿‍‌﻿‍​‌​‍​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​‌‍﻿﻿‌‍﻿‍‌‍‌‌‌‍﻿‍‌﻿‌​‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​​﻿​‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌﻿‌‌‌﻿​﻿‌﻿‌​‌‍﻿﻿‌‍﻿‌‌‌​‍‌‍‍‌‌‍​﻿‌‍‍​‌‌‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍‌‌‌‍‌‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍‍​‌‍‍‌‌‍﻿​‌‍‌​‌﻿​‍‌‍‌‌‌‍﻿‍​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍‍‌‌‍‍‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‍‌‍‍‌‌﻿​﻿‌​‌​‌﻿​‍‌‍​‌‌‍‌‍‌﻿‌​​﻿﻿‌​‍​‍‌﻿﻿‌ Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍​‍﻿﻿‌‍​‌‌‍‌​‌‍﻿‌‌‍‍‌‌‍﻿‍​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿‍​‌‍‌‍‌‍‌​​﻿‍​​﻿​​​‍﻿‌‌‍​‍​﻿‍‌​﻿‍‌‌‍‌​​‍﻿‌​﻿‌​​﻿‌‍‌‍‌​​﻿‍‌​‍﻿‌​﻿‍​​﻿‍‌​﻿​﻿​﻿‌‌​‍﻿‌​﻿‌‍​﻿‍​​﻿‌‌‌‍‌‍‌‍​‌​﻿​﻿‌‍​‍​﻿‍​​﻿​‍​﻿​﻿​﻿‌‍​﻿‌‍​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍﻿​‌‍​‌‌‍﻿‍‌‍‌​‌‍‍‌‌‍﻿‍‌‍‌﻿​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍​﻿‌‍﻿﻿‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‍​‌‍﻿‍‌​‍﻿‌​‌​‌﻿​​‌‍​﻿‌​‌​‌‌​‍​‍﻿‌‌‌‍​‌​‌​‌‍‍​​﻿‌﻿‌‌‍‍‌‌​﻿​﻿‌‍‌​‍﻿​﻿​‌‌​﻿‍‌﻿‍​‌​‍​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​‌‍﻿﻿‌‍﻿‍‌‍‌‌‌‍﻿‍‌﻿‌​‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​​﻿​‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌﻿‌‌‌﻿​﻿‌﻿‌​‌‍﻿﻿‌‍﻿‌‌‌​‍‌‍‍‌‌‍​﻿‌‍‍​‌‌‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍﻿‌‌‍﻿​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍‍​‌‍‍‌‌‍﻿​‌‍‌​‌﻿​‍‌‍‌‌‌‍﻿‍​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌﻿​‌‌‍﻿﻿​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌​‍‌‌​﻿​‍‌​‌‍‌‍​‌‌‍‌​‌‍﻿‌‌‍‍‌‌‍﻿‍​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿‍​‌‍‌‍‌‍‌​​﻿‍​​﻿​​​‍﻿‌‌‍​‍​﻿‍‌​﻿‍‌‌‍‌​​‍﻿‌​﻿‌​​﻿‌‍‌‍‌​​﻿‍‌​‍﻿‌​﻿‍​​﻿‍‌​﻿​﻿​﻿‌‌​‍﻿‌​﻿‌‍​﻿‍​​﻿‌‌‌‍‌‍‌‍​‌​﻿​﻿‌‍​‍​﻿‍​​﻿​‍​﻿​﻿​﻿‌‍​﻿‌‍​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍﻿​‌‍​‌‌‍﻿‍‌‍‌​‌‍‍‌‌‍﻿‍‌‍‌﻿​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍​﻿‌‍﻿﻿‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‍​‌‍﻿‍‌​‍﻿‌​‌​‌﻿​​‌‍​﻿‌​‌​‌‌​‍​‍﻿‌‌‌‍​‌​‌​‌‍‍​​﻿‌﻿‌‌‍‍‌‌​﻿​﻿‌‍‌​‍﻿​﻿​‌‌​﻿‍‌﻿‍​‌​‍​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​‌‍﻿﻿‌‍﻿‍‌‍‌‌‌‍﻿‍‌﻿‌​‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​​﻿​‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌﻿‌‌‌﻿​﻿‌﻿‌​‌‍﻿﻿‌‍﻿‌‌‌​‍‌‍‍‌‌‍​﻿‌‍‍​‌‌‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍﻿‌‌‍﻿​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍‍​‌‍‍‌‌‍﻿​‌‍‌​‌﻿​‍‌‍‌‌‌‍﻿‍​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌﻿​‌‌‍﻿﻿​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‍‌‍‍‌‌﻿​﻿‌​‌​‌﻿​‍‌‍​‌‌‍‌‍‌﻿‌​​﻿﻿‌​‍​‍‌﻿﻿‌ untitled​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍​‍﻿﻿‌﻿​﻿‌﻿‌​‌﻿‌‌‌‍‌​‌‍‍‌‌‍﻿﻿​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿​​‌‍​‌​﻿​‍​﻿‍​​﻿‌﻿​﻿‌​​﻿‌​‌‍‌​​‍﻿‌​﻿‌‍​﻿​​​﻿​‍‌‍​‍​‍﻿‌​﻿‌​​﻿‍‌‌‍​‌​﻿​﻿​‍﻿‌‌‍​‍​﻿‍‌​﻿​‌‌‍​‌​‍﻿‌​﻿​‌​﻿‌﻿‌‍​‌​﻿‌‌​﻿‌‍‌‍‌‌​﻿​﻿‌‍​﻿​﻿‌﻿​﻿‍​​﻿​﻿​﻿​‍​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌﻿​​‌‍​‌‌‍‌﻿‌‍‌‌​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿​﻿‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍‌﻿​﻿‌​​‍‌‍﻿﻿‌‍‌​‌﻿‍‌​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍​﻿​‍​﻿‍‌‌‍‌‍‌‍‌‌​﻿‌‍‌‍​‌​﻿‍​​﻿​‍‌‍‌‍​﻿‍​​﻿​‍​﻿‌‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿​‌﻿‌‌‌‍﻿‌‌‍﻿‍‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍‌‌​﻿‌‌​﻿‍​​﻿‌‌​﻿​‌‌‍​‍‌‍‌‌​﻿‌​​﻿​﻿​﻿​‌​﻿​‌​﻿​​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍‌‌‌‍​‌‌‍​‌‌‍‌‍‌‍‌‌‌‍​‌‌‍​‌‌‍​‌‌‍‌‌​﻿​​‌‍‌‍​﻿​‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍‍‌‌﻿‌​‌‍‌‌‌‍﻿‌‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍‌‌‌‍​‌‌‍​﻿​﻿‌﻿‌‍​‌​﻿‍​​﻿​​​﻿​​​﻿​﻿‌‍‌‌​﻿​‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍‌​‌‍‌‌‌﻿​﻿‌‍​﻿‌﻿​‍‌‍‍‌‌﻿​​‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌​‍‌‌​﻿​‍‌​‌‍‌﻿​﻿‌﻿‌​‌﻿‌‌‌‍‌​‌‍‍‌‌‍﻿﻿​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿​​‌‍​‌​﻿​‍​﻿‍​​﻿‌﻿​﻿‌​​﻿‌​‌‍‌​​‍﻿‌​﻿‌‍​﻿​​​﻿​‍‌‍​‍​‍﻿‌​﻿‌​​﻿‍‌‌‍​‌​﻿​﻿​‍﻿‌‌‍​‍​﻿‍‌​﻿​‌‌‍​‌​‍﻿‌​﻿​‌​﻿‌﻿‌‍​‌​﻿‌‌​﻿‌‍‌‍‌‌​﻿​﻿‌‍​﻿​﻿‌﻿​﻿‍​​﻿​﻿​﻿​‍​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌﻿​​‌‍​‌‌‍‌﻿‌‍‌‌​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿​﻿‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍‌﻿​﻿‌​​‍‌‍﻿﻿‌‍‌​‌﻿‍‌​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍​﻿​‍​﻿‍‌‌‍‌‍‌‍‌‌​﻿‌‍‌‍​‌​﻿‍​​﻿​‍‌‍‌‍​﻿‍​​﻿​‍​﻿‌‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿​‌﻿‌‌‌‍﻿‌‌‍﻿‍‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍‌‌​﻿‌‌​﻿‍​​﻿‌‌​﻿​‌‌‍​‍‌‍‌‌​﻿‌​​﻿​﻿​﻿​‌​﻿​‌​﻿​​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍‌‌‌‍​‌‌‍​‌‌‍‌‍‌‍‌‌‌‍​‌‌‍​‌‌‍​‌‌‍‌‌​﻿​​‌‍‌‍​﻿​‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍‍‌‌﻿‌​‌‍‌‌‌‍﻿‌‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍‌‌‌‍​‌‌‍​﻿​﻿‌﻿‌‍​‌​﻿‍​​﻿​​​﻿​​​﻿​﻿‌‍‌‌​﻿​‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍‌​‌‍‌‌‌﻿​﻿‌‍​﻿‌﻿​‍‌‍‍‌‌﻿​​‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​‍‌‍‌‍‍‌‌﻿​﻿‌​‌​‌﻿​‍‌‍​‌‌‍‌‍‌﻿‌​​﻿﻿‌​‍​‍‌﻿﻿‌"
+                                "description": "Get started with pre-configured content and component sets. Focus on what matters most — creating great content"
                               },
                               {
-                                "_uid": "cfe1f247-29d1-42a7-b4aa-5ec08697115b",
+                                "_uid": "4087439d-a064-4cdc-bfb0-bd9f10c5ee0e",
                                 "link": [],
                                 "image": [
                                   {
-                                    "_uid": "a60fc45c-0090-4e28-942a-4b9db9d8ba56",
+                                    "_uid": "454a0aa0-5d03-43d6-b38b-4093f793264b",
                                     "asset": {
                                       "id": 17287559,
                                       "alt": "",
@@ -2458,16 +3292,16 @@
                                   }
                                 ],
                                 "style": "icon-left",
-                                "title": "Push to deploy",
+                                "title": "Automated Rollout: ",
                                 "component": "defaultCard",
-                                "description": "Deploy faster​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍​‍﻿﻿‌‍​‌‌‍‌​‌‍﻿‌‌‍‍‌‌‍﻿‍​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿‍​‌‍‌‍‌‍‌​​﻿‍​​﻿​​​‍﻿‌‌‍​‍​﻿‍‌​﻿‍‌‌‍‌​​‍﻿‌​﻿‌​​﻿‌‍‌‍‌​​﻿‍‌​‍﻿‌​﻿‍​​﻿‍‌​﻿​﻿​﻿‌‌​‍﻿‌​﻿‌‍​﻿‍​​﻿‌‌‌‍‌‍‌‍​‌​﻿​﻿‌‍​‍​﻿‍​​﻿​‍​﻿​﻿​﻿‌‍​﻿‌‍​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍﻿​‌‍​‌‌‍﻿‍‌‍‌​‌‍‍‌‌‍﻿‍‌‍‌﻿​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍​﻿‌‍﻿﻿‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‍​‌‍﻿‍‌​‍﻿‌​‌​‌﻿​​‌‍​﻿‌​‌​‌‌​‍​‍﻿‌‌‌‍​‌​‌​‌‍‍​​﻿‌﻿‌‌‍‍‌‌​﻿​﻿‌‍‌​‍﻿​﻿​‌‌​﻿‍‌﻿‍​‌​‍​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​‌‍﻿﻿‌‍﻿‍‌‍‌‌‌‍﻿‍‌﻿‌​‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​​﻿​‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌﻿‌‌‌﻿​﻿‌﻿‌​‌‍﻿﻿‌‍﻿‌‌‌​‍‌‍‍‌‌‍​﻿‌‍‍​‌‌‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‌‌﻿‌‌‍‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍‍​‌‍‍‌‌‍﻿​‌‍‌​‌﻿​‍‌‍‌‌‌‍﻿‍​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍​‌‌‍​﻿​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌​‍‌‌​﻿​‍‌​‌‍‌‍​‌‌‍‌​‌‍﻿‌‌‍‍‌‌‍﻿‍​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿‍​‌‍‌‍‌‍‌​​﻿‍​​﻿​​​‍﻿‌‌‍​‍​﻿‍‌​﻿‍‌‌‍‌​​‍﻿‌​﻿‌​​﻿‌‍‌‍‌​​﻿‍‌​‍﻿‌​﻿‍​​﻿‍‌​﻿​﻿​﻿‌‌​‍﻿‌​﻿‌‍​﻿‍​​﻿‌‌‌‍‌‍‌‍​‌​﻿​﻿‌‍​‍​﻿‍​​﻿​‍​﻿​﻿​﻿‌‍​﻿‌‍​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍﻿​‌‍​‌‌‍﻿‍‌‍‌​‌‍‍‌‌‍﻿‍‌‍‌﻿​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍​﻿‌‍﻿﻿‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‍​‌‍﻿‍‌​‍﻿‌​‌​‌﻿​​‌‍​﻿‌​‌​‌‌​‍​‍﻿‌‌‌‍​‌​‌​‌‍‍​​﻿‌﻿‌‌‍‍‌‌​﻿​﻿‌‍‌​‍﻿​﻿​‌‌​﻿‍‌﻿‍​‌​‍​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​‌‍﻿﻿‌‍﻿‍‌‍‌‌‌‍﻿‍‌﻿‌​‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​​﻿​‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌﻿‌‌‌﻿​﻿‌﻿‌​‌‍﻿﻿‌‍﻿‌‌‌​‍‌‍‍‌‌‍​﻿‌‍‍​‌‌‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‌‌﻿‌‌‍‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍‍​‌‍‍‌‌‍﻿​‌‍‌​‌﻿​‍‌‍‌‌‌‍﻿‍​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍​‌‌‍​﻿​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‍‌‍‍‌‌﻿​﻿‌​‌​‌﻿​‍‌‍​‌‌‍‌‍‌﻿‌​​﻿﻿‌​‍​‍‌﻿﻿‌ Everything you need to deploy your app​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍​‍﻿﻿‌‍​‌‌‍‌​‌‍﻿‌‌‍‍‌‌‍﻿‍​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿‍​‌‍‌‍‌‍‌​​﻿‍​​﻿​​​‍﻿‌‌‍​‍​﻿‍‌​﻿‍‌‌‍‌​​‍﻿‌​﻿‌​​﻿‌‍‌‍‌​​﻿‍‌​‍﻿‌​﻿‍​​﻿‍‌​﻿​﻿​﻿‌‌​‍﻿‌​﻿‌‍​﻿‍​​﻿‌‌‌‍‌‍‌‍​‌​﻿​﻿‌‍​‍​﻿‍​​﻿​‍​﻿​﻿​﻿‌‍​﻿‌‍​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍﻿​‌‍​‌‌‍﻿‍‌‍‌​‌‍‍‌‌‍﻿‍‌‍‌﻿​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍​﻿‌‍﻿﻿‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‍​‌‍﻿‍‌​‍﻿‌​‌​‌﻿​​‌‍​﻿‌​‌​‌‌​‍​‍﻿‌‌‌‍​‌​‌​‌‍‍​​﻿‌﻿‌‌‍‍‌‌​﻿​﻿‌‍‌​‍﻿​﻿​‌‌​﻿‍‌﻿‍​‌​‍​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​‌‍﻿﻿‌‍﻿‍‌‍‌‌‌‍﻿‍‌﻿‌​‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​​﻿​‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌﻿‌‌‌﻿​﻿‌﻿‌​‌‍﻿﻿‌‍﻿‌‌‌​‍‌‍‍‌‌‍​﻿‌‍‍​‌‌‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍‌‌‌‍‌‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍‍​‌‍‍‌‌‍﻿​‌‍‌​‌﻿​‍‌‍‌‌‌‍﻿‍​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍‍‌‌‍‍‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌​‍‌‌​﻿​‍‌​‌‍‌‍​‌‌‍‌​‌‍﻿‌‌‍‍‌‌‍﻿‍​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿‍​‌‍‌‍‌‍‌​​﻿‍​​﻿​​​‍﻿‌‌‍​‍​﻿‍‌​﻿‍‌‌‍‌​​‍﻿‌​﻿‌​​﻿‌‍‌‍‌​​﻿‍‌​‍﻿‌​﻿‍​​﻿‍‌​﻿​﻿​﻿‌‌​‍﻿‌​﻿‌‍​﻿‍​​﻿‌‌‌‍‌‍‌‍​‌​﻿​﻿‌‍​‍​﻿‍​​﻿​‍​﻿​﻿​﻿‌‍​﻿‌‍​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍﻿​‌‍​‌‌‍﻿‍‌‍‌​‌‍‍‌‌‍﻿‍‌‍‌﻿​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍​﻿‌‍﻿﻿‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‍​‌‍﻿‍‌​‍﻿‌​‌​‌﻿​​‌‍​﻿‌​‌​‌‌​‍​‍﻿‌‌‌‍​‌​‌​‌‍‍​​﻿‌﻿‌‌‍‍‌‌​﻿​﻿‌‍‌​‍﻿​﻿​‌‌​﻿‍‌﻿‍​‌​‍​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​‌‍﻿﻿‌‍﻿‍‌‍‌‌‌‍﻿‍‌﻿‌​‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​​﻿​‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌﻿‌‌‌﻿​﻿‌﻿‌​‌‍﻿﻿‌‍﻿‌‌‌​‍‌‍‍‌‌‍​﻿‌‍‍​‌‌‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍‌‌‌‍‌‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍‍​‌‍‍‌‌‍﻿​‌‍‌​‌﻿​‍‌‍‌‌‌‍﻿‍​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍‍‌‌‍‍‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‍‌‍‍‌‌﻿​﻿‌​‌​‌﻿​‍‌‍​‌‌‍‌‍‌﻿‌​​﻿﻿‌​‍​‍‌﻿﻿‌ Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍​‍﻿﻿‌‍​‌‌‍‌​‌‍﻿‌‌‍‍‌‌‍﻿‍​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿‍​‌‍‌‍‌‍‌​​﻿‍​​﻿​​​‍﻿‌‌‍​‍​﻿‍‌​﻿‍‌‌‍‌​​‍﻿‌​﻿‌​​﻿‌‍‌‍‌​​﻿‍‌​‍﻿‌​﻿‍​​﻿‍‌​﻿​﻿​﻿‌‌​‍﻿‌​﻿‌‍​﻿‍​​﻿‌‌‌‍‌‍‌‍​‌​﻿​﻿‌‍​‍​﻿‍​​﻿​‍​﻿​﻿​﻿‌‍​﻿‌‍​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍﻿​‌‍​‌‌‍﻿‍‌‍‌​‌‍‍‌‌‍﻿‍‌‍‌﻿​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍​﻿‌‍﻿﻿‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‍​‌‍﻿‍‌​‍﻿‌​‌​‌﻿​​‌‍​﻿‌​‌​‌‌​‍​‍﻿‌‌‌‍​‌​‌​‌‍‍​​﻿‌﻿‌‌‍‍‌‌​﻿​﻿‌‍‌​‍﻿​﻿​‌‌​﻿‍‌﻿‍​‌​‍​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​‌‍﻿﻿‌‍﻿‍‌‍‌‌‌‍﻿‍‌﻿‌​‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​​﻿​‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌﻿‌‌‌﻿​﻿‌﻿‌​‌‍﻿﻿‌‍﻿‌‌‌​‍‌‍‍‌‌‍​﻿‌‍‍​‌‌‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍﻿‌‌‍﻿​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍‍​‌‍‍‌‌‍﻿​‌‍‌​‌﻿​‍‌‍‌‌‌‍﻿‍​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌﻿​‌‌‍﻿﻿​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌​‍‌‌​﻿​‍‌​‌‍‌‍​‌‌‍‌​‌‍﻿‌‌‍‍‌‌‍﻿‍​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿‍​‌‍‌‍‌‍‌​​﻿‍​​﻿​​​‍﻿‌‌‍​‍​﻿‍‌​﻿‍‌‌‍‌​​‍﻿‌​﻿‌​​﻿‌‍‌‍‌​​﻿‍‌​‍﻿‌​﻿‍​​﻿‍‌​﻿​﻿​﻿‌‌​‍﻿‌​﻿‌‍​﻿‍​​﻿‌‌‌‍‌‍‌‍​‌​﻿​﻿‌‍​‍​﻿‍​​﻿​‍​﻿​﻿​﻿‌‍​﻿‌‍​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍﻿​‌‍​‌‌‍﻿‍‌‍‌​‌‍‍‌‌‍﻿‍‌‍‌﻿​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍​﻿‌‍﻿﻿‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‍​‌‍﻿‍‌​‍﻿‌​‌​‌﻿​​‌‍​﻿‌​‌​‌‌​‍​‍﻿‌‌‌‍​‌​‌​‌‍‍​​﻿‌﻿‌‌‍‍‌‌​﻿​﻿‌‍‌​‍﻿​﻿​‌‌​﻿‍‌﻿‍​‌​‍​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​‌‍﻿﻿‌‍﻿‍‌‍‌‌‌‍﻿‍‌﻿‌​‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​​﻿​‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌﻿‌‌‌﻿​﻿‌﻿‌​‌‍﻿﻿‌‍﻿‌‌‌​‍‌‍‍‌‌‍​﻿‌‍‍​‌‌‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍﻿‌‌‍﻿​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍‍​‌‍‍‌‌‍﻿​‌‍‌​‌﻿​‍‌‍‌‌‌‍﻿‍​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌﻿​‌‌‍﻿﻿​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‍‌‍‍‌‌﻿​﻿‌​‌​‌﻿​‍‌‍​‌‌‍‌‍‌﻿‌​​﻿﻿‌​‍​‍‌﻿﻿‌ untitled​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍​‍﻿﻿‌﻿​﻿‌﻿‌​‌﻿‌‌‌‍‌​‌‍‍‌‌‍﻿﻿​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿​​‌‍​‌​﻿​‍​﻿‍​​﻿‌﻿​﻿‌​​﻿‌​‌‍‌​​‍﻿‌​﻿‌‍​﻿​​​﻿​‍‌‍​‍​‍﻿‌​﻿‌​​﻿‍‌‌‍​‌​﻿​﻿​‍﻿‌‌‍​‍​﻿‍‌​﻿​‌‌‍​‌​‍﻿‌​﻿​‌​﻿‌﻿‌‍​‌​﻿‌‌​﻿‌‍‌‍‌‌​﻿​﻿‌‍​﻿​﻿‌﻿​﻿‍​​﻿​﻿​﻿​‍​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌﻿​​‌‍​‌‌‍‌﻿‌‍‌‌​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿​﻿‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍‌﻿​﻿‌​​‍‌‍﻿﻿‌‍‌​‌﻿‍‌​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍​﻿​‍​﻿‍‌‌‍‌‍‌‍‌‌​﻿‌‍‌‍​‌​﻿‍​​﻿​‍‌‍‌‍​﻿‍​​﻿​‍​﻿‌‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿​‌﻿‌‌‌‍﻿‌‌‍﻿‍‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍‌‌​﻿‌‌​﻿‍​​﻿‌‌​﻿​‌‌‍​‍‌‍‌‌​﻿‌​​﻿​﻿​﻿​‌​﻿​‌​﻿​​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍‌‌‌‍​‌‌‍​‌‌‍‌‍‌‍‌‌‌‍​‌‌‍​‌‌‍​‌‌‍‌‌​﻿​​‌‍‌‍​﻿​‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍‍‌‌﻿‌​‌‍‌‌‌‍﻿‌‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍‌‌‌‍​‌‌‍​﻿​﻿‌﻿‌‍​‌​﻿‍​​﻿​​​﻿​​​﻿​﻿‌‍‌‌​﻿​‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍‌​‌‍‌‌‌﻿​﻿‌‍​﻿‌﻿​‍‌‍‍‌‌﻿​​‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌​‍‌‌​﻿​‍‌​‌‍‌﻿​﻿‌﻿‌​‌﻿‌‌‌‍‌​‌‍‍‌‌‍﻿﻿​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿​​‌‍​‌​﻿​‍​﻿‍​​﻿‌﻿​﻿‌​​﻿‌​‌‍‌​​‍﻿‌​﻿‌‍​﻿​​​﻿​‍‌‍​‍​‍﻿‌​﻿‌​​﻿‍‌‌‍​‌​﻿​﻿​‍﻿‌‌‍​‍​﻿‍‌​﻿​‌‌‍​‌​‍﻿‌​﻿​‌​﻿‌﻿‌‍​‌​﻿‌‌​﻿‌‍‌‍‌‌​﻿​﻿‌‍​﻿​﻿‌﻿​﻿‍​​﻿​﻿​﻿​‍​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌﻿​​‌‍​‌‌‍‌﻿‌‍‌‌​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿​﻿‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍‌﻿​﻿‌​​‍‌‍﻿﻿‌‍‌​‌﻿‍‌​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍​﻿​‍​﻿‍‌‌‍‌‍‌‍‌‌​﻿‌‍‌‍​‌​﻿‍​​﻿​‍‌‍‌‍​﻿‍​​﻿​‍​﻿‌‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿​‌﻿‌‌‌‍﻿‌‌‍﻿‍‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍‌‌​﻿‌‌​﻿‍​​﻿‌‌​﻿​‌‌‍​‍‌‍‌‌​﻿‌​​﻿​﻿​﻿​‌​﻿​‌​﻿​​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍‌‌‌‍​‌‌‍​‌‌‍‌‍‌‍‌‌‌‍​‌‌‍​‌‌‍​‌‌‍‌‌​﻿​​‌‍‌‍​﻿​‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍‍‌‌﻿‌​‌‍‌‌‌‍﻿‌‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍‌‌‌‍​‌‌‍​﻿​﻿‌﻿‌‍​‌​﻿‍​​﻿​​​﻿​​​﻿​﻿‌‍‌‌​﻿​‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍‌​‌‍‌‌‌﻿​﻿‌‍​﻿‌﻿​‍‌‍‍‌‌﻿​​‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​‍‌‍‌‍‍‌‌﻿​﻿‌​‌​‌﻿​‍‌‍​‌‌‍‌‍‌﻿‌​​﻿﻿‌​‍​‍‌﻿﻿‌"
+                                "description": "Set up your entire environment with a single command. Save time with our automated deployment scripts"
                               },
                               {
-                                "_uid": "6a7825f9-ba6d-49c3-87a7-1a86849a0bfb",
+                                "_uid": "d04444b5-6aa8-4f2a-b187-d9b375d80815",
                                 "link": [],
                                 "image": [
                                   {
-                                    "_uid": "553194f3-a440-4b97-b52f-146495c7c61e",
+                                    "_uid": "c7af88d1-8563-4195-b217-0d573279ee26",
                                     "asset": {
                                       "id": 17287559,
                                       "alt": "",
@@ -2491,13 +3325,280 @@
                                   }
                                 ],
                                 "style": "icon-left",
-                                "title": "Push to deploy",
+                                "title": "Visual Editing: ",
                                 "component": "defaultCard",
-                                "description": "Deploy faster​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍​‍﻿﻿‌‍​‌‌‍‌​‌‍﻿‌‌‍‍‌‌‍﻿‍​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿‍​‌‍‌‍‌‍‌​​﻿‍​​﻿​​​‍﻿‌‌‍​‍​﻿‍‌​﻿‍‌‌‍‌​​‍﻿‌​﻿‌​​﻿‌‍‌‍‌​​﻿‍‌​‍﻿‌​﻿‍​​﻿‍‌​﻿​﻿​﻿‌‌​‍﻿‌​﻿‌‍​﻿‍​​﻿‌‌‌‍‌‍‌‍​‌​﻿​﻿‌‍​‍​﻿‍​​﻿​‍​﻿​﻿​﻿‌‍​﻿‌‍​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍﻿​‌‍​‌‌‍﻿‍‌‍‌​‌‍‍‌‌‍﻿‍‌‍‌﻿​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍​﻿‌‍﻿﻿‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‍​‌‍﻿‍‌​‍﻿‌​‌​‌﻿​​‌‍​﻿‌​‌​‌‌​‍​‍﻿‌‌‌‍​‌​‌​‌‍‍​​﻿‌﻿‌‌‍‍‌‌​﻿​﻿‌‍‌​‍﻿​﻿​‌‌​﻿‍‌﻿‍​‌​‍​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​‌‍﻿﻿‌‍﻿‍‌‍‌‌‌‍﻿‍‌﻿‌​‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​​﻿​‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌﻿‌‌‌﻿​﻿‌﻿‌​‌‍﻿﻿‌‍﻿‌‌‌​‍‌‍‍‌‌‍​﻿‌‍‍​‌‌‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‌‌﻿‌‌‍‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍‍​‌‍‍‌‌‍﻿​‌‍‌​‌﻿​‍‌‍‌‌‌‍﻿‍​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍​‌‌‍​﻿​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌​‍‌‌​﻿​‍‌​‌‍‌‍​‌‌‍‌​‌‍﻿‌‌‍‍‌‌‍﻿‍​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿‍​‌‍‌‍‌‍‌​​﻿‍​​﻿​​​‍﻿‌‌‍​‍​﻿‍‌​﻿‍‌‌‍‌​​‍﻿‌​﻿‌​​﻿‌‍‌‍‌​​﻿‍‌​‍﻿‌​﻿‍​​﻿‍‌​﻿​﻿​﻿‌‌​‍﻿‌​﻿‌‍​﻿‍​​﻿‌‌‌‍‌‍‌‍​‌​﻿​﻿‌‍​‍​﻿‍​​﻿​‍​﻿​﻿​﻿‌‍​﻿‌‍​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍﻿​‌‍​‌‌‍﻿‍‌‍‌​‌‍‍‌‌‍﻿‍‌‍‌﻿​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍​﻿‌‍﻿﻿‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‍​‌‍﻿‍‌​‍﻿‌​‌​‌﻿​​‌‍​﻿‌​‌​‌‌​‍​‍﻿‌‌‌‍​‌​‌​‌‍‍​​﻿‌﻿‌‌‍‍‌‌​﻿​﻿‌‍‌​‍﻿​﻿​‌‌​﻿‍‌﻿‍​‌​‍​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​‌‍﻿﻿‌‍﻿‍‌‍‌‌‌‍﻿‍‌﻿‌​‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​​﻿​‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌﻿‌‌‌﻿​﻿‌﻿‌​‌‍﻿﻿‌‍﻿‌‌‌​‍‌‍‍‌‌‍​﻿‌‍‍​‌‌‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‌‌﻿‌‌‍‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍‍​‌‍‍‌‌‍﻿​‌‍‌​‌﻿​‍‌‍‌‌‌‍﻿‍​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍​‌‌‍​﻿​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‍‌‍‍‌‌﻿​﻿‌​‌​‌﻿​‍‌‍​‌‌‍‌‍‌﻿‌​​﻿﻿‌​‍​‍‌﻿﻿‌ Everything you need to deploy your app​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍​‍﻿﻿‌‍​‌‌‍‌​‌‍﻿‌‌‍‍‌‌‍﻿‍​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿‍​‌‍‌‍‌‍‌​​﻿‍​​﻿​​​‍﻿‌‌‍​‍​﻿‍‌​﻿‍‌‌‍‌​​‍﻿‌​﻿‌​​﻿‌‍‌‍‌​​﻿‍‌​‍﻿‌​﻿‍​​﻿‍‌​﻿​﻿​﻿‌‌​‍﻿‌​﻿‌‍​﻿‍​​﻿‌‌‌‍‌‍‌‍​‌​﻿​﻿‌‍​‍​﻿‍​​﻿​‍​﻿​﻿​﻿‌‍​﻿‌‍​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍﻿​‌‍​‌‌‍﻿‍‌‍‌​‌‍‍‌‌‍﻿‍‌‍‌﻿​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍​﻿‌‍﻿﻿‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‍​‌‍﻿‍‌​‍﻿‌​‌​‌﻿​​‌‍​﻿‌​‌​‌‌​‍​‍﻿‌‌‌‍​‌​‌​‌‍‍​​﻿‌﻿‌‌‍‍‌‌​﻿​﻿‌‍‌​‍﻿​﻿​‌‌​﻿‍‌﻿‍​‌​‍​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​‌‍﻿﻿‌‍﻿‍‌‍‌‌‌‍﻿‍‌﻿‌​‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​​﻿​‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌﻿‌‌‌﻿​﻿‌﻿‌​‌‍﻿﻿‌‍﻿‌‌‌​‍‌‍‍‌‌‍​﻿‌‍‍​‌‌‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍‌‌‌‍‌‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍‍​‌‍‍‌‌‍﻿​‌‍‌​‌﻿​‍‌‍‌‌‌‍﻿‍​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍‍‌‌‍‍‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌​‍‌‌​﻿​‍‌​‌‍‌‍​‌‌‍‌​‌‍﻿‌‌‍‍‌‌‍﻿‍​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿‍​‌‍‌‍‌‍‌​​﻿‍​​﻿​​​‍﻿‌‌‍​‍​﻿‍‌​﻿‍‌‌‍‌​​‍﻿‌​﻿‌​​﻿‌‍‌‍‌​​﻿‍‌​‍﻿‌​﻿‍​​﻿‍‌​﻿​﻿​﻿‌‌​‍﻿‌​﻿‌‍​﻿‍​​﻿‌‌‌‍‌‍‌‍​‌​﻿​﻿‌‍​‍​﻿‍​​﻿​‍​﻿​﻿​﻿‌‍​﻿‌‍​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍﻿​‌‍​‌‌‍﻿‍‌‍‌​‌‍‍‌‌‍﻿‍‌‍‌﻿​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍​﻿‌‍﻿﻿‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‍​‌‍﻿‍‌​‍﻿‌​‌​‌﻿​​‌‍​﻿‌​‌​‌‌​‍​‍﻿‌‌‌‍​‌​‌​‌‍‍​​﻿‌﻿‌‌‍‍‌‌​﻿​﻿‌‍‌​‍﻿​﻿​‌‌​﻿‍‌﻿‍​‌​‍​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​‌‍﻿﻿‌‍﻿‍‌‍‌‌‌‍﻿‍‌﻿‌​‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​​﻿​‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌﻿‌‌‌﻿​﻿‌﻿‌​‌‍﻿﻿‌‍﻿‌‌‌​‍‌‍‍‌‌‍​﻿‌‍‍​‌‌‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍‌‌‌‍‌‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍‍​‌‍‍‌‌‍﻿​‌‍‌​‌﻿​‍‌‍‌‌‌‍﻿‍​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍‍‌‌‍‍‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‍‌‍‍‌‌﻿​﻿‌​‌​‌﻿​‍‌‍​‌‌‍‌‍‌﻿‌​​﻿﻿‌​‍​‍‌﻿﻿‌ Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍​‍﻿﻿‌‍​‌‌‍‌​‌‍﻿‌‌‍‍‌‌‍﻿‍​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿‍​‌‍‌‍‌‍‌​​﻿‍​​﻿​​​‍﻿‌‌‍​‍​﻿‍‌​﻿‍‌‌‍‌​​‍﻿‌​﻿‌​​﻿‌‍‌‍‌​​﻿‍‌​‍﻿‌​﻿‍​​﻿‍‌​﻿​﻿​﻿‌‌​‍﻿‌​﻿‌‍​﻿‍​​﻿‌‌‌‍‌‍‌‍​‌​﻿​﻿‌‍​‍​﻿‍​​﻿​‍​﻿​﻿​﻿‌‍​﻿‌‍​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍﻿​‌‍​‌‌‍﻿‍‌‍‌​‌‍‍‌‌‍﻿‍‌‍‌﻿​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍​﻿‌‍﻿﻿‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‍​‌‍﻿‍‌​‍﻿‌​‌​‌﻿​​‌‍​﻿‌​‌​‌‌​‍​‍﻿‌‌‌‍​‌​‌​‌‍‍​​﻿‌﻿‌‌‍‍‌‌​﻿​﻿‌‍‌​‍﻿​﻿​‌‌​﻿‍‌﻿‍​‌​‍​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​‌‍﻿﻿‌‍﻿‍‌‍‌‌‌‍﻿‍‌﻿‌​‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​​﻿​‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌﻿‌‌‌﻿​﻿‌﻿‌​‌‍﻿﻿‌‍﻿‌‌‌​‍‌‍‍‌‌‍​﻿‌‍‍​‌‌‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍﻿‌‌‍﻿​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍‍​‌‍‍‌‌‍﻿​‌‍‌​‌﻿​‍‌‍‌‌‌‍﻿‍​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌﻿​‌‌‍﻿﻿​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌​‍‌‌​﻿​‍‌​‌‍‌‍​‌‌‍‌​‌‍﻿‌‌‍‍‌‌‍﻿‍​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿‍​‌‍‌‍‌‍‌​​﻿‍​​﻿​​​‍﻿‌‌‍​‍​﻿‍‌​﻿‍‌‌‍‌​​‍﻿‌​﻿‌​​﻿‌‍‌‍‌​​﻿‍‌​‍﻿‌​﻿‍​​﻿‍‌​﻿​﻿​﻿‌‌​‍﻿‌​﻿‌‍​﻿‍​​﻿‌‌‌‍‌‍‌‍​‌​﻿​﻿‌‍​‍​﻿‍​​﻿​‍​﻿​﻿​﻿‌‍​﻿‌‍​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍﻿​‌‍​‌‌‍﻿‍‌‍‌​‌‍‍‌‌‍﻿‍‌‍‌﻿​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍​﻿‌‍﻿﻿‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‍​‌‍﻿‍‌​‍﻿‌​‌​‌﻿​​‌‍​﻿‌​‌​‌‌​‍​‍﻿‌‌‌‍​‌​‌​‌‍‍​​﻿‌﻿‌‌‍‍‌‌​﻿​﻿‌‍‌​‍﻿​﻿​‌‌​﻿‍‌﻿‍​‌​‍​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​‌‍﻿﻿‌‍﻿‍‌‍‌‌‌‍﻿‍‌﻿‌​‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍﻿﻿‌‍﻿‌‌﻿​​​﻿​‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌﻿‌‌‌﻿​﻿‌﻿‌​‌‍﻿﻿‌‍﻿‌‌‌​‍‌‍‍‌‌‍​﻿‌‍‍​‌‌‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌‍﻿‌‌‍﻿​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍‍​‌‍‍‌‌‍﻿​‌‍‌​‌﻿​‍‌‍‌‌‌‍﻿‍​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌​‌﻿‌‍‍﻿‌​‌﻿​﻿​﻿‌‍​﻿‌​​﻿‌‍‌‌‌‍‌﻿​﻿​​‌‌‍‌‌‍‌﻿‌‍‍﻿​﻿​﻿‌‌‌‌‌​​‌‌‍‌‌‌﻿‌‌‌‍﻿​‌‍​‌​﻿‌‌‌﻿​‌‌‍﻿﻿​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‍‌‍‍‌‌﻿​﻿‌​‌​‌﻿​‍‌‍​‌‌‍‌‍‌﻿‌​​﻿﻿‌​‍​‍‌﻿﻿‌ untitled​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍​‍﻿﻿‌﻿​﻿‌﻿‌​‌﻿‌‌‌‍‌​‌‍‍‌‌‍﻿﻿​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿​​‌‍​‌​﻿​‍​﻿‍​​﻿‌﻿​﻿‌​​﻿‌​‌‍‌​​‍﻿‌​﻿‌‍​﻿​​​﻿​‍‌‍​‍​‍﻿‌​﻿‌​​﻿‍‌‌‍​‌​﻿​﻿​‍﻿‌‌‍​‍​﻿‍‌​﻿​‌‌‍​‌​‍﻿‌​﻿​‌​﻿‌﻿‌‍​‌​﻿‌‌​﻿‌‍‌‍‌‌​﻿​﻿‌‍​﻿​﻿‌﻿​﻿‍​​﻿​﻿​﻿​‍​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌﻿​​‌‍​‌‌‍‌﻿‌‍‌‌​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿​﻿‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍‌﻿​﻿‌​​‍‌‍﻿﻿‌‍‌​‌﻿‍‌​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍​﻿​‍​﻿‍‌‌‍‌‍‌‍‌‌​﻿‌‍‌‍​‌​﻿‍​​﻿​‍‌‍‌‍​﻿‍​​﻿​‍​﻿‌‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿​‌﻿‌‌‌‍﻿‌‌‍﻿‍‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍‌‌​﻿‌‌​﻿‍​​﻿‌‌​﻿​‌‌‍​‍‌‍‌‌​﻿‌​​﻿​﻿​﻿​‌​﻿​‌​﻿​​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍‌‌‌‍​‌‌‍​‌‌‍‌‍‌‍‌‌‌‍​‌‌‍​‌‌‍​‌‌‍‌‌​﻿​​‌‍‌‍​﻿​‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍‍‌‌﻿‌​‌‍‌‌‌‍﻿‌‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍‌‌‌‍​‌‌‍​﻿​﻿‌﻿‌‍​‌​﻿‍​​﻿​​​﻿​​​﻿​﻿‌‍‌‌​﻿​‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍‌​‌‍‌‌‌﻿​﻿‌‍​﻿‌﻿​‍‌‍‍‌‌﻿​​‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌​‍‌‌​﻿​‍‌​‌‍‌﻿​﻿‌﻿‌​‌﻿‌‌‌‍‌​‌‍‍‌‌‍﻿﻿​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿​​‌‍​‌​﻿​‍​﻿‍​​﻿‌﻿​﻿‌​​﻿‌​‌‍‌​​‍﻿‌​﻿‌‍​﻿​​​﻿​‍‌‍​‍​‍﻿‌​﻿‌​​﻿‍‌‌‍​‌​﻿​﻿​‍﻿‌‌‍​‍​﻿‍‌​﻿​‌‌‍​‌​‍﻿‌​﻿​‌​﻿‌﻿‌‍​‌​﻿‌‌​﻿‌‍‌‍‌‌​﻿​﻿‌‍​﻿​﻿‌﻿​﻿‍​​﻿​﻿​﻿​‍​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌﻿​​‌‍​‌‌‍‌﻿‌‍‌‌​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿​﻿‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍‌﻿​﻿‌​​‍‌‍﻿﻿‌‍‌​‌﻿‍‌​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍​﻿​‍​﻿‍‌‌‍‌‍‌‍‌‌​﻿‌‍‌‍​‌​﻿‍​​﻿​‍‌‍‌‍​﻿‍​​﻿​‍​﻿‌‌​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍​﻿‌‍﻿﻿‌‍﻿​‌﻿‌‌‌‍﻿‌‌‍﻿‍‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍‌‌​﻿‌‌​﻿‍​​﻿‌‌​﻿​‌‌‍​‍‌‍‌‌​﻿‌​​﻿​﻿​﻿​‌​﻿​‌​﻿​​​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌﻿‌​‌‍‌‌‌﻿‍​‌﻿‌​​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍‌‌‌‍​‌‌‍​‌‌‍‌‍‌‍‌‌‌‍​‌‌‍​‌‌‍​‌‌‍‌‌​﻿​​‌‍‌‍​﻿​‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍‍‌‌﻿‌​‌‍‌‌‌‍﻿‌‌﻿​﻿​‍‌‌​﻿‌‌‌​​‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​﻿‌​‌​​‍‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍‌‌‌‍​‌‌‍​﻿​﻿‌﻿‌‍​‌​﻿‍​​﻿​​​﻿​​​﻿​﻿‌‍‌‌​﻿​‍​‍‌‌​﻿​‍​﻿​‍​‍‌‌​﻿‌‌‌​‌​​‍﻿‍‌‍‌​‌‍‌‌‌﻿​﻿‌‍​﻿‌﻿​‍‌‍‍‌‌﻿​​‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​‍‌‍‌‍‍‌‌﻿​﻿‌​‌​‌﻿​‍‌‍​‌‌‍‌‍‌﻿‌​​﻿﻿‌​‍​‍‌﻿﻿‌"
+                                "description": "Utilize our enhanced visual editing tools within the CMS. Create and manage content with a user-friendly interface"
                               }
                             ],
                             "theme": "light",
                             "columns": "3",
+                            "component": "cardsGrid",
+                            "marginTop": "base",
+                            "marginBottom": "base"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                "component": "richText",
+                "alignVariant": "center",
+                "removeInnerMargins": false
+              }
+            ],
+            "component": "copy",
+            "marginTop": "large",
+            "marginBottom": "large",
+            "isReversedOnMobile": false
+          },
+          {
+            "_uid": "0a27a040-811a-464f-8e67-ef49e910f65d",
+            "theme": "light",
+            "columns": [
+              {
+                "_uid": "21d75a9c-894f-49a3-85b5-6327a52750b3",
+                "content": {
+                  "type": "doc",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Experience CMS-Kit in Action",
+                          "type": "text",
+                          "marks": [
+                            {
+                              "type": "bold"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 2
+                      },
+                      "content": [
+                        {
+                          "text": "Start Editing Content Right Here",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Welcome! Dive in and make some changes. Any edits you make here are instantly reflected on the live page to the left. This is the magic of ",
+                          "type": "text"
+                        },
+                        {
+                          "text": "Storyblok Visual Editing",
+                          "type": "text",
+                          "marks": [
+                            {
+                              "type": "bold"
+                            }
+                          ]
+                        },
+                        {
+                          "text": ", offering seamless and intuitive content management.",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Right now, you're editing a ",
+                          "type": "text"
+                        },
+                        {
+                          "text": "Rich Text",
+                          "type": "text",
+                          "marks": [
+                            {
+                              "type": "italic"
+                            }
+                          ]
+                        },
+                        {
+                          "text": " field. You can write some text or add more advanced blocks like ",
+                          "type": "text"
+                        },
+                        {
+                          "text": "Image",
+                          "type": "text",
+                          "marks": [
+                            {
+                              "type": "italic"
+                            }
+                          ]
+                        },
+                        {
+                          "text": " or ",
+                          "type": "text"
+                        },
+                        {
+                          "text": "Cards Grid",
+                          "type": "text",
+                          "marks": [
+                            {
+                              "type": "italic"
+                            }
+                          ]
+                        },
+                        {
+                          "text": " down below.",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "blok",
+                      "attrs": {
+                        "id": "4594bedd-8168-4d1d-be76-3fe3a2229a03",
+                        "body": [
+                          {
+                            "_uid": "i-ea24cb02-5b1f-4292-9a74-dd253cdd170b",
+                            "items": [
+                              {
+                                "_uid": "200352f1-b200-4dc5-9b6e-5ce20686d2e5",
+                                "link": [],
+                                "image": [
+                                  {
+                                    "_uid": "ae53e79f-9347-4e80-91b1-9a5e9b08034c",
+                                    "asset": {
+                                      "id": 17287559,
+                                      "alt": "",
+                                      "name": "",
+                                      "focus": "",
+                                      "title": "",
+                                      "source": "",
+                                      "filename": "https://a.storyblok.com/f/293915/15x15/6d170b1cb4/icon.webp",
+                                      "copyright": "",
+                                      "fieldtype": "asset",
+                                      "meta_data": {
+                                        "alt": "",
+                                        "title": "",
+                                        "source": "",
+                                        "copyright": ""
+                                      },
+                                      "is_external_url": false
+                                    },
+                                    "component": "image",
+                                    "aspectRatio": "1/1"
+                                  }
+                                ],
+                                "style": "icon-left",
+                                "title": "Instant Accounts: ",
+                                "component": "defaultCard",
+                                "description": "Create Vercel and Sanity accounts instantly. Get your project environment ready in minutes"
+                              },
+                              {
+                                "_uid": "7c95b280-cec5-4ee5-a50a-c4311171da95",
+                                "link": [],
+                                "image": [
+                                  {
+                                    "_uid": "06a85f86-17be-4054-9990-71c81837d4aa",
+                                    "asset": {
+                                      "id": 17287559,
+                                      "alt": "",
+                                      "name": "",
+                                      "focus": "",
+                                      "title": "",
+                                      "source": "",
+                                      "filename": "https://a.storyblok.com/f/293915/15x15/6d170b1cb4/icon.webp",
+                                      "copyright": "",
+                                      "fieldtype": "asset",
+                                      "meta_data": {
+                                        "alt": "",
+                                        "title": "",
+                                        "source": "",
+                                        "copyright": ""
+                                      },
+                                      "is_external_url": false
+                                    },
+                                    "component": "image",
+                                    "aspectRatio": "1/1"
+                                  }
+                                ],
+                                "style": "icon-left",
+                                "title": "GitHub Integration: ",
+                                "component": "defaultCard",
+                                "description": "Connect to your GitHub repository effortlessly. Set up webhooks and streamline your development process"
+                              },
+                              {
+                                "_uid": "7f92d989-b284-4b05-8005-4c8538fdc7a0",
+                                "link": [],
+                                "image": [
+                                  {
+                                    "_uid": "6d118bdf-d328-4206-817e-c9a323dd402d",
+                                    "asset": {
+                                      "id": 17287559,
+                                      "alt": "",
+                                      "name": "",
+                                      "focus": "",
+                                      "title": "",
+                                      "source": "",
+                                      "filename": "https://a.storyblok.com/f/293915/15x15/6d170b1cb4/icon.webp",
+                                      "copyright": "",
+                                      "fieldtype": "asset",
+                                      "meta_data": {
+                                        "alt": "",
+                                        "title": "",
+                                        "source": "",
+                                        "copyright": ""
+                                      },
+                                      "is_external_url": false
+                                    },
+                                    "component": "image",
+                                    "aspectRatio": "1/1"
+                                  }
+                                ],
+                                "style": "icon-left",
+                                "title": "Easy Deployment: ",
+                                "component": "defaultCard",
+                                "description": "Deploy both your studio and frontend seamlessly. Enjoy a smooth transition from setup to live site"
+                              },
+                              {
+                                "_uid": "0af53233-a52f-4593-a556-c44d8aec1904",
+                                "link": [],
+                                "image": [
+                                  {
+                                    "_uid": "90b57bfb-1170-4f4f-a0c8-a82aad6453d0",
+                                    "asset": {
+                                      "id": 17287559,
+                                      "alt": "",
+                                      "name": "",
+                                      "focus": "",
+                                      "title": "",
+                                      "source": "",
+                                      "filename": "https://a.storyblok.com/f/293915/15x15/6d170b1cb4/icon.webp",
+                                      "copyright": "",
+                                      "fieldtype": "asset",
+                                      "meta_data": {
+                                        "alt": "",
+                                        "title": "",
+                                        "source": "",
+                                        "copyright": ""
+                                      },
+                                      "is_external_url": false
+                                    },
+                                    "component": "image",
+                                    "aspectRatio": "1/1"
+                                  }
+                                ],
+                                "style": "icon-left",
+                                "title": "Visual Editing: ",
+                                "component": "defaultCard",
+                                "description": "Utilize our enhanced visual editing tools within the CMS. Create and manage content with a user-friendly interface"
+                              }
+                            ],
+                            "theme": "light",
+                            "columns": "2",
                             "component": "cardsGrid",
                             "marginTop": "none",
                             "marginBottom": "none"
@@ -2513,9 +3614,244 @@
               }
             ],
             "component": "copy",
-            "marginTop": "none",
-            "marginBottom": "none",
+            "marginTop": "large",
+            "marginBottom": "large",
             "isReversedOnMobile": false
+          },
+          {
+            "_uid": "1ba8a476-927c-482f-9a4f-713afcde566f",
+            "items": [
+              {
+                "_uid": "62285c5c-75aa-4556-b868-0ba95620bd16",
+                "link": [],
+                "type": "logo",
+                "image": [
+                  {
+                    "_uid": "1351c125-57fe-4b2e-85ba-94f9415f657c",
+                    "asset": {
+                      "id": 17287728,
+                      "alt": "",
+                      "name": "",
+                      "focus": "",
+                      "title": "",
+                      "source": "",
+                      "filename": "https://a.storyblok.com/f/293915/388x100/0bcf1045aa/presentation-cms-kit.webp",
+                      "copyright": "",
+                      "fieldtype": "asset",
+                      "meta_data": {},
+                      "is_external_url": false
+                    },
+                    "component": "image",
+                    "aspectRatio": "3/1"
+                  }
+                ],
+                "component": "logoItem"
+              },
+              {
+                "_uid": "872ba309-0c0e-4a47-b409-502b4104e77f",
+                "link": [],
+                "type": "logo",
+                "image": [
+                  {
+                    "_uid": "e42ae22b-2382-4888-bc79-d0e059e2d38d",
+                    "asset": {
+                      "id": 17287729,
+                      "alt": "",
+                      "name": "",
+                      "focus": "",
+                      "title": "",
+                      "source": "",
+                      "filename": "https://a.storyblok.com/f/293915/828x178/1c15e68942/presentation-cms-kit-1.webp",
+                      "copyright": "",
+                      "fieldtype": "asset",
+                      "meta_data": {},
+                      "is_external_url": false
+                    },
+                    "component": "image",
+                    "aspectRatio": "4/1"
+                  }
+                ],
+                "component": "logoItem"
+              },
+              {
+                "_uid": "50ad27e8-ab2f-46d2-964d-4c9d05512813",
+                "link": [],
+                "type": "logo",
+                "image": [
+                  {
+                    "_uid": "38749bba-5a36-4a41-8647-3ff32d7571fb",
+                    "asset": {
+                      "id": 17287731,
+                      "alt": "",
+                      "name": "",
+                      "focus": "",
+                      "title": "",
+                      "source": "",
+                      "filename": "https://a.storyblok.com/f/293915/716x200/ab7a436b03/presentation-cms-kit-2.webp",
+                      "copyright": "",
+                      "fieldtype": "asset",
+                      "meta_data": {},
+                      "is_external_url": false
+                    },
+                    "component": "image",
+                    "aspectRatio": "3/1"
+                  }
+                ],
+                "component": "logoItem"
+              },
+              {
+                "_uid": "0bb81562-3193-4757-bac8-7f81b924130f",
+                "link": [],
+                "type": "logo",
+                "image": [
+                  {
+                    "_uid": "042f838e-08ea-4c4b-94e0-31969e5f91d4",
+                    "asset": {
+                      "id": 17287730,
+                      "alt": "",
+                      "name": "",
+                      "focus": "",
+                      "title": "",
+                      "source": "",
+                      "filename": "https://a.storyblok.com/f/293915/544x200/9348d1a6bb/presentation-cms-kit-3.webp",
+                      "copyright": "",
+                      "fieldtype": "asset",
+                      "meta_data": {},
+                      "is_external_url": false
+                    },
+                    "component": "image",
+                    "aspectRatio": "3/1"
+                  }
+                ],
+                "component": "logoItem"
+              },
+              {
+                "_uid": "07d67e1b-4654-4674-9e3e-d366432e140e",
+                "link": [],
+                "type": "logo",
+                "image": [
+                  {
+                    "_uid": "7e79961f-9249-4591-a53a-2f20b5d696c8",
+                    "asset": {
+                      "id": 17287732,
+                      "alt": "",
+                      "name": "",
+                      "focus": "",
+                      "title": "",
+                      "source": "",
+                      "filename": "https://a.storyblok.com/f/293915/721x200/7d5fc08b39/presentation-cms-kit-4.webp",
+                      "copyright": "",
+                      "fieldtype": "asset",
+                      "meta_data": {},
+                      "is_external_url": false
+                    },
+                    "component": "image",
+                    "aspectRatio": "3/1"
+                  }
+                ],
+                "component": "logoItem"
+              }
+            ],
+            "theme": "light",
+            "component": "logos",
+            "marginTop": "base",
+            "alignVariant": "center",
+            "marginBottom": "base"
+          },
+          {
+            "_uid": "600a4fa4-2458-4b37-8d21-9384943ed56e",
+            "slides": [
+              {
+                "_uid": "447b527f-edf5-407e-adf8-db3c2b26185b",
+                "image": [
+                  {
+                    "_uid": "a05f6772-807b-4262-b50b-68317c40dd0f",
+                    "asset": {
+                      "id": 17302361,
+                      "alt": "",
+                      "name": "",
+                      "focus": "",
+                      "title": "",
+                      "source": "",
+                      "filename": "https://a.storyblok.com/f/293915/1792x1024/3c65b2e66b/generated-social-logo.webp",
+                      "copyright": "",
+                      "fieldtype": "asset",
+                      "meta_data": {
+                        "alt": "",
+                        "title": "",
+                        "source": "",
+                        "copyright": ""
+                      },
+                      "is_external_url": false
+                    },
+                    "component": "image",
+                    "aspectRatio": "16/9"
+                  }
+                ],
+                "component": "wideSimpleCarouselSlide"
+              },
+              {
+                "_uid": "688262c0-3fe9-45c8-968c-ef59a14c8970",
+                "image": [
+                  {
+                    "_uid": "213298bb-0561-442e-8087-b4ca25866f07",
+                    "asset": {
+                      "id": 17302361,
+                      "alt": "",
+                      "name": "",
+                      "focus": "",
+                      "title": "",
+                      "source": "",
+                      "filename": "https://a.storyblok.com/f/293915/1792x1024/3c65b2e66b/generated-social-logo.webp",
+                      "copyright": "",
+                      "fieldtype": "asset",
+                      "meta_data": {
+                        "alt": "",
+                        "title": "",
+                        "source": "",
+                        "copyright": ""
+                      },
+                      "is_external_url": false
+                    },
+                    "component": "image",
+                    "aspectRatio": "16/9"
+                  }
+                ],
+                "component": "wideSimpleCarouselSlide"
+              },
+              {
+                "_uid": "fb0f73cb-1dad-4ab4-b4e8-ee847382cb70",
+                "image": [
+                  {
+                    "_uid": "253ea97c-4f99-4ae8-afa6-2cd8f28ae37d",
+                    "asset": {
+                      "id": 17302361,
+                      "alt": "",
+                      "name": "",
+                      "focus": "",
+                      "title": "",
+                      "source": "",
+                      "filename": "https://a.storyblok.com/f/293915/1792x1024/3c65b2e66b/generated-social-logo.webp",
+                      "copyright": "",
+                      "fieldtype": "asset",
+                      "meta_data": {
+                        "alt": "",
+                        "title": "",
+                        "source": "",
+                        "copyright": ""
+                      },
+                      "is_external_url": false
+                    },
+                    "component": "image",
+                    "aspectRatio": "16/9"
+                  }
+                ],
+                "component": "wideSimpleCarouselSlide"
+              }
+            ],
+            "component": "wideSimpleCarousel",
+            "marginTop": "base",
+            "marginBottom": "base"
           },
           {
             "_uid": "0bf9acfc-7ead-4795-b9ed-8edfc73e2470",
@@ -2742,8 +4078,8 @@
                             "theme": "dark",
                             "columns": "1",
                             "component": "cardsGrid",
-                            "marginTop": "none",
-                            "marginBottom": "none"
+                            "marginTop": "base",
+                            "marginBottom": "base"
                           }
                         ]
                       }
@@ -2757,141 +4093,19 @@
             ],
             "component": "copy",
             "marginTop": "base",
-            "marginBottom": "base",
+            "marginBottom": "none",
             "isReversedOnMobile": true
-          },
-          {
-            "_uid": "6a1a4f83-506a-4ebd-8dc3-cb1ccb1a6f93",
-            "text": [
-              {
-                "_uid": "37c0efa7-3781-4318-9adc-3156751c3923",
-                "content": {
-                  "type": "doc",
-                  "content": [
-                    {
-                      "type": "heading",
-                      "attrs": {
-                        "level": 2
-                      },
-                      "content": [
-                        {
-                          "text": "Flowbite",
-                          "type": "text"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "paragraph",
-                      "content": [
-                        {
-                          "text": "Open-source library of over 400+ web components and interactive elements built for better web.",
-                          "type": "text"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                "component": "richText",
-                "alignVariant": "center",
-                "removeInnerMargins": false
-              }
-            ],
-            "links": [
-              {
-                "_uid": "715bba5e-0d5c-4145-b499-fb898906c7eb",
-                "link": {
-                  "id": "19601884-a1af-4b99-bd95-1a3ca01d5b7a",
-                  "url": "",
-                  "linktype": "story",
-                  "fieldtype": "multilink",
-                  "cached_url": "home"
-                },
-                "text": "Home",
-                "variant": "footerNav",
-                "component": "link"
-              },
-              {
-                "_uid": "f8a5b0a6-3b73-418a-8448-88b35118e87a",
-                "link": {
-                  "id": "5d416347-de08-4adb-b496-00b0a083de3a",
-                  "url": "",
-                  "linktype": "story",
-                  "fieldtype": "multilink",
-                  "cached_url": "demo"
-                },
-                "text": "Blog",
-                "variant": "footerNav",
-                "component": "link"
-              },
-              {
-                "_uid": "f1964d66-9108-475c-bc5d-7d27fd4e0a63",
-                "link": {
-                  "id": "",
-                  "url": "https://app.storyblok.com/#/me/spaces/293915",
-                  "target": "_blank",
-                  "linktype": "url",
-                  "fieldtype": "multilink",
-                  "cached_url": "https://app.storyblok.com/#/me/spaces/293915"
-                },
-                "text": "Storyblok",
-                "variant": "footerNav",
-                "component": "link"
-              },
-              {
-                "_uid": "6d25b0f3-9541-4d06-abf6-56710adae8dc",
-                "link": {
-                  "id": "",
-                  "url": "https://github.com/focusreactive/turbo-cms-kit",
-                  "target": "_blank",
-                  "linktype": "url",
-                  "fieldtype": "multilink",
-                  "cached_url": "https://github.com/focusreactive/turbo-cms-kit"
-                },
-                "text": "GitHub",
-                "variant": "footerNav",
-                "component": "link"
-              },
-              {
-                "_uid": "155c53a6-989d-43d4-9508-ec8f9ee024b5",
-                "link": {
-                  "id": "",
-                  "url": "https://trello.com/b/2XLLkCma/cms-kit",
-                  "target": "_blank",
-                  "linktype": "url",
-                  "fieldtype": "multilink",
-                  "cached_url": "https://trello.com/b/2XLLkCma/cms-kit"
-                },
-                "text": "Trello",
-                "variant": "footerNav",
-                "component": "link"
-              },
-              {
-                "_uid": "6c3d218a-96aa-415f-bce5-db3a2fb28f0c",
-                "link": {
-                  "id": "",
-                  "url": "https://vercel.com/focusreactive/turbo-cms-kit-storyblok",
-                  "linktype": "url",
-                  "fieldtype": "multilink",
-                  "cached_url": "https://vercel.com/focusreactive/turbo-cms-kit-storyblok"
-                },
-                "text": "Vercel",
-                "variant": "footerNav",
-                "component": "link"
-              }
-            ],
-            "theme": "light",
-            "component": "footer",
-            "copywriteText": "© 2021-2022 Flowbite™. All Rights Reserved."
           }
         ],
         "seoTitle": "Stroyblok Demo Landing",
         "component": "page",
-        "seoDescription": "An endeavor accumulating the experience and best practices collected at Focus Reactive. The project serves the idea of making Headless CMS-based development accessible, comfortable, and fast."
+        "seoDescription": "An endeavor accumulating the experience and best practices collected at Focus Reactive. The project serves the idea of making Headless CMS-based development accessible, comfortable, and fast.",
+        "showCookieBanner": true
       },
       "component_id": 5960538,
       "space_id": 293915,
       "created_at": "2024-09-12T12:39:47.903Z",
-      "updated_at": "2024-09-20T16:09:01.479Z",
+      "updated_at": "2024-10-09T16:15:58.466Z",
       "image": "//a.storyblok.com/f/293915/x/63ad25deab/screenshot-2024-09-12-at-14-39-24.png",
       "color": "",
       "icon": "",
@@ -3304,7 +4518,7 @@
           }
         ],
         "theme": "light",
-        "component": "header",
+        "component": "header-old",
         "alignVariant": "right"
       },
       "component_id": 6275697,
@@ -3393,7 +4607,7 @@
           }
         ],
         "theme": "light",
-        "component": "footer",
+        "component": "footer-old",
         "copywriteText": "copywrite"
       },
       "component_id": 6275699,

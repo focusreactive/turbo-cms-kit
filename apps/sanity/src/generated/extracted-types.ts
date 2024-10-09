@@ -173,30 +173,6 @@ export type SectionCopy = {
   marginBottom: "none" | "base" | "lg";
 };
 
-export type SectionFooter = {
-  _type: "section.footer";
-  text?: CustomRichText;
-  links?: Array<
-    {
-      _key: string;
-    } & CustomLink
-  >;
-  copywriteText?: string;
-  theme: "light" | "dark";
-};
-
-export type SectionHeader = {
-  _type: "section.header";
-  image?: CustomImage;
-  links: Array<
-    {
-      _key: string;
-    } & CustomLink
-  >;
-  alignVariant: "left" | "center" | "right";
-  theme: "light" | "dark";
-};
-
 export type WideSimpleCarouselCard = {
   _type: "wideSimpleCarouselCard";
   image: CustomImage;
@@ -282,6 +258,109 @@ export type LogoItem = {
   link?: CustomLink;
 };
 
+export type CustomLink = {
+  _type: "customLink";
+  text: string;
+  type: "url" | "internal";
+  href?: string;
+  target: "_self" | "_blank" | "_parent" | "_top";
+  url?: {
+    _ref: string;
+    _type: "reference";
+    _weak?: boolean;
+    [internalGroqTypeReferenceTo]?: "page";
+  };
+  variant:
+    | "default"
+    | "primary"
+    | "secondary"
+    | "headerNav"
+    | "footerNav"
+    | "badge";
+};
+
+export type Page = {
+  _id: string;
+  _type: "page";
+  _createdAt: string;
+  _updatedAt: string;
+  _rev: string;
+  title?: string;
+  pathname?: Slug;
+  header: {
+    _ref: string;
+    _type: "reference";
+    _weak?: boolean;
+    [internalGroqTypeReferenceTo]?: "header";
+  };
+  sectionsBody?: Array<
+    | ({
+        _key: string;
+      } & SectionCopy)
+    | ({
+        _key: string;
+      } & SectionLogos)
+    | ({
+        _key: string;
+      } & SectionLinksList)
+    | ({
+        _key: string;
+      } & SectionCardsGrid)
+    | ({
+        _key: string;
+      } & SectionBlog)
+    | ({
+        _key: string;
+      } & SectionSimpleCarousel)
+    | ({
+        _key: string;
+      } & SectionWideSimpleCarousel)
+    | ({
+        _key: string;
+      } & SectionHero)
+  >;
+  footer: {
+    _ref: string;
+    _type: "reference";
+    _weak?: boolean;
+    [internalGroqTypeReferenceTo]?: "footer";
+  };
+  seoTitle?: string;
+  seoDescription?: string;
+  showCookieBanner?: boolean;
+  robots?: "index" | "noindex";
+  ogImage?: {
+    asset?: {
+      _ref: string;
+      _type: "reference";
+      _weak?: boolean;
+      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+    };
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    alt: string;
+    _type: "image";
+  };
+};
+
+export type Footer = {
+  _id: string;
+  _type: "footer";
+  _createdAt: string;
+  _updatedAt: string;
+  _rev: string;
+  title?: string;
+  image?: CustomImage;
+  text?: CustomRichText;
+  links?: Array<
+    {
+      _key: string;
+    } & CustomLink
+  >;
+  copywriteText?: string;
+  theme: "light" | "dark";
+};
+
 export type CustomRichText = {
   _type: "customRichText";
   text?: Array<
@@ -334,101 +413,21 @@ export type CustomRichText = {
   removeInnerMargins: boolean;
 };
 
-export type CustomLink = {
-  _type: "customLink";
-  text: string;
-  type: "url" | "internal";
-  href?: string;
-  target: "_self" | "_blank" | "_parent" | "_top";
-  url?: {
-    _ref: string;
-    _type: "reference";
-    _weak?: boolean;
-    [internalGroqTypeReferenceTo]?: "page";
-  };
-  variant:
-    | "default"
-    | "primary"
-    | "secondary"
-    | "headerNav"
-    | "footerNav"
-    | "badge";
-};
-
-export type CustomImage = {
-  _type: "customImage";
-  image: {
-    asset?: {
-      _ref: string;
-      _type: "reference";
-      _weak?: boolean;
-      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
-    };
-    hotspot?: SanityImageHotspot;
-    crop?: SanityImageCrop;
-    alt: string;
-    _type: "image";
-  };
-  height: number;
-  aspectRatio: "16/9" | "3/2" | "4/3" | "1/1" | "9/16" | "1/2" | "4/1" | "3/1";
-};
-
-export type Page = {
+export type Header = {
   _id: string;
-  _type: "page";
+  _type: "header";
   _createdAt: string;
   _updatedAt: string;
   _rev: string;
   title?: string;
-  pathname?: Slug;
-  sectionsBody?: Array<
-    | ({
-        _key: string;
-      } & SectionHeader)
-    | ({
-        _key: string;
-      } & SectionFooter)
-    | ({
-        _key: string;
-      } & SectionCopy)
-    | ({
-        _key: string;
-      } & SectionLogos)
-    | ({
-        _key: string;
-      } & SectionLinksList)
-    | ({
-        _key: string;
-      } & SectionCardsGrid)
-    | ({
-        _key: string;
-      } & SectionBlog)
-    | ({
-        _key: string;
-      } & SectionSimpleCarousel)
-    | ({
-        _key: string;
-      } & SectionWideSimpleCarousel)
-    | ({
-        _key: string;
-      } & SectionHero)
+  image?: CustomImage;
+  links: Array<
+    {
+      _key: string;
+    } & CustomLink
   >;
-  seoTitle?: string;
-  seoDescription?: string;
-  showCookieBanner: boolean;
-  robots?: "index" | "noindex";
-  ogImage?: {
-    asset?: {
-      _ref: string;
-      _type: "reference";
-      _weak?: boolean;
-      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
-    };
-    hotspot?: SanityImageHotspot;
-    crop?: SanityImageCrop;
-    alt: string;
-    _type: "image";
-  };
+  alignVariant: "left" | "center" | "right";
+  theme: "light" | "dark";
 };
 
 export type SanityImageCrop = {
@@ -488,6 +487,24 @@ export type SanityImageMetadata = {
   isOpaque?: boolean;
 };
 
+export type CustomImage = {
+  _type: "customImage";
+  image: {
+    asset?: {
+      _ref: string;
+      _type: "reference";
+      _weak?: boolean;
+      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+    };
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    alt: string;
+    _type: "image";
+  };
+  height: number;
+  aspectRatio: "16/9" | "3/2" | "4/3" | "1/1" | "9/16" | "1/2" | "4/1" | "3/1";
+};
+
 export type Slug = {
   _type: "slug";
   current: string;
@@ -526,8 +543,6 @@ export type AllSanitySchemaTypes =
   | SectionLinksList
   | SectionLogos
   | SectionCopy
-  | SectionFooter
-  | SectionHeader
   | WideSimpleCarouselCard
   | SimpleCarouselCard
   | BlogSectionPost
@@ -535,15 +550,17 @@ export type AllSanitySchemaTypes =
   | Break
   | DefaultCard
   | LogoItem
-  | CustomRichText
   | CustomLink
-  | CustomImage
   | Page
+  | Footer
+  | CustomRichText
+  | Header
   | SanityImageCrop
   | SanityImageHotspot
   | SanityImageAsset
   | SanityAssetSourceData
   | SanityImageMetadata
+  | CustomImage
   | Slug
   | HighlightColor
   | TextColor

@@ -1,9 +1,13 @@
-import { HEADER_FRAGMENT } from "@/contentSections/Header/query";
 import { groq } from "next-sanity";
 
+import { FOOTER_FRAGMENT } from "@/components/Footer/query";
+import { HEADER_FRAGMENT } from "@/components/Header/query";
+
 const fragmentsBySectionType = {
+  // refactor, headeris no more section
   "section.header": HEADER_FRAGMENT,
 };
+
 const allSectionFragments = Object.entries(fragmentsBySectionType)
   .map(
     ([sectionType, fragment]) => `_type == "${sectionType}" => { ${fragment} }`,
@@ -13,9 +17,15 @@ const allSectionFragments = Object.entries(fragmentsBySectionType)
 export const PAGE_BY_SLUG_QUERY = groq`
   *[_type == "page" && pathname.current == $slug][0] {
     _id,
+    header->{
+      ${HEADER_FRAGMENT}
+    },
     sectionsBody[] {
       ...,
       ${allSectionFragments}
+    },
+    footer->{
+      ${FOOTER_FRAGMENT}
     },
     title,
     "slug": pathname.current,
