@@ -1,5 +1,6 @@
 import { groq } from "next-sanity";
 
+import { FOOTER_FRAGMENT } from "@/components/Footer/query";
 import { HEADER_FRAGMENT } from "@/components/Header/query";
 
 const fragmentsBySectionType = {
@@ -22,6 +23,9 @@ export const PAGE_BY_SLUG_QUERY = groq`
     sectionsBody[] {
       ...,
       ${allSectionFragments}
+    },
+    footer->{
+      ${FOOTER_FRAGMENT}
     },
     title,
     "slug": pathname.current,

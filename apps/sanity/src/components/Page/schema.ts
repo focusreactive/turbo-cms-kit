@@ -47,6 +47,14 @@ export default defineType({
       // }),
     }),
     defineField({
+      name: "footer",
+      title: "Footer",
+      type: "reference",
+      to: [{ type: "footer" }],
+      group: CommonGroup.Content,
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
       type: "string",
       name: "seoTitle",
       title: "SEO Title",

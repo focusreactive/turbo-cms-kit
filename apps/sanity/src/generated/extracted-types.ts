@@ -173,18 +173,6 @@ export type SectionCopy = {
   marginBottom: "none" | "base" | "lg";
 };
 
-export type SectionFooter = {
-  _type: "section.footer";
-  text?: CustomRichText;
-  links?: Array<
-    {
-      _key: string;
-    } & CustomLink
-  >;
-  copywriteText?: string;
-  theme: "light" | "dark";
-};
-
 export type WideSimpleCarouselCard = {
   _type: "wideSimpleCarouselCard";
   image: CustomImage;
@@ -270,6 +258,109 @@ export type LogoItem = {
   link?: CustomLink;
 };
 
+export type CustomLink = {
+  _type: "customLink";
+  text: string;
+  type: "url" | "internal";
+  href?: string;
+  target: "_self" | "_blank" | "_parent" | "_top";
+  url?: {
+    _ref: string;
+    _type: "reference";
+    _weak?: boolean;
+    [internalGroqTypeReferenceTo]?: "page";
+  };
+  variant:
+    | "default"
+    | "primary"
+    | "secondary"
+    | "headerNav"
+    | "footerNav"
+    | "badge";
+};
+
+export type Page = {
+  _id: string;
+  _type: "page";
+  _createdAt: string;
+  _updatedAt: string;
+  _rev: string;
+  title?: string;
+  pathname?: Slug;
+  header: {
+    _ref: string;
+    _type: "reference";
+    _weak?: boolean;
+    [internalGroqTypeReferenceTo]?: "header";
+  };
+  sectionsBody?: Array<
+    | ({
+        _key: string;
+      } & SectionCopy)
+    | ({
+        _key: string;
+      } & SectionLogos)
+    | ({
+        _key: string;
+      } & SectionLinksList)
+    | ({
+        _key: string;
+      } & SectionCardsGrid)
+    | ({
+        _key: string;
+      } & SectionBlog)
+    | ({
+        _key: string;
+      } & SectionSimpleCarousel)
+    | ({
+        _key: string;
+      } & SectionWideSimpleCarousel)
+    | ({
+        _key: string;
+      } & SectionHero)
+  >;
+  footer: {
+    _ref: string;
+    _type: "reference";
+    _weak?: boolean;
+    [internalGroqTypeReferenceTo]?: "footer";
+  };
+  seoTitle?: string;
+  seoDescription?: string;
+  showCookieBanner?: boolean;
+  robots?: "index" | "noindex";
+  ogImage?: {
+    asset?: {
+      _ref: string;
+      _type: "reference";
+      _weak?: boolean;
+      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+    };
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    alt: string;
+    _type: "image";
+  };
+};
+
+export type Footer = {
+  _id: string;
+  _type: "footer";
+  _createdAt: string;
+  _updatedAt: string;
+  _rev: string;
+  title?: string;
+  image?: CustomImage;
+  text?: CustomRichText;
+  links?: Array<
+    {
+      _key: string;
+    } & CustomLink
+  >;
+  copywriteText?: string;
+  theme: "light" | "dark";
+};
+
 export type CustomRichText = {
   _type: "customRichText";
   text?: Array<
@@ -320,88 +411,6 @@ export type CustomRichText = {
   >;
   alignVariant: "left" | "center" | "right";
   removeInnerMargins: boolean;
-};
-
-export type CustomLink = {
-  _type: "customLink";
-  text: string;
-  type: "url" | "internal";
-  href?: string;
-  target: "_self" | "_blank" | "_parent" | "_top";
-  url?: {
-    _ref: string;
-    _type: "reference";
-    _weak?: boolean;
-    [internalGroqTypeReferenceTo]?: "page";
-  };
-  variant:
-    | "default"
-    | "primary"
-    | "secondary"
-    | "headerNav"
-    | "footerNav"
-    | "badge";
-};
-
-export type Page = {
-  _id: string;
-  _type: "page";
-  _createdAt: string;
-  _updatedAt: string;
-  _rev: string;
-  title?: string;
-  pathname?: Slug;
-  header: {
-    _ref: string;
-    _type: "reference";
-    _weak?: boolean;
-    [internalGroqTypeReferenceTo]?: "header";
-  };
-  sectionsBody?: Array<
-    | ({
-        _key: string;
-      } & SectionFooter)
-    | ({
-        _key: string;
-      } & SectionCopy)
-    | ({
-        _key: string;
-      } & SectionLogos)
-    | ({
-        _key: string;
-      } & SectionLinksList)
-    | ({
-        _key: string;
-      } & SectionCardsGrid)
-    | ({
-        _key: string;
-      } & SectionBlog)
-    | ({
-        _key: string;
-      } & SectionSimpleCarousel)
-    | ({
-        _key: string;
-      } & SectionWideSimpleCarousel)
-    | ({
-        _key: string;
-      } & SectionHero)
-  >;
-  seoTitle?: string;
-  seoDescription?: string;
-  showCookieBanner?: boolean;
-  robots?: "index" | "noindex";
-  ogImage?: {
-    asset?: {
-      _ref: string;
-      _type: "reference";
-      _weak?: boolean;
-      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
-    };
-    hotspot?: SanityImageHotspot;
-    crop?: SanityImageCrop;
-    alt: string;
-    _type: "image";
-  };
 };
 
 export type Header = {
@@ -534,7 +543,6 @@ export type AllSanitySchemaTypes =
   | SectionLinksList
   | SectionLogos
   | SectionCopy
-  | SectionFooter
   | WideSimpleCarouselCard
   | SimpleCarouselCard
   | BlogSectionPost
@@ -542,9 +550,10 @@ export type AllSanitySchemaTypes =
   | Break
   | DefaultCard
   | LogoItem
-  | CustomRichText
   | CustomLink
   | Page
+  | Footer
+  | CustomRichText
   | Header
   | SanityImageCrop
   | SanityImageHotspot

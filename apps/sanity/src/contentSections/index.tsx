@@ -4,7 +4,6 @@ import CardsGrid from "./CardsGrid";
 import SimpleCarousel from "./carousels/SimpleCarousel";
 import WideSimpleCarousel from "./carousels/WideSimpleCarousel";
 import Copy from "./Copy";
-import Footer from "./Footer";
 import Hero from "./Hero";
 import LinksList from "./LinksList";
 import Logos from "./Logos";
@@ -13,7 +12,6 @@ import Logos from "./Logos";
 
 export const sections: Record<string, any> = {
   // start of section object
-  "section.footer": Footer,
   "section.copy": Copy,
   "section.logos": Logos,
   "section.linksList": LinksList,

@@ -1,7 +1,7 @@
-import type { SectionHeader } from "@/generated/extracted-types";
+import type { Header } from "@/generated/extracted-types";
 
 export interface IHeaderProps {
-  data: SectionHeader & {
+  data: Header & {
     _key: string;
   };
 }
