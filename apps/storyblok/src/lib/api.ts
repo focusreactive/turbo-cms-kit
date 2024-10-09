@@ -69,14 +69,29 @@ export async function fetchStoryBySlug(
     searchParamsData as Record<string, string>,
   );
 
-  const { story, links } = await fetch(
+  const { story, links, rels } = await fetch(
     `${API_GATE}/stories/${slug?.join("/") || ""}?${searchParams.toString()}`,
   ).then((res) => res.json());
+
+  // REST storyblok API doesnt resolve relations in the response, only uuid
+  // So we need to resolve them manually
+  // using this function it should be done automatically
+  if (params?.resolve_relations) {
+    const relations = params.resolve_relations.split(",");
+
+    relations.forEach((relation) => {
+      story.content[relation] = findRelation(rels, story.content[relation]);
+    });
+  }
 
   return {
     story,
     links,
   };
+}
+
+function findRelation(rels: any, id: string) {
+  return rels.find((rel: any) => rel.uuid === id);
 }
 
 // This function uses only on a build lvl to generate a sitemap

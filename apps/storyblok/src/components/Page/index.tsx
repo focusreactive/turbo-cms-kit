@@ -11,8 +11,8 @@ export default function PageContainer({ blok }: IPageContainerProps) {
 
   return (
     <div>
-      {sections.map((section) => (
-        <StoryblokComponent blok={{ ...section }} key={section._uid} />
+      {sections.map((s) => (
+        <StoryblokComponent blok={s} key={s._uid} />
       ))}
       {showCookieBanner && <CookieBanner />}
     </div>
