@@ -10,10 +10,13 @@ import customRichText, { basicRichText, richTextBreak } from "./customRichText";
 // prettier-ignore
 import page from "@/components/Page/schema";
 
+import header from "@/components/Header/schema";
+
 import sections from "./sections";
 
 const schemas = [
   page,
+  header,
   customImage,
   customLink,
   customRichText,

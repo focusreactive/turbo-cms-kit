@@ -27,6 +27,14 @@ export default defineType({
     }),
     definePathname({ name: "pathname", group: CommonGroup.Content }),
     defineField({
+      name: "header",
+      title: "Header",
+      type: "reference",
+      to: [{ type: "header" }],
+      group: CommonGroup.Content,
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
       name: "sectionsBody",
       title: "Sections",
       type: "array",
@@ -55,7 +63,6 @@ export default defineType({
       name: "showCookieBanner",
       title: "Show Cookie Banner",
       group: "seo",
-      validation: (Rule) => Rule.required(),
       initialValue: true,
     }),
     defineField({

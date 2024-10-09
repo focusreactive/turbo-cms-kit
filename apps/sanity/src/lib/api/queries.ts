@@ -1,5 +1,6 @@
-import { HEADER_FRAGMENT } from "@/contentSections/Header/query";
 import { groq } from "next-sanity";
+
+import { HEADER_FRAGMENT } from "@/components/Header/query";
 
 const fragmentsBySectionType = {
   "section.header": HEADER_FRAGMENT,
