@@ -45,7 +45,7 @@ export default async function Home({ params, searchParams }: Props) {
     isDraftModeEnabled,
     params.slug,
     {
-      resolve_relations: "header",
+      resolve_relations: "header,footer",
     },
   );
 
