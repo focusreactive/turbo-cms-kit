@@ -3,16 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --port=4040",
+    "dev": "next dev --port=4050 --experimental-https",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "proxy": "local-ssl-proxy --source 4050 --target 4040 --cert localhost.pem --key localhost-key.pem",
-    "sb:login": "pnpm storyblok login",
+    "sb-login": "pnpm storyblok login",
     "pull-schemas": "pnpm storyblok pull-components --space 293915 --file-name production --path src/generated/",
-    "push-schemas": "pnpm storyblok push-components --space ###### src/generated/components.production.json --presets-source src/generated/presets.production.json",
     "generate-types": "pnpm pull-schemas && storyblok generate-typescript-typedefs --sourceFilePaths ./src/generated/components.production.json --destinationFilePath src/generated/extracted-types.ts",
-    "generate-ssl": "openssl req -x509 -newkey rsa:2048 -nodes -keyout localhost-key.pem -out localhost.pem -sha256 -days 365 -subj /CN=localhost"
+    "sync-new-space": "pnpm storyblok sync --type folders,components,datasources,stories --source 293915 --target"
   },
   "dependencies": {
     "@shared/ui": "workspace:*",
@@ -33,7 +31,6 @@
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
-    "local-ssl-proxy": "^2.0.5",
     "postcss": "^8",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.14",
