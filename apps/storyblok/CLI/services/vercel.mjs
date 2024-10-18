@@ -186,7 +186,7 @@ export async function getVercelProjects() {
 
 export async function createProjectDeployment({ name, id }) {
   const envs = loadEnvVariables();
-  const vercelTeamId = envs.VERCEL_FR_TEAM_ID;
+  const vercelTeamId = envs.VERCEL_TEAM_ID;
   const vercelToken = envs.VERCEL_PERSONAL_AUTH_TOKEN;
   const repoId = envs.REPO_ID;
   const repoProdBranch = envs.REPO_PROD_BRANCH;
@@ -212,11 +212,13 @@ export async function createProjectDeployment({ name, id }) {
       }),
     },
   );
+  const data = await response.json();
 
   if (!response.ok) {
+    console.log(response.status, response.statusText, data);
+
     throw new Error(`❌ HTTP error! Status: ${response.status}`);
   }
 
-  const data = await response.json();
   return data;
 }

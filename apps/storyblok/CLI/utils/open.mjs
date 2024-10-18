@@ -1,7 +1,7 @@
 import inquirer from "inquirer";
 import open from "open";
 
-export async function openUrlAndWait(url) {
+export async function openUrlAndWait(url, spinner) {
   // Open the URL in the default browser
   await open(url);
 

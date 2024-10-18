@@ -68,6 +68,7 @@ const main = async () => {
   try {
     await openUrlAndWait(
       `https://app.storyblok.com/me/spaces/${spaceId}/dashboard#/me/spaces/${spaceId}/dashboard`,
+      spinner,
     );
     spinner.succeed("Storyblok space plan selected successfully");
   } catch (error) {
@@ -110,16 +111,8 @@ const main = async () => {
   try {
     spinner.start("Updating Storyblok space...");
 
-    console.log(1);
-    console.log({
-      domain: previewDeploymentUrl,
-    });
-    console.log(2);
-
-    console.log(`${productionDeploymentUrl}/api/revalidate`);
-
     await updateStoryblokSpace(spaceId, {
-      domain: previewDeploymentUrl,
+      domain: `${previewDeploymentUrl}/`,
     });
     await createStoryblokWebhook(
       spaceId,
@@ -133,7 +126,13 @@ const main = async () => {
 
   spinner.start("Syncing new space with existing space...");
   try {
-    execSync(`pnpm sync-new-space ${spaceId}`, { stdio: "inherit" });
+    // const pipeOutput =
+    execSync(`pnpm sync-new-space ${spaceId}`, {
+      stdio: "inherit",
+    });
+    // console.log("pipeOutput0090909");
+    // console.log(pipeOutput);
+
     spinner.succeed("New space synced successfully");
   } catch (error) {
     spinner.fail(`Failed to sync new space: ${error.message}`);
