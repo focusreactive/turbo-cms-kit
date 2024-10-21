@@ -49,10 +49,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   });
 
   const sitemap = filteredStories.map((page) => {
-    const coorectPath = page.full_slug.split("/").filter(Boolean);
+    const correctPath = page.full_slug.split("/").filter(Boolean);
 
     return {
-      url: `${process.env.NEXT_PUBLIC_DOMAIN}/${coorectPath.join("/")}`,
+      url: `${process.env.NEXT_PUBLIC_DOMAIN}/${correctPath.join("/")}`,
       lastModified: new Date(page.published_at as string),
     };
   });

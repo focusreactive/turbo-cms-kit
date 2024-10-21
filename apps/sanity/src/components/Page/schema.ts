@@ -79,10 +79,11 @@ export default defineType({
       options: {
         list: [
           { title: "index", value: "index" },
-          { title: "no index", value: "noindex" },
+          { title: "no index", value: "no-index" },
         ],
       },
       group: "seo",
+      initialValue: "index",
     }),
     defineField({
       name: "ogImage",
