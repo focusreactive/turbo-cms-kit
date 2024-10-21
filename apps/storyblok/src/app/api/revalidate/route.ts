@@ -26,7 +26,7 @@ export async function POST(request: Request) {
     pagePath = result?.replace("(", "")?.replace(")", "");
   }
 
-  if (secret !== process.env.NEXT_PREVIEW_TOKEN) {
+  if (secret !== process.env.SB_WEBHOOK_REVALIDATE_SECRET) {
     return Response.json({ error: "No secret provided" }, { status: 400 });
   }
 
