@@ -9,6 +9,7 @@ const storiesPerPageSize = 100;
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const commonFetchParams: ISbStoriesParams = {
     per_page: storiesPerPageSize,
+    content_type: "page",
     version: isDraftModeEnv ? "draft" : "published",
   };
   const { data, headers } = await fetchStoriesByParams(
@@ -40,11 +41,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       return false;
     }
 
+    if (page.content.robots === "no-index") {
+      return false;
+    }
+
     return true;
   });
 
   const sitemap = filteredStories.map((page) => {
-    const [, ...coorectPath] = page.full_slug.split("/").filter(Boolean);
+    const coorectPath = page.full_slug.split("/").filter(Boolean);
 
     return {
       url: `${process.env.NEXT_PUBLIC_DOMAIN}/${coorectPath.join("/")}`,
