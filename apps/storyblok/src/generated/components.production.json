@@ -1646,7 +1646,7 @@
       "name": "page",
       "display_name": null,
       "created_at": "2024-06-21T13:27:14.550Z",
-      "updated_at": "2024-10-09T16:12:18.153Z",
+      "updated_at": "2024-10-21T12:17:53.603Z",
       "id": 5960538,
       "schema": {
         "header": {
@@ -1722,11 +1722,12 @@
             },
             {
               "_uid": "7d42c429-c3f0-4c7b-9c8d-cf6858489a3c",
-              "value": "no index",
+              "value": "no-index",
               "name": "no index"
             }
           ],
-          "key": "robots"
+          "key": "robots",
+          "exclude_empty_option": true
         },
         "showCookieBanner": {
           "type": "boolean",

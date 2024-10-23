@@ -9,8 +9,8 @@
     "lint": "next lint",
     "sb-login": "pnpm storyblok login",
     "pull-schemas": "pnpm storyblok pull-components --space 293915 --file-name production --path src/generated/",
-    "generate-types": "pnpm pull-schemas && storyblok generate-typescript-typedefs --sourceFilePaths ./src/generated/components.production.json --destinationFilePath src/generated/extracted-types.ts",
-    "sync-new-space": "pnpm storyblok sync --type folders,components,datasources,stories --source 293915 --target"
+    "push-schemas": "pnpm storyblok push-components src/generated/components.production.json --presets-source src/generated/presets.production.json --space",
+    "generate-types": "pnpm pull-schemas && storyblok generate-typescript-typedefs --sourceFilePaths ./src/generated/components.production.json --destinationFilePath src/generated/extracted-types.ts"
   },
   "dependencies": {
     "@shared/ui": "workspace:*",

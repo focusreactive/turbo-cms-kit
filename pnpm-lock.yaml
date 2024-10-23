@@ -147,7 +147,7 @@ importers:
         version: 3.0.10(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       next:
         specifier: '>=14.1.1'
-        version: 14.2.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 14.2.5(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react:
         specifier: ^18
         version: 18.3.1
@@ -169,7 +169,7 @@ importers:
         version: link:../../packages/ts-config
       '@tailwindcss/typography':
         specifier: ^0.5.10
-        version: 0.5.13(tailwindcss@3.4.4(ts-node@10.9.2(@types/node@20.14.10)(typescript@5.4.5)))
+        version: 0.5.13(tailwindcss@3.4.4(ts-node@10.9.2(@swc/core@1.7.28)(@types/node@20.14.10)(typescript@5.4.5)))
       '@types/node':
         specifier: ^20
         version: 20.14.10
@@ -199,10 +199,10 @@ importers:
         version: 0.5.14(@ianvs/prettier-plugin-sort-imports@4.3.0(prettier@3.3.2))(prettier@3.3.2)
       storyblok:
         specifier: ^3.34.0
-        version: 3.34.0
+        version: 3.35.0
       tailwindcss:
         specifier: ^3.4.3
-        version: 3.4.4(ts-node@10.9.2(@types/node@20.14.10)(typescript@5.4.5))
+        version: 3.4.4(ts-node@10.9.2(@swc/core@1.7.28)(@types/node@20.14.10)(typescript@5.4.5))
       typescript:
         specifier: 5.4.5
         version: 5.4.5
@@ -4487,8 +4487,8 @@ packages:
   fd-slicer@1.1.0:
     resolution: {integrity: sha512-cE1qsB/VwyQozZ+q1dGxR8LBYNZeofhEdUNGSMbQD3Gw2lAzX9Zb3uIU6Ebc/Fmyjo9AWWfnn0AUCHqtevs/8g==}
 
-  figlet@1.7.0:
-    resolution: {integrity: sha512-gO8l3wvqo0V7wEFLXPbkX83b7MVjRrk1oRLfYlZXol8nEpb/ON9pcKLI4qpBv5YtOTfrINtqb7b40iYY2FTWFg==}
+  figlet@1.8.0:
+    resolution: {integrity: sha512-chzvGjd+Sp7KUvPHZv6EXV5Ir3Q7kYNpCr4aHrRW79qFtTefmQZNny+W1pW9kf5zeE6dikku2W50W/wAH2xWgw==}
     engines: {node: '>= 0.4.0'}
     hasBin: true
 
@@ -4577,8 +4577,8 @@ packages:
     resolution: {integrity: sha512-yDYSgNMraqvnxiEXO4hi88+YZxaHC6QKzb5N84iRCTDeRO7ZALpir/lVmf/uXUhnwUr2O4HU8s/n6x+yNjQkHw==}
     engines: {node: '>= 14.17'}
 
-  form-data@3.0.1:
-    resolution: {integrity: sha512-RHkBKtLWUVwd7SqRIvCZMEvAMoGUp0XU+seQiZejj0COz3RI3hWP4sCv3gZWWLjJTd7rGwcsF5eKZGii0r/hbg==}
+  form-data@3.0.2:
+    resolution: {integrity: sha512-sJe+TQb2vIaIyO783qN6BlMYWMw3WBOHA1Ay2qxsnjuafEOQFJ2JakedOQirT6D5XPRxDvS7AHYyem9fTpb4LQ==}
     engines: {node: '>= 6'}
 
   form-data@4.0.0:
@@ -6996,8 +6996,8 @@ packages:
     peerDependencies:
       react: '>=16.0.0'
 
-  storyblok@3.34.0:
-    resolution: {integrity: sha512-V7m0SpeMaThFZmDuPl7oJQYaSfnCT8HyH5rClYzJtaXW9xGtwOmgJLKPmmcec1KfGVEIlsmKjZthUMq9GnhpFA==}
+  storyblok@3.35.0:
+    resolution: {integrity: sha512-qR60cylwAroyIrrdDada7shc5AWafewTjKSvDHbdzP0g6pYmnnBQkeTEmZDV9354+wsFTRaOQNHuCbD20mHDTw==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -10601,6 +10601,14 @@ snapshots:
     dependencies:
       defer-to-connect: 2.0.1
 
+  '@tailwindcss/typography@0.5.13(tailwindcss@3.4.4(ts-node@10.9.2(@swc/core@1.7.28)(@types/node@20.14.10)(typescript@5.4.5)))':
+    dependencies:
+      lodash.castarray: 4.4.0
+      lodash.isplainobject: 4.0.6
+      lodash.merge: 4.6.2
+      postcss-selector-parser: 6.0.10
+      tailwindcss: 3.4.4(ts-node@10.9.2(@swc/core@1.7.28)(@types/node@20.14.10)(typescript@5.4.5))
+
   '@tailwindcss/typography@0.5.13(tailwindcss@3.4.4(ts-node@10.9.2(@swc/core@1.7.28)(@types/node@22.0.2)(typescript@5.4.5)))':
     dependencies:
       lodash.castarray: 4.4.0
@@ -10608,14 +10616,6 @@ snapshots:
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
       tailwindcss: 3.4.4(ts-node@10.9.2(@swc/core@1.7.28)(@types/node@22.0.2)(typescript@5.4.5))
-
-  '@tailwindcss/typography@0.5.13(tailwindcss@3.4.4(ts-node@10.9.2(@types/node@20.14.10)(typescript@5.4.5)))':
-    dependencies:
-      lodash.castarray: 4.4.0
-      lodash.isplainobject: 4.0.6
-      lodash.merge: 4.6.2
-      postcss-selector-parser: 6.0.10
-      tailwindcss: 3.4.4(ts-node@10.9.2(@types/node@20.14.10)(typescript@5.4.5))
 
   '@tanstack/react-table@8.19.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -11472,7 +11472,7 @@ snapshots:
 
   axios@0.27.2:
     dependencies:
-      follow-redirects: 1.15.6
+      follow-redirects: 1.15.6(debug@4.3.5)
       form-data: 4.0.0
     transitivePeerDependencies:
       - debug
@@ -12506,7 +12506,7 @@ snapshots:
       eslint: 8.57.0
       eslint-import-resolver-node: 0.3.9
       eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@6.21.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(eslint@8.57.0))(eslint@8.57.0)
-      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@6.21.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
+      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@6.21.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@6.21.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(eslint@8.57.0))(eslint@8.57.0))(eslint@8.57.0)
       eslint-plugin-jsx-a11y: 6.9.0(eslint@8.57.0)
       eslint-plugin-react: 7.34.3(eslint@8.57.0)
       eslint-plugin-react-hooks: 4.6.2(eslint@8.57.0)
@@ -12539,7 +12539,7 @@ snapshots:
       enhanced-resolve: 5.17.0
       eslint: 8.57.0
       eslint-module-utils: 2.8.1(@typescript-eslint/parser@6.21.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@6.21.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(eslint@8.57.0))(eslint@8.57.0))(eslint@8.57.0)
-      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@6.21.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
+      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@6.21.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@6.21.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(eslint@8.57.0))(eslint@8.57.0))(eslint@8.57.0)
       fast-glob: 3.3.2
       get-tsconfig: 4.7.5
       is-core-module: 2.14.0
@@ -12561,7 +12561,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.29.1(@typescript-eslint/parser@6.21.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0):
+  eslint-plugin-import@2.29.1(@typescript-eslint/parser@6.21.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@6.21.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(eslint@8.57.0))(eslint@8.57.0))(eslint@8.57.0):
     dependencies:
       array-includes: 3.1.8
       array.prototype.findlastindex: 1.2.5
@@ -12814,7 +12814,7 @@ snapshots:
     dependencies:
       pend: 1.2.0
 
-  figlet@1.7.0: {}
+  figlet@1.8.0: {}
 
   figures@3.2.0:
     dependencies:
@@ -12881,8 +12881,6 @@ snapshots:
     dependencies:
       tslib: 2.6.3
 
-  follow-redirects@1.15.6: {}
-
   follow-redirects@1.15.6(debug@4.3.5):
     optionalDependencies:
       debug: 4.3.5
@@ -12898,7 +12896,7 @@ snapshots:
 
   form-data-encoder@2.1.4: {}
 
-  form-data@3.0.1:
+  form-data@3.0.2:
     dependencies:
       asynckit: 0.4.0
       combined-stream: 1.0.8
@@ -14176,31 +14174,6 @@ snapshots:
       - '@babel/core'
       - babel-plugin-macros
 
-  next@14.2.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
-    dependencies:
-      '@next/env': 14.2.5
-      '@swc/helpers': 0.5.5
-      busboy: 1.6.0
-      caniuse-lite: 1.0.30001640
-      graceful-fs: 4.2.11
-      postcss: 8.4.31
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      styled-jsx: 5.1.1(react@18.3.1)
-    optionalDependencies:
-      '@next/swc-darwin-arm64': 14.2.5
-      '@next/swc-darwin-x64': 14.2.5
-      '@next/swc-linux-arm64-gnu': 14.2.5
-      '@next/swc-linux-arm64-musl': 14.2.5
-      '@next/swc-linux-x64-gnu': 14.2.5
-      '@next/swc-linux-x64-musl': 14.2.5
-      '@next/swc-win32-arm64-msvc': 14.2.5
-      '@next/swc-win32-ia32-msvc': 14.2.5
-      '@next/swc-win32-x64-msvc': 14.2.5
-    transitivePeerDependencies:
-      - '@babel/core'
-      - babel-plugin-macros
-
   no-case@2.3.2:
     dependencies:
       lower-case: 1.1.4
@@ -14626,6 +14599,14 @@ snapshots:
       camelcase-css: 2.0.1
       postcss: 8.4.39
 
+  postcss-load-config@4.0.2(postcss@8.4.39)(ts-node@10.9.2(@swc/core@1.7.28)(@types/node@20.14.10)(typescript@5.4.5)):
+    dependencies:
+      lilconfig: 3.1.2
+      yaml: 2.4.5
+    optionalDependencies:
+      postcss: 8.4.39
+      ts-node: 10.9.2(@swc/core@1.7.28)(@types/node@20.14.10)(typescript@5.4.5)
+
   postcss-load-config@4.0.2(postcss@8.4.39)(ts-node@10.9.2(@swc/core@1.7.28)(@types/node@22.0.2)(typescript@5.4.5)):
     dependencies:
       lilconfig: 3.1.2
@@ -14633,14 +14614,6 @@ snapshots:
     optionalDependencies:
       postcss: 8.4.39
       ts-node: 10.9.2(@swc/core@1.7.28)(@types/node@22.0.2)(typescript@5.4.5)
-
-  postcss-load-config@4.0.2(postcss@8.4.39)(ts-node@10.9.2(@types/node@20.14.10)(typescript@5.4.5)):
-    dependencies:
-      lilconfig: 3.1.2
-      yaml: 2.4.5
-    optionalDependencies:
-      postcss: 8.4.39
-      ts-node: 10.9.2(@types/node@20.14.10)(typescript@5.4.5)
 
   postcss-nested@6.0.1(postcss@8.4.39):
     dependencies:
@@ -15515,7 +15488,7 @@ snapshots:
     dependencies:
       react: 18.3.1
 
-  storyblok@3.34.0:
+  storyblok@3.35.0:
     dependencies:
       '@storyblok/region-helper': 1.1.0
       axios: 0.27.2
@@ -15523,8 +15496,8 @@ snapshots:
       clear: 0.1.0
       commander: 5.1.0
       fast-csv: 4.3.6
-      figlet: 1.7.0
-      form-data: 3.0.1
+      figlet: 1.8.0
+      form-data: 3.0.2
       fs-extra: 9.1.0
       git-clone: 0.1.0
       inquirer: 7.3.3
@@ -15675,11 +15648,6 @@ snapshots:
     optionalDependencies:
       '@babel/core': 7.24.7
 
-  styled-jsx@5.1.1(react@18.3.1):
-    dependencies:
-      client-only: 0.0.1
-      react: 18.3.1
-
   stylis@4.3.2: {}
 
   sucrase@3.35.0:
@@ -15721,6 +15689,33 @@ snapshots:
     dependencies:
       tailwindcss: 3.4.4(ts-node@10.9.2(@swc/core@1.7.28)(@types/node@22.0.2)(typescript@5.4.5))
 
+  tailwindcss@3.4.4(ts-node@10.9.2(@swc/core@1.7.28)(@types/node@20.14.10)(typescript@5.4.5)):
+    dependencies:
+      '@alloc/quick-lru': 5.2.0
+      arg: 5.0.2
+      chokidar: 3.6.0
+      didyoumean: 1.2.2
+      dlv: 1.1.3
+      fast-glob: 3.3.2
+      glob-parent: 6.0.2
+      is-glob: 4.0.3
+      jiti: 1.21.6
+      lilconfig: 2.1.0
+      micromatch: 4.0.7
+      normalize-path: 3.0.0
+      object-hash: 3.0.0
+      picocolors: 1.0.1
+      postcss: 8.4.39
+      postcss-import: 15.1.0(postcss@8.4.39)
+      postcss-js: 4.0.1(postcss@8.4.39)
+      postcss-load-config: 4.0.2(postcss@8.4.39)(ts-node@10.9.2(@swc/core@1.7.28)(@types/node@20.14.10)(typescript@5.4.5))
+      postcss-nested: 6.0.1(postcss@8.4.39)
+      postcss-selector-parser: 6.1.0
+      resolve: 1.22.8
+      sucrase: 3.35.0
+    transitivePeerDependencies:
+      - ts-node
+
   tailwindcss@3.4.4(ts-node@10.9.2(@swc/core@1.7.28)(@types/node@22.0.2)(typescript@5.4.5)):
     dependencies:
       '@alloc/quick-lru': 5.2.0
@@ -15741,33 +15736,6 @@ snapshots:
       postcss-import: 15.1.0(postcss@8.4.39)
       postcss-js: 4.0.1(postcss@8.4.39)
       postcss-load-config: 4.0.2(postcss@8.4.39)(ts-node@10.9.2(@swc/core@1.7.28)(@types/node@22.0.2)(typescript@5.4.5))
-      postcss-nested: 6.0.1(postcss@8.4.39)
-      postcss-selector-parser: 6.1.0
-      resolve: 1.22.8
-      sucrase: 3.35.0
-    transitivePeerDependencies:
-      - ts-node
-
-  tailwindcss@3.4.4(ts-node@10.9.2(@types/node@20.14.10)(typescript@5.4.5)):
-    dependencies:
-      '@alloc/quick-lru': 5.2.0
-      arg: 5.0.2
-      chokidar: 3.6.0
-      didyoumean: 1.2.2
-      dlv: 1.1.3
-      fast-glob: 3.3.2
-      glob-parent: 6.0.2
-      is-glob: 4.0.3
-      jiti: 1.21.6
-      lilconfig: 2.1.0
-      micromatch: 4.0.7
-      normalize-path: 3.0.0
-      object-hash: 3.0.0
-      picocolors: 1.0.1
-      postcss: 8.4.39
-      postcss-import: 15.1.0(postcss@8.4.39)
-      postcss-js: 4.0.1(postcss@8.4.39)
-      postcss-load-config: 4.0.2(postcss@8.4.39)(ts-node@10.9.2(@types/node@20.14.10)(typescript@5.4.5))
       postcss-nested: 6.0.1(postcss@8.4.39)
       postcss-selector-parser: 6.1.0
       resolve: 1.22.8
@@ -15909,6 +15877,27 @@ snapshots:
 
   ts-interface-checker@0.1.13: {}
 
+  ts-node@10.9.2(@swc/core@1.7.28)(@types/node@20.14.10)(typescript@5.4.5):
+    dependencies:
+      '@cspotcode/source-map-support': 0.8.1
+      '@tsconfig/node10': 1.0.11
+      '@tsconfig/node12': 1.0.11
+      '@tsconfig/node14': 1.0.3
+      '@tsconfig/node16': 1.0.4
+      '@types/node': 20.14.10
+      acorn: 8.12.1
+      acorn-walk: 8.3.3
+      arg: 4.1.3
+      create-require: 1.1.1
+      diff: 4.0.2
+      make-error: 1.3.6
+      typescript: 5.4.5
+      v8-compile-cache-lib: 3.0.1
+      yn: 3.1.1
+    optionalDependencies:
+      '@swc/core': 1.7.28
+    optional: true
+
   ts-node@10.9.2(@swc/core@1.7.28)(@types/node@22.0.2)(typescript@5.4.5):
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
@@ -15928,25 +15917,6 @@ snapshots:
       yn: 3.1.1
     optionalDependencies:
       '@swc/core': 1.7.28
-
-  ts-node@10.9.2(@types/node@20.14.10)(typescript@5.4.5):
-    dependencies:
-      '@cspotcode/source-map-support': 0.8.1
-      '@tsconfig/node10': 1.0.11
-      '@tsconfig/node12': 1.0.11
-      '@tsconfig/node14': 1.0.3
-      '@tsconfig/node16': 1.0.4
-      '@types/node': 20.14.10
-      acorn: 8.12.1
-      acorn-walk: 8.3.3
-      arg: 4.1.3
-      create-require: 1.1.1
-      diff: 4.0.2
-      make-error: 1.3.6
-      typescript: 5.4.5
-      v8-compile-cache-lib: 3.0.1
-      yn: 3.1.1
-    optional: true
 
   tsconfig-paths@3.15.0:
     dependencies:

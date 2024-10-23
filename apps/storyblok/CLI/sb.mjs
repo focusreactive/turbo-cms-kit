@@ -4,13 +4,14 @@ import ora from "ora";
 import {
   createStoryblokSpace,
   createStoryblokWebhook,
+  updatePageComponentSectionsField,
   updateStoryblokSpace,
 } from "./services/storyblok.mjs";
 import {
   createProjectDeployment,
   createVercelProject,
 } from "./services/vercel.mjs";
-import { openUrlAndWait } from "./utils/open.mjs";
+import { openUrlAndConfirm } from "./utils/open.mjs";
 import {
   promptForProjectName,
   promptForToken,
@@ -30,15 +31,10 @@ const main = async () => {
     ),
   );
 
+  let sbPersonalAccessToken;
   try {
-    await promptForToken(
-      "SB_PERSONAL_ACCESS_TOKEN",
-      "Enter your Storyblok personal access token:",
-    );
-    await promptForToken(
-      "VERCEL_PERSONAL_AUTH_TOKEN",
-      "Enter your Vercel personal access token:",
-    );
+    sbPersonalAccessToken = await promptForToken("SB_PERSONAL_ACCESS_TOKEN");
+    await promptForToken("VERCEL_PERSONAL_AUTH_TOKEN");
     await promptForVercelTeam("VERCEL_TEAM_ID", "Select your Vercel team:");
   } catch (error) {
     console.error(colorText("Error providing tokens:", "red"), error.message);
@@ -50,6 +46,7 @@ const main = async () => {
   const spinner = ora("Creating Storyblok space...").start();
   let spaceId;
   let previewToken;
+
   try {
     const {
       spaceId: newSpaceId,
@@ -66,7 +63,7 @@ const main = async () => {
   }
 
   try {
-    await openUrlAndWait(
+    await openUrlAndConfirm(
       `https://app.storyblok.com/me/spaces/${spaceId}/dashboard#/me/spaces/${spaceId}/dashboard`,
       spinner,
     );
@@ -79,6 +76,9 @@ const main = async () => {
   }
 
   spinner.start("Creating Vercel production project...");
+
+  console.log("projectName: 121212");
+  console.log(projectName);
   const {
     deploymentUrl: productionDeploymentUrl,
     projectName: productionProjectName,
@@ -124,18 +124,21 @@ const main = async () => {
     spinner.fail(`Failed to update Storyblok space: ${error.message}`);
   }
 
-  spinner.start("Syncing new space with existing space...");
+  spinner.start("Filling new space with data...");
   try {
-    // const pipeOutput =
-    execSync(`pnpm sync-new-space ${spaceId}`, {
+    execSync(`pnpm storyblok login --token ${sbPersonalAccessToken}`, {
       stdio: "inherit",
     });
-    // console.log("pipeOutput0090909");
-    // console.log(pipeOutput);
 
-    spinner.succeed("New space synced successfully");
+    execSync(`pnpm push-schemas ${spaceId}`, {
+      stdio: "inherit",
+    });
+
+    await updatePageComponentSectionsField(spaceId);
+
+    spinner.succeed("New space filled with data successfully 🎉");
   } catch (error) {
-    spinner.fail(`Failed to sync new space: ${error.message}`);
+    spinner.fail(`Failed to fill new space: ${error.message}`);
     process.exit(1);
   }
 
