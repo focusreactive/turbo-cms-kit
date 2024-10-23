@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --port=4050 --experimental-https",
+    "dev": "next dev --port=4050 --experimental-https --turbo",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",

@@ -12,10 +12,10 @@ import Page from "@/components/Page";
 const PagePreview = dynamic(() => import("@/components/Page/PagePreview"));
 
 type Props = {
-  params: { slug: string[] | undefined };
+  params: Promise<{ slug: string[] | undefined }>;
 };
 
-const getSlug = (params: Props["params"]) => {
+const getSlug = (params: { slug: string[] | undefined }) => {
   // TODO: check why this happens
   if (params.slug?.[0] === "_next") return null;
 
@@ -23,7 +23,7 @@ const getSlug = (params: Props["params"]) => {
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const slug = getSlug(params);
+  const slug = getSlug(await params);
 
   if (!slug) {
     return {};
@@ -60,7 +60,7 @@ export async function generateStaticParams() {
 }
 
 export default async function PageSlugRoute({ params }: Props) {
-  const slug = getSlug(params);
+  const slug = getSlug(await params);
 
   if (!slug) {
     notFound();
@@ -68,7 +68,7 @@ export default async function PageSlugRoute({ params }: Props) {
 
   const initial = await loadPage(slug);
 
-  if (draftMode().isEnabled) {
+  if ((await draftMode()).isEnabled) {
     return <PagePreview params={{ slug }} initial={initial} />;
   }
 

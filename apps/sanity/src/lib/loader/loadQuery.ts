@@ -1,6 +1,6 @@
 import "server-only";
 
-import { draftMode } from "next/headers";
+import { draftMode, type UnsafeUnwrappedDraftMode } from "next/headers";
 import * as queryStore from "@sanity/react-loader";
 
 import config from "@/config";
@@ -27,7 +27,8 @@ const usingCdn = serverClient.config().useCdn;
 export const loadQuery = ((query, params = {}, options = {}) => {
   const isDev = process.env.NODE_ENV === "development";
   const {
-    perspective = draftMode().isEnabled || isDev
+    perspective = (draftMode() as unknown as UnsafeUnwrappedDraftMode)
+      .isEnabled || isDev
       ? "previewDrafts"
       : "published",
   } = options;
@@ -47,7 +48,7 @@ export const loadQuery = ((query, params = {}, options = {}) => {
     },
     perspective,
     // Enable stega if in Draft Mode, to enable overlays when outside Sanity Studio
-    stega: draftMode().isEnabled,
+    stega: (draftMode() as unknown as UnsafeUnwrappedDraftMode).isEnabled,
   });
 }) satisfies typeof queryStore.loadQuery;
 
