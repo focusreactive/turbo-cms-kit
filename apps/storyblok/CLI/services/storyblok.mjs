@@ -83,3 +83,102 @@ export async function createStoryblokWebhook(spaceId, endpoint) {
     throw new Error(`❌ HTTP error! Status: ${response.status}`);
   }
 }
+
+export async function updatePageComponentSectionsField(spaceId) {
+  const envs = loadEnvVariables();
+  const token = envs.SB_PERSONAL_ACCESS_TOKEN;
+
+  const pageComponent = await getPageComponent(spaceId);
+  const sectionsFolder = await getSectionsFolder(spaceId);
+
+  if (!pageComponent) {
+    throw new Error(`Page component "${pageName}" not found`);
+  }
+
+  const response = await fetch(
+    `https://mapi.storyblok.com/v1/spaces/${spaceId}/components/${pageComponent.id}`,
+    {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: token,
+      },
+      body: JSON.stringify({
+        component: {
+          schema: {
+            ...pageComponent.schema,
+            sections: {
+              ...pageComponent.schema.sections,
+              component_group_whitelist: [sectionsFolder.uuid],
+            },
+          },
+        },
+      }),
+    },
+  );
+
+  if (!response.ok) {
+    console.log(response.status, response.statusText, await response.json());
+    throw new Error(`❌ HTTP error! Status: ${response.status}`);
+  }
+
+  return await response.json();
+}
+
+async function getPageComponent(spaceId) {
+  const envs = loadEnvVariables();
+  const token = envs.SB_PERSONAL_ACCESS_TOKEN;
+  const componentName = "page";
+
+  const searchParams = new URLSearchParams({
+    search: componentName,
+  });
+
+  const response = await fetch(
+    `https://mapi.storyblok.com/v1/spaces/${spaceId}/components?${searchParams}`,
+    {
+      method: "GET",
+      headers: {
+        Authorization: token,
+      },
+    },
+  );
+
+  if (!response.ok) {
+    throw new Error(`HTTP error! Status: ${response.status}`);
+  }
+
+  const data = await response.json();
+  const component = data.components.find((comp) => comp.name === componentName);
+
+  if (!component) {
+    throw new Error(`Component "${componentName}" not found`);
+  }
+
+  return component;
+}
+
+async function getSectionsFolder(spaceId) {
+  const envs = loadEnvVariables();
+  const token = envs.SB_PERSONAL_ACCESS_TOKEN;
+
+  const response = await fetch(
+    `https://api.storyblok.com/v1/spaces/${spaceId}/component_groups/`,
+    {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: token,
+      },
+    },
+  );
+
+  if (!response.ok) {
+    console.log(response.status, response.statusText, await response.json());
+    throw new Error(`❌ HTTP error! Status: ${response.status}`);
+  }
+
+  const data = await response.json();
+
+  return data.component_groups.find((folder) => folder.name === "sections");
+}

@@ -1,15 +1,13 @@
 import inquirer from "inquirer";
 import open from "open";
 
-export async function openUrlAndWait(url, spinner) {
-  // Open the URL in the default browser
+export async function openUrlAndConfirm(url, spinner) {
   await open(url);
 
-  // Prompt the user to continue
   const { continue: shouldContinue } = await inquirer.prompt({
     type: "confirm",
     name: "continue",
-    message: "\nHave you completed the action in the browser?",
+    message: "Have you completed the action in the browser?",
     default: false,
   });
 
@@ -18,6 +16,6 @@ export async function openUrlAndWait(url, spinner) {
       "Please complete the action in the browser before continuing.",
     );
 
-    return openUrlAndWait(url);
+    return openUrlAndConfirm(url);
   }
 }
