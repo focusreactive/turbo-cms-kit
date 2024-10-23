@@ -1,8 +1,9 @@
 name: Save repository info
 
 on:
-  repository_dispatch:
-    types: [fork]
+  push:
+    branches:
+      - main
 
 permissions:
   contents: write
