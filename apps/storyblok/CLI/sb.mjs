@@ -124,9 +124,12 @@ const main = async () => {
 
   spinner.start("Filling new space with data...");
   try {
-    execSync(`pnpm storyblok login --token ${sbPersonalAccessToken}`, {
-      stdio: "inherit",
-    });
+    execSync(
+      `pnpm storyblok logout && pnpm storyblok login --token ${sbPersonalAccessToken}`,
+      {
+        stdio: "inherit",
+      },
+    );
 
     execSync(`pnpm push-schemas ${spaceId}`, {
       stdio: "inherit",
