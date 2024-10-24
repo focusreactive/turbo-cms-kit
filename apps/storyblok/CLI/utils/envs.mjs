@@ -1,5 +1,4 @@
 import fs from "fs";
-import path from "path";
 import dotenv from "dotenv";
 
 const envPaths = ["../.env", "../.env.local"];
@@ -17,8 +16,7 @@ export const loadEnvVariables = () => {
   return envVariables;
 };
 
-export const appendOrUpdateEnv = (key, value, envFile = "../.env.local") => {
-  const envPath = path.resolve(__dirname, envFile);
+export const appendOrUpdateEnv = (key, value, envPath = "../.env.local") => {
   let envContent = "";
 
   if (fs.existsSync(envPath)) {
