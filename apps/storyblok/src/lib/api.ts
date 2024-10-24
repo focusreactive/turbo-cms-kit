@@ -230,5 +230,5 @@ export async function getMetaData(slug?: string[]): Promise<Metadata> {
 }
 
 export const checkSSGPages = async () => {
-  return new Date().toLocaleDateString();
+  return new Date();
 };
