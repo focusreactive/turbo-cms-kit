@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import type { OpenGraph } from "next/dist/lib/metadata/types/opengraph-types";
 import { type ISbStoriesParams, type ISbStoryData } from "@storyblok/react/rsc";
 
+import { SB_CACHE_VERSION } from "@/constants/cacheTags";
+
 const API_GATE = process.env.NEXT_PUBLIC_API_GATE;
 const isDevMode = process.env.NODE_ENV === "development";
 const isDraftModeEnv =
@@ -21,6 +23,9 @@ export const getSBcacheCVparameter = async (isDraftMode: boolean) => {
   const { cv: cacheVersion } = await fetch(
     `${API_GATE}/stories?${searchParams.toString()}`,
     {
+      next: {
+        tags: [SB_CACHE_VERSION],
+      },
       cache: "no-store",
     },
   ).then((res) => res.json());
