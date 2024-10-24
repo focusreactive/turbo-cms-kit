@@ -31,7 +31,7 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # local env files
-.env*.local
+.env.local
 
 # vercel
 .vercel
@@ -40,5 +40,4 @@ yarn-error.log*
 *.tsbuildinfo
 
 # Env files created by scripts for working locally
-.env
 studio/.env.development

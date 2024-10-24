@@ -1,14 +1,8 @@
-// TODO: move link part somewhere near link schema
+import { LINK_FRAGMENT } from "@/lib/api/fragments";
+
 export const HEADER_FRAGMENT = `
   ...,
   links[] {
-    ...,
-    type == "internal" => {
-      url->{
-        _type == "page" => {
-          "slug": array::compact([pathname.current]),
-        },
-      },
-    },
+    ${LINK_FRAGMENT}
   }
 `;

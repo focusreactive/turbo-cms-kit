@@ -1,0 +1,46 @@
+name: Save repository info
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  save_repo_info:
+    name: Save repository info to .env file
+    if: >-
+      ${{ !github.event.repository.is_template }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Override .env files with repository info
+        run: |
+          rm -rf apps/sanity/.env
+          rm -rf apps/storyblok/.env
+
+          touch apps/sanity/.env
+          touch apps/storyblok/.env
+
+          echo -e "\nREPO_PROD_BRANCH=\"main\"\nREPO_TYPE=\"github\"\nREPO_ID=${{ github.event.repository.id }}\nREPO_NAME=${{ github.repository }}" >> apps/sanity/.env
+          echo -e "\nREPO_PROD_BRANCH=\"main\"\nREPO_TYPE=\"github\"\nREPO_ID=${{ github.event.repository.id }}\nREPO_NAME=${{ github.repository }}" >> apps/storyblok/.env
+
+      - name: Commit, push, and remove GitHub Actions workflow
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "${{ github.event.repository.owner.login }}@users.noreply.github.com"
+
+          rm -rf .github/workflows
+
+          git add .
+          git commit -m "Add repository info to .env and remove GitHub Actions workflows"
+          git push origin main

@@ -1,14 +1,20 @@
 import inquirer from "inquirer";
+import open from "open";
 
 import { getVercelTeams } from "../services/vercel.mjs";
 import { appendOrUpdateEnv, loadEnvVariables } from "./envs.mjs";
 
 const tokenNames = {
-  SB_PERSONAL_ACCESS_TOKEN: "Storyblok personal access token",
-  VERCEL_PERSONAL_AUTH_TOKEN: "Vercel personal access token",
+  SB_PERSONAL_ACCESS_TOKEN: "Storyblok access token",
+  VERCEL_PERSONAL_AUTH_TOKEN: "Vercel access token",
 };
 
-export async function promptForToken(tokenName, promptMessage) {
+const newTokenPages = {
+  SB_PERSONAL_ACCESS_TOKEN: "https://app.storyblok.com/#/me/account?tab=token",
+  VERCEL_PERSONAL_AUTH_TOKEN: "https://vercel.com/account/tokens",
+};
+
+export async function promptForToken(tokenName) {
   const env = loadEnvVariables();
 
   if (env[tokenName]) {
@@ -23,10 +29,22 @@ export async function promptForToken(tokenName, promptMessage) {
       return env[tokenName];
     }
   }
+
+  const { continue: shouldContinue } = await inquirer.prompt({
+    type: "confirm",
+    name: "continue",
+    message: `Open ${tokenNames[tokenName]} page in your browser?`,
+    default: true,
+  });
+
+  if (shouldContinue) {
+    await open(newTokenPages[tokenName]);
+  }
+
   const { token } = await inquirer.prompt({
     type: "input",
     name: "token",
-    message: promptMessage,
+    message: `Enter ${tokenNames[tokenName]}:`,
   });
 
   appendOrUpdateEnv(tokenName, token);
@@ -41,7 +59,8 @@ export async function promptForVercelTeam(vercelToken, promptMessage) {
     const { useCurrent } = await inquirer.prompt({
       type: "confirm",
       name: "useCurrent",
-      message: `Vercel team is already set. Do you want to keep the current value?`,
+      message:
+        "Vercel team is already set. Do you want to keep the current value?",
       default: true,
     });
 

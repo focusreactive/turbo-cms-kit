@@ -1,6 +1,6 @@
 import { LINK_FRAGMENT } from "@/lib/api/fragments";
 
-export const FOOTER_FRAGMENT = `
+export const HERO_FRAGMENT = `
   ...,
   links[] {
     ${LINK_FRAGMENT}

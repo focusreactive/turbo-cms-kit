@@ -3,6 +3,27 @@
 An endeavor accumulating the experience and best practices collected at [Focus Reactive](https://focusreactive.com/).
 The project serves the idea of making Headless CMS-based development accessible, comfortable, and fast.
 
+## Quick start - Storyblok
+
+1. Create a new repo based on [cms-kit template](https://github.com/focusreactive/turbo-cms-kit)
+![Screenshot 2024-10-24 at 17 52 54](https://github.com/user-attachments/assets/b4773c54-bf7f-4697-ae7e-ada6e5163bf0)
+2. Pull repo locally
+3. Install packages
+   ```bash
+   pnpm install
+   ```
+4. Go to CLI folder
+   ```bash
+   cd apps/storyblok/cli
+   ```
+5. Execute command
+   ```bash
+   node sb.mjs
+   ```
+7. Follow steps
+
+### Showcase
+
 ## Demo 👀
 ### Sanity
 - [Demo Landing](https://turbo-cms-kit-sanity.vercel.app/)
