@@ -24,11 +24,11 @@ jobs:
       - name: Print and save repository info
         run: |
           echo "Repository ID: ${{ github.event.repository.id }}"
-          echo "REPO_ID=${{ github.event.repository.id }}" >> apps/sanity/.env
-          echo "REPO_ID=${{ github.event.repository.id }}" >> apps/storyblok/.env
+          echo "\nREPO_ID=${{ github.event.repository.id }}" >> apps/sanity/.env
+          echo "\nREPO_ID=${{ github.event.repository.id }}" >> apps/storyblok/.env
           echo "Repository Name: ${{ github.repository }}"
-          echo "REPO_NAME=${{ github.repository }}" >> apps/sanity/.env
-          echo "REPO_NAME=${{ github.repository }}" >> apps/storyblok/.env
+          echo "\nREPO_NAME=${{ github.repository }}" >> apps/sanity/.env
+          echo "\nREPO_NAME=${{ github.repository }}" >> apps/storyblok/.env
 
       - name: Commit, push, and remove GitHub Actions workflow
         env:
