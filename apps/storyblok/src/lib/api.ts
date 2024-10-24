@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import type { OpenGraph } from "next/dist/lib/metadata/types/opengraph-types";
 import { type ISbStoriesParams, type ISbStoryData } from "@storyblok/react/rsc";
 
-import { SB_CACHE_VERSION } from "@/constants/cacheTags";
-
 const API_GATE = process.env.NEXT_PUBLIC_API_GATE;
 const isDevMode = process.env.NODE_ENV === "development";
 const isDraftModeEnv =
@@ -23,14 +21,7 @@ export const getSBcacheCVparameter = async (isDraftMode: boolean) => {
   const { cv: cacheVersion } = await fetch(
     `${API_GATE}/stories?${searchParams.toString()}`,
     {
-      next: {
-        tags: [SB_CACHE_VERSION],
-        ...(isDraftMode
-          ? {
-              revalidate: 0,
-            }
-          : {}),
-      },
+      cache: "no-store",
     },
   ).then((res) => res.json());
 
@@ -71,6 +62,7 @@ export async function fetchStoryBySlug(
 
   const { story, links, rels } = await fetch(
     `${API_GATE}/stories/${slug?.join("/") || ""}?${searchParams.toString()}`,
+    { cache: "force-cache" },
   ).then((res) => res.json());
 
   // REST storyblok API doesnt resolve relations in the response, only uuid
@@ -113,6 +105,7 @@ export async function fetchAllPages() {
 
   const linksResponse = await fetch(
     `${API_GATE}/links?${searchParams.toString()}`,
+    { cache: "force-cache" },
   );
 
   const pagesData = await linksResponse.json();
@@ -125,6 +118,7 @@ export async function fetchAllPages() {
   for (let i = 2; i <= lastPageNumber; i++) {
     const paginatedLinksResponse = await fetch(
       `${API_GATE}/links?${searchParams.toString()}&page=${i}`,
+      { cache: "force-cache" },
     );
 
     const paginatedLinksData = await paginatedLinksResponse.json();
@@ -158,6 +152,7 @@ export async function fetchStoriesByParams(
   try {
     const response = await fetch(
       `${API_GATE}/stories?${searchParams.toString()}`,
+      { cache: "force-cache" },
     );
 
     const data = await response.json();
@@ -179,6 +174,7 @@ export async function checkDraftModeToken(searchParams: {
   if (isDraftModeEnabled && process.env.NODE_ENV !== "development") {
     isDraftModeEnabled = await fetch(
       `${process.env.NEXT_PUBLIC_DOMAIN}/api/checkToken?space_id=${searchParams?.["_storyblok_tk[space_id]"]}&timestamp=${searchParams?.["_storyblok_tk[timestamp]"]}&token=${searchParams?.["_storyblok_tk[token]"]}`,
+      { cache: "no-store" },
     )
       .then((res) => res.json())
       .then((res) => res.result);

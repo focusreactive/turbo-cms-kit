@@ -11,7 +11,6 @@ import {
 import CoreLayout from "@/components/CoreLayout";
 
 const isDraftModeEnv = process.env.NEXT_PUBLIC_IS_PREVIEW === "true";
-export const dynamic = isDraftModeEnv ? "force-dynamic" : "force-static";
 
 type Props = {
   params: Promise<{ slug?: string[] }>;

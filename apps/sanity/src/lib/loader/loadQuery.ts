@@ -1,6 +1,6 @@
 import "server-only";
 
-import { draftMode, type UnsafeUnwrappedDraftMode } from "next/headers";
+import { draftMode } from "next/headers";
 import * as queryStore from "@sanity/react-loader";
 
 import config from "@/config";
@@ -24,13 +24,12 @@ queryStore.setServerClient(serverClient);
 
 const usingCdn = serverClient.config().useCdn;
 // Automatically handle draft mode
-export const loadQuery = ((query, params = {}, options = {}) => {
+export const loadQuery = (async (query, params = {}, options = {}) => {
   const isDev = process.env.NODE_ENV === "development";
+  const isDraftModeEnabled = (await draftMode()).isEnabled;
+
   const {
-    perspective = (draftMode() as unknown as UnsafeUnwrappedDraftMode)
-      .isEnabled || isDev
-      ? "previewDrafts"
-      : "published",
+    perspective = isDraftModeEnabled || isDev ? "previewDrafts" : "published",
   } = options;
   // Don't cache by default
   let revalidate: NextFetchRequestConfig["revalidate"] = 0;
@@ -48,7 +47,7 @@ export const loadQuery = ((query, params = {}, options = {}) => {
     },
     perspective,
     // Enable stega if in Draft Mode, to enable overlays when outside Sanity Studio
-    stega: (draftMode() as unknown as UnsafeUnwrappedDraftMode).isEnabled,
+    stega: isDraftModeEnabled,
   });
 }) satisfies typeof queryStore.loadQuery;
 
@@ -56,7 +55,7 @@ export const loadQuery = ((query, params = {}, options = {}) => {
  * Loaders that are used in more than one place are declared here, otherwise they're colocated with the component
  */
 
-export function loadPage(slug: string) {
+export async function loadPage(slug: string) {
   return loadQuery<IPageWithReference | null>(
     PAGE_BY_SLUG_QUERY,
     { slug },
