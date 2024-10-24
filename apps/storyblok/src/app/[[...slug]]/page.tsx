@@ -4,6 +4,7 @@ import { StoryblokStory } from "@storyblok/react/rsc";
 
 import {
   checkDraftModeToken,
+  checkSSGPages,
   fetchAllPages,
   fetchStoryBySlug,
   getMetaData,
@@ -11,6 +12,7 @@ import {
 import CoreLayout from "@/components/CoreLayout";
 
 const isDraftModeEnv = process.env.NEXT_PUBLIC_IS_PREVIEW === "true";
+export const dynamic = "auto";
 
 type Props = {
   params: Promise<{ slug?: string[] }>;
@@ -50,6 +52,8 @@ export default async function Home(props: Props) {
       resolve_relations: "header,footer",
     },
   );
+  const timestamp = await checkSSGPages();
+  console.log({ timestamp });
 
   if (!story) {
     notFound();
@@ -58,6 +62,7 @@ export default async function Home(props: Props) {
   return (
     <CoreLayout allResolvedLinks={links}>
       <StoryblokStory story={story} />
+      <div>{timestamp}</div>
     </CoreLayout>
   );
 }

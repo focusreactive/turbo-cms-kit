@@ -228,3 +228,7 @@ export async function getMetaData(slug?: string[]): Promise<Metadata> {
       story?.content?.robots === "index" ? { index: true } : { index: false },
   };
 }
+
+export const checkSSGPages = async () => {
+  return new Date().toLocaleDateString();
+};
