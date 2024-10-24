@@ -65,7 +65,7 @@ export async function createVercelProject({ projectName, sbParams }) {
   const repoId = envs.REPO_ID;
   const repoType = envs.REPO_TYPE;
   const repoProdBranch = envs.REPO_PROD_BRANCH;
-  const rollOutApiToken = envs.ROLL_OUT_API_TOKEN;
+  // const rollOutApiToken = envs.ROLL_OUT_API_TOKEN;
   const vercelTeamId = envs.VERCEL_TEAM_ID;
 
   const finalProjectName = `${projectName}${isPreview ? "-preview" : ""}`;
@@ -121,10 +121,10 @@ export async function createVercelProject({ projectName, sbParams }) {
             key: "REPO_PROD_BRANCH",
             value: repoProdBranch,
           },
-          {
-            key: "ROLL_OUT_API_TOKEN",
-            value: rollOutApiToken,
-          },
+          // {
+          // key: "ROLL_OUT_API_TOKEN",
+          // value: rollOutApiToken,
+          // },
         ].map((v) => ({
           ...v,
           target: ["production", "preview", "development"],
