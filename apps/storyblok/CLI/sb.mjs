@@ -77,8 +77,6 @@ const main = async () => {
 
   spinner.start("Creating Vercel production project...");
 
-  console.log("projectName: 121212");
-  console.log(projectName);
   const {
     deploymentUrl: productionDeploymentUrl,
     projectName: productionProjectName,
