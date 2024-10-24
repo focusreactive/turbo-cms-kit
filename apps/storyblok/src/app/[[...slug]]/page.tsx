@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import { StoryblokStory } from "@storyblok/react/rsc";
 
 import {
-  checkDraftModeToken,
   checkSSGPages,
   fetchAllPages,
   fetchStoryBySlug,
@@ -12,7 +11,7 @@ import {
 import CoreLayout from "@/components/CoreLayout";
 
 const isDraftModeEnv = process.env.NEXT_PUBLIC_IS_PREVIEW === "true";
-export const dynamic = "auto";
+export const dynamic = "error";
 
 type Props = {
   params: Promise<{ slug?: string[] }>;
@@ -41,17 +40,11 @@ export async function generateStaticParams() {
 }
 
 export default async function Home(props: Props) {
-  const searchParams = await props.searchParams;
   const params = await props.params;
-  const isDraftModeEnabled = await checkDraftModeToken(searchParams);
 
-  const { story, links } = await fetchStoryBySlug(
-    isDraftModeEnabled,
-    params.slug,
-    {
-      resolve_relations: "header,footer",
-    },
-  );
+  const { story, links } = await fetchStoryBySlug(isDraftModeEnv, params.slug, {
+    resolve_relations: "header,footer",
+  });
   const timestamp = await checkSSGPages();
   console.log({ timestamp });
 
