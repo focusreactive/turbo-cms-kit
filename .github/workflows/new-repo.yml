@@ -21,14 +21,16 @@ jobs:
         with:
           ref: main
 
-      - name: Print and save repository info
+      - name: Override .env files with repository info
         run: |
-          echo "Repository ID: ${{ github.event.repository.id }}"
-          echo "\nREPO_ID=${{ github.event.repository.id }}" >> apps/sanity/.env
-          echo "\nREPO_ID=${{ github.event.repository.id }}" >> apps/storyblok/.env
-          echo "Repository Name: ${{ github.repository }}"
-          echo "\nREPO_NAME=${{ github.repository }}" >> apps/sanity/.env
-          echo "\nREPO_NAME=${{ github.repository }}" >> apps/storyblok/.env
+          rm -rf apps/sanity/.env
+          rm -rf apps/storyblok/.env
+
+          touch apps/sanity/.env
+          touch apps/storyblok/.env
+
+          echo -e "\nREPO_PROD_BRANCH=\"main\"\nREPO_TYPE=\"github\"\nREPO_ID=${{ github.event.repository.id }}\nREPO_NAME=${{ github.repository }}" >> apps/sanity/.env
+          echo -e "\nREPO_PROD_BRANCH=\"main\"\nREPO_TYPE=\"github\"\nREPO_ID=${{ github.event.repository.id }}\nREPO_NAME=${{ github.repository }}" >> apps/storyblok/.env
 
       - name: Commit, push, and remove GitHub Actions workflow
         env:
