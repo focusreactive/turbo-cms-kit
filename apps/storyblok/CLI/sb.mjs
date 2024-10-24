@@ -77,8 +77,6 @@ const main = async () => {
 
   spinner.start("Creating Vercel production project...");
 
-  console.log("projectName: 121212");
-  console.log(projectName);
   const {
     deploymentUrl: productionDeploymentUrl,
     projectName: productionProjectName,
@@ -126,9 +124,12 @@ const main = async () => {
 
   spinner.start("Filling new space with data...");
   try {
-    execSync(`pnpm storyblok login --token ${sbPersonalAccessToken}`, {
-      stdio: "inherit",
-    });
+    execSync(
+      `pnpm storyblok logout && pnpm storyblok login --token ${sbPersonalAccessToken}`,
+      {
+        stdio: "inherit",
+      },
+    );
 
     execSync(`pnpm push-schemas ${spaceId}`, {
       stdio: "inherit",
