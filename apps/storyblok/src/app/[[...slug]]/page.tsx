@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { StoryblokStory } from "@storyblok/react/rsc";
 
 import {
-  checkDraftModeToken,
+  checkSSGPages,
   fetchAllPages,
   fetchStoryBySlug,
   getMetaData,
@@ -11,14 +11,15 @@ import {
 import CoreLayout from "@/components/CoreLayout";
 
 const isDraftModeEnv = process.env.NEXT_PUBLIC_IS_PREVIEW === "true";
-export const dynamic = isDraftModeEnv ? "force-dynamic" : "force-static";
+export const dynamic = "error";
 
 type Props = {
-  params: { slug?: string[] };
-  searchParams: { [key: string]: string | string[] | undefined };
+  params: Promise<{ slug?: string[] }>;
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 };
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata(props: Props): Promise<Metadata> {
+  const params = await props.params;
   return await getMetaData(params.slug);
 }
 
@@ -38,16 +39,14 @@ export async function generateStaticParams() {
   return paths;
 }
 
-export default async function Home({ params, searchParams }: Props) {
-  const isDraftModeEnabled = await checkDraftModeToken(searchParams);
+export default async function Home(props: Props) {
+  const params = await props.params;
 
-  const { story, links } = await fetchStoryBySlug(
-    isDraftModeEnabled,
-    params.slug,
-    {
-      resolve_relations: "header,footer",
-    },
-  );
+  const { story, links } = await fetchStoryBySlug(isDraftModeEnv, params.slug, {
+    resolve_relations: "header,footer",
+  });
+  const timestamp = await checkSSGPages();
+  console.log({ timestamp });
 
   if (!story) {
     notFound();
@@ -56,6 +55,7 @@ export default async function Home({ params, searchParams }: Props) {
   return (
     <CoreLayout allResolvedLinks={links}>
       <StoryblokStory story={story} />
+      <div>{timestamp}</div>
     </CoreLayout>
   );
 }

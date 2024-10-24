@@ -39,7 +39,7 @@ export default async function IndexRoute({ children }: PropsWithChildren) {
   return (
     <>
       <Suspense>{children}</Suspense>
-      {draftMode().isEnabled && <LiveVisualEditing />}
+      {(await draftMode()).isEnabled && <LiveVisualEditing />}
     </>
   );
 }
