@@ -4,6 +4,8 @@ import { definePathname } from "@tinloof/sanity-studio";
 import { defineField, defineType } from "sanity";
 
 import sections from "@/lib/schemas/sections";
+import { sectionsPresets } from "@/contentSections/presets";
+import { defineBlocksField } from '@focus-reactive/sanity-plugin-cms-kit';
 
 // import { componentsWithBlocksInput } from "@/lib/templateSelectorInput";
 
@@ -34,10 +36,9 @@ export default defineType({
       group: CommonGroup.Content,
       validation: (Rule) => Rule.required(),
     }),
-    defineField({
+    defineBlocksField({
       name: "sectionsBody",
       title: "Sections",
-      type: "array",
       group: CommonGroup.Content,
       of: sections.map((section) => ({
         type: section.name,
@@ -45,6 +46,9 @@ export default defineType({
       // components: componentsWithBlocksInput({
       //   presets: Object.values(sectionsPresets).flat(),
       // }),
+      options: {
+        presets: Object.values(sectionsPresets).flat(),
+      },
     }),
     defineField({
       name: "footer",
