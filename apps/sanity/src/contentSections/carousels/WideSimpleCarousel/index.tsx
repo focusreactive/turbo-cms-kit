@@ -20,7 +20,7 @@ export default function WideSimpleCarousel({ data }: IWideSimpleCarouselProps) {
   }));
 
   return (
-    <SectionContainer sectionData={data}>
+    <SectionContainer sectionData={data} className="overflow-x-hidden">
       <WideSimpleCarouselUI slides={carouselSlides} />
     </SectionContainer>
   );

@@ -18,7 +18,7 @@ export default function WideSimpleCarousel({ blok }: IWideSimpleCarouselProps) {
   }));
 
   return (
-    <SectionContainer blok={blok}>
+    <SectionContainer blok={blok} className="overflow-x-hidden">
       <WideSimpleCarouselUI slides={carouselSlides} />
     </SectionContainer>
   );
