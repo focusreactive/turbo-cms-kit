@@ -216,6 +216,7 @@ async function createStory(spaceId, storyData) {
   return data;
 }
 
+const globalComponentNames = ["header", "footer"];
 export async function uploadBackupStories(spaceId) {
   // Get directory path relative to current file
   const __filename = fileURLToPath(import.meta.url);
@@ -233,17 +234,21 @@ export async function uploadBackupStories(spaceId) {
       }),
   );
 
-  const { parentStories, childStories } = stories.reduce(
+  const { parentStories, childStories, globalComponents } = stories.reduce(
     (acc, story) => {
       if (story.is_folder) {
         acc.parentStories.push(story);
       } else {
-        acc.childStories.push(story);
+        if (globalComponentNames.includes(story.content.component)) {
+          acc.globalComponents.push(story);
+        } else {
+          acc.childStories.push(story);
+        }
       }
 
       return acc;
     },
-    { parentStories: [], childStories: [] },
+    { parentStories: [], childStories: [], globalComponents: [] },
   );
 
   // Map to track old ID to new ID relationships
@@ -260,6 +265,29 @@ export async function uploadBackupStories(spaceId) {
     }
   }
 
+  // Create global components
+  let headerUuid = null;
+  let footerUuid = null;
+
+  for (const story of globalComponents) {
+    // Update the parent_id to use the new ID
+    const newParentId = idMap.get(story.parent_id) || null;
+
+    const storyData = {
+      ...story,
+      content: story.content,
+      parent_id: newParentId,
+    };
+
+    const newGlobalComponent = await createStory(spaceId, storyData);
+
+    if (story.content.component === "header") {
+      headerUuid = newGlobalComponent.story.uuid;
+    } else if (story.content.component === "footer") {
+      footerUuid = newGlobalComponent.story.uuid;
+    }
+  }
+
   // Create child stories with updated parent IDs
   for (const story of childStories) {
     try {
@@ -268,6 +296,11 @@ export async function uploadBackupStories(spaceId) {
 
       const storyData = {
         ...story,
+        content: {
+          ...story.content,
+          header: headerUuid,
+          footer: footerUuid,
+        },
         parent_id: newParentId,
       };
 

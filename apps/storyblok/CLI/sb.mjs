@@ -67,7 +67,7 @@ const main = async () => {
     });
     spinner.succeed("Successfully logged in to storyblok CLI ✅");
 
-    // Push components and preset data to new space
+    // Push components and stories to new space
 
     spinner.start("Start filling new space with data ⏳");
     execSync(`pnpm push-schemas ${spaceId}`, {
