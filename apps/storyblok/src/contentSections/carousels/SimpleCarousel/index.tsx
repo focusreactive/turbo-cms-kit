@@ -18,7 +18,7 @@ export default function SimpleCarousel({ blok }: ISimpleCarouselProps) {
   }));
 
   return (
-    <SectionContainer blok={blok} className="overflow-x-hidden">
+    <SectionContainer blok={blok}>
       <SimpleCarouselUI slides={carouselSlides} />
     </SectionContainer>
   );
