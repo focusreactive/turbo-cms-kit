@@ -6,6 +6,7 @@ import {
   createStoryblokWebhook,
   updatePageComponentSectionsField,
   updateStoryblokSpace,
+  uploadBackupStories,
 } from "./services/storyblok.mjs";
 import {
   createProjectDeployment,
@@ -35,7 +36,7 @@ const main = async () => {
   try {
     sbPersonalAccessToken = await promptForToken("SB_PERSONAL_ACCESS_TOKEN");
     await promptForToken("VERCEL_PERSONAL_AUTH_TOKEN");
-    await promptForVercelTeam("VERCEL_TEAM_ID", "Select your Vercel team:");
+    await promptForVercelTeam();
   } catch (error) {
     console.error(colorText("Error providing tokens:", "red"), error.message);
     process.exit(1);
@@ -123,19 +124,24 @@ const main = async () => {
   }
 
   spinner.start("Filling new space with data...");
+
   try {
-    execSync(
-      `pnpm storyblok logout && pnpm storyblok login --token ${sbPersonalAccessToken}`,
-      {
-        stdio: "inherit",
-      },
-    );
+    execSync("pnpm storyblok user", {
+      stdio: "ignore",
+    });
+  } catch (error) {}
+
+  try {
+    execSync(`pnpm storyblok login --token ${sbPersonalAccessToken}`, {
+      stdio: "inherit",
+    });
 
     execSync(`pnpm push-schemas ${spaceId}`, {
       stdio: "inherit",
     });
 
     await updatePageComponentSectionsField(spaceId);
+    await uploadBackupStories(spaceId);
 
     spinner.succeed("New space filled with data successfully 🎉");
   } catch (error) {
