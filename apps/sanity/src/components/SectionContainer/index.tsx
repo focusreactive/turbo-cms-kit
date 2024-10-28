@@ -18,7 +18,7 @@ export default function SectionContainer({
   return (
     <section
       id={_key}
-      className={cn("bg-bgColor", theme, className, {
+      className={cn("bg-bgColor overflow-x-hidden", theme, className, {
         "mt-0": cleanMarginTop === "none",
         "mb-0": cleanMarginBottom === "none",
         "mt-sectionBase": cleanMarginTop === "base",

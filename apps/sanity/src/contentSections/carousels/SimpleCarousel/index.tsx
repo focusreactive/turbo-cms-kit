@@ -20,7 +20,7 @@ export default function SimpleCarousel({ data }: ISimpleCarouselProps) {
   }));
 
   return (
-    <SectionContainer sectionData={data} className="overflow-x-hidden">
+    <SectionContainer sectionData={data}>
       <SimpleCarouselUI slides={carouselSlides} />
     </SectionContainer>
   );

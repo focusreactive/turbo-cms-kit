@@ -17,7 +17,7 @@ export default function SectionContainer({
     return (
       <section
         {...storyblokEditable(blok)}
-        className={cn("bg-bgColor", theme, className, {
+        className={cn("bg-bgColor overflow-x-hidden", theme, className, {
           "mt-0": marginTop === "none",
           "mb-0": marginBottom === "none",
           "mt-sectionBase": marginTop === "base",
