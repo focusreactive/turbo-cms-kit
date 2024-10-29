@@ -1,9 +1,10 @@
+import type { ImageStoryblok } from "@/generated/extracted-types";
 import { StoryblokComponent, type ISbRichtext } from "@storyblok/react/rsc";
 import { render } from "storyblok-rich-text-react-renderer";
 
 import { Image } from "@shared/ui";
 
-import { prepareImageProps, type IImage } from "./adapters/prepareImageProps";
+import { prepareImageProps } from "./adapters/prepareImageProps";
 
 export default function renderRichText(data: ISbRichtext) {
   return render(data, {
@@ -20,7 +21,7 @@ export default function renderRichText(data: ISbRichtext) {
           >
             <Image
               {...prepareImageProps({
-                ...(props as IImage),
+                ...(props as ImageStoryblok),
               })}
             />
           </div>
