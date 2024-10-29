@@ -3,6 +3,8 @@ import type { I{{ capitialize sectionName }}SectionProps } from './types';
 import { {{ capitialize sectionName }} } from '@shared/ui'
 
 export default function {{ capitialize sectionName }}Section({ data }: I{{ capitialize sectionName }}SectionProps) {
+  if (!data) return null;
+
   const { title } = data;
 
   return (

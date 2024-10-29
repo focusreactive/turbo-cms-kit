@@ -1,14 +1,5 @@
-import type { IImage } from "@/lib/adapters/prepareImageProps";
-import type { ISectionContainer } from "@/components/SectionContainer/types";
-
-interface IWideSimpleCarouselSlide {
-  image: IImage[];
-}
-
-interface IWideSimpleCarousel extends ISectionContainer {
-  slides: IWideSimpleCarouselSlide[];
-}
+import type { WideSimpleCarouselStoryblok } from "@/generated/extracted-types";
 
 export interface IWideSimpleCarouselProps {
-  blok: IWideSimpleCarousel;
+  blok: WideSimpleCarouselStoryblok;
 }

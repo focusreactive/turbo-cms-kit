@@ -7,12 +7,13 @@ import Copy from "@/contentSections/Copy";
 import Hero from "@/contentSections/Hero";
 import LinksList from "@/contentSections/LinksList";
 import Logos from "@/contentSections/Logos";
-
-// end of sb components imports
+import Pricing from "@/contentSections/Pricing";
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import PageContainer from "@/components/Page";
+
+// end of sb components imports
 
 export const COMPONENTS = {
   // start of sb components mapping
@@ -27,5 +28,6 @@ export const COMPONENTS = {
   simpleCarousel: SimpleCarousel,
   wideSimpleCarousel: WideSimpleCarousel,
   hero: Hero,
+  pricing: Pricing,
   // end of sb components mapping
 };
