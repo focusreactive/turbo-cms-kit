@@ -5,6 +5,8 @@ export enum LinkVariant {
   HeaderNav = "headerNav",
   FooterNav = "footerNav",
   Badge = "badge",
+  Ghost = "ghost",
+  GhostDark = "ghost-dark",
 }
 
 export interface ILinkVariantsClassNames {
@@ -14,6 +16,8 @@ export interface ILinkVariantsClassNames {
   [LinkVariant.HeaderNav]: string;
   [LinkVariant.FooterNav]: string;
   [LinkVariant.Badge]: string;
+  [LinkVariant.Ghost]: string;
+  [LinkVariant.GhostDark]: string;
 }
 
 export interface LinkProps {
