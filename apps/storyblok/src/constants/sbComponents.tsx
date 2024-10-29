@@ -6,6 +6,7 @@ import Copy from "@/contentSections/Copy";
 import Hero from "@/contentSections/Hero";
 import LinksList from "@/contentSections/LinksList";
 import Logos from "@/contentSections/Logos";
+import Pricing from "@/contentSections/Pricing";
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -23,4 +24,5 @@ export const COMPONENTS = {
   simpleCarousel: SimpleCarousel,
   wideSimpleCarousel: WideSimpleCarousel,
   hero: Hero,
+  pricing: Pricing,
 };

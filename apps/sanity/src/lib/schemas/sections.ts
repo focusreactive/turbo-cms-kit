@@ -8,6 +8,7 @@ import hero from "@/contentSections/Hero/schema";
 import linksList from "@/contentSections/LinksList/schema";
 import logos from "@/contentSections/Logos/schema";
 
+import pricing from '@/contentSections/Pricing/schema'
 // end of section imports
 
 const sections = [
@@ -20,7 +21,8 @@ const sections = [
   simpleCarousel,
   wideSimpleCarousel,
   hero,
-  // end of section array
+  pricing,
+// end of section array
 ];
 
 export default sections;

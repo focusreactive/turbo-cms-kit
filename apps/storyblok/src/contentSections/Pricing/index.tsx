@@ -1,0 +1,43 @@
+import EmptyBlock from "@shared/ui/components/EmptyBlock";
+
+import { Pricing } from "@shared/ui";
+
+import { prepareImageProps } from "@/lib/adapters/prepareImageProps";
+import { prepareLinkProps } from "@/lib/adapters/prepareLinkProps";
+import SectionContainer from "@/components/SectionContainer";
+
+import type { IPricingProps } from "./types";
+
+export default function PricingSection({ blok }: IPricingProps) {
+  console.log(blok);
+  if (!blok || blok.tiers.length === 0)
+    return <EmptyBlock name="Pricing Section" />;
+
+  const { tiers, yearlyDiscountPercentage } = blok;
+
+  const formattedTiers = tiers?.map((tier) => ({
+    ...tier,
+    icon: prepareImageProps(tier.icon[0]),
+    cta: prepareLinkProps(tier.link[0]),
+    price: tier.price ? parseFloat(tier.price) : undefined,
+    features: tier.features?.map(({ text }) => text),
+  }));
+  const extraService =
+    blok.extraServiceEnabled && blok.extraService?.[0]
+      ? {
+          text: blok.extraService[0].text,
+          cost: parseFloat(blok.extraService[0]?.cost),
+        }
+      : undefined;
+
+  return (
+    <SectionContainer blok={blok}>
+      <Pricing
+        {...blok}
+        tiers={formattedTiers}
+        extraService={extraService}
+        yearlyDiscountPercentage={parseFloat(yearlyDiscountPercentage)}
+      />
+    </SectionContainer>
+  );
+}
