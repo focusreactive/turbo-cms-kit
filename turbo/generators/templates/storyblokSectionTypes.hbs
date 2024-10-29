@@ -1,5 +1,5 @@
-import { SbBlokData } from '@storyblok/react' export interface
-{{capitialize sectionName}}Blok extends SbBlokData { // Add your Storyblok
-fields here } export interface
-{{capitialize sectionName}}Props { blok:
-{{capitialize sectionName}}Blok }
+import type { {{capitialize sectionName}}Storyblok } from "@/generated/extracted-types";
+
+export interface I{{capitialize sectionName}}Props {
+  blok: {{capitialize sectionName}}Storyblok;
+}
