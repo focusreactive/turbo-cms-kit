@@ -1,6 +1,6 @@
 import type { PlopTypes } from "@turbo/gen";
 
-const propmtForContentSection = {
+const componentNamePrompt = {
   type: "input",
   name: "sectionName",
   message: "What is the name of the new section?",
@@ -28,7 +28,7 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
 
   plop.setGenerator("UI", {
     description: "Create a new UI component",
-    prompts: [propmtForContentSection],
+    prompts: [componentNamePrompt],
     actions: [
       {
         type: "add",
@@ -51,7 +51,7 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
 
   plop.setGenerator("Storyblok", {
     description: "Create a new content section",
-    prompts: [propmtForContentSection],
+    prompts: [componentNamePrompt],
     actions: [
       {
         type: "add",
@@ -66,32 +66,21 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
       {
         type: "modify",
         path: "{{ turbo.paths.root }}/apps/storyblok/src/constants/sbComponents.tsx",
-        pattern: /(\/\/ end of sb components mapping)/g,
+        pattern: /(\/\/ end of sb components imports)/g,
         template: `import {{ capitialize sectionName }} from '@/contentSections/{{ capitialize sectionName }}'\n$1`,
+      },
+      {
+        type: "modify",
+        path: "{{ turbo.paths.root }}/apps/storyblok/src/constants/sbComponents.tsx",
+        pattern: /(\/\/ end of sb components mapping)/g,
+        template: `  {{ lowercase sectionName }}: {{ capitialize sectionName }},\n$1`,
       },
     ],
   });
 
   plop.setGenerator("Sanity", {
     description: "Create a new content section",
-    prompts: [
-      {
-        type: "input",
-        name: "sectionName",
-        message: "What is the name of the new section?",
-        validate: (input: string) => {
-          if (!input) {
-            return "section name is required";
-          }
-
-          if (input.split(" ").length > 1) {
-            return "section name should be a single word";
-          }
-
-          return true;
-        },
-      },
-    ],
+    prompts: [componentNamePrompt],
     actions: [
       {
         type: "add",
