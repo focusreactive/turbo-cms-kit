@@ -1,46 +1,73 @@
 import type { PlopTypes } from "@turbo/gen";
 
+const propmtForContentSection = {
+  type: "input",
+  name: "sectionName",
+  message: "What is the name of the new section?",
+  validate: (input: string) => {
+    if (!input) {
+      return "section name is required";
+    }
+
+    if (input.split(" ").length > 1) {
+      return "section name should be a single word";
+    }
+
+    return true;
+  },
+};
+
 export default function generator(plop: PlopTypes.NodePlopAPI): void {
   plop.setHelper("capitialize", (str: string) => {
     return str.charAt(0).toUpperCase() + str.slice(1);
   });
 
+  plop.setHelper("lowercase", (str: string) => {
+    return str.toLowerCase();
+  });
+
   plop.setGenerator("UI", {
     description: "Create a new UI component",
-    prompts: [
-      {
-        type: "input",
-        name: "componentName",
-        message: "What is the name of the new component?",
-        validate: (input: string) => {
-          if (!input) {
-            return "component name is required";
-          }
-
-          if (input.split(" ").length > 1) {
-            return "component name should be a single word";
-          }
-
-          return true;
-        },
-      },
-    ],
+    prompts: [propmtForContentSection],
     actions: [
       {
         type: "add",
-        path: "{{ turbo.paths.root }}/packages/ui/components/ui/{{ componentName }}/index.tsx",
+        path: "{{ turbo.paths.root }}/packages/ui/components/ui/{{ capitialize sectionName }}/index.tsx",
         templateFile: "templates/uiComponent.hbs",
       },
       {
         type: "add",
-        path: "{{ turbo.paths.root }}/packages/ui/components/ui/{{ componentName }}/types.ts",
+        path: "{{ turbo.paths.root }}/packages/ui/components/ui/{{ capitialize sectionName }}/types.ts",
         templateFile: "templates/uiComponentTypes.hbs",
       },
       {
         type: "modify",
         path: "{{ turbo.paths.root }}/packages/ui/index.tsx",
         pattern: /(\/\/ end component exports)/g,
-        template: `export * from "./components/ui/{{ componentName }}"\n$1`,
+        template: `export * from "./components/ui/{{ capitialize sectionName }}"\n$1`,
+      },
+    ],
+  });
+
+  plop.setGenerator("Storyblok", {
+    description: "Create a new content section",
+    prompts: [propmtForContentSection],
+    actions: [
+      {
+        type: "add",
+        path: "{{ turbo.paths.root }}/apps/storyblok/src/contentSections/{{ capitialize sectionName }}/index.tsx",
+        templateFile: "templates/storyblokSection.hbs",
+      },
+      {
+        type: "add",
+        path: "{{ turbo.paths.root }}/apps/storyblok/src/contentSections/{{ capitialize sectionName }}/types.ts",
+        templateFile: "templates/storyblokSectionTypes.hbs",
+      },
+      {
+        type: "modify",
+        path: "{{ turbo.paths.root }}/apps/storyblok/src/constants/sbComponents.tsx",
+        pattern: /(\/\/ end of sb components mapping)/g,
+        template: `import {{ capitialize sectionName }} from '@/contentSections/{{ capitialize sectionName }}'\n$1`,
       },
     ],
   });

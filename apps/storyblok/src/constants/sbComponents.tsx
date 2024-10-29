@@ -1,3 +1,4 @@
+// start of sb components mapping
 import Blog from "@/contentSections/Blog";
 import CardsGrid from "@/contentSections/CardsGrid";
 import SimpleCarousel from "@/contentSections/carousels/SimpleCarousel";
@@ -6,6 +7,7 @@ import Copy from "@/contentSections/Copy";
 import Hero from "@/contentSections/Hero";
 import LinksList from "@/contentSections/LinksList";
 import Logos from "@/contentSections/Logos";
+// end of sb components mapping
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
