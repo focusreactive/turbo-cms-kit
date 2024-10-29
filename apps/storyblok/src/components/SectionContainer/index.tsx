@@ -11,13 +11,13 @@ export default function SectionContainer({
   blok,
   className,
 }: ISectionContainerProps) {
-  const { theme, _uid, paddingX, paddingY, marginTop, marginBottom } = blok;
+  const { _uid, paddingX, paddingY, marginTop, marginBottom } = blok;
 
   if (isDraftMode) {
     return (
       <section
         {...storyblokEditable(blok)}
-        className={cn("bg-bgColor overflow-x-hidden", theme, className, {
+        className={cn("bg-bgColor overflow-x-hidden", className, {
           "mt-0": marginTop === "none",
           "mb-0": marginBottom === "none",
           "mt-sectionBase": marginTop === "base",
@@ -41,7 +41,7 @@ export default function SectionContainer({
 
   return (
     <section
-      className={cn("bg-bgColor", theme, className, {
+      className={cn("bg-bgColor", className, {
         "mt-0": marginTop === "none",
         "mb-0": marginBottom === "none",
         "mt-sectionBase": marginTop === "base",

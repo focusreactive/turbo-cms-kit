@@ -9,8 +9,7 @@ import SectionContainer from "@/components/SectionContainer";
 import type { IPricingProps } from "./types";
 
 export default function PricingSection({ blok }: IPricingProps) {
-  console.log(blok);
-  if (!blok || blok.tiers.length === 0)
+  if (!blok || blok?.tiers?.length === 0)
     return <EmptyBlock name="Pricing Section" />;
 
   const { tiers, yearlyDiscountPercentage } = blok;
@@ -34,9 +33,11 @@ export default function PricingSection({ blok }: IPricingProps) {
     <SectionContainer blok={blok}>
       <Pricing
         {...blok}
-        tiers={formattedTiers}
+        tiers={formattedTiers || []}
         extraService={extraService}
-        yearlyDiscountPercentage={parseFloat(yearlyDiscountPercentage)}
+        yearlyDiscountPercentage={
+          yearlyDiscountPercentage ? parseFloat(yearlyDiscountPercentage) : 0
+        }
       />
     </SectionContainer>
   );
