@@ -8,6 +8,7 @@ import Hero from "./Hero";
 import LinksList from "./LinksList";
 import Logos from "./Logos";
 
+import Pricing from './Pricing'
 // end of section imports
 
 export const sections: Record<string, any> = {
@@ -20,7 +21,8 @@ export const sections: Record<string, any> = {
   "section.simpleCarousel": SimpleCarousel,
   "section.wideSimpleCarousel": WideSimpleCarousel,
   "section.hero": Hero,
-  // end of section object
+  'section.pricing': Pricing,
+// end of section object
 };
 
 export function SectionRenderer(props: { section: any }) {

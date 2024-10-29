@@ -68,6 +68,23 @@ export type Geopoint = {
   alt?: number;
 };
 
+export type SectionPricing = {
+  _type: "section.pricing";
+  tiers: Array<
+    {
+      _key: string;
+    } & PricingTier
+  >;
+  extraServiceEnabled?: boolean;
+  yearlyDiscountPercentage: number;
+  extraService?: {
+    text: string;
+    cost: number;
+  };
+  marginTop: "none" | "base" | "lg";
+  marginBottom: "none" | "base" | "lg";
+};
+
 export type SectionHero = {
   _type: "section.hero";
   title: string;
@@ -171,6 +188,17 @@ export type SectionCopy = {
   theme: "light" | "dark";
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
+};
+
+export type PricingTier = {
+  _type: "pricingTier";
+  name: string;
+  icon: CustomImage;
+  price?: number;
+  description: string;
+  features: Array<string>;
+  link: CustomLink;
+  popular?: boolean;
 };
 
 export type WideSimpleCarouselCard = {
@@ -318,6 +346,9 @@ export type Page = {
     | ({
         _key: string;
       } & SectionHero)
+    | ({
+        _key: string;
+      } & SectionPricing)
   >;
   footer: {
     _ref: string;
@@ -328,7 +359,7 @@ export type Page = {
   seoTitle?: string;
   seoDescription?: string;
   showCookieBanner?: boolean;
-  robots?: "index" | "noindex";
+  robots?: "index" | "no-index";
   ogImage?: {
     asset?: {
       _ref: string;
@@ -502,7 +533,16 @@ export type CustomImage = {
     _type: "image";
   };
   height: number;
-  aspectRatio: "16/9" | "3/2" | "4/3" | "1/1" | "9/16" | "1/2" | "4/1" | "3/1";
+  aspectRatio:
+    | "16/9"
+    | "3/2"
+    | "4/3"
+    | "1/1"
+    | "9/16"
+    | "1/2"
+    | "4/1"
+    | "3/1"
+    | "auto";
 };
 
 export type Slug = {
@@ -535,6 +575,7 @@ export type AllSanitySchemaTypes =
   | SanityImageDimensions
   | SanityFileAsset
   | Geopoint
+  | SectionPricing
   | SectionHero
   | SectionWideSimpleCarousel
   | SectionSimpleCarousel
@@ -543,6 +584,7 @@ export type AllSanitySchemaTypes =
   | SectionLinksList
   | SectionLogos
   | SectionCopy
+  | PricingTier
   | WideSimpleCarouselCard
   | SimpleCarouselCard
   | BlogSectionPost
@@ -566,3 +608,298 @@ export type AllSanitySchemaTypes =
   | TextColor
   | SimplerColor;
 export declare const internalGroqTypeReferenceTo: unique symbol;
+// Source: ./src/lib/api/queries.ts
+// Variable: PAGE_BY_SLUG_QUERY
+// Query:   *[_type == "page" && pathname.current == $slug][0] {    _id,    header->{        ...,  links[] {    ...,type == "internal" => {  url->{    _type == "page" => {      "slug": [pathname.current],    },  },}  }    },    sectionsBody[] {      ...,      _type == "section.hero" => {   ...,  links[] {    ...,type == "internal" => {  url->{    _type == "page" => {      "slug": [pathname.current],    },  },}  } },      _type == "section.linksList" => {   ...,  links[] {    ...,type == "internal" => {  url->{    _type == "page" => {      "slug": [pathname.current],    },  },}  } },      _type == "section.cardsGrid" => {   ...,  items[] {    ...,    link {      ...,type == "internal" => {  url->{    _type == "page" => {      "slug": [pathname.current],    },  },}    }  } },      _type == "section.logos" => {   ...,  items[] {    ...,    link {      ...,type == "internal" => {  url->{    _type == "page" => {      "slug": [pathname.current],    },  },}    }  } },      _type == "section.blog" => {   ...,  posts[] {    ...,    link {      ...,type == "internal" => {  url->{    _type == "page" => {      "slug": [pathname.current],    },  },}    }  } },    },    footer->{        ...,  links[] {    ...,type == "internal" => {  url->{    _type == "page" => {      "slug": [pathname.current],    },  },}  }    },    title,    "slug": pathname.current,    seoTitle,    seoDescription,    ogImage,    robots,  }
+export type PAGE_BY_SLUG_QUERYResult = {
+  _id: string;
+  header: {
+    _id: string;
+    _type: "header";
+    _createdAt: string;
+    _updatedAt: string;
+    _rev: string;
+    title?: string;
+    image?: CustomImage;
+    links: Array<{
+      _key: string;
+      _type: "customLink";
+      text: string;
+      type: "internal" | "url";
+      href?: string;
+      target: "_blank" | "_parent" | "_self" | "_top";
+      url: {
+        slug: Array<string | null>;
+      } | null;
+      variant:
+        | "badge"
+        | "default"
+        | "footerNav"
+        | "headerNav"
+        | "primary"
+        | "secondary";
+    }>;
+    alignVariant: "center" | "left" | "right";
+    theme: "dark" | "light";
+  };
+  sectionsBody: Array<
+    | {
+        _key: string;
+        _type: "section.blog";
+        text: CustomRichText;
+        style:
+          | "three-column-with-background-images"
+          | "three-column-with-images"
+          | "three-column";
+        posts: Array<{
+          _key: string;
+          _type: "blogSection.post";
+          date?: string;
+          link: {
+            _type: "customLink";
+            text: string;
+            type: "internal" | "url";
+            href?: string;
+            target: "_blank" | "_parent" | "_self" | "_top";
+            url: {
+              slug: Array<string | null>;
+            } | null;
+            variant:
+              | "badge"
+              | "default"
+              | "footerNav"
+              | "headerNav"
+              | "primary"
+              | "secondary";
+          } | null;
+          image?: CustomImage;
+          text?: CustomRichText;
+        }>;
+        theme: "dark" | "light";
+        marginTop: "base" | "lg" | "none";
+        marginBottom: "base" | "lg" | "none";
+      }
+    | {
+        _key: string;
+        _type: "section.cardsGrid";
+        columns: 1 | 2 | 3;
+        items: Array<{
+          _key: string;
+          _type: "defaultCard";
+          title: string;
+          description: string;
+          style:
+            | "icon-left-separate-title"
+            | "icon-left-with-background"
+            | "icon-left"
+            | "icon-title-inline"
+            | "icon-top"
+            | "no-icon";
+          link: {
+            _type: "customLink";
+            text: string;
+            type: "internal" | "url";
+            href?: string;
+            target: "_blank" | "_parent" | "_self" | "_top";
+            url: {
+              slug: Array<string | null>;
+            } | null;
+            variant:
+              | "badge"
+              | "default"
+              | "footerNav"
+              | "headerNav"
+              | "primary"
+              | "secondary";
+          } | null;
+          image?: CustomImage;
+        }>;
+        theme: "dark" | "light";
+        marginTop: "base" | "lg" | "none";
+        marginBottom: "base" | "lg" | "none";
+      }
+    | {
+        _key: string;
+        _type: "section.copy";
+        columns: Array<
+          {
+            _key: string;
+          } & CustomRichText
+        >;
+        isReversedOnMobile: boolean;
+        theme: "dark" | "light";
+        marginTop: "base" | "lg" | "none";
+        marginBottom: "base" | "lg" | "none";
+      }
+    | {
+        _key: string;
+        _type: "section.hero";
+        title: string;
+        text?: CustomRichText;
+        image?: CustomImage;
+        links: Array<{
+          _key: string;
+          _type: "customLink";
+          text: string;
+          type: "internal" | "url";
+          href?: string;
+          target: "_blank" | "_parent" | "_self" | "_top";
+          url: {
+            slug: Array<string | null>;
+          } | null;
+          variant:
+            | "badge"
+            | "default"
+            | "footerNav"
+            | "headerNav"
+            | "primary"
+            | "secondary";
+        }>;
+        marginTop: "base" | "lg" | "none";
+        marginBottom: "base" | "lg" | "none";
+      }
+    | {
+        _key: string;
+        _type: "section.linksList";
+        links: Array<{
+          _key: string;
+          _type: "customLink";
+          text: string;
+          type: "internal" | "url";
+          href?: string;
+          target: "_blank" | "_parent" | "_self" | "_top";
+          url: {
+            slug: Array<string | null>;
+          } | null;
+          variant:
+            | "badge"
+            | "default"
+            | "footerNav"
+            | "headerNav"
+            | "primary"
+            | "secondary";
+        }>;
+        alignVariant: "center" | "left" | "right";
+        theme: "dark" | "light";
+        marginTop: "base" | "lg" | "none";
+        marginBottom: "base" | "lg" | "none";
+      }
+    | {
+        _key: string;
+        _type: "section.logos";
+        items: Array<{
+          _key: string;
+          _type: "logoItem";
+          type?: "clickableLogo" | "logo";
+          image?: CustomImage;
+          link: {
+            _type: "customLink";
+            text: string;
+            type: "internal" | "url";
+            href?: string;
+            target: "_blank" | "_parent" | "_self" | "_top";
+            url: {
+              slug: Array<string | null>;
+            } | null;
+            variant:
+              | "badge"
+              | "default"
+              | "footerNav"
+              | "headerNav"
+              | "primary"
+              | "secondary";
+          } | null;
+        }>;
+        alignVariant: "center" | "left" | "right";
+        theme: "dark" | "light";
+        marginTop: "base" | "lg" | "none";
+        marginBottom: "base" | "lg" | "none";
+      }
+    | {
+        _key: string;
+        _type: "section.pricing";
+        tiers: Array<
+          {
+            _key: string;
+          } & PricingTier
+        >;
+        extraServiceEnabled?: boolean;
+        yearlyDiscountPercentage: number;
+        extraService?: {
+          text: string;
+          cost: number;
+        };
+        marginTop: "base" | "lg" | "none";
+        marginBottom: "base" | "lg" | "none";
+      }
+    | {
+        _key: string;
+        _type: "section.simpleCarousel";
+        slides: Array<
+          {
+            _key: string;
+          } & SimpleCarouselCard
+        >;
+        marginTop: "base" | "lg" | "none";
+        marginBottom: "base" | "lg" | "none";
+      }
+    | {
+        _key: string;
+        _type: "section.wideSimpleCarousel";
+        slides: Array<
+          {
+            _key: string;
+          } & WideSimpleCarouselCard
+        >;
+        marginTop: "base" | "lg" | "none";
+        marginBottom: "base" | "lg" | "none";
+      }
+  > | null;
+  footer: {
+    _id: string;
+    _type: "footer";
+    _createdAt: string;
+    _updatedAt: string;
+    _rev: string;
+    title?: string;
+    image?: CustomImage;
+    text?: CustomRichText;
+    links: Array<{
+      _key: string;
+      _type: "customLink";
+      text: string;
+      type: "internal" | "url";
+      href?: string;
+      target: "_blank" | "_parent" | "_self" | "_top";
+      url: {
+        slug: Array<string | null>;
+      } | null;
+      variant:
+        | "badge"
+        | "default"
+        | "footerNav"
+        | "headerNav"
+        | "primary"
+        | "secondary";
+    }> | null;
+    copywriteText?: string;
+    theme: "dark" | "light";
+  };
+  title: string | null;
+  slug: string | null;
+  seoTitle: string | null;
+  seoDescription: string | null;
+  ogImage: {
+    asset?: {
+      _ref: string;
+      _type: "reference";
+      _weak?: boolean;
+      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+    };
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    alt: string;
+    _type: "image";
+  } | null;
+  robots: "index" | "no-index" | null;
+} | null;
