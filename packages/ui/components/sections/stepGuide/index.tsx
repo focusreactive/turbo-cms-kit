@@ -40,7 +40,7 @@ export function StepGuide({ link, items }: IStepGuideProps) {
           {items.map(({ number, text }, index) => (
             <li
               key={number}
-              className="group flex items-center gap-6"
+              className="group flex cursor-pointer items-center gap-6"
               onMouseEnter={() => setActiveIndex(index)}
               onFocus={() => setActiveIndex(index)}
             >
