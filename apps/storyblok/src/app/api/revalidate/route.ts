@@ -7,6 +7,9 @@ export async function POST(request: Request) {
   const { searchParams } = new URL(request.url);
   const secret = searchParams.get("secret");
 
+  console.log("secret: ", secret, process.env.SB_WEBHOOK_REVALIDATE_SECRET);
+  console.log("body: ", body);
+
   if (!body) {
     return Response.json({ error: "No body provided" }, { status: 400 });
   }
@@ -25,6 +28,8 @@ export async function POST(request: Request) {
 
     pagePath = result?.replace("(", "")?.replace(")", "");
   }
+
+  console.log("pagePath: ", pagePath);
 
   if (secret !== process.env.SB_WEBHOOK_REVALIDATE_SECRET) {
     return Response.json({ error: "No secret provided" }, { status: 400 });
