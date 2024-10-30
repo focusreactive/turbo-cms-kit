@@ -16,7 +16,7 @@ export default function StepGuide({ blok }: IStepGuideProps) {
 
   const formattedItems = stepGuideItem.map((item) => ({
     ...item,
-    image: item.image?.map(prepareImageProps) || [],
+    image: prepareImageProps(item?.image?.[0]),
   }));
 
   return (

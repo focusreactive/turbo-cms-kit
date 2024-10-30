@@ -4,7 +4,7 @@ import type { LinkProps } from "../../ui/link/types";
 interface IStepGuideItem {
   number: string;
   text: string;
-  image: IImageProps[];
+  image: IImageProps;
 }
 
 export interface IStepGuideProps {

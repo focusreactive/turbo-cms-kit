@@ -26,9 +26,9 @@ export function StepGuide({ link, items }: IStepGuideProps) {
               },
             )}
           >
-            {image?.[0] && (
+            {image && (
               <div className="size-full">
-                <Image {...image[0]} fit="contain" />
+                <Image {...image} fit="contain" />
               </div>
             )}
           </div>
