@@ -2026,6 +2026,179 @@
       "component_group_name": "components"
     },
     {
+      "name": "stepGuide",
+      "display_name": null,
+      "created_at": "2024-10-30T07:56:07.407Z",
+      "updated_at": "2024-10-30T16:14:17.536Z",
+      "id": 6492253,
+      "schema": {
+        "stepGuideItem": {
+          "type": "bloks",
+          "pos": 0,
+          "restrict_type": "",
+          "restrict_components": true,
+          "component_whitelist": [
+            "stepGuideItem"
+          ],
+          "minimum": 1,
+          "required": true
+        },
+        "tab-b0e3f249-deee-4944-b03f-5d62625aae45": {
+          "display_name": "Style",
+          "keys": [
+            "marginTop",
+            "marginBottom"
+          ],
+          "pos": 0,
+          "type": "tab"
+        },
+        "marginTop": {
+          "type": "option",
+          "pos": 2,
+          "use_uuid": true,
+          "required": true,
+          "options": [
+            {
+              "_uid": "1063169d-1331-4187-b2eb-5b4c6563f674",
+              "name": "none",
+              "value": "none"
+            },
+            {
+              "_uid": "71ac8c97-2785-4056-80d7-3cadedc034cb",
+              "value": "base",
+              "name": "base"
+            },
+            {
+              "_uid": "29d0694c-dec2-490f-896f-00661b1e8963",
+              "value": "lg",
+              "name": "large"
+            }
+          ],
+          "exclude_empty_option": true,
+          "default_value": "base"
+        },
+        "marginBottom": {
+          "type": "option",
+          "pos": 3,
+          "use_uuid": true,
+          "required": true,
+          "options": [
+            {
+              "_uid": "92e39ca1-90bf-4d72-9c51-d9aab63d392b",
+              "name": "none",
+              "value": "none"
+            },
+            {
+              "_uid": "42018810-1dd6-4f70-813b-ba4e4927577b",
+              "value": "base",
+              "name": "base"
+            },
+            {
+              "_uid": "88fd3669-13c9-44ab-82d6-1dd76380d99c",
+              "value": "lg",
+              "name": "large"
+            }
+          ],
+          "exclude_empty_option": true,
+          "default_value": "base"
+        },
+        "link": {
+          "type": "bloks",
+          "pos": 4,
+          "required": true,
+          "minimum": 1,
+          "maximum": 1,
+          "restrict_type": "",
+          "restrict_components": true,
+          "component_whitelist": [
+            "link"
+          ]
+        }
+      },
+      "image": "//a.storyblok.com/f/293915/x/86b490a547/screenshot-2024-10-30-at-17-09-53.png",
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [
+        {
+          "id": 2337116,
+          "name": "Default",
+          "component_id": 6492253,
+          "image": "//a.storyblok.com/f/293915/x/b454ec3d40/screenshot-2024-10-30-at-17-09-53.png",
+          "icon": "",
+          "color": "",
+          "description": ""
+        }
+      ],
+      "preset_id": null,
+      "real_name": "stepGuide",
+      "component_group_uuid": "9a95e24a-4024-4145-992e-070fbb399f97",
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null,
+      "component_group_name": "sections"
+    },
+    {
+      "name": "stepGuideItem",
+      "display_name": null,
+      "created_at": "2024-10-30T07:57:10.316Z",
+      "updated_at": "2024-10-30T16:11:50.692Z",
+      "id": 6492255,
+      "schema": {
+        "number": {
+          "type": "text",
+          "pos": 0,
+          "required": true,
+          "default_value": "1"
+        },
+        "text": {
+          "type": "text",
+          "pos": 1,
+          "required": true
+        },
+        "image": {
+          "type": "bloks",
+          "pos": 3,
+          "restrict_type": "",
+          "restrict_components": true,
+          "component_whitelist": [
+            "image"
+          ],
+          "required": true,
+          "maximum": 1,
+          "minimum": 1
+        }
+      },
+      "image": "//a.storyblok.com/f/293915/x/5dee31f917/screenshot-2024-10-30-at-17-11-17.png",
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [
+        {
+          "id": 2337115,
+          "name": "Default",
+          "component_id": 6492255,
+          "image": "//a.storyblok.com/f/293915/x/8becce59cc/screenshot-2024-10-30-at-17-11-17.png",
+          "icon": "",
+          "color": "",
+          "description": ""
+        }
+      ],
+      "preset_id": null,
+      "real_name": "stepGuideItem",
+      "component_group_uuid": "7a581c8c-f6b7-4926-b5b0-98b7a48916b3",
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null,
+      "component_group_name": "components"
+    },
+    {
       "name": "wideSimpleCarousel",
       "display_name": null,
       "created_at": "2024-10-08T14:21:25.377Z",
