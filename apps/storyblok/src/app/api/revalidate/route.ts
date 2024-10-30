@@ -1,45 +1,34 @@
+import { createHmac } from "crypto";
 import { revalidateTag } from "next/cache";
 
-import { SB_CACHE_VERSION } from "@/constants/cacheTags";
+import { SB_CACHE_VERSION_TAG } from "@/constants/cacheTags";
+
+const webhookSecret = process.env.SB_WEBHOOK_REVALIDATE_SECRET || "";
+
+function generateSignature(body: string) {
+  return createHmac("sha1", webhookSecret).update(body).digest("hex");
+}
 
 export async function POST(request: Request) {
   const body = await request.json();
-  const { searchParams } = new URL(request.url);
-  const secret = searchParams.get("secret");
+  const signature = request.headers.get("webhook-signature");
 
-  console.log("secret: ", secret, process.env.SB_WEBHOOK_REVALIDATE_SECRET);
-  console.log("body: ", body);
-
-  if (!body) {
-    return Response.json({ error: "No body provided" }, { status: 400 });
+  if (!body || !signature) {
+    return Response.json(
+      { error: "No body or signature provided" },
+      { status: 400 },
+    );
   }
 
-  let pagePath;
-  if (body.action === "published") {
-    pagePath = body.full_slug;
-  } else {
-    // find the page path in description text
-    const regex = /\(([^)]*\/[^)]+)\)/g;
-    let match, result;
+  const generatedSignature = generateSignature(JSON.stringify(body));
 
-    while ((match = regex.exec(body.text)) !== null) {
-      result = match[1];
-    }
+  console.log("signature/gen sign: ", signature, generatedSignature);
 
-    pagePath = result?.replace("(", "")?.replace(")", "");
+  if (signature !== generatedSignature) {
+    return Response.json({ error: "Invalid signature" }, { status: 400 });
   }
 
-  console.log("pagePath: ", pagePath);
-
-  if (secret !== process.env.SB_WEBHOOK_REVALIDATE_SECRET) {
-    return Response.json({ error: "No secret provided" }, { status: 400 });
-  }
-
-  if (!pagePath) {
-    return Response.json({ error: "No tag provided" }, { status: 400 });
-  }
-
-  revalidateTag(SB_CACHE_VERSION);
+  revalidateTag(SB_CACHE_VERSION_TAG);
 
   return Response.json({ revalidated: true, now: Date.now() });
 }
