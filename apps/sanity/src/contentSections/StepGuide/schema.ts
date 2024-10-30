@@ -17,12 +17,13 @@ export const stepGuideItem = defineType({
       name: "number",
       type: "string",
       validation: (Rule) => Rule.required(),
-      initialValue: "1",
+      initialValue: "01",
     }),
     defineField({
       name: "text",
       type: "string",
       validation: (Rule) => Rule.required(),
+      initialValue: "Some text",
     }),
     defineField({
       name: "image",

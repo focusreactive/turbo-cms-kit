@@ -54,13 +54,7 @@ export function StepGuide({ link, items }: IStepGuideProps) {
           ))}
         </ul>
 
-        {link && (
-          <Link
-            {...link}
-            className="w-full md:w-auto"
-            variant={LinkVariant.Primary}
-          />
-        )}
+        {link && <Link {...link} className="w-full md:w-auto" />}
       </div>
     </section>
   );

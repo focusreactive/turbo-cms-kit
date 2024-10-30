@@ -97,7 +97,7 @@ export function Pricing({
                       €{isYearly ? getYearlyPrice(monthlyPrice) : monthlyPrice}
                     </span>
                     <span className="text-base font-medium text-gray-500">
-                      {tier.price > 0 ? "/seat" : ""}
+                      {tier.price > 0 ? " seat" : ""}
                       {isYearly ? "/year" : "/month"}
                     </span>
                   </p>
