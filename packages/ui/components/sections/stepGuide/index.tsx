@@ -5,7 +5,6 @@ import { useState } from "react";
 import { cn } from "../../../utils";
 import { Image } from "../../ui/image";
 import { Link } from "../../ui/link";
-import { LinkVariant } from "../../ui/link/types";
 import type { IStepGuideProps } from "./types";
 
 export function StepGuide({ link, items }: IStepGuideProps) {
