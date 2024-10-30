@@ -8,6 +8,7 @@ import Hero from "@/contentSections/Hero";
 import LinksList from "@/contentSections/LinksList";
 import Logos from "@/contentSections/Logos";
 import Pricing from "@/contentSections/Pricing";
+import StepGuide from "@/contentSections/StepGuide";
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -29,5 +30,6 @@ export const COMPONENTS = {
   wideSimpleCarousel: WideSimpleCarousel,
   hero: Hero,
   pricing: Pricing,
+  stepGuide: StepGuide,
   // end of sb components mapping
 };

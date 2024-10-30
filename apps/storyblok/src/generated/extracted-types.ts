@@ -246,6 +246,7 @@ export interface PageStoryblok {
     | LogosStoryblok
     | PricingStoryblok
     | SimpleCarouselStoryblok
+    | StepGuideStoryblok
     | WideSimpleCarouselStoryblok
   )[];
   seoTitle: string;
@@ -327,6 +328,25 @@ export interface SimpleCarouselStoryblok {
 export interface SimpleCarouselSlideStoryblok {
   image: ImageStoryblok[];
   component: "simpleCarouselSlide";
+  _uid: string;
+  [k: string]: any;
+}
+
+export interface StepGuideStoryblok {
+  stepGuideItem: StepGuideItemStoryblok[];
+  marginTop: "none" | "base" | "lg";
+  marginBottom: "none" | "base" | "lg";
+  link: LinkStoryblok[];
+  component: "stepGuide";
+  _uid: string;
+  [k: string]: any;
+}
+
+export interface StepGuideItemStoryblok {
+  number: string;
+  text: string;
+  image: ImageStoryblok[];
+  component: "stepGuideItem";
   _uid: string;
   [k: string]: any;
 }

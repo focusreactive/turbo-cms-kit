@@ -14,7 +14,8 @@ export * from "./components/sections/blog";
 export * from "./components/sections/hero";
 export * from "./components/sections/carousels";
 export * from "./components/sections/cookieBanner";
-export * from "./components/sections/pricing"
+export * from "./components/sections/pricing"; // todo: pricing table?
+export * from "./components/sections/stepGuide";
 // end component exports
 
 export { cn } from "./utils";

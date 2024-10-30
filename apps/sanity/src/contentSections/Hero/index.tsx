@@ -14,8 +14,6 @@ export default function HeroSection({ data }: IHeroSectionProps) {
 
   const { title, text, image, links } = data;
 
-  console.log(data);
-
   if (!title && !text?.text && !image?.image && (!links || links.length === 0))
     return <EmptyBlock name="Hero Section" />;
 

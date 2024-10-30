@@ -4,6 +4,7 @@ import { simpleCarouselCard } from "@/contentSections/carousels/SimpleCarousel/s
 import { wideSimpleCarouselCard } from "@/contentSections/carousels/WideSimpleCarousel/schema";
 import { logoItem } from "@/contentSections/Logos/schema";
 import { pricingTier } from "@/contentSections/Pricing/schema";
+import { stepGuideItem } from "@/contentSections/StepGuide/schema";
 
 import footer from "@/components/Footer/schema";
 import header from "@/components/Header/schema";
@@ -29,6 +30,7 @@ const schemas = [
   simpleCarouselCard,
   wideSimpleCarouselCard,
   pricingTier,
+  stepGuideItem,
   ...sections,
 ];
 

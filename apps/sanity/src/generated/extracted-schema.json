@@ -326,6 +326,94 @@
     }
   },
   {
+    "name": "section.stepGuide",
+    "type": "type",
+    "value": {
+      "type": "object",
+      "attributes": {
+        "_type": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string",
+            "value": "section.stepGuide"
+          }
+        },
+        "items": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "array",
+            "of": {
+              "type": "object",
+              "attributes": {
+                "_key": {
+                  "type": "objectAttribute",
+                  "value": {
+                    "type": "string"
+                  }
+                }
+              },
+              "rest": {
+                "type": "inline",
+                "name": "stepGuideItem"
+              }
+            }
+          },
+          "optional": false
+        },
+        "link": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "inline",
+            "name": "customLink"
+          },
+          "optional": false
+        },
+        "marginTop": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "union",
+            "of": [
+              {
+                "type": "string",
+                "value": "none"
+              },
+              {
+                "type": "string",
+                "value": "base"
+              },
+              {
+                "type": "string",
+                "value": "lg"
+              }
+            ]
+          },
+          "optional": false
+        },
+        "marginBottom": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "union",
+            "of": [
+              {
+                "type": "string",
+                "value": "none"
+              },
+              {
+                "type": "string",
+                "value": "base"
+              },
+              {
+                "type": "string",
+                "value": "lg"
+              }
+            ]
+          },
+          "optional": false
+        }
+      }
+    }
+  },
+  {
     "name": "section.pricing",
     "type": "type",
     "value": {
@@ -360,19 +448,19 @@
           },
           "optional": false
         },
-        "extraServiceEnabled": {
-          "type": "objectAttribute",
-          "value": {
-            "type": "boolean"
-          },
-          "optional": true
-        },
         "yearlyDiscountPercentage": {
           "type": "objectAttribute",
           "value": {
             "type": "number"
           },
           "optional": false
+        },
+        "extraServiceEnabled": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "boolean"
+          },
+          "optional": true
         },
         "extraService": {
           "type": "objectAttribute",
@@ -1290,6 +1378,44 @@
     }
   },
   {
+    "name": "stepGuideItem",
+    "type": "type",
+    "value": {
+      "type": "object",
+      "attributes": {
+        "_type": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string",
+            "value": "stepGuideItem"
+          }
+        },
+        "number": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string"
+          },
+          "optional": false
+        },
+        "text": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string"
+          },
+          "optional": false
+        },
+        "image": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "inline",
+            "name": "customImage"
+          },
+          "optional": false
+        }
+      }
+    }
+  },
+  {
     "name": "pricingTier",
     "type": "type",
     "value": {
@@ -1986,6 +2112,14 @@
               {
                 "type": "string",
                 "value": "badge"
+              },
+              {
+                "type": "string",
+                "value": "ghost"
+              },
+              {
+                "type": "string",
+                "value": "ghost-dark"
               }
             ]
           },
@@ -2214,6 +2348,21 @@
                 "rest": {
                   "type": "inline",
                   "name": "section.pricing"
+                }
+              },
+              {
+                "type": "object",
+                "attributes": {
+                  "_key": {
+                    "type": "objectAttribute",
+                    "value": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "rest": {
+                  "type": "inline",
+                  "name": "section.stepGuide"
                 }
               }
             ]

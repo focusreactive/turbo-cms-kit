@@ -68,6 +68,18 @@ export type Geopoint = {
   alt?: number;
 };
 
+export type SectionStepGuide = {
+  _type: "section.stepGuide";
+  items: Array<
+    {
+      _key: string;
+    } & StepGuideItem
+  >;
+  link: CustomLink;
+  marginTop: "none" | "base" | "lg";
+  marginBottom: "none" | "base" | "lg";
+};
+
 export type SectionPricing = {
   _type: "section.pricing";
   tiers: Array<
@@ -75,8 +87,8 @@ export type SectionPricing = {
       _key: string;
     } & PricingTier
   >;
-  extraServiceEnabled?: boolean;
   yearlyDiscountPercentage: number;
+  extraServiceEnabled?: boolean;
   extraService?: {
     text: string;
     cost: number;
@@ -188,6 +200,13 @@ export type SectionCopy = {
   theme: "light" | "dark";
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
+};
+
+export type StepGuideItem = {
+  _type: "stepGuideItem";
+  number: string;
+  text: string;
+  image: CustomImage;
 };
 
 export type PricingTier = {
@@ -304,7 +323,9 @@ export type CustomLink = {
     | "secondary"
     | "headerNav"
     | "footerNav"
-    | "badge";
+    | "badge"
+    | "ghost"
+    | "ghost-dark";
 };
 
 export type Page = {
@@ -349,6 +370,9 @@ export type Page = {
     | ({
         _key: string;
       } & SectionPricing)
+    | ({
+        _key: string;
+      } & SectionStepGuide)
   >;
   footer: {
     _ref: string;
@@ -575,6 +599,7 @@ export type AllSanitySchemaTypes =
   | SanityImageDimensions
   | SanityFileAsset
   | Geopoint
+  | SectionStepGuide
   | SectionPricing
   | SectionHero
   | SectionWideSimpleCarousel
@@ -584,6 +609,7 @@ export type AllSanitySchemaTypes =
   | SectionLinksList
   | SectionLogos
   | SectionCopy
+  | StepGuideItem
   | PricingTier
   | WideSimpleCarouselCard
   | SimpleCarouselCard
@@ -635,6 +661,8 @@ export type PAGE_BY_SLUG_QUERYResult = {
         | "badge"
         | "default"
         | "footerNav"
+        | "ghost-dark"
+        | "ghost"
         | "headerNav"
         | "primary"
         | "secondary";
@@ -668,6 +696,8 @@ export type PAGE_BY_SLUG_QUERYResult = {
               | "badge"
               | "default"
               | "footerNav"
+              | "ghost-dark"
+              | "ghost"
               | "headerNav"
               | "primary"
               | "secondary";
@@ -708,6 +738,8 @@ export type PAGE_BY_SLUG_QUERYResult = {
               | "badge"
               | "default"
               | "footerNav"
+              | "ghost-dark"
+              | "ghost"
               | "headerNav"
               | "primary"
               | "secondary";
@@ -751,6 +783,8 @@ export type PAGE_BY_SLUG_QUERYResult = {
             | "badge"
             | "default"
             | "footerNav"
+            | "ghost-dark"
+            | "ghost"
             | "headerNav"
             | "primary"
             | "secondary";
@@ -775,6 +809,8 @@ export type PAGE_BY_SLUG_QUERYResult = {
             | "badge"
             | "default"
             | "footerNav"
+            | "ghost-dark"
+            | "ghost"
             | "headerNav"
             | "primary"
             | "secondary";
@@ -805,6 +841,8 @@ export type PAGE_BY_SLUG_QUERYResult = {
               | "badge"
               | "default"
               | "footerNav"
+              | "ghost-dark"
+              | "ghost"
               | "headerNav"
               | "primary"
               | "secondary";
@@ -823,8 +861,8 @@ export type PAGE_BY_SLUG_QUERYResult = {
             _key: string;
           } & PricingTier
         >;
-        extraServiceEnabled?: boolean;
         yearlyDiscountPercentage: number;
+        extraServiceEnabled?: boolean;
         extraService?: {
           text: string;
           cost: number;
@@ -840,6 +878,18 @@ export type PAGE_BY_SLUG_QUERYResult = {
             _key: string;
           } & SimpleCarouselCard
         >;
+        marginTop: "base" | "lg" | "none";
+        marginBottom: "base" | "lg" | "none";
+      }
+    | {
+        _key: string;
+        _type: "section.stepGuide";
+        items: Array<
+          {
+            _key: string;
+          } & StepGuideItem
+        >;
+        link: CustomLink;
         marginTop: "base" | "lg" | "none";
         marginBottom: "base" | "lg" | "none";
       }
@@ -878,6 +928,8 @@ export type PAGE_BY_SLUG_QUERYResult = {
         | "badge"
         | "default"
         | "footerNav"
+        | "ghost-dark"
+        | "ghost"
         | "headerNav"
         | "primary"
         | "secondary";

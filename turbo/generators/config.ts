@@ -22,8 +22,8 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
     return str.charAt(0).toUpperCase() + str.slice(1);
   });
 
-  plop.setHelper("lowercase", (str: string) => {
-    return str.toLowerCase();
+  plop.setHelper("loweraseFirstLetter", (str: string) => {
+    return str.charAt(0).toLowerCase() + str.slice(1);
   });
 
   plop.setGenerator("UI", {
@@ -73,7 +73,7 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
         type: "modify",
         path: "{{ turbo.paths.root }}/apps/storyblok/src/constants/sbComponents.tsx",
         pattern: /(\/\/ end of sb components mapping)/g,
-        template: `  {{ lowercase sectionName }}: {{ capitialize sectionName }},\n$1`,
+        template: `{{ loweraseFirstLetter sectionName }}: {{ capitialize sectionName }},\n$1`,
       },
     ],
   });

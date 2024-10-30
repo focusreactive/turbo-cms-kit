@@ -10,7 +10,7 @@ export default function PageContainer({ blok }: IPageContainerProps) {
   if (!sections) return null;
 
   return (
-    <div>
+    <div className="light">
       <StoryblokStory story={blok.header} />
       {sections.map((s) => (
         <StoryblokComponent blok={s} key={s._uid} />

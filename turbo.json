@@ -12,14 +12,18 @@
   ],
   "tasks": {
     "build": {
-      "cache": false,
+      "cache": true,
+      "persistent": true,
       "dependsOn": ["^build"],
       "outputs": [".next/**", "!.next/cache/**", "dist/**"]
     },
     "start": {
       "dependsOn": ["^build"]
     },
-    "lint": {},
+    "lint": {
+      "cache": true,
+      "persistent": true
+    },
     "typecheck": {},
     "dev": {
       "cache": false,
