@@ -1,3 +1,4 @@
+// start of sb components imports
 import Blog from "@/contentSections/Blog";
 import CardsGrid from "@/contentSections/CardsGrid";
 import SimpleCarousel from "@/contentSections/carousels/SimpleCarousel";
@@ -12,7 +13,10 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import PageContainer from "@/components/Page";
 
+// end of sb components imports
+
 export const COMPONENTS = {
+  // start of sb components mapping
   page: PageContainer,
   copy: Copy,
   header: Header,
@@ -25,4 +29,5 @@ export const COMPONENTS = {
   wideSimpleCarousel: WideSimpleCarousel,
   hero: Hero,
   pricing: Pricing,
+  // end of sb components mapping
 };
