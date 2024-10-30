@@ -14,12 +14,7 @@
     "build": {
       "cache": false,
       "dependsOn": ["^build"],
-      "outputs": [
-        ".next/**",
-        "!.next/cache/**",
-        "dist/**",
-        "storybook-static/**"
-      ]
+      "outputs": [".next/**", "!.next/cache/**", "dist/**"]
     },
     "start": {
       "dependsOn": ["^build"]
@@ -31,10 +26,6 @@
       "persistent": true
     },
     "dev:turbo": {
-      "cache": false,
-      "persistent": true
-    },
-    "proxy": {
       "cache": false,
       "persistent": true
     }
