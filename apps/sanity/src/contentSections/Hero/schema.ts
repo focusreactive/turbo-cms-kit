@@ -43,8 +43,16 @@ export default {
     ...sectionMarginFields,
   ],
   preview: {
-    prepare: () => ({
-      title: "Hero",
-    }),
+    select: {
+      title: "title",
+      image: "image.image",
+    },
+    prepare({ title, image }: any) {
+      return {
+        title,
+        subtitle: "Hero",
+        media: image,
+      };
+    },
   },
 };

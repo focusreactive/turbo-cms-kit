@@ -1,6 +1,7 @@
 import CardsGrid from "@/contentSections/CardsGrid";
 import LinksList from "@/contentSections/LinksList";
 import Logos from "@/contentSections/Logos";
+import StepGuide from "@/contentSections/StepGuide";
 import type { CustomImage } from "@/generated/extracted-types";
 import { PortableText } from "@portabletext/react";
 import { stegaClean } from "@sanity/client/stega";
@@ -48,6 +49,10 @@ const COMPONENTS = {
     // todo: infer from schema
     "section.linksList": ({ value }: { value: any }) => {
       return <LinksList data={{ ...value, paddingX: "none" }} />;
+    },
+
+    "section.stepGuide": ({ value }: { value: any }) => {
+      return <StepGuide data={{ ...value, paddingX: "none" }} />;
     },
   },
 

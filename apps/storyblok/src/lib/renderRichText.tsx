@@ -63,6 +63,18 @@ export default function renderRichText(data: ISbRichtext) {
           />
         );
       },
+
+      stepGuide: (props) => {
+        return (
+          <StoryblokComponent
+            blok={{
+              ...props,
+              component: "stepGuide",
+              paddingX: "none",
+            }}
+          />
+        );
+      },
     },
   });
 }

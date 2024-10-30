@@ -56,11 +56,15 @@ export default {
   ],
   preview: {
     select: {
-      length: "items.length",
+      number: "items.0.number",
+      text: "items.0.text",
+      image: "items.0.image.image",
     },
     prepare(value: any) {
       return {
-        title: `${value.length} items`,
+        media: value.image,
+        subtitle: "Step Guide",
+        title: `${value.number} ${value.text}`,
       };
     },
   },
