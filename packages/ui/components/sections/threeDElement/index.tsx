@@ -1,12 +1,14 @@
-import { Fragment, type FC } from "react";
+import type { FC } from "react";
 
 import DonutModel from "./donut-model";
+import GlobeModel from "./globe-model";
+import KubikRubik from "./kubik-rubik";
 import type { IThreeDElementProps } from "./types";
 
 const MODELS_MAP: Record<IThreeDElementProps["model"], FC> = {
   donut: DonutModel,
-  globe: Fragment,
-  "kubik-rubik": Fragment,
+  globe: GlobeModel,
+  "kubik-rubik": KubikRubik,
 };
 
 export function ThreeDElement({ model }: IThreeDElementProps) {
