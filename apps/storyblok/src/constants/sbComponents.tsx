@@ -14,6 +14,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import PageContainer from "@/components/Page";
 
+import ThreeDElement from '@/contentSections/ThreeDElement'
 // end of sb components imports
 
 export const COMPONENTS = {
@@ -31,5 +32,6 @@ export const COMPONENTS = {
   hero: Hero,
   pricing: Pricing,
   stepGuide: StepGuide,
-  // end of sb components mapping
+  threeDElement: ThreeDElement,
+// end of sb components mapping
 };

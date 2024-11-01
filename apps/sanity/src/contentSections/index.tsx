@@ -9,6 +9,7 @@ import LinksList from "./LinksList";
 import Logos from "./Logos";
 import Pricing from "./Pricing";
 import StepGuide from "./StepGuide";
+import ThreeDElement from "./ThreeDElement";
 
 // end of section imports
 
@@ -24,6 +25,7 @@ export const sections: Record<string, any> = {
   "section.hero": Hero,
   "section.pricing": Pricing,
   "section.stepGuide": StepGuide,
+  "section.threeDElement": ThreeDElement,
   // end of section object
 };
 

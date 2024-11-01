@@ -75,6 +75,14 @@ export default function renderRichText(data: ISbRichtext) {
           />
         );
       },
+
+      threeDElement: (props) => {
+        return (
+          <StoryblokComponent
+            blok={{ ...props, component: "threeDElement", paddingX: "none" }}
+          />
+        );
+      },
     },
   });
 }

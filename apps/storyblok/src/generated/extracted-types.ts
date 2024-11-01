@@ -247,6 +247,7 @@ export interface PageStoryblok {
     | PricingStoryblok
     | SimpleCarouselStoryblok
     | StepGuideStoryblok
+    | ThreeDElementStoryblok
     | WideSimpleCarouselStoryblok
   )[];
   seoTitle: string;
@@ -347,6 +348,15 @@ export interface StepGuideItemStoryblok {
   text: string;
   image: ImageStoryblok[];
   component: "stepGuideItem";
+  _uid: string;
+  [k: string]: any;
+}
+
+export interface ThreeDElementStoryblok {
+  threeDModel: "donut" | "globe" | "kubik-rubik";
+  marginTop: "none" | "base" | "lg";
+  marginBottom: "none" | "base" | "lg";
+  component: "threeDElement";
   _uid: string;
   [k: string]: any;
 }

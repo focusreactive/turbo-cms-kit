@@ -2,6 +2,7 @@ import CardsGrid from "@/contentSections/CardsGrid";
 import LinksList from "@/contentSections/LinksList";
 import Logos from "@/contentSections/Logos";
 import StepGuide from "@/contentSections/StepGuide";
+import ThreeDElement from "@/contentSections/ThreeDElement";
 import type { CustomImage } from "@/generated/extracted-types";
 import { PortableText } from "@portabletext/react";
 import { stegaClean } from "@sanity/client/stega";
@@ -53,6 +54,10 @@ const COMPONENTS = {
 
     "section.stepGuide": ({ value }: { value: any }) => {
       return <StepGuide data={{ ...value, paddingX: "none" }} />;
+    },
+
+    "section.threeDElement": ({ value }: { value: any }) => {
+      return <ThreeDElement data={{ ...value, paddingX: "none" }} />;
     },
   },
 
