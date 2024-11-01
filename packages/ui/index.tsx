@@ -16,6 +16,7 @@ export * from "./components/sections/carousels";
 export * from "./components/sections/cookieBanner";
 export * from "./components/sections/pricing"; // todo: pricing table?
 export * from "./components/sections/stepGuide";
+export * from "./components/sections/threeDElement";
 // end component exports
 
 export { cn } from "./utils";

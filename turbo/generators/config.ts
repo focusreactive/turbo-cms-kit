@@ -44,7 +44,7 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
         type: "modify",
         path: "{{ turbo.paths.root }}/packages/ui/index.tsx",
         pattern: /(\/\/ end component exports)/g,
-        template: `export * from "./components/ui/{{ capitialize sectionName }}"\n$1`,
+        template: `export * from "./components/ui/{{ sectionName }}"\n$1`,
       },
     ],
   });
@@ -119,7 +119,7 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
         path: "{{ turbo.paths.root }}/apps/sanity/src/contentSections/index.tsx",
         pattern: /(\/\/ end of section object)/g,
         template:
-          "'section.{{ sectionName }}': {{ capitialize sectionName }},\n$1",
+          "'section.{{ loweraseFirstLetter sectionName }}': {{ capitialize sectionName }},\n$1",
       },
       {
         type: "modify",
@@ -130,14 +130,14 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
       {
         type: "modify",
         path: "{{ turbo.paths.root }}/apps/sanity/src/lib/schemas/sections.ts",
-        pattern: /(\/\/ end of section array)/g,
-        template: `{{ sectionName }},\n$1`,
+        pattern: /(\/\/ end of section imports)/g,
+        template: `import {{ loweraseFirstLetter sectionName }} from '@/contentSections/{{ capitialize sectionName }}/schema'\n$1`,
       },
       {
         type: "modify",
         path: "{{ turbo.paths.root }}/apps/sanity/src/lib/schemas/sections.ts",
-        pattern: /(\/\/ end of section imports)/g,
-        template: `import {{ sectionName }} from '@/contentSections/{{ capitialize sectionName }}/schema'\n$1`,
+        pattern: /(\/\/ end of section array)/g,
+        template: `{{ loweraseFirstLetter sectionName }},\n$1`,
       },
     ],
   });

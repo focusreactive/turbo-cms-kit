@@ -68,6 +68,13 @@ export type Geopoint = {
   alt?: number;
 };
 
+export type SectionThreeDElement = {
+  _type: "section.threeDElement";
+  title?: string;
+  marginTop: "none" | "base" | "lg";
+  marginBottom: "none" | "base" | "lg";
+};
+
 export type SectionStepGuide = {
   _type: "section.stepGuide";
   items: Array<
@@ -373,6 +380,9 @@ export type Page = {
     | ({
         _key: string;
       } & SectionStepGuide)
+    | ({
+        _key: string;
+      } & SectionThreeDElement)
   >;
   footer: {
     _ref: string;
@@ -599,6 +609,7 @@ export type AllSanitySchemaTypes =
   | SanityImageDimensions
   | SanityFileAsset
   | Geopoint
+  | SectionThreeDElement
   | SectionStepGuide
   | SectionPricing
   | SectionHero
@@ -890,6 +901,13 @@ export type PAGE_BY_SLUG_QUERYResult = {
           } & StepGuideItem
         >;
         link: CustomLink;
+        marginTop: "base" | "lg" | "none";
+        marginBottom: "base" | "lg" | "none";
+      }
+    | {
+        _key: string;
+        _type: "section.threeDElement";
+        title?: string;
         marginTop: "base" | "lg" | "none";
         marginBottom: "base" | "lg" | "none";
       }
