@@ -2199,6 +2199,115 @@
       "component_group_name": "components"
     },
     {
+      "name": "threeDElement",
+      "display_name": "3D Element",
+      "created_at": "2024-11-01T07:46:52.931Z",
+      "updated_at": "2024-11-01T07:51:32.500Z",
+      "id": 6502652,
+      "schema": {
+        "threeDModel": {
+          "type": "option",
+          "pos": 0,
+          "use_uuid": true,
+          "required": true,
+          "exclude_empty_option": true,
+          "default_value": "donut",
+          "options": [
+            {
+              "_uid": "19572a45-9c85-4f71-90c2-502ca58476f0",
+              "name": "Donut",
+              "value": "donut"
+            },
+            {
+              "_uid": "62a43843-e351-4885-8afe-3dcdae45c048",
+              "value": "globe",
+              "name": "Globe"
+            },
+            {
+              "_uid": "cb57a106-c8e1-429f-bc72-e1a086e45f76",
+              "value": "kubik-rubik",
+              "name": "Kubik rubik"
+            }
+          ]
+        },
+        "tab-a56fbd62-e3cd-4f10-8de8-b218250de1a7": {
+          "display_name": "Style",
+          "keys": [
+            "marginTop",
+            "marginBottom"
+          ],
+          "pos": 2,
+          "type": "tab",
+          "key": "tab-a56fbd62-e3cd-4f10-8de8-b218250de1a7"
+        },
+        "marginTop": {
+          "type": "option",
+          "pos": 3,
+          "use_uuid": true,
+          "required": true,
+          "options": [
+            {
+              "_uid": "bb118ed8-0c4d-4168-9d90-1ae5ada4716a",
+              "name": "none",
+              "value": "none"
+            },
+            {
+              "_uid": "847bcc05-3524-4ebd-9abf-8d7ae03e3dd3",
+              "value": "base",
+              "name": "base"
+            },
+            {
+              "_uid": "c6fe7939-4db1-4db1-a95d-a5115f18ebec",
+              "value": "lg",
+              "name": "large"
+            }
+          ],
+          "exclude_empty_option": true,
+          "default_value": "base"
+        },
+        "marginBottom": {
+          "type": "option",
+          "pos": 4,
+          "use_uuid": true,
+          "required": true,
+          "exclude_empty_option": true,
+          "options": [
+            {
+              "_uid": "2041c484-aeed-412b-bfae-1239e6a1303a",
+              "name": "none",
+              "value": "none"
+            },
+            {
+              "_uid": "20ff7466-d69a-4659-995e-4240ff9bef69",
+              "value": "base",
+              "name": "base"
+            },
+            {
+              "_uid": "6d3f51ae-0690-4c1d-a250-e2f6245aaf51",
+              "value": "lg",
+              "name": "large"
+            }
+          ],
+          "default_value": "base"
+        }
+      },
+      "image": "//a.storyblok.com/f/293915/x/82b8a3dba8/screenshot-2024-11-01-at-08-49-14.png",
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "3D Element",
+      "component_group_uuid": "9a95e24a-4024-4145-992e-070fbb399f97",
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null,
+      "component_group_name": "sections"
+    },
+    {
       "name": "wideSimpleCarousel",
       "display_name": null,
       "created_at": "2024-10-08T14:21:25.377Z",

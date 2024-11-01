@@ -1,12 +1,20 @@
-import React from "react";
+import { Fragment, type FC } from "react";
 
+import DonutModel from "./donut-model";
 import type { IThreeDElementProps } from "./types";
 
-// todo: remove React.FC<> and replace with common function and type
-export const ThreeDElement: React.FC<IThreeDElementProps> = ({ title }) => {
+const MODELS_MAP: Record<IThreeDElementProps["model"], FC> = {
+  donut: DonutModel,
+  globe: Fragment,
+  "kubik-rubik": Fragment,
+};
+
+export function ThreeDElement({ model }: IThreeDElementProps) {
+  const ModelComponent = MODELS_MAP[model];
+
   return (
-    <div className="bg-white dark:bg-gray-900">
-      <div className="text-gray-500 dark:text-gray-400 sm:text-lg">{title}</div>
+    <div className="">
+      <ModelComponent />
     </div>
   );
-};
+}

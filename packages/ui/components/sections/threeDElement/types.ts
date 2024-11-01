@@ -1,3 +1,3 @@
 export interface IThreeDElementProps {
-  title: string;
+  model: "donut" | "globe" | "kubik-rubik";
 }
