@@ -338,12 +338,26 @@
             "value": "section.threeDElement"
           }
         },
-        "title": {
+        "model": {
           "type": "objectAttribute",
           "value": {
-            "type": "string"
+            "type": "union",
+            "of": [
+              {
+                "type": "string",
+                "value": "donut"
+              },
+              {
+                "type": "string",
+                "value": "globe"
+              },
+              {
+                "type": "string",
+                "value": "kubik-rubik"
+              }
+            ]
           },
-          "optional": true
+          "optional": false
         },
         "marginTop": {
           "type": "objectAttribute",

@@ -70,7 +70,7 @@ export type Geopoint = {
 
 export type SectionThreeDElement = {
   _type: "section.threeDElement";
-  title?: string;
+  model: "donut" | "globe" | "kubik-rubik";
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
 };
@@ -907,7 +907,7 @@ export type PAGE_BY_SLUG_QUERYResult = {
     | {
         _key: string;
         _type: "section.threeDElement";
-        title?: string;
+        model: "donut" | "globe" | "kubik-rubik";
         marginTop: "base" | "lg" | "none";
         marginBottom: "base" | "lg" | "none";
       }

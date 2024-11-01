@@ -12,9 +12,19 @@ export default {
   groups: commonGroups,
   fields: [
     defineField({
-      name: "title",
+      name: "model",
       type: "string",
       group: CommonGroup.Content,
+      options: {
+        list: [
+          { title: "Donut", value: "donut" },
+          { title: "Globe", value: "globe" },
+          { title: "Kubik Rubik", value: "kubik-rubik" },
+        ],
+        layout: "dropdown",
+      },
+      initialValue: "donut",
+      validation: (Rule) => Rule.required(),
     }),
     ...sectionMarginFields,
   ],

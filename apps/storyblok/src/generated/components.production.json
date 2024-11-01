@@ -2296,7 +2296,35 @@
       "is_root": false,
       "preview_tmpl": null,
       "is_nestable": true,
-      "all_presets": [],
+      "all_presets": [
+        {
+          "id": 2339030,
+          "name": "Donut",
+          "component_id": 6502652,
+          "image": "//a.storyblok.com/f/293915/x/d39c375cf9/screenshot-2024-11-01-at-09-29-42.png",
+          "icon": "",
+          "color": "",
+          "description": ""
+        },
+        {
+          "id": 2339068,
+          "name": "Kubik Rubik",
+          "component_id": 6502652,
+          "image": "//a.storyblok.com/f/293915/x/75159faf13/screenshot-2024-11-01-at-10-40-32.png",
+          "icon": "",
+          "color": "",
+          "description": ""
+        },
+        {
+          "id": 2339069,
+          "name": "Sphere",
+          "component_id": 6502652,
+          "image": "//a.storyblok.com/f/293915/x/e7b4b1f94e/screenshot-2024-11-01-at-10-40-44.png",
+          "icon": "",
+          "color": "",
+          "description": ""
+        }
+      ],
       "preset_id": null,
       "real_name": "3D Element",
       "component_group_uuid": "9a95e24a-4024-4145-992e-070fbb399f97",

@@ -1,3 +1,6 @@
+import { stegaClean } from "@sanity/client/stega";
+import EmptyBlock from "@shared/ui/components/EmptyBlock";
+
 import { ThreeDElement as ThreeDElementUI } from "@shared/ui";
 
 import SectionContainer from "@/components/SectionContainer";
@@ -5,13 +8,13 @@ import SectionContainer from "@/components/SectionContainer";
 import type { IThreeDElementProps } from "./types";
 
 export default function ThreeDElement({ data }: IThreeDElementProps) {
-  if (!data) return null;
+  const { model } = data;
 
-  const { title } = data;
+  if (!model) return <EmptyBlock name="3D Element Section" />;
 
   return (
     <SectionContainer sectionData={data}>
-      <ThreeDElementUI title={title as any} />
+      <ThreeDElementUI model={stegaClean(model)} />
     </SectionContainer>
   );
 }
