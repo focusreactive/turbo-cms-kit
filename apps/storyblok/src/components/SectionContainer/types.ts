@@ -5,6 +5,7 @@ export interface ISectionContainer extends SbBlokData {
   marginBottom?: "none" | "base" | "lg";
   paddingX?: "none";
   paddingY?: "none";
+  noMaxWidth?: boolean;
 }
 
 export interface ISectionContainerProps {

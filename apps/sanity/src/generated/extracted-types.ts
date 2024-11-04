@@ -131,11 +131,19 @@ export type SectionWideSimpleCarousel = {
 
 export type SectionSimpleCarousel = {
   _type: "section.simpleCarousel";
+  text?: CustomRichText;
   slides: Array<
     {
       _key: string;
     } & SimpleCarouselCard
   >;
+  effect?: "slide" | "coverflow" | "cube" | "fade" | "flip" | "cards";
+  fullWidth?: boolean;
+  params?: {
+    loop?: boolean;
+    slidesPerView?: number;
+    spaceBetween?: number;
+  };
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
 };
@@ -234,6 +242,7 @@ export type WideSimpleCarouselCard = {
 
 export type SimpleCarouselCard = {
   _type: "simpleCarouselCard";
+  text?: CustomRichText;
   image: CustomImage;
 };
 
@@ -884,11 +893,19 @@ export type PAGE_BY_SLUG_QUERYResult = {
     | {
         _key: string;
         _type: "section.simpleCarousel";
+        text?: CustomRichText;
         slides: Array<
           {
             _key: string;
           } & SimpleCarouselCard
         >;
+        effect?: "cards" | "coverflow" | "cube" | "fade" | "flip" | "slide";
+        fullWidth?: boolean;
+        params?: {
+          loop?: boolean;
+          slidesPerView?: number;
+          spaceBetween?: number;
+        };
         marginTop: "base" | "lg" | "none";
         marginBottom: "base" | "lg" | "none";
       }
