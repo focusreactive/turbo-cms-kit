@@ -28,8 +28,8 @@ export const prepareImageProps = (props?: CustomImage): IImageProps => {
       fit: "cover",
     };
 
-  const url = props.image?.asset?._ref.endsWith("svg")
-    ? urlForImage(props.image).url()
+  const url = props.image.asset?._ref.endsWith("svg")
+    ? urlForImage(props.image)?.url() || ""
     : urlForImage(props.image)
         ?.height(props.height)
         .fit("max")
