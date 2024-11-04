@@ -6,7 +6,6 @@ import {
   CommonGroup,
   commonGroups,
   sectionMarginFields,
-  themeField,
 } from "../commonFields";
 
 export default {
@@ -31,7 +30,6 @@ export default {
       initialValue: false,
       validation: (Rule) => Rule.required(),
     }),
-    themeField,
     ...sectionMarginFields,
   ],
   preview: {

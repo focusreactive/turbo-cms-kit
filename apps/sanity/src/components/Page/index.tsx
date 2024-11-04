@@ -1,6 +1,6 @@
 import { SectionRenderer } from "@/contentSections";
 
-import { CookieBanner } from "@shared/ui";
+import { cn, CookieBanner } from "@shared/ui";
 
 import Footer from "../Footer";
 import Header from "../Header";
@@ -12,7 +12,7 @@ export default function Page({ data }: IPageProps) {
   const { sectionsBody, showCookieBanner, header, footer } = data;
 
   return (
-    <div>
+    <div className={cn("bg-bgColor light")}>
       <Header data={header} />
       {sectionsBody?.map((section) => (
         <SectionRenderer key={section._key} section={section} />

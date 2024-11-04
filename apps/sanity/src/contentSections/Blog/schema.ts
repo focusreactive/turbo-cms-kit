@@ -6,7 +6,6 @@ import {
   CommonGroup,
   commonGroups,
   sectionMarginFields,
-  themeField,
 } from "../commonFields";
 
 export const blogPost = defineType({
@@ -91,7 +90,6 @@ export default {
       of: [{ type: blogPost.name }],
       validation: (Rule) => Rule.required(),
     }),
-    themeField,
     ...sectionMarginFields,
   ],
   preview: {
