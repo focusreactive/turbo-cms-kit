@@ -1,5 +1,4 @@
 import { SectionRenderer } from "@/contentSections";
-import { stegaClean } from "@sanity/client/stega";
 
 import { cn, CookieBanner } from "@shared/ui";
 
@@ -12,11 +11,8 @@ export default function Page({ data }: IPageProps) {
 
   const { sectionsBody, showCookieBanner, header, footer, theme } = data;
 
-  console.log("datadata");
-  console.log(data);
-
   return (
-    <div className={cn("bg-bgColor", stegaClean(theme))}>
+    <div className={cn("bg-bgColor", theme)}>
       <Header data={header} />
       {sectionsBody?.map((section) => (
         <SectionRenderer key={section._key} section={section} />
