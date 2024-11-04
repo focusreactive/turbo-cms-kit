@@ -22,8 +22,6 @@ export async function POST(request: Request) {
 
   const generatedSignature = generateSignature(JSON.stringify(body));
 
-  console.log("signature/gen sign: ", signature, generatedSignature);
-
   if (signature !== generatedSignature) {
     return Response.json({ error: "Invalid signature" }, { status: 400 });
   }
