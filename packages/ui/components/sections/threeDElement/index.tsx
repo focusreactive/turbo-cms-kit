@@ -13,7 +13,6 @@ const MODELS_MAP: Record<IThreeDElementProps["model"], FC> = {
 
 export function ThreeDElement({ model }: IThreeDElementProps) {
   const ModelComponent = MODELS_MAP[model];
-  return null;
 
   return (
     <div className="">
