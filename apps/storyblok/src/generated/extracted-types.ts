@@ -32,8 +32,8 @@ export interface BlogStoryblok {
   posts: BlogPostStoryblok[];
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
-  maxWidth: "" | "base" | "none";
-  backgroundColor: "" | "white" | "lightGray" | "darkGray" | "black" | "none";
+  maxWidth: "base" | "none";
+  backgroundColor: "white" | "lightGray" | "darkGray" | "black" | "none";
   backgroundImage?: AssetStoryblok;
   component: "blog";
   _uid: string;
@@ -54,8 +54,8 @@ export interface CardsGridStoryblok {
   columns: "1" | "2" | "3";
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
-  maxWidth: "" | "base" | "none";
-  backgroundColor: "" | "white" | "lightGray" | "darkGray" | "black" | "none";
+  maxWidth: "base" | "none";
+  backgroundColor: "white" | "lightGray" | "darkGray" | "black" | "none";
   items: DefaultCardStoryblok[];
   backgroundImage?: AssetStoryblok;
   component: "cardsGrid";
@@ -68,8 +68,8 @@ export interface CopyStoryblok {
   columns: RichTextStoryblok[];
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
-  maxWidth: "" | "base" | "none";
-  backgroundColor: "" | "white" | "lightGray" | "darkGray" | "black" | "none";
+  maxWidth: "base" | "none";
+  backgroundColor: "white" | "lightGray" | "darkGray" | "black" | "none";
   backgroundImage?: AssetStoryblok;
   component: "copy";
   _uid: string;
@@ -119,8 +119,8 @@ export interface HeroStoryblok {
   links: LinkStoryblok[];
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
-  maxWidth: "" | "base" | "none";
-  backgroundColor: "" | "white" | "lightGray" | "darkGray" | "black" | "none";
+  maxWidth: "base" | "none";
+  backgroundColor: "white" | "lightGray" | "darkGray" | "black" | "none";
   backgroundImage?: AssetStoryblok;
   component: "hero";
   _uid: string;
@@ -223,8 +223,8 @@ export interface LinksListStoryblok {
   links: LinkStoryblok[];
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
-  maxWidth?: "" | "base" | "none";
-  backgroundColor: "" | "white" | "lightGray" | "darkGray" | "black" | "none";
+  maxWidth: "base" | "none";
+  backgroundColor: "white" | "lightGray" | "darkGray" | "black" | "none";
   backgroundImage?: AssetStoryblok;
   component: "linksList";
   _uid: string;
@@ -245,8 +245,8 @@ export interface LogosStoryblok {
   items: LogoItemStoryblok[];
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
-  maxWidth: "" | "base" | "none";
-  backgroundColor: "" | "white" | "lightGray" | "darkGray" | "black" | "none";
+  maxWidth: "base" | "none";
+  backgroundColor: "white" | "lightGray" | "darkGray" | "black" | "none";
   backgroundImage?: AssetStoryblok;
   component: "logos";
   _uid: string;
@@ -266,7 +266,6 @@ export interface PageStoryblok {
     | SimpleCarouselStoryblok
     | StepGuideStoryblok
     | ThreeDElementStoryblok
-    | WideSimpleCarouselStoryblok
   )[];
   seoTitle: string;
   seoDescription: string;
@@ -285,10 +284,10 @@ export interface PricingStoryblok {
   yearlyDiscountPercentage?: string;
   extraServiceEnabled?: boolean;
   extraService?: PricingExtraServiceStoryblok[];
-  marginTop: "" | "none" | "base" | "lg";
-  marginBottom: "" | "none" | "base" | "lg";
-  maxWidth: "" | "base" | "none";
-  backgroundColor: "" | "white" | "lightGray" | "darkGray" | "black" | "none";
+  marginTop: "none" | "base" | "lg";
+  marginBottom: "none" | "base" | "lg";
+  maxWidth: "base" | "none";
+  backgroundColor: "white" | "lightGray" | "darkGray" | "black" | "none";
   backgroundImage?: AssetStoryblok;
   component: "pricing";
   _uid: string;
@@ -342,12 +341,12 @@ export interface RichTextStoryblok {
 }
 
 export interface SimpleCarouselStoryblok {
-  effect?: "" | "slide" | "coverflow" | "cube" | "fade" | "flip" | "cards";
+  effect?: "slide" | "coverflow" | "cube" | "fade" | "flip" | "cards";
   params?: SliderParamsStoryblok[];
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
-  maxWidth: "" | "base" | "none";
-  backgroundColor: "" | "white" | "lightGray" | "darkGray" | "black" | "none";
+  maxWidth: "base" | "none";
+  backgroundColor: "white" | "lightGray" | "darkGray" | "black" | "none";
   backgroundImage?: AssetStoryblok;
   text?: RichTextStoryblok[];
   slides: SimpleCarouselSlideStoryblok[];
@@ -378,8 +377,8 @@ export interface StepGuideStoryblok {
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
   link: LinkStoryblok[];
-  maxWidth: "" | "base" | "none";
-  backgroundColor: "" | "white" | "lightGray" | "darkGray" | "black" | "none";
+  maxWidth: "base" | "none";
+  backgroundColor: "white" | "lightGray" | "darkGray" | "black" | "none";
   backgroundImage?: AssetStoryblok;
   component: "stepGuide";
   _uid: string;
@@ -399,22 +398,10 @@ export interface ThreeDElementStoryblok {
   threeDModel: "donut" | "globe" | "kubik-rubik";
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
-  maxWidth: "" | "base" | "none";
-  backgroundColor: "" | "white" | "lightGray" | "darkGray" | "black" | "none";
+  maxWidth: "base" | "none";
+  backgroundColor: "white" | "lightGray" | "darkGray" | "black" | "none";
   backgroundImage?: AssetStoryblok;
   component: "threeDElement";
-  _uid: string;
-  [k: string]: any;
-}
-
-export interface WideSimpleCarouselStoryblok {
-  slides: WideSimpleCarouselSlideStoryblok[];
-  marginTop: "none" | "base" | "lg";
-  marginBottom: "none" | "base" | "lg";
-  maxWidth: "" | "base" | "none";
-  backgroundColor: "" | "white" | "lightGray" | "darkGray" | "black" | "none";
-  backgroundImage?: AssetStoryblok;
-  component: "wideSimpleCarousel";
   _uid: string;
   [k: string]: any;
 }

@@ -4,7 +4,7 @@
       "name": "blog",
       "display_name": null,
       "created_at": "2024-09-10T10:53:37.659Z",
-      "updated_at": "2024-11-05T11:20:27.971Z",
+      "updated_at": "2024-11-05T14:43:28.361Z",
       "id": 6275958,
       "schema": {
         "style": {
@@ -137,7 +137,8 @@
             }
           ],
           "required": true,
-          "default_value": "base"
+          "default_value": "base",
+          "exclude_empty_option": true
         },
         "backgroundColor": {
           "type": "option",
@@ -171,7 +172,8 @@
               "name": "none"
             }
           ],
-          "default_value": "none"
+          "default_value": "none",
+          "exclude_empty_option": true
         },
         "backgroundImage": {
           "type": "asset",
@@ -287,7 +289,7 @@
       "name": "cardsGrid",
       "display_name": null,
       "created_at": "2024-09-10T10:51:16.668Z",
-      "updated_at": "2024-11-05T11:22:13.565Z",
+      "updated_at": "2024-11-05T14:43:38.925Z",
       "id": 6275957,
       "schema": {
         "columns": {
@@ -382,7 +384,9 @@
               "value": "none",
               "name": "none"
             }
-          ]
+          ],
+          "default_value": "base",
+          "exclude_empty_option": true
         },
         "backgroundColor": {
           "type": "option",
@@ -416,7 +420,8 @@
             }
           ],
           "default_value": "none",
-          "required": true
+          "required": true,
+          "exclude_empty_option": true
         },
         "items": {
           "type": "bloks",
@@ -480,7 +485,7 @@
       "name": "copy",
       "display_name": null,
       "created_at": "2024-07-09T16:19:19.131Z",
-      "updated_at": "2024-11-05T11:24:08.606Z",
+      "updated_at": "2024-11-05T14:44:06.720Z",
       "id": 6030874,
       "schema": {
         "isReversedOnMobile": {
@@ -581,7 +586,8 @@
               "name": "none"
             }
           ],
-          "default_value": "none"
+          "default_value": "base",
+          "exclude_empty_option": true
         },
         "backgroundColor": {
           "type": "option",
@@ -615,7 +621,8 @@
             }
           ],
           "required": true,
-          "default_value": "none"
+          "default_value": "none",
+          "exclude_empty_option": true
         },
         "backgroundImage": {
           "type": "asset",
@@ -983,7 +990,7 @@
       "name": "hero",
       "display_name": null,
       "created_at": "2024-10-08T14:42:35.362Z",
-      "updated_at": "2024-11-05T11:26:18.210Z",
+      "updated_at": "2024-11-05T14:48:51.463Z",
       "id": 6391508,
       "schema": {
         "title": {
@@ -1103,7 +1110,8 @@
             }
           ],
           "default_value": "base",
-          "required": true
+          "required": true,
+          "exclude_empty_option": true
         },
         "backgroundColor": {
           "type": "option",
@@ -1137,7 +1145,8 @@
             }
           ],
           "required": true,
-          "default_value": "none"
+          "default_value": "none",
+          "exclude_empty_option": true
         },
         "backgroundImage": {
           "type": "asset",
@@ -1359,7 +1368,7 @@
       "name": "linksList",
       "display_name": null,
       "created_at": "2024-09-10T10:44:36.150Z",
-      "updated_at": "2024-11-05T11:28:39.813Z",
+      "updated_at": "2024-11-05T14:44:31.171Z",
       "id": 6275825,
       "schema": {
         "alignVariant": {
@@ -1479,7 +1488,9 @@
               "name": "none"
             }
           ],
-          "default_value": "base"
+          "default_value": "base",
+          "required": true,
+          "exclude_empty_option": true
         },
         "backgroundColor": {
           "type": "option",
@@ -1513,7 +1524,8 @@
               "name": "none"
             }
           ],
-          "default_value": "none"
+          "default_value": "none",
+          "exclude_empty_option": true
         },
         "backgroundImage": {
           "type": "asset",
@@ -1648,7 +1660,7 @@
       "name": "logos",
       "display_name": null,
       "created_at": "2024-09-10T10:38:10.602Z",
-      "updated_at": "2024-11-05T11:32:11.506Z",
+      "updated_at": "2024-11-05T14:44:42.113Z",
       "id": 6275709,
       "schema": {
         "alignVariant": {
@@ -1768,8 +1780,9 @@
               "name": "none"
             }
           ],
-          "default_value": "none",
-          "required": true
+          "default_value": "base",
+          "required": true,
+          "exclude_empty_option": true
         },
         "backgroundColor": {
           "type": "option",
@@ -1803,7 +1816,8 @@
             }
           ],
           "default_value": "none",
-          "required": true
+          "required": true,
+          "exclude_empty_option": true
         },
         "backgroundImage": {
           "type": "asset",
@@ -2004,7 +2018,7 @@
       "name": "pricing",
       "display_name": null,
       "created_at": "2024-10-29T14:19:10.496Z",
-      "updated_at": "2024-11-05T11:33:57.969Z",
+      "updated_at": "2024-11-05T14:48:18.239Z",
       "id": 6489128,
       "schema": {
         "tiers": {
@@ -2070,7 +2084,8 @@
             }
           ],
           "default_value": "base",
-          "required": true
+          "required": true,
+          "exclude_empty_option": true
         },
         "marginBottom": {
           "type": "option",
@@ -2094,7 +2109,8 @@
               "name": "large"
             }
           ],
-          "required": true
+          "required": true,
+          "exclude_empty_option": true
         },
         "maxWidth": {
           "type": "option",
@@ -2113,7 +2129,8 @@
               "name": "none"
             }
           ],
-          "default_value": "base"
+          "default_value": "base",
+          "exclude_empty_option": true
         },
         "backgroundColor": {
           "type": "option",
@@ -2147,7 +2164,8 @@
               "name": "none"
             }
           ],
-          "default_value": "none"
+          "default_value": "none",
+          "exclude_empty_option": true
         },
         "backgroundImage": {
           "type": "asset",
@@ -2407,7 +2425,7 @@
       "name": "simpleCarousel",
       "display_name": null,
       "created_at": "2024-10-08T14:20:16.827Z",
-      "updated_at": "2024-11-05T11:34:32.906Z",
+      "updated_at": "2024-11-05T14:48:33.597Z",
       "id": 6391276,
       "schema": {
         "effect": {
@@ -2446,7 +2464,8 @@
               "name": "Cards"
             }
           ],
-          "default_value": "slide"
+          "default_value": "slide",
+          "exclude_empty_option": true
         },
         "params": {
           "type": "bloks",
@@ -2525,7 +2544,8 @@
             }
           ],
           "default_value": "base",
-          "required": true
+          "required": true,
+          "exclude_empty_option": true
         },
         "backgroundColor": {
           "type": "option",
@@ -2559,7 +2579,8 @@
               "name": "none"
             }
           ],
-          "required": true
+          "required": true,
+          "exclude_empty_option": true
         },
         "backgroundImage": {
           "type": "asset",
@@ -2736,7 +2757,7 @@
       "name": "stepGuide",
       "display_name": null,
       "created_at": "2024-10-30T07:56:07.407Z",
-      "updated_at": "2024-11-05T11:35:54.499Z",
+      "updated_at": "2024-11-05T14:45:11.340Z",
       "id": 6492253,
       "schema": {
         "stepGuideItem": {
@@ -2841,7 +2862,8 @@
               "name": "none"
             }
           ],
-          "default_value": "base"
+          "default_value": "base",
+          "exclude_empty_option": true
         },
         "backgroundColor": {
           "type": "option",
@@ -2875,7 +2897,8 @@
               "name": "none"
             }
           ],
-          "default_value": "none"
+          "default_value": "none",
+          "exclude_empty_option": true
         },
         "backgroundImage": {
           "type": "asset",
@@ -2972,7 +2995,7 @@
       "name": "threeDElement",
       "display_name": "3D Element",
       "created_at": "2024-11-01T07:46:52.931Z",
-      "updated_at": "2024-11-05T11:37:14.308Z",
+      "updated_at": "2024-11-05T14:45:31.407Z",
       "id": 6502652,
       "schema": {
         "threeDModel": {
@@ -3081,7 +3104,8 @@
             }
           ],
           "default_value": "base",
-          "required": true
+          "required": true,
+          "exclude_empty_option": true
         },
         "backgroundColor": {
           "type": "option",
@@ -3114,7 +3138,8 @@
               "value": "none",
               "name": "none"
             }
-          ]
+          ],
+          "exclude_empty_option": true
         },
         "backgroundImage": {
           "type": "asset",
@@ -3160,173 +3185,6 @@
       ],
       "preset_id": null,
       "real_name": "3D Element",
-      "component_group_uuid": "9a95e24a-4024-4145-992e-070fbb399f97",
-      "color": null,
-      "icon": null,
-      "internal_tags_list": [],
-      "internal_tag_ids": [],
-      "content_type_asset_preview": null,
-      "component_group_name": "sections"
-    },
-    {
-      "name": "wideSimpleCarousel",
-      "display_name": null,
-      "created_at": "2024-10-08T14:21:25.377Z",
-      "updated_at": "2024-11-05T11:38:41.686Z",
-      "id": 6391278,
-      "schema": {
-        "slides": {
-          "type": "bloks",
-          "pos": 0,
-          "required": true,
-          "minimum": 1,
-          "restrict_type": "",
-          "restrict_components": true,
-          "component_whitelist": [
-            "wideSimpleCarouselSlide"
-          ]
-        },
-        "tab-d0b9d865-617f-429c-9e04-7ec15c56ffda": {
-          "display_name": "Style",
-          "keys": [
-            "marginTop",
-            "marginBottom",
-            "maxWidth",
-            "backgroundColor",
-            "backgroundImage"
-          ],
-          "pos": 0,
-          "type": "tab"
-        },
-        "marginTop": {
-          "type": "option",
-          "pos": 2,
-          "use_uuid": true,
-          "required": true,
-          "options": [
-            {
-              "_uid": "15e02caf-1b2a-40aa-b957-348216cabd1e",
-              "name": "none",
-              "value": "none"
-            },
-            {
-              "_uid": "a1e60cd0-1ce1-4999-9623-5da36db7d31b",
-              "value": "base",
-              "name": "base"
-            },
-            {
-              "_uid": "e45c3cd1-31fd-4d4b-9245-702cf2301d6b",
-              "value": "lg",
-              "name": "large"
-            }
-          ],
-          "exclude_empty_option": true,
-          "default_value": "base"
-        },
-        "marginBottom": {
-          "type": "option",
-          "pos": 3,
-          "use_uuid": true,
-          "required": true,
-          "options": [
-            {
-              "_uid": "8444fc8d-17ca-4937-b59a-aa4589e6203e",
-              "name": "none",
-              "value": "none"
-            },
-            {
-              "_uid": "c1f3f578-cef6-4fb5-9435-b7cd1280aa3c",
-              "value": "base",
-              "name": "base"
-            },
-            {
-              "_uid": "0ff97e39-8217-4fd5-9d76-3b4108e036c1",
-              "value": "lg",
-              "name": "large"
-            }
-          ],
-          "default_value": "base",
-          "exclude_empty_option": true
-        },
-        "maxWidth": {
-          "type": "option",
-          "pos": 4,
-          "use_uuid": true,
-          "options": [
-            {
-              "_uid": "75b26514-acd0-47b7-8bcb-b220cc55142d",
-              "name": "base",
-              "value": "base"
-            },
-            {
-              "_uid": "dad8a06d-5260-4b27-a895-43d86544b1be",
-              "value": "none",
-              "name": "none"
-            }
-          ],
-          "default_value": "base",
-          "required": true
-        },
-        "backgroundColor": {
-          "type": "option",
-          "pos": 5,
-          "use_uuid": true,
-          "options": [
-            {
-              "_uid": "831e9525-6e8e-4731-aae5-0756e756e30c",
-              "name": "white",
-              "value": "white"
-            },
-            {
-              "_uid": "2ab3991d-f366-4970-9701-bfb4b9501972",
-              "value": "lightGray",
-              "name": "lightGray"
-            },
-            {
-              "_uid": "b4ca1890-6755-4fb4-9006-fd2c31cb5fd9",
-              "value": "darkGray",
-              "name": "darkGray"
-            },
-            {
-              "_uid": "75f5038c-7f01-4c37-ad07-f95b3607eac5",
-              "value": "black",
-              "name": "black"
-            },
-            {
-              "_uid": "e750014d-3218-47f7-b759-aee41cf32c4e",
-              "value": "none",
-              "name": "none"
-            }
-          ],
-          "required": true,
-          "default_value": "none"
-        },
-        "backgroundImage": {
-          "type": "asset",
-          "pos": 6,
-          "filetypes": [
-            "images"
-          ]
-        }
-      },
-      "image": "//a.storyblok.com/f/293915/x/3d25defba3/screenshot-2024-10-08-at-16-30-56.png",
-      "preview_field": null,
-      "is_root": false,
-      "preview_tmpl": null,
-      "is_nestable": true,
-      "all_presets": [
-        {
-          "id": 2311926,
-          "name": "Default",
-          "component_id": 6391278,
-          "image": "//a.storyblok.com/f/293915/x/8326dcb7a4/screenshot-2024-10-08-at-16-30-56.png",
-          "icon": "",
-          "color": "",
-          "description": ""
-        }
-      ],
-      "preset_id": null,
-      "real_name": "wideSimpleCarousel",
       "component_group_uuid": "9a95e24a-4024-4145-992e-070fbb399f97",
       "color": null,
       "icon": null,
