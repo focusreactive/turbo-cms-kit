@@ -11,8 +11,24 @@ export default function SectionContainer({
   blok,
   className,
 }: ISectionContainerProps) {
-  const { _uid, paddingX, paddingY, marginTop, marginBottom, noMaxWidth } =
-    blok;
+  const {
+    _uid,
+    paddingX,
+    paddingY,
+    marginTop,
+    marginBottom,
+    maxWidth,
+    backgroundColor,
+    backgroundImage,
+  } = blok;
+
+  const style = backgroundImage?.filename
+    ? {
+        background: `url(${backgroundImage.filename}) no-repeat center/cover`,
+      }
+    : {};
+
+  console.log(style);
 
   if (isDraftMode) {
     return (
@@ -25,14 +41,20 @@ export default function SectionContainer({
           "mb-sectionBase": marginBottom === "base",
           "mt-sectionLg": marginTop === "lg",
           "mb-sectionLg": marginBottom === "lg",
+
+          "section-white": backgroundColor === "white",
+          "section-lightGray": backgroundColor === "lightGray",
+          "section-darkGray": backgroundColor === "darkGray",
+          "section-black": backgroundColor === "black",
         })}
         id={_uid}
+        style={style}
       >
         <div
-          className={cn("mx-auto max-w-screen-xl px-4 py-8", {
+          className={cn("mx-auto px-4 py-8", {
             "px-0": paddingX === "none",
             "py-0": paddingY === "none",
-            "max-w-none": noMaxWidth,
+            "max-w-screen-xl": maxWidth === "base",
           })}
         >
           {children}
@@ -50,14 +72,20 @@ export default function SectionContainer({
         "mb-sectionBase": marginBottom === "base",
         "mt-sectionLg": marginTop === "lg",
         "mb-sectionLg": marginBottom === "lg",
+
+        "section-white": backgroundColor === "white",
+        "section-lightGray": backgroundColor === "lightGray",
+        "section-darkGray": backgroundColor === "darkGray",
+        "section-black": backgroundColor === "black",
       })}
       id={_uid}
+      style={style}
     >
       <div
-        className={cn("mx-auto max-w-screen-xl px-4 py-8", {
+        className={cn("mx-auto px-4 py-8", {
           "px-0": paddingX === "none",
           "py-0": paddingY === "none",
-          "max-w-none": noMaxWidth,
+          "max-w-screen-xl": maxWidth === "base",
         })}
       >
         {children}

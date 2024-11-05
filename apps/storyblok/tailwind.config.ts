@@ -11,6 +11,7 @@ const config: Config = {
         textColor: "var(--text)",
         textSecondaryColor: "var(--text-secondary)",
         primaryColor: "var(--primary)",
+        borderGrayColor: "var(--border-gray)",
       },
       margin: {
         sectionBase: "var(--section-margin-base)",

@@ -17,6 +17,14 @@ export const customPlugin = plugin(
   {
     theme: {
       extend: {
+        typography: {
+          DEFAULT: {
+            css: {
+              "--tw-prose-headings": `var("--text")`,
+              "--tw-prose-invert-headings": `var("--text")`,
+            },
+          },
+        },
         colors: {
           primary: {
             "50": "#eff6ff",
