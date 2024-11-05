@@ -28,8 +28,6 @@ export default function SectionContainer({
       }
     : {};
 
-  console.log(style);
-
   if (isDraftMode) {
     return (
       <section
