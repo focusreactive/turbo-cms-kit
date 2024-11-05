@@ -1,7 +1,7 @@
 import {
   CommonGroup,
   commonGroups,
-  sectionMarginFields,
+  sectionCommonFields,
 } from "@/contentSections/commonFields";
 import { defineField, defineType } from "sanity";
 
@@ -52,7 +52,7 @@ export default {
       validation: (Rule) => Rule.required(),
       group: CommonGroup.Content,
     }),
-    ...sectionMarginFields,
+    ...sectionCommonFields,
   ],
   preview: {
     select: {

@@ -5,7 +5,7 @@ import customImage from "@/lib/schemas/customImage";
 import {
   CommonGroup,
   commonGroups,
-  sectionMarginFields,
+  sectionCommonFields,
   themeField,
 } from "../commonFields";
 
@@ -110,7 +110,7 @@ export default {
       validation: (Rule) => Rule.required().min(1),
     }),
     themeField,
-    ...sectionMarginFields,
+    ...sectionCommonFields,
   ],
   preview: {
     select: {

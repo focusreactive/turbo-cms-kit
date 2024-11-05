@@ -1,7 +1,7 @@
 import {
   CommonGroup,
   commonGroups,
-  sectionMarginFields,
+  sectionCommonFields,
 } from "@/contentSections/commonFields";
 import { defineField, defineType } from "sanity";
 
@@ -98,7 +98,7 @@ export default {
         }),
       ],
     }),
-    ...sectionMarginFields,
+    ...sectionCommonFields,
   ],
   preview: {
     prepare: () => ({

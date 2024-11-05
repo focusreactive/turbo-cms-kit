@@ -23,7 +23,7 @@ export function Pricing({
   };
 
   return (
-    <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+    <div>
       <div className="sm:align-center relative sm:flex sm:flex-col">
         <HorizontalSelect
           className={"mb-12"}

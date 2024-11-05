@@ -5,7 +5,7 @@ import customImage from "@/lib/schemas/customImage"; // Ensure this is correctly
 import {
   CommonGroup,
   commonGroups,
-  sectionMarginFields,
+  sectionCommonFields,
 } from "../../commonFields";
 
 // Ensure these imports are correct and do not create circular dependencies
@@ -48,7 +48,7 @@ export default {
       of: [{ type: wideSimpleCarouselCard.name }],
       validation: (Rule) => Rule.required(),
     }),
-    ...sectionMarginFields,
+    ...sectionCommonFields,
   ],
   preview: {
     select: {

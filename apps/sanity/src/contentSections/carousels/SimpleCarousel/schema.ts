@@ -5,7 +5,7 @@ import customImage from "@/lib/schemas/customImage";
 import {
   CommonGroup,
   commonGroups,
-  sectionMarginFields,
+  sectionCommonFields,
 } from "../../commonFields";
 
 export const simpleCarouselCard = defineType({
@@ -97,7 +97,7 @@ export default {
         }),
       ],
     }),
-    ...sectionMarginFields,
+    ...sectionCommonFields,
   ],
   preview: {
     select: {

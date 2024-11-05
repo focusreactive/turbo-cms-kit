@@ -5,7 +5,7 @@ import customRichText from "@/lib/schemas/customRichText";
 import {
   CommonGroup,
   commonGroups,
-  sectionMarginFields,
+  sectionCommonFields,
   themeField,
 } from "../commonFields";
 
@@ -27,12 +27,12 @@ export default {
     defineField({
       name: "isReversedOnMobile",
       type: "boolean",
-      group: CommonGroup.Style, 
+      group: CommonGroup.Style,
       initialValue: false,
       validation: (Rule) => Rule.required(),
     }),
     themeField,
-    ...sectionMarginFields,
+    ...sectionCommonFields,
   ],
   preview: {
     select: {

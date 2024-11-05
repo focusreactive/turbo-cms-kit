@@ -7,7 +7,7 @@ import customLink from "@/lib/schemas/customLink";
 import {
   CommonGroup,
   commonGroups,
-  sectionMarginFields,
+  sectionCommonFields,
   themeField,
 } from "../commonFields";
 
@@ -80,7 +80,7 @@ export default {
       initialValue: AlignVariant.Left,
     }),
     themeField,
-    ...sectionMarginFields,
+    ...sectionCommonFields,
   ],
   preview: {
     prepare: () => ({

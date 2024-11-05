@@ -6,7 +6,7 @@ import customLink from "@/lib/schemas/customLink";
 import {
   CommonGroup,
   commonGroups,
-  sectionMarginFields,
+  sectionCommonFields,
 } from "../commonFields";
 
 export default {
@@ -40,7 +40,7 @@ export default {
       validation: (Rule) => Rule.required(),
     }),
     // themeField,
-    ...sectionMarginFields,
+    ...sectionCommonFields,
   ],
   preview: {
     select: {

@@ -1,8 +1,13 @@
 import { stegaClean } from "@sanity/client/stega";
+import imageUrlBuilder from "@sanity/image-url";
 
 import { cn } from "@shared/ui";
 
+import { client } from "@/lib/api/client";
+
 import type { ISectionContainerProps } from "./types";
+
+const builder = imageUrlBuilder(client);
 
 export default function SectionContainer({
   children,
@@ -16,11 +21,18 @@ export default function SectionContainer({
     marginBottom,
     paddingX,
     paddingY,
-    noMaxWidth,
+    maxWidth,
+    backgroundColor,
+    backgroundImage,
   } = sectionData;
+
+  const backgroundImageUrl = backgroundImage
+    ? builder.image(backgroundImage).auto("format").fit("max").url()
+    : null;
 
   const cleanMarginTop = stegaClean(marginTop);
   const cleanMarginBottom = stegaClean(marginBottom);
+  const cleanBackgroundColor = stegaClean(backgroundColor);
 
   return (
     <section
@@ -32,13 +44,23 @@ export default function SectionContainer({
         "mb-sectionBase": cleanMarginBottom === "base",
         "mt-sectionLg": cleanMarginTop === "lg",
         "mb-sectionLg": cleanMarginBottom === "lg",
+
+        "section-white": cleanBackgroundColor === "white",
+        "section-lightGray": cleanBackgroundColor === "lightGray",
+        "section-darkGray": cleanBackgroundColor === "darkGray",
+        "section-black": cleanBackgroundColor === "black",
       })}
+      style={
+        backgroundImageUrl
+          ? { backgroundImage: `url(${backgroundImageUrl})` }
+          : {}
+      }
     >
       <div
-        className={cn("mx-auto max-w-screen-xl px-4 py-8", {
+        className={cn("mx-auto px-4 py-8", {
           "px-0": paddingX === "none",
           "py-0": paddingY === "none",
-          "max-w-none": noMaxWidth,
+          "max-w-screen-xl": stegaClean(maxWidth) === "base",
         })}
       >
         {children}
