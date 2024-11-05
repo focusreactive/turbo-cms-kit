@@ -8,7 +8,6 @@ import type { IThreeDElementProps } from "./types";
 
 export default function ThreeDElement({ blok }: IThreeDElementProps) {
   const { threeDModel } = blok;
-  return null;
 
   if (!threeDModel) return <EmptyBlock name={blok.component as string} />;
 
