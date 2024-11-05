@@ -12,7 +12,7 @@ export default function Page({ data }: IPageProps) {
   const { sectionsBody, showCookieBanner, header, footer } = data;
 
   return (
-    <div>
+    <div className={"light"}>
       <Header data={header} />
       {sectionsBody?.map((section) => (
         <SectionRenderer key={section._key} section={section} />

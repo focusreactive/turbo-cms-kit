@@ -20,7 +20,7 @@ export default function CarouselCard({
   return (
     <div
       className={cn(
-        "user-select-none h-full border border-borderGrayColor bg-bgColor p-6 transition-all duration-300",
+        "user-select-none border-borderGrayColor bg-bgColor h-full border p-6 transition-all duration-300",
         {
           "bg-gray-100": !isActive && effect !== "fade" && effect !== "slide",
           "border-none": effect === "fade",
