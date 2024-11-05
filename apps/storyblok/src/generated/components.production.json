@@ -482,6 +482,329 @@
       "component_group_name": "sections"
     },
     {
+      "name": "carousel",
+      "display_name": null,
+      "created_at": "2024-10-08T14:20:16.827Z",
+      "updated_at": "2024-11-05T15:21:38.115Z",
+      "id": 6391276,
+      "schema": {
+        "effect": {
+          "type": "option",
+          "pos": 0,
+          "use_uuid": true,
+          "options": [
+            {
+              "_uid": "c5a9c848-508a-4f1a-8b25-d187adaefe71",
+              "name": "Slide",
+              "value": "slide"
+            },
+            {
+              "_uid": "efe453c2-84e2-43af-b4d9-59265d00e72d",
+              "value": "coverflow",
+              "name": "Coverflow"
+            },
+            {
+              "_uid": "76a4f12c-7617-45f7-beaa-24f841ade8c1",
+              "value": "cube",
+              "name": "Cube"
+            },
+            {
+              "_uid": "53912413-148c-4de5-9131-7c9fe4f217cb",
+              "value": "fade",
+              "name": "Fade"
+            },
+            {
+              "_uid": "8a85ad4c-a8cf-4945-9409-4b9b33610b29",
+              "value": "flip",
+              "name": "Flip"
+            },
+            {
+              "_uid": "dc6f89ef-8756-4681-b6a8-a66e8b0a654f",
+              "value": "cards",
+              "name": "Cards"
+            }
+          ],
+          "default_value": "slide",
+          "exclude_empty_option": true
+        },
+        "params": {
+          "type": "bloks",
+          "pos": 1,
+          "maximum": 1,
+          "restrict_type": "",
+          "restrict_components": true,
+          "component_whitelist": [
+            "carouselParams"
+          ]
+        },
+        "marginTop": {
+          "type": "option",
+          "pos": 2,
+          "use_uuid": true,
+          "required": true,
+          "options": [
+            {
+              "_uid": "575736ba-6f58-4a4b-b2c8-2d0c576a5461",
+              "value": "none",
+              "name": "none"
+            },
+            {
+              "_uid": "2ebbe333-09ab-4bb4-84e7-d1d17d883942",
+              "name": "base",
+              "value": "base"
+            },
+            {
+              "_uid": "5d121815-9a88-4779-b56f-48c4baebbbae",
+              "value": "lg",
+              "name": "large"
+            }
+          ],
+          "exclude_empty_option": true,
+          "default_value": "base"
+        },
+        "marginBottom": {
+          "type": "option",
+          "pos": 3,
+          "use_uuid": true,
+          "required": true,
+          "options": [
+            {
+              "_uid": "a079ce4b-ef6b-4469-8e7c-5dc55f0bb7d2",
+              "name": "none",
+              "value": "none"
+            },
+            {
+              "_uid": "167e1b4e-892f-41dc-8a61-28976236ef52",
+              "value": "base",
+              "name": "base"
+            },
+            {
+              "_uid": "e3bd27f7-9aa5-46ab-8ed4-96d9787361ff",
+              "value": "lg",
+              "name": "large"
+            }
+          ],
+          "exclude_empty_option": true,
+          "default_value": "base"
+        },
+        "maxWidth": {
+          "type": "option",
+          "pos": 4,
+          "use_uuid": true,
+          "options": [
+            {
+              "_uid": "ab715912-0484-46b0-992f-6b07b1905871",
+              "name": "base",
+              "value": "base"
+            },
+            {
+              "_uid": "af37e4c1-13dc-4444-a0fa-dde7e0de514c",
+              "value": "none",
+              "name": "none"
+            }
+          ],
+          "default_value": "base",
+          "required": true,
+          "exclude_empty_option": true
+        },
+        "backgroundColor": {
+          "type": "option",
+          "pos": 5,
+          "use_uuid": true,
+          "default_value": "none",
+          "options": [
+            {
+              "_uid": "f618a465-463d-4ec6-83d7-a08568998849",
+              "name": "white",
+              "value": "white"
+            },
+            {
+              "_uid": "80b2dd44-743d-462c-9d24-858dc4fc48aa",
+              "value": "lightGray",
+              "name": "lightGray"
+            },
+            {
+              "_uid": "6600e39b-1b42-410c-85cb-6b2ad3a1f81e",
+              "value": "darkGray",
+              "name": "darkGray"
+            },
+            {
+              "_uid": "9a5de758-45e1-4314-b94e-721e4b93dda7",
+              "value": "black",
+              "name": "black"
+            },
+            {
+              "_uid": "d33c9287-95ac-43f6-a4d9-53793f87794b",
+              "value": "none",
+              "name": "none"
+            }
+          ],
+          "required": true,
+          "exclude_empty_option": true
+        },
+        "backgroundImage": {
+          "type": "asset",
+          "pos": 6,
+          "filetypes": [
+            "images"
+          ]
+        },
+        "text": {
+          "type": "bloks",
+          "pos": 7,
+          "maximum": 1,
+          "restrict_type": "",
+          "restrict_components": true,
+          "component_whitelist": [
+            "richText"
+          ]
+        },
+        "slides": {
+          "type": "bloks",
+          "pos": 8,
+          "minimum": 1,
+          "required": true,
+          "restrict_type": "",
+          "restrict_components": true,
+          "component_whitelist": [
+            "carouselSlide"
+          ]
+        },
+        "tab-17c5789f-282b-47bb-8520-eb437583e746": {
+          "display_name": "Style",
+          "keys": [
+            "marginTop",
+            "marginBottom",
+            "widthType",
+            "backgroundColor",
+            "backgroundImage",
+            "effect",
+            "params",
+            "maxWidth"
+          ],
+          "pos": 9,
+          "type": "tab"
+        }
+      },
+      "image": "//a.storyblok.com/f/293915/x/5d1495ebd7/screenshot-2024-11-05-at-15-55-58.png",
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [
+        {
+          "id": 2340541,
+          "name": "Carousel 1",
+          "component_id": 6391276,
+          "image": "//a.storyblok.com/f/293915/x/1d5cfd198a/screenshot-2024-11-04-at-10-32-09.png",
+          "icon": "",
+          "color": "",
+          "description": ""
+        }
+      ],
+      "preset_id": null,
+      "real_name": "carousel",
+      "component_group_uuid": "9a95e24a-4024-4145-992e-070fbb399f97",
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null,
+      "component_group_name": "sections"
+    },
+    {
+      "name": "carouselParams",
+      "display_name": null,
+      "created_at": "2024-11-04T08:57:58.232Z",
+      "updated_at": "2024-11-05T15:21:37.597Z",
+      "id": 6508472,
+      "schema": {
+        "loop": {
+          "type": "boolean",
+          "pos": 0
+        },
+        "slidesPerView": {
+          "type": "number",
+          "pos": 1
+        },
+        "spaceBetween": {
+          "type": "number",
+          "pos": 2
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "carouselParams",
+      "component_group_uuid": "7a581c8c-f6b7-4926-b5b0-98b7a48916b3",
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null,
+      "component_group_name": "components"
+    },
+    {
+      "name": "carouselSlide",
+      "display_name": null,
+      "created_at": "2024-10-08T14:20:37.715Z",
+      "updated_at": "2024-11-05T15:21:15.190Z",
+      "id": 6391277,
+      "schema": {
+        "text": {
+          "type": "bloks",
+          "pos": 0,
+          "maximum": 1,
+          "restrict_type": "",
+          "restrict_components": true,
+          "component_whitelist": [
+            "richText"
+          ]
+        },
+        "image": {
+          "type": "bloks",
+          "pos": 1,
+          "required": true,
+          "minimum": 1,
+          "maximum": 1,
+          "restrict_type": "",
+          "restrict_components": true,
+          "component_whitelist": [
+            "image"
+          ]
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [
+        {
+          "id": 2311925,
+          "name": "Default",
+          "component_id": 6391277,
+          "image": "//a.storyblok.com/f/293915/x/6750a101ef/screenshot-2024-10-08-at-16-31-02.png",
+          "icon": "",
+          "color": "",
+          "description": ""
+        }
+      ],
+      "preset_id": null,
+      "real_name": "carouselSlide",
+      "component_group_uuid": "7a581c8c-f6b7-4926-b5b0-98b7a48916b3",
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null,
+      "component_group_name": "components"
+    },
+    {
       "name": "copy",
       "display_name": null,
       "created_at": "2024-07-09T16:19:19.131Z",
@@ -2015,10 +2338,10 @@
       "component_group_name": "pages"
     },
     {
-      "name": "pricing",
+      "name": "pricingTable",
       "display_name": null,
       "created_at": "2024-10-29T14:19:10.496Z",
-      "updated_at": "2024-11-05T14:48:18.239Z",
+      "updated_at": "2024-11-05T15:05:25.176Z",
       "id": 6489128,
       "schema": {
         "tiers": {
@@ -2027,7 +2350,7 @@
           "restrict_type": "",
           "restrict_components": true,
           "component_whitelist": [
-            "pricingTier"
+            "pricingTableTier"
           ]
         },
         "tab-701da23f-5d81-4d15-ba9f-a2cac6952da5": {
@@ -2057,7 +2380,7 @@
           "restrict_type": "",
           "restrict_components": true,
           "component_whitelist": [
-            "pricingExtraService"
+            "pricingTableExtraService"
           ],
           "maximum": 1,
           "minimum": 1
@@ -2175,7 +2498,7 @@
           ]
         }
       },
-      "image": null,
+      "image": "//a.storyblok.com/f/293915/x/537b05d5d2/screenshot-2024-11-05-at-15-51-16.png",
       "preview_field": null,
       "is_root": false,
       "preview_tmpl": null,
@@ -2192,7 +2515,7 @@
         }
       ],
       "preset_id": null,
-      "real_name": "pricing",
+      "real_name": "pricingTable",
       "component_group_uuid": "9a95e24a-4024-4145-992e-070fbb399f97",
       "color": null,
       "icon": null,
@@ -2202,10 +2525,10 @@
       "component_group_name": "sections"
     },
     {
-      "name": "pricingExtraService",
+      "name": "pricingTableExtraService",
       "display_name": null,
       "created_at": "2024-10-29T14:31:04.180Z",
-      "updated_at": "2024-10-29T14:31:21.853Z",
+      "updated_at": "2024-11-05T15:19:13.814Z",
       "id": 6489233,
       "schema": {
         "text": {
@@ -2214,7 +2537,7 @@
           "required": true
         },
         "cost": {
-          "type": "text",
+          "type": "number",
           "pos": 1,
           "required": true
         }
@@ -2226,7 +2549,7 @@
       "is_nestable": true,
       "all_presets": [],
       "preset_id": null,
-      "real_name": "pricingExtraService",
+      "real_name": "pricingTableExtraService",
       "component_group_uuid": "7a581c8c-f6b7-4926-b5b0-98b7a48916b3",
       "color": null,
       "icon": null,
@@ -2236,10 +2559,10 @@
       "component_group_name": "components"
     },
     {
-      "name": "pricingTier",
+      "name": "pricingTableTier",
       "display_name": null,
       "created_at": "2024-10-29T14:19:56.597Z",
-      "updated_at": "2024-10-29T14:38:42.450Z",
+      "updated_at": "2024-11-05T15:19:21.909Z",
       "id": 6489131,
       "schema": {
         "name": {
@@ -2260,7 +2583,7 @@
           "required": true
         },
         "price": {
-          "type": "text",
+          "type": "number",
           "pos": 2
         },
         "description": {
@@ -2274,7 +2597,7 @@
           "restrict_type": "",
           "restrict_components": true,
           "component_whitelist": [
-            "pricingTierFeature"
+            "pricingTableTierFeature"
           ],
           "required": true
         },
@@ -2303,7 +2626,7 @@
       "is_nestable": true,
       "all_presets": [],
       "preset_id": null,
-      "real_name": "pricingTier",
+      "real_name": "pricingTableTier",
       "component_group_uuid": "7a581c8c-f6b7-4926-b5b0-98b7a48916b3",
       "color": null,
       "icon": null,
@@ -2313,10 +2636,10 @@
       "component_group_name": "components"
     },
     {
-      "name": "pricingTierFeature",
+      "name": "pricingTableTierFeature",
       "display_name": null,
       "created_at": "2024-10-29T14:25:23.509Z",
-      "updated_at": "2024-10-29T14:25:40.593Z",
+      "updated_at": "2024-11-05T15:05:39.215Z",
       "id": 6489227,
       "schema": {
         "text": {
@@ -2332,7 +2655,7 @@
       "is_nestable": true,
       "all_presets": [],
       "preset_id": null,
-      "real_name": "pricingTierFeature",
+      "real_name": "pricingTableTierFeature",
       "component_group_uuid": "7a581c8c-f6b7-4926-b5b0-98b7a48916b3",
       "color": null,
       "icon": null,
@@ -2413,338 +2736,6 @@
       "all_presets": [],
       "preset_id": null,
       "real_name": "richText",
-      "component_group_uuid": "7a581c8c-f6b7-4926-b5b0-98b7a48916b3",
-      "color": null,
-      "icon": null,
-      "internal_tags_list": [],
-      "internal_tag_ids": [],
-      "content_type_asset_preview": null,
-      "component_group_name": "components"
-    },
-    {
-      "name": "simpleCarousel",
-      "display_name": null,
-      "created_at": "2024-10-08T14:20:16.827Z",
-      "updated_at": "2024-11-05T14:48:33.597Z",
-      "id": 6391276,
-      "schema": {
-        "effect": {
-          "type": "option",
-          "pos": 0,
-          "use_uuid": true,
-          "options": [
-            {
-              "_uid": "c5a9c848-508a-4f1a-8b25-d187adaefe71",
-              "name": "Slide",
-              "value": "slide"
-            },
-            {
-              "_uid": "efe453c2-84e2-43af-b4d9-59265d00e72d",
-              "value": "coverflow",
-              "name": "Coverflow"
-            },
-            {
-              "_uid": "76a4f12c-7617-45f7-beaa-24f841ade8c1",
-              "value": "cube",
-              "name": "Cube"
-            },
-            {
-              "_uid": "53912413-148c-4de5-9131-7c9fe4f217cb",
-              "value": "fade",
-              "name": "Fade"
-            },
-            {
-              "_uid": "8a85ad4c-a8cf-4945-9409-4b9b33610b29",
-              "value": "flip",
-              "name": "Flip"
-            },
-            {
-              "_uid": "dc6f89ef-8756-4681-b6a8-a66e8b0a654f",
-              "value": "cards",
-              "name": "Cards"
-            }
-          ],
-          "default_value": "slide",
-          "exclude_empty_option": true
-        },
-        "params": {
-          "type": "bloks",
-          "pos": 1,
-          "maximum": 1,
-          "restrict_type": "",
-          "restrict_components": true,
-          "component_whitelist": [
-            "sliderParams"
-          ]
-        },
-        "marginTop": {
-          "type": "option",
-          "pos": 2,
-          "use_uuid": true,
-          "required": true,
-          "options": [
-            {
-              "_uid": "575736ba-6f58-4a4b-b2c8-2d0c576a5461",
-              "value": "none",
-              "name": "none"
-            },
-            {
-              "_uid": "2ebbe333-09ab-4bb4-84e7-d1d17d883942",
-              "name": "base",
-              "value": "base"
-            },
-            {
-              "_uid": "5d121815-9a88-4779-b56f-48c4baebbbae",
-              "value": "lg",
-              "name": "large"
-            }
-          ],
-          "exclude_empty_option": true,
-          "default_value": "base"
-        },
-        "marginBottom": {
-          "type": "option",
-          "pos": 3,
-          "use_uuid": true,
-          "required": true,
-          "options": [
-            {
-              "_uid": "a079ce4b-ef6b-4469-8e7c-5dc55f0bb7d2",
-              "name": "none",
-              "value": "none"
-            },
-            {
-              "_uid": "167e1b4e-892f-41dc-8a61-28976236ef52",
-              "value": "base",
-              "name": "base"
-            },
-            {
-              "_uid": "e3bd27f7-9aa5-46ab-8ed4-96d9787361ff",
-              "value": "lg",
-              "name": "large"
-            }
-          ],
-          "exclude_empty_option": true,
-          "default_value": "base"
-        },
-        "maxWidth": {
-          "type": "option",
-          "pos": 4,
-          "use_uuid": true,
-          "options": [
-            {
-              "_uid": "ab715912-0484-46b0-992f-6b07b1905871",
-              "name": "base",
-              "value": "base"
-            },
-            {
-              "_uid": "af37e4c1-13dc-4444-a0fa-dde7e0de514c",
-              "value": "none",
-              "name": "none"
-            }
-          ],
-          "default_value": "base",
-          "required": true,
-          "exclude_empty_option": true
-        },
-        "backgroundColor": {
-          "type": "option",
-          "pos": 5,
-          "use_uuid": true,
-          "default_value": "none",
-          "options": [
-            {
-              "_uid": "f618a465-463d-4ec6-83d7-a08568998849",
-              "name": "white",
-              "value": "white"
-            },
-            {
-              "_uid": "80b2dd44-743d-462c-9d24-858dc4fc48aa",
-              "value": "lightGray",
-              "name": "lightGray"
-            },
-            {
-              "_uid": "6600e39b-1b42-410c-85cb-6b2ad3a1f81e",
-              "value": "darkGray",
-              "name": "darkGray"
-            },
-            {
-              "_uid": "9a5de758-45e1-4314-b94e-721e4b93dda7",
-              "value": "black",
-              "name": "black"
-            },
-            {
-              "_uid": "d33c9287-95ac-43f6-a4d9-53793f87794b",
-              "value": "none",
-              "name": "none"
-            }
-          ],
-          "required": true,
-          "exclude_empty_option": true
-        },
-        "backgroundImage": {
-          "type": "asset",
-          "pos": 6,
-          "filetypes": [
-            "images"
-          ]
-        },
-        "text": {
-          "type": "bloks",
-          "pos": 7,
-          "maximum": 1,
-          "restrict_type": "",
-          "restrict_components": true,
-          "component_whitelist": [
-            "richText"
-          ]
-        },
-        "slides": {
-          "type": "bloks",
-          "pos": 8,
-          "minimum": 1,
-          "required": true,
-          "restrict_type": "",
-          "restrict_components": true,
-          "component_whitelist": [
-            "simpleCarouselSlide"
-          ]
-        },
-        "tab-17c5789f-282b-47bb-8520-eb437583e746": {
-          "display_name": "Style",
-          "keys": [
-            "marginTop",
-            "marginBottom",
-            "widthType",
-            "backgroundColor",
-            "backgroundImage",
-            "effect",
-            "params",
-            "maxWidth"
-          ],
-          "pos": 9,
-          "type": "tab"
-        }
-      },
-      "image": "//a.storyblok.com/f/293915/x/76de5f60c0/screenshot-2024-10-08-at-16-30-53.png",
-      "preview_field": null,
-      "is_root": false,
-      "preview_tmpl": null,
-      "is_nestable": true,
-      "all_presets": [
-        {
-          "id": 2340541,
-          "name": "Carousel 1",
-          "component_id": 6391276,
-          "image": "//a.storyblok.com/f/293915/x/1d5cfd198a/screenshot-2024-11-04-at-10-32-09.png",
-          "icon": "",
-          "color": "",
-          "description": ""
-        },
-        {
-          "id": 2311924,
-          "name": "Default",
-          "component_id": 6391276,
-          "image": "//a.storyblok.com/f/293915/x/bd83ad5125/screenshot-2024-10-08-at-16-30-53.png",
-          "icon": "",
-          "color": "",
-          "description": ""
-        }
-      ],
-      "preset_id": null,
-      "real_name": "simpleCarousel",
-      "component_group_uuid": "9a95e24a-4024-4145-992e-070fbb399f97",
-      "color": null,
-      "icon": null,
-      "internal_tags_list": [],
-      "internal_tag_ids": [],
-      "content_type_asset_preview": null,
-      "component_group_name": "sections"
-    },
-    {
-      "name": "simpleCarouselSlide",
-      "display_name": null,
-      "created_at": "2024-10-08T14:20:37.715Z",
-      "updated_at": "2024-11-04T09:12:16.695Z",
-      "id": 6391277,
-      "schema": {
-        "text": {
-          "type": "bloks",
-          "pos": 0,
-          "maximum": 1,
-          "restrict_type": "",
-          "restrict_components": true,
-          "component_whitelist": [
-            "richText"
-          ]
-        },
-        "image": {
-          "type": "bloks",
-          "pos": 1,
-          "required": true,
-          "minimum": 1,
-          "maximum": 1,
-          "restrict_type": "",
-          "restrict_components": true,
-          "component_whitelist": [
-            "image"
-          ]
-        }
-      },
-      "image": null,
-      "preview_field": null,
-      "is_root": false,
-      "preview_tmpl": null,
-      "is_nestable": true,
-      "all_presets": [
-        {
-          "id": 2311925,
-          "name": "Default",
-          "component_id": 6391277,
-          "image": "//a.storyblok.com/f/293915/x/6750a101ef/screenshot-2024-10-08-at-16-31-02.png",
-          "icon": "",
-          "color": "",
-          "description": ""
-        }
-      ],
-      "preset_id": null,
-      "real_name": "simpleCarouselSlide",
-      "component_group_uuid": "7a581c8c-f6b7-4926-b5b0-98b7a48916b3",
-      "color": null,
-      "icon": null,
-      "internal_tags_list": [],
-      "internal_tag_ids": [],
-      "content_type_asset_preview": null,
-      "component_group_name": "components"
-    },
-    {
-      "name": "sliderParams",
-      "display_name": null,
-      "created_at": "2024-11-04T08:57:58.232Z",
-      "updated_at": "2024-11-04T08:59:17.840Z",
-      "id": 6508472,
-      "schema": {
-        "loop": {
-          "type": "boolean",
-          "pos": 0
-        },
-        "slidesPerView": {
-          "type": "number",
-          "pos": 1
-        },
-        "spaceBetween": {
-          "type": "number",
-          "pos": 2
-        }
-      },
-      "image": null,
-      "preview_field": null,
-      "is_root": false,
-      "preview_tmpl": null,
-      "is_nestable": true,
-      "all_presets": [],
-      "preset_id": null,
-      "real_name": "sliderParams",
       "component_group_uuid": "7a581c8c-f6b7-4926-b5b0-98b7a48916b3",
       "color": null,
       "icon": null,
@@ -3192,52 +3183,6 @@
       "internal_tag_ids": [],
       "content_type_asset_preview": null,
       "component_group_name": "sections"
-    },
-    {
-      "name": "wideSimpleCarouselSlide",
-      "display_name": null,
-      "created_at": "2024-10-08T14:21:43.668Z",
-      "updated_at": "2024-10-08T14:21:56.078Z",
-      "id": 6391279,
-      "schema": {
-        "image": {
-          "type": "bloks",
-          "pos": 0,
-          "required": true,
-          "minimum": 1,
-          "maximum": 1,
-          "restrict_type": "",
-          "restrict_components": true,
-          "component_whitelist": [
-            "image"
-          ]
-        }
-      },
-      "image": null,
-      "preview_field": null,
-      "is_root": false,
-      "preview_tmpl": null,
-      "is_nestable": true,
-      "all_presets": [
-        {
-          "id": 2311927,
-          "name": "Default",
-          "component_id": 6391279,
-          "image": "//a.storyblok.com/f/293915/x/e32cf6ec6b/screenshot-2024-10-08-at-16-31-09.png",
-          "icon": "",
-          "color": "",
-          "description": ""
-        }
-      ],
-      "preset_id": null,
-      "real_name": "wideSimpleCarouselSlide",
-      "component_group_uuid": "7a581c8c-f6b7-4926-b5b0-98b7a48916b3",
-      "color": null,
-      "icon": null,
-      "internal_tags_list": [],
-      "internal_tag_ids": [],
-      "content_type_asset_preview": null,
-      "component_group_name": "components"
     }
   ],
   "component_groups": [

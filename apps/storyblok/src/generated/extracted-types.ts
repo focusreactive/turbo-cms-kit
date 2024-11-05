@@ -63,6 +63,38 @@ export interface CardsGridStoryblok {
   [k: string]: any;
 }
 
+export interface CarouselStoryblok {
+  effect?: "slide" | "coverflow" | "cube" | "fade" | "flip" | "cards";
+  params?: CarouselParamsStoryblok[];
+  marginTop: "none" | "base" | "lg";
+  marginBottom: "none" | "base" | "lg";
+  maxWidth: "base" | "none";
+  backgroundColor: "white" | "lightGray" | "darkGray" | "black" | "none";
+  backgroundImage?: AssetStoryblok;
+  text?: RichTextStoryblok[];
+  slides: CarouselSlideStoryblok[];
+  component: "carousel";
+  _uid: string;
+  [k: string]: any;
+}
+
+export interface CarouselParamsStoryblok {
+  loop?: boolean;
+  slidesPerView?: string;
+  spaceBetween?: string;
+  component: "carouselParams";
+  _uid: string;
+  [k: string]: any;
+}
+
+export interface CarouselSlideStoryblok {
+  text?: RichTextStoryblok[];
+  image: ImageStoryblok[];
+  component: "carouselSlide";
+  _uid: string;
+  [k: string]: any;
+}
+
 export interface CopyStoryblok {
   isReversedOnMobile?: boolean;
   columns: RichTextStoryblok[];
@@ -258,12 +290,12 @@ export interface PageStoryblok {
   sections: (
     | BlogStoryblok
     | CardsGridStoryblok
+    | CarouselStoryblok
     | CopyStoryblok
     | HeroStoryblok
     | LinksListStoryblok
     | LogosStoryblok
-    | PricingStoryblok
-    | SimpleCarouselStoryblok
+    | PricingTableStoryblok
     | StepGuideStoryblok
     | ThreeDElementStoryblok
   )[];
@@ -279,45 +311,45 @@ export interface PageStoryblok {
   [k: string]: any;
 }
 
-export interface PricingStoryblok {
-  tiers?: PricingTierStoryblok[];
+export interface PricingTableStoryblok {
+  tiers?: PricingTableTierStoryblok[];
   yearlyDiscountPercentage?: string;
   extraServiceEnabled?: boolean;
-  extraService?: PricingExtraServiceStoryblok[];
+  extraService?: PricingTableExtraServiceStoryblok[];
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
   maxWidth: "base" | "none";
   backgroundColor: "white" | "lightGray" | "darkGray" | "black" | "none";
   backgroundImage?: AssetStoryblok;
-  component: "pricing";
+  component: "pricingTable";
   _uid: string;
   [k: string]: any;
 }
 
-export interface PricingExtraServiceStoryblok {
+export interface PricingTableExtraServiceStoryblok {
   text: string;
   cost: string;
-  component: "pricingExtraService";
+  component: "pricingTableExtraService";
   _uid: string;
   [k: string]: any;
 }
 
-export interface PricingTierStoryblok {
+export interface PricingTableTierStoryblok {
   name: string;
   icon: ImageStoryblok[];
   price?: string;
   description: string;
-  features: PricingTierFeatureStoryblok[];
+  features: PricingTableTierFeatureStoryblok[];
   link: LinkStoryblok[];
   popular?: boolean;
-  component: "pricingTier";
+  component: "pricingTableTier";
   _uid: string;
   [k: string]: any;
 }
 
-export interface PricingTierFeatureStoryblok {
+export interface PricingTableTierFeatureStoryblok {
   text: string;
-  component: "pricingTierFeature";
+  component: "pricingTableTierFeature";
   _uid: string;
   [k: string]: any;
 }
@@ -336,38 +368,6 @@ export interface RichTextStoryblok {
   removeInnerMargins?: boolean;
   content: RichtextStoryblok;
   component: "richText";
-  _uid: string;
-  [k: string]: any;
-}
-
-export interface SimpleCarouselStoryblok {
-  effect?: "slide" | "coverflow" | "cube" | "fade" | "flip" | "cards";
-  params?: SliderParamsStoryblok[];
-  marginTop: "none" | "base" | "lg";
-  marginBottom: "none" | "base" | "lg";
-  maxWidth: "base" | "none";
-  backgroundColor: "white" | "lightGray" | "darkGray" | "black" | "none";
-  backgroundImage?: AssetStoryblok;
-  text?: RichTextStoryblok[];
-  slides: SimpleCarouselSlideStoryblok[];
-  component: "simpleCarousel";
-  _uid: string;
-  [k: string]: any;
-}
-
-export interface SimpleCarouselSlideStoryblok {
-  text?: RichTextStoryblok[];
-  image: ImageStoryblok[];
-  component: "simpleCarouselSlide";
-  _uid: string;
-  [k: string]: any;
-}
-
-export interface SliderParamsStoryblok {
-  loop?: boolean;
-  slidesPerView?: string;
-  spaceBetween?: string;
-  component: "sliderParams";
   _uid: string;
   [k: string]: any;
 }
@@ -402,13 +402,6 @@ export interface ThreeDElementStoryblok {
   backgroundColor: "white" | "lightGray" | "darkGray" | "black" | "none";
   backgroundImage?: AssetStoryblok;
   component: "threeDElement";
-  _uid: string;
-  [k: string]: any;
-}
-
-export interface WideSimpleCarouselSlideStoryblok {
-  image: ImageStoryblok[];
-  component: "wideSimpleCarouselSlide";
   _uid: string;
   [k: string]: any;
 }

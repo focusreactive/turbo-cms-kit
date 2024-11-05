@@ -9,18 +9,17 @@ import {
   Navigation,
 } from "swiper/modules";
 
-import { GenericCarousel } from "../../../ui/GenericCarousel";
+import { GenericCarousel } from "../../ui/GenericCarousel";
 import CarouselCard from "./CarouselCard";
-import type { ISimpleCarouselProps } from "./types";
+import type { ICarouselProps } from "./types";
 
 import "swiper/css/bundle";
-import "swiper/css/effect-coverflow";
 
 import React, { useEffect, useRef } from "react";
 import type { NavigationOptions } from "swiper/types";
 
-import { cn } from "../../../../utils";
-import { type IGenericCarouselBaseProps } from "../../../ui/GenericCarousel/types";
+import { cn } from "../../../utils";
+import { type IGenericCarouselBaseProps } from "../../ui/GenericCarousel/types";
 
 const getEffectModule = (effect: IGenericCarouselBaseProps["effect"]) => {
   switch (effect) {
@@ -67,14 +66,14 @@ const ArrowButton = React.forwardRef<HTMLButtonElement, any>(
   ),
 );
 
-export function SimpleCarousel({
+export function Carousel({
   text,
   slides,
   customModules,
   customModulesParams,
   effect,
   params,
-}: ISimpleCarouselProps) {
+}: ICarouselProps) {
   const effectModule = getEffectModule(effect);
 
   const prevButtonRef = useRef<HTMLButtonElement>(null);

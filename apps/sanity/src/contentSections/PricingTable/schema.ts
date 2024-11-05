@@ -9,9 +9,9 @@ import customImage from "@/lib/schemas/customImage";
 import customLink from "@/lib/schemas/customLink";
 
 export const pricingTier = defineType({
-  name: "pricingTier",
+  name: "pricingTableTier",
   type: "object",
-  title: "Pricing Tier",
+  title: "Pricing Table Tier",
   fields: [
     defineField({
       name: "name",
@@ -57,8 +57,8 @@ export const pricingTier = defineType({
 });
 
 export default {
-  name: "section.pricing",
-  title: "Pricing",
+  name: "section.pricingTable",
+  title: "Pricing Table",
   type: "object",
   groups: commonGroups,
   fields: [
@@ -102,7 +102,7 @@ export default {
   ],
   preview: {
     prepare: () => ({
-      title: `Pricing`,
+      title: `Pricing Table`,
     }),
   },
 };

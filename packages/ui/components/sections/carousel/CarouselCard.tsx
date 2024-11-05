@@ -1,7 +1,7 @@
-import { cn } from "../../../../utils";
-import { Image } from "../../../ui/image";
-import { ImageAspectRatio } from "../../../ui/image/types";
-import { RichText } from "../../../ui/richText";
+import { cn } from "../../../utils";
+import { Image } from "../../ui/image";
+import { ImageAspectRatio } from "../../ui/image/types";
+import { RichText } from "../../ui/richText";
 import type { ICarouselCardProps } from "./types";
 
 export default function CarouselCard({

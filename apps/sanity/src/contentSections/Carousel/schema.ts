@@ -6,12 +6,12 @@ import {
   CommonGroup,
   commonGroups,
   sectionCommonFields,
-} from "../../commonFields";
+} from "../commonFields";
 
-export const simpleCarouselCard = defineType({
-  name: "simpleCarouselCard",
+export const carouselCard = defineType({
+  name: "carouselCard",
   type: "object",
-  title: "Simple Carousel Card",
+  title: "Carousel Card",
   options: {},
   fields: [
     defineField({
@@ -39,8 +39,8 @@ export const simpleCarouselCard = defineType({
 
 export default {
   options: {},
-  name: "section.simpleCarousel",
-  title: "Simple Carousel",
+  name: "section.carousel",
+  title: "Carousel",
   type: "object",
   groups: commonGroups,
   fields: [
@@ -53,7 +53,7 @@ export default {
       group: CommonGroup.Content,
       name: "slides",
       type: "array",
-      of: [{ type: "simpleCarouselCard" }],
+      of: [{ type: "carouselCard" }],
       validation: (Rule) => Rule.required(),
     }),
     defineField({
@@ -72,11 +72,6 @@ export default {
         layout: "radio",
       },
       initialValue: "slide",
-    }),
-    defineField({
-      name: "fullWidth",
-      type: "boolean",
-      group: CommonGroup.Style,
     }),
     defineField({
       name: "params",
@@ -104,7 +99,7 @@ export default {
       slides: "slides",
     },
     prepare: ({ slides }: any) => ({
-      title: `Simple Carousel - ${slides.length} slides`,
+      title: `Carousel - ${slides.length} slides`,
     }),
   },
 };

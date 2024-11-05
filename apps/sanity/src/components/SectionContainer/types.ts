@@ -1,5 +1,3 @@
-import { type SanityImageObject } from "@sanity/image-url/lib/types/types";
-
 interface ISectionData {
   _key: string;
   theme?: "light" | "dark"; /// move to page
@@ -9,7 +7,15 @@ interface ISectionData {
   marginBottom?: "none" | "base" | "lg";
   maxWidth?: "none" | "base";
   backgroundColor?: "none" | "white" | "lightGray" | "darkGray" | "black";
-  backgroundImage?: SanityImageObject;
+  backgroundImage?:
+    | {
+        asset?: {
+          _ref: string;
+          _type: "reference";
+        };
+        _type: "image";
+      }
+    | undefined;
 }
 
 export interface ISectionContainerProps {

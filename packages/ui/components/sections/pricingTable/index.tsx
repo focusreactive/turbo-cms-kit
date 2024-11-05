@@ -8,7 +8,7 @@ import { Link } from "../../ui/link";
 import { Switch } from "../../ui/switch/Switch";
 import type { IPricingProps } from "./types";
 
-export function Pricing({
+export function PricingTable({
   tiers,
   yearlyDiscountPercentage,
   extraServiceEnabled,

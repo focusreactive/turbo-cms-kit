@@ -1,9 +1,8 @@
 import { blogPost } from "@/contentSections/Blog/schema";
 import { defaultCard } from "@/contentSections/CardsGrid/schema";
-import { simpleCarouselCard } from "@/contentSections/carousels/SimpleCarousel/schema";
-import { wideSimpleCarouselCard } from "@/contentSections/carousels/WideSimpleCarousel/schema";
+import { carouselCard } from "@/contentSections/Carousel/schema";
 import { logoItem } from "@/contentSections/Logos/schema";
-import { pricingTier } from "@/contentSections/Pricing/schema";
+import { pricingTier } from "@/contentSections/PricingTable/schema";
 import { stepGuideItem } from "@/contentSections/StepGuide/schema";
 
 import footer from "@/components/Footer/schema";
@@ -27,8 +26,7 @@ const schemas = [
   richTextBreak,
   basicRichText,
   blogPost,
-  simpleCarouselCard,
-  wideSimpleCarouselCard,
+  carouselCard,
   pricingTier,
   stepGuideItem,
   ...sections,

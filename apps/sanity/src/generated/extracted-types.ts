@@ -73,6 +73,19 @@ export type SectionThreeDElement = {
   model: "donut" | "globe" | "kubik-rubik";
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
+  maxWidth: "none" | "base";
+  backgroundColor: "white" | "lightGray" | "darkGray" | "black" | "none";
+  backgroundImage?: {
+    asset?: {
+      _ref: string;
+      _type: "reference";
+      _weak?: boolean;
+      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+    };
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    _type: "image";
+  };
 };
 
 export type SectionStepGuide = {
@@ -85,14 +98,27 @@ export type SectionStepGuide = {
   link: CustomLink;
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
+  maxWidth: "none" | "base";
+  backgroundColor: "white" | "lightGray" | "darkGray" | "black" | "none";
+  backgroundImage?: {
+    asset?: {
+      _ref: string;
+      _type: "reference";
+      _weak?: boolean;
+      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+    };
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    _type: "image";
+  };
 };
 
-export type SectionPricing = {
-  _type: "section.pricing";
+export type SectionPricingTable = {
+  _type: "section.pricingTable";
   tiers: Array<
     {
       _key: string;
-    } & PricingTier
+    } & PricingTableTier
   >;
   yearlyDiscountPercentage: number;
   extraServiceEnabled?: boolean;
@@ -102,6 +128,19 @@ export type SectionPricing = {
   };
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
+  maxWidth: "none" | "base";
+  backgroundColor: "white" | "lightGray" | "darkGray" | "black" | "none";
+  backgroundImage?: {
+    asset?: {
+      _ref: string;
+      _type: "reference";
+      _weak?: boolean;
+      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+    };
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    _type: "image";
+  };
 };
 
 export type SectionHero = {
@@ -116,29 +155,30 @@ export type SectionHero = {
   >;
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
+  maxWidth: "none" | "base";
+  backgroundColor: "white" | "lightGray" | "darkGray" | "black" | "none";
+  backgroundImage?: {
+    asset?: {
+      _ref: string;
+      _type: "reference";
+      _weak?: boolean;
+      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+    };
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    _type: "image";
+  };
 };
 
-export type SectionWideSimpleCarousel = {
-  _type: "section.wideSimpleCarousel";
-  slides: Array<
-    {
-      _key: string;
-    } & WideSimpleCarouselCard
-  >;
-  marginTop: "none" | "base" | "lg";
-  marginBottom: "none" | "base" | "lg";
-};
-
-export type SectionSimpleCarousel = {
-  _type: "section.simpleCarousel";
+export type SectionCarousel = {
+  _type: "section.carousel";
   text?: CustomRichText;
   slides: Array<
     {
       _key: string;
-    } & SimpleCarouselCard
+    } & CarouselCard
   >;
   effect?: "slide" | "coverflow" | "cube" | "fade" | "flip" | "cards";
-  fullWidth?: boolean;
   params?: {
     loop?: boolean;
     slidesPerView?: number;
@@ -146,6 +186,19 @@ export type SectionSimpleCarousel = {
   };
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
+  maxWidth: "none" | "base";
+  backgroundColor: "white" | "lightGray" | "darkGray" | "black" | "none";
+  backgroundImage?: {
+    asset?: {
+      _ref: string;
+      _type: "reference";
+      _weak?: boolean;
+      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+    };
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    _type: "image";
+  };
 };
 
 export type SectionBlog = {
@@ -163,6 +216,19 @@ export type SectionBlog = {
   theme: "light" | "dark";
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
+  maxWidth: "none" | "base";
+  backgroundColor: "white" | "lightGray" | "darkGray" | "black" | "none";
+  backgroundImage?: {
+    asset?: {
+      _ref: string;
+      _type: "reference";
+      _weak?: boolean;
+      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+    };
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    _type: "image";
+  };
 };
 
 export type SectionCardsGrid = {
@@ -176,6 +242,19 @@ export type SectionCardsGrid = {
   theme: "light" | "dark";
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
+  maxWidth: "none" | "base";
+  backgroundColor: "white" | "lightGray" | "darkGray" | "black" | "none";
+  backgroundImage?: {
+    asset?: {
+      _ref: string;
+      _type: "reference";
+      _weak?: boolean;
+      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+    };
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    _type: "image";
+  };
 };
 
 export type SectionLinksList = {
@@ -189,6 +268,19 @@ export type SectionLinksList = {
   theme: "light" | "dark";
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
+  maxWidth: "none" | "base";
+  backgroundColor: "white" | "lightGray" | "darkGray" | "black" | "none";
+  backgroundImage?: {
+    asset?: {
+      _ref: string;
+      _type: "reference";
+      _weak?: boolean;
+      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+    };
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    _type: "image";
+  };
 };
 
 export type SectionLogos = {
@@ -202,6 +294,19 @@ export type SectionLogos = {
   theme: "light" | "dark";
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
+  maxWidth: "none" | "base";
+  backgroundColor: "white" | "lightGray" | "darkGray" | "black" | "none";
+  backgroundImage?: {
+    asset?: {
+      _ref: string;
+      _type: "reference";
+      _weak?: boolean;
+      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+    };
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    _type: "image";
+  };
 };
 
 export type SectionCopy = {
@@ -215,6 +320,19 @@ export type SectionCopy = {
   theme: "light" | "dark";
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
+  maxWidth: "none" | "base";
+  backgroundColor: "white" | "lightGray" | "darkGray" | "black" | "none";
+  backgroundImage?: {
+    asset?: {
+      _ref: string;
+      _type: "reference";
+      _weak?: boolean;
+      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+    };
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    _type: "image";
+  };
 };
 
 export type StepGuideItem = {
@@ -224,8 +342,8 @@ export type StepGuideItem = {
   image: CustomImage;
 };
 
-export type PricingTier = {
-  _type: "pricingTier";
+export type PricingTableTier = {
+  _type: "pricingTableTier";
   name: string;
   icon: CustomImage;
   price?: number;
@@ -235,13 +353,8 @@ export type PricingTier = {
   popular?: boolean;
 };
 
-export type WideSimpleCarouselCard = {
-  _type: "wideSimpleCarouselCard";
-  image: CustomImage;
-};
-
-export type SimpleCarouselCard = {
-  _type: "simpleCarouselCard";
+export type CarouselCard = {
+  _type: "carouselCard";
   text?: CustomRichText;
   image: CustomImage;
 };
@@ -376,16 +489,13 @@ export type Page = {
       } & SectionBlog)
     | ({
         _key: string;
-      } & SectionSimpleCarousel)
-    | ({
-        _key: string;
-      } & SectionWideSimpleCarousel)
+      } & SectionCarousel)
     | ({
         _key: string;
       } & SectionHero)
     | ({
         _key: string;
-      } & SectionPricing)
+      } & SectionPricingTable)
     | ({
         _key: string;
       } & SectionStepGuide)
@@ -620,19 +730,17 @@ export type AllSanitySchemaTypes =
   | Geopoint
   | SectionThreeDElement
   | SectionStepGuide
-  | SectionPricing
+  | SectionPricingTable
   | SectionHero
-  | SectionWideSimpleCarousel
-  | SectionSimpleCarousel
+  | SectionCarousel
   | SectionBlog
   | SectionCardsGrid
   | SectionLinksList
   | SectionLogos
   | SectionCopy
   | StepGuideItem
-  | PricingTier
-  | WideSimpleCarouselCard
-  | SimpleCarouselCard
+  | PricingTableTier
+  | CarouselCard
   | BlogSectionPost
   | BasicRichText
   | Break
@@ -728,6 +836,19 @@ export type PAGE_BY_SLUG_QUERYResult = {
         theme: "dark" | "light";
         marginTop: "base" | "lg" | "none";
         marginBottom: "base" | "lg" | "none";
+        maxWidth: "base" | "none";
+        backgroundColor: "black" | "darkGray" | "lightGray" | "none" | "white";
+        backgroundImage?: {
+          asset?: {
+            _ref: string;
+            _type: "reference";
+            _weak?: boolean;
+            [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+          };
+          hotspot?: SanityImageHotspot;
+          crop?: SanityImageCrop;
+          _type: "image";
+        };
       }
     | {
         _key: string;
@@ -769,6 +890,50 @@ export type PAGE_BY_SLUG_QUERYResult = {
         theme: "dark" | "light";
         marginTop: "base" | "lg" | "none";
         marginBottom: "base" | "lg" | "none";
+        maxWidth: "base" | "none";
+        backgroundColor: "black" | "darkGray" | "lightGray" | "none" | "white";
+        backgroundImage?: {
+          asset?: {
+            _ref: string;
+            _type: "reference";
+            _weak?: boolean;
+            [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+          };
+          hotspot?: SanityImageHotspot;
+          crop?: SanityImageCrop;
+          _type: "image";
+        };
+      }
+    | {
+        _key: string;
+        _type: "section.carousel";
+        text?: CustomRichText;
+        slides: Array<
+          {
+            _key: string;
+          } & CarouselCard
+        >;
+        effect?: "cards" | "coverflow" | "cube" | "fade" | "flip" | "slide";
+        params?: {
+          loop?: boolean;
+          slidesPerView?: number;
+          spaceBetween?: number;
+        };
+        marginTop: "base" | "lg" | "none";
+        marginBottom: "base" | "lg" | "none";
+        maxWidth: "base" | "none";
+        backgroundColor: "black" | "darkGray" | "lightGray" | "none" | "white";
+        backgroundImage?: {
+          asset?: {
+            _ref: string;
+            _type: "reference";
+            _weak?: boolean;
+            [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+          };
+          hotspot?: SanityImageHotspot;
+          crop?: SanityImageCrop;
+          _type: "image";
+        };
       }
     | {
         _key: string;
@@ -782,6 +947,19 @@ export type PAGE_BY_SLUG_QUERYResult = {
         theme: "dark" | "light";
         marginTop: "base" | "lg" | "none";
         marginBottom: "base" | "lg" | "none";
+        maxWidth: "base" | "none";
+        backgroundColor: "black" | "darkGray" | "lightGray" | "none" | "white";
+        backgroundImage?: {
+          asset?: {
+            _ref: string;
+            _type: "reference";
+            _weak?: boolean;
+            [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+          };
+          hotspot?: SanityImageHotspot;
+          crop?: SanityImageCrop;
+          _type: "image";
+        };
       }
     | {
         _key: string;
@@ -811,6 +989,19 @@ export type PAGE_BY_SLUG_QUERYResult = {
         }>;
         marginTop: "base" | "lg" | "none";
         marginBottom: "base" | "lg" | "none";
+        maxWidth: "base" | "none";
+        backgroundColor: "black" | "darkGray" | "lightGray" | "none" | "white";
+        backgroundImage?: {
+          asset?: {
+            _ref: string;
+            _type: "reference";
+            _weak?: boolean;
+            [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+          };
+          hotspot?: SanityImageHotspot;
+          crop?: SanityImageCrop;
+          _type: "image";
+        };
       }
     | {
         _key: string;
@@ -839,6 +1030,19 @@ export type PAGE_BY_SLUG_QUERYResult = {
         theme: "dark" | "light";
         marginTop: "base" | "lg" | "none";
         marginBottom: "base" | "lg" | "none";
+        maxWidth: "base" | "none";
+        backgroundColor: "black" | "darkGray" | "lightGray" | "none" | "white";
+        backgroundImage?: {
+          asset?: {
+            _ref: string;
+            _type: "reference";
+            _weak?: boolean;
+            [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+          };
+          hotspot?: SanityImageHotspot;
+          crop?: SanityImageCrop;
+          _type: "image";
+        };
       }
     | {
         _key: string;
@@ -872,14 +1076,27 @@ export type PAGE_BY_SLUG_QUERYResult = {
         theme: "dark" | "light";
         marginTop: "base" | "lg" | "none";
         marginBottom: "base" | "lg" | "none";
+        maxWidth: "base" | "none";
+        backgroundColor: "black" | "darkGray" | "lightGray" | "none" | "white";
+        backgroundImage?: {
+          asset?: {
+            _ref: string;
+            _type: "reference";
+            _weak?: boolean;
+            [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+          };
+          hotspot?: SanityImageHotspot;
+          crop?: SanityImageCrop;
+          _type: "image";
+        };
       }
     | {
         _key: string;
-        _type: "section.pricing";
+        _type: "section.pricingTable";
         tiers: Array<
           {
             _key: string;
-          } & PricingTier
+          } & PricingTableTier
         >;
         yearlyDiscountPercentage: number;
         extraServiceEnabled?: boolean;
@@ -889,25 +1106,19 @@ export type PAGE_BY_SLUG_QUERYResult = {
         };
         marginTop: "base" | "lg" | "none";
         marginBottom: "base" | "lg" | "none";
-      }
-    | {
-        _key: string;
-        _type: "section.simpleCarousel";
-        text?: CustomRichText;
-        slides: Array<
-          {
-            _key: string;
-          } & SimpleCarouselCard
-        >;
-        effect?: "cards" | "coverflow" | "cube" | "fade" | "flip" | "slide";
-        fullWidth?: boolean;
-        params?: {
-          loop?: boolean;
-          slidesPerView?: number;
-          spaceBetween?: number;
+        maxWidth: "base" | "none";
+        backgroundColor: "black" | "darkGray" | "lightGray" | "none" | "white";
+        backgroundImage?: {
+          asset?: {
+            _ref: string;
+            _type: "reference";
+            _weak?: boolean;
+            [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+          };
+          hotspot?: SanityImageHotspot;
+          crop?: SanityImageCrop;
+          _type: "image";
         };
-        marginTop: "base" | "lg" | "none";
-        marginBottom: "base" | "lg" | "none";
       }
     | {
         _key: string;
@@ -920,6 +1131,19 @@ export type PAGE_BY_SLUG_QUERYResult = {
         link: CustomLink;
         marginTop: "base" | "lg" | "none";
         marginBottom: "base" | "lg" | "none";
+        maxWidth: "base" | "none";
+        backgroundColor: "black" | "darkGray" | "lightGray" | "none" | "white";
+        backgroundImage?: {
+          asset?: {
+            _ref: string;
+            _type: "reference";
+            _weak?: boolean;
+            [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+          };
+          hotspot?: SanityImageHotspot;
+          crop?: SanityImageCrop;
+          _type: "image";
+        };
       }
     | {
         _key: string;
@@ -927,17 +1151,19 @@ export type PAGE_BY_SLUG_QUERYResult = {
         model: "donut" | "globe" | "kubik-rubik";
         marginTop: "base" | "lg" | "none";
         marginBottom: "base" | "lg" | "none";
-      }
-    | {
-        _key: string;
-        _type: "section.wideSimpleCarousel";
-        slides: Array<
-          {
-            _key: string;
-          } & WideSimpleCarouselCard
-        >;
-        marginTop: "base" | "lg" | "none";
-        marginBottom: "base" | "lg" | "none";
+        maxWidth: "base" | "none";
+        backgroundColor: "black" | "darkGray" | "lightGray" | "none" | "white";
+        backgroundImage?: {
+          asset?: {
+            _ref: string;
+            _type: "reference";
+            _weak?: boolean;
+            [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+          };
+          hotspot?: SanityImageHotspot;
+          crop?: SanityImageCrop;
+          _type: "image";
+        };
       }
   > | null;
   footer: {
