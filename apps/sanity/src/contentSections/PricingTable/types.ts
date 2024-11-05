@@ -1,7 +1,7 @@
-import { type SectionPricing } from "@/generated/extracted-types";
+import { type SectionPricingTable } from "@/generated/extracted-types";
 
 export interface IPricingSectionProps {
-  data: SectionPricing & {
+  data: SectionPricingTable & {
     _key: string;
   };
 }

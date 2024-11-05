@@ -1,5 +1,5 @@
-import type { PricingStoryblok } from "@/generated/extracted-types";
+import type { PricingTableStoryblok } from "@/generated/extracted-types";
 
 export interface IPricingProps {
-  blok: PricingStoryblok;
+  blok: PricingTableStoryblok;
 }
