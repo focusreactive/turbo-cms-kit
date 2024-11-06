@@ -4,6 +4,7 @@ interface ISectionData {
   paddingY?: "none";
   marginTop?: "none" | "base" | "lg";
   marginBottom?: "none" | "base" | "lg";
+  noMaxWidth?: boolean;
 }
 
 export interface ISectionContainerProps {

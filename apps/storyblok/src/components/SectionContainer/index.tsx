@@ -11,7 +11,8 @@ export default function SectionContainer({
   blok,
   className,
 }: ISectionContainerProps) {
-  const { _uid, paddingX, paddingY, marginTop, marginBottom } = blok;
+  const { _uid, paddingX, paddingY, marginTop, marginBottom, noMaxWidth } =
+    blok;
 
   if (isDraftMode) {
     return (
@@ -31,6 +32,7 @@ export default function SectionContainer({
           className={cn("mx-auto max-w-screen-xl px-4 py-8", {
             "px-0": paddingX === "none",
             "py-0": paddingY === "none",
+            "max-w-none": noMaxWidth,
           })}
         >
           {children}
@@ -55,6 +57,7 @@ export default function SectionContainer({
         className={cn("mx-auto max-w-screen-xl px-4 py-8", {
           "px-0": paddingX === "none",
           "py-0": paddingY === "none",
+          "max-w-none": noMaxWidth,
         })}
       >
         {children}

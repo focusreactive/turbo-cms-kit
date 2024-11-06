@@ -805,6 +805,14 @@
             "value": "section.simpleCarousel"
           }
         },
+        "text": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "inline",
+            "name": "customRichText"
+          },
+          "optional": true
+        },
         "slides": {
           "type": "objectAttribute",
           "value": {
@@ -826,6 +834,76 @@
             }
           },
           "optional": false
+        },
+        "effect": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "union",
+            "of": [
+              {
+                "type": "string",
+                "value": "slide"
+              },
+              {
+                "type": "string",
+                "value": "coverflow"
+              },
+              {
+                "type": "string",
+                "value": "cube"
+              },
+              {
+                "type": "string",
+                "value": "fade"
+              },
+              {
+                "type": "string",
+                "value": "flip"
+              },
+              {
+                "type": "string",
+                "value": "cards"
+              }
+            ]
+          },
+          "optional": true
+        },
+        "fullWidth": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "boolean"
+          },
+          "optional": true
+        },
+        "params": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "object",
+            "attributes": {
+              "loop": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "boolean"
+                },
+                "optional": true
+              },
+              "slidesPerView": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "number"
+                },
+                "optional": true
+              },
+              "spaceBetween": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "number"
+                },
+                "optional": true
+              }
+            }
+          },
+          "optional": true
         },
         "marginTop": {
           "type": "objectAttribute",
@@ -1515,6 +1593,14 @@
             "type": "string",
             "value": "simpleCarouselCard"
           }
+        },
+        "text": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "inline",
+            "name": "customRichText"
+          },
+          "optional": true
         },
         "image": {
           "type": "objectAttribute",

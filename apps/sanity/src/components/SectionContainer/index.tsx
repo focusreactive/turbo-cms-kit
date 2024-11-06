@@ -9,7 +9,8 @@ export default function SectionContainer({
   className,
   sectionData,
 }: ISectionContainerProps) {
-  const { _key, marginTop, marginBottom, paddingX, paddingY } = sectionData;
+  const { _key, marginTop, marginBottom, paddingX, paddingY, noMaxWidth } =
+    sectionData;
 
   const cleanMarginTop = stegaClean(marginTop);
   const cleanMarginBottom = stegaClean(marginBottom);
@@ -30,6 +31,7 @@ export default function SectionContainer({
         className={cn("mx-auto max-w-screen-xl px-4 py-8", {
           "px-0": paddingX === "none",
           "py-0": paddingY === "none",
+          "max-w-none": noMaxWidth,
         })}
       >
         {children}
