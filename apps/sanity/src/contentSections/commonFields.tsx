@@ -1,11 +1,11 @@
-import { defineField } from "sanity";
+import { defineField, type FieldGroupDefinition } from "sanity";
 
 export enum CommonGroup {
   Content = "content",
   Style = "style",
 }
 
-export const commonGroups = [
+export const commonGroups: FieldGroupDefinition[] = [
   {
     name: CommonGroup.Content,
     title: "Content",

@@ -9,7 +9,7 @@ import {
 
 // todo: rework to be button instead of link (and use asLink/Slot pattern)
 export const LinkVariantsClassNames: ILinkVariantsClassNames = {
-  [LinkVariant.Default]: "",
+  [LinkVariant.Default]: "text-textColor",
   [LinkVariant.Primary]:
     "inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-bgColor rounded-lg bg-primaryColor hover:outline",
   [LinkVariant.Secondary]:

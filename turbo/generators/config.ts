@@ -1,21 +1,6 @@
 import type { PlopTypes } from "@turbo/gen";
 
-const componentNamePrompt = {
-  type: "input",
-  name: "sectionName",
-  message: "What is the name of the new section?",
-  validate: (input: string) => {
-    if (!input) {
-      return "section name is required";
-    }
-
-    if (input.split(" ").length > 1) {
-      return "section name should be a single word";
-    }
-
-    return true;
-  },
-};
+import { componentNamePrompt, createUISectionActions } from "./constants";
 
 export default function generator(plop: PlopTypes.NodePlopAPI): void {
   plop.setHelper("capitialize", (str: string) => {
@@ -29,30 +14,14 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
   plop.setGenerator("UI", {
     description: "Create a new UI component",
     prompts: [componentNamePrompt],
-    actions: [
-      {
-        type: "add",
-        path: "{{ turbo.paths.root }}/packages/ui/components/ui/{{ capitialize sectionName }}/index.tsx",
-        templateFile: "templates/uiComponent.hbs",
-      },
-      {
-        type: "add",
-        path: "{{ turbo.paths.root }}/packages/ui/components/ui/{{ capitialize sectionName }}/types.ts",
-        templateFile: "templates/uiComponentTypes.hbs",
-      },
-      {
-        type: "modify",
-        path: "{{ turbo.paths.root }}/packages/ui/index.tsx",
-        pattern: /(\/\/ end component exports)/g,
-        template: `export * from "./components/ui/{{ sectionName }}"\n$1`,
-      },
-    ],
+    actions: createUISectionActions,
   });
 
   plop.setGenerator("Storyblok", {
     description: "Create a new content section",
     prompts: [componentNamePrompt],
     actions: [
+      ...createUISectionActions,
       {
         type: "add",
         path: "{{ turbo.paths.root }}/apps/storyblok/src/contentSections/{{ capitialize sectionName }}/index.tsx",
@@ -82,16 +51,7 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
     description: "Create a new content section",
     prompts: [componentNamePrompt],
     actions: [
-      {
-        type: "add",
-        path: "{{ turbo.paths.root }}/packages/ui/components/sections/{{ sectionName }}/index.tsx",
-        templateFile: "templates/uiSection.hbs",
-      },
-      {
-        type: "add",
-        path: "{{ turbo.paths.root }}/packages/ui/components/sections/{{ sectionName }}/types.ts",
-        templateFile: "templates/uiSectionProps.hbs",
-      },
+      ...createUISectionActions,
       {
         type: "add",
         path: "{{ turbo.paths.root }}/apps/sanity/src/contentSections/{{ capitialize sectionName }}/index.tsx",
@@ -120,12 +80,6 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
         pattern: /(\/\/ end of section object)/g,
         template:
           "'section.{{ loweraseFirstLetter sectionName }}': {{ capitialize sectionName }},\n$1",
-      },
-      {
-        type: "modify",
-        path: "{{ turbo.paths.root }}/packages/ui/index.tsx",
-        pattern: /(\/\/ end component exports)/g,
-        template: `export * from "./components/sections/{{ sectionName }}"\n$1`,
       },
       {
         type: "modify",

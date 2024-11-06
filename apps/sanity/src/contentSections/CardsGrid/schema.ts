@@ -6,7 +6,6 @@ import {
   CommonGroup,
   commonGroups,
   sectionMarginFields,
-  themeField,
 } from "../commonFields";
 
 const featurePointStyles = [
@@ -109,7 +108,6 @@ export default {
       of: [{ type: "defaultCard" }],
       validation: (Rule) => Rule.required().min(1),
     }),
-    themeField,
     ...sectionMarginFields,
   ],
   preview: {

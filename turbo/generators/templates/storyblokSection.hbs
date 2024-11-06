@@ -2,26 +2,19 @@ import EmptyBlock from "@shared/ui/components/EmptyBlock";
 
 import { {{capitialize sectionName}} as {{capitialize sectionName}}UI } from "@shared/ui";
 
-import { prepareImageProps } from "@/lib/adapters/prepareImageProps";
-import { prepareLinkProps } from "@/lib/adapters/prepareLinkProps";
-import { prepareRichTextProps } from "@/lib/adapters/prepareRichTextProps";
 import SectionContainer from "@/components/SectionContainer";
 
 import type { I{{capitialize sectionName}}Props } from "./types";
 
 export default function {{capitialize sectionName}}({ blok }: I{{capitialize sectionName}}Props) {
-  const { text, image, link } = blok;
+  const { title } = blok;
 
-  if (text.length === 0 && image.length === 0 && link.length === 0)
+  if (!title)
     return <EmptyBlock name={blok.component as string} />;
 
   return (
     <SectionContainer blok={blok}>
-      <{{capitialize sectionName}}UI
-        text={prepareRichTextProps(text[0])}
-        image={prepareImageProps(image[0])}
-        link={prepareLinkProps(link[0])}
-      />
+      <{{capitialize sectionName}}UI title={title} />
     </SectionContainer>
   );
 }

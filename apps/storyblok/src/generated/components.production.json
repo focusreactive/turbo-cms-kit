@@ -1465,9 +1465,23 @@
       "name": "page",
       "display_name": null,
       "created_at": "2024-06-21T13:27:14.550Z",
-      "updated_at": "2024-10-21T12:17:53.603Z",
+      "updated_at": "2024-11-04T08:00:36.376Z",
       "id": 5960538,
       "schema": {
+        "tab-62ded705-61ae-4a7f-98fc-7f09b7326766": {
+          "display_name": "SEO",
+          "keys": [
+            "seoTitle",
+            "seoDescription",
+            "ogImage",
+            "robots",
+            "showCookieBanner"
+          ],
+          "pos": 0,
+          "type": "tab",
+          "key": "tab-62ded705-61ae-4a7f-98fc-7f09b7326766",
+          "name": "tab-62ded705-61ae-4a7f-98fc-7f09b7326766"
+        },
         "header": {
           "type": "option",
           "pos": 0,
@@ -1481,6 +1495,15 @@
             "header"
           ]
         },
+        "tab-5cdcbb50-4bd9-493a-bbf0-782111d4ada2": {
+          "display_name": "Style",
+          "keys": [
+            "theme"
+          ],
+          "pos": 1,
+          "type": "tab",
+          "name": "tab-5cdcbb50-4bd9-493a-bbf0-782111d4ada2"
+        },
         "sections": {
           "type": "bloks",
           "minimum": 1,
@@ -1493,19 +1516,6 @@
           "required": true,
           "key": "body",
           "pos": 1
-        },
-        "tab-62ded705-61ae-4a7f-98fc-7f09b7326766": {
-          "display_name": "SEO",
-          "keys": [
-            "seoTitle",
-            "seoDescription",
-            "ogImage",
-            "robots",
-            "showCookieBanner"
-          ],
-          "pos": 2,
-          "type": "tab",
-          "key": "tab-62ded705-61ae-4a7f-98fc-7f09b7326766"
         },
         "seoTitle": {
           "type": "text",
@@ -1564,6 +1574,26 @@
           "filter_content_type": [
             "footer"
           ]
+        },
+        "theme": {
+          "type": "option",
+          "pos": 10,
+          "use_uuid": true,
+          "required": true,
+          "options": [
+            {
+              "_uid": "d1b86e98-185a-4151-8226-15e976ef5b29",
+              "name": "light",
+              "value": "light"
+            },
+            {
+              "_uid": "140bc7b4-5e18-479d-b270-09e5be1f0e57",
+              "value": "dark",
+              "name": "dark"
+            }
+          ],
+          "exclude_empty_option": true,
+          "default_value": "light"
         }
       },
       "image": "//a.storyblok.com/f/293915/x/6e4a70f094/screenshot-2024-10-07-at-08-35-13.png",
@@ -2202,7 +2232,7 @@
       "name": "threeDElement",
       "display_name": "3D Element",
       "created_at": "2024-11-01T07:46:52.931Z",
-      "updated_at": "2024-11-01T07:51:32.500Z",
+      "updated_at": "2024-11-01T15:18:17.163Z",
       "id": 6502652,
       "schema": {
         "threeDModel": {
@@ -2228,7 +2258,8 @@
               "value": "kubik-rubik",
               "name": "Kubik rubik"
             }
-          ]
+          ],
+          "display_name": "3D model"
         },
         "tab-a56fbd62-e3cd-4f10-8de8-b218250de1a7": {
           "display_name": "Style",

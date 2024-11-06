@@ -160,7 +160,6 @@ export type SectionBlog = {
       _key: string;
     } & BlogSectionPost
   >;
-  theme: "light" | "dark";
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
 };
@@ -173,7 +172,6 @@ export type SectionCardsGrid = {
       _key: string;
     } & DefaultCard
   >;
-  theme: "light" | "dark";
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
 };
@@ -186,7 +184,6 @@ export type SectionLinksList = {
     } & CustomLink
   >;
   alignVariant: "left" | "center" | "right";
-  theme: "light" | "dark";
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
 };
@@ -199,7 +196,6 @@ export type SectionLogos = {
     } & LogoItem
   >;
   alignVariant: "left" | "center" | "right";
-  theme: "light" | "dark";
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
 };
@@ -212,7 +208,6 @@ export type SectionCopy = {
     } & CustomRichText
   >;
   isReversedOnMobile: boolean;
-  theme: "light" | "dark";
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
 };
@@ -350,6 +345,7 @@ export type Page = {
   _createdAt: string;
   _updatedAt: string;
   _rev: string;
+  theme: "light" | "dark";
   title?: string;
   pathname?: Slug;
   header: {
@@ -432,7 +428,6 @@ export type Footer = {
     } & CustomLink
   >;
   copywriteText?: string;
-  theme: "light" | "dark";
 };
 
 export type CustomRichText = {
@@ -501,7 +496,6 @@ export type Header = {
     } & CustomLink
   >;
   alignVariant: "left" | "center" | "right";
-  theme: "light" | "dark";
 };
 
 export type SanityImageCrop = {
@@ -688,7 +682,6 @@ export type PAGE_BY_SLUG_QUERYResult = {
         | "secondary";
     }>;
     alignVariant: "center" | "left" | "right";
-    theme: "dark" | "light";
   };
   sectionsBody: Array<
     | {
@@ -725,7 +718,6 @@ export type PAGE_BY_SLUG_QUERYResult = {
           image?: CustomImage;
           text?: CustomRichText;
         }>;
-        theme: "dark" | "light";
         marginTop: "base" | "lg" | "none";
         marginBottom: "base" | "lg" | "none";
       }
@@ -766,7 +758,6 @@ export type PAGE_BY_SLUG_QUERYResult = {
           } | null;
           image?: CustomImage;
         }>;
-        theme: "dark" | "light";
         marginTop: "base" | "lg" | "none";
         marginBottom: "base" | "lg" | "none";
       }
@@ -779,7 +770,6 @@ export type PAGE_BY_SLUG_QUERYResult = {
           } & CustomRichText
         >;
         isReversedOnMobile: boolean;
-        theme: "dark" | "light";
         marginTop: "base" | "lg" | "none";
         marginBottom: "base" | "lg" | "none";
       }
@@ -836,7 +826,6 @@ export type PAGE_BY_SLUG_QUERYResult = {
             | "secondary";
         }>;
         alignVariant: "center" | "left" | "right";
-        theme: "dark" | "light";
         marginTop: "base" | "lg" | "none";
         marginBottom: "base" | "lg" | "none";
       }
@@ -869,7 +858,6 @@ export type PAGE_BY_SLUG_QUERYResult = {
           } | null;
         }>;
         alignVariant: "center" | "left" | "right";
-        theme: "dark" | "light";
         marginTop: "base" | "lg" | "none";
         marginBottom: "base" | "lg" | "none";
       }
@@ -970,7 +958,6 @@ export type PAGE_BY_SLUG_QUERYResult = {
         | "secondary";
     }> | null;
     copywriteText?: string;
-    theme: "dark" | "light";
   };
   title: string | null;
   slug: string | null;

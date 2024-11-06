@@ -9,15 +9,8 @@ export default function SectionContainer({
   className,
   sectionData,
 }: ISectionContainerProps) {
-  const {
-    _key,
-    theme,
-    marginTop,
-    marginBottom,
-    paddingX,
-    paddingY,
-    noMaxWidth,
-  } = sectionData;
+  const { _key, marginTop, marginBottom, paddingX, paddingY, noMaxWidth } =
+    sectionData;
 
   const cleanMarginTop = stegaClean(marginTop);
   const cleanMarginBottom = stegaClean(marginBottom);
@@ -25,7 +18,7 @@ export default function SectionContainer({
   return (
     <section
       id={_key}
-      className={cn("bg-bgColor overflow-x-hidden", theme, className, {
+      className={cn("overflow-x-hidden", className, {
         "mt-0": cleanMarginTop === "none",
         "mb-0": cleanMarginBottom === "none",
         "mt-sectionBase": cleanMarginTop === "base",

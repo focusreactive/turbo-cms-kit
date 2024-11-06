@@ -256,6 +256,7 @@ export interface PageStoryblok {
   robots: "index" | "no-index";
   showCookieBanner?: boolean;
   footer: ISbStoryData<FooterStoryblok> | string;
+  theme: "light" | "dark";
   component: "page";
   _uid: string;
   [k: string]: any;

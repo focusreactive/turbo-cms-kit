@@ -2832,9 +2832,10 @@
       "name": "Home",
       "preset": {
         "_uid": "2b02874e-43a7-463b-a76f-cb457945ab65",
+        "theme": "light",
         "footer": "9242f0ad-4f23-46b4-a369-227f91b0d3fd",
         "header": "32a6be02-b148-40db-8f9b-bf4bd86572b1",
-        "robots": "index",
+        "robots": "no-index",
         "ogImage": {
           "id": 17302361,
           "alt": "",
@@ -2917,11 +2918,11 @@
               {
                 "_uid": "3786705a-e3a5-4aea-8f36-15b5ada939a3",
                 "link": {
-                  "id": "5d416347-de08-4adb-b496-00b0a083de3a",
+                  "id": "86c7697c-880f-46a3-948d-6c60d8076410",
                   "url": "",
                   "linktype": "story",
                   "fieldtype": "multilink",
-                  "cached_url": "blog"
+                  "cached_url": "5443434343434-changing-slug-page"
                 },
                 "text": "Get for free",
                 "variant": "primary",
@@ -2941,10 +2942,488 @@
                 "component": "link"
               }
             ],
-            "title": "Write. Plan. Collaborate.",
+            "title": "Write. Plan. Collaborate. Updated",
             "component": "hero",
             "marginTop": "lg",
             "marginBottom": "lg"
+          },
+          {
+            "_uid": "d9e3566a-a154-4fac-9517-c6948ff7cf7d",
+            "columns": [],
+            "component": "threeDElement",
+            "marginTop": "base",
+            "threeDModel": "brand",
+            "marginBottom": "base"
+          },
+          {
+            "_uid": "43139479-f918-4519-b1e2-2874edcfcb94",
+            "columns": [],
+            "component": "threeDElement",
+            "marginTop": "base",
+            "threeDModel": "kubik-rubik",
+            "marginBottom": "base"
+          },
+          {
+            "_uid": "c6d3bc1e-5ce9-4f8b-9334-6c936417fb3a",
+            "link": [
+              {
+                "_uid": "5429c52c-c60c-4e82-8902-541cc0a9e614",
+                "link": {
+                  "id": "5d416347-de08-4adb-b496-00b0a083de3a",
+                  "url": "",
+                  "linktype": "story",
+                  "fieldtype": "multilink",
+                  "cached_url": "blog"
+                },
+                "text": "Take your shot",
+                "variant": "ghost-dark",
+                "component": "link"
+              }
+            ],
+            "component": "stepGuide",
+            "marginTop": "base",
+            "marginBottom": "base",
+            "stepGuideItem": [
+              {
+                "_uid": "35748222-6c20-4b60-a559-55ac1e61ef96",
+                "text": " Add your first product",
+                "image": [
+                  {
+                    "_uid": "8b5b2c0c-6e77-4a82-9ad2-8fdb8c7a100c",
+                    "asset": {
+                      "id": 17902334,
+                      "alt": "call us",
+                      "name": "",
+                      "focus": "",
+                      "title": "",
+                      "source": "",
+                      "filename": "https://a.storyblok.com/f/293915/960x960/6a4a666d16/call-us.svg",
+                      "copyright": "",
+                      "fieldtype": "asset",
+                      "meta_data": {
+                        "alt": "call us",
+                        "title": "",
+                        "source": "",
+                        "copyright": ""
+                      },
+                      "is_external_url": false
+                    },
+                    "component": "image",
+                    "aspectRatio": "3/1"
+                  }
+                ],
+                "number": "01",
+                "component": "stepGuideItem"
+              },
+              {
+                "_uid": "18fa609a-8e67-468b-bb10-09b0eecde4ef",
+                "text": "Customize your site",
+                "image": [
+                  {
+                    "_uid": "d365c5ab-bfd6-45c6-b32c-751dc3354c5c",
+                    "asset": {
+                      "id": 17902335,
+                      "alt": "Notion Office Cubicle",
+                      "name": "",
+                      "focus": "",
+                      "title": "",
+                      "source": "",
+                      "filename": "https://a.storyblok.com/f/293915/960x960/6f9f80538d/notion-office-cubicle.svg",
+                      "copyright": "",
+                      "fieldtype": "asset",
+                      "meta_data": {
+                        "alt": "Notion Office Cubicle",
+                        "title": "",
+                        "source": "",
+                        "copyright": ""
+                      },
+                      "is_external_url": false
+                    },
+                    "component": "image",
+                    "aspectRatio": "16/9"
+                  }
+                ],
+                "number": "02",
+                "component": "stepGuideItem"
+              },
+              {
+                "_uid": "71d9d2f8-8b28-48cc-bc8a-5770b0c06e91",
+                "text": "Set up payments",
+                "image": [
+                  {
+                    "_uid": "58a0c4c7-ed78-4bff-9b0a-cb4224ebc641",
+                    "asset": {
+                      "id": 17902333,
+                      "alt": "grow",
+                      "name": "",
+                      "focus": "",
+                      "title": "",
+                      "source": "",
+                      "filename": "https://a.storyblok.com/f/293915/960x960/1434ff31bc/grow.svg",
+                      "copyright": "",
+                      "fieldtype": "asset",
+                      "meta_data": {
+                        "alt": "grow",
+                        "title": "",
+                        "source": "",
+                        "copyright": ""
+                      },
+                      "is_external_url": false
+                    },
+                    "component": "image",
+                    "aspectRatio": "16/9"
+                  }
+                ],
+                "number": "03",
+                "component": "stepGuideItem"
+              }
+            ]
+          },
+          {
+            "_uid": "b4501ba5-a0ae-452d-bb61-fca7c9edf808",
+            "tiers": [
+              {
+                "_uid": "8b5c5f15-664b-4aef-8f4b-2ceddc78c9cd",
+                "icon": [
+                  {
+                    "_uid": "cd248c62-ce46-4dca-bcb7-b0672c345ecb",
+                    "asset": {
+                      "id": 17887678,
+                      "alt": "",
+                      "name": "",
+                      "focus": "",
+                      "title": "",
+                      "source": "",
+                      "filename": "https://a.storyblok.com/f/293915/68x80/a59904240e/personal.png",
+                      "copyright": "",
+                      "fieldtype": "asset",
+                      "meta_data": {},
+                      "is_external_url": false
+                    },
+                    "component": "image",
+                    "aspectRatio": "auto"
+                  }
+                ],
+                "link": [
+                  {
+                    "_uid": "be63e7c4-ecd2-4ad0-9928-46757ccba0c1",
+                    "link": {
+                      "id": "19601884-a1af-4b99-bd95-1a3ca01d5b7a",
+                      "url": "",
+                      "linktype": "story",
+                      "fieldtype": "multilink",
+                      "cached_url": "home"
+                    },
+                    "text": "Sign up",
+                    "variant": "ghost",
+                    "component": "link"
+                  }
+                ],
+                "name": "Free",
+                "price": "0",
+                "popular": false,
+                "features": [
+                  {
+                    "_uid": "daa76aed-3746-48f1-863b-4d9dd0e833fd",
+                    "text": "Collaborative workspace",
+                    "component": "pricingTierFeature"
+                  },
+                  {
+                    "_uid": "1a197039-e74f-4446-98d5-53a4a27e7b2e",
+                    "text": "Integrate with Slack, GitHub & more",
+                    "component": "pricingTierFeature"
+                  },
+                  {
+                    "_uid": "adae920f-a85d-4731-8a5c-2366d6dd896c",
+                    "text": "Basic page analytics",
+                    "component": "pricingTierFeature"
+                  },
+                  {
+                    "_uid": "6911f373-b7fe-4fa8-ade0-48285a6b47d5",
+                    "text": "7 day page history",
+                    "component": "pricingTierFeature"
+                  },
+                  {
+                    "_uid": "08b6beb3-f786-401a-96cd-48d37cd5dd58",
+                    "text": "Invite 10 guests",
+                    "component": "pricingTierFeature"
+                  }
+                ],
+                "component": "pricingTier",
+                "description": "For individuals to organize personal projects and life"
+              },
+              {
+                "_uid": "8691ad32-a839-419b-b67b-fbb125e15135",
+                "icon": [
+                  {
+                    "_uid": "0cbb9308-70ed-440c-9901-9fda00362536",
+                    "asset": {
+                      "id": 17887679,
+                      "alt": "",
+                      "name": "",
+                      "focus": "",
+                      "title": "",
+                      "source": "",
+                      "filename": "https://a.storyblok.com/f/293915/86x80/d9b65aa6fe/pro.png",
+                      "copyright": "",
+                      "fieldtype": "asset",
+                      "meta_data": {},
+                      "is_external_url": false
+                    },
+                    "component": "image",
+                    "aspectRatio": "auto"
+                  }
+                ],
+                "link": [
+                  {
+                    "_uid": "2233c43d-3681-4932-a13b-8cce9024fec9",
+                    "link": {
+                      "id": "19601884-a1af-4b99-bd95-1a3ca01d5b7a",
+                      "url": "",
+                      "linktype": "story",
+                      "fieldtype": "multilink",
+                      "cached_url": "home"
+                    },
+                    "text": "Get started",
+                    "variant": "ghost-dark",
+                    "component": "link"
+                  }
+                ],
+                "name": "Plus",
+                "price": "9,5",
+                "popular": true,
+                "features": [
+                  {
+                    "_uid": "93ab7175-1744-4157-94f2-68af0b44787f",
+                    "text": "Everything in Free +",
+                    "component": "pricingTierFeature"
+                  },
+                  {
+                    "_uid": "1f8ee345-9583-4ead-8f2d-24058aec8bcd",
+                    "text": "Unlimited blocks for teams",
+                    "component": "pricingTierFeature"
+                  },
+                  {
+                    "_uid": "e04ed840-bf79-4c53-aa8a-7e705d542fb0",
+                    "text": "Unlimited file uploads",
+                    "component": "pricingTierFeature"
+                  },
+                  {
+                    "_uid": "d5f112d1-5eea-40a0-a629-7b4830182442",
+                    "text": "30 day page history",
+                    "component": "pricingTierFeature"
+                  },
+                  {
+                    "_uid": "18416b01-b34c-4e95-856f-9aaa1ab6660a",
+                    "text": "Invite 100 guests",
+                    "component": "pricingTierFeature"
+                  },
+                  {
+                    "_uid": "1b5273ef-e000-4b35-ada6-6ff76d209111",
+                    "text": "Synced databases with 3rd party apps",
+                    "component": "pricingTierFeature"
+                  },
+                  {
+                    "_uid": "e73d1976-7a24-460c-a379-0f740a76ae92",
+                    "text": "Custom websites",
+                    "component": "pricingTierFeature"
+                  },
+                  {
+                    "_uid": "6709a79a-a33d-4cd9-8e16-e1e7df61e7d1",
+                    "text": "Custom automations",
+                    "component": "pricingTierFeature"
+                  },
+                  {
+                    "_uid": "ab0dbc44-b1e6-4806-b08b-caa879a87048",
+                    "text": "Charts & dashboards",
+                    "component": "pricingTierFeature"
+                  }
+                ],
+                "component": "pricingTier",
+                "description": "For small teams and professionals to work together"
+              },
+              {
+                "_uid": "c11b36f5-16c7-4f64-adda-323000661d94",
+                "icon": [
+                  {
+                    "_uid": "201ac33b-7434-4589-beff-81af26113c33",
+                    "asset": {
+                      "id": 17887681,
+                      "alt": "",
+                      "name": "",
+                      "focus": "",
+                      "title": "",
+                      "source": "",
+                      "filename": "https://a.storyblok.com/f/293915/72x80/4229f5e65b/team.png",
+                      "copyright": "",
+                      "fieldtype": "asset",
+                      "meta_data": {},
+                      "is_external_url": false
+                    },
+                    "component": "image",
+                    "aspectRatio": "auto"
+                  }
+                ],
+                "link": [
+                  {
+                    "_uid": "27d78bdc-ce93-40b0-8e18-d2a19a7373f0",
+                    "link": {
+                      "id": "19601884-a1af-4b99-bd95-1a3ca01d5b7a",
+                      "url": "",
+                      "linktype": "story",
+                      "fieldtype": "multilink",
+                      "cached_url": "home"
+                    },
+                    "text": "Get started",
+                    "variant": "ghost",
+                    "component": "link"
+                  }
+                ],
+                "name": "Business",
+                "price": "14",
+                "popular": false,
+                "features": [
+                  {
+                    "_uid": "0aeb1d1a-c095-481d-b82a-f87deb75539c",
+                    "text": "Everything in Plus +",
+                    "component": "pricingTierFeature"
+                  },
+                  {
+                    "_uid": "5df353b6-9c56-465d-8dc4-d8e7b739cc74",
+                    "text": "SAML SSO",
+                    "component": "pricingTierFeature"
+                  },
+                  {
+                    "_uid": "50b68f1d-1264-4c06-b295-080a84b94a7a",
+                    "text": "Private teamspaces",
+                    "component": "pricingTierFeature"
+                  },
+                  {
+                    "_uid": "f9153bd4-cdd9-4362-b1cb-3103014b2cc4",
+                    "text": "Bulk PDF export",
+                    "component": "pricingTierFeature"
+                  },
+                  {
+                    "_uid": "7f37be1a-c308-4806-a7c4-765676044282",
+                    "text": "Advanced page analytics",
+                    "component": "pricingTierFeature"
+                  },
+                  {
+                    "_uid": "4fb885e6-2239-4e04-bee7-4b945b2eef22",
+                    "text": "90 day page history",
+                    "component": "pricingTierFeature"
+                  },
+                  {
+                    "_uid": "4a176ea2-92c0-4155-9453-bc87f76e7156",
+                    "text": "Invite 250 guests",
+                    "component": "pricingTierFeature"
+                  }
+                ],
+                "component": "pricingTier",
+                "description": "For growing businesses to streamline teamwork"
+              },
+              {
+                "_uid": "4ca76929-e827-44d0-b38b-78d744af8f54",
+                "icon": [
+                  {
+                    "_uid": "bdf737f1-bbe6-402f-90bc-b57434bea1ea",
+                    "asset": {
+                      "id": 17887680,
+                      "alt": "",
+                      "name": "",
+                      "focus": "",
+                      "title": "",
+                      "source": "",
+                      "filename": "https://a.storyblok.com/f/293915/84x80/8b7995cd2e/enterprise.png",
+                      "copyright": "",
+                      "fieldtype": "asset",
+                      "meta_data": {},
+                      "is_external_url": false
+                    },
+                    "component": "image",
+                    "aspectRatio": "auto"
+                  }
+                ],
+                "link": [
+                  {
+                    "_uid": "b91aea3a-0bac-47d7-a968-df5e01a24071",
+                    "link": {
+                      "id": "5d416347-de08-4adb-b496-00b0a083de3a",
+                      "url": "",
+                      "linktype": "story",
+                      "fieldtype": "multilink",
+                      "cached_url": "blog"
+                    },
+                    "text": "Contact Sales",
+                    "variant": "ghost",
+                    "component": "link"
+                  }
+                ],
+                "name": "Enterprise",
+                "price": "",
+                "popular": false,
+                "features": [
+                  {
+                    "_uid": "de2c7aa6-f8f9-4adf-9057-bc15676767cb",
+                    "text": "Everything in Business +",
+                    "component": "pricingTierFeature"
+                  },
+                  {
+                    "_uid": "b920e2d6-760f-47e1-bd2c-8a6193087f3c",
+                    "text": "User provisioning (SCIM)",
+                    "component": "pricingTierFeature"
+                  },
+                  {
+                    "_uid": "8439ee93-995b-4581-8a7d-ac87fb7d03ee",
+                    "text": "Advanced security & controls",
+                    "component": "pricingTierFeature"
+                  },
+                  {
+                    "_uid": "fcd9a4b1-793a-4be8-b0da-8d4fe7c8261c",
+                    "text": "Audit log",
+                    "component": "pricingTierFeature"
+                  },
+                  {
+                    "_uid": "3e212dd3-2490-4bbb-a3cb-8b40f675062a",
+                    "text": "Customer success manager",
+                    "component": "pricingTierFeature"
+                  },
+                  {
+                    "_uid": "5acc56cb-3d7f-4c9f-a8b5-a9777bcfc181",
+                    "text": "Workspace analytics",
+                    "component": "pricingTierFeature"
+                  },
+                  {
+                    "_uid": "493c7815-dbf3-4302-a61f-474f674b96a8",
+                    "text": "Unlimited page history",
+                    "component": "pricingTierFeature"
+                  },
+                  {
+                    "_uid": "fa3f5549-29e0-4791-87f1-5963c931dd8f",
+                    "text": "Security & Compliance integrations",
+                    "component": "pricingTierFeature"
+                  },
+                  {
+                    "_uid": "179bdf45-3bdd-406b-8c0c-33d95122aa04",
+                    "text": "Invite 250 guests",
+                    "component": "pricingTierFeature"
+                  }
+                ],
+                "component": "pricingTier",
+                "description": "For organizations to operate with scalability, control, and security"
+              }
+            ],
+            "component": "pricing",
+            "extraService": [
+              {
+                "_uid": "aa8eee91-81e8-452a-b372-659ae48fcb34",
+                "cost": "10",
+                "text": "Add AI",
+                "component": "pricingExtraService"
+              }
+            ],
+            "extraServiceEnabled": true,
+            "yearlyDiscountPercentage": "20"
           },
           {
             "_uid": "9bd6ae54-2eb3-46fc-ab31-f93c0bc4f5fa",
@@ -4296,7 +4775,7 @@
       "component_id": 5960538,
       "space_id": 293915,
       "created_at": "2024-09-12T12:39:47.903Z",
-      "updated_at": "2024-10-09T16:15:58.466Z",
+      "updated_at": "2024-11-04T08:07:50.258Z",
       "image": "//a.storyblok.com/f/293915/x/63ad25deab/screenshot-2024-09-12-at-14-39-24.png",
       "color": "",
       "icon": "",

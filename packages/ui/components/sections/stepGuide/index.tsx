@@ -46,7 +46,7 @@ export function StepGuide({ link, items }: IStepGuideProps) {
               <div className="text-primaryColor pl-4 text-xl md:pl-0 lg:text-2xl">
                 {number}
               </div>
-              <p className="border-textColor grow border-b py-4 text-xl font-light group-last:border-none lg:py-6 lg:text-3xl">
+              <p className="border-textColor text-textColor grow border-b py-4 text-xl font-light group-last:border-none lg:py-6 lg:text-3xl">
                 {text}
               </p>
             </li>
