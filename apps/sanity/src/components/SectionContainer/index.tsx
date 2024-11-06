@@ -28,6 +28,11 @@ export default function SectionContainer({
   const backgroundImageUrl = backgroundImage
     ? builder.image(backgroundImage).auto("format").fit("max").url()
     : null;
+  const style = backgroundImageUrl
+    ? {
+        background: `url(${backgroundImageUrl}) no-repeat center/cover`,
+      }
+    : {};
 
   const cleanMarginTop = stegaClean(marginTop);
   const cleanMarginBottom = stegaClean(marginBottom);
@@ -49,11 +54,7 @@ export default function SectionContainer({
         "section-darkGray": cleanBackgroundColor === "darkGray",
         "section-black": cleanBackgroundColor === "black",
       })}
-      style={
-        backgroundImageUrl
-          ? { backgroundImage: `url(${backgroundImageUrl})` }
-          : {}
-      }
+      style={style}
     >
       <div
         className={cn("mx-auto px-4 py-8", {

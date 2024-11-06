@@ -23,7 +23,7 @@ export function PricingTable({
   };
 
   return (
-    <div>
+    <>
       <div className="sm:align-center relative sm:flex sm:flex-col">
         <HorizontalSelect
           className={"mb-12"}
@@ -141,6 +141,6 @@ export function PricingTable({
           );
         })}
       </div>
-    </div>
+    </>
   );
 }
