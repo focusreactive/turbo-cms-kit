@@ -16,7 +16,6 @@ export default function SectionContainer({
 }: ISectionContainerProps) {
   const {
     _key,
-    theme,
     marginTop,
     marginBottom,
     paddingX,
@@ -37,7 +36,7 @@ export default function SectionContainer({
   return (
     <section
       id={_key}
-      className={cn("bg-bgColor overflow-x-hidden", theme, className, {
+      className={cn("overflow-x-hidden", className, {
         "mt-0": cleanMarginTop === "none",
         "mb-0": cleanMarginBottom === "none",
         "mt-sectionBase": cleanMarginTop === "base",

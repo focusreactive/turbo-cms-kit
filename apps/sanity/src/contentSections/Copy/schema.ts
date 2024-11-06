@@ -6,7 +6,6 @@ import {
   CommonGroup,
   commonGroups,
   sectionCommonFields,
-  themeField,
 } from "../commonFields";
 
 export default {
@@ -31,7 +30,6 @@ export default {
       initialValue: false,
       validation: (Rule) => Rule.required(),
     }),
-    themeField,
     ...sectionCommonFields,
   ],
   preview: {

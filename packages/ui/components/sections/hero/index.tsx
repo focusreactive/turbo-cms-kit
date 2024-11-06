@@ -7,7 +7,7 @@ export function Hero({ title, text, image, links }: IHeroProps) {
   return (
     <div className="flex items-center gap-8">
       <div className="space-y-8">
-        <h1 className="text-7xl font-bold">{title}</h1>
+        <h1 className="text-textColor text-7xl font-bold">{title}</h1>
         <RichText {...text} />
         <div className="flex gap-4">
           {links.map((link) => (

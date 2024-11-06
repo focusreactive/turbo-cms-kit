@@ -8,7 +8,6 @@ import {
   CommonGroup,
   commonGroups,
   sectionCommonFields,
-  themeField,
 } from "../commonFields";
 
 export const logoItem = defineType({
@@ -79,7 +78,6 @@ export default {
       validation: (Rule) => Rule.required(),
       initialValue: AlignVariant.Left,
     }),
-    themeField,
     ...sectionCommonFields,
   ],
   preview: {

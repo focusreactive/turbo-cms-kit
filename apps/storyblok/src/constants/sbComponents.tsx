@@ -8,12 +8,12 @@ import LinksList from "@/contentSections/LinksList";
 import Logos from "@/contentSections/Logos";
 import Pricing from "src/contentSections/PricingTable";
 import StepGuide from "@/contentSections/StepGuide";
+import ThreeDElement from "@/contentSections/ThreeDElement";
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import PageContainer from "@/components/Page";
 
-import ThreeDElement from '@/contentSections/ThreeDElement'
 // end of sb components imports
 
 export const COMPONENTS = {
@@ -31,5 +31,5 @@ export const COMPONENTS = {
   pricingTable: Pricing,
   stepGuide: StepGuide,
   threeDElement: ThreeDElement,
-// end of sb components mapping
+  // end of sb components mapping
 };

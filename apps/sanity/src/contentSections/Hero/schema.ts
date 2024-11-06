@@ -39,7 +39,6 @@ export default {
       of: [{ type: customLink.name }],
       validation: (Rule) => Rule.required(),
     }),
-    // themeField,
     ...sectionCommonFields,
   ],
   preview: {

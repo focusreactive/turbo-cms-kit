@@ -1467,23 +1467,6 @@
           },
           "optional": false
         },
-        "theme": {
-          "type": "objectAttribute",
-          "value": {
-            "type": "union",
-            "of": [
-              {
-                "type": "string",
-                "value": "light"
-              },
-              {
-                "type": "string",
-                "value": "dark"
-              }
-            ]
-          },
-          "optional": false
-        },
         "marginTop": {
           "type": "objectAttribute",
           "value": {
@@ -1693,23 +1676,6 @@
           },
           "optional": false
         },
-        "theme": {
-          "type": "objectAttribute",
-          "value": {
-            "type": "union",
-            "of": [
-              {
-                "type": "string",
-                "value": "light"
-              },
-              {
-                "type": "string",
-                "value": "dark"
-              }
-            ]
-          },
-          "optional": false
-        },
         "marginTop": {
           "type": "objectAttribute",
           "value": {
@@ -1914,23 +1880,6 @@
               {
                 "type": "string",
                 "value": "right"
-              }
-            ]
-          },
-          "optional": false
-        },
-        "theme": {
-          "type": "objectAttribute",
-          "value": {
-            "type": "union",
-            "of": [
-              {
-                "type": "string",
-                "value": "light"
-              },
-              {
-                "type": "string",
-                "value": "dark"
               }
             ]
           },
@@ -2145,23 +2094,6 @@
           },
           "optional": false
         },
-        "theme": {
-          "type": "objectAttribute",
-          "value": {
-            "type": "union",
-            "of": [
-              {
-                "type": "string",
-                "value": "light"
-              },
-              {
-                "type": "string",
-                "value": "dark"
-              }
-            ]
-          },
-          "optional": false
-        },
         "marginTop": {
           "type": "objectAttribute",
           "value": {
@@ -2354,23 +2286,6 @@
           "type": "objectAttribute",
           "value": {
             "type": "boolean"
-          },
-          "optional": false
-        },
-        "theme": {
-          "type": "objectAttribute",
-          "value": {
-            "type": "union",
-            "of": [
-              {
-                "type": "string",
-                "value": "light"
-              },
-              {
-                "type": "string",
-                "value": "dark"
-              }
-            ]
           },
           "optional": false
         },
@@ -3297,6 +3212,23 @@
           "type": "string"
         }
       },
+      "theme": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "union",
+          "of": [
+            {
+              "type": "string",
+              "value": "light"
+            },
+            {
+              "type": "string",
+              "value": "dark"
+            }
+          ]
+        },
+        "optional": false
+      },
       "title": {
         "type": "objectAttribute",
         "value": {
@@ -3729,23 +3661,6 @@
           "type": "string"
         },
         "optional": true
-      },
-      "theme": {
-        "type": "objectAttribute",
-        "value": {
-          "type": "union",
-          "of": [
-            {
-              "type": "string",
-              "value": "light"
-            },
-            {
-              "type": "string",
-              "value": "dark"
-            }
-          ]
-        },
-        "optional": false
       }
     }
   },
@@ -4145,23 +4060,6 @@
             {
               "type": "string",
               "value": "right"
-            }
-          ]
-        },
-        "optional": false
-      },
-      "theme": {
-        "type": "objectAttribute",
-        "value": {
-          "type": "union",
-          "of": [
-            {
-              "type": "string",
-              "value": "light"
-            },
-            {
-              "type": "string",
-              "value": "dark"
             }
           ]
         },

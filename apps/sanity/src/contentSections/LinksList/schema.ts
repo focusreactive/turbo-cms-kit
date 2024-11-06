@@ -7,7 +7,6 @@ import {
   CommonGroup,
   commonGroups,
   sectionCommonFields,
-  themeField,
 } from "../commonFields";
 
 export default {
@@ -39,7 +38,6 @@ export default {
       validation: (Rule) => Rule.required(),
       initialValue: AlignVariant.Left,
     }),
-    themeField,
     ...sectionCommonFields,
   ],
   preview: {
