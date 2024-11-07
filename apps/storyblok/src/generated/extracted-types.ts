@@ -306,7 +306,7 @@ export interface PricingTableStoryblok {
   tiers?: PricingTableTierStoryblok[];
   yearlyDiscountPercentage?: string;
   extraServiceEnabled?: boolean;
-  extraService?: PricingTableExtraServiceStoryblok[];
+  extraService: PricingTableExtraServiceStoryblok[];
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
   maxWidth: "small" | "base" | "none";
