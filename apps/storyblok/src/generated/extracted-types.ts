@@ -64,25 +64,16 @@ export interface CardsGridStoryblok {
 }
 
 export interface CarouselStoryblok {
+  slidesPerView: string;
+  slides: CarouselSlideStoryblok[];
   effect?: "slide" | "coverflow" | "cube" | "fade" | "flip" | "cards";
-  params?: CarouselParamsStoryblok[];
+  loop?: boolean;
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
   maxWidth: "base" | "none" | "small";
   backgroundColor: "light" | "light-gray" | "dark-gray" | "dark" | "none";
   backgroundImage?: AssetStoryblok;
-  text?: RichTextStoryblok[];
-  slides: CarouselSlideStoryblok[];
   component: "carousel";
-  _uid: string;
-  [k: string]: any;
-}
-
-export interface CarouselParamsStoryblok {
-  loop?: boolean;
-  slidesPerView?: string;
-  spaceBetween?: string;
-  component: "carouselParams";
   _uid: string;
   [k: string]: any;
 }
@@ -315,7 +306,7 @@ export interface PricingTableStoryblok {
   tiers?: PricingTableTierStoryblok[];
   yearlyDiscountPercentage?: string;
   extraServiceEnabled?: boolean;
-  extraService?: PricingTableExtraServiceStoryblok[];
+  extraService: PricingTableExtraServiceStoryblok[];
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
   maxWidth: "small" | "base" | "none";

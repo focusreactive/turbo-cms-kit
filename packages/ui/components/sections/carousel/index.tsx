@@ -67,7 +67,6 @@ const ArrowButton = React.forwardRef<HTMLButtonElement, any>(
 );
 
 export function Carousel({
-  text,
   slides,
   customModules,
   customModulesParams,
@@ -94,7 +93,7 @@ export function Carousel({
   }, [prevButtonRef, nextButtonRef]);
 
   return (
-    <div className={"relative"}>
+    <div className="not-prose relative">
       <ArrowButton
         ref={prevButtonRef}
         className={cn("absolute left-0 top-1/2", {
@@ -104,7 +103,6 @@ export function Carousel({
       />
 
       <GenericCarousel
-        text={text}
         slides={slides.map((slide) => ({
           children: (({
             isNext,

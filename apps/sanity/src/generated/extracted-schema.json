@@ -1173,13 +1173,12 @@
             "value": "section.carousel"
           }
         },
-        "text": {
+        "slidesPerView": {
           "type": "objectAttribute",
           "value": {
-            "type": "inline",
-            "name": "customRichText"
+            "type": "number"
           },
-          "optional": true
+          "optional": false
         },
         "slides": {
           "type": "objectAttribute",
@@ -1234,35 +1233,12 @@
               }
             ]
           },
-          "optional": true
+          "optional": false
         },
-        "params": {
+        "loop": {
           "type": "objectAttribute",
           "value": {
-            "type": "object",
-            "attributes": {
-              "loop": {
-                "type": "objectAttribute",
-                "value": {
-                  "type": "boolean"
-                },
-                "optional": true
-              },
-              "slidesPerView": {
-                "type": "objectAttribute",
-                "value": {
-                  "type": "number"
-                },
-                "optional": true
-              },
-              "spaceBetween": {
-                "type": "objectAttribute",
-                "value": {
-                  "type": "number"
-                },
-                "optional": true
-              }
-            }
+            "type": "boolean"
           },
           "optional": true
         },

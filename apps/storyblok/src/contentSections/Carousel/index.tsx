@@ -9,8 +9,7 @@ import SectionContainer from "@/components/SectionContainer";
 import type { ICarouselProps } from "./types";
 
 export default function Carousel({ blok }: ICarouselProps) {
-  const { text, slides, effect, fullWidth, params } = blok;
-  const { loop, slidesPerView, spaceBetween } = params?.[0] || {};
+  const { slides, effect, fullWidth, loop, slidesPerView } = blok;
 
   if (!slides || slides.length === 0)
     return <EmptyBlock name={blok.component as string} />;
@@ -20,14 +19,11 @@ export default function Carousel({ blok }: ICarouselProps) {
     text: prepareRichTextProps(slide.text?.[0]),
     effect,
   }));
+
   const carouselParams = {
     loop,
-    slidesPerView: slidesPerView
-      ? parseInt(slidesPerView)
-      : effect === "cards"
-        ? 1
-        : 3,
-    spaceBetween: spaceBetween ? parseInt(spaceBetween) : 20,
+    slidesPerView: parseInt(slidesPerView),
+    spaceBetween: 20,
   };
 
   return (
@@ -39,7 +35,6 @@ export default function Carousel({ blok }: ICarouselProps) {
       }}
     >
       <CarouselUI
-        text={prepareRichTextProps(text?.[0])}
         slides={carouselSlides}
         effect={effect}
         params={carouselParams}

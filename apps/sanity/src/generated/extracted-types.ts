@@ -172,18 +172,14 @@ export type SectionHero = {
 
 export type SectionCarousel = {
   _type: "section.carousel";
-  text?: CustomRichText;
+  slidesPerView: number;
   slides: Array<
     {
       _key: string;
     } & CarouselCard
   >;
-  effect?: "slide" | "coverflow" | "cube" | "fade" | "flip" | "cards";
-  params?: {
-    loop?: boolean;
-    slidesPerView?: number;
-    spaceBetween?: number;
-  };
+  effect: "slide" | "coverflow" | "cube" | "fade" | "flip" | "cards";
+  loop?: boolean;
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
   maxWidth: "none" | "base" | "small";
@@ -898,18 +894,14 @@ export type PAGE_BY_SLUG_QUERYResult = {
     | {
         _key: string;
         _type: "section.carousel";
-        text?: CustomRichText;
+        slidesPerView: number;
         slides: Array<
           {
             _key: string;
           } & CarouselCard
         >;
-        effect?: "cards" | "coverflow" | "cube" | "fade" | "flip" | "slide";
-        params?: {
-          loop?: boolean;
-          slidesPerView?: number;
-          spaceBetween?: number;
-        };
+        effect: "cards" | "coverflow" | "cube" | "fade" | "flip" | "slide";
+        loop?: boolean;
         marginTop: "base" | "lg" | "none";
         marginBottom: "base" | "lg" | "none";
         maxWidth: "base" | "none" | "small";

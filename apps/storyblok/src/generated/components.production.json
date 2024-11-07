@@ -495,12 +495,30 @@
       "name": "carousel",
       "display_name": null,
       "created_at": "2024-10-08T14:20:16.827Z",
-      "updated_at": "2024-11-07T06:50:03.707Z",
+      "updated_at": "2024-11-07T07:33:31.803Z",
       "id": 6391276,
       "schema": {
+        "slidesPerView": {
+          "type": "number",
+          "pos": 0,
+          "required": true,
+          "min_value": 1,
+          "default_value": "3"
+        },
+        "slides": {
+          "type": "bloks",
+          "pos": 1,
+          "minimum": 1,
+          "required": true,
+          "restrict_type": "",
+          "restrict_components": true,
+          "component_whitelist": [
+            "carouselSlide"
+          ]
+        },
         "effect": {
           "type": "option",
-          "pos": 0,
+          "pos": 2,
           "use_uuid": true,
           "options": [
             {
@@ -537,19 +555,13 @@
           "default_value": "slide",
           "exclude_empty_option": true
         },
-        "params": {
-          "type": "bloks",
-          "pos": 1,
-          "maximum": 1,
-          "restrict_type": "",
-          "restrict_components": true,
-          "component_whitelist": [
-            "carouselParams"
-          ]
+        "loop": {
+          "type": "boolean",
+          "pos": 3
         },
         "marginTop": {
           "type": "option",
-          "pos": 2,
+          "pos": 4,
           "use_uuid": true,
           "required": true,
           "options": [
@@ -574,7 +586,7 @@
         },
         "marginBottom": {
           "type": "option",
-          "pos": 3,
+          "pos": 5,
           "use_uuid": true,
           "required": true,
           "options": [
@@ -599,7 +611,7 @@
         },
         "maxWidth": {
           "type": "option",
-          "pos": 4,
+          "pos": 6,
           "use_uuid": true,
           "options": [
             {
@@ -624,7 +636,7 @@
         },
         "backgroundColor": {
           "type": "option",
-          "pos": 5,
+          "pos": 7,
           "use_uuid": true,
           "default_value": "none",
           "options": [
@@ -659,30 +671,9 @@
         },
         "backgroundImage": {
           "type": "asset",
-          "pos": 6,
+          "pos": 8,
           "filetypes": [
             "images"
-          ]
-        },
-        "text": {
-          "type": "bloks",
-          "pos": 7,
-          "maximum": 1,
-          "restrict_type": "",
-          "restrict_components": true,
-          "component_whitelist": [
-            "richText"
-          ]
-        },
-        "slides": {
-          "type": "bloks",
-          "pos": 8,
-          "minimum": 1,
-          "required": true,
-          "restrict_type": "",
-          "restrict_components": true,
-          "component_whitelist": [
-            "carouselSlide"
           ]
         },
         "tab-17c5789f-282b-47bb-8520-eb437583e746": {
@@ -693,8 +684,6 @@
             "widthType",
             "backgroundColor",
             "backgroundImage",
-            "effect",
-            "params",
             "maxWidth"
           ],
           "pos": 9,
@@ -708,10 +697,55 @@
       "is_nestable": true,
       "all_presets": [
         {
+          "id": 2344448,
+          "name": "Card slides",
+          "component_id": 6391276,
+          "image": "//a.storyblok.com/f/293915/x/970414ca02/screenshot-2024-11-07-at-11-11-42.png",
+          "icon": "",
+          "color": "",
+          "description": ""
+        },
+        {
+          "id": 2344449,
+          "name": "Coverflow slides",
+          "component_id": 6391276,
+          "image": "//a.storyblok.com/f/293915/x/e7e028bf9d/screenshot-2024-11-07-at-11-12-44.png",
+          "icon": "",
+          "color": "",
+          "description": ""
+        },
+        {
+          "id": 2344434,
+          "name": "Cube slides",
+          "component_id": 6391276,
+          "image": "//a.storyblok.com/f/293915/x/c787cd6a70/screenshot-2024-11-07-at-11-09-28.png",
+          "icon": "",
+          "color": "",
+          "description": ""
+        },
+        {
           "id": 2340541,
-          "name": "Carousel Slider",
+          "name": "Default slides",
           "component_id": 6391276,
           "image": "//a.storyblok.com/f/293915/x/1d5cfd198a/screenshot-2024-11-04-at-10-32-09.png",
+          "icon": "",
+          "color": "",
+          "description": ""
+        },
+        {
+          "id": 2344450,
+          "name": "Fade slides",
+          "component_id": 6391276,
+          "image": "//a.storyblok.com/f/293915/x/ff507a241b/screenshot-2024-11-07-at-11-14-16.png",
+          "icon": "",
+          "color": "",
+          "description": ""
+        },
+        {
+          "id": 2344435,
+          "name": "Flip slides",
+          "component_id": 6391276,
+          "image": "//a.storyblok.com/f/293915/x/92816c38fd/screenshot-2024-11-07-at-11-10-32.png",
           "icon": "",
           "color": "",
           "description": ""
@@ -726,42 +760,6 @@
       "internal_tag_ids": [],
       "content_type_asset_preview": null,
       "component_group_name": "sections"
-    },
-    {
-      "name": "carouselParams",
-      "display_name": null,
-      "created_at": "2024-11-04T08:57:58.232Z",
-      "updated_at": "2024-11-05T15:21:37.597Z",
-      "id": 6508472,
-      "schema": {
-        "loop": {
-          "type": "boolean",
-          "pos": 0
-        },
-        "slidesPerView": {
-          "type": "number",
-          "pos": 1
-        },
-        "spaceBetween": {
-          "type": "number",
-          "pos": 2
-        }
-      },
-      "image": null,
-      "preview_field": null,
-      "is_root": false,
-      "preview_tmpl": null,
-      "is_nestable": true,
-      "all_presets": [],
-      "preset_id": null,
-      "real_name": "carouselParams",
-      "component_group_uuid": "7a581c8c-f6b7-4926-b5b0-98b7a48916b3",
-      "color": null,
-      "icon": null,
-      "internal_tags_list": [],
-      "internal_tag_ids": [],
-      "content_type_asset_preview": null,
-      "component_group_name": "components"
     },
     {
       "name": "carouselSlide",
@@ -803,7 +801,7 @@
           "id": 2311925,
           "name": "Default",
           "component_id": 6391277,
-          "image": "//a.storyblok.com/f/293915/x/6750a101ef/screenshot-2024-10-08-at-16-31-02.png",
+          "image": "//a.storyblok.com/f/293915/x/86f4dd871f/screenshot-2024-11-07-at-11-12-52.png",
           "icon": "",
           "color": "",
           "description": ""
@@ -996,24 +994,6 @@
           "name": "Dark cards with text and image",
           "component_id": 6030874,
           "image": "//a.storyblok.com/f/293915/x/cf02d2ac96/screenshot-2024-09-10-at-16-35-27.png",
-          "icon": "",
-          "color": "",
-          "description": ""
-        },
-        {
-          "id": 2282711,
-          "name": "Image hero",
-          "component_id": 6030874,
-          "image": "//a.storyblok.com/f/293915/x/7e41bb9486/screenshot-2024-09-10-at-16-34-23.png",
-          "icon": "",
-          "color": "",
-          "description": ""
-        },
-        {
-          "id": 2282710,
-          "name": "No image hero",
-          "component_id": 6030874,
-          "image": "//a.storyblok.com/f/293915/x/3f33529295/screenshot-2024-09-10-at-16-33-48.png",
           "icon": "",
           "color": "",
           "description": ""
@@ -1895,17 +1875,8 @@
       "is_nestable": true,
       "all_presets": [
         {
-          "id": 2282729,
-          "name": "Dark align center",
-          "component_id": 6275825,
-          "image": "//a.storyblok.com/f/293915/x/f1a5355ada/screenshot-2024-09-10-at-16-37-34.png",
-          "icon": "",
-          "color": "",
-          "description": ""
-        },
-        {
           "id": 2282730,
-          "name": "Light align left",
+          "name": "Align left",
           "component_id": 6275825,
           "image": "//a.storyblok.com/f/293915/x/1a4b598fb1/screenshot-2024-09-10-at-16-38-04.png",
           "icon": "",
@@ -2376,7 +2347,7 @@
       "name": "pricingTable",
       "display_name": null,
       "created_at": "2024-10-29T14:19:10.496Z",
-      "updated_at": "2024-11-07T06:26:37.299Z",
+      "updated_at": "2024-11-07T10:16:34.141Z",
       "id": 6489128,
       "schema": {
         "tiers": {
@@ -2417,8 +2388,9 @@
           "component_whitelist": [
             "pricingTableExtraService"
           ],
+          "minimum": 1,
           "maximum": 1,
-          "minimum": 1
+          "required": true
         },
         "marginTop": {
           "type": "option",
@@ -2569,18 +2541,21 @@
       "name": "pricingTableExtraService",
       "display_name": null,
       "created_at": "2024-10-29T14:31:04.180Z",
-      "updated_at": "2024-11-05T15:19:13.814Z",
+      "updated_at": "2024-11-07T10:15:56.063Z",
       "id": 6489233,
       "schema": {
         "text": {
           "type": "textarea",
           "pos": 0,
-          "required": true
+          "required": true,
+          "default_value": "Example service name"
         },
         "cost": {
           "type": "number",
           "pos": 1,
-          "required": true
+          "required": true,
+          "default_value": "10",
+          "min_value": -1
         }
       },
       "image": null,
@@ -2665,7 +2640,26 @@
       "is_root": false,
       "preview_tmpl": null,
       "is_nestable": true,
-      "all_presets": [],
+      "all_presets": [
+        {
+          "id": 2344451,
+          "name": "Default",
+          "component_id": 6489131,
+          "image": "//a.storyblok.com/f/293915/x/a3a979a7d8/screenshot-2024-11-07-at-11-16-47.png",
+          "icon": "",
+          "color": "",
+          "description": ""
+        },
+        {
+          "id": 2344452,
+          "name": "Popular",
+          "component_id": 6489131,
+          "image": "//a.storyblok.com/f/293915/x/669572a185/screenshot-2024-11-07-at-11-16-53.png",
+          "icon": "",
+          "color": "",
+          "description": ""
+        }
+      ],
       "preset_id": null,
       "real_name": "pricingTableTier",
       "component_group_uuid": "7a581c8c-f6b7-4926-b5b0-98b7a48916b3",
@@ -2709,7 +2703,7 @@
       "name": "richText",
       "display_name": null,
       "created_at": "2024-07-10T10:54:54.528Z",
-      "updated_at": "2024-10-07T06:34:16.678Z",
+      "updated_at": "2024-11-07T09:33:49.261Z",
       "id": 6033464,
       "schema": {
         "alignVariant": {
@@ -2752,7 +2746,11 @@
             "image",
             "logos",
             "cardsGrid",
-            "linksList"
+            "linksList",
+            "carousel",
+            "threeDElement",
+            "pricingTable",
+            "stepGuide"
           ],
           "key": "content",
           "required": true
@@ -3208,19 +3206,19 @@
           "description": ""
         },
         {
-          "id": 2339068,
-          "name": "Kubik Rubik",
+          "id": 2339069,
+          "name": "Globe",
           "component_id": 6502652,
-          "image": "//a.storyblok.com/f/293915/x/75159faf13/screenshot-2024-11-01-at-10-40-32.png",
+          "image": "//a.storyblok.com/f/293915/x/e7b4b1f94e/screenshot-2024-11-01-at-10-40-44.png",
           "icon": "",
           "color": "",
           "description": ""
         },
         {
-          "id": 2339069,
-          "name": "Sphere",
+          "id": 2339068,
+          "name": "Kubik Rubik",
           "component_id": 6502652,
-          "image": "//a.storyblok.com/f/293915/x/e7b4b1f94e/screenshot-2024-11-01-at-10-40-44.png",
+          "image": "//a.storyblok.com/f/293915/x/75159faf13/screenshot-2024-11-01-at-10-40-32.png",
           "icon": "",
           "color": "",
           "description": ""

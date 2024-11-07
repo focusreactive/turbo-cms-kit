@@ -11,7 +11,7 @@ import {
 export const LinkVariantsClassNames: ILinkVariantsClassNames = {
   [LinkVariant.Default]: "text-textColor",
   [LinkVariant.Primary]:
-    "inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-bgColor rounded-lg bg-primaryColor hover:outline",
+    "inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-textColor rounded-lg bg-primaryColor hover:outline",
   [LinkVariant.Secondary]:
     "inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-textColor border border-textColor rounded-lg focus:ring-4 focus:ring-textSecondaryColor",
   [LinkVariant.HeaderNav]: "text-textColor text-sm font-semibold leading-6",

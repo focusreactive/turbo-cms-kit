@@ -1,9 +1,9 @@
 "use client";
 
+import { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { cn } from "../../../utils";
-import { RichText } from "../richText";
 import type { IGenericCarouselProps } from "./types";
 
 const defaultEffectsConfig = {
@@ -37,16 +37,18 @@ const defaultEffectsConfig = {
 
 export function GenericCarousel({
   slides,
-  text,
   customModules,
   customModulesParams,
   effect,
   params,
 }: IGenericCarouselProps) {
+  // to trigger rerender in preview when changing effect
+  useEffect(() => {
+    console.log("effect changed");
+  }, [effect]);
+
   return (
     <div className="relative mask-shadow-y">
-      {text && <RichText {...text} className={"mb-5"} />}
-
       <Swiper
         modules={customModules || []}
         {...customModulesParams}

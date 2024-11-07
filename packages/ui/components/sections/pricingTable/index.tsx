@@ -23,7 +23,7 @@ export function PricingTable({
   };
 
   return (
-    <>
+    <div className="not-prose">
       <div className="sm:align-center relative sm:flex sm:flex-col">
         <HorizontalSelect
           className={"mb-12"}
@@ -67,7 +67,7 @@ export function PricingTable({
           return (
             <div
               key={tier.name}
-              className={`rounded-lg bg-gray-50 shadow-sm ${
+              className={`rounded-lg bg-gray-50 text-left shadow-sm ${
                 tier.popular ? "ring-2 ring-blue-500" : ""
               }`}
             >
@@ -141,6 +141,6 @@ export function PricingTable({
           );
         })}
       </div>
-    </>
+    </div>
   );
 }

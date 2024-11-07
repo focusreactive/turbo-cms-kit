@@ -45,9 +45,11 @@ export default {
   groups: commonGroups,
   fields: [
     defineField({
+      name: "slidesPerView",
+      type: "number",
       group: CommonGroup.Content,
-      name: "text",
-      type: "customRichText",
+      initialValue: 3,
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       group: CommonGroup.Content,
@@ -59,7 +61,7 @@ export default {
     defineField({
       name: "effect",
       type: "string",
-      group: CommonGroup.Style,
+      group: CommonGroup.Content,
       options: {
         list: [
           { title: "Slide", value: "slide" },
@@ -72,25 +74,13 @@ export default {
         layout: "radio",
       },
       initialValue: "slide",
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
-      name: "params",
-      type: "object",
-      group: CommonGroup.Style,
-      fields: [
-        defineField({
-          name: "loop",
-          type: "boolean",
-        }),
-        defineField({
-          name: "slidesPerView",
-          type: "number",
-        }),
-        defineField({
-          name: "spaceBetween",
-          type: "number",
-        }),
-      ],
+      name: "loop",
+      type: "boolean",
+      group: CommonGroup.Content,
+      initialValue: false,
     }),
     ...sectionCommonFields,
   ],
