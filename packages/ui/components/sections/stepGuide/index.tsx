@@ -12,7 +12,7 @@ export function StepGuide({ link, items }: IStepGuideProps) {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="grid grid-cols-1 gap-8 md:grid-cols-2">
+    <section className="not-prose grid grid-cols-1 gap-8 md:grid-cols-2">
       <div className="relative col-span-1 hidden md:block">
         {items.map(({ image }, index) => (
           <div

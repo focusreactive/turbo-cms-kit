@@ -93,7 +93,7 @@ export function Carousel({
   }, [prevButtonRef, nextButtonRef]);
 
   return (
-    <div className={"relative"}>
+    <div className="not-prose relative">
       <ArrowButton
         ref={prevButtonRef}
         className={cn("absolute left-0 top-1/2", {

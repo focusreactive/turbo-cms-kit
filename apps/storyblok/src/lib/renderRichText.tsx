@@ -83,6 +83,22 @@ export default function renderRichText(data: ISbRichtext) {
           />
         );
       },
+
+      pricingTable: (props) => {
+        return (
+          <StoryblokComponent
+            blok={{ ...props, component: "pricingTable", paddingX: "none" }}
+          />
+        );
+      },
+
+      carousel: (props) => {
+        return (
+          <StoryblokComponent
+            blok={{ ...props, component: "carousel", paddingX: "none" }}
+          />
+        );
+      },
     },
   });
 }
