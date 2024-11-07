@@ -56,14 +56,15 @@ const main = async () => {
     // Log in to storyblok CLI
 
     spinner.start("Logging in to storyblok CLI ⏳");
+    const stdio = "inherit";
     try {
       execSync("pnpm storyblok logout", {
-        stdio: "ignore",
+        stdio,
       });
     } catch (error) {}
 
     execSync(`pnpm storyblok login --token ${sbPersonalAccessToken}`, {
-      stdio: "ignore",
+      stdio,
     });
     spinner.succeed("Successfully logged in to storyblok CLI ✅");
 
@@ -71,7 +72,7 @@ const main = async () => {
 
     spinner.start("Start filling new space with data ⏳");
     execSync(`pnpm push-schemas ${spaceId}`, {
-      stdio: "ignore",
+      stdio,
     });
 
     await updatePageComponentSectionsField(spaceId);

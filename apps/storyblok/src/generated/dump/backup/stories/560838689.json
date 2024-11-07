@@ -7,7 +7,7 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2024-10-09T16:12:42.553Z",
+  "updated_at": "2024-11-07T14:43:35.726Z",
   "published_at": "2024-10-21T12:06:55.000Z",
   "id": 560838689,
   "uuid": "9242f0ad-4f23-46b4-a369-227f91b0d3fd",
@@ -72,11 +72,11 @@
       {
         "_uid": "2c8c692f-6a31-4967-b160-6cb30374f4a5",
         "link": {
-          "id": "19601884-a1af-4b99-bd95-1a3ca01d5b7a",
+          "id": "100e8f7a-3486-44da-b6f1-d4e5fb131247",
           "url": "",
           "linktype": "story",
           "fieldtype": "multilink",
-          "cached_url": "home"
+          "cached_url": "maks"
         },
         "text": "Home",
         "variant": "footerNav",
@@ -85,11 +85,11 @@
       {
         "_uid": "653dae7d-dc6e-4a04-b093-bfa3a7477a45",
         "link": {
-          "id": "5d416347-de08-4adb-b496-00b0a083de3a",
+          "id": "11a25115-a87f-4896-aafc-37d5d35433eb",
           "url": "",
           "linktype": "story",
           "fieldtype": "multilink",
-          "cached_url": "demo"
+          "cached_url": "home"
         },
         "text": "Blog",
         "variant": "footerNav",
@@ -169,7 +169,7 @@
     "disble_fe_editor": false
   },
   "is_startpage": false,
-  "unpublished_changes": false,
+  "unpublished_changes": true,
   "meta_data": null,
   "imported_at": null,
   "pinned": false,
