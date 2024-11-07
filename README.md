@@ -1,126 +1,216 @@
-# CMS-Kit
+# CMS-Kit 🔧
 
 An endeavor accumulating the experience and best practices collected at [Focus Reactive](https://focusreactive.com/).
 The project serves the idea of making Headless CMS-based development accessible, comfortable, and fast.
 
-## Quick start - Storyblok
+## Quick start
 
-1. Create a new repo based on [cms-kit template](https://github.com/focusreactive/turbo-cms-kit)
-![Screenshot 2024-10-24 at 17 52 54](https://github.com/user-attachments/assets/b4773c54-bf7f-4697-ae7e-ada6e5163bf0)
-2. Pull repo locally
-3. Install packages
+### Storyblok
+
+1. Create a new repository using this template by clicking the "Use this template" button at the top of the repository page.
+
+   ![Use template button](path-to-screenshot.png)
+
+2. Clone your new repository:
+
+   ```bash
+   git clone <your-repository-url>
+   ```
+
+3. Navigate to the project directory:
+
+   ```bash
+   cd <repository-name>
+   ```
+
+4. Install dependencies using pnpm:
+
    ```bash
    pnpm install
    ```
-4. Go to CLI folder
+
+5. Navigate to the Storyblok CLI directory:
+
    ```bash
-   cd apps/storyblok/cli
+   cd apps/storyblok/CLI
    ```
-5. Execute command
+
+6. Run the setup script:
+
    ```bash
    node sb.mjs
    ```
-7. Follow steps
 
-### Showcase
+7. Follow the interactive prompts in the CLI tool to:
+   - Enter your Storyblok Personal Access Token
+   - Enter your Vercel Personal Auth Token
+   - Select your Vercel team
+   - Choose a project name
+   - Complete the space creation and configuration process
+
+### [TODO]: add video example
+
+### Sanity
+
+soon
 
 ## Demo 👀
-### Sanity
-- [Demo Landing](https://turbo-cms-kit-sanity.vercel.app/)
-- [CMS](https://turbo-cms-kit-sanity.vercel.app/studio)
 
-### Storyblok
-- [Demo Landing](https://turbo-cms-kit-storyblok.vercel.app/)
-- [CMS](https://app.storyblok.com/#/me/spaces/293915/)
+- [Sanity landing](https://turbo-cms-kit-sanity.vercel.app/)
+- [Storyblok Landing](https://turbo-cms-kit-storyblok.vercel.app/)
 
-## Features 🌟
+## Core Features
 
-- 🚀 Monorepo using **Turborepo**
-- 📁 New `/app` dir
-- 🗂️ Routing, Layouts, Nested Layouts and Layout Groups
-- 🌎 Data Fetching, Caching and Mutation
-- 🛠️ Server and Client Components
-- 🧩 UI Components built using **Radix UI**
-- 🎨 Styled using **Tailwind CSS**
-- 👷🏼‍♂️ Written in **TypeScript**
+- Monorepo using **Turborepo**
+- **Multiple CMS** support
+- New `/app` dir
+- Routing, layouts, nested layouts
+- Data fetching, **caching** and **revalidation**
+- Server and client components
+- Reusable UI components built using **Radix UI**
+- Styled using **tailwind CSS**
+- Written in **TypeScript**
+- Types and components **generation**
+- **CLI** to create new set up project
+- **Themes** using CSS variables
+- **Predefined** structure
 
-## What's inside?
+## Repo structure
 
-This turborepo uses [pnpm](https://pnpm.io) as a package manager. It includes the following packages/apps:
+- `apps/storyblok`: CMS app
+- `apps/sanity`: CMS app
+- `packages/ui`: UI components library, shared between both CMS apps
+- `packages/eslint-config`: shared `eslint` configurations
+- `packages/ts-config`: shared `ts-config` configuration
+- `packages/tailwind-config`: shared `tailwind` configuration
 
-### Apps and Packages
+### Types of components
 
-- `storyblok`: CMS app
-- `sanity`: CMS app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `ts-config`: `tsconfig.json`s used throughout the monorepo
-- `tailwind-config`: `tsconfig.json`s used throughout the monorepo
+- **UI component** - universal and sharable component between multiple CMSs
+- **Controller component** - takes data from CMS, convert it to UI component format, and use UI component with converted props. Each CMS has it's own controller component for each UI component.
+- All **controller components** have common propertiers to change style, such as margin, background, alignment etc.
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+### Components composition and hierarchy
 
-### Utilities
+The website structure follows a clear hierarchical composition:
 
-This turborepo has some additional tools already setup:
+1. Pages
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+   - Top-level components that represent entire web pages
+   - Each page contains multiple sections, SEO properties and theme
 
-### Build
+2. Sections
 
-To build all apps and packages, run the following command:
+   - Container components that organize content into distinct areas
+   - Can be configured with settings like margin, background, width, alignment etc.
+   - Hold and arrange other components
 
-```
-pnpm run build
-```
+3. Base Components
 
-### Develop
+   - Components like **link**, **image**, and **rich text**
+   - Combination of multiple functional components like **card**
+   - Can be combined and reused across different sections
 
-Setup environment variables:
-Link Vercel projects:
-```
-vercel login
-vercel link --repo
-```
+**RichText** component has additional functionality. It allows to add sections inside, which gives ability to combine sections with text.
 
-Pull environment variables from Vercel:
-```
-vercel env --cwd apps/sanity --environment development pull
-vercel env --cwd apps/storyblok --environment development pull
-```
+### New component
 
-To develop all apps and packages, run the following command:
+1. Create new component using generators
 
-```
-pnpm run dev
+```bash
+pnpm gen
 ```
 
-### Remote Caching
+2. Select type of component to create
 
-Turborepo can use a technique known as [Remote Caching](https://turborepo.org/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-pnpm dlx turbo login
+```bash
+- UI: Create a new UI component
+- Storyblok: Create a new content section
+- Sanity: Create a new content section
 ```
 
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
+3. Enter name of the component
+4. Update properties and design
+5. Generate types for new properties
 
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your turborepo:
-
+```bash
+pnpm gen:types
 ```
-pnpm dlx turbo link
+
+## Start project in dev mode
+
+### Instalation
+
+1. Clone repository
+   ```bash
+   git clone https://github.com/focusreactive/cms-kit
+   ```
+2. Go to project directory
+   ```bash
+   cd cms-kit
+   ```
+3. Install dependencies
+   ```bash
+   pnpm install
+   ```
+
+### Environment variables
+
+#### Storyblok project
+
+Create `.env` and `.env.local` files in the root of your project and add the following variables:
+
+.env
+
+```bash
+REPO_PROD_BRANCH="main"
+REPO_TYPE="github"
+REPO_ID="[repo id]"
+REPO_NAME="[nickname]/[repo name]"
 ```
 
-## Useful Links
+.env.local
 
-Learn more about the power of Turborepo:
+```bash
+# Created by Vercel CLI
+NEXT_PUBLIC_API_GATE="https://api.storyblok.com/v2/cdn"
+NEXT_PUBLIC_DOMAIN="https://localhost:4050"
+NEXT_PUBLIC_IS_PREVIEW="true"
+NEXT_PUBLIC_SB_REGION="EU"
+NEXT_PUBLIC_URL="https://localhost:4050"
+SB_PREVIEW_TOKEN="[storyblok space preview token]"
+SB_WEBHOOK_REVALIDATE_SECRET="[storyblok webhook revalidate key]"
+```
 
-- [Pipelines](https://turborepo.org/docs/core-concepts/pipelines)
-- [Caching](https://turborepo.org/docs/core-concepts/caching)
-- [Remote Caching](https://turborepo.org/docs/core-concepts/remote-caching)
-- [Scoped Tasks](https://turborepo.org/docs/core-concepts/scopes)
-- [Configuration Options](https://turborepo.org/docs/reference/configuration)
-- [CLI Usage](https://turborepo.org/docs/reference/command-line-reference)
+#### Sanity
+
+.env
+
+```bash
+REPO_PROD_BRANCH="main"
+REPO_TYPE="github"
+REPO_ID="[repo id]"
+REPO_NAME="[nickname]/[repo name]"
+```
+
+.env.local
+**tbd**
+
+4. Create a new repo based on [cms-kit template](https://github.com/focusreactive/turbo-cms-kit)
+   ![Screenshot 2024-10-24 at 17 52 54](https://github.com/user-attachments/assets/b4773c54-bf7f-4697-ae7e-ada6e5163bf0)
+5. Pull repo locally
+6. Install packages
+   ```bash
+   pnpm install
+   ```
+7. Go to CLI folder
+   ```bash
+   cd apps/storyblok/cli
+   ```
+8. Execute command
+   ```bash
+   node sb.mjs
+   ```
+9. Follow steps
+
+Happy hacking 👾
