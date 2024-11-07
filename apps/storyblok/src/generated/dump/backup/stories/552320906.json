@@ -701,6 +701,7 @@
   "full_slug": "5443434343434-changing-slug-page",
   "default_root": null,
   "disble_fe_editor": false,
+  "disable_fe_editor": false,
   "parent": null,
   "is_startpage": false,
   "unpublished_changes": false,

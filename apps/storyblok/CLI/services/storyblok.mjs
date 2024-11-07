@@ -221,7 +221,7 @@ export async function uploadBackupStories(spaceId) {
   // Get directory path relative to current file
   const __filename = fileURLToPath(import.meta.url);
   const __dirname = dirname(__filename);
-  const backupDir = join(__dirname, "../../src/generated/backup/stories");
+  const backupDir = join(__dirname, "../../src/generated/dump/backup/stories");
 
   // Read all story files from backup directory
   const storyFiles = await readdir(backupDir);
