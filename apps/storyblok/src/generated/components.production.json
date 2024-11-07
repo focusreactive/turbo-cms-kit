@@ -823,7 +823,7 @@
       "name": "copy",
       "display_name": null,
       "created_at": "2024-07-09T16:19:19.131Z",
-      "updated_at": "2024-11-07T06:50:37.992Z",
+      "updated_at": "2024-11-07T06:58:51.104Z",
       "id": 6030874,
       "schema": {
         "isReversedOnMobile": {
@@ -944,13 +944,13 @@
             },
             {
               "_uid": "01c3e13c-f439-4126-8ee6-0a95fa8cb24d",
-              "value": "lightgray",
-              "name": "light-gray"
+              "value": "light-gray",
+              "name": "light gray"
             },
             {
               "_uid": "9aca0b94-d5c0-4352-9174-3dc6517f82c3",
-              "value": "darkgray",
-              "name": "darkgray"
+              "value": "dark-gray",
+              "name": "dark gray"
             },
             {
               "_uid": "ea8810e4-ddec-4323-bad2-f6eba95a8c50",

@@ -101,7 +101,7 @@ export interface CopyStoryblok {
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
   maxWidth: "base" | "none" | "small";
-  backgroundColor: "light" | "lightgray" | "darkgray" | "dark" | "none";
+  backgroundColor: "light" | "light-gray" | "dark-gray" | "dark" | "none";
   backgroundImage?: AssetStoryblok;
   component: "copy";
   _uid: string;
