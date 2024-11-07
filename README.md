@@ -5,11 +5,17 @@ The project serves the idea of making Headless CMS-based development accessible,
 
 ## Quick start
 
+### What you get
+
+1. New Storyblok space, set up with vercel deployments
+2. 10+ ready to use components with different presets(styles)
+3. New Vercel project, deployed and configured with your new Storyblok space
+4. Multiple ready pages in different styles
+
 ### Storyblok
 
 1. Create a new repository using this template by clicking the "Use this template" button at the top of the repository page.
-
-   ![Use template button](path-to-screenshot.png)
+   ![Screenshot 2024-11-07 at 13 38 48](https://github.com/user-attachments/assets/9a159ebd-d810-4b6d-ab79-ab453da6ab9c)
 
 2. Clone your new repository:
 
@@ -56,8 +62,8 @@ soon
 
 ## Demo 👀
 
-- [Sanity landing](https://turbo-cms-kit-sanity.vercel.app/)
-- [Storyblok Landing](https://turbo-cms-kit-storyblok.vercel.app/)
+- [Sanity landing](https://cms-kit-sanity.vercel.app/)
+- [Storyblok Landing](https://cms-kit-storyblok.vercel.app/)
 
 ## Core Features
 
@@ -196,7 +202,7 @@ REPO_NAME="[nickname]/[repo name]"
 .env.local
 **tbd**
 
-4. Create a new repo based on [cms-kit template](https://github.com/focusreactive/turbo-cms-kit)
+4. Create a new repo based on [cms-kit template](https://github.com/focusreactive/cms-kit)
    ![Screenshot 2024-10-24 at 17 52 54](https://github.com/user-attachments/assets/b4773c54-bf7f-4697-ae7e-ada6e5163bf0)
 5. Pull repo locally
 6. Install packages
