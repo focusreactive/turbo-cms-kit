@@ -17,37 +17,41 @@ The project serves the idea of making Headless CMS-based development accessible,
 1. Create a new repository using this template by clicking the "Use this template" button at the top of the repository page.
    ![Screenshot 2024-11-07 at 13 38 48](https://github.com/user-attachments/assets/9a159ebd-d810-4b6d-ab79-ab453da6ab9c)
 
-2. Clone your new repository:
+2. Await the initial workflow to be finished
+  
+![Screenshot 2024-11-07 at 16 00 17](https://github.com/user-attachments/assets/375ce843-8185-4782-95ff-5f9d6aaf2935)
+
+3. Clone your new repository:
 
    ```bash
    git clone <your-repository-url>
    ```
 
-3. Navigate to the project directory:
+4. Navigate to the project directory:
 
    ```bash
    cd <repository-name>
    ```
 
-4. Install dependencies using pnpm:
+5. Install dependencies using pnpm:
 
    ```bash
    pnpm install
    ```
 
-5. Navigate to the Storyblok CLI directory:
+6. Navigate to the Storyblok CLI directory:
 
    ```bash
    cd apps/storyblok/CLI
    ```
 
-6. Run the setup script:
+7. Run the setup script:
 
    ```bash
    node sb.mjs
    ```
 
-7. Follow the interactive prompts in the CLI tool to:
+8. Follow the interactive prompts in the CLI tool to:
    - Enter your Storyblok Personal Access Token
    - Enter your Vercel Personal Auth Token
    - Select your Vercel team
