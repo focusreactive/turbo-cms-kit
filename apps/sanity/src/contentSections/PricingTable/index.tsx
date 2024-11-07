@@ -1,14 +1,14 @@
 import EmptyBlock from "@shared/ui/components/EmptyBlock";
 
-import { PricingTable } from "@shared/ui";
+import { PricingTable as PricingTableUI } from "@shared/ui";
 
 import { prepareImageProps } from "@/lib/adapters/prepareImageProps";
 import { prepareLinkProps } from "@/lib/adapters/prepareLinkProps";
 import SectionContainer from "@/components/SectionContainer";
 
-import type { IPricingSectionProps } from "./types";
+import type { IPricingTableProps } from "./types";
 
-export default function PricingTableSection({ data }: IPricingSectionProps) {
+export default function PricingTable({ data }: IPricingTableProps) {
   if (!data || data.tiers.length === 0)
     return <EmptyBlock name="Pricing table" />;
 
@@ -22,7 +22,7 @@ export default function PricingTableSection({ data }: IPricingSectionProps) {
 
   return (
     <SectionContainer sectionData={data}>
-      <PricingTable {...data} tiers={formattedTiers} />
+      <PricingTableUI {...data} tiers={formattedTiers} />
     </SectionContainer>
   );
 }
