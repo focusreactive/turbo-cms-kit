@@ -1,4 +1,4 @@
-import { type AssetStoryblok } from "@/generated/extracted-types";
+import type { AssetStoryblok } from "@/generated/extracted-types";
 import type { SbBlokData } from "@storyblok/react/rsc";
 
 export interface ISectionContainer extends SbBlokData {
@@ -6,8 +6,8 @@ export interface ISectionContainer extends SbBlokData {
   marginBottom?: "none" | "base" | "lg";
   paddingX?: "none";
   paddingY?: "none";
-  maxWidth?: "none" | "base";
-  backgroundColor?: "none" | "white" | "lightGray" | "darkGray" | "black";
+  maxWidth: "none" | "base" | "small";
+  backgroundColor: "none" | "light" | "dark" | "light-gray" | "dark-gray";
   backgroundImage?: AssetStoryblok;
 }
 
