@@ -56,7 +56,7 @@ const main = async () => {
     // Log in to storyblok CLI
 
     spinner.start("Logging in to storyblok CLI ⏳");
-    const stdio = "inherit";
+    const stdio = "ignore";
     try {
       execSync("pnpm storyblok logout", {
         stdio,
@@ -146,9 +146,15 @@ const main = async () => {
         "green",
       ),
     );
-    console.log(colorText("Space ID:", "cyan"), colorText(spaceId, "yellow"));
     console.log(
-      colorText("Preview Domain:", "cyan"),
+      colorText("Storyblok dashboard:", "cyan"),
+      colorText(
+        `https://app.storyblok.com/me/spaces/${spaceId}/dashboard`,
+        "yellow",
+      ),
+    );
+    console.log(
+      colorText("Domain:", "cyan"),
       colorText(productionDeploymentUrl, "yellow"),
     );
   } catch (error) {
