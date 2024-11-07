@@ -1,13 +1,12 @@
 // start of sb components imports
 import Blog from "@/contentSections/Blog";
 import CardsGrid from "@/contentSections/CardsGrid";
-import SimpleCarousel from "@/contentSections/carousels/SimpleCarousel";
-import WideSimpleCarousel from "@/contentSections/carousels/WideSimpleCarousel";
+import Carousel from "src/contentSections/Carousel";
 import Copy from "@/contentSections/Copy";
 import Hero from "@/contentSections/Hero";
 import LinksList from "@/contentSections/LinksList";
 import Logos from "@/contentSections/Logos";
-import Pricing from "@/contentSections/Pricing";
+import Pricing from "src/contentSections/PricingTable";
 import StepGuide from "@/contentSections/StepGuide";
 import ThreeDElement from "@/contentSections/ThreeDElement";
 
@@ -27,10 +26,9 @@ export const COMPONENTS = {
   linksList: LinksList,
   cardsGrid: CardsGrid,
   blog: Blog,
-  simpleCarousel: SimpleCarousel,
-  wideSimpleCarousel: WideSimpleCarousel,
+  carousel: Carousel,
   hero: Hero,
-  pricing: Pricing,
+  pricingTable: Pricing,
   stepGuide: StepGuide,
   threeDElement: ThreeDElement,
   // end of sb components mapping

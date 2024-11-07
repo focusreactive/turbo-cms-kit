@@ -6,7 +6,7 @@ import customLink from "@/lib/schemas/customLink";
 import {
   CommonGroup,
   commonGroups,
-  sectionMarginFields,
+  sectionCommonFields,
 } from "../commonFields";
 
 export default {
@@ -38,7 +38,7 @@ export default {
       validation: (Rule) => Rule.required(),
       initialValue: AlignVariant.Left,
     }),
-    ...sectionMarginFields,
+    ...sectionCommonFields,
   ],
   preview: {
     select: {

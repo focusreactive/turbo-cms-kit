@@ -1,10 +1,14 @@
+import type { SectionHero } from "@/generated/extracted-types";
+
 interface ISectionData {
   _key: string;
   paddingX?: "none";
   paddingY?: "none";
   marginTop?: "none" | "base" | "lg";
   marginBottom?: "none" | "base" | "lg";
-  noMaxWidth?: boolean;
+  maxWidth?: SectionHero["maxWidth"];
+  backgroundColor?: SectionHero["backgroundColor"];
+  backgroundImage?: SectionHero["backgroundImage"];
 }
 
 export interface ISectionContainerProps {

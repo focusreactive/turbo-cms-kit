@@ -280,6 +280,585 @@
       "description": ""
     },
     {
+      "id": 2340541,
+      "name": "Carousel Slider",
+      "preset": {
+        "_uid": "30ecfbb2-2449-4bd1-a711-39ccf618b8f7",
+        "text": [
+          {
+            "_uid": "524a3ed7-7b22-4b05-bbb8-8d7429b12890",
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "text": "Explore our collection",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            "component": "richText",
+            "alignVariant": "center",
+            "removeInnerMargins": false
+          }
+        ],
+        "effect": "slide",
+        "params": [
+          {
+            "_uid": "ee30c555-494c-40d3-8e4a-ce5539abd358",
+            "loop": true,
+            "component": "carouselParams",
+            "spaceBetween": "",
+            "slidesPerView": ""
+          }
+        ],
+        "slides": [
+          {
+            "_uid": "331ee89b-86ca-499b-bf43-37f12aa52bf2",
+            "text": [
+              {
+                "_uid": "0dfd7093-a20e-4654-b220-2adc2d0f2ff1",
+                "content": {
+                  "type": "doc",
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 3
+                      },
+                      "content": [
+                        {
+                          "text": "Phasellus ut sagittis sapien",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel congue est, sed ullamcorper sapien. Cras purus leo, rutrum tincidunt lacus id, pretium commodo risus. Maecenas auctor erat vel pretium sagittis.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "component": "richText",
+                "alignVariant": "left",
+                "removeInnerMargins": false
+              }
+            ],
+            "image": [
+              {
+                "_uid": "3e8a01e0-6c16-40c4-abb7-de2d347bf517",
+                "asset": {
+                  "id": 18057065,
+                  "alt": "",
+                  "name": "",
+                  "focus": "",
+                  "title": "",
+                  "source": "",
+                  "filename": "https://a.storyblok.com/f/293915/960x960/ffc4b04f00/app-launch.svg",
+                  "copyright": "",
+                  "fieldtype": "asset",
+                  "meta_data": {},
+                  "is_external_url": false
+                },
+                "component": "image",
+                "aspectRatio": "1/1"
+              }
+            ],
+            "component": "carouselSlide"
+          },
+          {
+            "_uid": "7209f1a7-e6a3-4275-b6db-fc0777680647",
+            "text": [
+              {
+                "_uid": "54cd2fe4-8d02-451c-af86-59b42e71e852",
+                "content": {
+                  "type": "doc",
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 3
+                      },
+                      "content": [
+                        {
+                          "text": "Praesent justo elit",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "raesent quis pellentesque dui. Duis venenatis felis et ante hendrerit tempus. Nulla libero dolor, faucibus vel sapien sit amet, accumsan condimentum ligula.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "component": "richText",
+                "alignVariant": "left",
+                "removeInnerMargins": false
+              }
+            ],
+            "image": [
+              {
+                "_uid": "419c26e9-139a-4485-8ef5-8a29a9f7ee11",
+                "asset": {
+                  "id": 18057068,
+                  "alt": "",
+                  "name": "",
+                  "focus": "",
+                  "title": "",
+                  "source": "",
+                  "filename": "https://a.storyblok.com/f/293915/960x960/22886aae41/student-with-diploma.svg",
+                  "copyright": "",
+                  "fieldtype": "asset",
+                  "meta_data": {},
+                  "is_external_url": false
+                },
+                "component": "image",
+                "aspectRatio": "1/1"
+              }
+            ],
+            "component": "carouselSlide"
+          },
+          {
+            "_uid": "6e0f042b-1e78-43ea-a873-5e39d45155df",
+            "text": [
+              {
+                "_uid": "9d181c02-b28e-457e-8666-7e889058acd1",
+                "content": {
+                  "type": "doc",
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 3
+                      },
+                      "content": [
+                        {
+                          "text": "Nullam massa tortor",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Pellentesque faucibus enim sed mi gravida feugiat. Duis a massa commodo, aliquam justo eu, aliquam purus. Aenean mi eros, condimentum vel euismod id, sodales id sem. Etiam sed erat nisl.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "component": "richText",
+                "alignVariant": "left",
+                "removeInnerMargins": false
+              }
+            ],
+            "image": [
+              {
+                "_uid": "27926f11-6f59-4c5a-a53d-8032bbba460c",
+                "asset": {
+                  "id": 18057069,
+                  "alt": "",
+                  "name": "",
+                  "focus": "",
+                  "title": "",
+                  "source": "",
+                  "filename": "https://a.storyblok.com/f/293915/960x960/86e30de7f4/team-idea.svg",
+                  "copyright": "",
+                  "fieldtype": "asset",
+                  "meta_data": {},
+                  "is_external_url": false
+                },
+                "component": "image",
+                "aspectRatio": "1/1"
+              }
+            ],
+            "component": "carouselSlide"
+          },
+          {
+            "_uid": "35f417cd-b047-45a8-a45b-41ef28183dc0",
+            "text": [
+              {
+                "_uid": "fdd929c5-cb78-44e7-b529-786c032eab99",
+                "content": {
+                  "type": "doc",
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 3
+                      },
+                      "content": [
+                        {
+                          "text": "Pellentesque fringilla neque tortor",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Nam posuere, sapien ultrices porttitor fermentum, enim enim facilisis neque, quis dictum eros sapien a metus. Cras magna ex, euismod in turpis vel, mollis tincidunt est. In feugiat quam at purus scelerisque dictum.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "component": "richText",
+                "alignVariant": "left",
+                "removeInnerMargins": false
+              }
+            ],
+            "image": [
+              {
+                "_uid": "222ede77-c473-42a9-9417-722a3f4f4e52",
+                "asset": {
+                  "id": 18057064,
+                  "alt": "",
+                  "name": "",
+                  "focus": "",
+                  "title": "",
+                  "source": "",
+                  "filename": "https://a.storyblok.com/f/293915/960x960/b5c805d300/genius.svg",
+                  "copyright": "",
+                  "fieldtype": "asset",
+                  "meta_data": {},
+                  "is_external_url": false
+                },
+                "component": "image",
+                "aspectRatio": "1/1"
+              }
+            ],
+            "component": "carouselSlide"
+          },
+          {
+            "_uid": "147eaeca-0d45-4f69-a826-38abf4134b2e",
+            "text": [
+              {
+                "_uid": "667ac57d-6d8e-470f-983e-b7ea8206d96a",
+                "content": {
+                  "type": "doc",
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 3
+                      },
+                      "content": [
+                        {
+                          "text": "Duis at fringilla ligula",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Suspendisse non nisi ornare, laoreet sem et, vehicula ante. Integer aliquet pharetra imperdiet. Duis at elementum sapien. Maecenas eget enim a nisl posuere cursus.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "component": "richText",
+                "alignVariant": "left",
+                "removeInnerMargins": false
+              }
+            ],
+            "image": [
+              {
+                "_uid": "3f48fae9-2684-4191-9bc6-e7db8b477a50",
+                "asset": {
+                  "id": 18057071,
+                  "alt": "",
+                  "name": "",
+                  "focus": "",
+                  "title": "",
+                  "source": "",
+                  "filename": "https://a.storyblok.com/f/293915/960x960/598514ea61/studying.svg",
+                  "copyright": "",
+                  "fieldtype": "asset",
+                  "meta_data": {},
+                  "is_external_url": false
+                },
+                "component": "image",
+                "aspectRatio": "1/1"
+              }
+            ],
+            "component": "carouselSlide"
+          },
+          {
+            "_uid": "562e7469-cde4-42df-9683-68dccca430e1",
+            "text": [
+              {
+                "_uid": "a4690fa6-0d7c-4540-98d3-c51697a49b03",
+                "content": {
+                  "type": "doc",
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 3
+                      },
+                      "content": [
+                        {
+                          "text": "Donec mattis eros in accumsan dapibus",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Sed volutpat feugiat ligula, sed facilisis purus rutrum vitae. Quisque aliquam velit a elit egestas ullamcorper. Duis vestibulum egestas augue quis posuere.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "component": "richText",
+                "alignVariant": "left",
+                "removeInnerMargins": false
+              }
+            ],
+            "image": [
+              {
+                "_uid": "6db5efa1-5084-4bce-9ea5-277cab9bdfb1",
+                "asset": {
+                  "id": 18057067,
+                  "alt": "",
+                  "name": "",
+                  "focus": "",
+                  "title": "",
+                  "source": "",
+                  "filename": "https://a.storyblok.com/f/293915/960x960/a6b5e81714/calculator.svg",
+                  "copyright": "",
+                  "fieldtype": "asset",
+                  "meta_data": {},
+                  "is_external_url": false
+                },
+                "component": "image",
+                "aspectRatio": "1/1"
+              }
+            ],
+            "component": "carouselSlide"
+          },
+          {
+            "_uid": "59b1c3e6-be06-422c-84ce-fb724640f099",
+            "text": [
+              {
+                "_uid": "0297656b-5430-413b-bcc7-3fc325bb3712",
+                "content": {
+                  "type": "doc",
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 3
+                      },
+                      "content": [
+                        {
+                          "text": "Mauris vitae libero turpis",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Vestibulum fermentum sem ut velit blandit, sit amet malesuada metus luctus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "component": "richText",
+                "alignVariant": "left",
+                "removeInnerMargins": false
+              }
+            ],
+            "image": [
+              {
+                "_uid": "5dbac30d-46fd-492b-b70b-4d4315f4dc9f",
+                "asset": {
+                  "id": 18057066,
+                  "alt": "",
+                  "name": "",
+                  "focus": "",
+                  "title": "",
+                  "source": "",
+                  "filename": "https://a.storyblok.com/f/293915/960x960/98463efc0c/engineer.svg",
+                  "copyright": "",
+                  "fieldtype": "asset",
+                  "meta_data": {},
+                  "is_external_url": false
+                },
+                "component": "image",
+                "aspectRatio": "1/1"
+              }
+            ],
+            "component": "carouselSlide"
+          },
+          {
+            "_uid": "385f061f-a375-40cf-808b-5c852d6616b9",
+            "text": [
+              {
+                "_uid": "06ed8342-d06b-49e9-a83d-c7a1d2775371",
+                "content": {
+                  "type": "doc",
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 3
+                      },
+                      "content": [
+                        {
+                          "text": "Cras ullamcorper auctor bibendum",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla volutpat elementum risus eget blandit. Vestibulum accumsan felis id mauris consectetur blandit.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "component": "richText",
+                "alignVariant": "left",
+                "removeInnerMargins": false
+              }
+            ],
+            "image": [
+              {
+                "_uid": "ae6ca0d5-a573-4552-acee-af3211a2239a",
+                "asset": {
+                  "id": 18057063,
+                  "alt": "",
+                  "name": "",
+                  "focus": "",
+                  "title": "",
+                  "source": "",
+                  "filename": "https://a.storyblok.com/f/293915/960x960/5b72f21a56/presentation.svg",
+                  "copyright": "",
+                  "fieldtype": "asset",
+                  "meta_data": {},
+                  "is_external_url": false
+                },
+                "component": "image",
+                "aspectRatio": "1/1"
+              }
+            ],
+            "component": "carouselSlide"
+          },
+          {
+            "_uid": "d29ddcba-54c3-4624-97ff-b03adcafb05d",
+            "text": [
+              {
+                "_uid": "1c662c04-fd33-444c-8260-744581b92698",
+                "content": {
+                  "type": "doc",
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 3
+                      },
+                      "content": [
+                        {
+                          "text": "Praesent vestibulum",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Proin ex nisi, ultrices nec posuere sit amet, scelerisque eu metus. Donec tristique at felis ut scelerisque. Nam id lectus id urna eleifend dignissim.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "component": "richText",
+                "alignVariant": "left",
+                "removeInnerMargins": false
+              }
+            ],
+            "image": [
+              {
+                "_uid": "4a885d14-2498-44fc-b2d0-66d3d9e8f26c",
+                "asset": {
+                  "id": 18057070,
+                  "alt": "",
+                  "name": "",
+                  "focus": "",
+                  "title": "",
+                  "source": "",
+                  "filename": "https://a.storyblok.com/f/293915/960x960/bf6793fa17/taking-notes.svg",
+                  "copyright": "",
+                  "fieldtype": "asset",
+                  "meta_data": {},
+                  "is_external_url": false
+                },
+                "component": "image",
+                "aspectRatio": "1/1"
+              }
+            ],
+            "component": "carouselSlide"
+          }
+        ],
+        "maxWidth": "base",
+        "component": "carousel",
+        "marginTop": "base",
+        "marginBottom": "base",
+        "backgroundColor": "none"
+      },
+      "component_id": 6391276,
+      "space_id": 293915,
+      "created_at": "2024-11-04T09:36:56.351Z",
+      "updated_at": "2024-11-06T09:41:15.597Z",
+      "image": "//a.storyblok.com/f/293915/x/1d5cfd198a/screenshot-2024-11-04-at-10-32-09.png",
+      "color": "",
+      "icon": "",
+      "description": ""
+    },
+    {
       "id": 2282748,
       "name": "Clickable logo",
       "preset": {
@@ -1289,49 +1868,6 @@
       "description": ""
     },
     {
-      "id": 2337115,
-      "name": "Default",
-      "preset": {
-        "_uid": "611c74ab-fad3-4b2f-9ee6-ba15543e98d3",
-        "text": " Add your first product",
-        "image": [
-          {
-            "_uid": "2e1f5bca-6409-430a-b3aa-1d9fc7ddbe18",
-            "asset": {
-              "id": 17902334,
-              "alt": "call us",
-              "name": "",
-              "focus": "",
-              "title": "",
-              "source": "",
-              "filename": "https://a.storyblok.com/f/293915/960x960/6a4a666d16/call-us.svg",
-              "copyright": "",
-              "fieldtype": "asset",
-              "meta_data": {
-                "alt": "call us",
-                "title": "",
-                "source": "",
-                "copyright": ""
-              },
-              "is_external_url": false
-            },
-            "component": "image",
-            "aspectRatio": "3/1"
-          }
-        ],
-        "number": "01",
-        "component": "stepGuideItem"
-      },
-      "component_id": 6492255,
-      "space_id": 293915,
-      "created_at": "2024-10-30T16:11:36.349Z",
-      "updated_at": "2024-10-30T16:20:36.391Z",
-      "image": "//a.storyblok.com/f/293915/x/8becce59cc/screenshot-2024-10-30-at-17-11-17.png",
-      "color": "",
-      "icon": "",
-      "description": ""
-    },
-    {
       "id": 2313388,
       "name": "Default",
       "preset": {
@@ -1622,146 +2158,6 @@
       "description": ""
     },
     {
-      "id": 2311924,
-      "name": "Default",
-      "preset": {
-        "_uid": "1af10d2b-9756-473d-b00c-f6ec1cf95a86",
-        "slides": [
-          {
-            "_uid": "05887b7b-05c9-48d9-b108-bdf0aa2784e2",
-            "image": [
-              {
-                "_uid": "49701e3f-4a74-42c7-b0a2-3cf3ebd021c6",
-                "asset": {
-                  "id": 17593700,
-                  "alt": "",
-                  "name": "",
-                  "focus": "",
-                  "title": "",
-                  "source": "",
-                  "filename": "https://a.storyblok.com/f/293915/3840x2160/2e8c505a38/nike-logo.png",
-                  "copyright": "",
-                  "fieldtype": "asset",
-                  "meta_data": {},
-                  "is_external_url": false
-                },
-                "component": "image",
-                "aspectRatio": "16/9"
-              }
-            ],
-            "component": "simpleCarouselSlide"
-          },
-          {
-            "_uid": "417c36e6-a409-4a37-a836-820c3a67682d",
-            "image": [
-              {
-                "_uid": "9bf63bef-15e9-4a10-a051-c83fcf1e2f77",
-                "asset": {
-                  "id": 17593700,
-                  "alt": "",
-                  "name": "",
-                  "focus": "",
-                  "title": "",
-                  "source": "",
-                  "filename": "https://a.storyblok.com/f/293915/3840x2160/2e8c505a38/nike-logo.png",
-                  "copyright": "",
-                  "fieldtype": "asset",
-                  "meta_data": {},
-                  "is_external_url": false
-                },
-                "component": "image",
-                "aspectRatio": "16/9"
-              }
-            ],
-            "component": "simpleCarouselSlide"
-          },
-          {
-            "_uid": "888d00d4-ab5e-45c2-9c7a-844cad205c4b",
-            "image": [
-              {
-                "_uid": "2c717744-1757-4bbc-b01b-8cb35ab0100c",
-                "asset": {
-                  "id": 17593700,
-                  "alt": "",
-                  "name": "",
-                  "focus": "",
-                  "title": "",
-                  "source": "",
-                  "filename": "https://a.storyblok.com/f/293915/3840x2160/2e8c505a38/nike-logo.png",
-                  "copyright": "",
-                  "fieldtype": "asset",
-                  "meta_data": {},
-                  "is_external_url": false
-                },
-                "component": "image",
-                "aspectRatio": "16/9"
-              }
-            ],
-            "component": "simpleCarouselSlide"
-          },
-          {
-            "_uid": "f44ca52a-ce5f-4be4-a5fc-367424f0a917",
-            "image": [
-              {
-                "_uid": "2d31244a-823a-418d-b2be-bea0b266d932",
-                "asset": {
-                  "id": 17593700,
-                  "alt": "",
-                  "name": "",
-                  "focus": "",
-                  "title": "",
-                  "source": "",
-                  "filename": "https://a.storyblok.com/f/293915/3840x2160/2e8c505a38/nike-logo.png",
-                  "copyright": "",
-                  "fieldtype": "asset",
-                  "meta_data": {},
-                  "is_external_url": false
-                },
-                "component": "image",
-                "aspectRatio": "16/9"
-              }
-            ],
-            "component": "simpleCarouselSlide"
-          },
-          {
-            "_uid": "2d757401-fb99-4632-b7b3-eee67d7ceb0b",
-            "image": [
-              {
-                "_uid": "93bb87e9-c91d-432f-b789-60a446afe1c7",
-                "asset": {
-                  "id": 17593700,
-                  "alt": "",
-                  "name": "",
-                  "focus": "",
-                  "title": "",
-                  "source": "",
-                  "filename": "https://a.storyblok.com/f/293915/3840x2160/2e8c505a38/nike-logo.png",
-                  "copyright": "",
-                  "fieldtype": "asset",
-                  "meta_data": {},
-                  "is_external_url": false
-                },
-                "component": "image",
-                "aspectRatio": "16/9"
-              }
-            ],
-            "component": "simpleCarouselSlide"
-          }
-        ],
-        "component": "simpleCarousel",
-        "marginTop": "base",
-        "marginBottom": "base"
-      },
-      "component_id": 6391276,
-      "space_id": 293915,
-      "created_at": "2024-10-08T14:31:24.209Z",
-      "updated_at": "2024-10-08T15:43:18.631Z",
-      "image": "//a.storyblok.com/f/293915/x/bd83ad5125/screenshot-2024-10-08-at-16-30-53.png",
-      "color": "",
-      "icon": "",
-      "description": ""
-    },
-    {
       "id": 2311925,
       "name": "Default",
       "preset": {
@@ -1786,7 +2182,7 @@
             "aspectRatio": "16/9"
           }
         ],
-        "component": "simpleCarouselSlide"
+        "component": "carouselSlide"
       },
       "component_id": 6391277,
       "space_id": 293915,
@@ -1798,108 +2194,138 @@
       "description": ""
     },
     {
-      "id": 2311926,
+      "id": 2225127,
       "name": "Default",
       "preset": {
-        "_uid": "2963f7a9-478b-4e19-bf21-67d84194e837",
-        "slides": [
+        "_uid": "8a993c13-4588-46b4-8285-d2f59d18b11f",
+        "text": [
           {
-            "_uid": "0ccdf046-e9db-4891-823d-11f51521e4c8",
-            "image": [
-              {
-                "_uid": "26281072-b130-4d56-baa7-16576c3ab2d2",
-                "asset": {
-                  "id": 17302361,
-                  "alt": "",
-                  "name": "",
-                  "focus": "",
-                  "title": "",
-                  "source": "",
-                  "filename": "https://a.storyblok.com/f/293915/1792x1024/3c65b2e66b/generated-social-logo.webp",
-                  "copyright": "",
-                  "fieldtype": "asset",
-                  "meta_data": {
-                    "alt": "",
-                    "title": "",
-                    "source": "",
-                    "copyright": ""
+            "_uid": "d8050fa9-6b9d-438f-99e3-d038c9250382",
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
                   },
-                  "is_external_url": false
+                  "content": [
+                    {
+                      "text": "Let's find more that brings us together.",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    }
+                  ]
                 },
-                "component": "image",
-                "aspectRatio": "16/9"
-              }
-            ],
-            "component": "wideSimpleCarouselSlide"
-          },
-          {
-            "_uid": "c4b36d3e-c74a-41f1-bb10-4416feb2a47a",
-            "image": [
-              {
-                "_uid": "ea72ad37-268f-497c-8b11-394e1f406d55",
-                "asset": {
-                  "id": 17302361,
-                  "alt": "",
-                  "name": "",
-                  "focus": "",
-                  "title": "",
-                  "source": "",
-                  "filename": "https://a.storyblok.com/f/293915/1792x1024/3c65b2e66b/generated-social-logo.webp",
-                  "copyright": "",
-                  "fieldtype": "asset",
-                  "meta_data": {
-                    "alt": "",
-                    "title": "",
-                    "source": "",
-                    "copyright": ""
-                  },
-                  "is_external_url": false
-                },
-                "component": "image",
-                "aspectRatio": "16/9"
-              }
-            ],
-            "component": "wideSimpleCarouselSlide"
-          },
-          {
-            "_uid": "03bfbc9f-63e7-4f3c-ac4a-ff2feeb80b5a",
-            "image": [
-              {
-                "_uid": "fc70e0b5-eec4-4716-8e6a-32f1d1fcd3af",
-                "asset": {
-                  "id": 17302361,
-                  "alt": "",
-                  "name": "",
-                  "focus": "",
-                  "title": "",
-                  "source": "",
-                  "filename": "https://a.storyblok.com/f/293915/1792x1024/3c65b2e66b/generated-social-logo.webp",
-                  "copyright": "",
-                  "fieldtype": "asset",
-                  "meta_data": {
-                    "alt": "",
-                    "title": "",
-                    "source": "",
-                    "copyright": ""
-                  },
-                  "is_external_url": false
-                },
-                "component": "image",
-                "aspectRatio": "16/9"
-              }
-            ],
-            "component": "wideSimpleCarouselSlide"
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "Flowbite helps you connect with friends, family and communities of people who share your interests. Connecting with your friends and family as well as discovering new ones is easy with features like Groups, Watch and Marketplace.",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            "component": "richText",
+            "removeInnerMargins": false
           }
         ],
-        "component": "wideSimpleCarousel",
-        "marginTop": "base",
-        "marginBottom": "base"
+        "links": [
+          {
+            "_uid": "bdb0b522-2f4c-4836-a8bc-d8526d5acb94",
+            "link": {
+              "id": "",
+              "url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768",
+              "linktype": "url",
+              "fieldtype": "multilink",
+              "cached_url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768"
+            },
+            "text": "Get Started",
+            "variant": "primary",
+            "component": "link"
+          },
+          {
+            "_uid": "d084111d-6fbd-4159-8210-81694be82221",
+            "link": {
+              "id": "",
+              "url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768",
+              "linktype": "url",
+              "fieldtype": "multilink",
+              "cached_url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768"
+            },
+            "text": "Learn More",
+            "variant": "secondary",
+            "component": "link"
+          },
+          {
+            "_uid": "4cf8608f-0859-4c87-a74d-2d2b2c5e24fe",
+            "link": {
+              "id": "",
+              "url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768",
+              "linktype": "url",
+              "fieldtype": "multilink",
+              "cached_url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768"
+            },
+            "text": "New Info",
+            "variant": "secondary",
+            "component": "link"
+          }
+        ],
+        "variant": "default",
+        "component": "cta"
       },
-      "component_id": 6391278,
+      "component_id": 6030875,
       "space_id": 293915,
-      "created_at": "2024-10-08T14:32:09.841Z",
-      "updated_at": "2024-10-08T15:43:04.740Z",
-      "image": "//a.storyblok.com/f/293915/x/8326dcb7a4/screenshot-2024-10-08-at-16-30-56.png",
+      "created_at": "2024-07-12T15:24:16.323Z",
+      "updated_at": "2024-07-12T15:24:16.323Z",
+      "image": "//a.storyblok.com/f/293915/x/eb1b14e23e/cta.png",
+      "color": "",
+      "icon": "",
+      "description": ""
+    },
+    {
+      "id": 2311927,
+      "name": "Default",
+      "preset": {
+        "_uid": "78b9116c-66e1-47e6-a843-3420b3ccc362",
+        "image": [
+          {
+            "_uid": "28239737-5fc1-448d-a995-19b7fc5021a2",
+            "asset": {
+              "id": 17302361,
+              "alt": "",
+              "name": "",
+              "focus": "",
+              "title": "",
+              "source": "",
+              "filename": "https://a.storyblok.com/f/293915/1792x1024/3c65b2e66b/generated-social-logo.webp",
+              "copyright": "",
+              "fieldtype": "asset",
+              "meta_data": {
+                "alt": "",
+                "title": "",
+                "source": "",
+                "copyright": ""
+              },
+              "is_external_url": false
+            },
+            "component": "image",
+            "aspectRatio": "16/9"
+          }
+        ],
+        "component": "wideSimpleCarouselSlide"
+      },
+      "component_id": 6391279,
+      "space_id": 293915,
+      "created_at": "2024-10-08T14:32:40.489Z",
+      "updated_at": "2024-10-08T14:32:40.489Z",
+      "image": "//a.storyblok.com/f/293915/x/e32cf6ec6b/screenshot-2024-10-08-at-16-31-09.png",
       "color": "",
       "icon": "",
       "description": ""
@@ -2020,110 +2446,6 @@
       "created_at": "2024-10-09T05:55:35.787Z",
       "updated_at": "2024-10-09T05:55:35.787Z",
       "image": "//a.storyblok.com/f/293915/x/beab857f5f/screenshot-2024-10-08-at-13-37-02.png",
-      "color": "",
-      "icon": "",
-      "description": ""
-    },
-    {
-      "id": 2311975,
-      "name": "Default",
-      "preset": {
-        "_uid": "58f68ee7-d789-4201-8963-03c08c0edbe5",
-        "text": [
-          {
-            "_uid": "cdc6dfbd-5208-40a4-af7e-0fdbcedafafb",
-            "content": {
-              "type": "doc",
-              "content": [
-                {
-                  "type": "heading",
-                  "attrs": {
-                    "level": 2
-                  },
-                  "content": [
-                    {
-                      "text": "In Notion, work feels better.",
-                      "type": "text"
-                    }
-                  ]
-                },
-                {
-                  "type": "heading",
-                  "attrs": {
-                    "level": 2
-                  },
-                  "content": [
-                    {
-                      "text": "With a little help from AI.",
-                      "type": "text"
-                    }
-                  ]
-                }
-              ]
-            },
-            "component": "richText",
-            "alignVariant": "left",
-            "removeInnerMargins": true
-          }
-        ],
-        "image": [
-          {
-            "_uid": "262bcb34-10e0-4400-aea5-2a7dc5f68598",
-            "asset": {
-              "id": 17600300,
-              "alt": "",
-              "name": "",
-              "focus": "",
-              "title": "",
-              "source": "",
-              "filename": "https://a.storyblok.com/f/293915/2474x1318/df22f90af3/screenshot-2024-10-08-at-16-53-38.png",
-              "copyright": "",
-              "fieldtype": "asset",
-              "meta_data": {},
-              "is_external_url": false
-            },
-            "component": "image",
-            "aspectRatio": "16/9"
-          }
-        ],
-        "links": [
-          {
-            "_uid": "38ffb55a-d12a-4e63-b2b0-5996c0d79177",
-            "link": {
-              "id": "5d416347-de08-4adb-b496-00b0a083de3a",
-              "url": "",
-              "linktype": "story",
-              "fieldtype": "multilink",
-              "cached_url": "blog"
-            },
-            "text": "Get for free",
-            "variant": "primary",
-            "component": "link"
-          },
-          {
-            "_uid": "cacf894d-a48f-4bdb-84d6-d9cf98ad9489",
-            "link": {
-              "id": "5d416347-de08-4adb-b496-00b0a083de3a",
-              "url": "",
-              "linktype": "story",
-              "fieldtype": "multilink",
-              "cached_url": "blog"
-            },
-            "text": "Request a demo",
-            "variant": "secondary",
-            "component": "link"
-          }
-        ],
-        "title": "Write. Plan. Collaborate.",
-        "component": "hero",
-        "marginTop": "base",
-        "marginBottom": "base"
-      },
-      "component_id": 6391508,
-      "space_id": 293915,
-      "created_at": "2024-10-08T15:14:26.596Z",
-      "updated_at": "2024-10-08T15:14:26.596Z",
-      "image": "//a.storyblok.com/f/293915/x/9118f0bd1b/screenshot-2024-10-08-at-17-14-10.png",
       "color": "",
       "icon": "",
       "description": ""
@@ -2263,102 +2585,6 @@
       "description": ""
     },
     {
-      "id": 2225127,
-      "name": "Default",
-      "preset": {
-        "_uid": "8a993c13-4588-46b4-8285-d2f59d18b11f",
-        "text": [
-          {
-            "_uid": "d8050fa9-6b9d-438f-99e3-d038c9250382",
-            "content": {
-              "type": "doc",
-              "content": [
-                {
-                  "type": "heading",
-                  "attrs": {
-                    "level": 2
-                  },
-                  "content": [
-                    {
-                      "text": "Let's find more that brings us together.",
-                      "type": "text",
-                      "marks": [
-                        {
-                          "type": "bold"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "paragraph",
-                  "content": [
-                    {
-                      "text": "Flowbite helps you connect with friends, family and communities of people who share your interests. Connecting with your friends and family as well as discovering new ones is easy with features like Groups, Watch and Marketplace.",
-                      "type": "text"
-                    }
-                  ]
-                }
-              ]
-            },
-            "component": "richText",
-            "removeInnerMargins": false
-          }
-        ],
-        "links": [
-          {
-            "_uid": "bdb0b522-2f4c-4836-a8bc-d8526d5acb94",
-            "link": {
-              "id": "",
-              "url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768",
-              "linktype": "url",
-              "fieldtype": "multilink",
-              "cached_url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768"
-            },
-            "text": "Get Started",
-            "variant": "primary",
-            "component": "link"
-          },
-          {
-            "_uid": "d084111d-6fbd-4159-8210-81694be82221",
-            "link": {
-              "id": "",
-              "url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768",
-              "linktype": "url",
-              "fieldtype": "multilink",
-              "cached_url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768"
-            },
-            "text": "Learn More",
-            "variant": "secondary",
-            "component": "link"
-          },
-          {
-            "_uid": "4cf8608f-0859-4c87-a74d-2d2b2c5e24fe",
-            "link": {
-              "id": "",
-              "url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768",
-              "linktype": "url",
-              "fieldtype": "multilink",
-              "cached_url": "https://app.storyblok.com/#/me/spaces/293915/stories/0/0/513794103/blok/382d42b7-6aec-4768-b88b-6cb3540b4768"
-            },
-            "text": "New Info",
-            "variant": "secondary",
-            "component": "link"
-          }
-        ],
-        "variant": "default",
-        "component": "cta"
-      },
-      "component_id": 6030875,
-      "space_id": 293915,
-      "created_at": "2024-07-12T15:24:16.323Z",
-      "updated_at": "2024-07-12T15:24:16.323Z",
-      "image": "//a.storyblok.com/f/293915/x/eb1b14e23e/cta.png",
-      "color": "",
-      "icon": "",
-      "description": ""
-    },
-    {
       "id": 2337116,
       "name": "Default",
       "preset": {
@@ -2487,25 +2713,130 @@
       "description": ""
     },
     {
-      "id": 2311927,
+      "id": 2311975,
       "name": "Default",
       "preset": {
-        "_uid": "78b9116c-66e1-47e6-a843-3420b3ccc362",
+        "_uid": "58f68ee7-d789-4201-8963-03c08c0edbe5",
+        "text": [
+          {
+            "_uid": "cdc6dfbd-5208-40a4-af7e-0fdbcedafafb",
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "text": "In Notion, work feels better.",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "text": "With a little help from AI.",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            "component": "richText",
+            "alignVariant": "left",
+            "removeInnerMargins": true
+          }
+        ],
         "image": [
           {
-            "_uid": "28239737-5fc1-448d-a995-19b7fc5021a2",
+            "_uid": "262bcb34-10e0-4400-aea5-2a7dc5f68598",
             "asset": {
-              "id": 17302361,
+              "id": 17600300,
               "alt": "",
               "name": "",
               "focus": "",
               "title": "",
               "source": "",
-              "filename": "https://a.storyblok.com/f/293915/1792x1024/3c65b2e66b/generated-social-logo.webp",
+              "filename": "https://a.storyblok.com/f/293915/2474x1318/df22f90af3/screenshot-2024-10-08-at-16-53-38.png",
+              "copyright": "",
+              "fieldtype": "asset",
+              "meta_data": {},
+              "is_external_url": false
+            },
+            "component": "image",
+            "aspectRatio": "16/9"
+          }
+        ],
+        "links": [
+          {
+            "_uid": "38ffb55a-d12a-4e63-b2b0-5996c0d79177",
+            "link": {
+              "id": "5d416347-de08-4adb-b496-00b0a083de3a",
+              "url": "",
+              "linktype": "story",
+              "fieldtype": "multilink",
+              "cached_url": "blog"
+            },
+            "text": "Get for free",
+            "variant": "primary",
+            "component": "link"
+          },
+          {
+            "_uid": "cacf894d-a48f-4bdb-84d6-d9cf98ad9489",
+            "link": {
+              "id": "5d416347-de08-4adb-b496-00b0a083de3a",
+              "url": "",
+              "linktype": "story",
+              "fieldtype": "multilink",
+              "cached_url": "blog"
+            },
+            "text": "Request a demo",
+            "variant": "secondary",
+            "component": "link"
+          }
+        ],
+        "title": "Write. Plan. Collaborate.",
+        "component": "hero",
+        "marginTop": "base",
+        "marginBottom": "base"
+      },
+      "component_id": 6391508,
+      "space_id": 293915,
+      "created_at": "2024-10-08T15:14:26.596Z",
+      "updated_at": "2024-10-08T15:14:26.596Z",
+      "image": "//a.storyblok.com/f/293915/x/9118f0bd1b/screenshot-2024-10-08-at-17-14-10.png",
+      "color": "",
+      "icon": "",
+      "description": ""
+    },
+    {
+      "id": 2337115,
+      "name": "Default",
+      "preset": {
+        "_uid": "611c74ab-fad3-4b2f-9ee6-ba15543e98d3",
+        "text": " Add your first product",
+        "image": [
+          {
+            "_uid": "2e1f5bca-6409-430a-b3aa-1d9fc7ddbe18",
+            "asset": {
+              "id": 17902334,
+              "alt": "call us",
+              "name": "",
+              "focus": "",
+              "title": "",
+              "source": "",
+              "filename": "https://a.storyblok.com/f/293915/960x960/6a4a666d16/call-us.svg",
               "copyright": "",
               "fieldtype": "asset",
               "meta_data": {
-                "alt": "",
+                "alt": "call us",
                 "title": "",
                 "source": "",
                 "copyright": ""
@@ -2513,16 +2844,17 @@
               "is_external_url": false
             },
             "component": "image",
-            "aspectRatio": "16/9"
+            "aspectRatio": "3/1"
           }
         ],
-        "component": "wideSimpleCarouselSlide"
+        "number": "01",
+        "component": "stepGuideItem"
       },
-      "component_id": 6391279,
+      "component_id": 6492255,
       "space_id": 293915,
-      "created_at": "2024-10-08T14:32:40.489Z",
-      "updated_at": "2024-10-08T14:32:40.489Z",
-      "image": "//a.storyblok.com/f/293915/x/e32cf6ec6b/screenshot-2024-10-08-at-16-31-09.png",
+      "created_at": "2024-10-30T16:11:36.349Z",
+      "updated_at": "2024-10-30T16:20:36.391Z",
+      "image": "//a.storyblok.com/f/293915/x/8becce59cc/screenshot-2024-10-30-at-17-11-17.png",
       "color": "",
       "icon": "",
       "description": ""
@@ -3126,30 +3458,30 @@
                   {
                     "_uid": "daa76aed-3746-48f1-863b-4d9dd0e833fd",
                     "text": "Collaborative workspace",
-                    "component": "pricingTierFeature"
+                    "component": "pricingTableTierFeature"
                   },
                   {
                     "_uid": "1a197039-e74f-4446-98d5-53a4a27e7b2e",
                     "text": "Integrate with Slack, GitHub & more",
-                    "component": "pricingTierFeature"
+                    "component": "pricingTableTierFeature"
                   },
                   {
                     "_uid": "adae920f-a85d-4731-8a5c-2366d6dd896c",
                     "text": "Basic page analytics",
-                    "component": "pricingTierFeature"
+                    "component": "pricingTableTierFeature"
                   },
                   {
                     "_uid": "6911f373-b7fe-4fa8-ade0-48285a6b47d5",
                     "text": "7 day page history",
-                    "component": "pricingTierFeature"
+                    "component": "pricingTableTierFeature"
                   },
                   {
                     "_uid": "08b6beb3-f786-401a-96cd-48d37cd5dd58",
                     "text": "Invite 10 guests",
-                    "component": "pricingTierFeature"
+                    "component": "pricingTableTierFeature"
                   }
                 ],
-                "component": "pricingTier",
+                "component": "pricingTableTier",
                 "description": "For individuals to organize personal projects and life"
               },
               {
@@ -3196,50 +3528,50 @@
                   {
                     "_uid": "93ab7175-1744-4157-94f2-68af0b44787f",
                     "text": "Everything in Free +",
-                    "component": "pricingTierFeature"
+                    "component": "pricingTableTierFeature"
                   },
                   {
                     "_uid": "1f8ee345-9583-4ead-8f2d-24058aec8bcd",
                     "text": "Unlimited blocks for teams",
-                    "component": "pricingTierFeature"
+                    "component": "pricingTableTierFeature"
                   },
                   {
                     "_uid": "e04ed840-bf79-4c53-aa8a-7e705d542fb0",
                     "text": "Unlimited file uploads",
-                    "component": "pricingTierFeature"
+                    "component": "pricingTableTierFeature"
                   },
                   {
                     "_uid": "d5f112d1-5eea-40a0-a629-7b4830182442",
                     "text": "30 day page history",
-                    "component": "pricingTierFeature"
+                    "component": "pricingTableTierFeature"
                   },
                   {
                     "_uid": "18416b01-b34c-4e95-856f-9aaa1ab6660a",
                     "text": "Invite 100 guests",
-                    "component": "pricingTierFeature"
+                    "component": "pricingTableTierFeature"
                   },
                   {
                     "_uid": "1b5273ef-e000-4b35-ada6-6ff76d209111",
                     "text": "Synced databases with 3rd party apps",
-                    "component": "pricingTierFeature"
+                    "component": "pricingTableTierFeature"
                   },
                   {
                     "_uid": "e73d1976-7a24-460c-a379-0f740a76ae92",
                     "text": "Custom websites",
-                    "component": "pricingTierFeature"
+                    "component": "pricingTableTierFeature"
                   },
                   {
                     "_uid": "6709a79a-a33d-4cd9-8e16-e1e7df61e7d1",
                     "text": "Custom automations",
-                    "component": "pricingTierFeature"
+                    "component": "pricingTableTierFeature"
                   },
                   {
                     "_uid": "ab0dbc44-b1e6-4806-b08b-caa879a87048",
                     "text": "Charts & dashboards",
-                    "component": "pricingTierFeature"
+                    "component": "pricingTableTierFeature"
                   }
                 ],
-                "component": "pricingTier",
+                "component": "pricingTableTier",
                 "description": "For small teams and professionals to work together"
               },
               {
@@ -3286,40 +3618,40 @@
                   {
                     "_uid": "0aeb1d1a-c095-481d-b82a-f87deb75539c",
                     "text": "Everything in Plus +",
-                    "component": "pricingTierFeature"
+                    "component": "pricingTableTierFeature"
                   },
                   {
                     "_uid": "5df353b6-9c56-465d-8dc4-d8e7b739cc74",
                     "text": "SAML SSO",
-                    "component": "pricingTierFeature"
+                    "component": "pricingTableTierFeature"
                   },
                   {
                     "_uid": "50b68f1d-1264-4c06-b295-080a84b94a7a",
                     "text": "Private teamspaces",
-                    "component": "pricingTierFeature"
+                    "component": "pricingTableTierFeature"
                   },
                   {
                     "_uid": "f9153bd4-cdd9-4362-b1cb-3103014b2cc4",
                     "text": "Bulk PDF export",
-                    "component": "pricingTierFeature"
+                    "component": "pricingTableTierFeature"
                   },
                   {
                     "_uid": "7f37be1a-c308-4806-a7c4-765676044282",
                     "text": "Advanced page analytics",
-                    "component": "pricingTierFeature"
+                    "component": "pricingTableTierFeature"
                   },
                   {
                     "_uid": "4fb885e6-2239-4e04-bee7-4b945b2eef22",
                     "text": "90 day page history",
-                    "component": "pricingTierFeature"
+                    "component": "pricingTableTierFeature"
                   },
                   {
                     "_uid": "4a176ea2-92c0-4155-9453-bc87f76e7156",
                     "text": "Invite 250 guests",
-                    "component": "pricingTierFeature"
+                    "component": "pricingTableTierFeature"
                   }
                 ],
-                "component": "pricingTier",
+                "component": "pricingTableTier",
                 "description": "For growing businesses to streamline teamwork"
               },
               {
@@ -3366,60 +3698,60 @@
                   {
                     "_uid": "de2c7aa6-f8f9-4adf-9057-bc15676767cb",
                     "text": "Everything in Business +",
-                    "component": "pricingTierFeature"
+                    "component": "pricingTableTierFeature"
                   },
                   {
                     "_uid": "b920e2d6-760f-47e1-bd2c-8a6193087f3c",
                     "text": "User provisioning (SCIM)",
-                    "component": "pricingTierFeature"
+                    "component": "pricingTableTierFeature"
                   },
                   {
                     "_uid": "8439ee93-995b-4581-8a7d-ac87fb7d03ee",
                     "text": "Advanced security & controls",
-                    "component": "pricingTierFeature"
+                    "component": "pricingTableTierFeature"
                   },
                   {
                     "_uid": "fcd9a4b1-793a-4be8-b0da-8d4fe7c8261c",
                     "text": "Audit log",
-                    "component": "pricingTierFeature"
+                    "component": "pricingTableTierFeature"
                   },
                   {
                     "_uid": "3e212dd3-2490-4bbb-a3cb-8b40f675062a",
                     "text": "Customer success manager",
-                    "component": "pricingTierFeature"
+                    "component": "pricingTableTierFeature"
                   },
                   {
                     "_uid": "5acc56cb-3d7f-4c9f-a8b5-a9777bcfc181",
                     "text": "Workspace analytics",
-                    "component": "pricingTierFeature"
+                    "component": "pricingTableTierFeature"
                   },
                   {
                     "_uid": "493c7815-dbf3-4302-a61f-474f674b96a8",
                     "text": "Unlimited page history",
-                    "component": "pricingTierFeature"
+                    "component": "pricingTableTierFeature"
                   },
                   {
                     "_uid": "fa3f5549-29e0-4791-87f1-5963c931dd8f",
                     "text": "Security & Compliance integrations",
-                    "component": "pricingTierFeature"
+                    "component": "pricingTableTierFeature"
                   },
                   {
                     "_uid": "179bdf45-3bdd-406b-8c0c-33d95122aa04",
                     "text": "Invite 250 guests",
-                    "component": "pricingTierFeature"
+                    "component": "pricingTableTierFeature"
                   }
                 ],
-                "component": "pricingTier",
+                "component": "pricingTableTier",
                 "description": "For organizations to operate with scalability, control, and security"
               }
             ],
-            "component": "pricing",
+            "component": "pricingTable",
             "extraService": [
               {
                 "_uid": "aa8eee91-81e8-452a-b372-659ae48fcb34",
                 "cost": "10",
                 "text": "Add AI",
-                "component": "pricingExtraService"
+                "component": "pricingTableExtraService"
               }
             ],
             "extraServiceEnabled": true,
@@ -3567,7 +3899,7 @@
                     "aspectRatio": "16/9"
                   }
                 ],
-                "component": "simpleCarouselSlide"
+                "component": "carouselSlide"
               },
               {
                 "_uid": "f70e22c4-8942-468e-92ed-089fc5ad0487",
@@ -3591,7 +3923,7 @@
                     "aspectRatio": "16/9"
                   }
                 ],
-                "component": "simpleCarouselSlide"
+                "component": "carouselSlide"
               },
               {
                 "_uid": "fcb7c84f-54f8-4f24-8887-c52880423f0c",
@@ -3615,7 +3947,7 @@
                     "aspectRatio": "16/9"
                   }
                 ],
-                "component": "simpleCarouselSlide"
+                "component": "carouselSlide"
               },
               {
                 "_uid": "a54280c8-c8b9-4f8f-a5cf-f1b0c79515fb",
@@ -3639,7 +3971,7 @@
                     "aspectRatio": "16/9"
                   }
                 ],
-                "component": "simpleCarouselSlide"
+                "component": "carouselSlide"
               },
               {
                 "_uid": "5dbca93a-39e0-46f8-8c76-4a73ca7a1eaa",
@@ -3663,10 +3995,10 @@
                     "aspectRatio": "16/9"
                   }
                 ],
-                "component": "simpleCarouselSlide"
+                "component": "carouselSlide"
               }
             ],
-            "component": "simpleCarousel",
+            "component": "carousel",
             "marginTop": "base",
             "marginBottom": "base"
           },
@@ -5525,19 +5857,361 @@
     },
     {
       "id": 2335597,
-      "name": "Pricing",
+      "name": "Pricing Table",
       "preset": {
-        "_uid": "b4501ba5-a0ae-452d-bb61-fca7c9edf808",
-        "tiers": [],
-        "component": "pricing",
-        "extraService": [],
-        "extraServiceEnabled": false,
-        "yearlyDiscountPercentage": ""
+        "_uid": "248af295-e2af-4dc3-9874-4b108d11f59e",
+        "tiers": [
+          {
+            "_uid": "3fd44cd6-d697-4370-bf32-6c552aec4922",
+            "icon": [
+              {
+                "_uid": "3d775c4f-c57a-4d2e-8512-1b458f70af30",
+                "asset": {
+                  "id": 17887678,
+                  "alt": "",
+                  "name": "",
+                  "focus": "",
+                  "title": "",
+                  "source": "",
+                  "filename": "https://a.storyblok.com/f/293915/68x80/a59904240e/personal.png",
+                  "copyright": "",
+                  "fieldtype": "asset",
+                  "meta_data": {},
+                  "is_external_url": false
+                },
+                "component": "image",
+                "aspectRatio": "auto"
+              }
+            ],
+            "link": [
+              {
+                "_uid": "715242fe-c6d0-4fe6-93ce-706df144de9c",
+                "link": {
+                  "id": "19601884-a1af-4b99-bd95-1a3ca01d5b7a",
+                  "url": "",
+                  "linktype": "story",
+                  "fieldtype": "multilink",
+                  "cached_url": "home"
+                },
+                "text": "Sign up",
+                "variant": "ghost",
+                "component": "link"
+              }
+            ],
+            "name": "Free",
+            "price": "0",
+            "popular": false,
+            "features": [
+              {
+                "_uid": "90730d25-5306-4de8-a25c-a55652528004",
+                "text": "Collaborative workspace",
+                "component": "pricingTableTierFeature"
+              },
+              {
+                "_uid": "19d6f5df-3327-4554-b407-5da536545664",
+                "text": "Integrate with Slack, GitHub & more",
+                "component": "pricingTableTierFeature"
+              },
+              {
+                "_uid": "64ebdf4a-7066-4f4d-9625-0e70ca5a4ca3",
+                "text": "Basic page analytics",
+                "component": "pricingTableTierFeature"
+              },
+              {
+                "_uid": "cdef98dd-2835-4d38-822e-0449e6a4f4b6",
+                "text": "7 day page history",
+                "component": "pricingTableTierFeature"
+              },
+              {
+                "_uid": "b655832d-f75a-4cc3-9f71-0805e2222fac",
+                "text": "Invite 10 guests",
+                "component": "pricingTableTierFeature"
+              }
+            ],
+            "component": "pricingTableTier",
+            "description": "For individuals to organize personal projects and life"
+          },
+          {
+            "_uid": "621d07e7-97a4-4cd6-99cf-b1aec2a01e22",
+            "icon": [
+              {
+                "_uid": "47a3d716-16b9-46b5-8c8c-86136335cedf",
+                "asset": {
+                  "id": 17887679,
+                  "alt": "",
+                  "name": "",
+                  "focus": "",
+                  "title": "",
+                  "source": "",
+                  "filename": "https://a.storyblok.com/f/293915/86x80/d9b65aa6fe/pro.png",
+                  "copyright": "",
+                  "fieldtype": "asset",
+                  "meta_data": {},
+                  "is_external_url": false
+                },
+                "component": "image",
+                "aspectRatio": "auto"
+              }
+            ],
+            "link": [
+              {
+                "_uid": "babcdb95-8d5e-4393-9084-37acb27b1622",
+                "link": {
+                  "id": "19601884-a1af-4b99-bd95-1a3ca01d5b7a",
+                  "url": "",
+                  "linktype": "story",
+                  "fieldtype": "multilink",
+                  "cached_url": "home"
+                },
+                "text": "Get started",
+                "variant": "ghost-dark",
+                "component": "link"
+              }
+            ],
+            "name": "Plus",
+            "price": "9,5",
+            "popular": true,
+            "features": [
+              {
+                "_uid": "08bbb5eb-0f24-4805-9183-805960d28e26",
+                "text": "Everything in Free +",
+                "component": "pricingTableTierFeature"
+              },
+              {
+                "_uid": "f90c76a4-f819-4928-b67e-8971636b00d6",
+                "text": "Unlimited blocks for teams",
+                "component": "pricingTableTierFeature"
+              },
+              {
+                "_uid": "ae24e9b8-e69a-441b-9d5a-4a80feecfe09",
+                "text": "Unlimited file uploads",
+                "component": "pricingTableTierFeature"
+              },
+              {
+                "_uid": "04519bd5-1773-4220-a43a-753c37035531",
+                "text": "30 day page history",
+                "component": "pricingTableTierFeature"
+              },
+              {
+                "_uid": "be5b48a8-8108-4da3-acd4-b2aca3426fc3",
+                "text": "Invite 100 guests",
+                "component": "pricingTableTierFeature"
+              },
+              {
+                "_uid": "62bc6d25-13d1-4a6f-959d-0b0afcbb517a",
+                "text": "Synced databases with 3rd party apps",
+                "component": "pricingTableTierFeature"
+              },
+              {
+                "_uid": "0c279661-67e3-4323-afb6-8be777c5ca12",
+                "text": "Custom websites",
+                "component": "pricingTableTierFeature"
+              },
+              {
+                "_uid": "e06266c1-2431-41ce-a6c1-aeeb95c5e637",
+                "text": "Custom automations",
+                "component": "pricingTableTierFeature"
+              },
+              {
+                "_uid": "42be60b3-e869-461d-ba57-60436e83be1d",
+                "text": "Charts & dashboards",
+                "component": "pricingTableTierFeature"
+              }
+            ],
+            "component": "pricingTableTier",
+            "description": "For small teams and professionals to work together"
+          },
+          {
+            "_uid": "0ee0310a-4d8d-482b-acdf-c7d7a97b5a87",
+            "icon": [
+              {
+                "_uid": "fa25cbfd-f35c-405e-a831-a109de12f7db",
+                "asset": {
+                  "id": 17887681,
+                  "alt": "",
+                  "name": "",
+                  "focus": "",
+                  "title": "",
+                  "source": "",
+                  "filename": "https://a.storyblok.com/f/293915/72x80/4229f5e65b/team.png",
+                  "copyright": "",
+                  "fieldtype": "asset",
+                  "meta_data": {},
+                  "is_external_url": false
+                },
+                "component": "image",
+                "aspectRatio": "auto"
+              }
+            ],
+            "link": [
+              {
+                "_uid": "963e8585-d5f5-4a3b-aff4-ca052469b348",
+                "link": {
+                  "id": "19601884-a1af-4b99-bd95-1a3ca01d5b7a",
+                  "url": "",
+                  "linktype": "story",
+                  "fieldtype": "multilink",
+                  "cached_url": "home"
+                },
+                "text": "Get started",
+                "variant": "ghost",
+                "component": "link"
+              }
+            ],
+            "name": "Business",
+            "price": "14",
+            "popular": false,
+            "features": [
+              {
+                "_uid": "10378d6f-ca0e-44af-a49e-8b661e4f478c",
+                "text": "Everything in Plus +",
+                "component": "pricingTableTierFeature"
+              },
+              {
+                "_uid": "8129ad85-aa48-4b9e-a29f-bfa68a53bdc1",
+                "text": "SAML SSO",
+                "component": "pricingTableTierFeature"
+              },
+              {
+                "_uid": "64ef613f-dfff-426d-8744-2be4fe1507f2",
+                "text": "Private teamspaces",
+                "component": "pricingTableTierFeature"
+              },
+              {
+                "_uid": "63617e2a-cfd1-4cab-8c0b-456ae96cc21d",
+                "text": "Bulk PDF export",
+                "component": "pricingTableTierFeature"
+              },
+              {
+                "_uid": "d42be252-e9b0-4e90-9bfb-09f791ad2986",
+                "text": "Advanced page analytics",
+                "component": "pricingTableTierFeature"
+              },
+              {
+                "_uid": "0675b25e-01b9-49ff-8ac7-a4fd33839d5b",
+                "text": "90 day page history",
+                "component": "pricingTableTierFeature"
+              },
+              {
+                "_uid": "2ceec853-d5c5-4bc5-bdf8-ca1cd6313736",
+                "text": "Invite 250 guests",
+                "component": "pricingTableTierFeature"
+              }
+            ],
+            "component": "pricingTableTier",
+            "description": "For growing businesses to streamline teamwork"
+          },
+          {
+            "_uid": "bac0a072-c424-4939-bdca-34712f2f98c3",
+            "icon": [
+              {
+                "_uid": "c112c6ca-ec0b-4773-b8e7-68030c72eb41",
+                "asset": {
+                  "id": 17887680,
+                  "alt": "",
+                  "name": "",
+                  "focus": "",
+                  "title": "",
+                  "source": "",
+                  "filename": "https://a.storyblok.com/f/293915/84x80/8b7995cd2e/enterprise.png",
+                  "copyright": "",
+                  "fieldtype": "asset",
+                  "meta_data": {},
+                  "is_external_url": false
+                },
+                "component": "image",
+                "aspectRatio": "auto"
+              }
+            ],
+            "link": [
+              {
+                "_uid": "250c84e5-1ac9-4ed4-95df-292ca5d890ee",
+                "link": {
+                  "id": "5d416347-de08-4adb-b496-00b0a083de3a",
+                  "url": "",
+                  "linktype": "story",
+                  "fieldtype": "multilink",
+                  "cached_url": "blog"
+                },
+                "text": "Contact Sales",
+                "variant": "ghost",
+                "component": "link"
+              }
+            ],
+            "name": "Enterprise",
+            "price": "",
+            "popular": false,
+            "features": [
+              {
+                "_uid": "26b9f0df-0483-477e-9237-532bf3434338",
+                "text": "Everything in Business +",
+                "component": "pricingTableTierFeature"
+              },
+              {
+                "_uid": "3db3dcb9-5676-4bf2-9f9c-d7982a833be7",
+                "text": "User provisioning (SCIM)",
+                "component": "pricingTableTierFeature"
+              },
+              {
+                "_uid": "9494dfb8-356d-477d-b83d-0b3dea4af7a9",
+                "text": "Advanced security & controls",
+                "component": "pricingTableTierFeature"
+              },
+              {
+                "_uid": "27e77849-dce1-4565-8dde-ba871a76f3b2",
+                "text": "Audit log",
+                "component": "pricingTableTierFeature"
+              },
+              {
+                "_uid": "96746fce-73af-40b0-9dbe-15a6a47adee2",
+                "text": "Customer success manager",
+                "component": "pricingTableTierFeature"
+              },
+              {
+                "_uid": "d556d078-df5a-433b-86c2-5f01baf1454f",
+                "text": "Workspace analytics",
+                "component": "pricingTableTierFeature"
+              },
+              {
+                "_uid": "3dd02e41-dde0-4171-b656-eb4cab2326d1",
+                "text": "Unlimited page history",
+                "component": "pricingTableTierFeature"
+              },
+              {
+                "_uid": "9215fc5a-523a-479b-80c6-9a9480a7720c",
+                "text": "Security & Compliance integrations",
+                "component": "pricingTableTierFeature"
+              },
+              {
+                "_uid": "93ffb8ec-4bf3-4d88-90d5-5ee3d44789cf",
+                "text": "Invite 250 guests",
+                "component": "pricingTableTierFeature"
+              }
+            ],
+            "component": "pricingTableTier",
+            "description": "For organizations to operate with scalability, control, and security"
+          }
+        ],
+        "maxWidth": "base",
+        "component": "pricingTable",
+        "marginTop": "base",
+        "extraService": [
+          {
+            "_uid": "85bb65fa-2380-4839-8372-e03362815d02",
+            "cost": "10",
+            "text": "Add AI",
+            "component": "pricingTableExtraService"
+          }
+        ],
+        "marginBottom": "base",
+        "backgroundColor": "none",
+        "extraServiceEnabled": true,
+        "yearlyDiscountPercentage": "20"
       },
       "component_id": 6489128,
       "space_id": 293915,
       "created_at": "2024-10-29T14:34:25.198Z",
-      "updated_at": "2024-10-29T14:34:25.198Z",
+      "updated_at": "2024-11-06T09:41:54.022Z",
       "image": "//a.storyblok.com/f/293915/x/a01a228065/screenshot-2024-10-29-at-15-33-45.png",
       "color": "",
       "icon": "",

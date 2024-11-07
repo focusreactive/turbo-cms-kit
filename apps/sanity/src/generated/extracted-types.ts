@@ -73,6 +73,19 @@ export type SectionThreeDElement = {
   model: "donut" | "globe" | "kubik-rubik";
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
+  maxWidth: "none" | "base" | "small";
+  backgroundColor: "light" | "light-gray" | "dark-gray" | "dark" | "none";
+  backgroundImage?: {
+    asset?: {
+      _ref: string;
+      _type: "reference";
+      _weak?: boolean;
+      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+    };
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    _type: "image";
+  };
 };
 
 export type SectionStepGuide = {
@@ -85,14 +98,27 @@ export type SectionStepGuide = {
   link: CustomLink;
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
+  maxWidth: "none" | "base" | "small";
+  backgroundColor: "light" | "light-gray" | "dark-gray" | "dark" | "none";
+  backgroundImage?: {
+    asset?: {
+      _ref: string;
+      _type: "reference";
+      _weak?: boolean;
+      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+    };
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    _type: "image";
+  };
 };
 
-export type SectionPricing = {
-  _type: "section.pricing";
+export type SectionPricingTable = {
+  _type: "section.pricingTable";
   tiers: Array<
     {
       _key: string;
-    } & PricingTier
+    } & PricingTableTier
   >;
   yearlyDiscountPercentage: number;
   extraServiceEnabled?: boolean;
@@ -102,6 +128,19 @@ export type SectionPricing = {
   };
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
+  maxWidth: "none" | "base" | "small";
+  backgroundColor: "light" | "light-gray" | "dark-gray" | "dark" | "none";
+  backgroundImage?: {
+    asset?: {
+      _ref: string;
+      _type: "reference";
+      _weak?: boolean;
+      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+    };
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    _type: "image";
+  };
 };
 
 export type SectionHero = {
@@ -116,29 +155,30 @@ export type SectionHero = {
   >;
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
+  maxWidth: "none" | "base" | "small";
+  backgroundColor: "light" | "light-gray" | "dark-gray" | "dark" | "none";
+  backgroundImage?: {
+    asset?: {
+      _ref: string;
+      _type: "reference";
+      _weak?: boolean;
+      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+    };
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    _type: "image";
+  };
 };
 
-export type SectionWideSimpleCarousel = {
-  _type: "section.wideSimpleCarousel";
-  slides: Array<
-    {
-      _key: string;
-    } & WideSimpleCarouselCard
-  >;
-  marginTop: "none" | "base" | "lg";
-  marginBottom: "none" | "base" | "lg";
-};
-
-export type SectionSimpleCarousel = {
-  _type: "section.simpleCarousel";
+export type SectionCarousel = {
+  _type: "section.carousel";
   text?: CustomRichText;
   slides: Array<
     {
       _key: string;
-    } & SimpleCarouselCard
+    } & CarouselCard
   >;
   effect?: "slide" | "coverflow" | "cube" | "fade" | "flip" | "cards";
-  fullWidth?: boolean;
   params?: {
     loop?: boolean;
     slidesPerView?: number;
@@ -146,6 +186,19 @@ export type SectionSimpleCarousel = {
   };
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
+  maxWidth: "none" | "base" | "small";
+  backgroundColor: "light" | "light-gray" | "dark-gray" | "dark" | "none";
+  backgroundImage?: {
+    asset?: {
+      _ref: string;
+      _type: "reference";
+      _weak?: boolean;
+      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+    };
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    _type: "image";
+  };
 };
 
 export type SectionBlog = {
@@ -162,6 +215,19 @@ export type SectionBlog = {
   >;
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
+  maxWidth: "none" | "base" | "small";
+  backgroundColor: "light" | "light-gray" | "dark-gray" | "dark" | "none";
+  backgroundImage?: {
+    asset?: {
+      _ref: string;
+      _type: "reference";
+      _weak?: boolean;
+      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+    };
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    _type: "image";
+  };
 };
 
 export type SectionCardsGrid = {
@@ -174,6 +240,19 @@ export type SectionCardsGrid = {
   >;
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
+  maxWidth: "none" | "base" | "small";
+  backgroundColor: "light" | "light-gray" | "dark-gray" | "dark" | "none";
+  backgroundImage?: {
+    asset?: {
+      _ref: string;
+      _type: "reference";
+      _weak?: boolean;
+      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+    };
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    _type: "image";
+  };
 };
 
 export type SectionLinksList = {
@@ -186,6 +265,19 @@ export type SectionLinksList = {
   alignVariant: "left" | "center" | "right";
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
+  maxWidth: "none" | "base" | "small";
+  backgroundColor: "light" | "light-gray" | "dark-gray" | "dark" | "none";
+  backgroundImage?: {
+    asset?: {
+      _ref: string;
+      _type: "reference";
+      _weak?: boolean;
+      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+    };
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    _type: "image";
+  };
 };
 
 export type SectionLogos = {
@@ -198,6 +290,19 @@ export type SectionLogos = {
   alignVariant: "left" | "center" | "right";
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
+  maxWidth: "none" | "base" | "small";
+  backgroundColor: "light" | "light-gray" | "dark-gray" | "dark" | "none";
+  backgroundImage?: {
+    asset?: {
+      _ref: string;
+      _type: "reference";
+      _weak?: boolean;
+      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+    };
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    _type: "image";
+  };
 };
 
 export type SectionCopy = {
@@ -210,6 +315,19 @@ export type SectionCopy = {
   isReversedOnMobile: boolean;
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
+  maxWidth: "none" | "base" | "small";
+  backgroundColor: "light" | "light-gray" | "dark-gray" | "dark" | "none";
+  backgroundImage?: {
+    asset?: {
+      _ref: string;
+      _type: "reference";
+      _weak?: boolean;
+      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+    };
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    _type: "image";
+  };
 };
 
 export type StepGuideItem = {
@@ -219,8 +337,8 @@ export type StepGuideItem = {
   image: CustomImage;
 };
 
-export type PricingTier = {
-  _type: "pricingTier";
+export type PricingTableTier = {
+  _type: "pricingTableTier";
   name: string;
   icon: CustomImage;
   price?: number;
@@ -230,13 +348,8 @@ export type PricingTier = {
   popular?: boolean;
 };
 
-export type WideSimpleCarouselCard = {
-  _type: "wideSimpleCarouselCard";
-  image: CustomImage;
-};
-
-export type SimpleCarouselCard = {
-  _type: "simpleCarouselCard";
+export type CarouselCard = {
+  _type: "carouselCard";
   text?: CustomRichText;
   image: CustomImage;
 };
@@ -372,16 +485,13 @@ export type Page = {
       } & SectionBlog)
     | ({
         _key: string;
-      } & SectionSimpleCarousel)
-    | ({
-        _key: string;
-      } & SectionWideSimpleCarousel)
+      } & SectionCarousel)
     | ({
         _key: string;
       } & SectionHero)
     | ({
         _key: string;
-      } & SectionPricing)
+      } & SectionPricingTable)
     | ({
         _key: string;
       } & SectionStepGuide)
@@ -614,19 +724,17 @@ export type AllSanitySchemaTypes =
   | Geopoint
   | SectionThreeDElement
   | SectionStepGuide
-  | SectionPricing
+  | SectionPricingTable
   | SectionHero
-  | SectionWideSimpleCarousel
-  | SectionSimpleCarousel
+  | SectionCarousel
   | SectionBlog
   | SectionCardsGrid
   | SectionLinksList
   | SectionLogos
   | SectionCopy
   | StepGuideItem
-  | PricingTier
-  | WideSimpleCarouselCard
-  | SimpleCarouselCard
+  | PricingTableTier
+  | CarouselCard
   | BlogSectionPost
   | BasicRichText
   | Break
@@ -650,7 +758,7 @@ export type AllSanitySchemaTypes =
 export declare const internalGroqTypeReferenceTo: unique symbol;
 // Source: ./src/lib/api/queries.ts
 // Variable: PAGE_BY_SLUG_QUERY
-// Query:   *[_type == "page" && pathname.current == $slug][0] {    _id,    header->{        ...,  links[] {    ...,type == "internal" => {  url->{    _type == "page" => {      "slug": [pathname.current],    },  },}  }    },    sectionsBody[] {      ...,      _type == "section.hero" => {   ...,  links[] {    ...,type == "internal" => {  url->{    _type == "page" => {      "slug": [pathname.current],    },  },}  } },      _type == "section.linksList" => {   ...,  links[] {    ...,type == "internal" => {  url->{    _type == "page" => {      "slug": [pathname.current],    },  },}  } },      _type == "section.cardsGrid" => {   ...,  items[] {    ...,    link {      ...,type == "internal" => {  url->{    _type == "page" => {      "slug": [pathname.current],    },  },}    }  } },      _type == "section.logos" => {   ...,  items[] {    ...,    link {      ...,type == "internal" => {  url->{    _type == "page" => {      "slug": [pathname.current],    },  },}    }  } },      _type == "section.blog" => {   ...,  posts[] {    ...,    link {      ...,type == "internal" => {  url->{    _type == "page" => {      "slug": [pathname.current],    },  },}    }  } },    },    footer->{        ...,  links[] {    ...,type == "internal" => {  url->{    _type == "page" => {      "slug": [pathname.current],    },  },}  }    },    title,    "slug": pathname.current,    seoTitle,    seoDescription,    ogImage,    robots,  }
+// Query:   *[_type == "page" && pathname.current == $slug][0] {    _id,    header->{        ...,  links[] {    ...,type == "internal" => {  url->{    _type == "page" => {      "slug": [pathname.current],    },  },}  }    },    sectionsBody[] {      ...,      _type == "section.hero" => {   ...,  links[] {    ...,type == "internal" => {  url->{    _type == "page" => {      "slug": [pathname.current],    },  },}  } },      _type == "section.linksList" => {   ...,  links[] {    ...,type == "internal" => {  url->{    _type == "page" => {      "slug": [pathname.current],    },  },}  } },      _type == "section.cardsGrid" => {   ...,  items[] {    ...,    link {      ...,type == "internal" => {  url->{    _type == "page" => {      "slug": [pathname.current],    },  },}    }  } },      _type == "section.logos" => {   ...,  items[] {    ...,    link {      ...,type == "internal" => {  url->{    _type == "page" => {      "slug": [pathname.current],    },  },}    }  } },      _type == "section.blog" => {   ...,  posts[] {    ...,    link {      ...,type == "internal" => {  url->{    _type == "page" => {      "slug": [pathname.current],    },  },}    }  } },    },    footer->{        ...,  links[] {    ...,type == "internal" => {  url->{    _type == "page" => {      "slug": [pathname.current],    },  },}  }    },    title,    "slug": pathname.current,    seoTitle,    seoDescription,    ogImage,    robots,    theme,  }
 export type PAGE_BY_SLUG_QUERYResult = {
   _id: string;
   header: {
@@ -720,6 +828,19 @@ export type PAGE_BY_SLUG_QUERYResult = {
         }>;
         marginTop: "base" | "lg" | "none";
         marginBottom: "base" | "lg" | "none";
+        maxWidth: "base" | "none" | "small";
+        backgroundColor: "dark-gray" | "dark" | "light-gray" | "light" | "none";
+        backgroundImage?: {
+          asset?: {
+            _ref: string;
+            _type: "reference";
+            _weak?: boolean;
+            [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+          };
+          hotspot?: SanityImageHotspot;
+          crop?: SanityImageCrop;
+          _type: "image";
+        };
       }
     | {
         _key: string;
@@ -760,6 +881,50 @@ export type PAGE_BY_SLUG_QUERYResult = {
         }>;
         marginTop: "base" | "lg" | "none";
         marginBottom: "base" | "lg" | "none";
+        maxWidth: "base" | "none" | "small";
+        backgroundColor: "dark-gray" | "dark" | "light-gray" | "light" | "none";
+        backgroundImage?: {
+          asset?: {
+            _ref: string;
+            _type: "reference";
+            _weak?: boolean;
+            [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+          };
+          hotspot?: SanityImageHotspot;
+          crop?: SanityImageCrop;
+          _type: "image";
+        };
+      }
+    | {
+        _key: string;
+        _type: "section.carousel";
+        text?: CustomRichText;
+        slides: Array<
+          {
+            _key: string;
+          } & CarouselCard
+        >;
+        effect?: "cards" | "coverflow" | "cube" | "fade" | "flip" | "slide";
+        params?: {
+          loop?: boolean;
+          slidesPerView?: number;
+          spaceBetween?: number;
+        };
+        marginTop: "base" | "lg" | "none";
+        marginBottom: "base" | "lg" | "none";
+        maxWidth: "base" | "none" | "small";
+        backgroundColor: "dark-gray" | "dark" | "light-gray" | "light" | "none";
+        backgroundImage?: {
+          asset?: {
+            _ref: string;
+            _type: "reference";
+            _weak?: boolean;
+            [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+          };
+          hotspot?: SanityImageHotspot;
+          crop?: SanityImageCrop;
+          _type: "image";
+        };
       }
     | {
         _key: string;
@@ -772,6 +937,19 @@ export type PAGE_BY_SLUG_QUERYResult = {
         isReversedOnMobile: boolean;
         marginTop: "base" | "lg" | "none";
         marginBottom: "base" | "lg" | "none";
+        maxWidth: "base" | "none" | "small";
+        backgroundColor: "dark-gray" | "dark" | "light-gray" | "light" | "none";
+        backgroundImage?: {
+          asset?: {
+            _ref: string;
+            _type: "reference";
+            _weak?: boolean;
+            [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+          };
+          hotspot?: SanityImageHotspot;
+          crop?: SanityImageCrop;
+          _type: "image";
+        };
       }
     | {
         _key: string;
@@ -801,6 +979,19 @@ export type PAGE_BY_SLUG_QUERYResult = {
         }>;
         marginTop: "base" | "lg" | "none";
         marginBottom: "base" | "lg" | "none";
+        maxWidth: "base" | "none" | "small";
+        backgroundColor: "dark-gray" | "dark" | "light-gray" | "light" | "none";
+        backgroundImage?: {
+          asset?: {
+            _ref: string;
+            _type: "reference";
+            _weak?: boolean;
+            [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+          };
+          hotspot?: SanityImageHotspot;
+          crop?: SanityImageCrop;
+          _type: "image";
+        };
       }
     | {
         _key: string;
@@ -828,6 +1019,19 @@ export type PAGE_BY_SLUG_QUERYResult = {
         alignVariant: "center" | "left" | "right";
         marginTop: "base" | "lg" | "none";
         marginBottom: "base" | "lg" | "none";
+        maxWidth: "base" | "none" | "small";
+        backgroundColor: "dark-gray" | "dark" | "light-gray" | "light" | "none";
+        backgroundImage?: {
+          asset?: {
+            _ref: string;
+            _type: "reference";
+            _weak?: boolean;
+            [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+          };
+          hotspot?: SanityImageHotspot;
+          crop?: SanityImageCrop;
+          _type: "image";
+        };
       }
     | {
         _key: string;
@@ -860,14 +1064,27 @@ export type PAGE_BY_SLUG_QUERYResult = {
         alignVariant: "center" | "left" | "right";
         marginTop: "base" | "lg" | "none";
         marginBottom: "base" | "lg" | "none";
+        maxWidth: "base" | "none" | "small";
+        backgroundColor: "dark-gray" | "dark" | "light-gray" | "light" | "none";
+        backgroundImage?: {
+          asset?: {
+            _ref: string;
+            _type: "reference";
+            _weak?: boolean;
+            [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+          };
+          hotspot?: SanityImageHotspot;
+          crop?: SanityImageCrop;
+          _type: "image";
+        };
       }
     | {
         _key: string;
-        _type: "section.pricing";
+        _type: "section.pricingTable";
         tiers: Array<
           {
             _key: string;
-          } & PricingTier
+          } & PricingTableTier
         >;
         yearlyDiscountPercentage: number;
         extraServiceEnabled?: boolean;
@@ -877,25 +1094,19 @@ export type PAGE_BY_SLUG_QUERYResult = {
         };
         marginTop: "base" | "lg" | "none";
         marginBottom: "base" | "lg" | "none";
-      }
-    | {
-        _key: string;
-        _type: "section.simpleCarousel";
-        text?: CustomRichText;
-        slides: Array<
-          {
-            _key: string;
-          } & SimpleCarouselCard
-        >;
-        effect?: "cards" | "coverflow" | "cube" | "fade" | "flip" | "slide";
-        fullWidth?: boolean;
-        params?: {
-          loop?: boolean;
-          slidesPerView?: number;
-          spaceBetween?: number;
+        maxWidth: "base" | "none" | "small";
+        backgroundColor: "dark-gray" | "dark" | "light-gray" | "light" | "none";
+        backgroundImage?: {
+          asset?: {
+            _ref: string;
+            _type: "reference";
+            _weak?: boolean;
+            [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+          };
+          hotspot?: SanityImageHotspot;
+          crop?: SanityImageCrop;
+          _type: "image";
         };
-        marginTop: "base" | "lg" | "none";
-        marginBottom: "base" | "lg" | "none";
       }
     | {
         _key: string;
@@ -908,6 +1119,19 @@ export type PAGE_BY_SLUG_QUERYResult = {
         link: CustomLink;
         marginTop: "base" | "lg" | "none";
         marginBottom: "base" | "lg" | "none";
+        maxWidth: "base" | "none" | "small";
+        backgroundColor: "dark-gray" | "dark" | "light-gray" | "light" | "none";
+        backgroundImage?: {
+          asset?: {
+            _ref: string;
+            _type: "reference";
+            _weak?: boolean;
+            [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+          };
+          hotspot?: SanityImageHotspot;
+          crop?: SanityImageCrop;
+          _type: "image";
+        };
       }
     | {
         _key: string;
@@ -915,17 +1139,19 @@ export type PAGE_BY_SLUG_QUERYResult = {
         model: "donut" | "globe" | "kubik-rubik";
         marginTop: "base" | "lg" | "none";
         marginBottom: "base" | "lg" | "none";
-      }
-    | {
-        _key: string;
-        _type: "section.wideSimpleCarousel";
-        slides: Array<
-          {
-            _key: string;
-          } & WideSimpleCarouselCard
-        >;
-        marginTop: "base" | "lg" | "none";
-        marginBottom: "base" | "lg" | "none";
+        maxWidth: "base" | "none" | "small";
+        backgroundColor: "dark-gray" | "dark" | "light-gray" | "light" | "none";
+        backgroundImage?: {
+          asset?: {
+            _ref: string;
+            _type: "reference";
+            _weak?: boolean;
+            [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+          };
+          hotspot?: SanityImageHotspot;
+          crop?: SanityImageCrop;
+          _type: "image";
+        };
       }
   > | null;
   footer: {
@@ -976,4 +1202,5 @@ export type PAGE_BY_SLUG_QUERYResult = {
     _type: "image";
   } | null;
   robots: "index" | "no-index" | null;
+  theme: "dark" | "light";
 } | null;

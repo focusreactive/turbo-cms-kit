@@ -8,7 +8,7 @@ import { Link } from "../../ui/link";
 import { Switch } from "../../ui/switch/Switch";
 import type { IPricingProps } from "./types";
 
-export function Pricing({
+export function PricingTable({
   tiers,
   yearlyDiscountPercentage,
   extraServiceEnabled,
@@ -23,7 +23,7 @@ export function Pricing({
   };
 
   return (
-    <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+    <>
       <div className="sm:align-center relative sm:flex sm:flex-col">
         <HorizontalSelect
           className={"mb-12"}
@@ -141,6 +141,6 @@ export function Pricing({
           );
         })}
       </div>
-    </div>
+    </>
   );
 }

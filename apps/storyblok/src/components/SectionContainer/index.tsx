@@ -11,28 +11,49 @@ export default function SectionContainer({
   blok,
   className,
 }: ISectionContainerProps) {
-  const { _uid, paddingX, paddingY, marginTop, marginBottom, noMaxWidth } =
-    blok;
+  const {
+    _uid,
+    paddingX,
+    paddingY,
+    marginTop,
+    marginBottom,
+    maxWidth,
+    backgroundColor,
+    backgroundImage,
+  } = blok;
+
+  const style = backgroundImage?.filename
+    ? {
+        background: `url(${backgroundImage.filename}) no-repeat center/cover`,
+      }
+    : {};
 
   if (isDraftMode) {
     return (
       <section
         {...storyblokEditable(blok)}
-        className={cn("overflow-x-hidden", className, {
-          "mt-0": marginTop === "none",
-          "mb-0": marginBottom === "none",
-          "mt-sectionBase": marginTop === "base",
-          "mb-sectionBase": marginBottom === "base",
-          "mt-sectionLg": marginTop === "lg",
-          "mb-sectionLg": marginBottom === "lg",
-        })}
+        className={cn(
+          "bg-bgColor overflow-x-hidden",
+          className,
+          backgroundColor,
+          {
+            "mt-0": marginTop === "none",
+            "mb-0": marginBottom === "none",
+            "mt-sectionBase": marginTop === "base",
+            "mb-sectionBase": marginBottom === "base",
+            "mt-sectionLg": marginTop === "lg",
+            "mb-sectionLg": marginBottom === "lg",
+          },
+        )}
         id={_uid}
+        style={style}
       >
         <div
-          className={cn("mx-auto max-w-screen-xl px-4 py-8", {
+          className={cn("mx-auto px-4 py-8", {
             "px-0": paddingX === "none",
             "py-0": paddingY === "none",
-            "max-w-none": noMaxWidth,
+            "max-w-screen-xl": maxWidth === "base",
+            "max-w-screen-sm": maxWidth === "small",
           })}
         >
           {children}
@@ -43,7 +64,7 @@ export default function SectionContainer({
 
   return (
     <section
-      className={cn(className, {
+      className={cn("bg-bgColor", className, backgroundColor, {
         "mt-0": marginTop === "none",
         "mb-0": marginBottom === "none",
         "mt-sectionBase": marginTop === "base",
@@ -52,12 +73,14 @@ export default function SectionContainer({
         "mb-sectionLg": marginBottom === "lg",
       })}
       id={_uid}
+      style={style}
     >
       <div
-        className={cn("mx-auto max-w-screen-xl px-4 py-8", {
+        className={cn("mx-auto px-4 py-8", {
           "px-0": paddingX === "none",
           "py-0": paddingY === "none",
-          "max-w-none": noMaxWidth,
+          "max-w-screen-xl": maxWidth === "base",
+          "max-w-screen-sm": maxWidth === "small",
         })}
       >
         {children}

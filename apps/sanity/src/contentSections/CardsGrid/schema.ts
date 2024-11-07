@@ -5,7 +5,7 @@ import customImage from "@/lib/schemas/customImage";
 import {
   CommonGroup,
   commonGroups,
-  sectionMarginFields,
+  sectionCommonFields,
 } from "../commonFields";
 
 const featurePointStyles = [
@@ -108,7 +108,7 @@ export default {
       of: [{ type: "defaultCard" }],
       validation: (Rule) => Rule.required().min(1),
     }),
-    ...sectionMarginFields,
+    ...sectionCommonFields,
   ],
   preview: {
     select: {

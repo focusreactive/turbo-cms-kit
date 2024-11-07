@@ -44,7 +44,7 @@ export function GenericCarousel({
   params,
 }: IGenericCarouselProps) {
   return (
-    <div className="mask-shadow-y relative">
+    <div className="relative mask-shadow-y">
       {text && <RichText {...text} className={"mb-5"} />}
 
       <Swiper

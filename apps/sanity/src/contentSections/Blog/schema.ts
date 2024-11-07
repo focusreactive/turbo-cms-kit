@@ -5,7 +5,7 @@ import customRichText from "@/lib/schemas/customRichText";
 import {
   CommonGroup,
   commonGroups,
-  sectionMarginFields,
+  sectionCommonFields,
 } from "../commonFields";
 
 export const blogPost = defineType({
@@ -90,7 +90,7 @@ export default {
       of: [{ type: blogPost.name }],
       validation: (Rule) => Rule.required(),
     }),
-    ...sectionMarginFields,
+    ...sectionCommonFields,
   ],
   preview: {
     select: {

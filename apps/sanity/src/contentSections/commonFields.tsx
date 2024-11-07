@@ -33,7 +33,7 @@ export const themeField = defineField({
   validation: (Rule) => Rule.required(),
 });
 
-export const sectionMarginFields = [
+export const sectionCommonFields = [
   defineField({
     name: "marginTop",
     type: "string",
@@ -63,5 +63,42 @@ export const sectionMarginFields = [
     },
     initialValue: "base",
     validation: (Rule) => Rule.required(),
+  }),
+  defineField({
+    name: "maxWidth",
+    type: "string",
+    group: CommonGroup.Style,
+    options: {
+      list: [
+        { title: "none", value: "none" },
+        { title: "base", value: "base" },
+        { title: "small", value: "small" },
+      ],
+      layout: "dropdown",
+    },
+    initialValue: "base",
+    validation: (Rule) => Rule.required(),
+  }),
+  defineField({
+    name: "backgroundColor",
+    type: "string",
+    group: CommonGroup.Style,
+    options: {
+      list: [
+        { title: "light", value: "light" },
+        { title: "light gray", value: "light-gray" },
+        { title: "dark gray", value: "dark-gray" },
+        { title: "dark", value: "dark" },
+        { title: "none", value: "none" },
+      ],
+      layout: "dropdown",
+    },
+    initialValue: "none",
+    validation: (Rule) => Rule.required(),
+  }),
+  defineField({
+    name: "backgroundImage",
+    type: "image",
+    group: CommonGroup.Style,
   }),
 ];

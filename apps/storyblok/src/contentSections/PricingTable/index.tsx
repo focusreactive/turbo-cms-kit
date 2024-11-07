@@ -1,16 +1,16 @@
 import EmptyBlock from "@shared/ui/components/EmptyBlock";
 
-import { Pricing } from "@shared/ui";
+import { PricingTable as PricingTableUI } from "@shared/ui";
 
 import { prepareImageProps } from "@/lib/adapters/prepareImageProps";
 import { prepareLinkProps } from "@/lib/adapters/prepareLinkProps";
 import SectionContainer from "@/components/SectionContainer";
 
-import type { IPricingProps } from "./types";
+import type { IPricingTableProps } from "./types";
 
-export default function PricingSection({ blok }: IPricingProps) {
+export default function PricingTable({ blok }: IPricingTableProps) {
   if (!blok || blok?.tiers?.length === 0)
-    return <EmptyBlock name="Pricing Section" />;
+    return <EmptyBlock name={blok.component as string} />;
 
   const { tiers, yearlyDiscountPercentage } = blok;
 
@@ -31,7 +31,7 @@ export default function PricingSection({ blok }: IPricingProps) {
 
   return (
     <SectionContainer blok={blok}>
-      <Pricing
+      <PricingTableUI
         {...blok}
         tiers={formattedTiers || []}
         extraService={extraService}

@@ -1,36 +1,39 @@
+import { stegaClean } from "@sanity/client/stega";
 import EmptyBlock from "@shared/ui/components/EmptyBlock";
 
-import { SimpleCarousel as SimpleCarouselUI } from "@shared/ui";
+import { Carousel as CarouselUI } from "@shared/ui";
 
 import { prepareImageProps } from "@/lib/adapters/prepareImageProps";
 import { prepareRichTextProps } from "@/lib/adapters/prepareRichTextProps";
 import SectionContainer from "@/components/SectionContainer";
 
-import type { ISimpleCarouselProps } from "./types";
+import type { ICarouselProps } from "./types";
 
-export default function SimpleCarousel({ blok }: ISimpleCarouselProps) {
-  const { text, slides, effect, fullWidth, params } = blok;
-  const { loop, slidesPerView, spaceBetween } = params?.[0] || {};
+export default function Carousel({ data }: ICarouselProps) {
+  if (!data) return null;
+
+  const { text, slides, params } = data;
+  const effect = stegaClean(data.effect);
+  const { loop, slidesPerView, spaceBetween } = params || {};
 
   if (!slides || slides.length === 0)
-    return <EmptyBlock name="Simple Carousel" />;
+    return <EmptyBlock name="Carousel" />;
 
   const carouselSlides = slides.map((slide) => ({
-    image: prepareImageProps(slide.image[0]),
-    text: prepareRichTextProps(slide.text?.[0]),
+    image: prepareImageProps(slide.image),
+    text: prepareRichTextProps(slide.text),
     effect,
   }));
 
   return (
     <SectionContainer
-      blok={{
-        ...blok,
+      sectionData={{
+        ...data,
         paddingX: "none",
-        noMaxWidth: fullWidth,
       }}
     >
-      <SimpleCarouselUI
-        text={prepareRichTextProps(text?.[0])}
+      <CarouselUI
+        text={prepareRichTextProps(text)}
         slides={carouselSlides}
         effect={effect}
         params={{

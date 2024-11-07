@@ -1,7 +1,7 @@
 import {
   CommonGroup,
   commonGroups,
-  sectionMarginFields,
+  sectionCommonFields,
 } from "@/contentSections/commonFields";
 import { defineField, defineType } from "sanity";
 
@@ -9,9 +9,9 @@ import customImage from "@/lib/schemas/customImage";
 import customLink from "@/lib/schemas/customLink";
 
 export const pricingTier = defineType({
-  name: "pricingTier",
+  name: "pricingTableTier",
   type: "object",
-  title: "Pricing Tier",
+  title: "Pricing Table Tier",
   fields: [
     defineField({
       name: "name",
@@ -57,8 +57,8 @@ export const pricingTier = defineType({
 });
 
 export default {
-  name: "section.pricing",
-  title: "Pricing",
+  name: "section.pricingTable",
+  title: "Pricing Table",
   type: "object",
   groups: commonGroups,
   fields: [
@@ -98,11 +98,11 @@ export default {
         }),
       ],
     }),
-    ...sectionMarginFields,
+    ...sectionCommonFields,
   ],
   preview: {
     prepare: () => ({
-      title: `Pricing`,
+      title: `Pricing Table`,
     }),
   },
 };

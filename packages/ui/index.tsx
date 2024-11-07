@@ -12,9 +12,9 @@ export * from "./components/sections/linksList";
 export * from "./components/sections/cardsGrid";
 export * from "./components/sections/blog";
 export * from "./components/sections/hero";
-export * from "./components/sections/carousels";
+export * from "./components/sections/carousel";
 export * from "./components/sections/cookieBanner";
-export * from "./components/sections/pricing"; // todo: pricing table?
+export * from "./components/sections/pricingTable";
 export * from "./components/sections/stepGuide";
 export * from "./components/sections/threeDElement";
 // end component exports
