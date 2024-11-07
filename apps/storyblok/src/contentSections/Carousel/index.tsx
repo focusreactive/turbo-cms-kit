@@ -19,13 +19,10 @@ export default function Carousel({ blok }: ICarouselProps) {
     text: prepareRichTextProps(slide.text?.[0]),
     effect,
   }));
+
   const carouselParams = {
     loop,
-    slidesPerView: slidesPerView
-      ? parseInt(slidesPerView)
-      : effect === "cards"
-        ? 1
-        : 3,
+    slidesPerView: parseInt(slidesPerView),
     spaceBetween: 20,
   };
 

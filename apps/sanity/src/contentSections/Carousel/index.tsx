@@ -12,18 +12,22 @@ import type { ICarouselProps } from "./types";
 export default function Carousel({ data }: ICarouselProps) {
   if (!data) return null;
 
-  const { text, slides, params } = data;
+  const { slides, loop, slidesPerView } = data;
   const effect = stegaClean(data.effect);
-  const { loop, slidesPerView, spaceBetween } = params || {};
 
-  if (!slides || slides.length === 0)
-    return <EmptyBlock name="Carousel" />;
+  if (!slides || slides.length === 0) return <EmptyBlock name="Carousel" />;
 
   const carouselSlides = slides.map((slide) => ({
     image: prepareImageProps(slide.image),
     text: prepareRichTextProps(slide.text),
     effect,
   }));
+
+  const carouselParams = {
+    loop,
+    slidesPerView,
+    spaceBetween: 20,
+  };
 
   return (
     <SectionContainer
@@ -33,14 +37,9 @@ export default function Carousel({ data }: ICarouselProps) {
       }}
     >
       <CarouselUI
-        text={prepareRichTextProps(text)}
         slides={carouselSlides}
         effect={effect}
-        params={{
-          loop,
-          slidesPerView: slidesPerView || (effect === "cards" ? 1 : 3),
-          spaceBetween: spaceBetween || 20,
-        }}
+        params={carouselParams}
       />
     </SectionContainer>
   );
