@@ -72,6 +72,7 @@ export const sectionCommonFields = [
       list: [
         { title: "none", value: "none" },
         { title: "base", value: "base" },
+        { title: "small", value: "small" },
       ],
       layout: "dropdown",
     },
@@ -84,10 +85,10 @@ export const sectionCommonFields = [
     group: CommonGroup.Style,
     options: {
       list: [
-        { title: "white", value: "white" },
-        { title: "lightGray", value: "lightGray" },
-        { title: "darkGray", value: "darkGray" },
-        { title: "black", value: "black" },
+        { title: "light", value: "light" },
+        { title: "light gray", value: "light-gray" },
+        { title: "dark gray", value: "dark-gray" },
+        { title: "dark", value: "dark" },
         { title: "none", value: "none" },
       ],
       layout: "dropdown",

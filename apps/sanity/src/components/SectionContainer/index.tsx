@@ -37,30 +37,32 @@ export default function SectionContainer({
   const cleanMarginTop = stegaClean(marginTop);
   const cleanMarginBottom = stegaClean(marginBottom);
   const cleanBackgroundColor = stegaClean(backgroundColor);
+  const cleanMaxWidth = stegaClean(maxWidth);
 
   return (
     <section
       id={_key}
-      className={cn("overflow-x-hidden", className, {
-        "mt-0": cleanMarginTop === "none",
-        "mb-0": cleanMarginBottom === "none",
-        "mt-sectionBase": cleanMarginTop === "base",
-        "mb-sectionBase": cleanMarginBottom === "base",
-        "mt-sectionLg": cleanMarginTop === "lg",
-        "mb-sectionLg": cleanMarginBottom === "lg",
-
-        "section-white": cleanBackgroundColor === "white",
-        "section-lightGray": cleanBackgroundColor === "lightGray",
-        "section-darkGray": cleanBackgroundColor === "darkGray",
-        "section-black": cleanBackgroundColor === "black",
-      })}
+      className={cn(
+        "bg-bgColor overflow-x-hidden",
+        className,
+        cleanBackgroundColor,
+        {
+          "mt-0": cleanMarginTop === "none",
+          "mb-0": cleanMarginBottom === "none",
+          "mt-sectionBase": cleanMarginTop === "base",
+          "mb-sectionBase": cleanMarginBottom === "base",
+          "mt-sectionLg": cleanMarginTop === "lg",
+          "mb-sectionLg": cleanMarginBottom === "lg",
+        },
+      )}
       style={style}
     >
       <div
         className={cn("mx-auto px-4 py-8", {
           "px-0": paddingX === "none",
           "py-0": paddingY === "none",
-          "max-w-screen-xl": stegaClean(maxWidth) === "base",
+          "max-w-screen-xl": cleanMaxWidth === "base",
+          "max-w-screen-sm": cleanMaxWidth === "small",
         })}
       >
         {children}

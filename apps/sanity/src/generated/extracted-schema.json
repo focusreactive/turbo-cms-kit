@@ -413,6 +413,10 @@
               {
                 "type": "string",
                 "value": "base"
+              },
+              {
+                "type": "string",
+                "value": "small"
               }
             ]
           },
@@ -425,19 +429,19 @@
             "of": [
               {
                 "type": "string",
-                "value": "white"
+                "value": "light"
               },
               {
                 "type": "string",
-                "value": "lightGray"
+                "value": "light-gray"
               },
               {
                 "type": "string",
-                "value": "darkGray"
+                "value": "dark-gray"
               },
               {
                 "type": "string",
-                "value": "black"
+                "value": "dark"
               },
               {
                 "type": "string",
@@ -609,6 +613,10 @@
               {
                 "type": "string",
                 "value": "base"
+              },
+              {
+                "type": "string",
+                "value": "small"
               }
             ]
           },
@@ -621,19 +629,19 @@
             "of": [
               {
                 "type": "string",
-                "value": "white"
+                "value": "light"
               },
               {
                 "type": "string",
-                "value": "lightGray"
+                "value": "light-gray"
               },
               {
                 "type": "string",
-                "value": "darkGray"
+                "value": "dark-gray"
               },
               {
                 "type": "string",
-                "value": "black"
+                "value": "dark"
               },
               {
                 "type": "string",
@@ -834,6 +842,10 @@
               {
                 "type": "string",
                 "value": "base"
+              },
+              {
+                "type": "string",
+                "value": "small"
               }
             ]
           },
@@ -846,19 +858,19 @@
             "of": [
               {
                 "type": "string",
-                "value": "white"
+                "value": "light"
               },
               {
                 "type": "string",
-                "value": "lightGray"
+                "value": "light-gray"
               },
               {
                 "type": "string",
-                "value": "darkGray"
+                "value": "dark-gray"
               },
               {
                 "type": "string",
-                "value": "black"
+                "value": "dark"
               },
               {
                 "type": "string",
@@ -1045,6 +1057,10 @@
               {
                 "type": "string",
                 "value": "base"
+              },
+              {
+                "type": "string",
+                "value": "small"
               }
             ]
           },
@@ -1057,19 +1073,19 @@
             "of": [
               {
                 "type": "string",
-                "value": "white"
+                "value": "light"
               },
               {
                 "type": "string",
-                "value": "lightGray"
+                "value": "light-gray"
               },
               {
                 "type": "string",
-                "value": "darkGray"
+                "value": "dark-gray"
               },
               {
                 "type": "string",
-                "value": "black"
+                "value": "dark"
               },
               {
                 "type": "string",
@@ -1304,6 +1320,10 @@
               {
                 "type": "string",
                 "value": "base"
+              },
+              {
+                "type": "string",
+                "value": "small"
               }
             ]
           },
@@ -1316,19 +1336,19 @@
             "of": [
               {
                 "type": "string",
-                "value": "white"
+                "value": "light"
               },
               {
                 "type": "string",
-                "value": "lightGray"
+                "value": "light-gray"
               },
               {
                 "type": "string",
-                "value": "darkGray"
+                "value": "dark-gray"
               },
               {
                 "type": "string",
-                "value": "black"
+                "value": "dark"
               },
               {
                 "type": "string",
@@ -1521,6 +1541,10 @@
               {
                 "type": "string",
                 "value": "base"
+              },
+              {
+                "type": "string",
+                "value": "small"
               }
             ]
           },
@@ -1533,19 +1557,19 @@
             "of": [
               {
                 "type": "string",
-                "value": "white"
+                "value": "light"
               },
               {
                 "type": "string",
-                "value": "lightGray"
+                "value": "light-gray"
               },
               {
                 "type": "string",
-                "value": "darkGray"
+                "value": "dark-gray"
               },
               {
                 "type": "string",
-                "value": "black"
+                "value": "dark"
               },
               {
                 "type": "string",
@@ -1730,6 +1754,10 @@
               {
                 "type": "string",
                 "value": "base"
+              },
+              {
+                "type": "string",
+                "value": "small"
               }
             ]
           },
@@ -1742,19 +1770,19 @@
             "of": [
               {
                 "type": "string",
-                "value": "white"
+                "value": "light"
               },
               {
                 "type": "string",
-                "value": "lightGray"
+                "value": "light-gray"
               },
               {
                 "type": "string",
-                "value": "darkGray"
+                "value": "dark-gray"
               },
               {
                 "type": "string",
-                "value": "black"
+                "value": "dark"
               },
               {
                 "type": "string",
@@ -1939,6 +1967,10 @@
               {
                 "type": "string",
                 "value": "base"
+              },
+              {
+                "type": "string",
+                "value": "small"
               }
             ]
           },
@@ -1951,19 +1983,19 @@
             "of": [
               {
                 "type": "string",
-                "value": "white"
+                "value": "light"
               },
               {
                 "type": "string",
-                "value": "lightGray"
+                "value": "light-gray"
               },
               {
                 "type": "string",
-                "value": "darkGray"
+                "value": "dark-gray"
               },
               {
                 "type": "string",
-                "value": "black"
+                "value": "dark"
               },
               {
                 "type": "string",
@@ -2148,6 +2180,10 @@
               {
                 "type": "string",
                 "value": "base"
+              },
+              {
+                "type": "string",
+                "value": "small"
               }
             ]
           },
@@ -2160,19 +2196,19 @@
             "of": [
               {
                 "type": "string",
-                "value": "white"
+                "value": "light"
               },
               {
                 "type": "string",
-                "value": "lightGray"
+                "value": "light-gray"
               },
               {
                 "type": "string",
-                "value": "darkGray"
+                "value": "dark-gray"
               },
               {
                 "type": "string",
-                "value": "black"
+                "value": "dark"
               },
               {
                 "type": "string",
@@ -2343,6 +2379,10 @@
               {
                 "type": "string",
                 "value": "base"
+              },
+              {
+                "type": "string",
+                "value": "small"
               }
             ]
           },
@@ -2355,19 +2395,19 @@
             "of": [
               {
                 "type": "string",
-                "value": "white"
+                "value": "light"
               },
               {
                 "type": "string",
-                "value": "lightGray"
+                "value": "light-gray"
               },
               {
                 "type": "string",
-                "value": "darkGray"
+                "value": "dark-gray"
               },
               {
                 "type": "string",
-                "value": "black"
+                "value": "dark"
               },
               {
                 "type": "string",

@@ -73,8 +73,8 @@ export type SectionThreeDElement = {
   model: "donut" | "globe" | "kubik-rubik";
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
-  maxWidth: "none" | "base";
-  backgroundColor: "white" | "lightGray" | "darkGray" | "black" | "none";
+  maxWidth: "none" | "base" | "small";
+  backgroundColor: "light" | "light-gray" | "dark-gray" | "dark" | "none";
   backgroundImage?: {
     asset?: {
       _ref: string;
@@ -98,8 +98,8 @@ export type SectionStepGuide = {
   link: CustomLink;
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
-  maxWidth: "none" | "base";
-  backgroundColor: "white" | "lightGray" | "darkGray" | "black" | "none";
+  maxWidth: "none" | "base" | "small";
+  backgroundColor: "light" | "light-gray" | "dark-gray" | "dark" | "none";
   backgroundImage?: {
     asset?: {
       _ref: string;
@@ -128,8 +128,8 @@ export type SectionPricingTable = {
   };
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
-  maxWidth: "none" | "base";
-  backgroundColor: "white" | "lightGray" | "darkGray" | "black" | "none";
+  maxWidth: "none" | "base" | "small";
+  backgroundColor: "light" | "light-gray" | "dark-gray" | "dark" | "none";
   backgroundImage?: {
     asset?: {
       _ref: string;
@@ -155,8 +155,8 @@ export type SectionHero = {
   >;
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
-  maxWidth: "none" | "base";
-  backgroundColor: "white" | "lightGray" | "darkGray" | "black" | "none";
+  maxWidth: "none" | "base" | "small";
+  backgroundColor: "light" | "light-gray" | "dark-gray" | "dark" | "none";
   backgroundImage?: {
     asset?: {
       _ref: string;
@@ -186,8 +186,8 @@ export type SectionCarousel = {
   };
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
-  maxWidth: "none" | "base";
-  backgroundColor: "white" | "lightGray" | "darkGray" | "black" | "none";
+  maxWidth: "none" | "base" | "small";
+  backgroundColor: "light" | "light-gray" | "dark-gray" | "dark" | "none";
   backgroundImage?: {
     asset?: {
       _ref: string;
@@ -215,8 +215,8 @@ export type SectionBlog = {
   >;
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
-  maxWidth: "none" | "base";
-  backgroundColor: "white" | "lightGray" | "darkGray" | "black" | "none";
+  maxWidth: "none" | "base" | "small";
+  backgroundColor: "light" | "light-gray" | "dark-gray" | "dark" | "none";
   backgroundImage?: {
     asset?: {
       _ref: string;
@@ -240,8 +240,8 @@ export type SectionCardsGrid = {
   >;
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
-  maxWidth: "none" | "base";
-  backgroundColor: "white" | "lightGray" | "darkGray" | "black" | "none";
+  maxWidth: "none" | "base" | "small";
+  backgroundColor: "light" | "light-gray" | "dark-gray" | "dark" | "none";
   backgroundImage?: {
     asset?: {
       _ref: string;
@@ -265,8 +265,8 @@ export type SectionLinksList = {
   alignVariant: "left" | "center" | "right";
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
-  maxWidth: "none" | "base";
-  backgroundColor: "white" | "lightGray" | "darkGray" | "black" | "none";
+  maxWidth: "none" | "base" | "small";
+  backgroundColor: "light" | "light-gray" | "dark-gray" | "dark" | "none";
   backgroundImage?: {
     asset?: {
       _ref: string;
@@ -290,8 +290,8 @@ export type SectionLogos = {
   alignVariant: "left" | "center" | "right";
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
-  maxWidth: "none" | "base";
-  backgroundColor: "white" | "lightGray" | "darkGray" | "black" | "none";
+  maxWidth: "none" | "base" | "small";
+  backgroundColor: "light" | "light-gray" | "dark-gray" | "dark" | "none";
   backgroundImage?: {
     asset?: {
       _ref: string;
@@ -315,8 +315,8 @@ export type SectionCopy = {
   isReversedOnMobile: boolean;
   marginTop: "none" | "base" | "lg";
   marginBottom: "none" | "base" | "lg";
-  maxWidth: "none" | "base";
-  backgroundColor: "white" | "lightGray" | "darkGray" | "black" | "none";
+  maxWidth: "none" | "base" | "small";
+  backgroundColor: "light" | "light-gray" | "dark-gray" | "dark" | "none";
   backgroundImage?: {
     asset?: {
       _ref: string;
@@ -828,8 +828,8 @@ export type PAGE_BY_SLUG_QUERYResult = {
         }>;
         marginTop: "base" | "lg" | "none";
         marginBottom: "base" | "lg" | "none";
-        maxWidth: "base" | "none";
-        backgroundColor: "black" | "darkGray" | "lightGray" | "none" | "white";
+        maxWidth: "base" | "none" | "small";
+        backgroundColor: "dark-gray" | "dark" | "light-gray" | "light" | "none";
         backgroundImage?: {
           asset?: {
             _ref: string;
@@ -881,8 +881,8 @@ export type PAGE_BY_SLUG_QUERYResult = {
         }>;
         marginTop: "base" | "lg" | "none";
         marginBottom: "base" | "lg" | "none";
-        maxWidth: "base" | "none";
-        backgroundColor: "black" | "darkGray" | "lightGray" | "none" | "white";
+        maxWidth: "base" | "none" | "small";
+        backgroundColor: "dark-gray" | "dark" | "light-gray" | "light" | "none";
         backgroundImage?: {
           asset?: {
             _ref: string;
@@ -912,8 +912,8 @@ export type PAGE_BY_SLUG_QUERYResult = {
         };
         marginTop: "base" | "lg" | "none";
         marginBottom: "base" | "lg" | "none";
-        maxWidth: "base" | "none";
-        backgroundColor: "black" | "darkGray" | "lightGray" | "none" | "white";
+        maxWidth: "base" | "none" | "small";
+        backgroundColor: "dark-gray" | "dark" | "light-gray" | "light" | "none";
         backgroundImage?: {
           asset?: {
             _ref: string;
@@ -937,8 +937,8 @@ export type PAGE_BY_SLUG_QUERYResult = {
         isReversedOnMobile: boolean;
         marginTop: "base" | "lg" | "none";
         marginBottom: "base" | "lg" | "none";
-        maxWidth: "base" | "none";
-        backgroundColor: "black" | "darkGray" | "lightGray" | "none" | "white";
+        maxWidth: "base" | "none" | "small";
+        backgroundColor: "dark-gray" | "dark" | "light-gray" | "light" | "none";
         backgroundImage?: {
           asset?: {
             _ref: string;
@@ -979,8 +979,8 @@ export type PAGE_BY_SLUG_QUERYResult = {
         }>;
         marginTop: "base" | "lg" | "none";
         marginBottom: "base" | "lg" | "none";
-        maxWidth: "base" | "none";
-        backgroundColor: "black" | "darkGray" | "lightGray" | "none" | "white";
+        maxWidth: "base" | "none" | "small";
+        backgroundColor: "dark-gray" | "dark" | "light-gray" | "light" | "none";
         backgroundImage?: {
           asset?: {
             _ref: string;
@@ -1019,8 +1019,8 @@ export type PAGE_BY_SLUG_QUERYResult = {
         alignVariant: "center" | "left" | "right";
         marginTop: "base" | "lg" | "none";
         marginBottom: "base" | "lg" | "none";
-        maxWidth: "base" | "none";
-        backgroundColor: "black" | "darkGray" | "lightGray" | "none" | "white";
+        maxWidth: "base" | "none" | "small";
+        backgroundColor: "dark-gray" | "dark" | "light-gray" | "light" | "none";
         backgroundImage?: {
           asset?: {
             _ref: string;
@@ -1064,8 +1064,8 @@ export type PAGE_BY_SLUG_QUERYResult = {
         alignVariant: "center" | "left" | "right";
         marginTop: "base" | "lg" | "none";
         marginBottom: "base" | "lg" | "none";
-        maxWidth: "base" | "none";
-        backgroundColor: "black" | "darkGray" | "lightGray" | "none" | "white";
+        maxWidth: "base" | "none" | "small";
+        backgroundColor: "dark-gray" | "dark" | "light-gray" | "light" | "none";
         backgroundImage?: {
           asset?: {
             _ref: string;
@@ -1094,8 +1094,8 @@ export type PAGE_BY_SLUG_QUERYResult = {
         };
         marginTop: "base" | "lg" | "none";
         marginBottom: "base" | "lg" | "none";
-        maxWidth: "base" | "none";
-        backgroundColor: "black" | "darkGray" | "lightGray" | "none" | "white";
+        maxWidth: "base" | "none" | "small";
+        backgroundColor: "dark-gray" | "dark" | "light-gray" | "light" | "none";
         backgroundImage?: {
           asset?: {
             _ref: string;
@@ -1119,8 +1119,8 @@ export type PAGE_BY_SLUG_QUERYResult = {
         link: CustomLink;
         marginTop: "base" | "lg" | "none";
         marginBottom: "base" | "lg" | "none";
-        maxWidth: "base" | "none";
-        backgroundColor: "black" | "darkGray" | "lightGray" | "none" | "white";
+        maxWidth: "base" | "none" | "small";
+        backgroundColor: "dark-gray" | "dark" | "light-gray" | "light" | "none";
         backgroundImage?: {
           asset?: {
             _ref: string;
@@ -1139,8 +1139,8 @@ export type PAGE_BY_SLUG_QUERYResult = {
         model: "donut" | "globe" | "kubik-rubik";
         marginTop: "base" | "lg" | "none";
         marginBottom: "base" | "lg" | "none";
-        maxWidth: "base" | "none";
-        backgroundColor: "black" | "darkGray" | "lightGray" | "none" | "white";
+        maxWidth: "base" | "none" | "small";
+        backgroundColor: "dark-gray" | "dark" | "light-gray" | "light" | "none";
         backgroundImage?: {
           asset?: {
             _ref: string;
