@@ -149,7 +149,7 @@ const main = async () => {
     console.log(
       colorText("Storyblok dashboard:", "cyan"),
       colorText(
-        `https://app.storyblok.com/me/spaces/${spaceId}/dashboard`,
+        `https://app.storyblok.com/me/spaces/${spaceId}/dashboard#/me/spaces/${spaceId}/dashboard`,
         "yellow",
       ),
     );
