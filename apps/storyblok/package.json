@@ -11,7 +11,7 @@
     "pull-schemas": "pnpm storyblok pull-components --space 293915 --file-name production --path src/generated/",
     "pull-stories": "pnpm storyblok-backup --token [YOUR_TOKEN] --space 293915 --types stories --with-asset-files --output-dir ./src/generated/dump --force --verbose",
     "push-schemas": "pnpm storyblok push-components src/generated/components.production.json --presets-source src/generated/presets.production.json --space",
-    "generate-types": "pnpm pull-schemas && storyblok generate-typescript-typedefs --sourceFilePaths ./src/generated/components.production.json --destinationFilePath src/generated/extracted-types.ts"
+    "gen:types": "pnpm pull-schemas && storyblok generate-typescript-typedefs --sourceFilePaths ./src/generated/components.production.json --destinationFilePath src/generated/extracted-types.ts"
   },
   "dependencies": {
     "@shared/ui": "workspace:*",
