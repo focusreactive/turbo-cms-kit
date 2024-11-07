@@ -495,12 +495,30 @@
       "name": "carousel",
       "display_name": null,
       "created_at": "2024-10-08T14:20:16.827Z",
-      "updated_at": "2024-11-07T06:50:03.707Z",
+      "updated_at": "2024-11-07T07:33:31.803Z",
       "id": 6391276,
       "schema": {
+        "slidesPerView": {
+          "type": "number",
+          "pos": 0,
+          "required": true,
+          "min_value": 1,
+          "default_value": "3"
+        },
+        "slides": {
+          "type": "bloks",
+          "pos": 1,
+          "minimum": 1,
+          "required": true,
+          "restrict_type": "",
+          "restrict_components": true,
+          "component_whitelist": [
+            "carouselSlide"
+          ]
+        },
         "effect": {
           "type": "option",
-          "pos": 0,
+          "pos": 2,
           "use_uuid": true,
           "options": [
             {
@@ -537,19 +555,13 @@
           "default_value": "slide",
           "exclude_empty_option": true
         },
-        "params": {
-          "type": "bloks",
-          "pos": 1,
-          "maximum": 1,
-          "restrict_type": "",
-          "restrict_components": true,
-          "component_whitelist": [
-            "carouselParams"
-          ]
+        "loop": {
+          "type": "boolean",
+          "pos": 3
         },
         "marginTop": {
           "type": "option",
-          "pos": 2,
+          "pos": 4,
           "use_uuid": true,
           "required": true,
           "options": [
@@ -574,7 +586,7 @@
         },
         "marginBottom": {
           "type": "option",
-          "pos": 3,
+          "pos": 5,
           "use_uuid": true,
           "required": true,
           "options": [
@@ -599,7 +611,7 @@
         },
         "maxWidth": {
           "type": "option",
-          "pos": 4,
+          "pos": 6,
           "use_uuid": true,
           "options": [
             {
@@ -624,7 +636,7 @@
         },
         "backgroundColor": {
           "type": "option",
-          "pos": 5,
+          "pos": 7,
           "use_uuid": true,
           "default_value": "none",
           "options": [
@@ -659,30 +671,9 @@
         },
         "backgroundImage": {
           "type": "asset",
-          "pos": 6,
+          "pos": 8,
           "filetypes": [
             "images"
-          ]
-        },
-        "text": {
-          "type": "bloks",
-          "pos": 7,
-          "maximum": 1,
-          "restrict_type": "",
-          "restrict_components": true,
-          "component_whitelist": [
-            "richText"
-          ]
-        },
-        "slides": {
-          "type": "bloks",
-          "pos": 8,
-          "minimum": 1,
-          "required": true,
-          "restrict_type": "",
-          "restrict_components": true,
-          "component_whitelist": [
-            "carouselSlide"
           ]
         },
         "tab-17c5789f-282b-47bb-8520-eb437583e746": {
@@ -693,8 +684,6 @@
             "widthType",
             "backgroundColor",
             "backgroundImage",
-            "effect",
-            "params",
             "maxWidth"
           ],
           "pos": 9,
@@ -726,42 +715,6 @@
       "internal_tag_ids": [],
       "content_type_asset_preview": null,
       "component_group_name": "sections"
-    },
-    {
-      "name": "carouselParams",
-      "display_name": null,
-      "created_at": "2024-11-04T08:57:58.232Z",
-      "updated_at": "2024-11-05T15:21:37.597Z",
-      "id": 6508472,
-      "schema": {
-        "loop": {
-          "type": "boolean",
-          "pos": 0
-        },
-        "slidesPerView": {
-          "type": "number",
-          "pos": 1
-        },
-        "spaceBetween": {
-          "type": "number",
-          "pos": 2
-        }
-      },
-      "image": null,
-      "preview_field": null,
-      "is_root": false,
-      "preview_tmpl": null,
-      "is_nestable": true,
-      "all_presets": [],
-      "preset_id": null,
-      "real_name": "carouselParams",
-      "component_group_uuid": "7a581c8c-f6b7-4926-b5b0-98b7a48916b3",
-      "color": null,
-      "icon": null,
-      "internal_tags_list": [],
-      "internal_tag_ids": [],
-      "content_type_asset_preview": null,
-      "component_group_name": "components"
     },
     {
       "name": "carouselSlide",

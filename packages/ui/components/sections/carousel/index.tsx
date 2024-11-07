@@ -67,7 +67,6 @@ const ArrowButton = React.forwardRef<HTMLButtonElement, any>(
 );
 
 export function Carousel({
-  text,
   slides,
   customModules,
   customModulesParams,
@@ -104,7 +103,6 @@ export function Carousel({
       />
 
       <GenericCarousel
-        text={text}
         slides={slides.map((slide) => ({
           children: (({
             isNext,
