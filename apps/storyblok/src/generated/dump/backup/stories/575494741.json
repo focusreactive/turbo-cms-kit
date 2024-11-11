@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2024-11-07T13:20:06.490Z",
-  "published_at": "2024-11-07T12:57:39.819Z",
+  "updated_at": "2024-11-11T14:40:13.423Z",
+  "published_at": "2024-11-11T14:40:13.356Z",
   "id": 575494741,
   "uuid": "11a25115-a87f-4896-aafc-37d5d35433eb",
   "is_folder": false,
@@ -118,12 +118,24 @@
             "component": "link"
           }
         ],
-        "title": "Write. Plan. Collaborate.",
+        "title": "Write. Plan. Collab.",
         "maxWidth": "base",
         "component": "hero",
         "marginTop": "base",
         "marginBottom": "base",
-        "backgroundColor": "none"
+        "backgroundColor": "none",
+        "backgroundImage": {
+          "id": null,
+          "alt": null,
+          "name": "",
+          "focus": null,
+          "title": null,
+          "source": null,
+          "filename": "",
+          "copyright": null,
+          "fieldtype": "asset",
+          "meta_data": {}
+        }
       },
       {
         "_uid": "df7be297-d99e-45f9-8895-9b9fc6c4322f",
@@ -2139,6 +2151,708 @@
           "fieldtype": "asset",
           "meta_data": {}
         }
+      },
+      {
+        "_uid": "8a26e959-dcc7-4491-9efb-c55f21c546a8",
+        "columns": [
+          {
+            "_uid": "81667adf-c4ea-4a5d-a191-bb7b07ee515b",
+            "content": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "Experience CMS-Kit in Action",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 2
+                  },
+                  "content": [
+                    {
+                      "text": "Start Editing Content Right Here",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "Welcome! Dive in and make some changes. Any edits you make here are instantly reflected on the live page to the left. This is the magic of ",
+                      "type": "text"
+                    },
+                    {
+                      "text": "Storyblok Visual Editing",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "text": ", offering seamless and intuitive content management.",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "Right now, you're editing a ",
+                      "type": "text"
+                    },
+                    {
+                      "text": "Rich Text",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "italic"
+                        }
+                      ]
+                    },
+                    {
+                      "text": " field. You can write some text or add more advanced blocks like ",
+                      "type": "text"
+                    },
+                    {
+                      "text": "Image",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "italic"
+                        }
+                      ]
+                    },
+                    {
+                      "text": " or ",
+                      "type": "text"
+                    },
+                    {
+                      "text": "Cards Grid",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "italic"
+                        }
+                      ]
+                    },
+                    {
+                      "text": " down below.",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "blok",
+                  "attrs": {
+                    "id": "4594bedd-8168-4d1d-be76-3fe3a2229a03",
+                    "body": [
+                      {
+                        "_uid": "bd3c1b61-a2bc-494c-a812-b07be4a83e83",
+                        "items": [
+                          {
+                            "_uid": "7994ae42-3a88-4d65-a7e3-e368e1a7b3fb",
+                            "link": [],
+                            "image": [
+                              {
+                                "_uid": "b29158cf-0899-49fd-94b4-88cfc3e6ab44",
+                                "asset": {
+                                  "id": 17287559,
+                                  "alt": "",
+                                  "name": "",
+                                  "focus": "",
+                                  "title": "",
+                                  "source": "",
+                                  "filename": "https://a.storyblok.com/f/293915/15x15/6d170b1cb4/icon.webp",
+                                  "copyright": "",
+                                  "fieldtype": "asset",
+                                  "meta_data": {
+                                    "alt": "",
+                                    "title": "",
+                                    "source": "",
+                                    "copyright": ""
+                                  },
+                                  "is_external_url": false
+                                },
+                                "component": "image",
+                                "aspectRatio": "1/1"
+                              }
+                            ],
+                            "style": "icon-left",
+                            "title": "Instant Accounts: ",
+                            "component": "defaultCard",
+                            "description": "Create Vercel and Sanity accounts instantly. Get your project environment ready in minutes"
+                          },
+                          {
+                            "_uid": "1a7adccd-db55-4632-a40b-f210a80830ae",
+                            "link": [],
+                            "image": [
+                              {
+                                "_uid": "995b46bd-7a33-493a-9655-ff9ec49914b0",
+                                "asset": {
+                                  "id": 17287559,
+                                  "alt": "",
+                                  "name": "",
+                                  "focus": "",
+                                  "title": "",
+                                  "source": "",
+                                  "filename": "https://a.storyblok.com/f/293915/15x15/6d170b1cb4/icon.webp",
+                                  "copyright": "",
+                                  "fieldtype": "asset",
+                                  "meta_data": {
+                                    "alt": "",
+                                    "title": "",
+                                    "source": "",
+                                    "copyright": ""
+                                  },
+                                  "is_external_url": false
+                                },
+                                "component": "image",
+                                "aspectRatio": "1/1"
+                              }
+                            ],
+                            "style": "icon-left",
+                            "title": "GitHub Integration: ",
+                            "component": "defaultCard",
+                            "description": "Connect to your GitHub repository effortlessly. Set up webhooks and streamline your development process"
+                          },
+                          {
+                            "_uid": "c09ef456-9dbc-45eb-9264-5a3bee3820cb",
+                            "link": [],
+                            "image": [
+                              {
+                                "_uid": "14752452-1eae-44e3-a70a-25b6a7886509",
+                                "asset": {
+                                  "id": 17287559,
+                                  "alt": "",
+                                  "name": "",
+                                  "focus": "",
+                                  "title": "",
+                                  "source": "",
+                                  "filename": "https://a.storyblok.com/f/293915/15x15/6d170b1cb4/icon.webp",
+                                  "copyright": "",
+                                  "fieldtype": "asset",
+                                  "meta_data": {
+                                    "alt": "",
+                                    "title": "",
+                                    "source": "",
+                                    "copyright": ""
+                                  },
+                                  "is_external_url": false
+                                },
+                                "component": "image",
+                                "aspectRatio": "1/1"
+                              }
+                            ],
+                            "style": "icon-left",
+                            "title": "Easy Deployment: ",
+                            "component": "defaultCard",
+                            "description": "Deploy both your studio and frontend seamlessly. Enjoy a smooth transition from setup to live site"
+                          },
+                          {
+                            "_uid": "11cccdf2-ed63-417c-9bba-350b681dacc4",
+                            "link": [],
+                            "image": [
+                              {
+                                "_uid": "515332ff-68aa-4a2a-ab9b-15675883537e",
+                                "asset": {
+                                  "id": 17287559,
+                                  "alt": "",
+                                  "name": "",
+                                  "focus": "",
+                                  "title": "",
+                                  "source": "",
+                                  "filename": "https://a.storyblok.com/f/293915/15x15/6d170b1cb4/icon.webp",
+                                  "copyright": "",
+                                  "fieldtype": "asset",
+                                  "meta_data": {
+                                    "alt": "",
+                                    "title": "",
+                                    "source": "",
+                                    "copyright": ""
+                                  },
+                                  "is_external_url": false
+                                },
+                                "component": "image",
+                                "aspectRatio": "1/1"
+                              }
+                            ],
+                            "style": "icon-left",
+                            "title": "Visual Editing: ",
+                            "component": "defaultCard",
+                            "description": "Utilize our enhanced visual editing tools within the CMS. Create and manage content with a user-friendly interface"
+                          }
+                        ],
+                        "columns": "2",
+                        "maxWidth": "base",
+                        "component": "cardsGrid",
+                        "marginTop": "none",
+                        "marginBottom": "none",
+                        "backgroundColor": "none"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "component": "richText",
+            "alignVariant": "center",
+            "removeInnerMargins": false
+          }
+        ],
+        "maxWidth": "base",
+        "component": "copy",
+        "marginTop": "base",
+        "marginBottom": "base",
+        "backgroundColor": "none",
+        "isReversedOnMobile": false
+      },
+      {
+        "_uid": "45350dd9-702b-4638-9d6c-6b5d86343b70",
+        "loop": true,
+        "effect": "cube",
+        "slides": [
+          {
+            "_uid": "d45cdfd6-e367-4b3c-94ec-e134bd6a098c",
+            "text": [
+              {
+                "_uid": "385212f9-79a9-4879-bb1a-29b6996a4a62",
+                "content": {
+                  "type": "doc",
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 3
+                      },
+                      "content": [
+                        {
+                          "text": "Phasellus ut sagittis sapien",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel congue est, sed ullamcorper sapien. Cras purus leo, rutrum tincidunt lacus id, pretium commodo risus. Maecenas auctor erat vel pretium sagittis.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "component": "richText",
+                "alignVariant": "left",
+                "removeInnerMargins": false
+              }
+            ],
+            "image": [
+              {
+                "_uid": "9e69cf94-69d0-420b-ab8e-cc40c256a06e",
+                "asset": {
+                  "id": 18057065,
+                  "alt": "",
+                  "name": "",
+                  "focus": "",
+                  "title": "",
+                  "source": "",
+                  "filename": "https://a.storyblok.com/f/293915/960x960/ffc4b04f00/app-launch.svg",
+                  "copyright": "",
+                  "fieldtype": "asset",
+                  "meta_data": {},
+                  "is_external_url": false
+                },
+                "component": "image",
+                "aspectRatio": "1/1"
+              }
+            ],
+            "component": "carouselSlide"
+          },
+          {
+            "_uid": "c59201b8-3ca9-4fc6-8865-5ed6cc33d1e9",
+            "text": [
+              {
+                "_uid": "006a1944-aa7c-4fff-83e7-52677e71cd1d",
+                "content": {
+                  "type": "doc",
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 3
+                      },
+                      "content": [
+                        {
+                          "text": "Praesent justo elit",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "raesent quis pellentesque dui. Duis venenatis felis et ante hendrerit tempus. Nulla libero dolor, faucibus vel sapien sit amet, accumsan condimentum ligula.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "component": "richText",
+                "alignVariant": "left",
+                "removeInnerMargins": false
+              }
+            ],
+            "image": [
+              {
+                "_uid": "1eaa9f28-ab3b-44de-8851-b6cbfa531c93",
+                "asset": {
+                  "id": 18057068,
+                  "alt": "",
+                  "name": "",
+                  "focus": "",
+                  "title": "",
+                  "source": "",
+                  "filename": "https://a.storyblok.com/f/293915/960x960/22886aae41/student-with-diploma.svg",
+                  "copyright": "",
+                  "fieldtype": "asset",
+                  "meta_data": {},
+                  "is_external_url": false
+                },
+                "component": "image",
+                "aspectRatio": "1/1"
+              }
+            ],
+            "component": "carouselSlide"
+          },
+          {
+            "_uid": "4e39ea0c-0317-4134-b3b6-625ec90b6293",
+            "text": [
+              {
+                "_uid": "80068dc2-b00d-4a65-8e3d-322d5ea67e26",
+                "content": {
+                  "type": "doc",
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 3
+                      },
+                      "content": [
+                        {
+                          "text": "Nullam massa tortor",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Pellentesque faucibus enim sed mi gravida feugiat. Duis a massa commodo, aliquam justo eu, aliquam purus. Aenean mi eros, condimentum vel euismod id, sodales id sem. Etiam sed erat nisl.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "component": "richText",
+                "alignVariant": "left",
+                "removeInnerMargins": false
+              }
+            ],
+            "image": [
+              {
+                "_uid": "06fe49c9-5e7a-4b1c-ba02-fbf4bfa27fd8",
+                "asset": {
+                  "id": 18057069,
+                  "alt": "",
+                  "name": "",
+                  "focus": "",
+                  "title": "",
+                  "source": "",
+                  "filename": "https://a.storyblok.com/f/293915/960x960/86e30de7f4/team-idea.svg",
+                  "copyright": "",
+                  "fieldtype": "asset",
+                  "meta_data": {},
+                  "is_external_url": false
+                },
+                "component": "image",
+                "aspectRatio": "1/1"
+              }
+            ],
+            "component": "carouselSlide"
+          },
+          {
+            "_uid": "735b6503-68c7-4991-964c-70871deb323b",
+            "text": [
+              {
+                "_uid": "04a0f34d-8c1a-4158-94b2-834f8d1d4bbf",
+                "content": {
+                  "type": "doc",
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 3
+                      },
+                      "content": [
+                        {
+                          "text": "Pellentesque fringilla neque tortor",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Nam posuere, sapien ultrices porttitor fermentum, enim enim facilisis neque, quis dictum eros sapien a metus. Cras magna ex, euismod in turpis vel, mollis tincidunt est. In feugiat quam at purus scelerisque dictum.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "component": "richText",
+                "alignVariant": "left",
+                "removeInnerMargins": false
+              }
+            ],
+            "image": [
+              {
+                "_uid": "2c347bc8-575f-41a8-970b-3bef6cd9612a",
+                "asset": {
+                  "id": 18057064,
+                  "alt": "",
+                  "name": "",
+                  "focus": "",
+                  "title": "",
+                  "source": "",
+                  "filename": "https://a.storyblok.com/f/293915/960x960/b5c805d300/genius.svg",
+                  "copyright": "",
+                  "fieldtype": "asset",
+                  "meta_data": {},
+                  "is_external_url": false
+                },
+                "component": "image",
+                "aspectRatio": "1/1"
+              }
+            ],
+            "component": "carouselSlide"
+          },
+          {
+            "_uid": "4d441de2-f456-4ac7-9c15-074aad2c5e3f",
+            "text": [
+              {
+                "_uid": "0324cc3c-9fca-4f33-a6f0-eb7769a0ea3f",
+                "content": {
+                  "type": "doc",
+                  "content": [
+                    {
+                      "type": "heading",
+                      "attrs": {
+                        "level": 3
+                      },
+                      "content": [
+                        {
+                          "text": "Duis at fringilla ligula",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "Suspendisse non nisi ornare, laoreet sem et, vehicula ante. Integer aliquet pharetra imperdiet. Duis at elementum sapien. Maecenas eget enim a nisl posuere cursus.",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "component": "richText",
+                "alignVariant": "left",
+                "removeInnerMargins": false
+              }
+            ],
+            "image": [
+              {
+                "_uid": "618238d9-16ce-49e8-9ac6-30dcafad8177",
+                "asset": {
+                  "id": 18057071,
+                  "alt": "",
+                  "name": "",
+                  "focus": "",
+                  "title": "",
+                  "source": "",
+                  "filename": "https://a.storyblok.com/f/293915/960x960/598514ea61/studying.svg",
+                  "copyright": "",
+                  "fieldtype": "asset",
+                  "meta_data": {},
+                  "is_external_url": false
+                },
+                "component": "image",
+                "aspectRatio": "1/1"
+              }
+            ],
+            "component": "carouselSlide"
+          }
+        ],
+        "maxWidth": "base",
+        "component": "carousel",
+        "marginTop": "base",
+        "marginBottom": "base",
+        "slidesPerView": "1",
+        "backgroundColor": "light",
+        "backgroundImage": {
+          "id": null,
+          "alt": null,
+          "name": "",
+          "focus": null,
+          "title": null,
+          "filename": null,
+          "copyright": null,
+          "fieldtype": "asset",
+          "meta_data": {},
+          "is_external_url": false
+        }
+      },
+      {
+        "_uid": "f659c112-d7b8-4fff-8d27-a7ce64e46f1c",
+        "link": [
+          {
+            "_uid": "0bf67d10-129b-4a21-85a0-34fed6e9b1a0",
+            "link": {
+              "id": "5d416347-de08-4adb-b496-00b0a083de3a",
+              "url": "",
+              "linktype": "story",
+              "fieldtype": "multilink",
+              "cached_url": "blog"
+            },
+            "text": "Take your shot",
+            "variant": "ghost-dark",
+            "component": "link"
+          }
+        ],
+        "maxWidth": "base",
+        "component": "stepGuide",
+        "marginTop": "base",
+        "marginBottom": "base",
+        "stepGuideItem": [
+          {
+            "_uid": "e1a54604-59e2-4ca1-8fec-144bb7a2c3e1",
+            "text": " Add your first product",
+            "image": [
+              {
+                "_uid": "13b50690-1ead-47a6-9412-2464444254a0",
+                "asset": {
+                  "id": 17902334,
+                  "alt": "call us",
+                  "name": "",
+                  "focus": "",
+                  "title": "",
+                  "source": "",
+                  "filename": "https://a.storyblok.com/f/293915/960x960/6a4a666d16/call-us.svg",
+                  "copyright": "",
+                  "fieldtype": "asset",
+                  "meta_data": {
+                    "alt": "call us",
+                    "title": "",
+                    "source": "",
+                    "copyright": ""
+                  },
+                  "is_external_url": false
+                },
+                "component": "image",
+                "aspectRatio": "3/1"
+              }
+            ],
+            "number": "01",
+            "component": "stepGuideItem"
+          },
+          {
+            "_uid": "ef4cbf17-7dec-4bec-8106-9b55723d790a",
+            "text": "Customize your site",
+            "image": [
+              {
+                "_uid": "8f840a23-7ce7-428d-bd2b-9d55d43343c1",
+                "asset": {
+                  "id": 17902335,
+                  "alt": "Notion Office Cubicle",
+                  "name": "",
+                  "focus": "",
+                  "title": "",
+                  "source": "",
+                  "filename": "https://a.storyblok.com/f/293915/960x960/6f9f80538d/notion-office-cubicle.svg",
+                  "copyright": "",
+                  "fieldtype": "asset",
+                  "meta_data": {
+                    "alt": "Notion Office Cubicle",
+                    "title": "",
+                    "source": "",
+                    "copyright": ""
+                  },
+                  "is_external_url": false
+                },
+                "component": "image",
+                "aspectRatio": "16/9"
+              }
+            ],
+            "number": "02",
+            "component": "stepGuideItem"
+          },
+          {
+            "_uid": "805afd91-673c-4800-bac8-4692be91dd63",
+            "text": "Set up payments",
+            "image": [
+              {
+                "_uid": "d0fea03a-d9f8-4322-a03c-a77a65085144",
+                "asset": {
+                  "id": 17902333,
+                  "alt": "grow",
+                  "name": "",
+                  "focus": "",
+                  "title": "",
+                  "source": "",
+                  "filename": "https://a.storyblok.com/f/293915/960x960/1434ff31bc/grow.svg",
+                  "copyright": "",
+                  "fieldtype": "asset",
+                  "meta_data": {
+                    "alt": "grow",
+                    "title": "",
+                    "source": "",
+                    "copyright": ""
+                  },
+                  "is_external_url": false
+                },
+                "component": "image",
+                "aspectRatio": "16/9"
+              }
+            ],
+            "number": "03",
+            "component": "stepGuideItem"
+          }
+        ],
+        "backgroundColor": "none"
       }
     ],
     "seoTitle": "1",
@@ -2155,7 +2869,7 @@
   "disable_fe_editor": false,
   "parent": null,
   "is_startpage": false,
-  "unpublished_changes": true,
+  "unpublished_changes": false,
   "meta_data": null,
   "imported_at": null,
   "pinned": false,
