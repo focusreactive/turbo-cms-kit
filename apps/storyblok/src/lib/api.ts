@@ -6,7 +6,7 @@ import { SB_CACHE_VERSION_TAG } from "@/constants/cacheTags";
 
 const API_GATE = process.env.NEXT_PUBLIC_API_GATE;
 const isDevMode = process.env.NODE_ENV === "development";
-const isDraftModeEnv =
+export const isDraftModeEnv =
   process.env.NEXT_PUBLIC_IS_PREVIEW === "true" || isDevMode;
 
 // Get the actual SB cache version
