@@ -82,6 +82,7 @@ const main = async () => {
     // Create Vercel production and preview projects
 
     spinner.start("Creating Vercel production and preview projects ⏳");
+    const whRevalidateSecret = crypto.randomUUID();
     const {
       deploymentUrl: productionDeploymentUrl,
       projectName: productionProjectName,
@@ -92,6 +93,7 @@ const main = async () => {
         isPreview: false,
         spaceId,
         previewToken,
+        whRevalidateSecret,
       },
     });
 
@@ -105,6 +107,7 @@ const main = async () => {
         isPreview: true,
         spaceId,
         previewToken,
+        whRevalidateSecret,
       },
     });
     spinner.succeed(
@@ -119,7 +122,7 @@ const main = async () => {
     });
     await createStoryblokWebhook(
       spaceId,
-      `${productionDeploymentUrl}/api/revalidate`,
+      `${productionDeploymentUrl}/api/revalidate?secret=${whRevalidateSecret}`,
     );
     spinner.succeed("Storyblok space successfully updated ✅");
 
