@@ -56,7 +56,7 @@ const main = async () => {
     // Log in to storyblok CLI
 
     spinner.start("Logging in to storyblok CLI ⏳");
-    const stdio = "ignore";
+    const stdio = process.env.DEBUG ? "inherit" : "ignore";
     try {
       execSync("pnpm storyblok logout", {
         stdio,
