@@ -66,8 +66,8 @@ soon
 
 ## Demo 👀
 
-- [Sanity landing](https://cms-kit-sanity.vercel.app/)
-- [Storyblok Landing](https://cms-kit-storyblok.vercel.app/)
+- [Storyblok Landing](https://turbo-cms-kit-storyblok.vercel.app/)
+- [Sanity landing](https://turbo-cms-kit-sanity.vercel.app/)
 
 ## Core Features
 
