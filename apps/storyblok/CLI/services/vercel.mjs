@@ -58,7 +58,7 @@ export async function getVercelUserInfo() {
 }
 
 export async function createVercelProject({ projectName, sbParams }) {
-  const { isPreview, spaceId, previewToken } = sbParams;
+  const { isPreview, spaceId, previewToken, whRevalidateSecret } = sbParams;
   const envs = loadEnvVariables();
   const repoName = envs.REPO_NAME;
   const vercelToken = envs.VERCEL_PERSONAL_AUTH_TOKEN;
@@ -104,6 +104,10 @@ export async function createVercelProject({ projectName, sbParams }) {
           {
             key: "SB_PREVIEW_TOKEN",
             value: previewToken,
+          },
+          {
+            key: "SB_WEBHOOK_REVALIDATE_SECRET",
+            value: whRevalidateSecret,
           },
           {
             key: "SB_SPACE_ID",

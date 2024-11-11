@@ -187,35 +187,6 @@ async function getSectionsFolder(spaceId) {
   return data.component_groups.find((folder) => folder.name === "sections");
 }
 
-async function createStory(spaceId, storyData) {
-  const envs = loadEnvVariables();
-  const token = envs.SB_PERSONAL_ACCESS_TOKEN;
-
-  const response = await fetch(
-    `https://mapi.storyblok.com/v1/spaces/${spaceId}/stories`,
-    {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: token,
-      },
-      body: JSON.stringify({
-        story: storyData,
-        publish: 1,
-      }),
-    },
-  );
-
-  if (!response.ok) {
-    console.log(response.status, response.statusText, await response.json());
-    throw new Error(`❌ HTTP error! Status: ${response.status}`);
-  }
-
-  const data = await response.json();
-
-  return data;
-}
-
 const globalComponentNames = ["header", "footer"];
 export async function uploadBackupStories(spaceId) {
   // Get directory path relative to current file
@@ -304,8 +275,12 @@ export async function uploadBackupStories(spaceId) {
         parent_id: newParentId,
       };
 
-      // home page is created by default
-      if (story.slug !== "home") {
+      if (story.slug === "home") {
+        console.log("updated story data");
+
+        const homeStory = await getStoryBySlug(spaceId, "home");
+        await updateStory(spaceId, homeStory.id, storyData);
+      } else {
         await createStory(spaceId, storyData);
       }
     } catch (error) {
@@ -313,4 +288,92 @@ export async function uploadBackupStories(spaceId) {
       throw error;
     }
   }
+}
+
+export async function getStoryBySlug(spaceId, slug) {
+  const envs = loadEnvVariables();
+  const token = envs.SB_PERSONAL_ACCESS_TOKEN;
+
+  const searchParams = new URLSearchParams({
+    version: "draft",
+    by_slugs: slug, // home, headers/default-header
+  });
+
+  const response = await fetch(
+    `https://mapi.storyblok.com/v1/spaces/${spaceId}/stories?${searchParams}`,
+    {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: token,
+      },
+    },
+  );
+
+  if (!response.ok) {
+    console.log(response.status, response.statusText, await response.json());
+    throw new Error(`❌ HTTP error! Status: ${response.status}`);
+  }
+
+  const data = await response.json();
+  return data.stories[0] || null;
+}
+
+async function createStory(spaceId, storyData) {
+  const envs = loadEnvVariables();
+  const token = envs.SB_PERSONAL_ACCESS_TOKEN;
+
+  const response = await fetch(
+    `https://mapi.storyblok.com/v1/spaces/${spaceId}/stories`,
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: token,
+      },
+      body: JSON.stringify({
+        story: storyData,
+        publish: 1,
+      }),
+    },
+  );
+
+  if (!response.ok) {
+    console.log(response.status, response.statusText, await response.json());
+    throw new Error(`❌ HTTP error! Status: ${response.status}`);
+  }
+
+  const data = await response.json();
+
+  return data;
+}
+
+export async function updateStory(spaceId, storyId, storyData) {
+  const envs = loadEnvVariables();
+  const token = envs.SB_PERSONAL_ACCESS_TOKEN;
+
+  const response = await fetch(
+    `https://mapi.storyblok.com/v1/spaces/${spaceId}/stories/${storyId}`,
+    {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: token,
+      },
+      body: JSON.stringify({
+        story: storyData,
+        publish: 1,
+        force_update: 1,
+      }),
+    },
+  );
+
+  if (!response.ok) {
+    console.log(response.status, response.statusText, await response.json());
+    throw new Error(`❌ HTTP error! Status: ${response.status}`);
+  }
+
+  const data = await response.json();
+
+  return data;
 }
