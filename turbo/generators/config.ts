@@ -12,7 +12,7 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
   });
 
   plop.setGenerator("UI", {
-    description: "Create a new UI component",
+    description: "Create a new UI section component",
     prompts: [componentNamePrompt],
     actions: createUISectionActions,
   });

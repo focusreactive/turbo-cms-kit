@@ -29,6 +29,10 @@ const main = async () => {
     colorText("ℹ️  Configuration will be saved to .env.local", "yellow"),
   );
 
+  execSync("rm -rf ../../sanity", {
+    stdio: "ignore",
+  });
+
   try {
     const sbPersonalAccessToken = await promptForToken(
       "SB_PERSONAL_ACCESS_TOKEN",

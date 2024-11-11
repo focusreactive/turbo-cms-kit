@@ -14,11 +14,13 @@ The project serves the idea of making Headless CMS-based development accessible,
 
 ### Storyblok
 
+0. Since application will be deployed to Vercel, make sure your Github account is linked to Vercel. You can do it [here](https://github.com/settings/installations).
+
 1. Create a new repository using this template by clicking the "Use this template" button at the top of the repository page.
    ![Screenshot 2024-11-07 at 13 38 48](https://github.com/user-attachments/assets/9a159ebd-d810-4b6d-ab79-ab453da6ab9c)
 
 2. Await the initial workflow to be finished
-  
+
 ![Screenshot 2024-11-07 at 16 00 17](https://github.com/user-attachments/assets/375ce843-8185-4782-95ff-5f9d6aaf2935)
 
 3. Clone your new repository:
@@ -45,7 +47,7 @@ The project serves the idea of making Headless CMS-based development accessible,
    cd apps/storyblok/CLI
    ```
 
-7. Run the setup script:
+7. Run the setup script, ⚠️ command should be executed from _apps/storyblok/CLI_, to consume correct environment variables:
 
    ```bash
    node sb.mjs
@@ -123,7 +125,7 @@ The website structure follows a clear hierarchical composition:
 
 **RichText** component has additional functionality. It allows to add sections inside, which gives ability to combine sections with text.
 
-### New component
+### Add new section
 
 1. Create new component using generators
 
@@ -140,8 +142,43 @@ pnpm gen
 ```
 
 3. Enter name of the component
-4. Update properties and design
-5. Generate types for new properties
+4. For Storyblok, add section component to the CMS
+5. Update properties and design
+6. Go to CMS folder
+
+```bash
+cd apps/storyblok
+```
+
+or
+
+```bash
+cd apps/sanity
+```
+
+7. Generate types for added section
+
+```bash
+pnpm gen:types
+```
+
+### Update existing section
+
+1. Updata design
+2. Update fields
+3. Go to CMS folder
+
+```bash
+cd apps/storyblok
+```
+
+or
+
+```bash
+cd apps/sanity
+```
+
+4. Generate types for updated section
 
 ```bash
 pnpm gen:types
