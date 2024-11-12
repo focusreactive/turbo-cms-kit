@@ -47,11 +47,13 @@ The project serves the idea of making Headless CMS-based development accessible,
    cd apps/storyblok/CLI
    ```
 
-7. Run the setup script, ⚠️ command should be executed from _apps/storyblok/CLI_, to consume correct environment variables:
+7. Run the setup script,
 
-   ```bash
+⚠️ command should be executed from _apps/storyblok/CLI_ (previous step), to consume correct environment variables:
+
+```bash
    node sb.mjs
-   ```
+```
 
 8. Follow the interactive prompts in the CLI tool to:
    - Enter your Storyblok Personal Access Token
