@@ -276,8 +276,6 @@ export async function uploadBackupStories(spaceId) {
       };
 
       if (story.slug === "home") {
-        console.log("updated story data");
-
         const homeStory = await getStoryBySlug(spaceId, "home");
         await updateStory(spaceId, homeStory.id, storyData);
       } else {

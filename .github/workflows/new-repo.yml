@@ -31,10 +31,10 @@ jobs:
 
           echo -e "\nREPO_PROD_BRANCH=\"main\"\nREPO_TYPE=\"github\"\nREPO_ID=${{ github.event.repository.id }}\nREPO_NAME=${{ github.repository }}" >> apps/sanity/.env
           echo -e "\nREPO_PROD_BRANCH=\"main\"\nREPO_TYPE=\"github\"\nREPO_ID=${{ github.event.repository.id }}\nREPO_NAME=${{ github.repository }}" >> apps/storyblok/.env
-      - name: Remove unnecessary scripts
-        run: |
-          jq 'del(.scripts["pull-schemas"]) | del(.scripts["pull-stories"])' apps/storyblok/package.json > apps/storyblok/package.json.tmp
-          mv apps/storyblok/package.json.tmp apps/storyblok/package.json
+      # - name: Remove unnecessary scripts
+      #   run: |
+      #     jq 'del(.scripts["pull-stories"])' apps/storyblok/package.json > apps/storyblok/package.json.tmp
+      #     mv apps/storyblok/package.json.tmp apps/storyblok/package.json
       - name: Commit, push, and remove GitHub Actions workflow
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

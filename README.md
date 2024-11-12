@@ -159,7 +159,17 @@ cd apps/sanity
 7. Generate types for added section
 
 ```bash
+# For Storyblok you will additionally
+# need to log into CLI
+pnpm sb-login
+
 pnpm gen:types
+```
+
+⚠️If you generating types for Storyblok, make sure you logged into CLI⚠️
+
+```bash
+
 ```
 
 ### Update existing section
