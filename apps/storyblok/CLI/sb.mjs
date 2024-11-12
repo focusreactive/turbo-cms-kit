@@ -142,17 +142,16 @@ const main = async () => {
       "Successfully created Vercel production and preview deployments 🎉",
     );
 
-    if (!process.env.DEBUG) {
-      spinner.start("Updating apps/storyblok/package.json ⏳");
-      modifyFile("../package.json", "293915", spaceId);
-      spinner.succeed("apps/storyblok/package.json updated ✅");
+    spinner.start("Updating apps/storyblok/package.json ⏳");
+    modifyFile("../package.json", "293915", spaceId);
+    spinner.succeed("apps/storyblok/package.json updated ✅");
 
-      spinner.start("Removing Sanity folder ⏳");
-      execSync("rm -rf ../../sanity", {
-        stdio: "ignore",
-      });
-      spinner.succeed("Sanity folder removed ✅");
-    }
+    spinner.start("Removing unrelated files and scripts ⏳");
+    execSync("rm -rf ../../sanity", {
+      stdio: "ignore",
+    });
+
+    spinner.succeed("Sanity folder removed ✅");
 
     console.log(
       colorText(
