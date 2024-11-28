@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from "react";
 
-import { LinkVariantsClassNames } from "../../ui/link";
-import { LinkVariant } from "../../ui/link/types";
+import { Button } from "../../ui/button";
+import type { ButtonVariantProps } from "../../ui/button/types";
 
 export function CookieBanner() {
   const [isVisible, setIsVisible] = useState(false);
@@ -29,12 +29,12 @@ export function CookieBanner() {
           We use cookies to improve your experience. By using our site, you
           agree to our use of cookies.
         </p>
-        <button
-          className={LinkVariantsClassNames[LinkVariant.Primary]}
+        <Button
+          variant={"primary" as ButtonVariantProps["variant"]}
           onClick={handleAccept}
         >
           Accept
-        </button>
+        </Button>
       </div>
       <div className="fixed inset-0 z-50 bg-black/50" aria-hidden="true" />
     </>
