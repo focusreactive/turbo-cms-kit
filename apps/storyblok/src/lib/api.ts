@@ -71,6 +71,7 @@ export async function fetchStoryBySlug(
 
   const { story, links, rels } = await fetch(
     `${API_GATE}/stories/${slug?.join("/") || ""}?${searchParams.toString()}`,
+    { cache: "force-cache" },
   ).then((res) => res.json());
 
   // REST storyblok API doesnt resolve relations in the response, only uuid
@@ -105,6 +106,7 @@ export async function fetchAllPages() {
     per_page: 1000,
     // @ts-ignore
     include_dates: "1",
+    content_type: "page",
   };
 
   const searchParams = new URLSearchParams(
@@ -113,6 +115,7 @@ export async function fetchAllPages() {
 
   const linksResponse = await fetch(
     `${API_GATE}/links?${searchParams.toString()}`,
+    { cache: "force-cache" },
   );
 
   const pagesData = await linksResponse.json();
@@ -125,6 +128,7 @@ export async function fetchAllPages() {
   for (let i = 2; i <= lastPageNumber; i++) {
     const paginatedLinksResponse = await fetch(
       `${API_GATE}/links?${searchParams.toString()}&page=${i}`,
+      { cache: "force-cache" },
     );
 
     const paginatedLinksData = await paginatedLinksResponse.json();
@@ -158,6 +162,7 @@ export async function fetchStoriesByParams(
   try {
     const response = await fetch(
       `${API_GATE}/stories?${searchParams.toString()}`,
+      { cache: "force-cache" },
     );
 
     const data = await response.json();
@@ -166,25 +171,6 @@ export async function fetchStoriesByParams(
   } catch (error) {
     throw error;
   }
-}
-
-// Check if the draft mode token is valid
-export async function checkDraftModeToken(searchParams: {
-  [key: string]: string | string[] | undefined;
-}) {
-  if (isDevMode) return true;
-
-  let isDraftModeEnabled = process.env.NEXT_PUBLIC_IS_PREVIEW === "true";
-
-  if (isDraftModeEnabled && process.env.NODE_ENV !== "development") {
-    isDraftModeEnabled = await fetch(
-      `${process.env.NEXT_PUBLIC_DOMAIN}/api/checkToken?space_id=${searchParams?.["_storyblok_tk[space_id]"]}&timestamp=${searchParams?.["_storyblok_tk[timestamp]"]}&token=${searchParams?.["_storyblok_tk[token]"]}`,
-    )
-      .then((res) => res.json())
-      .then((res) => res.result);
-  }
-
-  return isDraftModeEnabled;
 }
 
 export async function getMetaData(slug?: string[]): Promise<Metadata> {
@@ -227,3 +213,7 @@ export async function getMetaData(slug?: string[]): Promise<Metadata> {
       story?.content?.robots === "index" ? { index: true } : { index: false },
   };
 }
+
+// export const checkSSGPages = async () => {
+//   return new Date().toTimeString();
+// };

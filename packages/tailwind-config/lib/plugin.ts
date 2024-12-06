@@ -20,8 +20,8 @@ export const customPlugin = plugin(
         typography: {
           DEFAULT: {
             css: {
-              "--tw-prose-headings": `var("--text")`,
-              "--tw-prose-invert-headings": `var("--text")`,
+              "--tw-prose-headings": `var(--text)`,
+              "--tw-prose-invert-headings": `var(--text)`,
             },
           },
         },

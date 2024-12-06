@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --port=4050 --experimental-https",
+    "dev": "next dev --port=4050 --experimental-https --turbo",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -15,11 +15,11 @@
   },
   "dependencies": {
     "@shared/ui": "workspace:*",
-    "@storyblok/react": "^3.0.10",
-    "next": ">=14.1.1",
-    "react": "^18",
-    "react-dom": "^18",
-    "storyblok-rich-text-react-renderer": "^2.9.1"
+    "@storyblok/react": "^3.0.15",
+    "next": "15.0.4",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "storyblok-rich-text-react-renderer": "^2.9.2"
   },
   "devDependencies": {
     "@shared/eslint-config": "workspace:*",
@@ -27,17 +27,17 @@
     "@shared/ts-config": "workspace:*",
     "@tailwindcss/typography": "^0.5.10",
     "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/react": "^19.0.0-rc.1",
+    "@types/react-dom": "^19.0.1",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
-    "eslint-config-next": "14.1.0",
+    "eslint-config-next": "15.0.1",
     "postcss": "^8",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.14",
     "storyblok": "^3.34.0",
     "storyblok-backup": "^0.3.0",
     "tailwindcss": "^3.4.3",
-    "typescript": "5.4.5"
+    "typescript": "5.5.3"
   }
 }

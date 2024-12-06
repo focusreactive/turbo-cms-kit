@@ -29,5 +29,5 @@ export default function Footer({ blok }: IFooterProps) {
         text={prepareRichTextProps(text?.[0])}
       />
     </SectionContainer>
-  );
+  ) as any;
 }

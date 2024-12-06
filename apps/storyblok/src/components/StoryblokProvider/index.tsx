@@ -18,5 +18,5 @@ storyblokInit({
 export default function StoryblokProvider({
   children,
 }: IStoryblokProviderProps) {
-  return children;
+  return children as React.ReactElement;
 }

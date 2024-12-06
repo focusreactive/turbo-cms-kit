@@ -1,0 +1,6 @@
+{
+  "extends": ["@shared/eslint-config"],
+  "rules": {
+    "@typescript-eslint/no-unnecessary-type-annotation": "off"
+  }
+}

@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
-import { apiPlugin, storyblokInit } from "@storyblok/react/rsc";
 
 import "./globals.css";
 import "@shared/ui/styles/global.css";
+
+import { apiPlugin, storyblokInit } from "@storyblok/react/rsc";
+
+import { CookieBanner } from "@shared/ui";
 
 storyblokInit({
   accessToken: process.env.storyblokApiToken,
@@ -24,7 +27,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <CookieBanner />
+      </body>
     </html>
-  );
+  ) as any;
 }

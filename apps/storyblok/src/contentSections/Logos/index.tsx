@@ -30,5 +30,5 @@ export default function Logos({ blok }: ILogosProps) {
         alignVariant={alignVariant as AlignVariant}
       />
     </SectionContainer>
-  );
+  ) as any;
 }

@@ -26,5 +26,5 @@ export default function Header({ blok }: IHeaderProps) {
         alignVariant={alignVariant as AlignVariant}
       />
     </SectionContainer>
-  );
+  ) as any;
 }
