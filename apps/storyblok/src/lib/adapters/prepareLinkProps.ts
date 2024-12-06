@@ -1,8 +1,8 @@
+import type { LinkStoryblok } from "@/generated/extracted-types";
 import {
   LinkVariant,
   type LinkProps,
 } from "@shared/ui/components/ui/link/types";
-import type { SbBlokData } from "@storyblok/react/rsc";
 
 import { useDataContext } from "@/components/DataContext";
 
@@ -14,27 +14,7 @@ export enum LinkTypes {
   email = "email",
 }
 
-export interface IStoryLink {
-  id: string;
-  url: string;
-  anchor?: string;
-  linktype: LinkTypes;
-  fieldtype: string;
-  cached_url: string;
-  target?: string;
-  story?: {
-    full_slug: string;
-  };
-}
-
-export interface ILinkBlok extends SbBlokData {
-  text: string;
-  link: IStoryLink;
-  variant: LinkVariant;
-  newTab?: boolean;
-}
-
-export const prepareLinkProps = (props?: ILinkBlok): LinkProps => {
+export const prepareLinkProps = (props?: LinkStoryblok): LinkProps => {
   const { allResolvedLinks } = useDataContext();
 
   if (!props) {
@@ -67,7 +47,7 @@ export const prepareLinkProps = (props?: ILinkBlok): LinkProps => {
   return {
     text: props.text,
     href: url,
-    variant: props.variant,
+    variant: props.variant as LinkVariant,
     clickDisabled: isPreview,
   };
 };

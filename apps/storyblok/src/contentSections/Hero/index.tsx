@@ -12,14 +12,14 @@ import type { IHeroProps } from "./types";
 export default function Hero({ blok }: IHeroProps) {
   const { title, text, image, links } = blok;
 
-  if (image.length === 0 && links.length === 0 && text.length === 0 && !title)
+  if (image.length === 0 && links.length === 0 && text?.length === 0 && !title)
     return <EmptyBlock name={blok.component as string} />;
 
   return (
     <SectionContainer blok={blok}>
       <HeroUI
-        title={title}
-        text={prepareRichTextProps(text[0])}
+        title={title || ""}
+        text={prepareRichTextProps(text?.[0])}
         image={prepareImageProps(image[0])}
         links={links.map(prepareLinkProps)}
       />

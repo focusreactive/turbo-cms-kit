@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import type { OpenGraph } from "next/dist/lib/metadata/types/opengraph-types";
 import { type ISbStoriesParams, type ISbStoryData } from "@storyblok/react/rsc";
 
-import { SB_CACHE_VERSION } from "@/constants/cacheTags";
+import { SB_CACHE_VERSION_TAG } from "@/constants/cacheTags";
 
 const API_GATE = process.env.NEXT_PUBLIC_API_GATE;
 const isDevMode = process.env.NODE_ENV === "development";
-const isDraftModeEnv =
+export const isDraftModeEnv =
   process.env.NEXT_PUBLIC_IS_PREVIEW === "true" || isDevMode;
 
 // Get the actual SB cache version
@@ -24,7 +24,12 @@ export const getSBcacheCVparameter = async (isDraftMode: boolean) => {
     `${API_GATE}/stories?${searchParams.toString()}`,
     {
       next: {
-        tags: [SB_CACHE_VERSION],
+        tags: [SB_CACHE_VERSION_TAG],
+        ...(isDraftMode
+          ? {
+              revalidate: 0,
+            }
+          : {}),
       },
     },
   ).then((res) => res.json());
