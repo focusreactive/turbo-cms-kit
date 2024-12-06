@@ -14,5 +14,5 @@ export default function NotFoundPage() {
         Go to home page
       </Link>
     </div>
-  );
+  ) as any;
 }

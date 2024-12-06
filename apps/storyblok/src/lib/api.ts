@@ -106,6 +106,7 @@ export async function fetchAllPages() {
     per_page: 1000,
     // @ts-ignore
     include_dates: "1",
+    content_type: "page",
   };
 
   const searchParams = new URLSearchParams(
@@ -213,6 +214,6 @@ export async function getMetaData(slug?: string[]): Promise<Metadata> {
   };
 }
 
-export const checkSSGPages = async () => {
-  return new Date().toTimeString();
-};
+// export const checkSSGPages = async () => {
+//   return new Date().toTimeString();
+// };

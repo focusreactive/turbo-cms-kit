@@ -15,5 +15,5 @@ export default function ThreeDElement({ blok }: IThreeDElementProps) {
     <SectionContainer blok={blok}>
       <ThreeDElementUI model={threeDModel} />
     </SectionContainer>
-  );
+  ) as any;
 }

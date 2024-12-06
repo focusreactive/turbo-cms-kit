@@ -20,5 +20,5 @@ export default function Copy({ blok }: ICopyProps) {
         isReversedOnMobile={!!isReversedOnMobile}
       />
     </SectionContainer>
-  );
+  ) as any;
 }

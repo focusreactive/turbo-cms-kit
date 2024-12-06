@@ -40,5 +40,5 @@ export default function Carousel({ blok }: ICarouselProps) {
         params={carouselParams}
       />
     </SectionContainer>
-  );
+  ) as any;
 }

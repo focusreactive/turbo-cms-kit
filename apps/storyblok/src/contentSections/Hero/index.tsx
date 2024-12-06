@@ -24,5 +24,5 @@ export default function Hero({ blok }: IHeroProps) {
         links={links.map(prepareLinkProps)}
       />
     </SectionContainer>
-  );
+  ) as any;
 }

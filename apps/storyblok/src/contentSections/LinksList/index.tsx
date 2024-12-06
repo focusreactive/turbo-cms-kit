@@ -20,5 +20,5 @@ export default function LinksList({ blok }: ILinksLinkProps) {
         links={links.map(prepareLinkProps)}
       />
     </SectionContainer>
-  );
+  ) as any;
 }

@@ -31,5 +31,5 @@ export default function Blog({ blok }: IBlogProps) {
         style={style as BlogStyle}
       />
     </SectionContainer>
-  );
+  ) as any;
 }

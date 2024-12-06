@@ -23,5 +23,5 @@ export default function StepGuide({ blok }: IStepGuideProps) {
     <SectionContainer blok={blok}>
       <StepGuideUI items={formattedItems} link={prepareLinkProps(link?.[0])} />
     </SectionContainer>
-  );
+  ) as any;
 }

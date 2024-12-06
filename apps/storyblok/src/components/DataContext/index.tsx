@@ -23,7 +23,7 @@ export function DataContextProvider({
     >
       {children}
     </DataContext.Provider>
-  );
+  ) as any;
 }
 
 export const useDataContext = () => {

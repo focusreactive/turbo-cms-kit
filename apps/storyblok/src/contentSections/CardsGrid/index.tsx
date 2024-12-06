@@ -26,5 +26,5 @@ export default function CardsGrid({ blok }: ICardsGridProps) {
     <SectionContainer blok={blok}>
       <CardsGridUI items={formattedItems} columns={parseInt(columns)} />
     </SectionContainer>
-  );
+  ) as any;
 }

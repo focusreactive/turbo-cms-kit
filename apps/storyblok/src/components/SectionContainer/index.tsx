@@ -59,7 +59,7 @@ export default function SectionContainer({
           {children}
         </div>
       </section>
-    );
+    ) as any;
   }
 
   return (
@@ -86,5 +86,5 @@ export default function SectionContainer({
         {children}
       </div>
     </section>
-  );
+  ) as any;
 }

@@ -29,5 +29,5 @@ export default async function CoreLayout({
         {children}
       </DataContextProvider>
     </StoryblokProvider>
-  );
+  ) as any;
 }

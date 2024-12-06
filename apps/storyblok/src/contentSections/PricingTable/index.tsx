@@ -40,5 +40,5 @@ export default function PricingTable({ blok }: IPricingTableProps) {
         }
       />
     </SectionContainer>
-  );
+  ) as any;
 }

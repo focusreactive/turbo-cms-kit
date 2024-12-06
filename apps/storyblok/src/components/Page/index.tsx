@@ -28,5 +28,5 @@ export default function PageContainer({ blok }: IPageContainerProps) {
       <StoryblokStory story={footer} />
       {showCookieBanner && <CookieBanner />}
     </div>
-  );
+  ) as any;
 }
