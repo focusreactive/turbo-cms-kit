@@ -1,4 +1,7 @@
-import { StoryblokComponent, type ISbRichtext } from "@storyblok/react/rsc";
+import {
+  StoryblokServerComponent,
+  type ISbRichtext,
+} from "@storyblok/react/rsc";
 import { render } from "storyblok-rich-text-react-renderer";
 
 import { Image } from "@shared/ui";
@@ -29,7 +32,7 @@ export default function renderRichText(data: ISbRichtext) {
 
       cardsGrid: (props) => {
         return (
-          <StoryblokComponent
+          <StoryblokServerComponent
             blok={{
               ...props,
               component: "cardsGrid",
@@ -41,7 +44,7 @@ export default function renderRichText(data: ISbRichtext) {
 
       linksList: (props) => {
         return (
-          <StoryblokComponent
+          <StoryblokServerComponent
             blok={{
               ...props,
               component: "linksList",
@@ -53,7 +56,7 @@ export default function renderRichText(data: ISbRichtext) {
 
       logos: (props) => {
         return (
-          <StoryblokComponent
+          <StoryblokServerComponent
             blok={{
               ...props,
               component: "logos",
