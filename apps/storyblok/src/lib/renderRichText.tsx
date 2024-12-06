@@ -1,8 +1,5 @@
 import type { ImageStoryblok } from "@/generated/extracted-types";
-import {
-  StoryblokServerComponent,
-  type ISbRichtext,
-} from "@storyblok/react/rsc";
+import { StoryblokComponent, type ISbRichtext } from "@storyblok/react/rsc";
 import { render } from "storyblok-rich-text-react-renderer";
 
 import { Image } from "@shared/ui";
@@ -33,7 +30,7 @@ export default function renderRichText(data: ISbRichtext) {
 
       cardsGrid: (props) => {
         return (
-          <StoryblokServerComponent
+          <StoryblokComponent
             blok={{
               ...props,
               component: "cardsGrid",
@@ -45,7 +42,7 @@ export default function renderRichText(data: ISbRichtext) {
 
       linksList: (props) => {
         return (
-          <StoryblokServerComponent
+          <StoryblokComponent
             blok={{
               ...props,
               component: "linksList",
@@ -57,7 +54,7 @@ export default function renderRichText(data: ISbRichtext) {
 
       logos: (props) => {
         return (
-          <StoryblokServerComponent
+          <StoryblokComponent
             blok={{
               ...props,
               component: "logos",
@@ -69,7 +66,7 @@ export default function renderRichText(data: ISbRichtext) {
 
       stepGuide: (props) => {
         return (
-          <StoryblokServerComponent
+          <StoryblokComponent
             blok={{
               ...props,
               component: "stepGuide",
@@ -81,7 +78,7 @@ export default function renderRichText(data: ISbRichtext) {
 
       threeDElement: (props) => {
         return (
-          <StoryblokServerComponent
+          <StoryblokComponent
             blok={{ ...props, component: "threeDElement", paddingX: "none" }}
           />
         );
@@ -89,7 +86,7 @@ export default function renderRichText(data: ISbRichtext) {
 
       pricingTable: (props) => {
         return (
-          <StoryblokServerComponent
+          <StoryblokComponent
             blok={{ ...props, component: "pricingTable", paddingX: "none" }}
           />
         );
@@ -97,7 +94,7 @@ export default function renderRichText(data: ISbRichtext) {
 
       carousel: (props) => {
         return (
-          <StoryblokServerComponent
+          <StoryblokComponent
             blok={{ ...props, component: "carousel", paddingX: "none" }}
           />
         );

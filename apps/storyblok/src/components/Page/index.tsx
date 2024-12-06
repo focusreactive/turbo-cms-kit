@@ -1,4 +1,4 @@
-import { StoryblokServerComponent, StoryblokStory } from "@storyblok/react/rsc";
+import { StoryblokComponent, StoryblokStory } from "@storyblok/react/rsc";
 
 import { cn, CookieBanner } from "@shared/ui";
 
@@ -23,7 +23,7 @@ export default function PageContainer({ blok }: IPageContainerProps) {
     <div className={cn("bg-bgColor", theme)}>
       <StoryblokStory story={header} />
       {sections.map((s) => (
-        <StoryblokServerComponent blok={s} key={s._uid} />
+        <StoryblokComponent blok={s} key={s._uid} />
       ))}
       <StoryblokStory story={footer} />
       {showCookieBanner && <CookieBanner />}

@@ -3,7 +3,17 @@ import type { Metadata } from "next";
 import "./globals.css";
 import "@shared/ui/styles/global.css";
 
+import { apiPlugin, storyblokInit } from "@storyblok/react/rsc";
+
 import { CookieBanner } from "@shared/ui";
+
+storyblokInit({
+  accessToken: process.env.storyblokApiToken,
+  use: [apiPlugin],
+  apiOptions: {
+    region: process.env.NEXT_PUBLIC_SB_REGION,
+  },
+});
 
 export const metadata: Metadata = {
   title: "StoryBlok / Next.js boilerplate",
