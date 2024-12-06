@@ -441,11 +441,10 @@ export type CustomLink = {
     | "default"
     | "primary"
     | "secondary"
-    | "headerNav"
-    | "footerNav"
     | "badge"
     | "ghost"
-    | "ghost-dark";
+    | "ghostDark";
+  size: "base" | "sm" | "lg";
 };
 
 export type Page = {
@@ -778,12 +777,11 @@ export type PAGE_BY_SLUG_QUERYResult = {
       variant:
         | "badge"
         | "default"
-        | "footerNav"
-        | "ghost-dark"
         | "ghost"
-        | "headerNav"
+        | "ghostDark"
         | "primary"
         | "secondary";
+      size: "base" | "lg" | "sm";
     }>;
     alignVariant: "center" | "left" | "right";
   };
@@ -812,12 +810,11 @@ export type PAGE_BY_SLUG_QUERYResult = {
             variant:
               | "badge"
               | "default"
-              | "footerNav"
-              | "ghost-dark"
               | "ghost"
-              | "headerNav"
+              | "ghostDark"
               | "primary"
               | "secondary";
+            size: "base" | "lg" | "sm";
           } | null;
           image?: CustomImage;
           text?: CustomRichText;
@@ -866,12 +863,11 @@ export type PAGE_BY_SLUG_QUERYResult = {
             variant:
               | "badge"
               | "default"
-              | "footerNav"
-              | "ghost-dark"
               | "ghost"
-              | "headerNav"
+              | "ghostDark"
               | "primary"
               | "secondary";
+            size: "base" | "lg" | "sm";
           } | null;
           image?: CustomImage;
         }>;
@@ -962,12 +958,11 @@ export type PAGE_BY_SLUG_QUERYResult = {
           variant:
             | "badge"
             | "default"
-            | "footerNav"
-            | "ghost-dark"
             | "ghost"
-            | "headerNav"
+            | "ghostDark"
             | "primary"
             | "secondary";
+          size: "base" | "lg" | "sm";
         }>;
         marginTop: "base" | "lg" | "none";
         marginBottom: "base" | "lg" | "none";
@@ -1001,12 +996,11 @@ export type PAGE_BY_SLUG_QUERYResult = {
           variant:
             | "badge"
             | "default"
-            | "footerNav"
-            | "ghost-dark"
             | "ghost"
-            | "headerNav"
+            | "ghostDark"
             | "primary"
             | "secondary";
+          size: "base" | "lg" | "sm";
         }>;
         alignVariant: "center" | "left" | "right";
         marginTop: "base" | "lg" | "none";
@@ -1045,12 +1039,11 @@ export type PAGE_BY_SLUG_QUERYResult = {
             variant:
               | "badge"
               | "default"
-              | "footerNav"
-              | "ghost-dark"
               | "ghost"
-              | "headerNav"
+              | "ghostDark"
               | "primary"
               | "secondary";
+            size: "base" | "lg" | "sm";
           } | null;
         }>;
         alignVariant: "center" | "left" | "right";
@@ -1168,12 +1161,11 @@ export type PAGE_BY_SLUG_QUERYResult = {
       variant:
         | "badge"
         | "default"
-        | "footerNav"
-        | "ghost-dark"
         | "ghost"
-        | "headerNav"
+        | "ghostDark"
         | "primary"
         | "secondary";
+      size: "base" | "lg" | "sm";
     }> | null;
     copywriteText?: string;
   };

@@ -1,8 +1,6 @@
 import type { LinkStoryblok } from "@/generated/extracted-types";
-import {
-  LinkVariant,
-  type LinkProps,
-} from "@shared/ui/components/ui/link/types";
+import type { ButtonVariantProps } from "@shared/ui/components/ui/button/types";
+import { type LinkProps } from "@shared/ui/components/ui/link/types";
 
 import { useDataContext } from "@/components/DataContext";
 
@@ -21,7 +19,6 @@ export const prepareLinkProps = (props?: LinkStoryblok): LinkProps => {
     return {
       text: "",
       href: "",
-      variant: LinkVariant.Default,
       clickDisabled: isPreview,
     };
   }
@@ -47,7 +44,8 @@ export const prepareLinkProps = (props?: LinkStoryblok): LinkProps => {
   return {
     text: props.text,
     href: url,
-    variant: props.variant as LinkVariant,
+    variant: props.variant as ButtonVariantProps["variant"],
+    size: props.size as ButtonVariantProps["size"],
     clickDisabled: isPreview,
   };
 };

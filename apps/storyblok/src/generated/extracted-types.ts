@@ -233,8 +233,9 @@ export type MultilinkStoryblok =
     };
 
 export interface LinkStoryblok {
+  size: "base" | "sm" | "lg";
+  variant: "default" | "primary" | "secondary" | "badge" | "ghost" | "ghost-dark";
   text: string;
-  variant: "default" | "primary" | "secondary" | "headerNav" | "footerNav" | "badge" | "ghost" | "ghost-dark";
   link: Exclude<MultilinkStoryblok, {linktype?: "email"} | {linktype?: "asset"}>;
   component: "link";
   _uid: string;
