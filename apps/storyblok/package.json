@@ -14,11 +14,11 @@
   },
   "dependencies": {
     "@shared/ui": "workspace:*",
-    "@storyblok/react": "^3.0.10",
-    "next": "15.0.0",
-    "react": "19.0.0-rc-65a56d0e-20241020",
-    "react-dom": "19.0.0-rc-65a56d0e-20241020",
-    "storyblok-rich-text-react-renderer": "^2.9.1"
+    "@storyblok/react": "^4.0.0",
+    "next": "15.0.4",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "storyblok-rich-text-react-renderer": "^2.9.2"
   },
   "devDependencies": {
     "@shared/eslint-config": "workspace:*",
@@ -26,7 +26,7 @@
     "@shared/ts-config": "workspace:*",
     "@tailwindcss/typography": "^0.5.10",
     "@types/node": "^20",
-    "@types/react": "npm:types-react@19.0.0-rc.1",
+    "@types/react": "19.0.0",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "15.0.1",
