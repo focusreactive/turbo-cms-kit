@@ -8,22 +8,26 @@ import {
   fetchStoryBySlug,
   getMetaData,
 } from "@/lib/api";
+import { isPreview } from "@/lib/utils";
 import CoreLayout from "@/components/CoreLayout";
 
-const isDraftModeEnv = process.env.NEXT_PUBLIC_IS_PREVIEW === "true";
-export const dynamic = isDraftModeEnv ? "force-dynamic" : "force-static";
+if (isPreview) {
+}
+export const fetchCache = "default-cache";
+export const dynamic = "force-static";
 
 type Props = {
-  params: { slug?: string[] };
-  searchParams: { [key: string]: string | string[] | undefined };
+  params: Promise<{ slug?: string[] }>;
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 };
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata(props: Props): Promise<Metadata> {
+  const params = await props.params;
   return await getMetaData(params.slug);
 }
 
 export async function generateStaticParams() {
-  if (isDraftModeEnv) return [];
+  // if (isPreview) return [];
 
   const pages = await fetchAllPages();
 
@@ -38,7 +42,9 @@ export async function generateStaticParams() {
   return paths;
 }
 
-export default async function Home({ params, searchParams }: Props) {
+export default async function Home(props: Props) {
+  const searchParams = await props.searchParams;
+  const params = await props.params;
   const isDraftModeEnabled = await checkDraftModeToken(searchParams);
 
   const { story, links } = await fetchStoryBySlug(
