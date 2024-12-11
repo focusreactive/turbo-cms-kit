@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2024-11-07T14:43:04.019Z",
-  "published_at": "2024-10-25T12:43:18.028Z",
+  "updated_at": "2024-12-11T15:18:19.648Z",
+  "published_at": "2024-12-11T15:18:19.613Z",
   "id": 560303238,
   "uuid": "32a6be02-b148-40db-8f9b-bf4bd86572b1",
   "is_folder": false,
@@ -44,6 +44,7 @@
           "fieldtype": "multilink",
           "cached_url": "maks"
         },
+        "size": "base",
         "text": "Home",
         "variant": "default",
         "component": "link"
@@ -57,6 +58,7 @@
           "fieldtype": "multilink",
           "cached_url": "blog"
         },
+        "size": "base",
         "text": "Blog",
         "variant": "default",
         "component": "link"
@@ -71,6 +73,7 @@
           "fieldtype": "multilink",
           "cached_url": "https://app.storyblok.com/#/me/spaces/293915"
         },
+        "size": "base",
         "text": "Storyblok",
         "variant": "default",
         "component": "link"
@@ -85,6 +88,7 @@
           "fieldtype": "multilink",
           "cached_url": "https://github.com/focusreactive/turbo-cms-kit"
         },
+        "size": "base",
         "text": "GitHub",
         "variant": "default",
         "component": "link"
@@ -99,6 +103,7 @@
           "fieldtype": "multilink",
           "cached_url": "https://trello.com/b/2XLLkCma/cms-kit"
         },
+        "size": "base",
         "text": "Trello",
         "variant": "default",
         "component": "link"
@@ -112,6 +117,7 @@
           "fieldtype": "multilink",
           "cached_url": "https://vercel.com/focusreactive/turbo-cms-kit-storyblok"
         },
+        "size": "base",
         "text": "Vercel",
         "variant": "default",
         "component": "link"
@@ -135,7 +141,7 @@
     "disble_fe_editor": false
   },
   "is_startpage": false,
-  "unpublished_changes": true,
+  "unpublished_changes": false,
   "meta_data": null,
   "imported_at": null,
   "pinned": false,

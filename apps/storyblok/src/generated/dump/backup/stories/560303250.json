@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2024-10-09T05:54:21.836Z",
-  "published_at": "2024-10-21T12:06:56.000Z",
+  "updated_at": "2024-12-11T15:17:43.501Z",
+  "published_at": "2024-12-11T15:17:43.483Z",
   "id": 560303250,
   "uuid": "4402926e-caa7-493d-8557-7169bdebb536",
   "is_folder": false,
@@ -39,12 +39,13 @@
         "_uid": "40490f01-340c-429a-8658-7cc2a7cb4ac3",
         "link": {
           "id": "",
-          "url": "https://vercel.com/focusreactive/turbo-cms-kit-storyblok",
+          "url": "https://focusreactive.com",
           "linktype": "url",
           "fieldtype": "multilink",
-          "cached_url": "https://vercel.com/focusreactive/turbo-cms-kit-storyblok"
+          "cached_url": "https://focusreactive.com"
         },
-        "text": "Vercel",
+        "size": "base",
+        "text": "FocusReactive",
         "variant": "default",
         "component": "link"
       },
@@ -57,19 +58,7 @@
           "fieldtype": "multilink",
           "cached_url": "https://vercel.com/focusreactive/turbo-cms-kit-storyblok"
         },
-        "text": "Vercel",
-        "variant": "default",
-        "component": "link"
-      },
-      {
-        "_uid": "f52b36a2-29d5-4b86-a79b-ddd7d135b274",
-        "link": {
-          "id": "",
-          "url": "https://vercel.com/focusreactive/turbo-cms-kit-storyblok",
-          "linktype": "url",
-          "fieldtype": "multilink",
-          "cached_url": "https://vercel.com/focusreactive/turbo-cms-kit-storyblok"
-        },
+        "size": "base",
         "text": "Vercel",
         "variant": "default",
         "component": "link"
