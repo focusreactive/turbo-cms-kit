@@ -7,7 +7,7 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2024-11-07T14:43:35.726Z",
+  "updated_at": "2024-12-11T15:19:35.014Z",
   "published_at": "2024-10-21T12:06:55.000Z",
   "id": 560838689,
   "uuid": "9242f0ad-4f23-46b4-a369-227f91b0d3fd",
@@ -78,8 +78,9 @@
           "fieldtype": "multilink",
           "cached_url": "maks"
         },
+        "size": "base",
         "text": "Home",
-        "variant": "footerNav",
+        "variant": "default",
         "component": "link"
       },
       {
@@ -91,8 +92,9 @@
           "fieldtype": "multilink",
           "cached_url": "home"
         },
+        "size": "base",
         "text": "Blog",
-        "variant": "footerNav",
+        "variant": "default",
         "component": "link"
       },
       {
@@ -105,8 +107,9 @@
           "fieldtype": "multilink",
           "cached_url": "https://app.storyblok.com/#/me/spaces/293915"
         },
+        "size": "base",
         "text": "Storyblok",
-        "variant": "footerNav",
+        "variant": "default",
         "component": "link"
       },
       {
@@ -119,8 +122,9 @@
           "fieldtype": "multilink",
           "cached_url": "https://github.com/focusreactive/turbo-cms-kit"
         },
+        "size": "base",
         "text": "GitHub",
-        "variant": "footerNav",
+        "variant": "default",
         "component": "link"
       },
       {
@@ -133,8 +137,9 @@
           "fieldtype": "multilink",
           "cached_url": "https://trello.com/b/2XLLkCma/cms-kit"
         },
+        "size": "base",
         "text": "Trello",
-        "variant": "footerNav",
+        "variant": "default",
         "component": "link"
       },
       {
@@ -146,8 +151,9 @@
           "fieldtype": "multilink",
           "cached_url": "https://vercel.com/focusreactive/turbo-cms-kit-storyblok"
         },
+        "size": "base",
         "text": "Vercel",
-        "variant": "footerNav",
+        "variant": "default",
         "component": "link"
       }
     ],

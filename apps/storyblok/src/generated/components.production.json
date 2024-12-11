@@ -3,6 +3,7 @@
     {
       "name": "blog",
       "display_name": null,
+      "description": null,
       "created_at": "2024-09-10T10:53:37.659Z",
       "updated_at": "2024-11-07T06:47:51.553Z",
       "id": 6275958,
@@ -217,6 +218,7 @@
     {
       "name": "blogPost",
       "display_name": null,
+      "description": null,
       "created_at": "2024-09-10T10:58:53.208Z",
       "updated_at": "2024-10-07T06:26:30.463Z",
       "id": 6275962,
@@ -293,6 +295,7 @@
     {
       "name": "cardsGrid",
       "display_name": null,
+      "description": null,
       "created_at": "2024-09-10T10:51:16.668Z",
       "updated_at": "2024-11-07T06:48:22.026Z",
       "id": 6275957,
@@ -494,6 +497,7 @@
     {
       "name": "carousel",
       "display_name": null,
+      "description": null,
       "created_at": "2024-10-08T14:20:16.827Z",
       "updated_at": "2024-11-07T07:33:31.803Z",
       "id": 6391276,
@@ -764,6 +768,7 @@
     {
       "name": "carouselSlide",
       "display_name": null,
+      "description": null,
       "created_at": "2024-10-08T14:20:37.715Z",
       "updated_at": "2024-11-05T15:21:15.190Z",
       "id": 6391277,
@@ -820,6 +825,7 @@
     {
       "name": "copy",
       "display_name": null,
+      "description": null,
       "created_at": "2024-07-09T16:19:19.131Z",
       "updated_at": "2024-11-07T06:58:51.104Z",
       "id": 6030874,
@@ -1021,6 +1027,7 @@
     {
       "name": "defaultCard",
       "display_name": null,
+      "description": null,
       "created_at": "2024-09-10T10:47:06.859Z",
       "updated_at": "2024-10-07T06:27:40.854Z",
       "id": 6275827,
@@ -1133,6 +1140,7 @@
     {
       "name": "footer",
       "display_name": null,
+      "description": null,
       "created_at": "2024-10-09T15:42:37.254Z",
       "updated_at": "2024-10-09T16:11:36.677Z",
       "id": 6398307,
@@ -1213,6 +1221,7 @@
     {
       "name": "header",
       "display_name": null,
+      "description": null,
       "created_at": "2024-10-09T05:46:32.161Z",
       "updated_at": "2024-10-09T05:51:31.471Z",
       "id": 6394530,
@@ -1312,6 +1321,7 @@
     {
       "name": "hero",
       "display_name": null,
+      "description": null,
       "created_at": "2024-10-08T14:42:35.362Z",
       "updated_at": "2024-11-07T06:51:28.343Z",
       "id": 6391508,
@@ -1514,6 +1524,7 @@
     {
       "name": "image",
       "display_name": null,
+      "description": null,
       "created_at": "2024-07-10T10:47:30.096Z",
       "updated_at": "2024-10-29T14:37:52.461Z",
       "id": 6033429,
@@ -1601,14 +1612,35 @@
     {
       "name": "link",
       "display_name": null,
+      "description": null,
       "created_at": "2024-07-10T13:22:37.130Z",
-      "updated_at": "2024-10-29T14:58:01.048Z",
+      "updated_at": "2024-12-11T15:16:12.603Z",
       "id": 6034187,
       "schema": {
-        "text": {
-          "type": "text",
+        "size": {
+          "type": "option",
           "pos": 0,
-          "required": true
+          "use_uuid": true,
+          "required": true,
+          "exclude_empty_option": true,
+          "options": [
+            {
+              "_uid": "085b5d72-e8c2-469d-b49c-44465ef616fc",
+              "name": "base",
+              "value": "base"
+            },
+            {
+              "_uid": "b96dcba6-185a-4ad1-81a8-ff1a1b0cf0a1",
+              "value": "sm",
+              "name": "small"
+            },
+            {
+              "_uid": "15e7cce3-34fe-4b39-8666-e550b7e4207a",
+              "value": "lg",
+              "name": "large"
+            }
+          ],
+          "default_value": "base"
         },
         "variant": {
           "type": "option",
@@ -1631,16 +1663,6 @@
               "name": "secondary"
             },
             {
-              "_uid": "e30c19d3-a56b-4488-b5b2-51bb87e07845",
-              "value": "headerNav",
-              "name": "header nav"
-            },
-            {
-              "_uid": "b62035ab-923a-46b5-899d-00e8128071ab",
-              "value": "footerNav",
-              "name": "footer nav"
-            },
-            {
               "_uid": "aa2e4f27-68fa-4e60-b0af-7aba99301dae",
               "value": "badge",
               "name": "badge"
@@ -1660,9 +1682,14 @@
           "default_value": "default",
           "required": true
         },
+        "text": {
+          "type": "text",
+          "pos": 2,
+          "required": true
+        },
         "link": {
           "type": "multilink",
-          "pos": 2,
+          "pos": 3,
           "required": true,
           "show_anchor": true,
           "allow_target_blank": true
@@ -1670,9 +1697,10 @@
         "tab-e2fa5b33-ed01-48ce-906f-7fb8918b925e": {
           "display_name": "Style",
           "keys": [
-            "variant"
+            "variant",
+            "size"
           ],
-          "pos": 3,
+          "pos": 4,
           "type": "tab"
         }
       },
@@ -1695,6 +1723,7 @@
     {
       "name": "linksList",
       "display_name": null,
+      "description": null,
       "created_at": "2024-09-10T10:44:36.150Z",
       "updated_at": "2024-11-07T06:52:04.324Z",
       "id": 6275825,
@@ -1878,7 +1907,7 @@
           "id": 2282730,
           "name": "Align left",
           "component_id": 6275825,
-          "image": "//a.storyblok.com/f/293915/x/1a4b598fb1/screenshot-2024-09-10-at-16-38-04.png",
+          "image": "//a.storyblok.com/f/293915/x/fb8b06f64f/screenshot-2024-12-11-at-16-54-14.png",
           "icon": "",
           "color": "",
           "description": ""
@@ -1897,6 +1926,7 @@
     {
       "name": "logoItem",
       "display_name": null,
+      "description": null,
       "created_at": "2024-09-10T10:35:49.763Z",
       "updated_at": "2024-10-07T06:31:34.201Z",
       "id": 6275705,
@@ -1983,6 +2013,7 @@
     {
       "name": "logos",
       "display_name": null,
+      "description": null,
       "created_at": "2024-09-10T10:38:10.602Z",
       "updated_at": "2024-11-07T06:52:38.148Z",
       "id": 6275709,
@@ -2185,6 +2216,7 @@
     {
       "name": "page",
       "display_name": null,
+      "description": null,
       "created_at": "2024-06-21T13:27:14.550Z",
       "updated_at": "2024-11-04T08:00:36.376Z",
       "id": 5960538,
@@ -2346,6 +2378,7 @@
     {
       "name": "pricingTable",
       "display_name": null,
+      "description": null,
       "created_at": "2024-10-29T14:19:10.496Z",
       "updated_at": "2024-11-07T10:16:34.141Z",
       "id": 6489128,
@@ -2540,6 +2573,7 @@
     {
       "name": "pricingTableExtraService",
       "display_name": null,
+      "description": null,
       "created_at": "2024-10-29T14:31:04.180Z",
       "updated_at": "2024-11-07T10:15:56.063Z",
       "id": 6489233,
@@ -2577,6 +2611,7 @@
     {
       "name": "pricingTableTier",
       "display_name": null,
+      "description": null,
       "created_at": "2024-10-29T14:19:56.597Z",
       "updated_at": "2024-11-05T15:19:21.909Z",
       "id": 6489131,
@@ -2673,6 +2708,7 @@
     {
       "name": "pricingTableTierFeature",
       "display_name": null,
+      "description": null,
       "created_at": "2024-10-29T14:25:23.509Z",
       "updated_at": "2024-11-05T15:05:39.215Z",
       "id": 6489227,
@@ -2702,6 +2738,7 @@
     {
       "name": "richText",
       "display_name": null,
+      "description": null,
       "created_at": "2024-07-10T10:54:54.528Z",
       "updated_at": "2024-11-07T09:33:49.261Z",
       "id": 6033464,
@@ -2786,6 +2823,7 @@
     {
       "name": "stepGuide",
       "display_name": null,
+      "description": null,
       "created_at": "2024-10-30T07:56:07.407Z",
       "updated_at": "2024-11-07T06:37:18.067Z",
       "id": 6492253,
@@ -2972,6 +3010,7 @@
     {
       "name": "stepGuideItem",
       "display_name": null,
+      "description": null,
       "created_at": "2024-10-30T07:57:10.316Z",
       "updated_at": "2024-10-30T16:11:50.692Z",
       "id": 6492255,
@@ -3029,6 +3068,7 @@
     {
       "name": "threeDElement",
       "display_name": "3D Element",
+      "description": null,
       "created_at": "2024-11-01T07:46:52.931Z",
       "updated_at": "2024-11-07T06:53:35.438Z",
       "id": 6502652,

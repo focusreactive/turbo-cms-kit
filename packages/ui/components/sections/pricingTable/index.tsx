@@ -110,7 +110,11 @@ export function PricingTable({
               </div>
 
               <div className="px-6 pb-8 pt-2">
-                <Link key={tier.cta.text} {...tier.cta} />
+                <Link
+                  key={tier.cta.text}
+                  {...tier.cta}
+                  className="inline-block w-full"
+                />
 
                 <ul className="mt-6 space-y-4">
                   {tier.features.map((feature) => (

@@ -3168,14 +3168,6 @@
               },
               {
                 "type": "string",
-                "value": "headerNav"
-              },
-              {
-                "type": "string",
-                "value": "footerNav"
-              },
-              {
-                "type": "string",
                 "value": "badge"
               },
               {
@@ -3184,7 +3176,28 @@
               },
               {
                 "type": "string",
-                "value": "ghost-dark"
+                "value": "ghostDark"
+              }
+            ]
+          },
+          "optional": false
+        },
+        "size": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "union",
+            "of": [
+              {
+                "type": "string",
+                "value": "base"
+              },
+              {
+                "type": "string",
+                "value": "sm"
+              },
+              {
+                "type": "string",
+                "value": "lg"
               }
             ]
           },
