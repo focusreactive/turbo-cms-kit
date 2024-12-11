@@ -17,7 +17,7 @@ export const buttonVariants = cva(
         [ButtonVariant.Badge]:
           "rounded-full text-textSecondaryColor ring-1 ring-textSecondaryColor hover:ring-primaryColor",
         [ButtonVariant.Ghost]:
-          "bg-bgColor radius-md border border-bgColor hover:border-textSecondaryColor font-medium rounded-md",
+          "bg-bgColor radius-md text-textColor border border-bgColor hover:border-textSecondaryColor font-medium rounded-md",
         [ButtonVariant.GhostDark]:
           "bg-textColor text-bgColor radius-md hover:bg-textSecondaryColor font-medium rounded-md",
       },

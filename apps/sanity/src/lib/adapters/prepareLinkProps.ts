@@ -1,4 +1,5 @@
 import type { CustomLink } from "@/generated/extracted-types";
+import { stegaClean } from "@sanity/client/stega";
 import type { ButtonVariantProps } from "@shared/ui/components/ui/button/types";
 import { type LinkProps } from "@shared/ui/components/ui/link/types";
 
@@ -19,7 +20,7 @@ export const prepareLinkProps = (props?: CustomLink): LinkProps => {
   return {
     text: props.text,
     href: href,
-    variant: props.variant as ButtonVariantProps["variant"],
-    size: props.size as ButtonVariantProps["size"],
+    variant: stegaClean(props.variant) as ButtonVariantProps["variant"],
+    size: stegaClean(props.size) as ButtonVariantProps["size"],
   };
 };
