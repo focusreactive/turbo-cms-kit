@@ -4,32 +4,35 @@ import { cva } from "class-variance-authority";
 import { cn } from "../../../utils";
 import { ButtonSize, ButtonVariant, type ButtonProps } from "./types";
 
-export const buttonVariants = cva("transition-colors leading-none inline", {
-  variants: {
-    variant: {
-      [ButtonVariant.Default]: "text-textColor",
-      [ButtonVariant.Primary]:
-        "px-5 py-3 text-base font-medium text-center text-textColor rounded-lg bg-primaryColor hover:outline",
-      [ButtonVariant.Secondary]:
-        "px-5 py-3 text-base font-medium text-center text-textColor border border-textColor rounded-lg focus:ring-4 focus:ring-textSecondaryColor",
-      [ButtonVariant.Badge]:
-        "rounded-full font-base px-3 py-1 text-textSecondaryColor ring-1 ring-textSecondaryColor hover:ring-primaryColor",
-      [ButtonVariant.Ghost]:
-        "bg-white shadow radius-md hover:bg-gray-20 font-medium text-center rounded-md w-full px-4 py-2 text-base hover:bg-gray-100 transition-colors duration-200",
-      [ButtonVariant.GhostDark]:
-        "bg-black text-white shadow radius-md hover:bg-gray-20 font-medium text-center rounded-md w-full px-4 py-2 text-base hover:bg-gray-700 transition-colors duration-200",
+export const buttonVariants = cva(
+  "leading-none inline text-center hover:shadow-md transition-all duration-150",
+  {
+    variants: {
+      variant: {
+        [ButtonVariant.Default]: "text-textColor",
+        [ButtonVariant.Primary]:
+          "font-medium text-bgColor rounded-lg bg-primaryColor hover:outline",
+        [ButtonVariant.Secondary]:
+          "font-medium text-textColor border border-textColor rounded-lg focus:ring-4 focus:ring-textSecondaryColor",
+        [ButtonVariant.Badge]:
+          "rounded-full text-textSecondaryColor ring-1 ring-textSecondaryColor hover:ring-primaryColor",
+        [ButtonVariant.Ghost]:
+          "bg-bgColor radius-md border border-bgColor hover:border-textSecondaryColor font-medium rounded-md",
+        [ButtonVariant.GhostDark]:
+          "bg-textColor text-bgColor radius-md hover:bg-textSecondaryColor font-medium rounded-md",
+      },
+      size: {
+        [ButtonSize.Base]: "px-4 py-2 text-base",
+        [ButtonSize.Small]: "text-sm p-1",
+        [ButtonSize.Large]: "text-lg py-3 px-8",
+      },
     },
-    size: {
-      [ButtonSize.Base]: "px-4 py-2",
-      [ButtonSize.Small]: "text-sm p-1",
-      [ButtonSize.Large]: "text-lg py-3 px-8",
+    defaultVariants: {
+      variant: ButtonVariant.Default,
+      size: ButtonSize.Base,
     },
   },
-  defaultVariants: {
-    variant: ButtonVariant.Default,
-    size: ButtonSize.Base,
-  },
-});
+);
 
 export function Button({
   className,

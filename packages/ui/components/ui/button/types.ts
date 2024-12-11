@@ -17,7 +17,7 @@ export enum ButtonVariant {
   Secondary = "secondary",
   Badge = "badge",
   Ghost = "ghost",
-  GhostDark = "ghostDark",
+  GhostDark = "ghost-dark",
 }
 
 export enum ButtonSize {
