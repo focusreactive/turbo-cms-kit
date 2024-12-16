@@ -14,7 +14,7 @@ export default async function CoreLayout({
 
   if (isDraftModeEnv) {
     const { data } = await fetchStoriesByParams(isDraftModeEnv, {
-      by_slugs: "headers/*,footers/*",
+      by_slugs: "components/headers/*,components/footers/*",
     });
 
     headersAndFooters = data;
