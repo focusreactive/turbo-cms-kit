@@ -136,6 +136,7 @@ export interface HeaderStoryblok {
 }
 
 export interface HeroStoryblok {
+  globalComponent?: ISbStoryData<HeroStoryblok> | string;
   title?: string;
   text?: RichTextStoryblok[];
   image: ImageStoryblok[];

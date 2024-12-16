@@ -45,6 +45,7 @@ export default async function Home({ params, searchParams }: Props) {
     isDraftModeEnabled,
     params.slug,
     {
+      // maybe we can igniore resolving relations, since there is a separate request for all the global components
       resolve_relations: "header,footer",
     },
   );

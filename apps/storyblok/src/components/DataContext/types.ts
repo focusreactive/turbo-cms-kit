@@ -4,7 +4,7 @@ import type { IResolvedLink } from "@/lib/api";
 
 export interface IDataContextValues {
   allResolvedLinks: IResolvedLink[];
-  headersAndFooters: ISbStoryData[];
+  globalComponentsStories: ISbStoryData[];
 }
 
 export interface IDataContextProviderProps extends IDataContextValues {

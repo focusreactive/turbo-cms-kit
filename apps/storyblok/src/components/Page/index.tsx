@@ -7,14 +7,14 @@ import type { IPageContainerProps } from "./types";
 import { getHeaderAndFooterStories } from "./utils";
 
 export default function PageContainer({ blok }: IPageContainerProps) {
-  const { headersAndFooters } = useDataContext();
+  const { globalComponentsStories } = useDataContext();
 
   const { sections, showCookieBanner, theme } = blok;
 
   if (!sections) return null;
 
   const { header, footer } = getHeaderAndFooterStories(
-    headersAndFooters,
+    globalComponentsStories,
     blok.header,
     blok.footer,
   );
