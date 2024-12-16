@@ -36,7 +36,7 @@ export default function SectionContainer({
 
   const cleanMarginTop = stegaClean(marginTop);
   const cleanMarginBottom = stegaClean(marginBottom);
-  const cleanBackgroundColor = stegaClean(backgroundColor);
+  const cleanBackgroundColor = stegaClean(backgroundColor); // implement using CSS variables
   const cleanMaxWidth = stegaClean(maxWidth);
 
   return (
@@ -45,7 +45,7 @@ export default function SectionContainer({
       className={cn(
         "bg-bgColor overflow-x-hidden",
         className,
-        cleanBackgroundColor,
+        cleanBackgroundColor, // implement using CSS variables
         {
           "mt-0": cleanMarginTop === "none",
           "mb-0": cleanMarginBottom === "none",
