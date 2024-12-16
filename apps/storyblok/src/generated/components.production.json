@@ -1323,28 +1323,28 @@
       "display_name": null,
       "description": null,
       "created_at": "2024-10-08T14:42:35.362Z",
-      "updated_at": "2024-11-07T06:51:28.343Z",
+      "updated_at": "2024-12-16T14:24:48.422Z",
       "id": 6391508,
       "schema": {
+        "globalData": {
+          "type": "option",
+          "pos": 0,
+          "use_uuid": true,
+          "description": "Use global data if selected",
+          "tooltip": true,
+          "source": "internal_stories",
+          "filter_content_type": [
+            "hero"
+          ],
+          "display_name": "Global data"
+        },
         "title": {
           "type": "text",
-          "pos": 0
-        },
-        "tab-555e4eda-c0eb-4043-acc0-4f262cd522e5": {
-          "display_name": "Style",
-          "keys": [
-            "marginTop",
-            "marginBottom",
-            "maxWidth",
-            "backgroundColor",
-            "backgroundImage"
-          ],
-          "pos": 0,
-          "type": "tab"
+          "pos": 1
         },
         "text": {
           "type": "bloks",
-          "pos": 1,
+          "pos": 2,
           "maximum": 1,
           "restrict_type": "",
           "restrict_components": true,
@@ -1355,7 +1355,7 @@
         },
         "image": {
           "type": "bloks",
-          "pos": 2,
+          "pos": 3,
           "required": true,
           "minimum": 1,
           "maximum": 1,
@@ -1367,7 +1367,7 @@
         },
         "links": {
           "type": "bloks",
-          "pos": 3,
+          "pos": 4,
           "minimum": 1,
           "required": true,
           "restrict_type": "",
@@ -1376,9 +1376,21 @@
             "link"
           ]
         },
+        "tab-555e4eda-c0eb-4043-acc0-4f262cd522e5": {
+          "display_name": "Style",
+          "keys": [
+            "marginTop",
+            "marginBottom",
+            "maxWidth",
+            "backgroundColor",
+            "backgroundImage"
+          ],
+          "pos": 5,
+          "type": "tab"
+        },
         "marginTop": {
           "type": "option",
-          "pos": 5,
+          "pos": 6,
           "use_uuid": true,
           "required": true,
           "options": [
@@ -1403,7 +1415,7 @@
         },
         "marginBottom": {
           "type": "option",
-          "pos": 6,
+          "pos": 7,
           "use_uuid": true,
           "required": true,
           "options": [
@@ -1428,7 +1440,7 @@
         },
         "maxWidth": {
           "type": "option",
-          "pos": 7,
+          "pos": 8,
           "use_uuid": true,
           "options": [
             {
@@ -1453,7 +1465,7 @@
         },
         "backgroundColor": {
           "type": "option",
-          "pos": 8,
+          "pos": 9,
           "use_uuid": true,
           "options": [
             {
@@ -1488,7 +1500,7 @@
         },
         "backgroundImage": {
           "type": "asset",
-          "pos": 9,
+          "pos": 10,
           "required": false,
           "filetypes": [
             "images"
@@ -1497,7 +1509,7 @@
       },
       "image": "//a.storyblok.com/f/293915/x/f328db11b5/screenshot-2024-10-08-at-17-14-10.png",
       "preview_field": null,
-      "is_root": false,
+      "is_root": true,
       "preview_tmpl": null,
       "is_nestable": true,
       "all_presets": [
@@ -2218,7 +2230,7 @@
       "display_name": null,
       "description": null,
       "created_at": "2024-06-21T13:27:14.550Z",
-      "updated_at": "2024-11-04T08:00:36.376Z",
+      "updated_at": "2024-12-16T08:31:11.881Z",
       "id": 5960538,
       "schema": {
         "tab-62ded705-61ae-4a7f-98fc-7f09b7326766": {
@@ -2243,7 +2255,7 @@
           "allow_advanced_search": true,
           "use_uuid": true,
           "required": true,
-          "folder_slug": "headers/",
+          "folder_slug": "",
           "filter_content_type": [
             "header"
           ]
@@ -2323,7 +2335,7 @@
           "required": true,
           "exclude_empty_option": true,
           "source": "internal_stories",
-          "folder_slug": "footers/",
+          "folder_slug": "",
           "filter_content_type": [
             "footer"
           ]

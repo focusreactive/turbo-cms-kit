@@ -129,7 +129,7 @@
   "published": true,
   "slug": "default-header",
   "path": null,
-  "full_slug": "headers/default-header",
+  "full_slug": "components/headers/default-header",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -147,9 +147,19 @@
   "pinned": false,
   "breadcrumbs": [
     {
+      "id": 596037362,
+      "name": "Components",
+      "parent_id": null,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "components",
+      "translated_slugs": []
+    },
+    {
       "id": 560303235,
       "name": "Headers",
-      "parent_id": null,
+      "parent_id": 596037362,
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,

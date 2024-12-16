@@ -1,28 +1,28 @@
 {
-  "name": "Headers",
+  "name": "Heroes",
   "parent_id": 596037362,
-  "group_id": "7b52cfda-6870-481f-9cbf-d398044d9434",
+  "group_id": "126dbb8c-5603-43b7-96da-b7d46b5a6b58",
   "alternates": [],
-  "created_at": "2024-10-09T05:47:36.253Z",
+  "created_at": "2024-12-16T08:35:50.023Z",
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2024-12-16T08:35:29.196Z",
-  "published_at": "2024-10-21T12:06:56.092Z",
-  "id": 560303235,
-  "uuid": "c32bc308-3d70-4ed9-913e-abc6969e6f46",
+  "updated_at": "2024-12-16T08:35:50.023Z",
+  "published_at": null,
+  "id": 596040297,
+  "uuid": "309fed25-e4d5-466a-8db2-9044525411f6",
   "is_folder": true,
   "content": {
     "content_types": [
-      "header"
+      "hero"
     ],
     "lock_subfolders_content_types": true
   },
-  "published": true,
-  "slug": "headers",
+  "published": false,
+  "slug": "heroes",
   "path": null,
-  "full_slug": "components/headers",
-  "default_root": "header",
+  "full_slug": "components/heroes",
+  "default_root": "hero",
   "disble_fe_editor": false,
   "disable_fe_editor": false,
   "parent": {
@@ -33,7 +33,7 @@
     "disble_fe_editor": false
   },
   "is_startpage": false,
-  "unpublished_changes": true,
+  "unpublished_changes": false,
   "meta_data": null,
   "imported_at": null,
   "pinned": false,
@@ -51,7 +51,7 @@
   ],
   "publish_at": null,
   "expire_at": null,
-  "first_published_at": "2024-10-21T12:06:56.092Z",
+  "first_published_at": null,
   "last_author": {
     "id": 178697,
     "userid": "dogfrogfog",
@@ -62,7 +62,7 @@
   "space_role_ids": [],
   "translated_slugs": [],
   "localized_paths": [],
-  "position": 10,
+  "position": -10,
   "translated_stories": [],
   "can_not_view": false,
   "is_scheduled": null,

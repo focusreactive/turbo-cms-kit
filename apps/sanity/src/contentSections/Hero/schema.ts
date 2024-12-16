@@ -13,9 +13,16 @@ export default {
   options: {},
   name: "section.hero",
   title: "Hero",
-  type: "object",
+  type: "document",
   groups: commonGroups,
   fields: [
+    defineField({
+      name: "globalData",
+      title: "Global Data",
+      type: "reference",
+      to: [{ type: "section.hero" }],
+      group: CommonGroup.Content,
+    }),
     defineField({
       name: "title",
       type: "string",
