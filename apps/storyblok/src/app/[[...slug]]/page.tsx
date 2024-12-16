@@ -44,10 +44,6 @@ export default async function Home({ params, searchParams }: Props) {
   const { story, links } = await fetchStoryBySlug(
     isDraftModeEnabled,
     params.slug,
-    {
-      // maybe we can igniore resolving relations, since there is a separate request for all the global components
-      resolve_relations: "header,footer",
-    },
   );
 
   if (!story) {
