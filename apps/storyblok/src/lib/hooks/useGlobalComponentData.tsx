@@ -4,7 +4,7 @@ import type { ISbStoryData } from "@storyblok/react/rsc";
 
 import { useDataContext } from "@/components/DataContext";
 
-export const useGlobalComponent = (
+export const useGlobalComponentData = (
   globalComponent: string,
 ): ISbStoryData | null => {
   const { globalComponentsStories } = useDataContext();

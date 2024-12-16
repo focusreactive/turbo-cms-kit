@@ -7,7 +7,7 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2024-12-11T16:01:34.254Z",
+  "updated_at": "2024-12-16T14:16:27.934Z",
   "published_at": "2024-12-09T08:45:41.904Z",
   "id": 571196664,
   "uuid": "100e8f7a-3486-44da-b6f1-d4e5fb131247",
@@ -124,6 +124,7 @@
         "maxWidth": "base",
         "component": "hero",
         "marginTop": "base",
+        "globalData": "",
         "marginBottom": "base",
         "backgroundColor": "none"
       },
@@ -697,15 +698,6 @@
         "marginBottom": "base",
         "backgroundColor": "none",
         "isReversedOnMobile": false
-      },
-      {
-        "_uid": "5506a320-8365-4b62-bd2d-d14a7fcc0d10",
-        "maxWidth": "base",
-        "component": "threeDElement",
-        "marginTop": "base",
-        "threeDModel": "kubik-rubik",
-        "marginBottom": "base",
-        "backgroundColor": "none"
       },
       {
         "_uid": "6fa207de-106d-46ed-805a-99811a0bcbf3",
