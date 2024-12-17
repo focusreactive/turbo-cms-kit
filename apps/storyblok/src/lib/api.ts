@@ -70,7 +70,7 @@ export async function fetchStoryBySlug(
   );
 
   const { story, links, rels } = await fetch(
-    `${API_GATE}/stories/${slug?.join("/") || ""}?${searchParams.toString()}`,
+    `${API_GATE}/stories/${slug.join("/")}?${searchParams.toString()}`,
   ).then((res) => res.json());
 
   // REST storyblok API doesnt resolve relations in the response, only uuid
@@ -168,23 +168,18 @@ export async function fetchStoriesByParams(
   }
 }
 
-// Check if the draft mode token is valid
-export async function checkDraftModeToken(searchParams: {
-  [key: string]: string | string[] | undefined;
-}) {
-  if (isDevMode) return true;
-
-  let isDraftModeEnabled = process.env.NEXT_PUBLIC_IS_PREVIEW === "true";
-
-  if (isDraftModeEnabled && process.env.NODE_ENV !== "development") {
-    isDraftModeEnabled = await fetch(
-      `${process.env.NEXT_PUBLIC_DOMAIN}/api/checkToken?space_id=${searchParams?.["_storyblok_tk[space_id]"]}&timestamp=${searchParams?.["_storyblok_tk[timestamp]"]}&token=${searchParams?.["_storyblok_tk[token]"]}`,
-    )
-      .then((res) => res.json())
-      .then((res) => res.result);
-  }
-
-  return isDraftModeEnabled;
+export async function checkDraftMode(
+  searchParams: {
+    [key: string]: string | string[] | undefined;
+  },
+  slug: string[] = ["home"],
+) {
+  await fetch(
+    `${process.env.NEXT_PUBLIC_DOMAIN}/api/draft?space_id=${searchParams?.["_storyblok_tk[space_id]"]}&timestamp=${searchParams?.["_storyblok_tk[timestamp]"]}&token=${searchParams?.["_storyblok_tk[token]"]}&slug=${slug}`,
+    {
+      cache: "no-store",
+    },
+  );
 }
 
 export async function getMetaData(slug?: string[]): Promise<Metadata> {

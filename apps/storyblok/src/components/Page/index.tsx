@@ -1,31 +1,38 @@
-import { StoryblokComponent, StoryblokStory } from "@storyblok/react/rsc";
+import {
+  StoryblokComponent,
+  // StoryblokStory
+} from "@storyblok/react/rsc";
 
 import { cn, CookieBanner } from "@shared/ui";
 
-import { useDataContext } from "../DataContext";
+// import { useDataContext } from "../DataContext";
 import type { IPageContainerProps } from "./types";
-import { getHeaderAndFooterStories } from "./utils";
+
+// import { getHeaderAndFooterStories } from "./utils";
 
 export default function PageContainer({ blok }: IPageContainerProps) {
-  const { headersAndFooters } = useDataContext();
+  // const { headersAndFooters } = useDataContext();
 
   const { sections, showCookieBanner, theme } = blok;
 
   if (!sections) return null;
 
-  const { header, footer } = getHeaderAndFooterStories(
-    headersAndFooters,
-    blok.header,
-    blok.footer,
-  );
+  // const { header, footer } = getHeaderAndFooterStories(
+  //   headersAndFooters,
+  //   blok.header,
+  //   blok.footer,
+  // );
+
+  // console.log("header", header);
+  // console.log("footer", footer);
 
   return (
     <div className={cn("bg-bgColor", theme)}>
-      <StoryblokStory story={header} />
+      {/* <StoryblokStory story={header} /> */}
       {sections.map((s) => (
         <StoryblokComponent blok={s} key={s._uid} />
       ))}
-      <StoryblokStory story={footer} />
+      {/* <StoryblokStory story={footer} /> */}
       {showCookieBanner && <CookieBanner />}
     </div>
   );

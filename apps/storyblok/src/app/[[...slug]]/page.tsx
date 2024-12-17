@@ -45,6 +45,7 @@ export default async function Home(props: Props) {
   const params = await props.params;
   const { isEnabled } = await draftMode();
 
+  console.log("is draft mode enabled: ", isEnabled);
   console.log("isPreview: ", isPreview);
 
   if (isPreview) {
