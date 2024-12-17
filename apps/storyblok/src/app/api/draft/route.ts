@@ -1,5 +1,5 @@
 import crypto from "crypto";
-import { cookies, draftMode } from "next/headers";
+import { draftMode } from "next/headers";
 import { redirect } from "next/navigation";
 
 export async function GET(request: Request) {
@@ -22,21 +22,6 @@ export async function GET(request: Request) {
     Number(timestamp) > Math.floor(Date.now() / 1000) - 3600
   ) {
     (await draftMode()).enable();
-
-    const c = await cookies();
-
-    const draft = c.get("__prerender_bypass");
-    const draftValue = draft?.value;
-    if (draftValue) {
-      c.set({
-        name: "__prerender_bypass",
-        value: draftValue,
-        httpOnly: true,
-        path: "/",
-        secure: true,
-        sameSite: "none",
-      });
-    }
 
     console.log("🔥 draft mode enabled");
 
