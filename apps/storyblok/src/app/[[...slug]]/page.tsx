@@ -11,10 +11,7 @@ import {
 import { isPreview } from "@/lib/utils";
 import CoreLayout from "@/components/CoreLayout";
 
-if (isPreview) {
-}
 export const fetchCache = "default-cache";
-export const dynamic = "force-static";
 
 type Props = {
   params: Promise<{ slug?: string[] }>;
@@ -27,7 +24,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 }
 
 export async function generateStaticParams() {
-  // if (isPreview) return [];
+  if (isPreview) return [];
 
   const pages = await fetchAllPages();
 
@@ -43,9 +40,13 @@ export async function generateStaticParams() {
 }
 
 export default async function Home(props: Props) {
-  const searchParams = await props.searchParams;
   const params = await props.params;
-  const isDraftModeEnabled = await checkDraftModeToken(searchParams);
+  let isDraftModeEnabled = false;
+
+  if (isPreview) {
+    const searchParams = await props.searchParams;
+    isDraftModeEnabled = await checkDraftModeToken(searchParams);
+  }
 
   const { story, links } = await fetchStoryBySlug(
     isDraftModeEnabled,
