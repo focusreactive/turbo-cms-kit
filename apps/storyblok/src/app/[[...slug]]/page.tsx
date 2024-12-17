@@ -12,6 +12,7 @@ import { isPreview } from "@/lib/utils";
 import CoreLayout from "@/components/CoreLayout";
 
 export const fetchCache = "default-cache";
+export const dynamic = "auto";
 
 type Props = {
   params: Promise<{ slug?: string[] }>;
