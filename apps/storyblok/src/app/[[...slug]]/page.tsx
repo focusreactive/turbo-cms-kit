@@ -3,13 +3,7 @@ import { draftMode } from "next/headers";
 import { notFound } from "next/navigation";
 import { StoryblokStory } from "@storyblok/react/rsc";
 
-import {
-  // checkDraftMode,
-  fetchAllPages,
-  fetchStoryBySlug,
-  getMetaData,
-} from "@/lib/api";
-import { isPreview } from "@/lib/utils";
+import { fetchAllPages, fetchStoryBySlug, getMetaData } from "@/lib/api";
 import CoreLayout from "@/components/CoreLayout";
 
 // export const fetchCache = "default-cache";
@@ -45,12 +39,7 @@ export default async function Home(props: Props) {
   const params = await props.params;
   const { isEnabled } = await draftMode();
 
-  console.log("is draft mode enabled: ", isEnabled);
-  console.log("isPreview: ", isPreview);
-
-  // if (isPreview) {
-  // await checkDraftMode(await props.searchParams, params.slug);
-  // }
+  console.log("draft mode: ", isEnabled);
 
   const { story, links } = await fetchStoryBySlug(isEnabled, params.slug);
 

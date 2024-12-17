@@ -153,20 +153,6 @@ export async function fetchStoriesByParams(
   }
 }
 
-export async function checkDraftMode(
-  searchParams: {
-    [key: string]: string | string[] | undefined;
-  },
-  slug: string[] = ["home"],
-) {
-  await fetch(
-    `${process.env.NEXT_PUBLIC_DOMAIN}/api/draft?space_id=${searchParams?.["_storyblok_tk[space_id]"]}&timestamp=${searchParams?.["_storyblok_tk[timestamp]"]}&token=${searchParams?.["_storyblok_tk[token]"]}&slug=${slug}`,
-    {
-      cache: "no-store",
-    },
-  );
-}
-
 export async function getMetaData(slug?: string[]): Promise<Metadata> {
   const isDraftModeEnabled = isDraftModeEnv;
 
