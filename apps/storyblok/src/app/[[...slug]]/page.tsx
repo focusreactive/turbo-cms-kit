@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { connection } from "next/server";
 import { StoryblokStory } from "@storyblok/react/rsc";
 
 import {
@@ -12,7 +13,6 @@ import { isPreview } from "@/lib/utils";
 import CoreLayout from "@/components/CoreLayout";
 
 export const fetchCache = "default-cache";
-export const dynamic = "auto";
 
 type Props = {
   params: Promise<{ slug?: string[] }>;
@@ -21,6 +21,7 @@ type Props = {
 
 export async function generateMetadata(props: Props): Promise<Metadata> {
   const params = await props.params;
+
   return await getMetaData(params.slug);
 }
 
@@ -44,7 +45,16 @@ export default async function Home(props: Props) {
   const params = await props.params;
   let isDraftModeEnabled = false;
 
+  console.log("isPreview: ", isPreview);
+
+  console.log(
+    "reading search params, therefore should opt in dynamic rendering",
+  );
   if (isPreview) {
+    await connection();
+
+    console.log("is preview condition triggered");
+
     const searchParams = await props.searchParams;
     isDraftModeEnabled = await checkDraftModeToken(searchParams);
   }
@@ -56,6 +66,8 @@ export default async function Home(props: Props) {
       resolve_relations: "header,footer",
     },
   );
+
+  console.log("story: ", story);
 
   if (!story) {
     notFound();
