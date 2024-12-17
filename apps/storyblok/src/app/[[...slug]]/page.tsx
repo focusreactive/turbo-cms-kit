@@ -12,7 +12,7 @@ import {
 import { isPreview } from "@/lib/utils";
 import CoreLayout from "@/components/CoreLayout";
 
-export const fetchCache = "default-cache";
+// export const fetchCache = "default-cache";
 // export const dynamicParams = true;
 // export const dynamic = "force-static";
 
