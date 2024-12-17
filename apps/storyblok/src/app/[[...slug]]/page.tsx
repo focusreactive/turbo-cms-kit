@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { StoryblokStory } from "@storyblok/react/rsc";
 
 import {
-  checkDraftMode,
+  // checkDraftMode,
   fetchAllPages,
   fetchStoryBySlug,
   getMetaData,
@@ -13,8 +13,8 @@ import { isPreview } from "@/lib/utils";
 import CoreLayout from "@/components/CoreLayout";
 
 export const fetchCache = "default-cache";
-export const dynamicParams = true;
-export const dynamic = "force-static";
+// export const dynamicParams = true;
+// export const dynamic = "force-static";
 
 type Props = {
   params: Promise<{ slug?: string[] }>;
@@ -48,9 +48,9 @@ export default async function Home(props: Props) {
   console.log("is draft mode enabled: ", isEnabled);
   console.log("isPreview: ", isPreview);
 
-  if (isPreview) {
-    await checkDraftMode(await props.searchParams, params.slug);
-  }
+  // if (isPreview) {
+  // await checkDraftMode(await props.searchParams, params.slug);
+  // }
 
   const { story, links } = await fetchStoryBySlug(isEnabled, params.slug);
 
