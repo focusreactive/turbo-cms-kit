@@ -27,19 +27,20 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
   return await getMetaData(params.slug);
 }
 
-// export async function generateStaticParams() {
-//   const pages = await fetchAllPages();
+export async function generateStaticParams() {
+  return [];
+  // const pages = await fetchAllPages();
 
-//   const paths = pages
-//     .filter((page) => page.is_folder === false)
-//     .map((page) => {
-//       return {
-//         slug: page.slug.split("/"),
-//       };
-//     });
+  // const paths = pages
+  //   .filter((page) => page.is_folder === false)
+  //   .map((page) => {
+  //     return {
+  //       slug: page.slug.split("/"),
+  //     };
+  //   });
 
-//   return paths;
-// }
+  return paths;
+}
 
 export default async function Home(props: Props) {
   const params = await props.params;
