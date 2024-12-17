@@ -26,8 +26,6 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 }
 
 export async function generateStaticParams() {
-  if (isPreview) return [];
-
   const pages = await fetchAllPages();
 
   const paths = pages

@@ -73,8 +73,6 @@ export async function fetchStoryBySlug(
     `${API_GATE}/stories/${slug?.join("/") || ""}?${searchParams.toString()}`,
   ).then((res) => res.json());
 
-  console.log("links length: ", links.length);
-
   return {
     story,
     links,
