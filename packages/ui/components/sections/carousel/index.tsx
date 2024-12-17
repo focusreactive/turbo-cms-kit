@@ -103,20 +103,22 @@ export function Carousel({
       />
 
       <GenericCarousel
-        slides={slides.map((slide) => ({
-          children: (({
-            isNext,
-            isActive,
-          }: {
-            isNext: boolean;
-            isActive: boolean;
-          }) => (
-            <CarouselCard
-              {...slide}
-              isActive={effect === "coverflow" ? isNext : isActive}
-            />
-          )) as unknown as React.ReactNode,
-        }))}
+        slides={
+          slides.map((slide) => ({
+            children: (({
+              isNext,
+              isActive,
+            }: {
+              isNext: boolean;
+              isActive: boolean;
+            }) => (
+              <CarouselCard
+                {...slide}
+                isActive={effect === "coverflow" ? isNext : isActive}
+              />
+            )) as unknown as React.ReactNode,
+          })) as any
+        }
         customModules={[
           Navigation,
           ...(customModules || []),
