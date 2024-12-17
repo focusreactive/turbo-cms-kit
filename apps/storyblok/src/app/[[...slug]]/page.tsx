@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
+import { draftMode } from "next/headers";
 import { notFound } from "next/navigation";
-import { connection } from "next/server";
 import { StoryblokStory } from "@storyblok/react/rsc";
 
 import {
-  checkDraftModeToken,
+  checkDraftMode,
   fetchAllPages,
   fetchStoryBySlug,
   getMetaData,
@@ -13,7 +13,6 @@ import { isPreview } from "@/lib/utils";
 import CoreLayout from "@/components/CoreLayout";
 
 export const fetchCache = "default-cache";
-export const dynamicParams = true;
 
 type Props = {
   params: Promise<{ slug?: string[] }>;
@@ -44,31 +43,17 @@ export async function generateStaticParams() {
 
 export default async function Home(props: Props) {
   const params = await props.params;
-  let isDraftModeEnabled = false;
+  const { isEnabled } = await draftMode();
 
   console.log("isPreview: ", isPreview);
 
-  console.log(
-    "reading search params, therefore should opt in dynamic rendering",
-  );
   if (isPreview) {
-    await connection();
-
-    console.log("is preview condition triggered");
-
-    const searchParams = await props.searchParams;
-    isDraftModeEnabled = await checkDraftModeToken(searchParams);
+    await checkDraftMode(await props.searchParams, params.slug);
   }
 
-  const { story, links } = await fetchStoryBySlug(
-    isDraftModeEnabled,
-    params.slug,
-    {
-      resolve_relations: "header,footer",
-    },
-  );
-
-  console.log("story: ", story);
+  const { story, links } = await fetchStoryBySlug(isEnabled, params.slug, {
+    resolve_relations: "header,footer",
+  });
 
   if (!story) {
     notFound();

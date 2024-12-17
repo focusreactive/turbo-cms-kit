@@ -1,11 +1,13 @@
 import crypto from "crypto";
+import { draftMode } from "next/headers";
+import { redirect } from "next/navigation";
 
 export async function GET(request: Request) {
-  // Parse query string parameters
-  const { searchParams } = new URL(`http://localhost:3000/${request.url}`);
+  const { searchParams, origin } = new URL(request.url);
   const space_id = searchParams.get("space_id");
   const timestamp = searchParams.get("timestamp");
   const token = searchParams.get("token");
+  const slug = searchParams.get("slug");
 
   const validationString =
     space_id + ":" + process.env.SB_PREVIEW_TOKEN + ":" + timestamp;
@@ -19,9 +21,14 @@ export async function GET(request: Request) {
     token == validationToken &&
     Number(timestamp) > Math.floor(Date.now() / 1000) - 3600
   ) {
-    // you're in the edit mode.
-    return Response.json({ result: true });
+    (await draftMode()).enable();
+
+    console.log("🔥 draft mode enabled");
+
+    redirect(`${origin}/${slug}`);
   }
 
-  return Response.json({ result: false });
+  console.log("❌ draft mode is NOT enabled, invalid token");
+
+  return new Response("Draft mode is NOT enabled, invalid token");
 }
