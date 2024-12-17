@@ -10,20 +10,20 @@ export default async function CoreLayout({
   children,
   allResolvedLinks,
 }: ICoreLayoutProps) {
-  let headersAndFooters: ISbStoryData[] = [];
+  let globalComponentsStories: ISbStoryData[] = [];
 
   if (isDraftModeEnv) {
     const { data } = await fetchStoriesByParams(isDraftModeEnv, {
-      by_slugs: "headers/*,footers/*",
+      by_slugs: "components/*",
     });
 
-    headersAndFooters = data;
+    globalComponentsStories = data;
   }
 
   return (
     <StoryblokProvider>
       <DataContextProvider
-        headersAndFooters={headersAndFooters}
+        globalComponentsStories={globalComponentsStories}
         allResolvedLinks={allResolvedLinks}
       >
         {children}

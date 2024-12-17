@@ -6,20 +6,20 @@ import type { IDataContextProviderProps, IDataContextValues } from "./types";
 
 export const DataContext = createContext<IDataContextValues>({
   allResolvedLinks: [],
-  headersAndFooters: [],
+  globalComponentsStories: [],
 });
 
 export function DataContextProvider({
   children,
   allResolvedLinks,
-  headersAndFooters,
+  globalComponentsStories,
 }: IDataContextProviderProps) {
   return (
     // @ts-ignore
     <DataContext
       value={{
         allResolvedLinks,
-        headersAndFooters,
+        globalComponentsStories,
       }}
     >
       {/* @ts-ignore */}

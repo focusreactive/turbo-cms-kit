@@ -52,9 +52,7 @@ export default async function Home(props: Props) {
     await checkDraftMode(await props.searchParams, params.slug);
   }
 
-  const { story, links } = await fetchStoryBySlug(isEnabled, params.slug, {
-    resolve_relations: "header,footer",
-  });
+  const { story, links } = await fetchStoryBySlug(isEnabled, params.slug);
 
   if (!story) {
     notFound();

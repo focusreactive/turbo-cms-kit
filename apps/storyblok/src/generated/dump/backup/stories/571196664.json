@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2024-11-07T13:13:06.677Z",
-  "published_at": "2024-11-07T13:13:06.621Z",
+  "updated_at": "2024-12-16T14:16:27.934Z",
+  "published_at": "2024-12-09T08:45:41.904Z",
   "id": 571196664,
   "uuid": "100e8f7a-3486-44da-b6f1-d4e5fb131247",
   "is_folder": false,
@@ -100,6 +100,7 @@
               "fieldtype": "multilink",
               "cached_url": "blog"
             },
+            "size": "base",
             "text": "Get for free",
             "variant": "primary",
             "component": "link"
@@ -113,6 +114,7 @@
               "fieldtype": "multilink",
               "cached_url": "blog"
             },
+            "size": "base",
             "text": "Request a demo",
             "variant": "secondary",
             "component": "link"
@@ -122,6 +124,7 @@
         "maxWidth": "base",
         "component": "hero",
         "marginTop": "base",
+        "globalData": "",
         "marginBottom": "base",
         "backgroundColor": "none"
       },
@@ -320,6 +323,7 @@
               "fieldtype": "multilink",
               "cached_url": "blog"
             },
+            "size": "base",
             "text": "Take your shot",
             "variant": "ghost-dark",
             "component": "link"
@@ -694,15 +698,6 @@
         "marginBottom": "base",
         "backgroundColor": "none",
         "isReversedOnMobile": false
-      },
-      {
-        "_uid": "5506a320-8365-4b62-bd2d-d14a7fcc0d10",
-        "maxWidth": "base",
-        "component": "threeDElement",
-        "marginTop": "base",
-        "threeDModel": "kubik-rubik",
-        "marginBottom": "base",
-        "backgroundColor": "none"
       },
       {
         "_uid": "6fa207de-106d-46ed-805a-99811a0bcbf3",
@@ -1581,6 +1576,7 @@
                   "fieldtype": "multilink",
                   "cached_url": "home"
                 },
+                "size": "base",
                 "text": "Sign up",
                 "variant": "ghost",
                 "component": "link"
@@ -1651,6 +1647,7 @@
                   "fieldtype": "multilink",
                   "cached_url": "home"
                 },
+                "size": "base",
                 "text": "Get started",
                 "variant": "ghost-dark",
                 "component": "link"
@@ -1741,6 +1738,7 @@
                   "fieldtype": "multilink",
                   "cached_url": "home"
                 },
+                "size": "base",
                 "text": "Get started",
                 "variant": "ghost",
                 "component": "link"
@@ -1821,6 +1819,7 @@
                   "fieldtype": "multilink",
                   "cached_url": "blog"
                 },
+                "size": "base",
                 "text": "Contact Sales",
                 "variant": "ghost",
                 "component": "link"
@@ -1946,6 +1945,7 @@
                   "fieldtype": "multilink",
                   "cached_url": "home"
                 },
+                "size": "base",
                 "text": "Learn more",
                 "variant": "default",
                 "component": "link"
@@ -2008,6 +2008,7 @@
                   "fieldtype": "multilink",
                   "cached_url": "home"
                 },
+                "size": "base",
                 "text": "Learn more",
                 "variant": "default",
                 "component": "link"
@@ -2070,6 +2071,7 @@
                   "fieldtype": "multilink",
                   "cached_url": "home"
                 },
+                "size": "lg",
                 "text": "Learn more",
                 "variant": "default",
                 "component": "link"
@@ -2265,7 +2267,7 @@
   "disable_fe_editor": false,
   "parent": null,
   "is_startpage": false,
-  "unpublished_changes": false,
+  "unpublished_changes": true,
   "meta_data": null,
   "imported_at": null,
   "pinned": false,

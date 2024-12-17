@@ -51,7 +51,7 @@ export interface IResolvedLink {
 export async function fetchStoryBySlug(
   isDraftMode: boolean,
   slug: string[] = ["home"],
-  params?: { cv?: number; resolve_relations?: string },
+  params?: { cv?: number },
 ): Promise<{ story: ISbStoryData; links: IResolvedLink[] }> {
   const cv = await getSBcacheCVparameter(isDraftMode);
 
@@ -69,29 +69,16 @@ export async function fetchStoryBySlug(
     searchParamsData as Record<string, string>,
   );
 
-  const { story, links, rels } = await fetch(
-    `${API_GATE}/stories/${slug.join("/")}?${searchParams.toString()}`,
+  const { story, links } = await fetch(
+    `${API_GATE}/stories/${slug?.join("/") || ""}?${searchParams.toString()}`,
   ).then((res) => res.json());
 
-  // REST storyblok API doesnt resolve relations in the response, only uuid
-  // So we need to resolve them manually
-  // using this function it should be done automatically
-  if (params?.resolve_relations) {
-    const relations = params.resolve_relations.split(",");
-
-    relations.forEach((relation) => {
-      story.content[relation] = findRelation(rels, story.content[relation]);
-    });
-  }
+  console.log("links length: ", links.length);
 
   return {
     story,
     links,
   };
-}
-
-function findRelation(rels: any, id: string) {
-  return rels.find((rel: any) => rel.uuid === id);
 }
 
 // This function uses only on a build lvl to generate a sitemap

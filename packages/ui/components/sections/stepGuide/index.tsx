@@ -53,7 +53,9 @@ export function StepGuide({ link, items }: IStepGuideProps) {
           ))}
         </ul>
 
-        {link && <Link {...link} className="w-full md:w-auto" />}
+        {link && (
+          <Link {...link} className="block w-full md:inline-block md:w-auto" />
+        )}
       </div>
     </section>
   );

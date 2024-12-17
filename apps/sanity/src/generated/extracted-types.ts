@@ -144,7 +144,17 @@ export type SectionPricingTable = {
 };
 
 export type SectionHero = {
+  _id: string;
   _type: "section.hero";
+  _createdAt: string;
+  _updatedAt: string;
+  _rev: string;
+  globalData?: {
+    _ref: string;
+    _type: "reference";
+    _weak?: boolean;
+    [internalGroqTypeReferenceTo]?: "section.hero";
+  };
   title: string;
   text?: CustomRichText;
   image?: CustomImage;
@@ -441,11 +451,10 @@ export type CustomLink = {
     | "default"
     | "primary"
     | "secondary"
-    | "headerNav"
-    | "footerNav"
     | "badge"
     | "ghost"
     | "ghost-dark";
+  size: "base" | "sm" | "lg";
 };
 
 export type Page = {
@@ -482,9 +491,13 @@ export type Page = {
     | ({
         _key: string;
       } & SectionCarousel)
-    | ({
+    | {
+        _ref: string;
+        _type: "reference";
+        _weak?: boolean;
         _key: string;
-      } & SectionHero)
+        [internalGroqTypeReferenceTo]?: "section.hero";
+      }
     | ({
         _key: string;
       } & SectionPricingTable)
@@ -754,7 +767,7 @@ export type AllSanitySchemaTypes =
 export declare const internalGroqTypeReferenceTo: unique symbol;
 // Source: ./src/lib/api/queries.ts
 // Variable: PAGE_BY_SLUG_QUERY
-// Query:   *[_type == "page" && pathname.current == $slug][0] {    _id,    header->{        ...,  links[] {    ...,type == "internal" => {  url->{    _type == "page" => {      "slug": [pathname.current],    },  },}  }    },    sectionsBody[] {      ...,      _type == "section.hero" => {   ...,  links[] {    ...,type == "internal" => {  url->{    _type == "page" => {      "slug": [pathname.current],    },  },}  } },      _type == "section.linksList" => {   ...,  links[] {    ...,type == "internal" => {  url->{    _type == "page" => {      "slug": [pathname.current],    },  },}  } },      _type == "section.cardsGrid" => {   ...,  items[] {    ...,    link {      ...,type == "internal" => {  url->{    _type == "page" => {      "slug": [pathname.current],    },  },}    }  } },      _type == "section.logos" => {   ...,  items[] {    ...,    link {      ...,type == "internal" => {  url->{    _type == "page" => {      "slug": [pathname.current],    },  },}    }  } },      _type == "section.blog" => {   ...,  posts[] {    ...,    link {      ...,type == "internal" => {  url->{    _type == "page" => {      "slug": [pathname.current],    },  },}    }  } },    },    footer->{        ...,  links[] {    ...,type == "internal" => {  url->{    _type == "page" => {      "slug": [pathname.current],    },  },}  }    },    title,    "slug": pathname.current,    seoTitle,    seoDescription,    ogImage,    robots,    theme,  }
+// Query:   *[_type == "page" && pathname.current == $slug][0] {    _id,    header->{        ...,  links[] {    ...,type == "internal" => {  url->{    _type == "page" => {      "slug": [pathname.current],    },  },}  }    },    sectionsBody[] {      ...,      _type == "section.hero" => {   ...,  globalData->{  ...,    links[] {      ...,type == "internal" => {  url->{    _type == "page" => {      "slug": [pathname.current],    },  },}    },  },  links[] {    ...,type == "internal" => {  url->{    _type == "page" => {      "slug": [pathname.current],    },  },}  } },      _type == "section.linksList" => {   ...,  links[] {    ...,type == "internal" => {  url->{    _type == "page" => {      "slug": [pathname.current],    },  },}  } },      _type == "section.cardsGrid" => {   ...,  items[] {    ...,    link {      ...,type == "internal" => {  url->{    _type == "page" => {      "slug": [pathname.current],    },  },}    }  } },      _type == "section.logos" => {   ...,  items[] {    ...,    link {      ...,type == "internal" => {  url->{    _type == "page" => {      "slug": [pathname.current],    },  },}    }  } },      _type == "section.blog" => {   ...,  posts[] {    ...,    link {      ...,type == "internal" => {  url->{    _type == "page" => {      "slug": [pathname.current],    },  },}    }  } },    },    footer->{        ...,  links[] {    ...,type == "internal" => {  url->{    _type == "page" => {      "slug": [pathname.current],    },  },}  }    },    title,    "slug": pathname.current,    seoTitle,    seoDescription,    ogImage,    robots,    theme,  }
 export type PAGE_BY_SLUG_QUERYResult = {
   _id: string;
   header: {
@@ -778,16 +791,21 @@ export type PAGE_BY_SLUG_QUERYResult = {
       variant:
         | "badge"
         | "default"
-        | "footerNav"
         | "ghost-dark"
         | "ghost"
-        | "headerNav"
         | "primary"
         | "secondary";
+      size: "base" | "lg" | "sm";
     }>;
     alignVariant: "center" | "left" | "right";
   };
   sectionsBody: Array<
+    | {
+        _ref: string;
+        _type: "reference";
+        _weak?: boolean;
+        _key: string;
+      }
     | {
         _key: string;
         _type: "section.blog";
@@ -812,12 +830,11 @@ export type PAGE_BY_SLUG_QUERYResult = {
             variant:
               | "badge"
               | "default"
-              | "footerNav"
               | "ghost-dark"
               | "ghost"
-              | "headerNav"
               | "primary"
               | "secondary";
+            size: "base" | "lg" | "sm";
           } | null;
           image?: CustomImage;
           text?: CustomRichText;
@@ -866,12 +883,11 @@ export type PAGE_BY_SLUG_QUERYResult = {
             variant:
               | "badge"
               | "default"
-              | "footerNav"
               | "ghost-dark"
               | "ghost"
-              | "headerNav"
               | "primary"
               | "secondary";
+            size: "base" | "lg" | "sm";
           } | null;
           image?: CustomImage;
         }>;
@@ -945,48 +961,6 @@ export type PAGE_BY_SLUG_QUERYResult = {
       }
     | {
         _key: string;
-        _type: "section.hero";
-        title: string;
-        text?: CustomRichText;
-        image?: CustomImage;
-        links: Array<{
-          _key: string;
-          _type: "customLink";
-          text: string;
-          type: "internal" | "url";
-          href?: string;
-          target: "_blank" | "_parent" | "_self" | "_top";
-          url: {
-            slug: Array<string | null>;
-          } | null;
-          variant:
-            | "badge"
-            | "default"
-            | "footerNav"
-            | "ghost-dark"
-            | "ghost"
-            | "headerNav"
-            | "primary"
-            | "secondary";
-        }>;
-        marginTop: "base" | "lg" | "none";
-        marginBottom: "base" | "lg" | "none";
-        maxWidth: "base" | "none" | "small";
-        backgroundColor: "dark-gray" | "dark" | "light-gray" | "light" | "none";
-        backgroundImage?: {
-          asset?: {
-            _ref: string;
-            _type: "reference";
-            _weak?: boolean;
-            [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
-          };
-          hotspot?: SanityImageHotspot;
-          crop?: SanityImageCrop;
-          _type: "image";
-        };
-      }
-    | {
-        _key: string;
         _type: "section.linksList";
         links: Array<{
           _key: string;
@@ -1001,12 +975,11 @@ export type PAGE_BY_SLUG_QUERYResult = {
           variant:
             | "badge"
             | "default"
-            | "footerNav"
             | "ghost-dark"
             | "ghost"
-            | "headerNav"
             | "primary"
             | "secondary";
+          size: "base" | "lg" | "sm";
         }>;
         alignVariant: "center" | "left" | "right";
         marginTop: "base" | "lg" | "none";
@@ -1045,12 +1018,11 @@ export type PAGE_BY_SLUG_QUERYResult = {
             variant:
               | "badge"
               | "default"
-              | "footerNav"
               | "ghost-dark"
               | "ghost"
-              | "headerNav"
               | "primary"
               | "secondary";
+            size: "base" | "lg" | "sm";
           } | null;
         }>;
         alignVariant: "center" | "left" | "right";
@@ -1168,12 +1140,11 @@ export type PAGE_BY_SLUG_QUERYResult = {
       variant:
         | "badge"
         | "default"
-        | "footerNav"
         | "ghost-dark"
         | "ghost"
-        | "headerNav"
         | "primary"
         | "secondary";
+      size: "base" | "lg" | "sm";
     }> | null;
     copywriteText?: string;
   };
