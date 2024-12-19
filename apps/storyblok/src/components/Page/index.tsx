@@ -14,6 +14,11 @@ export default function PageContainer({ blok }: IPageContainerProps) {
 
   if (!sections) return null;
 
+  console.log("globalHeader");
+  console.log(globalHeader);
+  console.log("globalFooter");
+  console.log(globalFooter);
+
   return (
     <div className={cn("bg-bgColor", theme)}>
       {globalHeader && <StoryblokStory story={globalHeader} />}
