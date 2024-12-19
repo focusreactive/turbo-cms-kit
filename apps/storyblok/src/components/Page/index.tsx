@@ -14,6 +14,7 @@ export default function PageContainer({ blok }: IPageContainerProps) {
 
   if (!sections) return null;
 
+  console.log(blok);
   console.log("globalHeader");
   console.log(blok.header);
   console.log("globalFooter");

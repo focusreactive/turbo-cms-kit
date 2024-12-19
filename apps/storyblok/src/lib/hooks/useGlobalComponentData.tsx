@@ -1,13 +1,16 @@
 "use client";
 
-import type { ISbStoryData } from "@storyblok/react/rsc";
+import type { ISbStoryData, SbBlokData } from "@storyblok/react/rsc";
 
 import { useDataContext } from "@/components/DataContext";
 
 export const useGlobalComponentData = (
-  globalComponent: string,
+  globalComponent: string | SbBlokData,
 ): ISbStoryData | null => {
   const { globalComponentsStories } = useDataContext();
+
+  console.log("globalComponentsStories");
+  console.log(globalComponentsStories);
 
   if (!globalComponent) return null;
 
