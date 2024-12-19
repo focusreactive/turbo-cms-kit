@@ -9,9 +9,6 @@ export const useGlobalComponentData = (
 ): ISbStoryData | null => {
   const { globalComponentsStories } = useDataContext();
 
-  console.log("globalComponentsStories");
-  console.log(globalComponentsStories);
-
   if (!globalComponent) return null;
 
   const globalComponentData = globalComponentsStories.find(
