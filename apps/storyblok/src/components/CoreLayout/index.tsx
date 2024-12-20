@@ -2,7 +2,6 @@ import type { ISbStoryData } from "@storyblok/react/rsc";
 
 import { fetchStoriesByParams, isDraftModeEnv } from "@/lib/api";
 import { DataContextProvider } from "@/components/DataContext";
-import StoryblokProvider from "@/components/StoryblokProvider";
 
 import type { ICoreLayoutProps } from "./types";
 
@@ -21,13 +20,11 @@ export default async function CoreLayout({
   }
 
   return (
-    <StoryblokProvider>
-      <DataContextProvider
-        globalComponentsStories={globalComponentsStories}
-        allResolvedLinks={allResolvedLinks}
-      >
-        {children}
-      </DataContextProvider>
-    </StoryblokProvider>
+    <DataContextProvider
+      globalComponentsStories={globalComponentsStories}
+      allResolvedLinks={allResolvedLinks}
+    >
+      {children}
+    </DataContextProvider>
   );
 }
