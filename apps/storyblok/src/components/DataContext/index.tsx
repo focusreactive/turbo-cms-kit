@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext } from "react";
+import { createContext, use } from "react";
 
 import type { IDataContextProviderProps, IDataContextValues } from "./types";
 
@@ -15,17 +15,19 @@ export function DataContextProvider({
   globalComponentsStories,
 }: IDataContextProviderProps) {
   return (
-    <DataContext.Provider
+    // @ts-ignore
+    <DataContext
       value={{
         allResolvedLinks,
         globalComponentsStories,
       }}
     >
+      {/* @ts-ignore */}
       {children}
-    </DataContext.Provider>
+    </DataContext>
   );
 }
 
 export const useDataContext = () => {
-  return useContext(DataContext);
+  return use(DataContext);
 };
