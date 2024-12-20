@@ -5,6 +5,7 @@ import {
   type ISbStoriesParams,
 } from "@storyblok/react/rsc";
 
+import { SB_CACHE_VERSION_TAG } from "@/constants/cacheTags";
 import { COMPONENTS } from "@/constants/sbComponents";
 
 const CONTENT_VERSION = process.env.NEXT_PUBLIC_STORYBLOK_CONTENT_VERSION as
@@ -31,46 +32,17 @@ export async function fetchStory(slug?: string[]) {
     const { data } = await storyblokApi.get(
       `cdn/stories/${cleanSlug.length > 0 ? cleanSlug.join("/") : "home"}`,
       sbParams,
+      {
+        next: {
+          tags: [SB_CACHE_VERSION_TAG],
+        },
+      },
     );
 
     return data;
   } catch (error) {
     console.log("error fetching story ❌", error);
     return { story: null };
-  }
-}
-
-export async function fetchAllPages() {
-  try {
-    const storyblokApi = getStoryblokApi();
-    const commonSbParams: ISbStoriesParams = {
-      version: CONTENT_VERSION,
-      per_page: 1000,
-      // @ts-ignore
-      include_dates: "1",
-    };
-
-    const { data, total } = await storyblokApi.get("cdn/links", commonSbParams);
-    const lastPageNumber = Math.ceil(total / 1000);
-
-    let pages: { slug: string; is_folder: boolean; published_at: string }[] =
-      Object.values(data.links);
-
-    for (let i = 2; i <= lastPageNumber; i++) {
-      const { data } = await storyblokApi.get("cdn/links", {
-        ...commonSbParams,
-        page: i,
-      });
-
-      pages = pages.concat(data.links);
-    }
-
-    const filteredPages = pages.filter((p) => !p.slug.startsWith("components"));
-
-    return filteredPages;
-  } catch (error) {
-    console.log("error fetching all pages ❌", error);
-    return [];
   }
 }
 
@@ -83,7 +55,11 @@ export async function fetchStories(params?: ISbStoriesParams) {
     };
 
     const start = performance.now();
-    const { data, total } = await storyblokApi.get("cdn/stories", sbParams);
+    const { data, total } = await storyblokApi.get("cdn/stories", sbParams, {
+      next: {
+        tags: [SB_CACHE_VERSION_TAG],
+      },
+    });
     const end = performance.now();
     console.log(`🕰️ fetchStories execute time: ${(end - start).toFixed(3)}ms`);
 
@@ -136,5 +112,47 @@ export async function fetchStoryMetadata(slug: string[]) {
   } catch (error) {
     console.log("error fetching story metadata ❌", error);
     return {};
+  }
+}
+
+export async function fetchAllPages() {
+  try {
+    const storyblokApi = getStoryblokApi();
+    const commonSbParams: ISbStoriesParams = {
+      version: CONTENT_VERSION,
+      per_page: 1000,
+      // @ts-ignore
+      include_dates: "1",
+    };
+
+    const { data, total } = await storyblokApi.get("cdn/links", commonSbParams);
+    const lastPageNumber = Math.ceil(total / 1000);
+
+    let pages: { slug: string; is_folder: boolean; published_at: string }[] =
+      Object.values(data.links);
+
+    for (let i = 2; i <= lastPageNumber; i++) {
+      const { data } = await storyblokApi.get(
+        "cdn/links",
+        {
+          ...commonSbParams,
+          page: i,
+        },
+        {
+          next: {
+            tags: [SB_CACHE_VERSION_TAG],
+          },
+        },
+      );
+
+      pages = pages.concat(data.links);
+    }
+
+    const filteredPages = pages.filter((p) => !p.slug.startsWith("components"));
+
+    return filteredPages;
+  } catch (error) {
+    console.log("error fetching all pages ❌", error);
+    return [];
   }
 }

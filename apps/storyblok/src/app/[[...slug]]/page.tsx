@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { connection } from "next/server";
 import { StoryblokStory } from "@storyblok/react/rsc";
 
 import { fetchAllPages, fetchStory, fetchStoryMetadata } from "@/lib/storyblok";
@@ -16,10 +15,12 @@ type Props = {
 export async function generateMetadata(props: Props): Promise<Metadata> {
   const params = await props.params;
 
-  return await fetchStoryMetadata(params.slug ?? []);
+  return fetchStoryMetadata(params.slug ?? []);
 }
 
 export async function generateStaticParams() {
+  return [];
+
   if (process.env.NEXT_PUBLIC_STORYBLOK_CONTENT_VERSION === "draft") {
     return [];
   }
@@ -27,8 +28,8 @@ export async function generateStaticParams() {
   const pages = await fetchAllPages();
 
   const paths = pages
-    .filter((page) => page.is_folder === false)
-    .map((page) => {
+    .filter((page: any) => page.is_folder === false)
+    .map((page: any) => {
       return {
         slug: page.slug.split("/"),
       };
@@ -38,10 +39,6 @@ export async function generateStaticParams() {
 }
 
 export default async function Home(props: Props) {
-  if (process.env.NEXT_PUBLIC_STORYBLOK_CONTENT_VERSION === "draft") {
-    await connection();
-  }
-
   const params = await props.params;
   const { story, links } = await fetchStory(params.slug);
 
