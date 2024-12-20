@@ -1,5 +1,6 @@
 import type { ImageStoryblok } from "@/generated/extracted-types";
-import { StoryblokComponent, type ISbRichtext } from "@storyblok/react/rsc";
+import { StoryblokComponent } from "@storyblok/react";
+import { type ISbRichtext } from "@storyblok/react/rsc";
 import { render } from "storyblok-rich-text-react-renderer";
 
 import { Image } from "@shared/ui";

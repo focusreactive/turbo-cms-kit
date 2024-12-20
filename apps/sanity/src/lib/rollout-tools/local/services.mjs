@@ -113,10 +113,6 @@ export async function createVercelProject({
         value: `https://${projectName}.vercel.app/studio`,
       },
       {
-        key: "NEXT_PUBLIC_URL",
-        value: `https://${projectName}.vercel.app`,
-      },
-      {
         key: "NEXT_PUBLIC_DOMAIN",
         value: `https://${projectName}.vercel.app`,
       },

@@ -236,8 +236,8 @@ NEXT_PUBLIC_API_GATE="https://api.storyblok.com/v2/cdn"
 NEXT_PUBLIC_DOMAIN="https://localhost:4050"
 NEXT_PUBLIC_IS_PREVIEW="true"
 NEXT_PUBLIC_SB_REGION="EU"
-NEXT_PUBLIC_URL="https://localhost:4050"
-SB_PREVIEW_TOKEN="[storyblok space preview token]"
+NEXT_PUBLIC_DOMAIN="https://localhost:4050"
+NEXT_PUBLIC_STORYBLOK_TOKEN="[storyblok space preview token]"
 SB_WEBHOOK_REVALIDATE_SECRET="[storyblok webhook revalidate key]"
 ```
 

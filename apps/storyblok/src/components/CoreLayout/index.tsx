@@ -1,6 +1,6 @@
 import type { ISbStoryData } from "@storyblok/react/rsc";
 
-import { fetchStoriesByParams, isDraftModeEnv } from "@/lib/api";
+import { fetchStories } from "@/lib/storyblok";
 import { DataContextProvider } from "@/components/DataContext";
 
 import type { ICoreLayoutProps } from "./types";
@@ -10,14 +10,11 @@ export default async function CoreLayout({
   allResolvedLinks,
 }: ICoreLayoutProps) {
   let globalComponentsStories: ISbStoryData[] = [];
+  const { stories } = await fetchStories({
+    by_slugs: "components/*",
+  });
 
-  if (isDraftModeEnv) {
-    const { data } = await fetchStoriesByParams(isDraftModeEnv, {
-      by_slugs: "components/*",
-    });
-
-    globalComponentsStories = data;
-  }
+  globalComponentsStories = stories;
 
   return (
     <DataContextProvider

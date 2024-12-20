@@ -1,9 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  env: {
-    // todo: remove and handle through turbo
-    storyblokApiToken: process.env.SB_PREVIEW_TOKEN,
-  },
   images: {
     remotePatterns: [
       {

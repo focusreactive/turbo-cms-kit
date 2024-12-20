@@ -1,3 +1,5 @@
+"use client";
+
 import type { LinkStoryblok } from "@/generated/extracted-types";
 import type { ButtonVariantProps } from "@shared/ui/components/ui/button/types";
 import { type LinkProps } from "@shared/ui/components/ui/link/types";

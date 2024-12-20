@@ -6,7 +6,6 @@
     "SB_*",
     "SANITY_*",
     "NEXT_PREVIEW_TOKEN",
-    "storyblokApiToken",
     "NODE_ENV",
     "VERCEL_ENV"
   ],

@@ -82,7 +82,7 @@ export async function createVercelProject({ projectName, sbParams }) {
         name: finalProjectName,
         environmentVariables: [
           {
-            key: "NEXT_PUBLIC_URL",
+            key: "NEXT_PUBLIC_DOMAIN",
             value: `https://${finalProjectName}.vercel.app`,
           },
           {
@@ -102,7 +102,7 @@ export async function createVercelProject({ projectName, sbParams }) {
             value: "EU",
           },
           {
-            key: "SB_PREVIEW_TOKEN",
+            key: "NEXT_PUBLIC_STORYBLOK_TOKEN",
             value: previewToken,
           },
           {

@@ -1,28 +1,22 @@
-import { type MetadataRoute } from "next";
-import type { ISbStoriesParams } from "@storyblok/react/rsc";
+import type { MetadataRoute } from "next";
+import type { ISbStoriesParams, ISbStoryData } from "@storyblok/react/rsc";
 
-import { fetchStoriesByParams } from "@/lib/api";
+import { fetchStories } from "@/lib/storyblok";
 
-const isDraftModeEnv = process.env.NEXT_PUBLIC_IS_PREVIEW === "true";
-const storiesPerPageSize = 100;
+const storiesPerPageSize = 1;
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const commonFetchParams: ISbStoriesParams = {
     per_page: storiesPerPageSize,
     content_type: "page",
-    version: isDraftModeEnv ? "draft" : "published",
   };
-  const { data, headers } = await fetchStoriesByParams(
-    isDraftModeEnv,
-    commonFetchParams,
-  );
+  const { stories: firstPageStories, total } =
+    await fetchStories(commonFetchParams);
+  const lastPageNumber = Math.ceil(total / storiesPerPageSize);
 
-  const totalStories = Number(headers.get("Total"));
-  const lastPageNumber = Math.ceil(totalStories / storiesPerPageSize);
-
-  const pagesPromises: ReturnType<typeof fetchStoriesByParams>[] = [];
+  const pagesPromises: ReturnType<typeof fetchStories>[] = [];
   for (let i = 2; i <= lastPageNumber; i++) {
-    const promise = fetchStoriesByParams(isDraftModeEnv, {
+    const promise = fetchStories({
       ...commonFetchParams,
       page: i,
     });
@@ -30,18 +24,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     pagesPromises.push(promise);
   }
 
-  const pagesData = await Promise.all(pagesPromises);
-  const allPaginatedData = pagesData.reduce(
-    (acc, { data }) => [...acc, ...data],
-    data,
-  );
+  const storiesRequestData = await Promise.all(pagesPromises);
 
-  const filteredStories = allPaginatedData.filter((page) => {
-    if (page.is_folder) {
+  const otherPagesStories = storiesRequestData.flatMap((data) => data.stories);
+  const allPagesStories = firstPageStories.concat(
+    otherPagesStories,
+  ) as ISbStoryData[];
+
+  const filteredStories = allPagesStories.filter((s) => {
+    if (s.is_folder) {
       return false;
     }
 
-    if (page.content.robots === "no-index") {
+    if (s.content.robots === "no-index") {
       return false;
     }
 

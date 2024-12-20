@@ -1,3 +1,5 @@
+"use client";
+
 import EmptyBlock from "@shared/ui/components/EmptyBlock";
 
 import { Hero as HeroUI } from "@shared/ui";
