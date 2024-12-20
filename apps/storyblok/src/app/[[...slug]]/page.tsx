@@ -38,12 +38,12 @@ export async function generateStaticParams() {
 }
 
 export default async function Home(props: Props) {
-  const params = await props.params;
-  const { story, links } = await fetchStory(params.slug);
-
   if (process.env.NEXT_PUBLIC_STORYBLOK_CONTENT_VERSION === "draft") {
     await connection();
   }
+
+  const params = await props.params;
+  const { story, links } = await fetchStory(params.slug);
 
   if (!story) {
     notFound();
