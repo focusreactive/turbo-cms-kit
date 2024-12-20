@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { connection } from "next/server";
 import { StoryblokStory } from "@storyblok/react/rsc";
 
 import { fetchAllPages, fetchStory, fetchStoryMetadata } from "@/lib/storyblok";
 import CoreLayout from "@/components/CoreLayout";
+
+export const dynamicParams = true;
 
 type Props = {
   params: Promise<{ slug?: string[] }>;
@@ -37,6 +40,10 @@ export async function generateStaticParams() {
 export default async function Home(props: Props) {
   const params = await props.params;
   const { story, links } = await fetchStory(params.slug);
+
+  if (process.env.NEXT_PUBLIC_STORYBLOK_CONTENT_VERSION === "draft") {
+    await connection();
+  }
 
   if (!story) {
     notFound();
